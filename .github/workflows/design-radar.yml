@@ -1,15 +1,29 @@
-name: Daily Design Skill Radar
+name: SkillRadar Daily Pipeline
 
 on:
   schedule:
     - cron: '20 2 * * *' # 10:20 Beijing / 02:20 UTC
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update-design-radar.mjs'
+      - 'scripts/validate.mjs'
+      - 'data/design-skill-index.json'
+      - 'data/design-skills-1.json'
+      - 'data/design-skills-2.json'
+      - 'data/design-skills-3.json'
+      - 'data/design-skills-4.json'
+      - '.github/workflows/design-radar.yml'
 
 permissions:
+  actions: read
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
-  group: design-skill-radar
+  group: skillradar-daily
   cancel-in-progress: false
 
 jobs:
@@ -17,23 +31,49 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Discover current design skills
+      - name: Discover → parse → scan → classify → rank
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/update-design-radar.mjs
-      - name: Validate registry
+      - name: Validate generated registry
         run: node scripts/validate.mjs
-      - name: Commit radar snapshot when changed
+      - name: Commit generated registry when changed
         run: |
-          if git diff --quiet -- data/radar-latest.json; then
-            echo "No radar changes today."
+          git add data/design-seed-baseline.json data/design-skill-index.json data/design-skills-radar.json data/design-domains.json data/radar-latest.json data/radar-registry.json data/ranking-history.json
+          if git diff --cached --quiet; then
+            echo "No registry changes."
             exit 0
           fi
           git config user.name "skillradar-bot"
           git config user.email "skillradar-bot@users.noreply.github.com"
-          git add data/radar-latest.json
-          git commit -m "chore(radar): daily design skill discovery"
-          git push
+          git commit -m "chore(radar): refresh analyzed skills and rankings"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+  publish:
+    needs: radar
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          token: ${{ secrets.PAGES_TOKEN || github.token }}
+          enablement: ${{ secrets.PAGES_TOKEN != '' }}
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+      - name: Deploy latest registry to Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
