@@ -42,3 +42,17 @@ jobs:
           NODE
       - name: Confirm skills CLI can discover the repo
         run: npx -y skills@latest add . --list --full-depth
+      - name: Install current Codex CLI
+        run: npm install -g @openai/codex
+      - name: Verify the public one-line Codex install path
+        shell: bash
+        run: |
+          export HOME="${RUNNER_TEMP}/skillradar-home"
+          export CODEX_HOME="${HOME}/.codex"
+          mkdir -p "$HOME" "$CODEX_HOME"
+          codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.3.0 --json
+          codex plugin add skillradar@skillradar --json
+          codex plugin list --json > "${RUNNER_TEMP}/plugins.json"
+          grep -q 'skillradar' "${RUNNER_TEMP}/plugins.json"
+          find "$CODEX_HOME/plugins" -type f -name SKILL.md -print | grep -q '/skillradar/'
+          echo "Public Codex marketplace install passed."
