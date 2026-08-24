@@ -1,0 +1,44 @@
+name: Ecosystem Install Smoke
+
+on:
+  pull_request:
+    paths:
+      - '.agents/plugins/marketplace.json'
+      - 'packages/codex-plugin/**'
+      - 'skills/**'
+      - '.github/workflows/ecosystem-smoke.yml'
+  push:
+    branches: [main]
+    paths:
+      - '.agents/plugins/marketplace.json'
+      - 'packages/codex-plugin/**'
+      - 'skills/**'
+      - '.github/workflows/ecosystem-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  manifests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate Codex marketplace and plugin manifest
+        run: |
+          node - <<'NODE'
+          const fs=require('fs')
+          const market=JSON.parse(fs.readFileSync('.agents/plugins/marketplace.json','utf8'))
+          const plugin=JSON.parse(fs.readFileSync('packages/codex-plugin/.codex-plugin/plugin.json','utf8'))
+          if(market.name!=='skillradar') throw new Error('marketplace name mismatch')
+          const item=market.plugins.find(x=>x.name==='skillradar')
+          if(!item || item.source?.path!=='./packages/codex-plugin') throw new Error('marketplace plugin source mismatch')
+          if(plugin.name!=='skillradar' || plugin.version!=='0.3.0') throw new Error('plugin manifest mismatch')
+          if(!fs.existsSync('skills/skillradar/SKILL.md')) throw new Error('skills.sh-compatible SKILL.md missing')
+          console.log('Ecosystem manifests passed.')
+          NODE
+      - name: Confirm skills CLI can discover the repo
+        run: npx -y skills@latest add . --list --full-depth
