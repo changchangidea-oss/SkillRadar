@@ -2,7 +2,7 @@
   "snapshots": [
     {
       "date": "2026-08-24",
-      "generatedAt": "2026-08-24T14:39:47.726Z",
+      "generatedAt": "2026-08-24T14:42:29.479Z",
       "domains": {
         "ui-design": [
           {
@@ -41,11 +41,6 @@
             "source": "seed"
           },
           {
-            "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
-            "score": 74,
-            "source": "radar"
-          },
-          {
             "skillId": "pbakaus/impeccable/impeccable",
             "score": 73,
             "source": "seed"
@@ -74,6 +69,11 @@
             "skillId": "mblode/agent-skills/ui-design",
             "score": 66,
             "source": "seed"
+          },
+          {
+            "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+            "score": 66,
+            "source": "radar"
           },
           {
             "skillId": "figma/mcp-server-guide/figma-design-to-code",
@@ -198,13 +198,13 @@
             "source": "seed"
           },
           {
-            "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
-            "score": 65,
-            "source": "radar"
-          },
-          {
             "skillId": "vercel-labs/agent-skills/web-design-guidelines",
             "score": 64,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/quieter",
+            "score": 63,
             "source": "seed"
           }
         ],
@@ -255,11 +255,6 @@
             "source": "seed"
           },
           {
-            "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
-            "score": 64,
-            "source": "radar"
-          },
-          {
             "skillId": "pbakaus/impeccable/colorize",
             "score": 63,
             "source": "seed"
@@ -280,8 +275,8 @@
             "source": "seed"
           },
           {
-            "skillId": "Mr-Salticidae/knowledge-base/remotion-skill",
-            "score": 59,
+            "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+            "score": 62,
             "source": "radar"
           },
           {
@@ -306,6 +301,11 @@
           },
           {
             "skillId": "remotion-dev/skills/remotion-interactivity",
+            "score": 55,
+            "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
             "score": 55,
             "source": "seed"
           }
@@ -357,11 +357,6 @@
             "source": "seed"
           },
           {
-            "skillId": "Mr-Salticidae/knowledge-base/remotion-skill",
-            "score": 63,
-            "source": "radar"
-          },
-          {
             "skillId": "pbakaus/impeccable/impeccable",
             "score": 62,
             "source": "seed"
@@ -408,6 +403,11 @@
           },
           {
             "skillId": "calesthio/generative-media-skills/cinematic-shot-direction",
+            "score": 52,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/color-grading-finishing",
             "score": 52,
             "source": "seed"
           }
@@ -586,11 +586,6 @@
             "source": "seed"
           },
           {
-            "skillId": "nexus-substrate/nexus-agents/api-and-interface-design",
-            "score": 44,
-            "source": "radar"
-          },
-          {
             "skillId": "pbakaus/impeccable/arrange",
             "score": 43,
             "source": "seed"
@@ -613,6 +608,11 @@
           {
             "skillId": "curiositech/some_claude_skills/design-critic",
             "score": 35,
+            "source": "seed"
+          },
+          {
+            "skillId": "meshy-dev/meshy-3d-agent/meshy-3d-printing",
+            "score": 34,
             "source": "seed"
           }
         ],
@@ -673,11 +673,6 @@
             "source": "seed"
           },
           {
-            "skillId": "Mr-Salticidae/knowledge-base/remotion-skill",
-            "score": 60,
-            "source": "radar"
-          },
-          {
             "skillId": "anthropics/skills/frontend-design",
             "score": 57,
             "source": "seed"
@@ -716,6 +711,11 @@
             "skillId": "heroygt/skills/svg-icon-maker",
             "score": 47,
             "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/hand-drawn-infographic-creator",
+            "score": 46,
+            "source": "seed"
           }
         ],
         "experience-design": [
@@ -751,7 +751,7 @@
           },
           {
             "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
-            "score": 71,
+            "score": 69,
             "source": "radar"
           },
           {
@@ -770,6 +770,11 @@
             "source": "seed"
           },
           {
+            "skillId": "jovelove7/facet/facet-core",
+            "score": 57,
+            "source": "radar"
+          },
+          {
             "skillId": "vercel-labs/agent-skills/web-design-guidelines",
             "score": 56,
             "source": "seed"
@@ -783,16 +788,6 @@
             "skillId": "ibelick/ui-skills/baseline-ui",
             "score": 53,
             "source": "seed"
-          },
-          {
-            "skillId": "nexus-substrate/nexus-agents/ui-ux-design",
-            "score": 51,
-            "source": "radar"
-          },
-          {
-            "skillId": "nexus-substrate/nexus-agents/research-and-vote",
-            "score": 48,
-            "source": "radar"
           },
           {
             "skillId": "figma/mcp-server-guide/implement-design",
@@ -816,6 +811,11 @@
           },
           {
             "skillId": "pbakaus/impeccable/adapt",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/delight",
             "score": 44,
             "source": "seed"
           }
@@ -1198,8 +1198,13 @@
             "source": "seed"
           },
           {
-            "skillId": "nexus-substrate/nexus-agents/api-and-interface-design",
-            "score": 46,
+            "skillId": "changchangidea-oss/SkillRadar/skill-router",
+            "score": 49,
+            "source": "radar"
+          },
+          {
+            "skillId": "changchangidea-oss/SkillRadar/manage-skills",
+            "score": 47,
             "source": "radar"
           },
           {
@@ -1208,7 +1213,7 @@
             "source": "seed"
           },
           {
-            "skillId": "changchangidea-oss/SkillRadar/skill-router",
+            "skillId": "changchangidea-oss/SkillRadar/find-skill",
             "score": 44,
             "source": "radar"
           },
@@ -1220,11 +1225,6 @@
           {
             "skillId": "curiositech/some_claude_skills/design-critic",
             "score": 43,
-            "source": "seed"
-          },
-          {
-            "skillId": "yizhiyanhua-ai/fireworks-tech-graph/fireworks-tech-graph",
-            "score": 42,
             "source": "seed"
           }
         ]
