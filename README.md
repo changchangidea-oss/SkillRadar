@@ -2,7 +2,7 @@
 
 **Find the right agent skill for the task — without installing hundreds of skills.**
 
-SkillRadar is an open-source skill registry, discovery UI, safety-aware ranking experiment, and Codex routing plugin. The long-term goal is to continuously discover high-signal `SKILL.md` repositories, classify and inspect them, and help coding agents load the smallest useful set of skills for each task.
+SkillRadar is an open-source skill registry, discovery UI, safety-aware ranking experiment, and Codex routing plugin. The goal is to continuously discover high-signal `SKILL.md` repositories, classify and inspect them, and help coding agents load the smallest useful set of skills for each task.
 
 > V0.2 is local-first but no longer static-only: the website ships with a seed registry and a 12-field Design Radar, while GitHub Actions performs a daily public `SKILL.md` discovery pass. Persistent metrics and the hosted registry API remain future work.
 
@@ -15,9 +15,10 @@ SkillRadar is an open-source skill registry, discovery UI, safety-aware ranking 
 - Local `My Skills` state via `localStorage`
 - Starter skill packs
 - Codex plugin with `skill-router`, `find-skill`, `inspect-skill`, and `manage-skills`
-- Local registry fallback for the Codex plugin
+- Local + GitHub raw registry fallback for the Codex plugin
 - 12-field Design Radar with a curated Top 20 seed list per field
-- 90 open-source design-related seed skills spanning UI, visual communication, video, industrial, spatial, fashion, UX, digital media, craft, folk art and architecture
+- 83 unique open-source design-related seed skills spanning UI, visual communication, operations, video, industrial, spatial, fashion, UX, digital media, craft, folk art and architecture
+- 240 ranked seed positions across the 12 design fields
 - Daily GitHub Radar workflow that discovers new `SKILL.md` candidates and commits `data/radar-latest.json`
 - Chinese design-task routing in the Codex plugin (for example 海报、服装、建筑可视化、3D打印、视频动效)
 - No build step for the website
@@ -33,35 +34,48 @@ npm run serve
 
 Open `http://localhost:4173`.
 
-You can also open `index.html` directly in a browser, though serving it locally gives behavior closer to GitHub Pages.
-
 ## Repository structure
 
 ```text
 SkillRadar/
-├── index.html                  # V1 static web app
-├── data/skills.json            # Core coding seed registry
-├── data/design-skills.json     # Open-source design skill seed pool
-├── data/design-domains.json    # 12 design fields + Top 20 seed rankings
-├── data/radar-latest.json      # Daily GitHub discovery snapshot
-├── packages/codex-plugin/      # Codex plugin source
-├── scripts/validate.mjs        # Zero-dependency validation
+├── index.html
+├── assets/
+│   ├── styles.css
+│   └── app.js
+├── data/
+│   ├── skills.json
+│   ├── design-skill-index.json
+│   ├── design-skills-1.json ... design-skills-4.json
+│   ├── design-domains.json
+│   └── radar-latest.json
+├── packages/codex-plugin/
+├── scripts/
+│   ├── validate.mjs
+│   └── update-design-radar.mjs
 ├── docs/
-├── .github/
+├── .github/workflows/
 ├── LICENSE
 └── README.md
 ```
+
+## Design Radar
+
+The current fields are UI Design, Visual Communication, Operations Design, Video Design, Industrial Design, Environmental Design, Fashion Design, Experience Design, Digital Media & Film, Arts & Crafts, Folk Art, and Architecture Design.
+
+The initial Top 20 lists are **SkillRadar seed rankings**, not an official global leaderboard. They use real open-source sources and public signals, then weight domain relevance, usage/install evidence and safety. Newly discovered skills first enter **New & Rising** rather than automatically displacing the seed baseline.
+
+See [docs/DESIGN_RADAR.md](docs/DESIGN_RADAR.md).
 
 ## Codex plugin
 
 The plugin contains four skills:
 
 - `skill-router` — route a real task to the most relevant skills.
-- `find-skill` — search by technology, category, or task.
+- `find-skill` — search by technology, category, design field, or task.
 - `inspect-skill` — inspect purpose, provenance, risk, and maintenance signals.
 - `manage-skills` — keep global and project skill sets compact.
 
-The CLI helper uses both the embedded coding registry and design registry by default. Chinese design-domain terms are expanded into routing tags before matching. Set `SKILLRADAR_BASE_URL` when a compatible hosted API is available.
+The CLI helper uses the local registry when installed from this repository, falls back to the public GitHub raw registry when local data is absent, and can use a compatible hosted API when `SKILLRADAR_BASE_URL` is configured.
 
 ## Safety model
 
@@ -71,7 +85,7 @@ SkillRadar follows one hard rule:
 
 Popularity, stars, install counts, or an A/B label never grant permission to execute third-party scripts. Skills that touch shell commands, secrets, deployment, databases, or external networks must still be reviewed under the user's normal authorization and security policy.
 
-The current V1 grades and scores are experimental seed metadata, not a security audit.
+The current grades and scores are experimental seed metadata, not a security audit.
 
 ## Roadmap
 
@@ -85,8 +99,6 @@ The current V1 grades and scores are experimental seed metadata, not a security 
 8. Persistent registry on PostgreSQL/Supabase
 9. Hosted Codex router
 10. Community curation and verified publishers
-
-See [docs/ROADMAP.md](docs/ROADMAP.md) and [docs/DESIGN_RADAR.md](docs/DESIGN_RADAR.md).
 
 ## Contributing
 
