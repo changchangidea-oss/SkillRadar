@@ -5,9 +5,9 @@
     "source": "awesome-dsh-plugin/awesome-dsh-plugin",
     "summary": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data:",
     "security": "C",
-    "signalScore": 78,
+    "signalScore": 84,
     "installs": 0,
-    "repoStars": 12188,
+    "repoStars": 12189,
     "tags": [
       "experience",
       "design",
@@ -34,38 +34,36 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-24T14:39:38.517Z",
-    "lastSeenAt": "2026-08-24T14:42:27.213Z"
+    "lastSeenAt": "2026-08-24T14:43:22.714Z"
   },
   {
-    "id": "jovelove7/facet/facet-core",
-    "name": "facet-core",
-    "source": "jovelove7/facet",
-    "summary": "Trace where a single company's core promise changes, weakens, disappears, or conflicts across brand, marketing, product, UX, policy, support, outcomes, and independent evidence, then present only the best-supported causal hypothesis. Use when a user asks where a company's message breaks or leaks, whether a brand promis",
-    "security": "A",
+    "id": "awesome-dsh-plugin/awesome-dsh-plugin/web-design-guidelines",
+    "name": "web-design-guidelines",
+    "source": "awesome-dsh-plugin/awesome-dsh-plugin",
+    "summary": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+    "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 12189,
     "tags": [
-      "experience",
-      "ux",
-      "product",
-      "research",
-      "brand",
-      "campaign"
+      "design",
+      "ui",
+      "accessibility",
+      "ux"
     ],
-    "installUrl": "https://github.com/jovelove7/facet",
-    "skillsUrl": "https://github.com/jovelove7/facet/blob/main/skills/facet-core/SKILL.md",
+    "installUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+    "skillsUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.agents/skills/web-design-guidelines/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "ui-design",
       "experience-design",
       "operations-design",
-      "fashion-design",
-      "folk-art"
+      "video-design"
     ],
-    "qualityScore": 88,
+    "qualityScore": 79,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-24T14:42:29.426Z",
-    "lastSeenAt": "2026-08-24T14:42:29.426Z"
+    "firstSeenAt": "2026-08-24T14:39:38.803Z",
+    "lastSeenAt": "2026-08-24T14:43:22.864Z"
   },
   {
     "id": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/seedance-2-5-skill",
@@ -101,7 +99,7 @@
     "qualityScore": 82,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-24T14:39:40.084Z",
-    "lastSeenAt": "2026-08-24T14:42:28.251Z"
+    "lastSeenAt": "2026-08-24T14:43:23.613Z"
   },
   {
     "id": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/universal-video-prompt-skill",
@@ -136,35 +134,7 @@
     "qualityScore": 74,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-24T14:39:40.328Z",
-    "lastSeenAt": "2026-08-24T14:42:28.433Z"
-  },
-  {
-    "id": "awesome-dsh-plugin/awesome-dsh-plugin/web-design-guidelines",
-    "name": "web-design-guidelines",
-    "source": "awesome-dsh-plugin/awesome-dsh-plugin",
-    "summary": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
-    "security": "B",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 12188,
-    "tags": [
-      "design",
-      "ui",
-      "accessibility"
-    ],
-    "installUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
-    "skillsUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.agents/skills/web-design-guidelines/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "architecture-design",
-      "ui-design",
-      "experience-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-24T14:39:38.803Z",
-    "lastSeenAt": "2026-08-24T14:42:27.388Z"
+    "lastSeenAt": "2026-08-24T14:43:23.752Z"
   },
   {
     "id": "changchangidea-oss/SkillRadar/manage-skills",
@@ -195,7 +165,7 @@
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-24T14:39:47.382Z",
-    "lastSeenAt": "2026-08-24T14:42:29.008Z"
+    "lastSeenAt": "2026-08-24T14:43:24.383Z"
   },
   {
     "id": "changchangidea-oss/SkillRadar/find-skill",
@@ -223,7 +193,7 @@
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-24T14:39:46.824Z",
-    "lastSeenAt": "2026-08-24T14:42:28.629Z"
+    "lastSeenAt": "2026-08-24T14:43:24.080Z"
   },
   {
     "id": "changchangidea-oss/SkillRadar/skill-router",
@@ -256,7 +226,35 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-24T14:39:47.677Z",
-    "lastSeenAt": "2026-08-24T14:42:29.204Z"
+    "lastSeenAt": "2026-08-24T14:43:24.583Z"
+  },
+  {
+    "id": "ramadhanidiwanda-alt/adstream-mcp/tool-design",
+    "name": "adstream-mcp-tool-design",
+    "source": "ramadhanidiwanda-alt/adstream-mcp",
+    "summary": "Design or review Adstream MCP public tools, especially analytics and write tools. Use when adding, changing, or evaluating MCP tool contracts, response schemas, dry-run behavior, preflight validation, idempotency, structured provider errors, capability discovery, or deciding whether logic belongs in MCP core versus AI ",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 3,
+    "tags": [
+      "design",
+      "campaign",
+      "ui"
+    ],
+    "installUrl": "https://github.com/ramadhanidiwanda-alt/adstream-mcp",
+    "skillsUrl": "https://github.com/ramadhanidiwanda-alt/adstream-mcp/blob/main/skills/adstream-mcp/tool-design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "fashion-design",
+      "ui-design",
+      "video-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:43:23.929Z",
+    "lastSeenAt": "2026-08-24T14:43:23.929Z"
   },
   {
     "id": "changchangidea-oss/SkillRadar/inspect-skill",
@@ -283,6 +281,6 @@
     "qualityScore": 65,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-24T14:39:47.076Z",
-    "lastSeenAt": "2026-08-24T14:42:28.806Z"
+    "lastSeenAt": "2026-08-24T14:43:24.236Z"
   }
 ]

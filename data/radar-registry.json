@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T14:42:29.479Z",
+  "generatedAt": "2026-08-24T14:43:24.630Z",
   "version": 1,
   "candidateCount": 9,
   "activeCount": 9,
@@ -27,12 +27,12 @@
         "layout",
         "typography"
       ],
-      "repoStars": 12188,
-      "pushedAt": "2026-08-24T14:35:13Z",
+      "repoStars": 12189,
+      "pushedAt": "2026-08-24T14:42:50Z",
       "contentHash": "ea087c341bfb5b23195c",
       "discovery": "github-radar",
       "firstSeenAt": "2026-08-24T14:39:38.517Z",
-      "lastSeenAt": "2026-08-24T14:42:27.213Z",
+      "lastSeenAt": "2026-08-24T14:43:22.714Z",
       "seenDays": 1,
       "qualityScore": 92,
       "maintenanceScore": 100,
@@ -57,7 +57,7 @@
         {
           "domainId": "experience-design",
           "domainName": "体验设计",
-          "relevance": 73,
+          "relevance": 91,
           "matched": [
             "experience",
             "design",
@@ -72,7 +72,7 @@
         {
           "domainId": "ui-design",
           "domainName": "UI设计",
-          "relevance": 65,
+          "relevance": 83,
           "matched": [
             "design",
             "ui",
@@ -106,84 +106,90 @@
           ]
         }
       ],
-      "signalScore": 78,
+      "signalScore": 84,
       "status": "active"
     },
     {
-      "id": "jovelove7/facet/facet-core",
-      "name": "facet-core",
-      "slug": "facet-core",
-      "source": "jovelove7/facet",
-      "skillPath": "skills/facet-core/SKILL.md",
-      "githubUrl": "https://github.com/jovelove7/facet/blob/main/skills/facet-core/SKILL.md",
-      "installUrl": "https://github.com/jovelove7/facet",
-      "summary": "Trace where a single company's core promise changes, weakens, disappears, or conflicts across brand, marketing, product, UX, policy, support, outcomes, and independent evidence, then present only the best-supported causal hypothesis. Use when a user asks where a company's message breaks or leaks, whether a brand promis",
+      "id": "awesome-dsh-plugin/awesome-dsh-plugin/web-design-guidelines",
+      "name": "web-design-guidelines",
+      "slug": "web-design-guidelines",
+      "source": "awesome-dsh-plugin/awesome-dsh-plugin",
+      "skillPath": ".agents/skills/web-design-guidelines/SKILL.md",
+      "githubUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.agents/skills/web-design-guidelines/SKILL.md",
+      "installUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "summary": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
       "tags": [
-        "experience",
-        "ux",
-        "product",
-        "research",
-        "brand",
-        "campaign"
+        "design",
+        "ui",
+        "accessibility",
+        "ux"
       ],
-      "repoStars": 0,
-      "pushedAt": "2026-08-24T14:40:03Z",
-      "contentHash": "92eb0697794ff8c151f2",
+      "repoStars": 12189,
+      "pushedAt": "2026-08-24T14:42:50Z",
+      "contentHash": "f4647ca866a3accf7637",
       "discovery": "github-radar",
-      "firstSeenAt": "2026-08-24T14:42:29.426Z",
-      "lastSeenAt": "2026-08-24T14:42:29.426Z",
+      "firstSeenAt": "2026-08-24T14:39:38.803Z",
+      "lastSeenAt": "2026-08-24T14:43:22.864Z",
       "seenDays": 1,
-      "qualityScore": 88,
+      "qualityScore": 79,
       "maintenanceScore": 100,
-      "popularityScore": 7,
-      "security": "A",
-      "securityScore": 100,
-      "securityFindings": [],
+      "popularityScore": 98,
+      "security": "B",
+      "securityScore": 88,
+      "securityFindings": [
+        {
+          "name": "network",
+          "severity": "medium",
+          "weight": 10
+        },
+        {
+          "name": "deploy",
+          "severity": "medium",
+          "weight": 7
+        }
+      ],
       "capabilities": {
         "shell": false,
-        "network": false,
+        "network": true,
         "secrets": false,
         "packageInstall": false,
         "filesystemWrite": false
       },
       "classifications": [
         {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 42,
+          "matched": [
+            "design",
+            "ui",
+            "accessibility"
+          ]
+        },
+        {
           "domainId": "experience-design",
           "domainName": "体验设计",
-          "relevance": 53,
+          "relevance": 42,
           "matched": [
-            "experience",
+            "design",
             "ux",
-            "product",
-            "research"
+            "accessibility"
           ]
         },
         {
           "domainId": "operations-design",
           "domainName": "运营设计",
-          "relevance": 27,
+          "relevance": 26,
           "matched": [
-            "brand",
-            "campaign",
-            "product"
+            "design"
           ]
         },
         {
-          "domainId": "fashion-design",
-          "domainName": "服装设计",
-          "relevance": 19,
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 26,
           "matched": [
-            "brand",
-            "campaign"
-          ]
-        },
-        {
-          "domainId": "folk-art",
-          "domainName": "民间艺术",
-          "relevance": 13,
-          "matched": [
-            "art",
-            "pattern"
+            "design"
           ]
         }
       ],
@@ -217,7 +223,7 @@
       "contentHash": "8868058230b1d1c2a440",
       "discovery": "github-radar",
       "firstSeenAt": "2026-08-24T14:39:40.084Z",
-      "lastSeenAt": "2026-08-24T14:42:28.251Z",
+      "lastSeenAt": "2026-08-24T14:43:23.613Z",
       "seenDays": 1,
       "qualityScore": 82,
       "maintenanceScore": 100,
@@ -326,7 +332,7 @@
       "contentHash": "a521c6ce7dd2aa00f8ee",
       "discovery": "github-radar",
       "firstSeenAt": "2026-08-24T14:39:40.328Z",
-      "lastSeenAt": "2026-08-24T14:42:28.433Z",
+      "lastSeenAt": "2026-08-24T14:43:23.752Z",
       "seenDays": 1,
       "qualityScore": 74,
       "maintenanceScore": 100,
@@ -391,92 +397,6 @@
       "status": "active"
     },
     {
-      "id": "awesome-dsh-plugin/awesome-dsh-plugin/web-design-guidelines",
-      "name": "web-design-guidelines",
-      "slug": "web-design-guidelines",
-      "source": "awesome-dsh-plugin/awesome-dsh-plugin",
-      "skillPath": ".agents/skills/web-design-guidelines/SKILL.md",
-      "githubUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.agents/skills/web-design-guidelines/SKILL.md",
-      "installUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
-      "summary": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
-      "tags": [
-        "design",
-        "ui",
-        "accessibility"
-      ],
-      "repoStars": 12188,
-      "pushedAt": "2026-08-24T14:35:13Z",
-      "contentHash": "f4647ca866a3accf7637",
-      "discovery": "github-radar",
-      "firstSeenAt": "2026-08-24T14:39:38.803Z",
-      "lastSeenAt": "2026-08-24T14:42:27.388Z",
-      "seenDays": 1,
-      "qualityScore": 79,
-      "maintenanceScore": 100,
-      "popularityScore": 98,
-      "security": "B",
-      "securityScore": 88,
-      "securityFindings": [
-        {
-          "name": "network",
-          "severity": "medium",
-          "weight": 10
-        },
-        {
-          "name": "deploy",
-          "severity": "medium",
-          "weight": 7
-        }
-      ],
-      "capabilities": {
-        "shell": false,
-        "network": true,
-        "secrets": false,
-        "packageInstall": false,
-        "filesystemWrite": false
-      },
-      "classifications": [
-        {
-          "domainId": "operations-design",
-          "domainName": "运营设计",
-          "relevance": 26,
-          "matched": [
-            "design"
-          ]
-        },
-        {
-          "domainId": "architecture-design",
-          "domainName": "建筑设计",
-          "relevance": 26,
-          "matched": [
-            "design"
-          ]
-        },
-        {
-          "domainId": "ui-design",
-          "domainName": "UI设计",
-          "relevance": 24,
-          "matched": [
-            "design",
-            "ui",
-            "accessibility"
-          ]
-        },
-        {
-          "domainId": "experience-design",
-          "domainName": "体验设计",
-          "relevance": 24,
-          "matched": [
-            "design",
-            "ux",
-            "accessibility"
-          ]
-        }
-      ],
-      "signalScore": 64,
-      "status": "active"
-    },
-    {
       "id": "changchangidea-oss/SkillRadar/manage-skills",
       "name": "manage-skills",
       "slug": "manage-skills",
@@ -494,11 +414,11 @@
         "fashion"
       ],
       "repoStars": 1,
-      "pushedAt": "2026-08-24T14:41:50Z",
+      "pushedAt": "2026-08-24T14:42:48Z",
       "contentHash": "e2374d9ba6e201662e08",
       "discovery": "github-radar",
       "firstSeenAt": "2026-08-24T14:39:47.382Z",
-      "lastSeenAt": "2026-08-24T14:42:29.008Z",
+      "lastSeenAt": "2026-08-24T14:43:24.383Z",
       "seenDays": 1,
       "qualityScore": 73,
       "maintenanceScore": 100,
@@ -574,11 +494,11 @@
         "ui"
       ],
       "repoStars": 1,
-      "pushedAt": "2026-08-24T14:41:50Z",
+      "pushedAt": "2026-08-24T14:42:48Z",
       "contentHash": "dc3ede44ddbf86eb64e5",
       "discovery": "github-radar",
       "firstSeenAt": "2026-08-24T14:39:46.824Z",
-      "lastSeenAt": "2026-08-24T14:42:28.629Z",
+      "lastSeenAt": "2026-08-24T14:43:24.080Z",
       "seenDays": 1,
       "qualityScore": 73,
       "maintenanceScore": 100,
@@ -653,11 +573,11 @@
         "environmental"
       ],
       "repoStars": 1,
-      "pushedAt": "2026-08-24T14:41:50Z",
+      "pushedAt": "2026-08-24T14:42:48Z",
       "contentHash": "40d97efed184746cf684",
       "discovery": "github-radar",
       "firstSeenAt": "2026-08-24T14:39:47.677Z",
-      "lastSeenAt": "2026-08-24T14:42:29.204Z",
+      "lastSeenAt": "2026-08-24T14:43:24.583Z",
       "seenDays": 1,
       "qualityScore": 81,
       "maintenanceScore": 100,
@@ -727,6 +647,86 @@
       "status": "active"
     },
     {
+      "id": "ramadhanidiwanda-alt/adstream-mcp/tool-design",
+      "name": "adstream-mcp-tool-design",
+      "slug": "tool-design",
+      "source": "ramadhanidiwanda-alt/adstream-mcp",
+      "skillPath": "skills/adstream-mcp/tool-design/SKILL.md",
+      "githubUrl": "https://github.com/ramadhanidiwanda-alt/adstream-mcp/blob/main/skills/adstream-mcp/tool-design/SKILL.md",
+      "installUrl": "https://github.com/ramadhanidiwanda-alt/adstream-mcp",
+      "summary": "Design or review Adstream MCP public tools, especially analytics and write tools. Use when adding, changing, or evaluating MCP tool contracts, response schemas, dry-run behavior, preflight validation, idempotency, structured provider errors, capability discovery, or deciding whether logic belongs in MCP core versus AI ",
+      "tags": [
+        "design",
+        "campaign",
+        "ui"
+      ],
+      "repoStars": 3,
+      "pushedAt": "2026-08-24T14:36:59Z",
+      "contentHash": "ee10156e46b046911b31",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:43:23.929Z",
+      "lastSeenAt": "2026-08-24T14:43:23.929Z",
+      "seenDays": 1,
+      "qualityScore": 81,
+      "maintenanceScore": 100,
+      "popularityScore": 14,
+      "security": "C",
+      "securityScore": 66,
+      "securityFindings": [
+        {
+          "name": "secret-access",
+          "severity": "high",
+          "weight": 18
+        }
+      ],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": true,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 37,
+          "matched": [
+            "design",
+            "campaign"
+          ]
+        },
+        {
+          "domainId": "fashion-design",
+          "domainName": "服装设计",
+          "relevance": 19,
+          "matched": [
+            "design",
+            "campaign"
+          ]
+        },
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 13,
+          "matched": [
+            "design",
+            "ui"
+          ]
+        },
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 8,
+          "matched": [
+            "design"
+          ]
+        }
+      ],
+      "signalScore": 57,
+      "status": "active"
+    },
+    {
       "id": "changchangidea-oss/SkillRadar/inspect-skill",
       "name": "inspect-skill",
       "slug": "inspect-skill",
@@ -740,11 +740,11 @@
         "ui"
       ],
       "repoStars": 1,
-      "pushedAt": "2026-08-24T14:41:50Z",
+      "pushedAt": "2026-08-24T14:42:48Z",
       "contentHash": "1d131a6c2a6aa2d54845",
       "discovery": "github-radar",
       "firstSeenAt": "2026-08-24T14:39:47.076Z",
-      "lastSeenAt": "2026-08-24T14:42:28.806Z",
+      "lastSeenAt": "2026-08-24T14:43:24.236Z",
       "seenDays": 1,
       "qualityScore": 65,
       "maintenanceScore": 100,
