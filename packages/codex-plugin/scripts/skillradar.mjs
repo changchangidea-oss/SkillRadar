@@ -22,7 +22,7 @@ function readJson(paths) {
 }
 
 async function fetchJson(url) {
-  const r = await fetch(url, { headers: { accept: 'application/json', 'user-agent': 'SkillRadar-Codex-Plugin/0.2' } })
+  const r = await fetch(url, { headers: { accept: 'application/json', 'user-agent': 'SkillRadar-Codex-Plugin/0.3' } })
   if (!r.ok) throw new Error(`${r.status} ${r.statusText}`)
   return r.json()
 }
@@ -45,7 +45,8 @@ async function loadRegistry() {
   }
   const mapped = design.map(s => ({
     id:s.id,name:s.name,source:s.source,category:'Design',tags:s.tags||[],summary:s.summary,
-    security:s.security||'B',score:s.signalScore||70,installs:s.installs||0,installUrl:s.installUrl,skillsUrl:s.skillsUrl
+    security:s.security||'B',score:s.signalScore||70,installs:s.installs||0,installUrl:s.installUrl,skillsUrl:s.skillsUrl,
+    discovery:s.discovery||'seed',domains:s.domains||[]
   }))
   const seen = new Set()
   return [...core, ...mapped].filter(s => !seen.has(s.id) && seen.add(s.id))
@@ -72,19 +73,20 @@ function tokens(text) {
 }
 
 function scoreSkill(s, query) {
-  const q=tokens(query); const hay=`${s.name} ${s.category} ${(s.tags||[]).join(' ')} ${s.summary}`.toLowerCase()
+  const q=tokens(query)
+  const hay=`${s.name} ${s.category} ${(s.tags||[]).join(' ')} ${(s.domains||[]).join(' ')} ${s.summary}`.toLowerCase()
   let hit=0, special=0
   const specialty=new Set(['fashion','industrial','architecture','interior','landscape','3d-printing','fabrication','cad','video','film','storyboard','vfx','ux','usability','digital-media','craft','pattern'])
   for (const t of q) if (hay.includes(t)) { const sp=specialty.has(t); hit+=sp?4:(t.length>5?2:1); if(sp) special++ }
-  const sec=s.security==='A'?8:s.security==='B'?5:s.security==='C'?1:-8
+  const sec=s.security==='A'?8:s.security==='B'?5:s.security==='C'?1:-100
   return { ...s, match_score:Math.max(0,Math.min(100,Math.round(hit*9+(s.score||70)*.30+sec))), specialty_hits:special }
 }
 
 async function localResult() {
-  const registry=await loadRegistry()
+  const registry=(await loadRegistry()).filter(s=>!['D','Blocked'].includes(s.security))
   if (cmd==='inspect') {
     const id=value.toLowerCase(); const skill=registry.find(s=>s.id.toLowerCase()===id||s.name.toLowerCase()===id)
-    if (!skill) throw new Error(`Skill not found: ${value}`)
+    if (!skill) throw new Error(`Skill not found or blocked by safety gate: ${value}`)
     return {source:'skillradar-registry',skill}
   }
   const ranked=registry.map(s=>scoreSkill(s,value)).filter(s=>cmd==='match'||s.match_score>20).sort((a,b)=>b.match_score-a.match_score||b.specialty_hits-a.specialty_hits||(b.score||0)-(a.score||0))
