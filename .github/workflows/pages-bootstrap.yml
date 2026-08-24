@@ -1,0 +1,92 @@
+name: Bootstrap GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pages-bootstrap.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: skillradar-pages-bootstrap
+  cancel-in-progress: false
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    outputs:
+      enabled: ${{ steps.pages.outputs.enabled }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check or enable Pages
+        id: pages
+        env:
+          GH_TOKEN: ${{ secrets.PAGES_TOKEN || github.token }}
+          HAS_ADMIN_TOKEN: ${{ secrets.PAGES_TOKEN != '' }}
+        shell: bash
+        run: |
+          set +e
+          CHECK="$(gh api "repos/${GITHUB_REPOSITORY}/pages" 2>&1)"
+          RC=$?
+          if [ "$RC" -eq 0 ]; then
+            STATUS="enabled"
+            MESSAGE="Pages site already configured"
+            ENABLED="true"
+          else
+            ENABLE="$(gh api --method POST "repos/${GITHUB_REPOSITORY}/pages" -f build_type=workflow 2>&1)"
+            ERC=$?
+            if [ "$ERC" -eq 0 ]; then
+              STATUS="enabled"
+              MESSAGE="Pages site enabled by bootstrap workflow"
+              ENABLED="true"
+            else
+              STATUS="action-required"
+              MESSAGE="$(printf '%s' "$ENABLE" | tr '\n' ' ' | sed 's/"/\\"/g' | cut -c1-500)"
+              ENABLED="false"
+            fi
+          fi
+          echo "enabled=${ENABLED}" >> "$GITHUB_OUTPUT"
+          TOKEN_SOURCE="github_token"
+          if [ "$HAS_ADMIN_TOKEN" = "true" ]; then TOKEN_SOURCE="pages_token"; fi
+          node -e 'const fs=require("fs"); fs.writeFileSync("data/pages-status.json", JSON.stringify({checkedAt:new Date().toISOString(),status:process.env.STATUS,message:process.env.MESSAGE,tokenSource:process.env.TOKEN_SOURCE,expectedUrl:"https://changchangidea-oss.github.io/SkillRadar/"},null,2)+"\n")' \
+            STATUS="$STATUS" MESSAGE="$MESSAGE" TOKEN_SOURCE="$TOKEN_SOURCE"
+      - name: Commit Pages bootstrap status
+        run: |
+          git add data/pages-status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "skillradar-pages-bot"
+          git config user.email "skillradar-pages-bot@users.noreply.github.com"
+          git commit -m "chore(pages): record bootstrap status"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+  deploy:
+    needs: bootstrap
+    if: needs.bootstrap.outputs.enabled == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      actions: read
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: .
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
