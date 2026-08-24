@@ -1,5 +1,21 @@
 {
-  "generatedAt": "2026-08-24T13:40:00Z",
-  "status": "seed",
+  "generatedAt": "2026-08-24T14:38:00.000Z",
+  "status": "initializing",
+  "source": "SkillRadar 0.3 pipeline baseline",
+  "pipeline": [
+    "discover",
+    "parse",
+    "security-scan",
+    "classify",
+    "rank",
+    "publish-to-registry",
+    "codex-route"
+  ],
+  "discoveryCount": 0,
+  "activeCount": 0,
+  "blockedCount": 0,
+  "reviewCount": 0,
+  "errors": [],
+  "domainRadar": {},
   "discoveries": []
 }
