@@ -1,0 +1,12 @@
+{
+  "name": "skillradar",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Open registry and task router for agent skills used by Codex and other coding agents.",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "serve": "python3 -m http.server 4173",
+    "radar": "node scripts/update-design-radar.mjs"
+  },
+  "license": "MIT"
+}
