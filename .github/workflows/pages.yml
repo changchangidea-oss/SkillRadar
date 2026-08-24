@@ -1,27 +1,44 @@
 name: Deploy GitHub Pages
+
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'data/radar-latest.json'
+      - 'data/radar-registry.json'
+      - 'data/ranking-history.json'
+      - 'data/design-domains.json'
+      - 'data/design-skills-radar.json'
+      - 'data/design-skill-index.json'
   workflow_dispatch:
+
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages
   cancel-in-progress: true
+
 jobs:
   deploy:
+    runs-on: ubuntu-latest
+    continue-on-error: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          token: ${{ secrets.PAGES_TOKEN || github.token }}
+          enablement: ${{ secrets.PAGES_TOKEN != '' }}
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: .
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
