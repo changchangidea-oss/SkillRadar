@@ -1,0 +1,39 @@
+name: Daily Design Skill Radar
+
+on:
+  schedule:
+    - cron: '20 2 * * *' # 10:20 Beijing / 02:20 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: design-skill-radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Discover current design skills
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/update-design-radar.mjs
+      - name: Validate registry
+        run: node scripts/validate.mjs
+      - name: Commit radar snapshot when changed
+        run: |
+          if git diff --quiet -- data/radar-latest.json; then
+            echo "No radar changes today."
+            exit 0
+          fi
+          git config user.name "skillradar-bot"
+          git config user.email "skillradar-bot@users.noreply.github.com"
+          git add data/radar-latest.json
+          git commit -m "chore(radar): daily design skill discovery"
+          git push
