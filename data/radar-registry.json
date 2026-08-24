@@ -1,7 +1,1885 @@
 {
-  "generatedAt": "2026-08-24T14:35:00.000Z",
+  "generatedAt": "2026-08-24T14:39:47.726Z",
   "version": 1,
-  "candidateCount": 0,
-  "activeCount": 0,
-  "candidates": []
+  "candidateCount": 23,
+  "activeCount": 15,
+  "candidates": [
+    {
+      "id": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+      "name": "ui-ux-pro-max",
+      "slug": "ui-ux-pro-max",
+      "source": "awesome-dsh-plugin/awesome-dsh-plugin",
+      "skillPath": ".agents/skills/ui-ux-pro-max/SKILL.md",
+      "githubUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.agents/skills/ui-ux-pro-max/SKILL.md",
+      "installUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "summary": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data:",
+      "tags": [
+        "design",
+        "ui",
+        "design-system",
+        "layout",
+        "typography",
+        "interaction",
+        "accessibility",
+        "experience",
+        "ux",
+        "product",
+        "usability",
+        "mobile"
+      ],
+      "repoStars": 12187,
+      "pushedAt": "2026-08-24T14:35:13Z",
+      "contentHash": "ea087c341bfb5b23195c",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:38.517Z",
+      "lastSeenAt": "2026-08-24T14:39:38.517Z",
+      "seenDays": 1,
+      "qualityScore": 92,
+      "maintenanceScore": 100,
+      "popularityScore": 98,
+      "security": "C",
+      "securityScore": 66,
+      "securityFindings": [
+        {
+          "name": "secret-access",
+          "severity": "high",
+          "weight": 18
+        }
+      ],
+      "capabilities": {
+        "shell": true,
+        "network": false,
+        "secrets": true,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 83,
+          "matched": [
+            "design",
+            "ui",
+            "design-system",
+            "layout",
+            "typography",
+            "interaction",
+            "accessibility"
+          ]
+        },
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 73,
+          "matched": [
+            "experience",
+            "design",
+            "ux",
+            "product",
+            "interaction",
+            "usability",
+            "mobile",
+            "accessibility"
+          ]
+        },
+        {
+          "domainId": "visual-communication",
+          "domainName": "视觉传达",
+          "relevance": 53,
+          "matched": [
+            "visual",
+            "typography",
+            "layout",
+            "color"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 50,
+          "matched": [
+            "design",
+            "product",
+            "visual",
+            "motion"
+          ]
+        }
+      ],
+      "signalScore": 81,
+      "status": "active"
+    },
+    {
+      "id": "Mr-Salticidae/knowledge-base/remotion-skill",
+      "name": "remotion-explainer-workflow",
+      "slug": "remotion-skill",
+      "source": "Mr-Salticidae/knowledge-base",
+      "skillPath": "07_skill存档/remotion-skill/SKILL.md",
+      "githubUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/remotion-skill/SKILL.md",
+      "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+      "summary": "Data-driven Remotion explainer video workflow for in-a-nutshell-inspired flat-vector science/knowledge videos. Use when Codex needs to turn notes, outlines, scripts, or sceneSpecs into a reusable Remotion video production plan, design sceneSpecs/sceneAssets, coordinate other AIGC skills through a dry-run protocol, or p",
+      "tags": [
+        "video",
+        "design",
+        "motion",
+        "editing",
+        "film",
+        "audio",
+        "visual",
+        "layout",
+        "editorial",
+        "vector",
+        "illustration",
+        "color"
+      ],
+      "repoStars": 23,
+      "pushedAt": "2026-08-24T14:38:07Z",
+      "contentHash": "411bc9566bfbea11b791",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:42.754Z",
+      "lastSeenAt": "2026-08-24T14:39:42.754Z",
+      "seenDays": 1,
+      "qualityScore": 82,
+      "maintenanceScore": 100,
+      "popularityScore": 33,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 63,
+          "matched": [
+            "video",
+            "design",
+            "motion",
+            "editing",
+            "film",
+            "audio"
+          ]
+        },
+        {
+          "domainId": "visual-communication",
+          "domainName": "视觉传达",
+          "relevance": 54,
+          "matched": [
+            "visual",
+            "layout",
+            "editorial",
+            "vector",
+            "illustration",
+            "color"
+          ]
+        },
+        {
+          "domainId": "fashion-design",
+          "domainName": "服装设计",
+          "relevance": 51,
+          "matched": [
+            "fashion",
+            "design",
+            "color",
+            "photo",
+            "visual",
+            "illustration"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 48,
+          "matched": [
+            "design",
+            "product",
+            "visual",
+            "photo",
+            "video",
+            "motion"
+          ]
+        }
+      ],
+      "signalScore": 74,
+      "status": "active"
+    },
+    {
+      "id": "awesome-dsh-plugin/awesome-dsh-plugin/web-design-guidelines",
+      "name": "web-design-guidelines",
+      "slug": "web-design-guidelines",
+      "source": "awesome-dsh-plugin/awesome-dsh-plugin",
+      "skillPath": ".agents/skills/web-design-guidelines/SKILL.md",
+      "githubUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.agents/skills/web-design-guidelines/SKILL.md",
+      "installUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "summary": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+      "tags": [
+        "design",
+        "ui",
+        "accessibility"
+      ],
+      "repoStars": 12187,
+      "pushedAt": "2026-08-24T14:35:13Z",
+      "contentHash": "f4647ca866a3accf7637",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:38.803Z",
+      "lastSeenAt": "2026-08-24T14:39:38.803Z",
+      "seenDays": 1,
+      "qualityScore": 79,
+      "maintenanceScore": 100,
+      "popularityScore": 98,
+      "security": "B",
+      "securityScore": 88,
+      "securityFindings": [
+        {
+          "name": "network",
+          "severity": "medium",
+          "weight": 10
+        },
+        {
+          "name": "deploy",
+          "severity": "medium",
+          "weight": 7
+        }
+      ],
+      "capabilities": {
+        "shell": false,
+        "network": true,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 42,
+          "matched": [
+            "design",
+            "ui",
+            "accessibility"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 26,
+          "matched": [
+            "design"
+          ]
+        },
+        {
+          "domainId": "industrial-design",
+          "domainName": "工业设计",
+          "relevance": 26,
+          "matched": [
+            "design"
+          ]
+        },
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 24,
+          "matched": [
+            "design",
+            "ux",
+            "accessibility"
+          ]
+        }
+      ],
+      "signalScore": 70,
+      "status": "active"
+    },
+    {
+      "id": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/seedance-2-5-skill",
+      "name": "seedance-2-5-skill",
+      "slug": "seedance-2-5-skill",
+      "source": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills",
+      "skillPath": "skills/seedance-2-5-skill/SKILL.md",
+      "githubUrl": "https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills/blob/main/skills/seedance-2-5-skill/SKILL.md",
+      "installUrl": "https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills",
+      "summary": ">-",
+      "tags": [
+        "video",
+        "design",
+        "motion",
+        "editing",
+        "film",
+        "storyboard",
+        "audio",
+        "product",
+        "visual",
+        "media",
+        "3d"
+      ],
+      "repoStars": 158,
+      "pushedAt": "2026-08-24T08:49:17Z",
+      "contentHash": "8868058230b1d1c2a440",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:40.084Z",
+      "lastSeenAt": "2026-08-24T14:39:40.084Z",
+      "seenDays": 1,
+      "qualityScore": 82,
+      "maintenanceScore": 100,
+      "popularityScore": 53,
+      "security": "C",
+      "securityScore": 66,
+      "securityFindings": [
+        {
+          "name": "secret-access",
+          "severity": "high",
+          "weight": 18
+        },
+        {
+          "name": "network",
+          "severity": "medium",
+          "weight": 10
+        },
+        {
+          "name": "filesystem-write",
+          "severity": "medium",
+          "weight": 9
+        }
+      ],
+      "capabilities": {
+        "shell": true,
+        "network": true,
+        "secrets": true,
+        "packageInstall": false,
+        "filesystemWrite": true
+      },
+      "classifications": [
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 56,
+          "matched": [
+            "video",
+            "design",
+            "motion",
+            "editing",
+            "film",
+            "storyboard",
+            "audio"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 40,
+          "matched": [
+            "design",
+            "product",
+            "visual",
+            "video",
+            "motion"
+          ]
+        },
+        {
+          "domainId": "digital-media-film",
+          "domainName": "数媒影视",
+          "relevance": 34,
+          "matched": [
+            "media",
+            "film",
+            "video",
+            "3d",
+            "motion"
+          ]
+        },
+        {
+          "domainId": "folk-art",
+          "domainName": "民间艺术",
+          "relevance": 31,
+          "matched": [
+            "art",
+            "visual"
+          ]
+        }
+      ],
+      "signalScore": 67,
+      "status": "active"
+    },
+    {
+      "id": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/universal-video-prompt-skill",
+      "name": "universal-video-prompt-skill",
+      "slug": "universal-video-prompt-skill",
+      "source": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills",
+      "skillPath": "skills/universal-video-prompt-skill/SKILL.md",
+      "githubUrl": "https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills/blob/main/skills/universal-video-prompt-skill/SKILL.md",
+      "installUrl": "https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills",
+      "summary": ">-",
+      "tags": [
+        "video",
+        "motion",
+        "film",
+        "storyboard",
+        "audio",
+        "art",
+        "pattern",
+        "craft",
+        "brand",
+        "product"
+      ],
+      "repoStars": 158,
+      "pushedAt": "2026-08-24T08:49:17Z",
+      "contentHash": "a521c6ce7dd2aa00f8ee",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:40.328Z",
+      "lastSeenAt": "2026-08-24T14:39:40.328Z",
+      "seenDays": 1,
+      "qualityScore": 74,
+      "maintenanceScore": 100,
+      "popularityScore": 53,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 40,
+          "matched": [
+            "video",
+            "motion",
+            "film",
+            "storyboard",
+            "audio"
+          ]
+        },
+        {
+          "domainId": "folk-art",
+          "domainName": "民间艺术",
+          "relevance": 39,
+          "matched": [
+            "art",
+            "pattern",
+            "craft"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 32,
+          "matched": [
+            "brand",
+            "product",
+            "video",
+            "motion"
+          ]
+        },
+        {
+          "domainId": "digital-media-film",
+          "domainName": "数媒影视",
+          "relevance": 29,
+          "matched": [
+            "media",
+            "film",
+            "video",
+            "motion"
+          ]
+        }
+      ],
+      "signalScore": 67,
+      "status": "active"
+    },
+    {
+      "id": "nexus-substrate/nexus-agents/research-and-vote",
+      "name": "research-and-vote",
+      "slug": "research-and-vote",
+      "source": "nexus-substrate/nexus-agents",
+      "skillPath": "skills/research-and-vote/SKILL.md",
+      "githubUrl": "https://github.com/nexus-substrate/nexus-agents/blob/main/skills/research-and-vote/SKILL.md",
+      "installUrl": "https://github.com/nexus-substrate/nexus-agents",
+      "summary": "|",
+      "tags": [
+        "design",
+        "research",
+        "architecture"
+      ],
+      "repoStars": 18,
+      "pushedAt": "2026-08-24T14:35:21Z",
+      "contentHash": "9d8520b2687eb3227f36",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:45.721Z",
+      "lastSeenAt": "2026-08-24T14:39:45.721Z",
+      "seenDays": 1,
+      "qualityScore": 67,
+      "maintenanceScore": 100,
+      "popularityScore": 31,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 37,
+          "matched": [
+            "design",
+            "research"
+          ]
+        },
+        {
+          "domainId": "environmental-design",
+          "domainName": "环艺设计",
+          "relevance": 19,
+          "matched": [
+            "design",
+            "architecture"
+          ]
+        },
+        {
+          "domainId": "architecture-design",
+          "domainName": "建筑设计",
+          "relevance": 19,
+          "matched": [
+            "architecture",
+            "design"
+          ]
+        },
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 8,
+          "matched": [
+            "design"
+          ]
+        }
+      ],
+      "signalScore": 63,
+      "status": "active"
+    },
+    {
+      "id": "nexus-substrate/nexus-agents/ui-ux-design",
+      "name": "ui-ux-design",
+      "slug": "ui-ux-design",
+      "source": "nexus-substrate/nexus-agents",
+      "skillPath": "skills/ui-ux-design/SKILL.md",
+      "githubUrl": "https://github.com/nexus-substrate/nexus-agents/blob/main/skills/ui-ux-design/SKILL.md",
+      "installUrl": "https://github.com/nexus-substrate/nexus-agents",
+      "summary": "|",
+      "tags": [
+        "visual",
+        "brand",
+        "typography",
+        "layout",
+        "editorial",
+        "color",
+        "design",
+        "ux",
+        "product",
+        "accessibility",
+        "photo",
+        "motion"
+      ],
+      "repoStars": 18,
+      "pushedAt": "2026-08-24T14:35:21Z",
+      "contentHash": "98fdee30250cf42bb579",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:46.014Z",
+      "lastSeenAt": "2026-08-24T14:39:46.014Z",
+      "seenDays": 1,
+      "qualityScore": 71,
+      "maintenanceScore": 100,
+      "popularityScore": 31,
+      "security": "C",
+      "securityScore": 66,
+      "securityFindings": [
+        {
+          "name": "secret-access",
+          "severity": "high",
+          "weight": 18
+        },
+        {
+          "name": "network",
+          "severity": "medium",
+          "weight": 10
+        }
+      ],
+      "capabilities": {
+        "shell": true,
+        "network": true,
+        "secrets": true,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "visual-communication",
+          "domainName": "视觉传达",
+          "relevance": 54,
+          "matched": [
+            "visual",
+            "brand",
+            "typography",
+            "layout",
+            "editorial",
+            "color"
+          ]
+        },
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 50,
+          "matched": [
+            "design",
+            "ux",
+            "product",
+            "accessibility"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 48,
+          "matched": [
+            "design",
+            "brand",
+            "product",
+            "visual",
+            "photo",
+            "motion"
+          ]
+        },
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 43,
+          "matched": [
+            "design",
+            "ui",
+            "layout",
+            "typography",
+            "accessibility"
+          ]
+        }
+      ],
+      "signalScore": 62,
+      "status": "active"
+    },
+    {
+      "id": "Mr-Salticidae/knowledge-base/blind-editing-workflow",
+      "name": "blind-editing-workflow",
+      "slug": "blind-editing-workflow",
+      "source": "Mr-Salticidae/knowledge-base",
+      "skillPath": "07_skill存档/blind-editing-workflow/SKILL.md",
+      "githubUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/blind-editing-workflow/SKILL.md",
+      "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+      "summary": "蒙眼剪辑法——一套让不会专业剪辑软件的创作者，用 Python + ffmpeg 完成精确视频剪辑的工作流。适用于 AIGC 图片/视频素材合成 MV、角色 PV、内容短片等场景。当用户说\"帮我把这些图做成视频\"、\"按卡点剪辑\"、\"生成剪辑方案\"、\"出剪辑代码\"时触发。本 Skill 涉及 ffmpeg 和 Python 本地执行，适合在 Codex 本地环境中运行。",
+      "tags": [
+        "motion",
+        "editing"
+      ],
+      "repoStars": 23,
+      "pushedAt": "2026-08-24T14:38:07Z",
+      "contentHash": "b54f177a4ff2c979e898",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:42.522Z",
+      "lastSeenAt": "2026-08-24T14:39:42.522Z",
+      "seenDays": 1,
+      "qualityScore": 75,
+      "maintenanceScore": 100,
+      "popularityScore": 33,
+      "security": "B",
+      "securityScore": 88,
+      "securityFindings": [
+        {
+          "name": "filesystem-write",
+          "severity": "medium",
+          "weight": 9
+        }
+      ],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": true
+      },
+      "classifications": [
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 34,
+          "matched": [
+            "motion",
+            "editing"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 8,
+          "matched": [
+            "motion"
+          ]
+        },
+        {
+          "domainId": "digital-media-film",
+          "domainName": "数媒影视",
+          "relevance": 8,
+          "matched": [
+            "motion"
+          ]
+        },
+        {
+          "domainId": "folk-art",
+          "domainName": "民间艺术",
+          "relevance": 5,
+          "matched": [
+            "art"
+          ]
+        }
+      ],
+      "signalScore": 61,
+      "status": "active"
+    },
+    {
+      "id": "nexus-substrate/nexus-agents/api-and-interface-design",
+      "name": "api-and-interface-design",
+      "slug": "api-and-interface-design",
+      "source": "nexus-substrate/nexus-agents",
+      "skillPath": "skills/api-and-interface-design/SKILL.md",
+      "githubUrl": "https://github.com/nexus-substrate/nexus-agents/blob/main/skills/api-and-interface-design/SKILL.md",
+      "installUrl": "https://github.com/nexus-substrate/nexus-agents",
+      "summary": "|",
+      "tags": [
+        "architecture",
+        "design",
+        "rendering",
+        "map"
+      ],
+      "repoStars": 18,
+      "pushedAt": "2026-08-24T14:35:21Z",
+      "contentHash": "346daae22260c9e479d2",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:45.502Z",
+      "lastSeenAt": "2026-08-24T14:39:45.502Z",
+      "seenDays": 1,
+      "qualityScore": 59,
+      "maintenanceScore": 100,
+      "popularityScore": 31,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": true,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "architecture-design",
+          "domainName": "建筑设计",
+          "relevance": 35,
+          "matched": [
+            "architecture",
+            "design",
+            "rendering",
+            "map"
+          ]
+        },
+        {
+          "domainId": "environmental-design",
+          "domainName": "环艺设计",
+          "relevance": 30,
+          "matched": [
+            "design",
+            "architecture",
+            "rendering"
+          ]
+        },
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 26,
+          "matched": [
+            "design"
+          ]
+        },
+        {
+          "domainId": "fashion-design",
+          "domainName": "服装设计",
+          "relevance": 24,
+          "matched": [
+            "design",
+            "color",
+            "brand"
+          ]
+        }
+      ],
+      "signalScore": 61,
+      "status": "active"
+    },
+    {
+      "id": "changchangidea-oss/SkillRadar/manage-skills",
+      "name": "manage-skills",
+      "slug": "manage-skills",
+      "source": "changchangidea-oss/SkillRadar",
+      "skillPath": "packages/codex-plugin/skills/manage-skills/SKILL.md",
+      "githubUrl": "https://github.com/changchangidea-oss/SkillRadar/blob/main/packages/codex-plugin/skills/manage-skills/SKILL.md",
+      "installUrl": "https://github.com/changchangidea-oss/SkillRadar",
+      "summary": "Keep Codex skills compact by identifying duplicates, checking which skills belong globally versus per project, and recommending additions or removals based on current work.",
+      "tags": [
+        "design",
+        "campaign",
+        "visual",
+        "motion",
+        "fashion",
+        "typography"
+      ],
+      "repoStars": 1,
+      "pushedAt": "2026-08-24T14:38:52Z",
+      "contentHash": "e2374d9ba6e201662e08",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:47.382Z",
+      "lastSeenAt": "2026-08-24T14:39:47.382Z",
+      "seenDays": 1,
+      "qualityScore": 73,
+      "maintenanceScore": 100,
+      "popularityScore": 7,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 35,
+          "matched": [
+            "design",
+            "campaign",
+            "visual",
+            "motion"
+          ]
+        },
+        {
+          "domainId": "fashion-design",
+          "domainName": "服装设计",
+          "relevance": 35,
+          "matched": [
+            "fashion",
+            "design",
+            "campaign",
+            "visual"
+          ]
+        },
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 27,
+          "matched": [
+            "design",
+            "motion",
+            "typography"
+          ]
+        },
+        {
+          "domainId": "digital-media-film",
+          "domainName": "数媒影视",
+          "relevance": 26,
+          "matched": [
+            "motion"
+          ]
+        }
+      ],
+      "signalScore": 61,
+      "status": "active"
+    },
+    {
+      "id": "Mr-Salticidae/knowledge-base/aigc-video-cover-gpt",
+      "name": "aigc-video-cover-gpt",
+      "slug": "aigc-video-cover-gpt",
+      "source": "Mr-Salticidae/knowledge-base",
+      "skillPath": "07_skill存档/aigc-video-cover-gpt/SKILL.md",
+      "githubUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/aigc-video-cover-gpt/SKILL.md",
+      "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+      "summary": "用 GPT Image 2 一步生成「商单/科普视频」高质量横版封面的工作流。输入一张人物参考图 + 一份视频脚本，自动发散标题钩子、套用商单封面公式（构图不固定·暗 / 亮双影调随机）、写出含锁脸与中文大字策略的 GPT Image 2 提示词（中间产物），并一次出若干张可发布的 16:9 封面。当用户说\"给这个视频做封面\"\"根据脚本出封面\"\"用 GPT Image 2 做视频封面\"\"把人物参考图做成封面\"时触发。",
+      "tags": [
+        "video",
+        "photo",
+        "layout"
+      ],
+      "repoStars": 23,
+      "pushedAt": "2026-08-24T14:38:07Z",
+      "contentHash": "bca7a173dad18bd0a5d5",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:42.265Z",
+      "lastSeenAt": "2026-08-24T14:39:42.265Z",
+      "seenDays": 1,
+      "qualityScore": 73,
+      "maintenanceScore": 100,
+      "popularityScore": 33,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 26,
+          "matched": [
+            "video"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 16,
+          "matched": [
+            "photo",
+            "video"
+          ]
+        },
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 8,
+          "matched": [
+            "layout"
+          ]
+        },
+        {
+          "domainId": "visual-communication",
+          "domainName": "视觉传达",
+          "relevance": 8,
+          "matched": [
+            "layout"
+          ]
+        }
+      ],
+      "signalScore": 60,
+      "status": "active"
+    },
+    {
+      "id": "changchangidea-oss/SkillRadar/skill-router",
+      "name": "skill-router",
+      "slug": "skill-router",
+      "source": "changchangidea-oss/SkillRadar",
+      "skillPath": "packages/codex-plugin/skills/skill-router/SKILL.md",
+      "githubUrl": "https://github.com/changchangidea-oss/SkillRadar/blob/main/packages/codex-plugin/skills/skill-router/SKILL.md",
+      "installUrl": "https://github.com/changchangidea-oss/SkillRadar",
+      "summary": "Route a coding or design task to the best available agent skill. Use when the task is specialized, the best local skill is unclear, the user asks which skill to use, or selecting a better skill before implementation would materially improve the result.",
+      "tags": [
+        "digital",
+        "media",
+        "film",
+        "video",
+        "environmental",
+        "design",
+        "environment",
+        "architecture",
+        "operations",
+        "visual"
+      ],
+      "repoStars": 1,
+      "pushedAt": "2026-08-24T14:38:52Z",
+      "contentHash": "40d97efed184746cf684",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:47.677Z",
+      "lastSeenAt": "2026-08-24T14:39:47.677Z",
+      "seenDays": 1,
+      "qualityScore": 81,
+      "maintenanceScore": 100,
+      "popularityScore": 7,
+      "security": "C",
+      "securityScore": 66,
+      "securityFindings": [
+        {
+          "name": "secret-access",
+          "severity": "high",
+          "weight": 18
+        }
+      ],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": true,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "digital-media-film",
+          "domainName": "数媒影视",
+          "relevance": 47,
+          "matched": [
+            "digital",
+            "media",
+            "film",
+            "video"
+          ]
+        },
+        {
+          "domainId": "environmental-design",
+          "domainName": "环艺设计",
+          "relevance": 41,
+          "matched": [
+            "environmental",
+            "design",
+            "environment",
+            "architecture"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 35,
+          "matched": [
+            "operations",
+            "design",
+            "visual",
+            "video"
+          ]
+        },
+        {
+          "domainId": "architecture-design",
+          "domainName": "建筑设计",
+          "relevance": 30,
+          "matched": [
+            "architecture",
+            "design",
+            "environment"
+          ]
+        }
+      ],
+      "signalScore": 60,
+      "status": "active"
+    },
+    {
+      "id": "Mr-Salticidae/knowledge-base/remotion",
+      "name": "remotion-card-video",
+      "slug": "remotion",
+      "source": "Mr-Salticidae/knowledge-base",
+      "skillPath": "07_skill存档/remotion/SKILL.md",
+      "githubUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/remotion/SKILL.md",
+      "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+      "summary": "用 Remotion + React 生成「极简知识卡片流」风格的视频。当用户说「帮我做成视频」「生成 Remotion 脚本」「把这篇文章做成卡片视频」「出 TSX 代码」时触发。内置设计系统、动效规则和场景模板，适配「克制而不僵硬，活泼而不轻浮」的视觉风格。",
+      "tags": [
+        "video",
+        "design",
+        "motion",
+        "color"
+      ],
+      "repoStars": 23,
+      "pushedAt": "2026-08-24T14:38:07Z",
+      "contentHash": "31fcf9f3330f66aec674",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:44.064Z",
+      "lastSeenAt": "2026-08-24T14:39:44.064Z",
+      "seenDays": 1,
+      "qualityScore": 71,
+      "maintenanceScore": 100,
+      "popularityScore": 33,
+      "security": "C",
+      "securityScore": 66,
+      "securityFindings": [
+        {
+          "name": "secret-access",
+          "severity": "high",
+          "weight": 18
+        },
+        {
+          "name": "network",
+          "severity": "medium",
+          "weight": 10
+        },
+        {
+          "name": "package-install",
+          "severity": "medium",
+          "weight": 10
+        },
+        {
+          "name": "filesystem-write",
+          "severity": "medium",
+          "weight": 9
+        }
+      ],
+      "capabilities": {
+        "shell": true,
+        "network": true,
+        "secrets": true,
+        "packageInstall": true,
+        "filesystemWrite": true
+      },
+      "classifications": [
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 42,
+          "matched": [
+            "video",
+            "design",
+            "motion"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 24,
+          "matched": [
+            "design",
+            "video",
+            "motion"
+          ]
+        },
+        {
+          "domainId": "fashion-design",
+          "domainName": "服装设计",
+          "relevance": 16,
+          "matched": [
+            "design",
+            "color"
+          ]
+        },
+        {
+          "domainId": "digital-media-film",
+          "domainName": "数媒影视",
+          "relevance": 16,
+          "matched": [
+            "video",
+            "motion"
+          ]
+        }
+      ],
+      "signalScore": 59,
+      "status": "active"
+    },
+    {
+      "id": "CambrianTech/continuum/memory",
+      "name": "continuum:memory",
+      "slug": "memory",
+      "source": "CambrianTech/continuum",
+      "skillPath": "skills/memory/SKILL.md",
+      "githubUrl": "https://github.com/CambrianTech/continuum/blob/canary/skills/memory/SKILL.md",
+      "installUrl": "https://github.com/CambrianTech/continuum",
+      "summary": "Persistent agent memory over the Continuum engram substrate. remember (write a durable fact) and recall (multi-layer semantic retrieval) scoped to YOUR real airc citizen identity — the fix for session amnesia. Use recall at the start of work on a topic; use remember when you learn something worth surviving the session.",
+      "tags": [],
+      "repoStars": 26,
+      "pushedAt": "2026-08-24T14:37:26Z",
+      "contentHash": "e3d34a6f4ecbd28e1424",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:40.583Z",
+      "lastSeenAt": "2026-08-24T14:39:40.583Z",
+      "seenDays": 1,
+      "qualityScore": 73,
+      "maintenanceScore": 100,
+      "popularityScore": 34,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": true,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "industrial-design",
+          "domainName": "工业设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "architecture-design",
+          "domainName": "建筑设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "arts-crafts",
+          "domainName": "工艺美术",
+          "relevance": 13,
+          "matched": [
+            "arts",
+            "pattern"
+          ]
+        }
+      ],
+      "signalScore": 58,
+      "status": "low-relevance"
+    },
+    {
+      "id": "CambrianTech/continuum/remember",
+      "name": "remember",
+      "slug": "remember",
+      "source": "CambrianTech/continuum",
+      "skillPath": "tools/plugins/memory-bridge/skills/remember/SKILL.md",
+      "githubUrl": "https://github.com/CambrianTech/continuum/blob/canary/tools/plugins/memory-bridge/skills/remember/SKILL.md",
+      "installUrl": "https://github.com/CambrianTech/continuum",
+      "summary": "Store a durable lesson for future sessions. Use when you learn something worth not re-forgetting — a correction, a project fact, a version, a gotcha. Saved to the continuum memory substrate; auto-surfaces in relevant future sessions (including after context compaction).",
+      "tags": [],
+      "repoStars": 26,
+      "pushedAt": "2026-08-24T14:37:26Z",
+      "contentHash": "9830afe3ad2b60d3590f",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:41.128Z",
+      "lastSeenAt": "2026-08-24T14:39:41.128Z",
+      "seenDays": 1,
+      "qualityScore": 75,
+      "maintenanceScore": 100,
+      "popularityScore": 34,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": true,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "industrial-design",
+          "domainName": "工业设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "architecture-design",
+          "domainName": "建筑设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "arts-crafts",
+          "domainName": "工艺美术",
+          "relevance": 8,
+          "matched": [
+            "pattern"
+          ]
+        }
+      ],
+      "signalScore": 58,
+      "status": "low-relevance"
+    },
+    {
+      "id": "CambrianTech/continuum/share",
+      "name": "share",
+      "slug": "share",
+      "source": "CambrianTech/continuum",
+      "skillPath": "tools/plugins/memory-bridge/skills/share/SKILL.md",
+      "githubUrl": "https://github.com/CambrianTech/continuum/blob/canary/tools/plugins/memory-bridge/skills/share/SKILL.md",
+      "installUrl": "https://github.com/CambrianTech/continuum",
+      "summary": "Hand a durable lesson directly to ANOTHER agent's memory (engram handoff / telepathy). Use when you learn something a teammate agent (M5, a persona, Codex) should know without re-deriving it — a correction, a gotcha, a hard-won invariant. Lands in THEIR corpus with shared-by provenance and surfaces in their future reca",
+      "tags": [],
+      "repoStars": 26,
+      "pushedAt": "2026-08-24T14:37:26Z",
+      "contentHash": "f39609ffb5a6f461a647",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:41.389Z",
+      "lastSeenAt": "2026-08-24T14:39:41.389Z",
+      "seenDays": 1,
+      "qualityScore": 75,
+      "maintenanceScore": 100,
+      "popularityScore": 34,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": true,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "industrial-design",
+          "domainName": "工业设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "architecture-design",
+          "domainName": "建筑设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "arts-crafts",
+          "domainName": "工艺美术",
+          "relevance": 8,
+          "matched": [
+            "pattern"
+          ]
+        }
+      ],
+      "signalScore": 58,
+      "status": "low-relevance"
+    },
+    {
+      "id": "Mr-Salticidae/knowledge-base/ai-short-film-screenwriting",
+      "name": "ai-short-film-screenwriting",
+      "slug": "ai-short-film-screenwriting",
+      "source": "Mr-Salticidae/knowledge-base",
+      "skillPath": "07_skill存档/ai-short-film-screenwriting/SKILL.md",
+      "githubUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/ai-short-film-screenwriting/SKILL.md",
+      "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+      "summary": "AI 短片剧作辅助工作流。用于把初始灵感、主题、现实素材、人物关系或已有梗概发展成适合 AI 视频制作的短片方案；也用于诊断故事是否单薄、观看规则是否清楚、情绪闭环是否成立、制作难度是否过高。当用户说“我想做一部 AI 短片”“这个故事能不能拍”“帮我设计短片结构”“把这个灵感变成短片方案”“诊断这个剧本为什么单薄”时触发。",
+      "tags": [
+        "film"
+      ],
+      "repoStars": 23,
+      "pushedAt": "2026-08-24T14:38:07Z",
+      "contentHash": "edfa4226fe5fc6bd44de",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:41.931Z",
+      "lastSeenAt": "2026-08-24T14:39:41.931Z",
+      "seenDays": 1,
+      "qualityScore": 67,
+      "maintenanceScore": 100,
+      "popularityScore": 33,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 23,
+          "matched": [
+            "film"
+          ]
+        },
+        {
+          "domainId": "digital-media-film",
+          "domainName": "数媒影视",
+          "relevance": 5,
+          "matched": [
+            "film"
+          ]
+        },
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 0,
+          "matched": []
+        },
+        {
+          "domainId": "visual-communication",
+          "domainName": "视觉传达",
+          "relevance": 0,
+          "matched": []
+        }
+      ],
+      "signalScore": 58,
+      "status": "low-relevance"
+    },
+    {
+      "id": "CambrianTech/continuum/recall",
+      "name": "recall",
+      "slug": "recall",
+      "source": "CambrianTech/continuum",
+      "skillPath": "tools/plugins/memory-bridge/skills/recall/SKILL.md",
+      "githubUrl": "https://github.com/CambrianTech/continuum/blob/canary/tools/plugins/memory-bridge/skills/recall/SKILL.md",
+      "installUrl": "https://github.com/CambrianTech/continuum",
+      "summary": "Search past lessons by query. Session-start recall already auto-surfaces the most relevant lessons; use this to look up something specific on demand.",
+      "tags": [],
+      "repoStars": 26,
+      "pushedAt": "2026-08-24T14:37:26Z",
+      "contentHash": "88b5a527d0b5b9d0fc14",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:40.856Z",
+      "lastSeenAt": "2026-08-24T14:39:40.856Z",
+      "seenDays": 1,
+      "qualityScore": 67,
+      "maintenanceScore": 100,
+      "popularityScore": 34,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": true,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "industrial-design",
+          "domainName": "工业设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "architecture-design",
+          "domainName": "建筑设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "folk-art",
+          "domainName": "民间艺术",
+          "relevance": 13,
+          "matched": [
+            "art",
+            "pattern"
+          ]
+        }
+      ],
+      "signalScore": 57,
+      "status": "low-relevance"
+    },
+    {
+      "id": "changchangidea-oss/SkillRadar/find-skill",
+      "name": "find-skill",
+      "slug": "find-skill",
+      "source": "changchangidea-oss/SkillRadar",
+      "skillPath": "packages/codex-plugin/skills/find-skill/SKILL.md",
+      "githubUrl": "https://github.com/changchangidea-oss/SkillRadar/blob/main/packages/codex-plugin/skills/find-skill/SKILL.md",
+      "installUrl": "https://github.com/changchangidea-oss/SkillRadar",
+      "summary": "Search SkillRadar for agent skills by task, technology, design field, category, or tool. Use when the user asks to find, compare, discover, or recommend a skill.",
+      "tags": [
+        "3d",
+        "design",
+        "ui"
+      ],
+      "repoStars": 1,
+      "pushedAt": "2026-08-24T14:38:52Z",
+      "contentHash": "dc3ede44ddbf86eb64e5",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:46.824Z",
+      "lastSeenAt": "2026-08-24T14:39:46.824Z",
+      "seenDays": 1,
+      "qualityScore": 73,
+      "maintenanceScore": 100,
+      "popularityScore": 7,
+      "security": "A",
+      "securityScore": 100,
+      "securityFindings": [],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "digital-media-film",
+          "domainName": "数媒影视",
+          "relevance": 23,
+          "matched": [
+            "3d"
+          ]
+        },
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 13,
+          "matched": [
+            "design",
+            "ui"
+          ]
+        },
+        {
+          "domainId": "industrial-design",
+          "domainName": "工业设计",
+          "relevance": 13,
+          "matched": [
+            "design",
+            "3d"
+          ]
+        },
+        {
+          "domainId": "environmental-design",
+          "domainName": "环艺设计",
+          "relevance": 13,
+          "matched": [
+            "design",
+            "3d"
+          ]
+        }
+      ],
+      "signalScore": 57,
+      "status": "low-relevance"
+    },
+    {
+      "id": "Mr-Salticidae/knowledge-base/ai-short-film-breakdown",
+      "name": "ai-short-film-breakdown",
+      "slug": "ai-short-film-breakdown",
+      "source": "Mr-Salticidae/knowledge-base",
+      "skillPath": "07_skill存档/ai-short-film-breakdown/SKILL.md",
+      "githubUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/ai-short-film-breakdown/SKILL.md",
+      "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+      "summary": "AI 短片类型判断与创作策略工作流。帮助创作者识别短片类型、选择叙事路径、规避 AI 技术短板。当用户说\"我想做一部 AI 短片\"、\"帮我拉片\"、\"分析这部 AI 视频的结构\"、\"怎么讲剧情\"时触发。",
+      "tags": [
+        "editing",
+        "film"
+      ],
+      "repoStars": 23,
+      "pushedAt": "2026-08-24T14:38:07Z",
+      "contentHash": "b439b4ed40f6ef84f055",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:41.648Z",
+      "lastSeenAt": "2026-08-24T14:39:41.648Z",
+      "seenDays": 1,
+      "qualityScore": 75,
+      "maintenanceScore": 100,
+      "popularityScore": 33,
+      "security": "C",
+      "securityScore": 66,
+      "securityFindings": [
+        {
+          "name": "secret-access",
+          "severity": "high",
+          "weight": 18
+        }
+      ],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": true,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 31,
+          "matched": [
+            "editing",
+            "film"
+          ]
+        },
+        {
+          "domainId": "digital-media-film",
+          "domainName": "数媒影视",
+          "relevance": 5,
+          "matched": [
+            "film"
+          ]
+        },
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 0,
+          "matched": []
+        },
+        {
+          "domainId": "visual-communication",
+          "domainName": "视觉传达",
+          "relevance": 0,
+          "matched": []
+        }
+      ],
+      "signalScore": 55,
+      "status": "active"
+    },
+    {
+      "id": "hejulian2004/ssh_mobile/git-commit",
+      "name": "git-commit",
+      "slug": "git-commit",
+      "source": "hejulian2004/ssh_mobile",
+      "skillPath": ".agents/skills/git-commit/SKILL.md",
+      "githubUrl": "https://github.com/hejulian2004/ssh_mobile/blob/main/.agents/skills/git-commit/SKILL.md",
+      "installUrl": "https://github.com/hejulian2004/ssh_mobile",
+      "summary": "Inspect, stage, and commit repository changes safely. Use when the user asks to commit, stage files, run git commit, or says \"提交一下\", \"git 提交\", or \"git提交一下\"; create a scoped message and verify the resulting repository state.",
+      "tags": [
+        "mobile"
+      ],
+      "repoStars": 1,
+      "pushedAt": "2026-08-24T14:36:19Z",
+      "contentHash": "2a8393a19a98dbbf9e6b",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:46.254Z",
+      "lastSeenAt": "2026-08-24T14:39:46.254Z",
+      "seenDays": 1,
+      "qualityScore": 81,
+      "maintenanceScore": 100,
+      "popularityScore": 7,
+      "security": "C",
+      "securityScore": 66,
+      "securityFindings": [
+        {
+          "name": "remote-shell",
+          "severity": "high",
+          "weight": 20
+        },
+        {
+          "name": "git-write",
+          "severity": "medium",
+          "weight": 8
+        }
+      ],
+      "capabilities": {
+        "shell": false,
+        "network": true,
+        "secrets": false,
+        "packageInstall": false,
+        "filesystemWrite": true
+      },
+      "classifications": [
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 8,
+          "matched": [
+            "mobile"
+          ]
+        },
+        {
+          "domainId": "visual-communication",
+          "domainName": "视觉传达",
+          "relevance": 0,
+          "matched": []
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 0,
+          "matched": []
+        }
+      ],
+      "signalScore": 50,
+      "status": "low-relevance"
+    },
+    {
+      "id": "hejulian2004/ssh_mobile/ssh-mobile-maintenance",
+      "name": "ssh-mobile-maintenance",
+      "slug": "ssh-mobile-maintenance",
+      "source": "hejulian2004/ssh_mobile",
+      "skillPath": ".agents/skills/ssh-mobile-maintenance/SKILL.md",
+      "githubUrl": "https://github.com/hejulian2004/ssh_mobile/blob/main/.agents/skills/ssh-mobile-maintenance/SKILL.md",
+      "installUrl": "https://github.com/hejulian2004/ssh_mobile",
+      "summary": "Maintain and debug the SSH Mobile repository, including Flutter, Dart packages, the Rust network SDK, Relay, Admin UI, tests, documentation, and shared Agent guidance. Use for any non-trivial implementation, diagnosis, validation, or documentation change in this repository.",
+      "tags": [
+        "architecture",
+        "map",
+        "environment",
+        "ui"
+      ],
+      "repoStars": 1,
+      "pushedAt": "2026-08-24T14:36:19Z",
+      "contentHash": "0d990d6dfd2b705730e7",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:46.542Z",
+      "lastSeenAt": "2026-08-24T14:39:46.542Z",
+      "seenDays": 1,
+      "qualityScore": 88,
+      "maintenanceScore": 100,
+      "popularityScore": 7,
+      "security": "D",
+      "securityScore": 35,
+      "securityFindings": [
+        {
+          "name": "remote-shell",
+          "severity": "high",
+          "weight": 20
+        },
+        {
+          "name": "secret-access",
+          "severity": "high",
+          "weight": 18
+        },
+        {
+          "name": "git-write",
+          "severity": "medium",
+          "weight": 8
+        }
+      ],
+      "capabilities": {
+        "shell": true,
+        "network": true,
+        "secrets": true,
+        "packageInstall": false,
+        "filesystemWrite": true
+      },
+      "classifications": [
+        {
+          "domainId": "architecture-design",
+          "domainName": "建筑设计",
+          "relevance": 27,
+          "matched": [
+            "architecture",
+            "map",
+            "environment"
+          ]
+        },
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 23,
+          "matched": [
+            "ui"
+          ]
+        },
+        {
+          "domainId": "environmental-design",
+          "domainName": "环艺设计",
+          "relevance": 22,
+          "matched": [
+            "environment",
+            "architecture"
+          ]
+        },
+        {
+          "domainId": "experience-design",
+          "domainName": "体验设计",
+          "relevance": 21,
+          "matched": [
+            "ux",
+            "product",
+            "mobile"
+          ]
+        }
+      ],
+      "signalScore": 48,
+      "status": "review"
+    },
+    {
+      "id": "changchangidea-oss/SkillRadar/inspect-skill",
+      "name": "inspect-skill",
+      "slug": "inspect-skill",
+      "source": "changchangidea-oss/SkillRadar",
+      "skillPath": "packages/codex-plugin/skills/inspect-skill/SKILL.md",
+      "githubUrl": "https://github.com/changchangidea-oss/SkillRadar/blob/main/packages/codex-plugin/skills/inspect-skill/SKILL.md",
+      "installUrl": "https://github.com/changchangidea-oss/SkillRadar",
+      "summary": "Inspect one SkillRadar skill for purpose, provenance, quality signals, security grade, maintenance, and suitability before installation or use.",
+      "tags": [
+        "design",
+        "ui"
+      ],
+      "repoStars": 1,
+      "pushedAt": "2026-08-24T14:38:52Z",
+      "contentHash": "1d131a6c2a6aa2d54845",
+      "discovery": "github-radar",
+      "firstSeenAt": "2026-08-24T14:39:47.076Z",
+      "lastSeenAt": "2026-08-24T14:39:47.076Z",
+      "seenDays": 1,
+      "qualityScore": 65,
+      "maintenanceScore": 100,
+      "popularityScore": 7,
+      "security": "C",
+      "securityScore": 66,
+      "securityFindings": [
+        {
+          "name": "secret-access",
+          "severity": "high",
+          "weight": 18
+        }
+      ],
+      "capabilities": {
+        "shell": false,
+        "network": false,
+        "secrets": true,
+        "packageInstall": false,
+        "filesystemWrite": false
+      },
+      "classifications": [
+        {
+          "domainId": "digital-media-film",
+          "domainName": "数媒影视",
+          "relevance": 18,
+          "matched": []
+        },
+        {
+          "domainId": "ui-design",
+          "domainName": "UI设计",
+          "relevance": 13,
+          "matched": [
+            "design",
+            "ui"
+          ]
+        },
+        {
+          "domainId": "operations-design",
+          "domainName": "运营设计",
+          "relevance": 8,
+          "matched": [
+            "design"
+          ]
+        },
+        {
+          "domainId": "video-design",
+          "domainName": "视频设计",
+          "relevance": 8,
+          "matched": [
+            "design"
+          ]
+        }
+      ],
+      "signalScore": 47,
+      "status": "low-relevance"
+    }
+  ]
 }

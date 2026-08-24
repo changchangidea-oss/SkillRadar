@@ -1,1 +1,475 @@
-[]
+[
+  {
+    "id": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+    "name": "ui-ux-pro-max",
+    "source": "awesome-dsh-plugin/awesome-dsh-plugin",
+    "summary": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data:",
+    "security": "C",
+    "signalScore": 81,
+    "installs": 0,
+    "repoStars": 12187,
+    "tags": [
+      "design",
+      "ui",
+      "design-system",
+      "layout",
+      "typography",
+      "interaction",
+      "accessibility",
+      "experience",
+      "ux",
+      "product",
+      "usability",
+      "mobile"
+    ],
+    "installUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+    "skillsUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.agents/skills/ui-ux-pro-max/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:38.517Z",
+    "lastSeenAt": "2026-08-24T14:39:38.517Z"
+  },
+  {
+    "id": "Mr-Salticidae/knowledge-base/remotion-skill",
+    "name": "remotion-explainer-workflow",
+    "source": "Mr-Salticidae/knowledge-base",
+    "summary": "Data-driven Remotion explainer video workflow for in-a-nutshell-inspired flat-vector science/knowledge videos. Use when Codex needs to turn notes, outlines, scripts, or sceneSpecs into a reusable Remotion video production plan, design sceneSpecs/sceneAssets, coordinate other AIGC skills through a dry-run protocol, or p",
+    "security": "A",
+    "signalScore": 74,
+    "installs": 0,
+    "repoStars": 23,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "editing",
+      "film",
+      "audio",
+      "visual",
+      "layout",
+      "editorial",
+      "vector",
+      "illustration",
+      "color"
+    ],
+    "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+    "skillsUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/remotion-skill/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "visual-communication",
+      "fashion-design",
+      "operations-design"
+    ],
+    "qualityScore": 82,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:42.754Z",
+    "lastSeenAt": "2026-08-24T14:39:42.754Z"
+  },
+  {
+    "id": "awesome-dsh-plugin/awesome-dsh-plugin/web-design-guidelines",
+    "name": "web-design-guidelines",
+    "source": "awesome-dsh-plugin/awesome-dsh-plugin",
+    "summary": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+    "security": "B",
+    "signalScore": 70,
+    "installs": 0,
+    "repoStars": 12187,
+    "tags": [
+      "design",
+      "ui",
+      "accessibility"
+    ],
+    "installUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+    "skillsUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.agents/skills/web-design-guidelines/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "industrial-design",
+      "experience-design"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:38.803Z",
+    "lastSeenAt": "2026-08-24T14:39:38.803Z"
+  },
+  {
+    "id": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/seedance-2-5-skill",
+    "name": "seedance-2-5-skill",
+    "source": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills",
+    "summary": ">-",
+    "security": "C",
+    "signalScore": 67,
+    "installs": 0,
+    "repoStars": 158,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "editing",
+      "film",
+      "storyboard",
+      "audio",
+      "product",
+      "visual",
+      "media",
+      "3d"
+    ],
+    "installUrl": "https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills",
+    "skillsUrl": "https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills/blob/main/skills/seedance-2-5-skill/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "digital-media-film",
+      "folk-art"
+    ],
+    "qualityScore": 82,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:40.084Z",
+    "lastSeenAt": "2026-08-24T14:39:40.084Z"
+  },
+  {
+    "id": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/universal-video-prompt-skill",
+    "name": "universal-video-prompt-skill",
+    "source": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills",
+    "summary": ">-",
+    "security": "A",
+    "signalScore": 67,
+    "installs": 0,
+    "repoStars": 158,
+    "tags": [
+      "video",
+      "motion",
+      "film",
+      "storyboard",
+      "audio",
+      "art",
+      "pattern",
+      "craft",
+      "brand",
+      "product"
+    ],
+    "installUrl": "https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills",
+    "skillsUrl": "https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills/blob/main/skills/universal-video-prompt-skill/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "folk-art",
+      "operations-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 74,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:40.328Z",
+    "lastSeenAt": "2026-08-24T14:39:40.328Z"
+  },
+  {
+    "id": "nexus-substrate/nexus-agents/research-and-vote",
+    "name": "research-and-vote",
+    "source": "nexus-substrate/nexus-agents",
+    "summary": "|",
+    "security": "A",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 18,
+    "tags": [
+      "design",
+      "research",
+      "architecture"
+    ],
+    "installUrl": "https://github.com/nexus-substrate/nexus-agents",
+    "skillsUrl": "https://github.com/nexus-substrate/nexus-agents/blob/main/skills/research-and-vote/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "environmental-design",
+      "architecture-design",
+      "ui-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:45.721Z",
+    "lastSeenAt": "2026-08-24T14:39:45.721Z"
+  },
+  {
+    "id": "nexus-substrate/nexus-agents/ui-ux-design",
+    "name": "ui-ux-design",
+    "source": "nexus-substrate/nexus-agents",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 18,
+    "tags": [
+      "visual",
+      "brand",
+      "typography",
+      "layout",
+      "editorial",
+      "color",
+      "design",
+      "ux",
+      "product",
+      "accessibility",
+      "photo",
+      "motion"
+    ],
+    "installUrl": "https://github.com/nexus-substrate/nexus-agents",
+    "skillsUrl": "https://github.com/nexus-substrate/nexus-agents/blob/main/skills/ui-ux-design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "experience-design",
+      "operations-design",
+      "ui-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:46.014Z",
+    "lastSeenAt": "2026-08-24T14:39:46.014Z"
+  },
+  {
+    "id": "Mr-Salticidae/knowledge-base/blind-editing-workflow",
+    "name": "blind-editing-workflow",
+    "source": "Mr-Salticidae/knowledge-base",
+    "summary": "蒙眼剪辑法——一套让不会专业剪辑软件的创作者，用 Python + ffmpeg 完成精确视频剪辑的工作流。适用于 AIGC 图片/视频素材合成 MV、角色 PV、内容短片等场景。当用户说\"帮我把这些图做成视频\"、\"按卡点剪辑\"、\"生成剪辑方案\"、\"出剪辑代码\"时触发。本 Skill 涉及 ffmpeg 和 Python 本地执行，适合在 Codex 本地环境中运行。",
+    "security": "B",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 23,
+    "tags": [
+      "motion",
+      "editing"
+    ],
+    "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+    "skillsUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/blind-editing-workflow/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "digital-media-film",
+      "folk-art"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:42.522Z",
+    "lastSeenAt": "2026-08-24T14:39:42.522Z"
+  },
+  {
+    "id": "nexus-substrate/nexus-agents/api-and-interface-design",
+    "name": "api-and-interface-design",
+    "source": "nexus-substrate/nexus-agents",
+    "summary": "|",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 18,
+    "tags": [
+      "architecture",
+      "design",
+      "rendering",
+      "map"
+    ],
+    "installUrl": "https://github.com/nexus-substrate/nexus-agents",
+    "skillsUrl": "https://github.com/nexus-substrate/nexus-agents/blob/main/skills/api-and-interface-design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "experience-design",
+      "fashion-design"
+    ],
+    "qualityScore": 59,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:45.502Z",
+    "lastSeenAt": "2026-08-24T14:39:45.502Z"
+  },
+  {
+    "id": "changchangidea-oss/SkillRadar/manage-skills",
+    "name": "manage-skills",
+    "source": "changchangidea-oss/SkillRadar",
+    "summary": "Keep Codex skills compact by identifying duplicates, checking which skills belong globally versus per project, and recommending additions or removals based on current work.",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "design",
+      "campaign",
+      "visual",
+      "motion",
+      "fashion",
+      "typography"
+    ],
+    "installUrl": "https://github.com/changchangidea-oss/SkillRadar",
+    "skillsUrl": "https://github.com/changchangidea-oss/SkillRadar/blob/main/packages/codex-plugin/skills/manage-skills/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "fashion-design",
+      "video-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:47.382Z",
+    "lastSeenAt": "2026-08-24T14:39:47.382Z"
+  },
+  {
+    "id": "Mr-Salticidae/knowledge-base/aigc-video-cover-gpt",
+    "name": "aigc-video-cover-gpt",
+    "source": "Mr-Salticidae/knowledge-base",
+    "summary": "用 GPT Image 2 一步生成「商单/科普视频」高质量横版封面的工作流。输入一张人物参考图 + 一份视频脚本，自动发散标题钩子、套用商单封面公式（构图不固定·暗 / 亮双影调随机）、写出含锁脸与中文大字策略的 GPT Image 2 提示词（中间产物），并一次出若干张可发布的 16:9 封面。当用户说\"给这个视频做封面\"\"根据脚本出封面\"\"用 GPT Image 2 做视频封面\"\"把人物参考图做成封面\"时触发。",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 23,
+    "tags": [
+      "video",
+      "photo",
+      "layout"
+    ],
+    "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+    "skillsUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/aigc-video-cover-gpt/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "ui-design",
+      "visual-communication"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:42.265Z",
+    "lastSeenAt": "2026-08-24T14:39:42.265Z"
+  },
+  {
+    "id": "changchangidea-oss/SkillRadar/skill-router",
+    "name": "skill-router",
+    "source": "changchangidea-oss/SkillRadar",
+    "summary": "Route a coding or design task to the best available agent skill. Use when the task is specialized, the best local skill is unclear, the user asks which skill to use, or selecting a better skill before implementation would materially improve the result.",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "digital",
+      "media",
+      "film",
+      "video",
+      "environmental",
+      "design",
+      "environment",
+      "architecture",
+      "operations",
+      "visual"
+    ],
+    "installUrl": "https://github.com/changchangidea-oss/SkillRadar",
+    "skillsUrl": "https://github.com/changchangidea-oss/SkillRadar/blob/main/packages/codex-plugin/skills/skill-router/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "digital-media-film",
+      "environmental-design",
+      "operations-design",
+      "architecture-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:47.677Z",
+    "lastSeenAt": "2026-08-24T14:39:47.677Z"
+  },
+  {
+    "id": "Mr-Salticidae/knowledge-base/remotion",
+    "name": "remotion-card-video",
+    "source": "Mr-Salticidae/knowledge-base",
+    "summary": "用 Remotion + React 生成「极简知识卡片流」风格的视频。当用户说「帮我做成视频」「生成 Remotion 脚本」「把这篇文章做成卡片视频」「出 TSX 代码」时触发。内置设计系统、动效规则和场景模板，适配「克制而不僵硬，活泼而不轻浮」的视觉风格。",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 23,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "color"
+    ],
+    "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+    "skillsUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/remotion/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "fashion-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:44.064Z",
+    "lastSeenAt": "2026-08-24T14:39:44.064Z"
+  },
+  {
+    "id": "Mr-Salticidae/knowledge-base/ai-short-film-breakdown",
+    "name": "ai-short-film-breakdown",
+    "source": "Mr-Salticidae/knowledge-base",
+    "summary": "AI 短片类型判断与创作策略工作流。帮助创作者识别短片类型、选择叙事路径、规避 AI 技术短板。当用户说\"我想做一部 AI 短片\"、\"帮我拉片\"、\"分析这部 AI 视频的结构\"、\"怎么讲剧情\"时触发。",
+    "security": "C",
+    "signalScore": 55,
+    "installs": 0,
+    "repoStars": 23,
+    "tags": [
+      "editing",
+      "film"
+    ],
+    "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+    "skillsUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/ai-short-film-breakdown/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "digital-media-film",
+      "ui-design",
+      "visual-communication"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:41.648Z",
+    "lastSeenAt": "2026-08-24T14:39:41.648Z"
+  },
+  {
+    "id": "hejulian2004/ssh_mobile/ssh-mobile-maintenance",
+    "name": "ssh-mobile-maintenance",
+    "source": "hejulian2004/ssh_mobile",
+    "summary": "Maintain and debug the SSH Mobile repository, including Flutter, Dart packages, the Rust network SDK, Relay, Admin UI, tests, documentation, and shared Agent guidance. Use for any non-trivial implementation, diagnosis, validation, or documentation change in this repository.",
+    "security": "D",
+    "signalScore": 48,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "architecture",
+      "map",
+      "environment",
+      "ui"
+    ],
+    "installUrl": "https://github.com/hejulian2004/ssh_mobile",
+    "skillsUrl": "https://github.com/hejulian2004/ssh_mobile/blob/main/.agents/skills/ssh-mobile-maintenance/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "environmental-design",
+      "experience-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-24T14:39:46.542Z",
+    "lastSeenAt": "2026-08-24T14:39:46.542Z"
+  }
+]
