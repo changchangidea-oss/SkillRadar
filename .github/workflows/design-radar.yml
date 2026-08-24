@@ -39,7 +39,11 @@ jobs:
       - name: Discover → parse → scan → classify → rank
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/update-design-radar.mjs
+        run: |
+          mkdir -p scripts/runtime
+          cp scripts/update-design-radar.mjs scripts/runtime/update-design-radar.mjs
+          node scripts/runtime/update-design-radar.mjs
+          rm -rf scripts/runtime
       - name: Validate generated registry
         run: node scripts/validate.mjs
       - name: Commit generated registry when changed
