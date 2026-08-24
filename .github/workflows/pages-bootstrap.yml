@@ -48,15 +48,14 @@ jobs:
               ENABLED="true"
             else
               STATUS="action-required"
-              MESSAGE="$(printf '%s' "$ENABLE" | tr '\n' ' ' | sed 's/"/\\"/g' | cut -c1-500)"
+              MESSAGE="$(printf '%s' "$ENABLE" | tr '\n' ' ' | cut -c1-500)"
               ENABLED="false"
             fi
           fi
           echo "enabled=${ENABLED}" >> "$GITHUB_OUTPUT"
           TOKEN_SOURCE="github_token"
           if [ "$HAS_ADMIN_TOKEN" = "true" ]; then TOKEN_SOURCE="pages_token"; fi
-          node -e 'const fs=require("fs"); fs.writeFileSync("data/pages-status.json", JSON.stringify({checkedAt:new Date().toISOString(),status:process.env.STATUS,message:process.env.MESSAGE,tokenSource:process.env.TOKEN_SOURCE,expectedUrl:"https://changchangidea-oss.github.io/SkillRadar/"},null,2)+"\n")' \
-            STATUS="$STATUS" MESSAGE="$MESSAGE" TOKEN_SOURCE="$TOKEN_SOURCE"
+          STATUS="$STATUS" MESSAGE="$MESSAGE" TOKEN_SOURCE="$TOKEN_SOURCE" node -e 'const fs=require("fs"); fs.writeFileSync("data/pages-status.json", JSON.stringify({checkedAt:new Date().toISOString(),status:process.env.STATUS,message:process.env.MESSAGE,tokenSource:process.env.TOKEN_SOURCE,expectedUrl:"https://changchangidea-oss.github.io/SkillRadar/"},null,2)+"\n")'
       - name: Commit Pages bootstrap status
         run: |
           git add data/pages-status.json
