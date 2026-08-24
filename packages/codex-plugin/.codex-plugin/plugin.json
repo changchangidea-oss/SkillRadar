@@ -1,0 +1,21 @@
+{
+  "name": "skillradar",
+  "version": "0.2.0",
+  "description": "Discover, evaluate, inspect, and route Codex tasks to high-signal agent skills.",
+  "author": {"name": "SkillRadar contributors"},
+  "homepage": "https://github.com/changchangidea-oss/SkillRadar",
+  "repository": "https://github.com/changchangidea-oss/SkillRadar",
+  "license": "MIT",
+  "keywords": ["skills","codex","agents","skill-discovery","skill-router","design"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SkillRadar",
+    "shortDescription": "Find the right skill for every Codex task",
+    "longDescription": "Search, evaluate and route Codex tasks to trusted agent skills using relevance, quality, safety, compatibility and maintenance signals.",
+    "developerName": "SkillRadar",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive","Read"],
+    "websiteURL": "https://github.com/changchangidea-oss/SkillRadar",
+    "defaultPrompt": ["Find and inspect the best skills for this task before starting implementation"]
+  }
+}
