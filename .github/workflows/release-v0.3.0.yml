@@ -13,11 +13,17 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: skillradar-release-v0.3.0
+  cancel-in-progress: false
+
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Build Codex plugin archive
         run: |
           cd packages/codex-plugin
@@ -35,3 +41,26 @@ jobs:
               --notes-file docs/releases/v0.3.0.md \
               skillradar-codex-plugin-v0.3.0.zip
           fi
+      - name: Record auditable release status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RELEASE_URL="$(gh release view v0.3.0 --json url --jq .url)"
+          RELEASE_CREATED="$(gh release view v0.3.0 --json createdAt --jq .createdAt)"
+          cat > data/release-status.json <<EOF
+          {
+            "version": "v0.3.0",
+            "status": "published",
+            "releaseUrl": "${RELEASE_URL}",
+            "createdAt": "${RELEASE_CREATED}",
+            "asset": "skillradar-codex-plugin-v0.3.0.zip",
+            "verifiedBy": "GitHub Actions"
+          }
+          EOF
+          git add data/release-status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "skillradar-release-bot"
+          git config user.email "skillradar-release-bot@users.noreply.github.com"
+          git commit -m "chore(release): record v0.3.0 publication"
+          git pull --rebase origin main
+          git push origin HEAD:main
