@@ -1,0 +1,37 @@
+name: Publish v0.3.0 Release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/release-v0.3.0.yml'
+      - 'docs/releases/v0.3.0.md'
+      - 'packages/codex-plugin/**'
+      - '.agents/plugins/marketplace.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Codex plugin archive
+        run: |
+          cd packages/codex-plugin
+          zip -qr ../../skillradar-codex-plugin-v0.3.0.zip .
+      - name: Create or refresh GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v0.3.0 >/dev/null 2>&1; then
+            gh release upload v0.3.0 skillradar-codex-plugin-v0.3.0.zip --clobber
+          else
+            gh release create v0.3.0 \
+              --target "${GITHUB_SHA}" \
+              --title "SkillRadar v0.3.0 — Closed-loop Radar" \
+              --notes-file docs/releases/v0.3.0.md \
+              skillradar-codex-plugin-v0.3.0.zip
+          fi
