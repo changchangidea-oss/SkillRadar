@@ -1,0 +1,21 @@
+{
+  "name": "skillradar",
+  "interface": {
+    "displayName": "SkillRadar OSS"
+  },
+  "plugins": [
+    {
+      "name": "skillradar",
+      "source": {
+        "source": "local",
+        "path": "./packages/codex-plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
