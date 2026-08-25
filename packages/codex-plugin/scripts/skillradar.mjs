@@ -3,245 +3,89 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-const here = path.dirname(fileURLToPath(import.meta.url))
-const base = (process.env.SKILLRADAR_BASE_URL || '').replace(/\/$/, '')
-const offline = process.env.SKILLRADAR_OFFLINE === '1'
-const explicitRegistry = process.env.SKILLRADAR_REGISTRY_PATH || ''
-const [cmd, ...rest] = process.argv.slice(2)
-const value = rest.join(' ').trim()
-const RAW = 'https://raw.githubusercontent.com/changchangidea-oss/SkillRadar/main/data'
+const here=path.dirname(fileURLToPath(import.meta.url))
+const base=(process.env.SKILLRADAR_BASE_URL||'').replace(/\/$/,'')
+const offline=process.env.SKILLRADAR_OFFLINE==='1'
+const explicitRegistry=process.env.SKILLRADAR_REGISTRY_PATH||''
+const [cmd,...rest]=process.argv.slice(2)
+const value=rest.join(' ').trim()
+const RAW='https://raw.githubusercontent.com/changchangidea-oss/SkillRadar/main/data'
+if(!cmd||!value||!['search','match','inspect'].includes(cmd)){console.error('Usage: skillradar.mjs search|match|inspect <query>');process.exit(2)}
 
-if (!cmd || !value || !['search', 'match', 'inspect'].includes(cmd)) {
-  console.error('Usage: skillradar.mjs search|match|inspect <query>')
-  process.exit(2)
+function readJson(paths){for(const p of paths){try{if(fs.existsSync(p))return JSON.parse(fs.readFileSync(p,'utf8'))}catch{}}return null}
+function normalizeCore(s){return {...s,tags:s.tags||[],domains:s.domains||[],uses:s.uses||[],security:s.security||'B',score:s.score??s.signalScore??70,maintenance:s.maintenance??s.maintenanceScore??70}}
+function normalizeDiscovered(s,fallbackCategory){return {id:s.id,name:s.name,source:s.source,category:s.category||fallbackCategory,tags:s.tags||[],summary:s.summary,security:s.security||'B',score:s.signalScore??s.score??70,maintenance:s.maintenanceScore??s.maintenance??70,installs:s.installs||0,installUrl:s.installUrl,skillsUrl:s.skillsUrl,discovery:s.discovery||'radar',domains:s.domains||[],uses:s.uses||[]}}
+function dedupeAndGate(skills){const seen=new Set();return skills.filter(s=>!['D','Blocked'].includes(s.security)).filter(s=>{const key=`${String(s.source||'').toLowerCase()}::${String(s.name||s.id||'').toLowerCase().replace(/[^a-z0-9]+/g,'')}`;if(seen.has(key))return false;seen.add(key);return true})}
+function loadBundledRegistry(){
+  const snapshot=readJson([explicitRegistry,path.resolve(here,'../data/registry.json')].filter(Boolean))
+  if(!snapshot||![1,2].includes(snapshot.schemaVersion)||!Array.isArray(snapshot.core)||!Array.isArray(snapshot.design))return null
+  const general=Array.isArray(snapshot.general)?snapshot.general:[]
+  return {skills:dedupeAndGate([...snapshot.core.map(normalizeCore),...snapshot.design.map(x=>normalizeDiscovered(x,'Design')),...general.map(x=>normalizeDiscovered(x,'General'))]),meta:{mode:'local-bundled',schemaVersion:snapshot.schemaVersion,generatedAt:snapshot.generatedAt,totalCount:snapshot.totalCount,coreCount:snapshot.coreCount,designCount:snapshot.designCount,generalCount:snapshot.generalCount||0,contentHash:snapshot.contentHash,source:snapshot.source}}
 }
+function loadLegacyLocalRegistry(){
+  const localRoots=[path.resolve(here,'../data'),path.resolve(here,'../../../data')]
+  const core=readJson(localRoots.map(r=>path.join(r,'skills.json'))),manifest=readJson(localRoots.map(r=>path.join(r,'design-skill-index.json'))),design=[]
+  if(manifest)for(const file of manifest.chunks||[]){const part=readJson(localRoots.map(r=>path.join(r,file)));if(part)design.push(...part)}
+  const general=readJson(localRoots.map(r=>path.join(r,'general-skills-radar.json')))||[]
+  if(!core||!manifest||!design.length)return null
+  return {skills:dedupeAndGate([...core.map(normalizeCore),...design.map(x=>normalizeDiscovered(x,'Design')),...general.map(x=>normalizeDiscovered(x,'General'))]),meta:{mode:'local-repository',generatedAt:manifest.generatedAt,totalCount:core.length+design.length+general.length,source:'repository-data'}}
+}
+async function fetchJson(url){if(offline)throw new Error('network disabled by SKILLRADAR_OFFLINE=1');const r=await fetch(url,{headers:{accept:'application/json','user-agent':'SkillRadar-Codex-Plugin/0.4.0'}});if(!r.ok)throw new Error(`${r.status} ${r.statusText}`);return r.json()}
+async function loadNetworkRegistry(){const core=await fetchJson(`${RAW}/skills.json`),manifest=await fetchJson(`${RAW}/design-skill-index.json`),design=[];for(const file of manifest.chunks||[])design.push(...await fetchJson(`${RAW}/${file}`));let general=[];try{general=await fetchJson(`${RAW}/general-skills-radar.json`)}catch{}return {skills:dedupeAndGate([...core.map(normalizeCore),...design.map(x=>normalizeDiscovered(x,'Design')),...general.map(x=>normalizeDiscovered(x,'General'))]),meta:{mode:'network-fallback',generatedAt:manifest.generatedAt,totalCount:core.length+design.length+general.length,source:RAW}}}
+async function loadRegistry(){return loadBundledRegistry()||loadLegacyLocalRegistry()||(offline?(()=>{throw new Error('Bundled SkillRadar registry is missing; offline routing cannot continue.')})():await loadNetworkRegistry())}
 
-function readJson(paths) {
-  for (const p of paths) {
-    try { if (fs.existsSync(p)) return JSON.parse(fs.readFileSync(p, 'utf8')) } catch {}
-  }
-  return null
+const STOP=new Set('the a an and or for to of in on with from by is are be as this that use using build create make develop development app application modern include includes including need needs want please skill skills best top recommend recommended'.split(' '))
+const PHRASES={
+  'next.js':['nextjs'],'app router':['app-router'],'server components':['server-components','rsc'],
+  'shadcn/ui':['shadcn'],'ai sdk':['ai-sdk'],'tool calling':['tool-calling','function-calling'],'function calling':['function-calling','tool-calling'],
+  'design system':['design-system'],'cloudflare workers':['cloudflare-workers','workers'],'ci/cd':['ci-cd'],'end to end':['e2e'],'用户体验':['ux'],'工业设计':['industrial-design']
 }
-
-function normalizeCore(s) {
-  return {
-    ...s,
-    tags: s.tags || [],
-    domains: s.domains || [],
-    security: s.security || 'B',
-    score: s.score ?? s.signalScore ?? 70
+function canon(t){return String(t).toLowerCase().replace(/next\.js/g,'nextjs').replace(/shadcn\/ui/g,'shadcn').replace(/tool[- ]calling/g,'tool-calling').replace(/function[- ]calling/g,'function-calling').replace(/server[- ]components/g,'server-components').replace(/app[- ]router/g,'app-router').replace(/design[- ]system/g,'design-system').replace(/[^a-z0-9+#.-]+/g,'').trim()}
+function querySignals(text){
+  const raw=String(text).toLowerCase(),concepts=[],consumed=new Set()
+  for(const [phrase,aliases] of Object.entries(PHRASES)){
+    if(!raw.includes(phrase))continue
+    const terms=[canon(phrase),...aliases.map(canon)].filter(Boolean)
+    concepts.push({label:phrase,terms:[...new Set(terms)],weight:3,kind:'phrase'})
+    for(const w of phrase.split(/[^a-z0-9+#.-]+/).map(canon).filter(Boolean))consumed.add(w)
   }
+  const rawTokens=raw.replace(/next\.js/g,'nextjs').replace(/shadcn\/ui/g,'shadcn').split(/[^a-z0-9+#.-]+/).map(canon).filter(Boolean)
+  for(const t of rawTokens){if(!t||STOP.has(t)||t.length<2||consumed.has(t))continue;if(concepts.some(c=>c.terms.includes(t)))continue;concepts.push({label:t,terms:[t],weight:t.length>7?1.5:1.15,kind:'token'})}
+  const zh={'界面':['ui','interface','layout'],'视觉':['visual','graphic','typography'],'视频':['video','motion','editing'],'建筑':['architecture','spatial','rendering'],'服装':['fashion','campaign'],'交互':['interaction','ux','ui']}
+  for(const [needle,terms] of Object.entries(zh))if(raw.includes(needle))concepts.push({label:needle,terms,weight:2.5,kind:'zh-alias'})
+  return concepts
 }
-
-function normalizeDesign(s) {
-  return {
-    id: s.id,
-    name: s.name,
-    source: s.source,
-    category: 'Design',
-    tags: s.tags || [],
-    summary: s.summary,
-    security: s.security || 'B',
-    score: s.signalScore ?? s.score ?? 70,
-    installs: s.installs || 0,
-    installUrl: s.installUrl,
-    skillsUrl: s.skillsUrl,
-    discovery: s.discovery || 'seed',
-    domains: s.domains || []
+function fieldText(s){return {identity:`${s.id||''} ${s.name||''}`.toLowerCase(),tags:`${(s.tags||[]).join(' ')} ${(s.uses||[]).join(' ')}`.toLowerCase(),domains:`${(s.domains||[]).join(' ')} ${s.category||''}`.toLowerCase(),summary:String(s.summary||'').toLowerCase(),source:String(s.source||'').toLowerCase()}}
+function fieldContains(text,term){const normalized=String(text).toLowerCase().replace(/next\.js/g,'nextjs').replace(/shadcn\/ui/g,'shadcn').replace(/tool[ -]calling/g,'tool-calling').replace(/function[ -]calling/g,'function-calling').replace(/app[ -]router/g,'app-router').replace(/design[ -]system/g,'design-system');const set=new Set(normalized.split(/[^a-z0-9+#.-]+/).map(canon).filter(Boolean));return set.has(term)||(term.length>=5&&normalized.includes(term))}
+function scoreSkill(s,query){
+  const signals=querySignals(query),fields=fieldText(s),totalWeight=Math.max(1,signals.reduce((n,x)=>n+x.weight,0));let matchedWeight=0,evidence=0;const matched=[],fieldHits={identity:0,tags:0,domains:0,summary:0,source:0}
+  for(const sig of signals){
+    let best=0,bestField=null,bestTerm=null
+    for(const term of sig.terms){for(const [field,text] of Object.entries(fields)){if(!fieldContains(text,term))continue;const weight=field==='identity'?4.5:field==='tags'?3.7:field==='domains'?2.8:field==='summary'?2.1:.7;if(weight>best){best=weight;bestField=field;bestTerm=term}}}
+    if(!bestField)continue
+    matchedWeight+=sig.weight;evidence+=sig.weight*best;fieldHits[bestField]++;matched.push(sig.label||bestTerm)
   }
+  const coverage=matchedWeight/totalWeight
+  const skillradar=s.score||70,securityBonus=s.security==='A'?4:s.security==='B'?2:s.security==='C'?0:-100,freshness=Math.max(0,Math.min(100,s.maintenance??70))*.04
+  const coverageScore=coverage*55,evidenceScore=Math.min(22,evidence*1.45),qualityPrior=skillradar*.15
+  const matchScore=Math.max(0,Math.min(100,Math.round(coverageScore+evidenceScore+qualityPrior+securityBonus+freshness)))
+  return {...s,match_score:matchScore,skillradar_score:skillradar,specialty_hits:fieldHits.identity+fieldHits.tags,match_details:{ranking_version:'2.0',matched_signals:[...new Set(matched)].slice(0,12),coverage:Number(coverage.toFixed(2)),field_hits:fieldHits,quality_prior:Number(qualityPrior.toFixed(1)),security_bonus:securityBonus,freshness_bonus:Number(freshness.toFixed(1))},reason:matched.length?`Matched task signals: ${[...new Set(matched)].slice(0,8).join(', ')}; coverage ${Math.round(coverage*100)}%; security ${s.security}; SkillRadar score ${skillradar}.`:`No strong lexical task signal; retained only by quality/security prior; security ${s.security}; SkillRadar score ${skillradar}.`}
 }
-
-function dedupeAndGate(skills) {
-  const seen = new Set()
-  return skills.filter(s => !['D', 'Blocked'].includes(s.security)).filter(s => !seen.has(s.id) && seen.add(s.id))
+function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.category||''].map(canon).filter(Boolean))}
+function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
+function diversify(ranked,limit=3){
+  if(!ranked.length)return[];const selected=[];const pool=ranked.filter(x=>x.match_score>=Math.max(20,ranked[0].match_score-28))
+  while(selected.length<limit&&pool.length){let bestIndex=0,bestScore=-Infinity;for(let i=0;i<pool.length;i++){const c=pool[i];const maxSim=selected.length?Math.max(...selected.map(s=>similarity(c,s))):0;const sameSource=selected.some(s=>s.source===c.source)?1:0;const adjusted=c.match_score-maxSim*8-sameSource;if(adjusted>bestScore){bestScore=adjusted;bestIndex=i}}selected.push(pool.splice(bestIndex,1)[0])}
+  for(const c of ranked)if(selected.length<limit&&!selected.some(x=>x.id===c.id))selected.push(c)
+  return selected.slice(0,limit)
 }
-
-function loadBundledRegistry() {
-  const candidates = [
-    explicitRegistry,
-    path.resolve(here, '../data/registry.json')
-  ].filter(Boolean)
-  const snapshot = readJson(candidates)
-  if (!snapshot || snapshot.schemaVersion !== 1 || !Array.isArray(snapshot.core) || !Array.isArray(snapshot.design)) return null
-  return {
-    skills: dedupeAndGate([
-      ...snapshot.core.map(normalizeCore),
-      ...snapshot.design.map(normalizeDesign)
-    ]),
-    meta: {
-      mode: 'local-bundled',
-      generatedAt: snapshot.generatedAt,
-      totalCount: snapshot.totalCount,
-      contentHash: snapshot.contentHash,
-      source: snapshot.source
-    }
-  }
+function safetyAdvisory(matches){const top=matches[0];if(!top||top.security!=='C')return null;const alternative=matches.slice(1).find(x=>['A','B'].includes(x.security)&&top.match_score-x.match_score<=5);if(!alternative)return {level:'review',message:'Top match is security grade C. Review its SKILL.md and scripts before installation or execution.'};return {level:'review',message:`Top match is security grade C. Prefer the nearby ${alternative.security}-grade alternative when task coverage is comparable.`,alternative:{id:alternative.id,name:alternative.name,match_score:alternative.match_score,skillradar_score:alternative.skillradar_score,security:alternative.security,source:alternative.source}}}
+async function registryResult(){
+  const loaded=await loadRegistry(),registry=loaded.skills
+  if(cmd==='inspect'){const id=value.toLowerCase();const skill=registry.find(s=>String(s.id).toLowerCase()===id||String(s.name).toLowerCase()===id);if(!skill)throw new Error(`Skill not found or blocked by safety gate: ${value}`);return {source:'skillradar-registry',registry:loaded.meta,skill:{...skill,skillradar_score:skill.score||70}}}
+  const ranked=registry.map(s=>scoreSkill(s,value)).filter(s=>cmd==='match'||s.match_score>24).sort((a,b)=>b.match_score-a.match_score||b.specialty_hits-a.specialty_hits||b.skillradar_score-a.skillradar_score)
+  if(cmd==='match'){const matches=diversify(ranked,3);return {source:'skillradar-registry',registry:loaded.meta,ranking:{version:'2.0',strategy:'field-weighted lexical evidence + task coverage + quality/security/freshness prior + diversity rerank'},matches,advisory:safetyAdvisory(matches)}}
+  return {source:'skillradar-registry',registry:loaded.meta,ranking:{version:'2.0'},skills:ranked.slice(0,8)}
 }
-
-function loadLegacyLocalRegistry() {
-  const localRoots = [path.resolve(here, '../data'), path.resolve(here, '../../../data')]
-  let core = readJson(localRoots.map(r => path.join(r, 'skills.json')))
-  const manifest = readJson(localRoots.map(r => path.join(r, 'design-skill-index.json')))
-  const design = []
-  if (manifest) {
-    for (const file of manifest.chunks || []) {
-      const part = readJson(localRoots.map(r => path.join(r, file)))
-      if (part) design.push(...part)
-    }
-  }
-  if (!core || !manifest || !design.length) return null
-  return {
-    skills: dedupeAndGate([...core.map(normalizeCore), ...design.map(normalizeDesign)]),
-    meta: { mode: 'local-repository', generatedAt: manifest.generatedAt, totalCount: core.length + design.length, source: 'repository-data' }
-  }
-}
-
-async function fetchJson(url) {
-  if (offline) throw new Error('network disabled by SKILLRADAR_OFFLINE=1')
-  const r = await fetch(url, { headers: { accept: 'application/json', 'user-agent': 'SkillRadar-Codex-Plugin/0.3.2' } })
-  if (!r.ok) throw new Error(`${r.status} ${r.statusText}`)
-  return r.json()
-}
-
-async function loadNetworkRegistry() {
-  const core = await fetchJson(`${RAW}/skills.json`)
-  const manifest = await fetchJson(`${RAW}/design-skill-index.json`)
-  const design = []
-  for (const file of manifest.chunks || []) design.push(...await fetchJson(`${RAW}/${file}`))
-  return {
-    skills: dedupeAndGate([...core.map(normalizeCore), ...design.map(normalizeDesign)]),
-    meta: { mode: 'network-fallback', generatedAt: manifest.generatedAt, totalCount: core.length + design.length, source: RAW }
-  }
-}
-
-async function loadRegistry() {
-  const bundled = loadBundledRegistry()
-  if (bundled) return bundled
-  const legacy = loadLegacyLocalRegistry()
-  if (legacy) return legacy
-  if (offline) throw new Error('Bundled SkillRadar registry is missing; offline routing cannot continue.')
-  return loadNetworkRegistry()
-}
-
-function tokens(text) {
-  const raw = String(text).toLowerCase()
-  const out = new Set(raw.split(/[^a-z0-9+#.-]+/).filter(x => x.length > 1))
-  const zh = {
-    'ui':['ui','interface','design-system','layout'],'界面':['ui','interface','layout'],
-    '视觉':['visual','graphic','typography','brand','layout'],'海报':['visual','graphic','typography','layout'],'品牌':['brand','visual','campaign'],
-    '运营':['operations','campaign','marketing','brand'],'广告':['campaign','product','brand','video'],'电商':['ecommerce','product','photo'],
-    '视频':['video','motion','editing','film'],'剪辑':['video','editing','montage'],'动效':['motion','animation','video'],'分镜':['storyboard','video','film'],
-    '工业':['industrial','product','3d','cad'],'产品设计':['industrial','product','3d'],'3d打印':['3d-printing','fabrication','3d'],'建模':['3d','modeling','cad'],
-    '环艺':['interior','environment','spatial','architecture'],'室内':['interior','spatial','lighting'],'景观':['landscape','environment','spatial'],
-    '服装':['fashion','color','photo','campaign'],'时尚':['fashion','brand','photo'],
-    '体验':['ux','product','research','interaction'],'用户体验':['ux','research','usability'],'交互':['interaction','ux','ui'],
-    '数媒':['digital-media','creative-coding','video','3d'],'影视':['film','video','editing','vfx'],
-    '工艺':['craft','fabrication','vector','3d-printing'],'民间艺术':['illustration','hand-drawn','collage','pattern','craft'],'纹样':['pattern','illustration','vector'],
-    '建筑':['architecture','spatial','3d','rendering','diagram'],'建筑可视化':['architecture','rendering','3d','lighting']
-  }
-  for (const [needle, tags] of Object.entries(zh)) if (raw.includes(needle)) tags.forEach(t => out.add(t))
-  return out
-}
-
-function scoreSkill(s, query) {
-  const q = tokens(query)
-  const hay = `${s.name} ${s.category} ${(s.tags || []).join(' ')} ${(s.domains || []).join(' ')} ${s.summary}`.toLowerCase()
-  let hit = 0
-  let special = 0
-  const matched = []
-  const specialty = new Set(['fashion','industrial','architecture','interior','landscape','3d-printing','fabrication','cad','video','film','storyboard','vfx','ux','usability','digital-media','craft','pattern'])
-  for (const t of q) {
-    if (!hay.includes(t)) continue
-    const sp = specialty.has(t)
-    hit += sp ? 4 : (t.length > 5 ? 2 : 1)
-    if (sp) special++
-    matched.push(t)
-  }
-  const sec = s.security === 'A' ? 8 : s.security === 'B' ? 5 : s.security === 'C' ? 1 : -100
-  const matchScore = Math.max(0, Math.min(100, Math.round(hit * 9 + (s.score || 70) * .30 + sec)))
-  return {
-    ...s,
-    match_score: matchScore,
-    skillradar_score: s.score || 70,
-    specialty_hits: special,
-    reason: matched.length
-      ? `Matched task signals: ${matched.slice(0, 8).join(', ')}; security ${s.security}; SkillRadar score ${s.score || 70}.`
-      : `Ranked by SkillRadar quality and security signals; security ${s.security}; SkillRadar score ${s.score || 70}.`
-  }
-}
-
-function safetyAdvisory(matches) {
-  const top = matches[0]
-  if (!top || top.security !== 'C') return null
-  const alternative = matches.slice(1).find(x => ['A', 'B'].includes(x.security) && top.match_score - x.match_score <= 5)
-  if (!alternative) {
-    return { level: 'review', message: 'Top match is security grade C. Review its SKILL.md and scripts before installation or execution.' }
-  }
-  return {
-    level: 'review',
-    message: `Top match is security grade C. Prefer the nearby ${alternative.security}-grade alternative when task coverage is comparable.`,
-    alternative: {
-      id: alternative.id,
-      name: alternative.name,
-      match_score: alternative.match_score,
-      skillradar_score: alternative.skillradar_score,
-      security: alternative.security,
-      source: alternative.source
-    }
-  }
-}
-
-async function registryResult() {
-  const loaded = await loadRegistry()
-  const registry = loaded.skills
-  if (cmd === 'inspect') {
-    const id = value.toLowerCase()
-    const skill = registry.find(s => s.id.toLowerCase() === id || s.name.toLowerCase() === id)
-    if (!skill) throw new Error(`Skill not found or blocked by safety gate: ${value}`)
-    return { source: 'skillradar-registry', registry: loaded.meta, skill: { ...skill, skillradar_score: skill.score || 70 } }
-  }
-  const ranked = registry.map(s => scoreSkill(s, value))
-    .filter(s => cmd === 'match' || s.match_score > 20)
-    .sort((a, b) => b.match_score - a.match_score || b.specialty_hits - a.specialty_hits || b.skillradar_score - a.skillradar_score)
-  if (cmd === 'match') {
-    const matches = ranked.slice(0, 3)
-    return { source: 'skillradar-registry', registry: loaded.meta, matches, advisory: safetyAdvisory(matches) }
-  }
-  return { source: 'skillradar-registry', registry: loaded.meta, skills: ranked.slice(0, 8) }
-}
-
-async function remote() {
-  if (!base || offline) return null
-  if (cmd === 'match') {
-    const r = await fetch(`${base}/api/router`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ task: value, agent: 'codex', limit: 3 }) })
-    if (!r.ok) throw new Error(`remote ${r.status}`)
-    return r.json()
-  }
-  const endpoint = cmd === 'inspect' ? `/api/skill?id=${encodeURIComponent(value)}` : `/api/skills?q=${encodeURIComponent(value)}&limit=8`
-  const r = await fetch(base + endpoint)
-  if (!r.ok) throw new Error(`remote ${r.status}`)
-  return r.json()
-}
-
-try {
-  try {
-    console.log(JSON.stringify(await registryResult(), null, 2))
-  } catch (localError) {
-    if (offline) throw localError
-    if (base) {
-      try {
-        const result = await remote()
-        if (result) {
-          console.log(JSON.stringify(result, null, 2))
-          process.exit(0)
-        }
-      } catch (remoteError) {
-        console.error(`Remote API fallback failed: ${remoteError.message}`)
-      }
-    }
-    throw localError
-  }
-} catch (e) {
-  console.error(e.message)
-  process.exit(1)
-}
+async function remote(){if(!base||offline)return null;if(cmd==='match'){const r=await fetch(`${base}/api/router`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({task:value,agent:'codex',limit:3})});if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}const endpoint=cmd==='inspect'?`/api/skill?id=${encodeURIComponent(value)}`:`/api/skills?q=${encodeURIComponent(value)}&limit=8`;const r=await fetch(base+endpoint);if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}
+try{try{console.log(JSON.stringify(await registryResult(),null,2))}catch(localError){if(offline)throw localError;if(base){try{const result=await remote();if(result){console.log(JSON.stringify(result,null,2));process.exit(0)}}catch(remoteError){console.error(`Remote API fallback failed: ${remoteError.message}`)}}throw localError}}catch(e){console.error(e.message);process.exit(1)}

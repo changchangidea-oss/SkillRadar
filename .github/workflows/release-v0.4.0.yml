@@ -1,0 +1,83 @@
+name: Publish v0.4.0 Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/release-trigger-v0.4.0.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: skillradar-release-v0.4.0
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify committed bundled registry is current
+        run: |
+          npm run sync:plugin-registry
+          git diff --exit-code -- packages/codex-plugin/data/registry.json
+          npm run validate
+          npm run validate:plugin-offline
+          npm run validate:skill-budget
+      - name: Verify general Radar has run
+        run: |
+          node - <<'NODE'
+          const r=require('./data/general-radar-latest.json')
+          const s=require('./data/general-skills-radar.json')
+          if(!r.generatedAt) throw new Error('general Radar has not generated a real snapshot yet')
+          if(!Array.isArray(s) || s.length < 1) throw new Error('general Radar produced no routable skills; refusing release')
+          console.log(`General Radar ready: ${s.length} routable skills from ${r.repositoriesSeen} repositories.`)
+          NODE
+      - name: Build Codex plugin archive
+        run: |
+          cd packages/codex-plugin
+          zip -qr ../../skillradar-codex-plugin-v0.4.0.zip .
+      - name: Create or refresh GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v0.4.0 >/dev/null 2>&1; then
+            gh release upload v0.4.0 skillradar-codex-plugin-v0.4.0.zip --clobber
+          else
+            gh release create v0.4.0 \
+              --target "${GITHUB_SHA}" \
+              --title "SkillRadar v0.4.0 — Wider discovery, Matching v2, Skill Budget Doctor" \
+              --notes-file docs/releases/v0.4.0.md \
+              skillradar-codex-plugin-v0.4.0.zip
+          fi
+      - name: Record auditable release status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RELEASE_URL="$(gh release view v0.4.0 --json url --jq .url)"
+          RELEASE_CREATED="$(gh release view v0.4.0 --json createdAt --jq .createdAt)"
+          cat > data/release-status.json <<EOF
+          {
+            "version": "v0.4.0",
+            "status": "published",
+            "releaseUrl": "${RELEASE_URL}",
+            "createdAt": "${RELEASE_CREATED}",
+            "asset": "skillradar-codex-plugin-v0.4.0.zip",
+            "verifiedBy": "GitHub Actions"
+          }
+          EOF
+          git add data/release-status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "skillradar-release-bot"
+          git config user.email "skillradar-release-bot@users.noreply.github.com"
+          git commit -m "chore(release): record v0.4.0 publication"
+          git pull --rebase origin main
+          git push origin HEAD:main
