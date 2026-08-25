@@ -39,7 +39,7 @@ SkillRadar takes the opposite approach:
 Current Codex supports Git marketplace sources and marketplace-backed plugin installation. Add this repository as a marketplace and install SkillRadar in one shell line:
 
 ```bash
-codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.3.0 && codex plugin add skillradar@skillradar
+codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.3.1 && codex plugin add skillradar@skillradar
 ```
 
 Then start a fresh Codex thread and ask, for example:
@@ -47,6 +47,10 @@ Then start a fresh Codex thread and ask, for example:
 ```text
 Find a safe skill for a Remotion product launch video and explain why you picked it.
 ```
+
+**v0.3.1 is offline-first for normal routing.** The installed plugin ships with a complete safety-gated registry snapshot, so `search`, `match`, and `inspect` read local data first. GitHub/network access is fallback only; normal Top-3 routing does not require cloning this repository or fetching GitHub Raw.
+
+The bundled `skillradar.mjs` command is SkillRadar's own read-only lookup CLI. Running it does not authorize installation or execution of any discovered third-party skill.
 
 ### Option B — standard Agent Skill / skills.sh ecosystem
 
@@ -71,18 +75,18 @@ Open `http://localhost:4173`.
 
 The project publishes operational evidence instead of hard-coding marketing numbers.
 
-**Metrics page:** `https://changchangidea-oss.github.io/SkillRadar/metrics.html` (available after GitHub Pages is enabled for the repository).
+**Metrics page:** `https://changchangidea-oss.github.io/SkillRadar/metrics.html`
 
 The page reads directly from generated repository data and shows:
 
-- total indexed skills (`seed + live Radar`);
+- total indexed skills (`core + seed + live Radar`);
 - 12 design domains;
 - latest daily Radar status;
 - active / review / blocked candidate counts;
 - Codex Top-3 routing model;
 - daily ranking snapshots from `data/ranking-history.json`.
 
-At the time v0.3.0 was prepared, the live registry had **92 design skills (83 seed + 9 Radar), 12 design domains, a daily security scan, and Codex routing against the same registry**. These numbers are expected to change automatically.
+Registry counts are intentionally generated from current repository data rather than frozen into README marketing copy. Daily Radar refreshes can change them automatically.
 
 ## Architecture
 
@@ -96,8 +100,9 @@ flowchart LR
   C --> R[Daily ranking engine]
   R --> H[(ranking-history.json)]
   R --> REG[(Safety-gated registry)]
+  REG --> SNAP[(Bundled Codex registry snapshot)]
   REG --> WEB[Public web UI + metrics]
-  REG --> CODEX[Codex Plugin router]
+  SNAP --> CODEX[Codex Plugin router]
   CODEX --> T[Top-3 task match]
 ```
 
@@ -114,6 +119,8 @@ Grades are conservative:
 - **C** — explicit review required before recommendation/installation.
 - **D** — audit-only; excluded from dynamic Top 20 and Codex automatic routing.
 - **Blocked** — prohibited from automatic routing.
+
+If a C-grade skill ranks first and an A/B candidate is within five match-score points, the v0.3.1 router surfaces a safer-alternative advisory instead of treating rank #1 as automatic permission.
 
 This is **not** a formal security audit or sandbox. The goal is to make risk visible *before* an agent installs or runs something.
 
@@ -134,13 +141,21 @@ The plugin lives in `packages/codex-plugin/` and includes:
 - `inspect-skill` — inspect provenance, maintenance, safety, and intended use;
 - `manage-skills` — keep global/project skill sets compact.
 
-A repository-level Codex marketplace lives at `.agents/plugins/marketplace.json`, so Codex can install directly from GitHub. The plugin reads the same generated registry as the website and filters D/Blocked candidates again at runtime as defense in depth.
+The router returns canonical fields:
+
+- `match_score` — relevance to the current task;
+- `skillradar_score` — overall SkillRadar quality/signal score;
+- `security` — A/B/C safety grade;
+- `source` — source repository;
+- `reason` — concise routing rationale.
+
+A repository-level Codex marketplace lives at `.agents/plugins/marketplace.json`, so Codex can install directly from GitHub. The plugin bundles the same generated safety-gated registry used by the project and filters D/Blocked candidates again at runtime as defense in depth.
 
 ## Repository map
 
 ```text
 SkillRadar/
-├── .agents/plugins/marketplace.json    # Codex marketplace entry
+├── .agents/plugins/marketplace.json     # Codex marketplace entry
 ├── skills/skillradar/SKILL.md           # standard Agent Skill
 ├── index.html                            # registry UI
 ├── metrics.html                          # public operational metrics
@@ -154,6 +169,9 @@ SkillRadar/
 │   ├── radar-registry.json               # audit candidate pool
 │   └── ranking-history.json              # daily snapshots
 ├── packages/codex-plugin/
+│   ├── data/registry.json                # bundled safety-gated snapshot
+│   ├── scripts/skillradar.mjs            # read-only local-first router CLI
+│   └── skills/                            # Codex routing skills
 ├── scripts/
 └── .github/workflows/
 ```
@@ -162,22 +180,23 @@ SkillRadar/
 
 The repository intentionally keeps evidence in public Git history:
 
-- the daily bot commits generated Radar data;
+- the daily bot commits generated Radar data and refreshes the bundled plugin registry;
 - ranking snapshots show how Top 20 lists move;
 - security-gated candidates remain inspectable;
 - Issues and PRs are the source of roadmap and maintenance discussion;
 - Releases package stable plugin versions;
-- CI verifies registry integrity, secret patterns, and ecosystem manifests.
+- CI verifies registry integrity, secret patterns, ecosystem manifests, and plugin-only offline routing.
 
 We do **not** manufacture Stars, Forks, installs, or contributor activity. Adoption metrics should represent real external users.
 
 ## GitHub Pages
 
-Pages workflows are included. GitHub requires the repository-level Pages source to be enabled once. Set:
+The public registry and metrics are deployed through GitHub Actions:
 
-`Settings → Pages → Build and deployment → Source: GitHub Actions`
+- `https://changchangidea-oss.github.io/SkillRadar/`
+- `https://changchangidea-oss.github.io/SkillRadar/metrics.html`
 
-After that one-time account setting, pushes and Radar refreshes can publish the current registry and metrics page automatically.
+Daily Radar refreshes can publish the current registry and metrics page automatically.
 
 ## Contributing
 
@@ -194,7 +213,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Security issues should follow [SECURITY.
 
 ## Release
 
-See [v0.3.0 release notes](docs/releases/v0.3.0.md).
+See [v0.3.1 release notes](docs/releases/v0.3.1.md).
 
 ## License
 
