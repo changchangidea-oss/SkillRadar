@@ -1,7 +1,10 @@
 {
-  "checkedAt": "2026-08-24T15:29:38.109Z",
-  "status": "action-required",
-  "message": "{\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/pages/pages#create-a-apiname-pages-site\",\"status\":\"403\"}gh: Resource not accessible by integration (HTTP 403)",
-  "tokenSource": "github_token",
-  "expectedUrl": "https://changchangidea-oss.github.io/SkillRadar/"
+  "checkedAt": "2026-08-25T12:59:12.518Z",
+  "status": "enabled",
+  "message": "GitHub Pages site enabled and deployed successfully from GitHub Actions.",
+  "source": "workflow_dispatch",
+  "runId": 32850616130,
+  "url": "https://changchangidea-oss.github.io/SkillRadar/",
+  "metricsUrl": "https://changchangidea-oss.github.io/SkillRadar/metrics.html",
+  "verifiedBy": "GitHub Actions"
 }
