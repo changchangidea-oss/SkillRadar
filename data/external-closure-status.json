@@ -1,0 +1,35 @@
+{
+  "closedAt": "2026-08-25T12:59:15Z",
+  "status": "closed",
+  "checks": {
+    "codexMarketplaceInstall": {
+      "status": "passed",
+      "evidence": "data/ecosystem-status.json"
+    },
+    "githubPages": {
+      "status": "passed",
+      "url": "https://changchangidea-oss.github.io/SkillRadar/",
+      "metricsUrl": "https://changchangidea-oss.github.io/SkillRadar/metrics.html",
+      "runId": 32850616130
+    },
+    "codexCommunity": {
+      "status": "published",
+      "url": "https://github.com/openai/codex/issues/26534#issuecomment-5408034639"
+    },
+    "agentSkillsCommunity": {
+      "status": "published",
+      "url": "https://github.com/agentskills/agentskills/discussions/531"
+    },
+    "skillsShIndexingRequest": {
+      "status": "submitted",
+      "url": "https://github.com/vercel-labs/skills/issues/2056",
+      "directoryIndexedNow": false,
+      "note": "Indexing is controlled by skills.sh maintainers; the repository has submitted the canonical request and tracks visibility via data/skills-sh-status.json."
+    }
+  },
+  "security": {
+    "temporaryDeviceAuthorizationWorkflowRemovedAfterUse": true,
+    "oauthTokenPersistedInRepository": false,
+    "deviceCodeWasSingleUse": true
+  }
+}
