@@ -7,6 +7,7 @@ on:
       - 'packages/codex-plugin/**'
       - 'scripts/sync-codex-plugin-registry.mjs'
       - 'scripts/validate-plugin-offline.mjs'
+      - 'scripts/validate-skill-budget.mjs'
       - 'skills/**'
       - '.github/workflows/ecosystem-smoke.yml'
   push:
@@ -16,8 +17,10 @@ on:
       - 'packages/codex-plugin/**'
       - 'scripts/sync-codex-plugin-registry.mjs'
       - 'scripts/validate-plugin-offline.mjs'
+      - 'scripts/validate-skill-budget.mjs'
       - 'skills/**'
       - 'data/release-status.json'
+      - 'data/ecosystem-verify-trigger.json'
       - '.github/workflows/ecosystem-smoke.yml'
   workflow_dispatch:
 
@@ -43,11 +46,13 @@ jobs:
           const market=JSON.parse(fs.readFileSync('.agents/plugins/marketplace.json','utf8'))
           const plugin=JSON.parse(fs.readFileSync('packages/codex-plugin/.codex-plugin/plugin.json','utf8'))
           const pkg=JSON.parse(fs.readFileSync('package.json','utf8'))
+          const registry=JSON.parse(fs.readFileSync('packages/codex-plugin/data/registry.json','utf8'))
           if(market.name!=='skillradar') throw new Error('marketplace name mismatch')
           const item=market.plugins.find(x=>x.name==='skillradar')
           if(!item || item.source?.path!=='./packages/codex-plugin') throw new Error('marketplace plugin source mismatch')
           if(plugin.name!=='skillradar' || plugin.version!==pkg.version) throw new Error('plugin/package version mismatch')
-          if(!fs.existsSync('packages/codex-plugin/data/registry.json')) throw new Error('bundled registry missing')
+          if(registry.schemaVersion!==2 || !Array.isArray(registry.general)) throw new Error('v0.4 bundled registry must use schema v2 with general shard')
+          if(!fs.existsSync('packages/codex-plugin/scripts/skill-budget.mjs')) throw new Error('Skill Budget Doctor missing')
           if(!fs.existsSync('skills/skillradar/SKILL.md')) throw new Error('skills.sh-compatible SKILL.md missing')
           console.log(`Ecosystem manifests passed for v${plugin.version}.`)
           NODE
@@ -57,6 +62,8 @@ jobs:
         run: npm install -g @openai/codex
       - name: Verify plugin-only offline routing
         run: npm run validate:plugin-offline
+      - name: Verify Skill Budget Doctor
+        run: npm run validate:skill-budget
       - name: Verify public Codex install when this version is released
         id: public_install
         shell: bash
@@ -77,15 +84,16 @@ jobs:
           grep -q 'skillradar' "${RUNNER_TEMP}/plugins.json"
           PLUGIN_ROOT="$(find "$CODEX_HOME" -type f -path '*/skillradar*/scripts/skillradar.mjs' -print -quit | xargs dirname | xargs dirname)"
           test -f "$PLUGIN_ROOT/data/registry.json"
-          SKILLRADAR_OFFLINE=1 node "$PLUGIN_ROOT/scripts/skillradar.mjs" match 'Next.js React shadcn AI dashboard' > "${RUNNER_TEMP}/route.json"
-          node -e 'const r=require(process.argv[1]);if(r.source!=="skillradar-registry"||r.registry?.mode!=="local-bundled"||r.matches?.length!==3)process.exit(1)' "${RUNNER_TEMP}/route.json"
+          test -f "$PLUGIN_ROOT/scripts/skill-budget.mjs"
+          SKILLRADAR_OFFLINE=1 node "$PLUGIN_ROOT/scripts/skillradar.mjs" match 'Next.js React shadcn AI dashboard tool calling App Router' > "${RUNNER_TEMP}/route.json"
+          node -e 'const r=require(process.argv[1]);if(r.source!=="skillradar-registry"||r.registry?.mode!=="local-bundled"||r.registry?.schemaVersion!==2||r.ranking?.version!=="2.0"||r.matches?.length!==3||r.matches.some(x=>x.match_details?.ranking_version!=="2.0"))process.exit(1)' "${RUNNER_TEMP}/route.json"
           echo "released=true" >> "$GITHUB_OUTPUT"
-          echo "Public Codex marketplace install + offline route passed for ${VERSION}."
+          echo "Public Codex marketplace install + ranking v2 offline route passed for ${VERSION}."
       - name: Record public ecosystem verification
         if: github.event_name != 'pull_request' && steps.public_install.outputs.released == 'true'
         run: |
           VERSION="v$(node -p "require('./package.json').version")"
-          node -e 'const fs=require("fs");const v=process.argv[1];fs.writeFileSync("data/ecosystem-status.json",JSON.stringify({verifiedAt:new Date().toISOString(),version:v,skillsCliDiscovery:"passed",codexMarketplaceInstall:"passed",offlineBundledRouting:"passed",command:`codex plugin marketplace add changchangidea-oss/SkillRadar --ref ${v} && codex plugin add skillradar@skillradar`,verifiedBy:"GitHub Actions"},null,2)+"\n")' "$VERSION"
+          node -e 'const fs=require("fs");const v=process.argv[1];fs.writeFileSync("data/ecosystem-status.json",JSON.stringify({verifiedAt:new Date().toISOString(),version:v,skillsCliDiscovery:"passed",codexMarketplaceInstall:"passed",offlineBundledRouting:"passed",rankingV2:"passed",skillBudgetDoctor:"passed",command:`codex plugin marketplace add changchangidea-oss/SkillRadar --ref ${v} && codex plugin add skillradar@skillradar`,verifiedBy:"GitHub Actions"},null,2)+"\n")' "$VERSION"
           git add data/ecosystem-status.json
           if git diff --cached --quiet; then exit 0; fi
           git config user.name "skillradar-ecosystem-bot"
