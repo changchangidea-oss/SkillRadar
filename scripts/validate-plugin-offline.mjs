@@ -39,8 +39,8 @@ const fixture = {
   contentHash: 'fixture',
   core: [
     { id: 'c-risk', name: 'Dashboard Specialist', source: 'fixture/c-risk', category: 'Frontend', tags: ['dashboard', 'nextjs', 'react'], summary: 'Dashboard specialist', security: 'C', score: 100 },
-    { id: 'b-safe', name: 'Dashboard Safe', source: 'fixture/b-safe', category: 'Frontend', tags: ['dashboard', 'nextjs', 'react'], summary: 'Dashboard safe alternative', security: 'B', score: 99 },
-    { id: 'a-safe', name: 'Dashboard Conservative', source: 'fixture/a-safe', category: 'Frontend', tags: ['dashboard', 'nextjs'], summary: 'Dashboard conservative alternative', security: 'A', score: 90 }
+    { id: 'b-safe', name: 'Dashboard Safe', source: 'fixture/b-safe', category: 'Frontend', tags: ['dashboard', 'nextjs', 'react'], summary: 'Dashboard safe alternative', security: 'B', score: 80 },
+    { id: 'a-safe', name: 'Dashboard Conservative', source: 'fixture/a-safe', category: 'Frontend', tags: ['dashboard', 'nextjs', 'react'], summary: 'Dashboard conservative alternative', security: 'A', score: 70 }
   ],
   design: []
 }
@@ -50,6 +50,7 @@ const policy = runMatch('dashboard nextjs react', { SKILLRADAR_REGISTRY_PATH: fi
 if (policy.matches?.[0]?.security !== 'C') throw new Error('policy fixture did not produce C-grade top match')
 if (!policy.advisory || policy.advisory.level !== 'review') throw new Error('C-grade top match did not produce review advisory')
 if (!['A', 'B'].includes(policy.advisory.alternative?.security)) throw new Error('C-grade advisory did not identify A/B alternative')
+if (policy.matches[0].match_score - policy.advisory.alternative.match_score > 5) throw new Error('advisory alternative is not a nearby match')
 
 fs.rmSync(tmp, { recursive: true, force: true })
 console.log('Offline Codex plugin validation passed: plugin-only Top 3 + C-grade safety advisory.')
