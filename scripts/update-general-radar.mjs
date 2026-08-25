@@ -56,11 +56,21 @@ function securityScan(text,scriptCount,scanComplete=true){
   const score=grade==='A'?100:grade==='B'?88:grade==='C'?66:grade==='D'?35:0
   return {grade,score,scanComplete,findings:findings.slice(0,12),capabilities:{shell:/\b(?:bash|sh|zsh|powershell|cmd\.exe)\b/i.test(text)||scriptCount>0,network:findings.some(x=>['network','pipe-to-shell','remote-shell'].includes(x.name)),secrets:findings.some(x=>['secret-access','credential-exfil'].includes(x.name)),packageInstall:findings.some(x=>x.name==='package-install'),filesystemWrite:findings.some(x=>['filesystem-write','git-write'].includes(x.name))}}
 }
+function retainWithScanProvenance(old){
+  const total=Number(old?.scriptScan?.total),scanned=Number(old?.scriptScan?.scanned)
+  const verified=old?.scriptScan?.complete===true&&Number.isFinite(total)&&Number.isFinite(scanned)&&total===scanned
+  if(verified)return {...old,staleRuns:(old.staleRuns||0)+1}
+  const findings=[...(old.securityFindings||[]).filter(x=>x?.name!=='legacy-unverified-script-scan'),{name:'legacy-unverified-script-scan',severity:'high',weight:40}].slice(0,12)
+  return {...old,staleRuns:(old.staleRuns||0)+1,status:'review',security:'D',securityScore:35,securityFindings:findings,scriptScan:{total:Number.isFinite(total)?total:null,scanned:Number.isFinite(scanned)?scanned:null,complete:false,provenance:'unverified-retained'}}
+}
 if(process.env.SKILLRADAR_SECURITY_SELFTEST==='1'){
   const partial=securityScan('safe script',5,false),blocked=securityScan('rm -rf /',1,true)
+  const legacy=retainWithScanProvenance({security:'A',status:'active'}),verified=retainWithScanProvenance({security:'A',status:'active',scriptScan:{total:0,scanned:0,complete:true}})
   if(partial.grade!=='D'||!partial.findings.some(x=>x.name==='partial-script-scan'))throw new Error('partial script scan must fail closed as D')
   if(blocked.grade!=='Blocked')throw new Error('destructive script self-test must be Blocked')
-  console.log('General Radar security self-test passed: incomplete executable scans fail closed and destructive commands block routing.')
+  if(legacy.security!=='D'||legacy.status!=='review'||legacy.scriptScan?.complete!==false)throw new Error('retained candidate without scan provenance must fail closed as D/review')
+  if(verified.security!=='A'||verified.status!=='active')throw new Error('verified retained candidate must preserve routing status')
+  console.log('General Radar security self-test passed: incomplete and unverified retained scans fail closed; destructive commands block routing.')
   process.exit(0)
 }
 function classify(text,domains,hints=[]){
@@ -74,7 +84,7 @@ const domains=await readJson('data/general-domains.json',[])
 const previous=await readJson('data/general-radar-registry.json',{candidates:[]})
 const prevMap=new Map((previous.candidates||[]).map(x=>[`${x.source}:${x.skillPath}`,x]))
 const coarse=new Map(),errors=[],repoCache=new Map(),treeCache=new Map()
-const metrics={repository_queries:0,code_queries:0,repositories_seen:new Set(),skill_files_seen:new Set(),partial_script_scans:0,channels:{repository_search:0,code_search:0,ecosystem_search:0}}
+const metrics={repository_queries:0,code_queries:0,repositories_seen:new Set(),skill_files_seen:new Set(),partial_script_scans:0,unverified_retained:0,channels:{repository_search:0,code_search:0,ecosystem_search:0}}
 function addCandidate(repo,skillPath,hint,channel,treePaths){
   const key=`${repo.full_name}:${skillPath}`;const slug=skillPath.split('/').slice(-2,-1)[0]||repo.name
   const existing=coarse.get(key)||{key,source:repo.full_name,skillPath,slug,defaultBranch:repo.default_branch,repoStars:repo.stargazers_count||0,pushedAt:repo.pushed_at,repoDescription:repo.description||'',treePaths:treePaths||[],hints:[],channels:[],githubUrl:`https://github.com/${repo.full_name}/blob/${repo.default_branch}/${skillPath}`,installUrl:`https://github.com/${repo.full_name}`}
@@ -132,11 +142,11 @@ const currentKeys=new Set(analyzed.map(x=>`${x.source}:${x.skillPath}`)),retaine
 for(const old of previous.candidates||[]){
   const key=`${old.source}:${old.skillPath}`;if(currentKeys.has(key))continue
   const age=(Date.now()-new Date(old.lastSeenAt||old.firstSeenAt||0).getTime())/86400000
-  if(age<=RETAIN_DAYS)retained.push({...old,staleRuns:(old.staleRuns||0)+1})
+  if(age<=RETAIN_DAYS){const item=retainWithScanProvenance(old);if(item.security==='D'&&item.securityFindings?.some(x=>x.name==='legacy-unverified-script-scan'))metrics.unverified_retained++;retained.push(item)}
 }
 const all=[...analyzed,...retained].sort((a,b)=>b.signalScore-a.signalScore)
-const live=all.filter(x=>x.status==='active'&&['A','B','C'].includes(x.security)).slice(0,260)
+const live=all.filter(x=>x.status==='active'&&['A','B','C'].includes(x.security)&&x.scriptScan?.complete===true).slice(0,260)
 await writeJson('data/general-skills-radar.json',live)
 await writeJson('data/general-radar-registry.json',{generatedAt:iso(),candidateCount:all.length,candidates:all,errors:errors.slice(0,80)})
-await writeJson('data/general-radar-latest.json',{generatedAt:iso(),taxonomyDomains:domains.length,repositoryQueries:metrics.repository_queries,codeQueries:metrics.code_queries,repositoriesSeen:metrics.repositories_seen.size,skillFilesSeen:metrics.skill_files_seen.size,analyzed:analyzed.length,retained:retained.length,active:live.length,review:all.filter(x=>x.status==='review').length,blocked:all.filter(x=>x.status==='blocked').length,lowRelevance:all.filter(x=>x.status==='low-relevance').length,partialScriptScans:metrics.partial_script_scans,channels:metrics.channels,errorCount:errors.length})
-console.log(`General Radar: ${live.length} active skills from ${metrics.repositories_seen.size} repos / ${metrics.skill_files_seen.size} SKILL.md files; ${metrics.partial_script_scans} incomplete script scans failed closed; ${errors.length} errors.`)
+await writeJson('data/general-radar-latest.json',{generatedAt:iso(),taxonomyDomains:domains.length,repositoryQueries:metrics.repository_queries,codeQueries:metrics.code_queries,repositoriesSeen:metrics.repositories_seen.size,skillFilesSeen:metrics.skill_files_seen.size,analyzed:analyzed.length,retained:retained.length,active:live.length,review:all.filter(x=>x.status==='review').length,blocked:all.filter(x=>x.status==='blocked').length,lowRelevance:all.filter(x=>x.status==='low-relevance').length,partialScriptScans:metrics.partial_script_scans,unverifiedRetained:metrics.unverified_retained,channels:metrics.channels,errorCount:errors.length})
+console.log(`General Radar: ${live.length} active skills from ${metrics.repositories_seen.size} repos / ${metrics.skill_files_seen.size} SKILL.md files; ${metrics.partial_script_scans} incomplete script scans + ${metrics.unverified_retained} unverified retained candidates failed closed; ${errors.length} errors.`)
