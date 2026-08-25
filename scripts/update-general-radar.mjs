@@ -8,6 +8,7 @@ const p=(...parts)=>path.join(root,...parts)
 const token=process.env.GITHUB_TOKEN||''
 const headers={Accept:'application/vnd.github+json','User-Agent':'SkillRadar/0.4 (+https://github.com/changchangidea-oss/SkillRadar)',...(token?{Authorization:`Bearer ${token}`}:{ }),'X-GitHub-Api-Version':'2022-11-28'}
 const MAX_ANALYZE=180
+const MAX_SCRIPT_SCAN=24
 const RETAIN_DAYS=14
 const sleep=ms=>new Promise(r=>setTimeout(r,ms))
 const clamp=(n,lo=0,hi=100)=>Math.max(lo,Math.min(hi,n))
@@ -48,12 +49,19 @@ function quality(md,fm,treePaths,baseDir){let q=32;if(fm.name)q+=10;if(fm.descri
 const BLOCKED=[['destructive-root',/\brm\s+-rf\s+\/(?:\s|$)/i,100],['filesystem-format',/\b(?:mkfs|fdisk)\b/i,100],['fork-bomb',/:\(\)\s*\{\s*:\|:&\s*;\s*\}\s*;:/,100],['credential-exfil',/(?:curl|wget)[^\n]{0,180}(?:TOKEN|API[_-]?KEY|PASSWORD|SECRET)/i,100]]
 const HIGH=[['pipe-to-shell',/(?:curl|wget)[^\n|]{0,160}\|\s*(?:bash|sh|zsh)/i,35],['sudo',/\bsudo\b/i,24],['remote-shell',/\b(?:ssh|scp|rsync)\b/i,20],['dynamic-exec',/\b(?:eval|exec)\s*\(/i,22],['secret-access',/(?:\.env\b|process\.env|os\.environ|API[_-]?KEY|TOKEN|PASSWORD|SECRET)/i,18]]
 const MED=[['network',/\b(?:curl|wget|fetch\(|requests\.|axios|http[s]?:\/\/)/i,10],['package-install',/\b(?:npm|pnpm|yarn|pip|uv|brew|apt(?:-get)?)\s+(?:i|install|add)\b/i,10],['filesystem-write',/\b(?:rm|mv|cp|chmod|chown|tee)\b|writeFile|write_text|open\([^)]*,\s*['"]w/i,9],['git-write',/\bgit\s+(?:push|commit|reset|clean)\b/i,8],['deploy',/\b(?:vercel|wrangler|terraform|kubectl|docker)\b/i,7]]
-function securityScan(text,scriptCount){
-  const findings=[];for(const [name,re,w] of BLOCKED)if(re.test(text))findings.push({name,severity:'blocked',weight:w});for(const [name,re,w] of HIGH)if(re.test(text))findings.push({name,severity:'high',weight:w});for(const [name,re,w] of MED)if(re.test(text))findings.push({name,severity:'medium',weight:w})
+function securityScan(text,scriptCount,scanComplete=true){
+  const findings=[];for(const [name,re,w] of BLOCKED)if(re.test(text))findings.push({name,severity:'blocked',weight:w});for(const [name,re,w] of HIGH)if(re.test(text))findings.push({name,severity:'high',weight:w});for(const [name,re,w] of MED)if(re.test(text))findings.push({name,severity:'medium',weight:w});if(!scanComplete)findings.push({name:'partial-script-scan',severity:'high',weight:40})
   const blocked=findings.some(x=>x.severity==='blocked'),high=findings.filter(x=>x.severity==='high').reduce((a,x)=>a+x.weight,0),med=findings.filter(x=>x.severity==='medium').reduce((a,x)=>a+x.weight,0)
-  let grade='A';if(blocked)grade='Blocked';else if(high>=35||findings.filter(x=>x.severity==='high').length>=2)grade='D';else if(high>0||med>=18)grade='C';else if(med>0||scriptCount>0)grade='B'
+  let grade='A';if(blocked)grade='Blocked';else if(!scanComplete)grade='D';else if(high>=35||findings.filter(x=>x.severity==='high').length>=2)grade='D';else if(high>0||med>=18)grade='C';else if(med>0||scriptCount>0)grade='B'
   const score=grade==='A'?100:grade==='B'?88:grade==='C'?66:grade==='D'?35:0
-  return {grade,score,findings:findings.slice(0,12),capabilities:{shell:/\b(?:bash|sh|zsh|powershell|cmd\.exe)\b/i.test(text)||scriptCount>0,network:findings.some(x=>['network','pipe-to-shell','remote-shell'].includes(x.name)),secrets:findings.some(x=>['secret-access','credential-exfil'].includes(x.name)),packageInstall:findings.some(x=>x.name==='package-install'),filesystemWrite:findings.some(x=>['filesystem-write','git-write'].includes(x.name))}}
+  return {grade,score,scanComplete,findings:findings.slice(0,12),capabilities:{shell:/\b(?:bash|sh|zsh|powershell|cmd\.exe)\b/i.test(text)||scriptCount>0,network:findings.some(x=>['network','pipe-to-shell','remote-shell'].includes(x.name)),secrets:findings.some(x=>['secret-access','credential-exfil'].includes(x.name)),packageInstall:findings.some(x=>x.name==='package-install'),filesystemWrite:findings.some(x=>['filesystem-write','git-write'].includes(x.name))}}
+}
+if(process.env.SKILLRADAR_SECURITY_SELFTEST==='1'){
+  const partial=securityScan('safe script',5,false),blocked=securityScan('rm -rf /',1,true)
+  if(partial.grade!=='D'||!partial.findings.some(x=>x.name==='partial-script-scan'))throw new Error('partial script scan must fail closed as D')
+  if(blocked.grade!=='Blocked')throw new Error('destructive script self-test must be Blocked')
+  console.log('General Radar security self-test passed: incomplete executable scans fail closed and destructive commands block routing.')
+  process.exit(0)
 }
 function classify(text,domains,hints=[]){
   const hay=String(text).toLowerCase().replace(/next\.js/g,'nextjs')
@@ -66,7 +74,7 @@ const domains=await readJson('data/general-domains.json',[])
 const previous=await readJson('data/general-radar-registry.json',{candidates:[]})
 const prevMap=new Map((previous.candidates||[]).map(x=>[`${x.source}:${x.skillPath}`,x]))
 const coarse=new Map(),errors=[],repoCache=new Map(),treeCache=new Map()
-const metrics={repository_queries:0,code_queries:0,repositories_seen:new Set(),skill_files_seen:new Set(),channels:{repository_search:0,code_search:0,ecosystem_search:0}}
+const metrics={repository_queries:0,code_queries:0,repositories_seen:new Set(),skill_files_seen:new Set(),partial_script_scans:0,channels:{repository_search:0,code_search:0,ecosystem_search:0}}
 function addCandidate(repo,skillPath,hint,channel,treePaths){
   const key=`${repo.full_name}:${skillPath}`;const slug=skillPath.split('/').slice(-2,-1)[0]||repo.name
   const existing=coarse.get(key)||{key,source:repo.full_name,skillPath,slug,defaultBranch:repo.default_branch,repoStars:repo.stargazers_count||0,pushedAt:repo.pushed_at,repoDescription:repo.description||'',treePaths:treePaths||[],hints:[],channels:[],githubUrl:`https://github.com/${repo.full_name}/blob/${repo.default_branch}/${skillPath}`,installUrl:`https://github.com/${repo.full_name}`}
@@ -106,15 +114,17 @@ for(const item of coarseList){
   try{
     const md=await ghText(item.source,item.skillPath,item.defaultBranch);if(!md||md.length<40)continue
     const fm=parseFrontmatter(md),baseDir=item.skillPath.replace(/SKILL\.md$/i,'')
-    const scriptPaths=item.treePaths.filter(x=>x.startsWith(baseDir)&&/(^|\/)scripts\/.*\.(?:sh|bash|zsh|js|mjs|cjs|ts|py|ps1)$/i.test(x)).slice(0,4)
-    const scriptTexts=[];for(const file of scriptPaths){try{scriptTexts.push(await ghText(item.source,file,item.defaultBranch))}catch(e){errors.push({stage:'script-fetch',repo:item.source,path:file,error:String(e.message||e)})};await sleep(25)}
-    const sec=securityScan([md,...scriptTexts].join('\n\n'),scriptPaths.length),name=fm.name||titleCase(item.slug),sum=summary(md,fm)
+    const executablePaths=item.treePaths.filter(x=>x.startsWith(baseDir)&&/(^|\/)scripts\/.*\.(?:sh|bash|zsh|js|mjs|cjs|ts|py|ps1)$/i.test(x))
+    const scriptPaths=executablePaths.slice(0,MAX_SCRIPT_SCAN),scriptTexts=[];let scriptScanComplete=scriptPaths.length===executablePaths.length
+    for(const file of scriptPaths){try{scriptTexts.push(await ghText(item.source,file,item.defaultBranch))}catch(e){scriptScanComplete=false;errors.push({stage:'script-fetch',repo:item.source,path:file,error:String(e.message||e)})};await sleep(25)}
+    if(!scriptScanComplete)metrics.partial_script_scans++
+    const sec=securityScan([md,...scriptTexts].join('\n\n'),executablePaths.length,scriptScanComplete),name=fm.name||titleCase(item.slug),sum=summary(md,fm)
     const classes=classify(`${name} ${sum} ${fm.description||''} ${item.skillPath} ${item.repoDescription} ${md.slice(0,8000)}`,domains,item.hints),best=classes[0]||{relevance:0,domainName:'General'}
     const q=quality(md,fm,item.treePaths,baseDir),maint=recency(item.pushedAt),pop=popularity(item.repoStars),discoveryScore=round(Math.min(100,item.channels.length*24+item.hints.length*8+(item.repoStars>20?12:0)))
     const prior=prevMap.get(item.key),firstSeenAt=prior?.firstSeenAt||iso(),seenDays=Math.max(1,Math.floor((Date.now()-new Date(firstSeenAt).getTime())/86400000)+1)
     const signalScore=round(best.relevance*.30+q*.19+sec.score*.19+maint*.14+pop*.07+discoveryScore*.07+Math.min(100,seenDays*12)*.04)
     const status=sec.grade==='Blocked'?'blocked':sec.grade==='D'?'review':best.relevance<18?'low-relevance':'active'
-    analyzed.push({id:`${item.source}/${item.slug}-${hash(item.skillPath).slice(0,6)}`,name,slug:item.slug,source:item.source,skillPath:item.skillPath,githubUrl:item.githubUrl,installUrl:item.installUrl,summary:sum,category:best.domainName,tags:[...new Set(classes.slice(0,3).flatMap(c=>c.matched))].slice(0,14),domains:classes.filter(c=>c.relevance>=18).slice(0,4).map(c=>c.domainId),repoStars:item.repoStars,pushedAt:item.pushedAt,contentHash:hash(md),discovery:'github-general-radar',discoveryChannels:item.channels,discoveryScore,firstSeenAt,lastSeenAt:iso(),seenDays,qualityScore:q,maintenanceScore:maint,popularityScore:pop,security:sec.grade,securityScore:sec.score,securityFindings:sec.findings,capabilities:sec.capabilities,classifications:classes.slice(0,4),signalScore,status})
+    analyzed.push({id:`${item.source}/${item.slug}-${hash(item.skillPath).slice(0,6)}`,name,slug:item.slug,source:item.source,skillPath:item.skillPath,githubUrl:item.githubUrl,installUrl:item.installUrl,summary:sum,category:best.domainName,tags:[...new Set(classes.slice(0,3).flatMap(c=>c.matched))].slice(0,14),domains:classes.filter(c=>c.relevance>=18).slice(0,4).map(c=>c.domainId),repoStars:item.repoStars,pushedAt:item.pushedAt,contentHash:hash(md),discovery:'github-general-radar',discoveryChannels:item.channels,discoveryScore,firstSeenAt,lastSeenAt:iso(),seenDays,qualityScore:q,maintenanceScore:maint,popularityScore:pop,security:sec.grade,securityScore:sec.score,securityFindings:sec.findings,scriptScan:{total:executablePaths.length,scanned:scriptTexts.length,complete:scriptScanComplete},capabilities:sec.capabilities,classifications:classes.slice(0,4),signalScore,status})
   }catch(e){errors.push({stage:'analyze',repo:item.source,path:item.skillPath,error:String(e.message||e)})}
   await sleep(35)
 }
@@ -128,5 +138,5 @@ const all=[...analyzed,...retained].sort((a,b)=>b.signalScore-a.signalScore)
 const live=all.filter(x=>x.status==='active'&&['A','B','C'].includes(x.security)).slice(0,260)
 await writeJson('data/general-skills-radar.json',live)
 await writeJson('data/general-radar-registry.json',{generatedAt:iso(),candidateCount:all.length,candidates:all,errors:errors.slice(0,80)})
-await writeJson('data/general-radar-latest.json',{generatedAt:iso(),taxonomyDomains:domains.length,repositoryQueries:metrics.repository_queries,codeQueries:metrics.code_queries,repositoriesSeen:metrics.repositories_seen.size,skillFilesSeen:metrics.skill_files_seen.size,analyzed:analyzed.length,retained:retained.length,active:live.length,review:all.filter(x=>x.status==='review').length,blocked:all.filter(x=>x.status==='blocked').length,lowRelevance:all.filter(x=>x.status==='low-relevance').length,channels:metrics.channels,errorCount:errors.length})
-console.log(`General Radar: ${live.length} active skills from ${metrics.repositories_seen.size} repos / ${metrics.skill_files_seen.size} SKILL.md files; ${errors.length} errors.`)
+await writeJson('data/general-radar-latest.json',{generatedAt:iso(),taxonomyDomains:domains.length,repositoryQueries:metrics.repository_queries,codeQueries:metrics.code_queries,repositoriesSeen:metrics.repositories_seen.size,skillFilesSeen:metrics.skill_files_seen.size,analyzed:analyzed.length,retained:retained.length,active:live.length,review:all.filter(x=>x.status==='review').length,blocked:all.filter(x=>x.status==='blocked').length,lowRelevance:all.filter(x=>x.status==='low-relevance').length,partialScriptScans:metrics.partial_script_scans,channels:metrics.channels,errorCount:errors.length})
+console.log(`General Radar: ${live.length} active skills from ${metrics.repositories_seen.size} repos / ${metrics.skill_files_seen.size} SKILL.md files; ${metrics.partial_script_scans} incomplete script scans failed closed; ${errors.length} errors.`)

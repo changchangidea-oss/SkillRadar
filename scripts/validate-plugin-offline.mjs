@@ -82,5 +82,29 @@ if (!policy.advisory || policy.advisory.level !== 'review') throw new Error('C-g
 if (!['A', 'B'].includes(policy.advisory.alternative?.security)) throw new Error('C-grade advisory did not identify A/B alternative')
 if (policy.matches[0].match_score - policy.advisory.alternative.match_score > 5) throw new Error('advisory alternative is not a nearby match')
 
+const zhFixture = {
+  schemaVersion: 2,
+  generatedAt: 'test',
+  source: 'zh-intent-fixture',
+  coreCount: 3,
+  designCount: 0,
+  generalCount: 0,
+  totalCount: 3,
+  contentHash: 'zh-fixture',
+  core: [
+    { id: 'generic-architecture', name: 'Generic Architecture Research', source: 'fixture/generic', category: 'Research', tags: ['architecture'], summary: 'General architecture research and reverse engineering.', security: 'A', score: 99 },
+    { id: 'interior-rendering', name: 'Interior Architecture Rendering', source: 'fixture/interior', category: 'Design', tags: ['architecture', 'interior', 'spatial', 'rendering'], summary: 'Interior spatial architecture visualization and rendering.', security: 'A', score: 90 },
+    { id: 'render-only', name: 'Generic Renderer', source: 'fixture/render', category: 'Design', tags: ['rendering'], summary: 'Generic rendering utility.', security: 'A', score: 98 }
+  ],
+  design: [],
+  general: []
+}
+const zhFixturePath = path.join(tmp, 'zh-fixture.json')
+fs.writeFileSync(zhFixturePath, JSON.stringify(zhFixture))
+const zhPolicy = runMatch('建筑可视化和室内空间渲染', { SKILLRADAR_REGISTRY_PATH: zhFixturePath })
+if (zhPolicy.matches?.[0]?.id !== 'interior-rendering') throw new Error(`Chinese multi-facet intent regression: expected interior-rendering, got ${zhPolicy.matches?.[0]?.id}`)
+const zhSignals = zhPolicy.matches[0].match_details?.matched_signals || []
+if (zhSignals.filter(x => x.includes(':')).length < 4) throw new Error(`Chinese multi-facet evidence collapsed: ${JSON.stringify(zhSignals)}`)
+
 fs.rmSync(tmp, { recursive: true, force: true })
-console.log('Offline Codex plugin validation passed: registry-first contract + ranking v2 evidence + plugin-only Top 3 + C-grade safety advisory + manage-skills doctor contract.')
+console.log('Offline Codex plugin validation passed: registry-first contract + ranking v2 evidence + plugin-only Top 3 + C-grade safety advisory + Chinese multi-facet intent + manage-skills doctor contract.')
