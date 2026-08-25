@@ -2,6 +2,10 @@ name: Publish v0.3.1 Release
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/release-trigger-v0.3.1.json'
 
 permissions:
   contents: write
