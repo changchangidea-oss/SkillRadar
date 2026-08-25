@@ -7,33 +7,54 @@ const dataDir = path.join(root, 'data')
 const outDir = path.join(root, 'packages/codex-plugin/data')
 const outFile = path.join(outDir, 'registry.json')
 
-function readJson(file) {
-  return JSON.parse(fs.readFileSync(file, 'utf8'))
+function readJson(file, fallback = null) {
+  try { return JSON.parse(fs.readFileSync(file, 'utf8')) } catch { return fallback }
+}
+function canonical(skill) {
+  return `${String(skill.source || '').toLowerCase()}::${String(skill.name || skill.id || '').toLowerCase().replace(/[^a-z0-9]+/g, '')}`
+}
+function uniqueInto(list, seen) {
+  const out = []
+  for (const skill of list || []) {
+    const key = canonical(skill)
+    if (!key || seen.has(key)) continue
+    seen.add(key)
+    out.push(skill)
+  }
+  return out
 }
 
-const core = readJson(path.join(dataDir, 'skills.json'))
-const manifest = readJson(path.join(dataDir, 'design-skill-index.json'))
-const design = manifest.chunks.flatMap(file => readJson(path.join(dataDir, file)))
+const rawCore = readJson(path.join(dataDir, 'skills.json'), [])
+const manifest = readJson(path.join(dataDir, 'design-skill-index.json'), { chunks: [] })
+const rawDesign = manifest.chunks.flatMap(file => readJson(path.join(dataDir, file), []))
+const rawGeneral = readJson(path.join(dataDir, 'general-skills-radar.json'), [])
 
-const unsafe = design.filter(skill => ['D', 'Blocked'].includes(skill.security))
+const unsafe = [...rawDesign, ...rawGeneral].filter(skill => ['D', 'Blocked'].includes(skill.security))
 if (unsafe.length) {
-  throw new Error(`Refusing to bundle ${unsafe.length} unsafe design skills: ${unsafe.map(x => x.id).join(', ')}`)
+  throw new Error(`Refusing to bundle ${unsafe.length} unsafe discovered skills: ${unsafe.map(x => x.id).join(', ')}`)
 }
 
-const payloadForHash = JSON.stringify({ core, design })
+const seen = new Set()
+const core = uniqueInto(rawCore, seen)
+const design = uniqueInto(rawDesign, seen)
+const general = uniqueInto(rawGeneral, seen)
+const payloadForHash = JSON.stringify({ core, design, general })
 const contentHash = crypto.createHash('sha256').update(payloadForHash).digest('hex')
+const generalLatest = readJson(path.join(dataDir, 'general-radar-latest.json'), {})
 const snapshot = {
-  schemaVersion: 1,
-  generatedAt: manifest.generatedAt || new Date().toISOString().slice(0, 10),
+  schemaVersion: 2,
+  generatedAt: [manifest.generatedAt, generalLatest.generatedAt].filter(Boolean).sort().at(-1) || new Date().toISOString().slice(0, 10),
   source: 'skillradar-safety-gated-registry',
   coreCount: core.length,
   designCount: design.length,
-  totalCount: core.length + design.length,
+  generalCount: general.length,
+  totalCount: core.length + design.length + general.length,
   contentHash,
   core,
-  design
+  design,
+  general
 }
 
 fs.mkdirSync(outDir, { recursive: true })
 fs.writeFileSync(outFile, `${JSON.stringify(snapshot, null, 2)}\n`)
-console.log(`Bundled Codex registry: ${snapshot.totalCount} skills (${snapshot.coreCount} core + ${snapshot.designCount} design), sha256 ${contentHash.slice(0, 12)}…`)
+console.log(`Bundled Codex registry: ${snapshot.totalCount} unique skills (${snapshot.coreCount} core + ${snapshot.designCount} design + ${snapshot.generalCount} general), sha256 ${contentHash.slice(0, 12)}…`)
