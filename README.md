@@ -39,16 +39,21 @@ SkillRadar takes the opposite approach:
 Current Codex supports Git marketplace sources and marketplace-backed plugin installation. Add this repository as a marketplace and install SkillRadar in one shell line:
 
 ```bash
-codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.3.1 && codex plugin add skillradar@skillradar
+codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.3.2 && codex plugin add skillradar@skillradar
 ```
 
 Then start a fresh Codex thread and ask, for example:
 
 ```text
+$skill-router
 Find a safe skill for a Remotion product launch video and explain why you picked it.
 ```
 
-**v0.3.1 is offline-first for normal routing.** The installed plugin ships with a complete safety-gated registry snapshot, so `search`, `match`, and `inspect` read local data first. GitHub/network access is fallback only; normal Top-3 routing does not require cloning this repository or fetching GitHub Raw.
+**v0.3.2 is offline-first and registry-first for explicit routing.** The installed plugin ships with a complete safety-gated registry snapshot, so `search`, `match`, and `inspect` read local data first. GitHub/network access is fallback only; normal Top-3 routing does not require cloning this repository or fetching GitHub Raw.
+
+When `$skill-router` is explicitly invoked — or the user asks for Top N, recommendation, comparison, ranking, or routing — Codex must query the bundled SkillRadar Registry before selecting candidates. Already-installed local skills may be reported afterward as availability metadata, but they cannot replace the SkillRadar ranking.
+
+A successful explicit route exposes `source: skillradar-registry`, `registry.mode`, `match_score`, `skillradar_score`, `security`, `source`, and `reason`.
 
 The bundled `skillradar.mjs` command is SkillRadar's own read-only lookup CLI. Running it does not authorize installation or execution of any discovered third-party skill.
 
@@ -120,7 +125,7 @@ Grades are conservative:
 - **D** — audit-only; excluded from dynamic Top 20 and Codex automatic routing.
 - **Blocked** — prohibited from automatic routing.
 
-If a C-grade skill ranks first and an A/B candidate is within five match-score points, the v0.3.1 router surfaces a safer-alternative advisory instead of treating rank #1 as automatic permission.
+If a C-grade skill ranks first and an A/B candidate is within five match-score points, the router surfaces a safer-alternative advisory instead of treating rank #1 as automatic permission.
 
 This is **not** a formal security audit or sandbox. The goal is to make risk visible *before* an agent installs or runs something.
 
@@ -170,7 +175,7 @@ SkillRadar/
 │   └── ranking-history.json              # daily snapshots
 ├── packages/codex-plugin/
 │   ├── data/registry.json                # bundled safety-gated snapshot
-│   ├── scripts/skillradar.mjs            # read-only local-first router CLI
+│   ├── scripts/skillradar.mjs            # read-only local-first registry CLI
 │   └── skills/                            # Codex routing skills
 ├── scripts/
 └── .github/workflows/
@@ -213,7 +218,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Security issues should follow [SECURITY.
 
 ## Release
 
-See [v0.3.1 release notes](docs/releases/v0.3.1.md).
+See [v0.3.2 release notes](docs/releases/v0.3.2.md).
 
 ## License
 
