@@ -9,7 +9,10 @@ on:
     paths:
       - 'scripts/update-design-radar.mjs'
       - 'scripts/apply-safety-gate.mjs'
+      - 'scripts/sync-codex-plugin-registry.mjs'
       - 'scripts/validate.mjs'
+      - 'scripts/validate-plugin-offline.mjs'
+      - 'packages/codex-plugin/scripts/skillradar.mjs'
       - 'data/design-skill-index.json'
       - 'data/design-skills-1.json'
       - 'data/design-skills-2.json'
@@ -47,18 +50,22 @@ jobs:
           rm -rf scripts/runtime
       - name: Apply Codex safety gate
         run: node scripts/apply-safety-gate.mjs
-      - name: Validate generated registry and router
-        run: node scripts/validate.mjs
+      - name: Refresh bundled Codex registry
+        run: npm run sync:plugin-registry
+      - name: Validate generated registry and offline router
+        run: |
+          npm run validate
+          npm run validate:plugin-offline
       - name: Commit generated registry when changed
         run: |
-          git add data/design-seed-baseline.json data/design-skill-index.json data/design-skills-radar.json data/design-domains.json data/radar-latest.json data/radar-registry.json data/ranking-history.json
+          git add data/design-seed-baseline.json data/design-skill-index.json data/design-skills-radar.json data/design-domains.json data/radar-latest.json data/radar-registry.json data/ranking-history.json packages/codex-plugin/data/registry.json
           if git diff --cached --quiet; then
             echo "No registry changes."
             exit 0
           fi
           git config user.name "skillradar-bot"
           git config user.email "skillradar-bot@users.noreply.github.com"
-          git commit -m "chore(radar): refresh analyzed skills and rankings"
+          git commit -m "chore(radar): refresh analyzed skills and bundled plugin registry"
           git pull --rebase origin main
           git push origin HEAD:main
 

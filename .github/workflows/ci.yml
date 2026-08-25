@@ -13,4 +13,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm run validate
+      - name: Build bundled plugin registry
+        run: npm run sync:plugin-registry
+      - name: Validate registry and offline router
+        run: npm run validate
+      - name: Plugin-only offline acceptance
+        run: npm run validate:plugin-offline
