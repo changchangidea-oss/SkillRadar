@@ -3,6 +3,7 @@ import fs from 'node:fs'
 import { execFileSync } from 'node:child_process'
 
 const html = fs.readFileSync('index.html','utf8')
+const rootPackage = JSON.parse(fs.readFileSync('package.json','utf8'))
 const skills = JSON.parse(fs.readFileSync('data/skills.json','utf8'))
 const designManifest = JSON.parse(fs.readFileSync('data/design-skill-index.json','utf8'))
 const designSkills = designManifest.chunks.flatMap(f=>JSON.parse(fs.readFileSync(`data/${f}`,'utf8')))
@@ -47,7 +48,7 @@ if(!radar.generatedAt||!Array.isArray(radar.pipeline)) errors.push('radar-latest
 if(!registry.generatedAt||!Array.isArray(registry.candidates)) errors.push('radar-registry: invalid')
 if(!Array.isArray(history.snapshots)||history.snapshots.length<1) errors.push('ranking-history: expected at least one snapshot')
 if(manifest.name!=='skillradar') errors.push('plugin manifest: invalid name')
-if(manifest.version!=='0.3.1') errors.push('plugin manifest: expected 0.3.1')
+if(manifest.version!==rootPackage.version) errors.push(`plugin manifest version ${manifest.version} does not match package version ${rootPackage.version}`)
 if(!fs.existsSync('packages/codex-plugin/scripts/skillradar.mjs')) errors.push('plugin: missing router')
 for(const x of ['skill-router','find-skill','inspect-skill','manage-skills'])
   if(!fs.existsSync(`packages/codex-plugin/skills/${x}/SKILL.md`)) errors.push(`plugin: missing ${x}`)
