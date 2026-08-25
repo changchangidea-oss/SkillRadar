@@ -32,14 +32,18 @@ jobs:
           npm run validate
           npm run validate:plugin-offline
           npm run validate:skill-budget
-      - name: Verify general Radar has run
+      - name: Verify hardened general Radar has run
         run: |
           node - <<'NODE'
           const r=require('./data/general-radar-latest.json')
           const s=require('./data/general-skills-radar.json')
           if(!r.generatedAt) throw new Error('general Radar has not generated a real snapshot yet')
+          if(typeof r.partialScriptScans!=='number') throw new Error('general Radar snapshot predates fail-closed script scanning')
+          if(typeof r.unverifiedRetained!=='number') throw new Error('general Radar snapshot predates retained scan-provenance gating')
           if(!Array.isArray(s) || s.length < 1) throw new Error('general Radar produced no routable skills; refusing release')
-          console.log(`General Radar ready: ${s.length} routable skills from ${r.repositoriesSeen} repositories.`)
+          const invalid=s.filter(x=>!['A','B','C'].includes(x.security)||x.scriptScan?.complete!==true||Number(x.scriptScan?.total)!==Number(x.scriptScan?.scanned))
+          if(invalid.length) throw new Error(`general routing shard contains ${invalid.length} skills without complete scan provenance`)
+          console.log(`Hardened General Radar ready: ${s.length} routable skills from ${r.repositoriesSeen} repositories; ${r.partialScriptScans} partial scans and ${r.unverifiedRetained} unverified retained candidates were kept out of routing.`)
           NODE
       - name: Build Codex plugin archive
         run: |
