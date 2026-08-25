@@ -1,9 +1,11 @@
 {
-  "verifiedAt": "2026-08-25T14:38:07.470Z",
-  "version": "v0.3.2",
+  "verifiedAt": "2026-08-25T22:32:36.529Z",
+  "version": "v0.4.0",
   "skillsCliDiscovery": "passed",
   "codexMarketplaceInstall": "passed",
   "offlineBundledRouting": "passed",
-  "command": "codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.3.2 && codex plugin add skillradar@skillradar",
+  "rankingV2": "passed",
+  "skillBudgetDoctor": "passed",
+  "command": "codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.4.0 && codex plugin add skillradar@skillradar",
   "verifiedBy": "GitHub Actions"
 }
