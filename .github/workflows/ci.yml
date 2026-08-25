@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: General Radar security self-test
+        run: SKILLRADAR_SECURITY_SELFTEST=1 node scripts/update-general-radar.mjs
       - name: Build bundled plugin registry
         run: npm run sync:plugin-registry
       - name: Validate registry and offline router
