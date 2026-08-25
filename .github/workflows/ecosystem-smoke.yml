@@ -89,11 +89,47 @@ jobs:
           node -e 'const r=require(process.argv[1]);if(r.source!=="skillradar-registry"||r.registry?.mode!=="local-bundled"||r.registry?.schemaVersion!==2||r.ranking?.version!=="2.0"||r.matches?.length!==3||r.matches.some(x=>x.match_details?.ranking_version!=="2.0"))process.exit(1)' "${RUNNER_TEMP}/route.json"
           echo "released=true" >> "$GITHUB_OUTPUT"
           echo "Public Codex marketplace install + ranking v2 offline route passed for ${VERSION}."
-      - name: Record public ecosystem verification
-        if: github.event_name != 'pull_request' && steps.public_install.outputs.released == 'true'
+      - name: Verify public Codex upgrade from v0.3.0
+        id: public_upgrade
+        shell: bash
         run: |
           VERSION="v$(node -p "require('./package.json').version")"
-          node -e 'const fs=require("fs");const v=process.argv[1];fs.writeFileSync("data/ecosystem-status.json",JSON.stringify({verifiedAt:new Date().toISOString(),version:v,skillsCliDiscovery:"passed",codexMarketplaceInstall:"passed",offlineBundledRouting:"passed",rankingV2:"passed",skillBudgetDoctor:"passed",command:`codex plugin marketplace add changchangidea-oss/SkillRadar --ref ${v} && codex plugin add skillradar@skillradar`,verifiedBy:"GitHub Actions"},null,2)+"\n")' "$VERSION"
+          RELEASED="$(node -e "try{process.stdout.write(require('./data/release-status.json').version||'')}catch{}")"
+          if [ "$RELEASED" != "$VERSION" ]; then
+            echo "upgraded=false" >> "$GITHUB_OUTPUT"
+            echo "Public upgrade check deferred: ${VERSION} is not the recorded release yet."
+            exit 0
+          fi
+          export HOME="${RUNNER_TEMP}/skillradar-upgrade-home"
+          export CODEX_HOME="${HOME}/.codex"
+          mkdir -p "$HOME" "$CODEX_HOME"
+
+          codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.3.0 --json
+          codex plugin add skillradar@skillradar --json
+          codex plugin list --json > "${RUNNER_TEMP}/plugins-before-upgrade.json"
+          grep -q 'skillradar' "${RUNNER_TEMP}/plugins-before-upgrade.json"
+          grep -q '0.3.0' "${RUNNER_TEMP}/plugins-before-upgrade.json"
+
+          codex plugin remove skillradar@skillradar
+          codex plugin marketplace remove skillradar
+          codex plugin marketplace add changchangidea-oss/SkillRadar --ref "$VERSION" --json
+          codex plugin add skillradar@skillradar --json
+          codex plugin list --json > "${RUNNER_TEMP}/plugins-after-upgrade.json"
+          grep -q 'skillradar' "${RUNNER_TEMP}/plugins-after-upgrade.json"
+          grep -q '0.4.0' "${RUNNER_TEMP}/plugins-after-upgrade.json"
+
+          PLUGIN_ROOT="$(find "$CODEX_HOME" -type f -path '*/skillradar*/scripts/skillradar.mjs' -print -quit | xargs dirname | xargs dirname)"
+          test -f "$PLUGIN_ROOT/data/registry.json"
+          test -f "$PLUGIN_ROOT/scripts/skill-budget.mjs"
+          SKILLRADAR_OFFLINE=1 node "$PLUGIN_ROOT/scripts/skillradar.mjs" match '建筑可视化和室内空间渲染' > "${RUNNER_TEMP}/upgrade-route.json"
+          node -e 'const r=require(process.argv[1]);if(r.registry?.schemaVersion!==2||r.ranking?.version!=="2.0"||r.matches?.length!==3)process.exit(1)' "${RUNNER_TEMP}/upgrade-route.json"
+          echo "upgraded=true" >> "$GITHUB_OUTPUT"
+          echo "Public Codex upgrade v0.3.0 -> ${VERSION} passed with schema-v2 Matching v2 routing."
+      - name: Record public ecosystem verification
+        if: github.event_name != 'pull_request' && steps.public_install.outputs.released == 'true' && steps.public_upgrade.outputs.upgraded == 'true'
+        run: |
+          VERSION="v$(node -p "require('./package.json').version")"
+          node -e 'const fs=require("fs");const v=process.argv[1];fs.writeFileSync("data/ecosystem-status.json",JSON.stringify({verifiedAt:new Date().toISOString(),version:v,skillsCliDiscovery:"passed",codexMarketplaceInstall:"passed",codexUpgradeFromV030:"passed",offlineBundledRouting:"passed",rankingV2:"passed",skillBudgetDoctor:"passed",command:`codex plugin marketplace add changchangidea-oss/SkillRadar --ref ${v} && codex plugin add skillradar@skillradar`,upgradeCommand:`codex plugin remove skillradar@skillradar && codex plugin marketplace remove skillradar && codex plugin marketplace add changchangidea-oss/SkillRadar --ref ${v} && codex plugin add skillradar@skillradar`,verifiedBy:"GitHub Actions"},null,2)+"\n")' "$VERSION"
           git add data/ecosystem-status.json
           if git diff --cached --quiet; then exit 0; fi
           git config user.name "skillradar-ecosystem-bot"
