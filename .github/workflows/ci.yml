@@ -19,3 +19,5 @@ jobs:
         run: npm run validate
       - name: Plugin-only offline acceptance
         run: npm run validate:plugin-offline
+      - name: Skill Budget Doctor acceptance
+        run: npm run validate:skill-budget
