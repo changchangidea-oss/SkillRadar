@@ -54,10 +54,15 @@ for(const s of designSkills){
   if(!['A','B','C','D','Blocked'].includes(s.security)) errors.push(`design skill ${s.id}: invalid security ${s.security}`)
   if(s.discovery==='github-radar'&&['D','Blocked'].includes(s.security)) errors.push(`routing registry contains unsafe radar skill ${s.id}`)
 }
+const scanProvenanceEnforced=Object.prototype.hasOwnProperty.call(generalLatest,'unverifiedRetained')
 for(const s of generalSkills){
   for(const k of ['id','name','source','summary','security','signalScore','installUrl']) if(s[k]===undefined||s[k]===null||s[k]==='') errors.push(`general skill ${s.id||'<unknown>'}: missing ${k}`)
   if(!['A','B','C'].includes(s.security)) errors.push(`general routing shard contains unsafe grade ${s.security} for ${s.id}`)
   if(s.discovery!=='github-general-radar') errors.push(`general skill ${s.id}: unexpected discovery channel ${s.discovery}`)
+  if(scanProvenanceEnforced){
+    if(s.scriptScan?.complete!==true) errors.push(`general skill ${s.id}: live routing requires complete script scan provenance`)
+    if(Number(s.scriptScan?.total)!==Number(s.scriptScan?.scanned)) errors.push(`general skill ${s.id}: script scan count mismatch ${s.scriptScan?.scanned}/${s.scriptScan?.total}`)
+  }
 }
 if(!radar.generatedAt||!Array.isArray(radar.pipeline)) errors.push('radar-latest: invalid pipeline metadata')
 if(!registry.generatedAt||!Array.isArray(registry.candidates)) errors.push('radar-registry: invalid')
@@ -79,6 +84,7 @@ if(!bundled){
   if(bundled.totalCount!==expectedCore.length+expectedDesign.length+expectedGeneral.length) errors.push('plugin bundle: total count mismatch')
   if(bundled.contentHash!==expectedHash) errors.push('plugin bundle: content hash does not match deduplicated source registry')
   if([...(bundled.design||[]),...(bundled.general||[])].some(x=>['D','Blocked'].includes(x.security))) errors.push('plugin bundle: unsafe discovered skill included')
+  if(scanProvenanceEnforced&&(bundled.general||[]).some(x=>x.scriptScan?.complete!==true||Number(x.scriptScan?.total)!==Number(x.scriptScan?.scanned))) errors.push('plugin bundle: general skill without complete script scan provenance included')
 }
 
 const routeCases=['设计UI界面和design system','制作Remotion视频动效','工业设计3D打印产品建模','建筑可视化和室内空间渲染','Next.js React shadcn/ui AI dashboard streaming tool calling App Router']
