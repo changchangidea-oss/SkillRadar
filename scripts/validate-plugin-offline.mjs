@@ -8,6 +8,28 @@ const pluginSrc = path.resolve('packages/codex-plugin')
 const pluginDst = path.join(tmp, 'plugin')
 fs.cpSync(pluginSrc, pluginDst, { recursive: true })
 
+const routerSkillPath = path.join(pluginDst, 'skills/skill-router/SKILL.md')
+const routerSkill = fs.readFileSync(routerSkillPath, 'utf8')
+const requiredRouterContract = [
+  'you MUST query SkillRadar\'s bundled registry before choosing skills',
+  "node ../../scripts/skillradar.mjs match '<user task>'",
+  'source: skillradar-registry',
+  'registry.mode: local-bundled',
+  'match_score',
+  'skillradar_score',
+  'Local availability is supplemental metadata, not a replacement ranking.'
+]
+for (const phrase of requiredRouterContract) {
+  if (!routerSkill.includes(phrase)) throw new Error(`skill-router contract missing required phrase: ${phrase}`)
+}
+const forbiddenBypassPatterns = [
+  /If one precise local skill clearly covers the task, use it without remote lookup/i,
+  /local skill.*without.*registry/i
+]
+for (const pattern of forbiddenBypassPatterns) {
+  if (pattern.test(routerSkill)) throw new Error(`skill-router contract reintroduced local-first bypass: ${pattern}`)
+}
+
 function runMatch(query, extraEnv = {}) {
   const raw = execFileSync(process.execPath, [path.join(pluginDst, 'scripts/skillradar.mjs'), 'match', query], {
     cwd: tmp,
@@ -53,4 +75,4 @@ if (!['A', 'B'].includes(policy.advisory.alternative?.security)) throw new Error
 if (policy.matches[0].match_score - policy.advisory.alternative.match_score > 5) throw new Error('advisory alternative is not a nearby match')
 
 fs.rmSync(tmp, { recursive: true, force: true })
-console.log('Offline Codex plugin validation passed: plugin-only Top 3 + C-grade safety advisory.')
+console.log('Offline Codex plugin validation passed: registry-first contract + plugin-only Top 3 + C-grade safety advisory.')

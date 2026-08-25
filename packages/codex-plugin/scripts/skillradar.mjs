@@ -98,7 +98,7 @@ function loadLegacyLocalRegistry() {
 
 async function fetchJson(url) {
   if (offline) throw new Error('network disabled by SKILLRADAR_OFFLINE=1')
-  const r = await fetch(url, { headers: { accept: 'application/json', 'user-agent': 'SkillRadar-Codex-Plugin/0.3.1' } })
+  const r = await fetch(url, { headers: { accept: 'application/json', 'user-agent': 'SkillRadar-Codex-Plugin/0.3.2' } })
   if (!r.ok) throw new Error(`${r.status} ${r.statusText}`)
   return r.json()
 }
