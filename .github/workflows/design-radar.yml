@@ -8,11 +8,15 @@ on:
     branches: [main]
     paths:
       - 'scripts/update-design-radar.mjs'
+      - 'scripts/update-general-radar.mjs'
       - 'scripts/apply-safety-gate.mjs'
       - 'scripts/sync-codex-plugin-registry.mjs'
       - 'scripts/validate.mjs'
       - 'scripts/validate-plugin-offline.mjs'
+      - 'scripts/validate-skill-budget.mjs'
       - 'packages/codex-plugin/scripts/skillradar.mjs'
+      - 'packages/codex-plugin/scripts/skill-budget.mjs'
+      - 'data/general-domains.json'
       - 'data/design-skill-index.json'
       - 'data/design-skills-1.json'
       - 'data/design-skills-2.json'
@@ -40,7 +44,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Discover → parse → scan → classify → rank
+      - name: Discover design Radar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -48,24 +52,29 @@ jobs:
           cp scripts/update-design-radar.mjs scripts/runtime/update-design-radar.mjs
           node scripts/runtime/update-design-radar.mjs
           rm -rf scripts/runtime
+      - name: Discover general Agent Skills Radar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run radar:general
       - name: Apply Codex safety gate
         run: node scripts/apply-safety-gate.mjs
       - name: Refresh bundled Codex registry
         run: npm run sync:plugin-registry
-      - name: Validate generated registry and offline router
+      - name: Validate generated registry, router and budget doctor
         run: |
           npm run validate
           npm run validate:plugin-offline
+          npm run validate:skill-budget
       - name: Commit generated registry when changed
         run: |
-          git add data/design-seed-baseline.json data/design-skill-index.json data/design-skills-radar.json data/design-domains.json data/radar-latest.json data/radar-registry.json data/ranking-history.json packages/codex-plugin/data/registry.json
+          git add data/design-seed-baseline.json data/design-skill-index.json data/design-skills-radar.json data/design-domains.json data/radar-latest.json data/radar-registry.json data/ranking-history.json data/general-skills-radar.json data/general-radar-registry.json data/general-radar-latest.json packages/codex-plugin/data/registry.json
           if git diff --cached --quiet; then
             echo "No registry changes."
             exit 0
           fi
           git config user.name "skillradar-bot"
           git config user.email "skillradar-bot@users.noreply.github.com"
-          git commit -m "chore(radar): refresh analyzed skills and bundled plugin registry"
+          git commit -m "chore(radar): refresh design + general skills and bundled plugin registry"
           git pull --rebase origin main
           git push origin HEAD:main
 
