@@ -30,6 +30,12 @@ for (const pattern of forbiddenBypassPatterns) {
   if (pattern.test(routerSkill)) throw new Error(`skill-router contract reintroduced local-first bypass: ${pattern}`)
 }
 
+const manageSkill = fs.readFileSync(path.join(pluginDst, 'skills/manage-skills/SKILL.md'), 'utf8')
+for (const phrase of ["node ../../scripts/skill-budget.mjs audit '<current project or task focus>'", 'budget.pressure', 'read-only']) {
+  if (!manageSkill.includes(phrase)) throw new Error(`manage-skills contract missing required phrase: ${phrase}`)
+}
+if (!fs.existsSync(path.join(pluginDst, 'scripts/skill-budget.mjs'))) throw new Error('plugin-only copy missing Skill Budget Doctor')
+
 function runMatch(query, extraEnv = {}) {
   const raw = execFileSync(process.execPath, [path.join(pluginDst, 'scripts/skillradar.mjs'), 'match', query], {
     cwd: tmp,
@@ -43,11 +49,13 @@ function runMatch(query, extraEnv = {}) {
 const result = runMatch('Next.js React shadcn AI dashboard streaming tool calling App Router')
 if (result.source !== 'skillradar-registry') throw new Error('offline plugin did not use SkillRadar registry')
 if (result.registry?.mode !== 'local-bundled') throw new Error(`expected local-bundled mode, got ${result.registry?.mode}`)
+if (result.ranking?.version !== '2.0') throw new Error(`expected ranking v2, got ${result.ranking?.version}`)
 if (!Array.isArray(result.matches) || result.matches.length !== 3) throw new Error('offline router did not return Top 3')
 for (const item of result.matches) {
-  for (const key of ['match_score', 'skillradar_score', 'security', 'source', 'reason']) {
+  for (const key of ['match_score', 'skillradar_score', 'security', 'source', 'reason', 'match_details']) {
     if (item[key] === undefined || item[key] === null || item[key] === '') throw new Error(`offline result missing ${key}`)
   }
+  if (item.match_details?.ranking_version !== '2.0') throw new Error(`offline result missing ranking v2 evidence for ${item.id}`)
   if (['D', 'Blocked'].includes(item.security)) throw new Error(`unsafe offline result: ${item.id}`)
 }
 
@@ -75,4 +83,4 @@ if (!['A', 'B'].includes(policy.advisory.alternative?.security)) throw new Error
 if (policy.matches[0].match_score - policy.advisory.alternative.match_score > 5) throw new Error('advisory alternative is not a nearby match')
 
 fs.rmSync(tmp, { recursive: true, force: true })
-console.log('Offline Codex plugin validation passed: registry-first contract + plugin-only Top 3 + C-grade safety advisory.')
+console.log('Offline Codex plugin validation passed: registry-first contract + ranking v2 evidence + plugin-only Top 3 + C-grade safety advisory + manage-skills doctor contract.')
