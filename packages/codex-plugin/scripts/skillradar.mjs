@@ -38,8 +38,16 @@ const STOP=new Set('the a an and or for to of in on with from by is are be as th
 const PHRASES={
   'next.js':['nextjs'],'app router':['app-router'],'server components':['server-components','rsc'],
   'shadcn/ui':['shadcn'],'ai sdk':['ai-sdk'],'tool calling':['tool-calling','function-calling'],'function calling':['function-calling','tool-calling'],
-  'design system':['design-system'],'cloudflare workers':['cloudflare-workers','workers'],'ci/cd':['ci-cd'],'end to end':['e2e'],'用户体验':['ux'],'工业设计':['industrial-design']
+  'design system':['design-system'],'cloudflare workers':['cloudflare-workers','workers'],'ci/cd':['ci-cd'],'end to end':['e2e']
 }
+const ZH_FACETS=[
+  ['用户体验',['ux','research','usability']],['工业设计',['industrial-design','industrial','product','cad']],['产品设计',['product','industrial']],['3d打印',['3d-printing','fabrication','3d']],
+  ['建筑可视化',['architecture','rendering']],['室内空间',['interior','spatial']],['空间渲染',['spatial','rendering']],['建筑',['architecture']],['室内',['interior','spatial']],['景观',['landscape','environment','spatial']],
+  ['界面',['ui','interface','layout']],['视觉',['visual','graphic','typography']],['海报',['poster','graphic','typography','layout']],['品牌',['brand','campaign']],
+  ['视频',['video','motion','editing']],['剪辑',['video','editing']],['动效',['motion','animation','video']],['分镜',['storyboard','video','film']],
+  ['服装',['fashion','campaign']],['时尚',['fashion','brand']],['交互',['interaction','ux','ui']],['数媒',['digital-media','creative-coding']],['影视',['film','video','editing','vfx']],
+  ['工艺',['craft','fabrication']],['民间艺术',['illustration','hand-drawn','collage','pattern','craft']],['纹样',['pattern','illustration','vector']]
+]
 function canon(t){return String(t).toLowerCase().replace(/next\.js/g,'nextjs').replace(/shadcn\/ui/g,'shadcn').replace(/tool[- ]calling/g,'tool-calling').replace(/function[- ]calling/g,'function-calling').replace(/server[- ]components/g,'server-components').replace(/app[- ]router/g,'app-router').replace(/design[- ]system/g,'design-system').replace(/[^a-z0-9+#.-]+/g,'').trim()}
 function querySignals(text){
   const raw=String(text).toLowerCase(),concepts=[],consumed=new Set()
@@ -51,8 +59,12 @@ function querySignals(text){
   }
   const rawTokens=raw.replace(/next\.js/g,'nextjs').replace(/shadcn\/ui/g,'shadcn').split(/[^a-z0-9+#.-]+/).map(canon).filter(Boolean)
   for(const t of rawTokens){if(!t||STOP.has(t)||t.length<2||consumed.has(t))continue;if(concepts.some(c=>c.terms.includes(t)))continue;concepts.push({label:t,terms:[t],weight:t.length>7?1.5:1.15,kind:'token'})}
-  const zh={'界面':['ui','interface','layout'],'视觉':['visual','graphic','typography'],'视频':['video','motion','editing'],'建筑':['architecture','spatial','rendering'],'服装':['fashion','campaign'],'交互':['interaction','ux','ui']}
-  for(const [needle,terms] of Object.entries(zh))if(raw.includes(needle))concepts.push({label:needle,terms,weight:2.5,kind:'zh-alias'})
+  const facets=new Map()
+  for(const [needle,terms] of ZH_FACETS){
+    if(!raw.includes(needle))continue
+    for(const rawTerm of terms){const term=canon(rawTerm);if(term&&!facets.has(term))facets.set(term,needle)}
+  }
+  for(const [term,needle] of facets)concepts.push({label:`${needle}:${term}`,terms:[term],weight:2.25,kind:'zh-facet'})
   return concepts
 }
 function fieldText(s){return {identity:`${s.id||''} ${s.name||''}`.toLowerCase(),tags:`${(s.tags||[]).join(' ')} ${(s.uses||[]).join(' ')}`.toLowerCase(),domains:`${(s.domains||[]).join(' ')} ${s.category||''}`.toLowerCase(),summary:String(s.summary||'').toLowerCase(),source:String(s.source||'').toLowerCase()}}
