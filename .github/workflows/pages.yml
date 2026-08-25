@@ -10,6 +10,9 @@ on:
       - 'data/design-domains.json'
       - 'data/design-skills-radar.json'
       - 'data/design-skill-index.json'
+      - 'data/pages-status.json'
+      - 'data/ecosystem-status.json'
+      - 'data/skills-sh-status.json'
   workflow_dispatch:
 
 permissions:
@@ -25,7 +28,6 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    continue-on-error: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
