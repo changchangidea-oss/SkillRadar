@@ -1,0 +1,115 @@
+name: Temporary User Authorization Bootstrap
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/temporary-user-authorization.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  authorize-and-close-external-gaps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: GitHub user device authorization
+        shell: bash
+        run: |
+          unset GH_TOKEN GITHUB_TOKEN
+          echo 'SECURITY: GitHub CLI device authorization only. No token is printed or committed.'
+          echo 'Authorize the code shown below at https://github.com/login/device'
+          gh auth login --hostname github.com --git-protocol https --web --scopes 'repo,workflow'
+          gh api user --jq '"AUTHORIZED_GITHUB_USER=" + .login'
+
+      - name: Enable GitHub Pages once
+        env:
+          REPO: changchangidea-oss/SkillRadar
+        shell: bash
+        run: |
+          if gh api "repos/${REPO}/pages" >/dev/null 2>&1; then
+            echo 'PAGES_ALREADY_ENABLED=true'
+          else
+            gh api --method POST "repos/${REPO}/pages" -f build_type=workflow >/tmp/pages.json
+            echo 'PAGES_ENABLED=true'
+          fi
+          gh workflow run pages.yml --repo "$REPO" --ref main
+
+      - name: Publish Agent Skills Show and Tell
+        shell: bash
+        run: |
+          cat >/tmp/discussion.md <<'EOF'
+          SkillRadar is an open-source experiment in the infrastructure layer around Agent Skills rather than another skill collection.
+
+          Its v0.3 closed loop is:
+
+          `discover public SKILL.md → parse real contents → static security scan → classify → daily rank/history → publish a safety-gated registry → route Codex tasks`
+
+          Current proof points:
+          - 12 design domains with seed + live Radar candidates
+          - A/B/C/D/Blocked static safety grades; D/Blocked candidates are excluded from automatic routing
+          - daily GitHub Actions discovery and ranking-history snapshots
+          - the web UI and Codex plugin consume the same generated registry
+          - public Codex marketplace install is exercised on a clean GitHub Actions runner
+          - MIT, v0.3.0 Release, secret-leak CI guard, machine-readable status/metrics
+
+          Repository: https://github.com/changchangidea-oss/SkillRadar
+          Release: https://github.com/changchangidea-oss/SkillRadar/releases/tag/v0.3.0
+
+          The question we are exploring is: once portable Agent Skills become numerous, what discovery, provenance, safety, ranking, and routing primitives should exist between the raw SKILL.md ecosystem and an agent deciding what to load?
+
+          Feedback on the safety model, ranking signals, and portability approach is welcome.
+          EOF
+          REPO_ID="$(gh api graphql -f query='query { repository(owner:"agentskills", name:"agentskills") { id } }' --jq '.data.repository.id')"
+          CAT_ID="$(gh api graphql -f query='query { repository(owner:"agentskills", name:"agentskills") { discussionCategories(first:100) { nodes { id name } } } }' --jq '.data.repository.discussionCategories.nodes[] | select((.name|ascii_downcase)=="show and tell") | .id' | head -n1)"
+          if [ -z "$CAT_ID" ]; then echo 'Show and tell category not found' >&2; exit 1; fi
+          BODY="$(cat /tmp/discussion.md)"
+          gh api graphql \
+            -f query='mutation($repositoryId:ID!,$categoryId:ID!,$title:String!,$body:String!){createDiscussion(input:{repositoryId:$repositoryId,categoryId:$categoryId,title:$title,body:$body}){discussion{url}}}' \
+            -f repositoryId="$REPO_ID" \
+            -f categoryId="$CAT_ID" \
+            -f title='SkillRadar — discovery, safety grading and routing infrastructure for Agent Skills' \
+            -f body="$BODY" \
+            --jq '.data.createDiscussion.discussion.url' | sed 's/^/AGENT_SKILLS_DISCUSSION_URL=/'
+
+      - name: Submit skills.sh indexing request
+        shell: bash
+        run: |
+          cat >/tmp/skills-sh.md <<'EOF'
+          ## Request indexing for changchangidea-oss/SkillRadar
+
+          Requesting indexing on skills.sh so SkillRadar is discoverable through `npx skills find` and has a canonical directory page.
+
+          **Repository:** https://github.com/changchangidea-oss/SkillRadar
+
+          ### Skill included
+          - `skillradar` — open-source discovery, static-security, classification, daily-ranking, and routing infrastructure for Agent Skills and Codex. A daily GitHub Radar parses real `SKILL.md` files, assigns A/B/C/D/Blocked safety grades, classifies candidates, records ranking history, and only exposes safety-gated candidates to automatic routing.
+
+          ### Install
+          ```bash
+          npx skills add changchangidea-oss/SkillRadar --skill skillradar -g -y
+          ```
+
+          ### Verification / repository signals
+          - MIT License, public repository
+          - standard skill at `skills/skillradar/SKILL.md`
+          - `skills.sh.json` metadata at repository root
+          - Codex marketplace metadata at `.agents/plugins/marketplace.json`
+          - formal `v0.3.0` GitHub Release
+          - secret-leak CI guard
+          - daily Radar history and public machine-readable metrics
+          - skills CLI discovery and real Codex marketplace installation both verified by GitHub Actions
+
+          ### Integrity note
+          This request is for indexing only. The project deliberately does not generate fake installs, Stars, Forks, or telemetry to influence ranking. `data/skills-sh-status.json` checks directory visibility without installing the skill.
+          EOF
+          URL="$(gh issue create --repo vercel-labs/skills --title 'Listing: Request indexing for changchangidea-oss/SkillRadar' --body-file /tmp/skills-sh.md)"
+          echo "SKILLS_SH_ISSUE_URL=${URL}"
+
+      - name: Final authorization summary
+        shell: bash
+        run: |
+          echo 'External permission bootstrap completed.'
+          echo 'The OAuth token exists only on this ephemeral GitHub-hosted runner.'
