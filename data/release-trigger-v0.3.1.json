@@ -1,0 +1,10 @@
+{
+  "version": "v0.3.1",
+  "requestedAt": "2026-08-25T14:12:00Z",
+  "reason": "Publish only after bundled-registry generation and offline Codex routing acceptance passed on main.",
+  "requiredEvidence": [
+    "packages/codex-plugin/data/registry.json committed on main",
+    "plugin-only SKILLRADAR_OFFLINE=1 Top-3 routing passed",
+    "security gate excludes D/Blocked candidates"
+  ]
+}
