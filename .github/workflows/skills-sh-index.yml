@@ -1,0 +1,60 @@
+name: skills.sh Index Status
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/skills-sh-index.yml'
+      - 'skills/skillradar/SKILL.md'
+  schedule:
+    - cron: '47 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Query skills.sh through the public CLI
+        id: query
+        shell: bash
+        run: |
+          set +e
+          OUT="$(npx -y skills@latest find skillradar --owner changchangidea-oss 2>&1)"
+          RC=$?
+          set -e
+          printf '%s\n' "$OUT"
+          INDEXED=false
+          if printf '%s' "$OUT" | grep -qi 'changchangidea-oss/SkillRadar'; then INDEXED=true; fi
+          export INDEXED RC
+          node - <<'NODE'
+          const fs = require('fs')
+          fs.writeFileSync('data/skills-sh-status.json', JSON.stringify({
+            checkedAt: new Date().toISOString(),
+            indexed: process.env.INDEXED === 'true',
+            cliExitCode: Number(process.env.RC || 0),
+            source: 'skills.sh public CLI search',
+            query: 'skillradar',
+            owner: 'changchangidea-oss',
+            expectedId: 'changchangidea-oss/SkillRadar/skillradar',
+            expectedUrl: 'https://skills.sh/changchangidea-oss/SkillRadar/skillradar',
+            integrity: 'This check does not install the skill and does not manufacture install telemetry.'
+          }, null, 2) + '\n')
+          NODE
+      - name: Commit status when changed
+        run: |
+          git add data/skills-sh-status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'skillradar-ecosystem-bot'
+          git config user.email 'skillradar-ecosystem-bot@users.noreply.github.com'
+          git commit -m 'chore(ecosystem): refresh skills.sh index status'
+          git pull --rebase origin main
+          git push origin HEAD:main
