@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Skill Infrastructure",
+      "description": "Discovery, static security grading, daily ranking and Codex routing infrastructure for Agent Skills.",
+      "skills": ["skillradar"]
+    }
+  ]
+}
