@@ -5,6 +5,8 @@ on:
     paths:
       - '.agents/plugins/marketplace.json'
       - 'packages/codex-plugin/**'
+      - 'scripts/sync-codex-plugin-registry.mjs'
+      - 'scripts/validate-plugin-offline.mjs'
       - 'skills/**'
       - '.github/workflows/ecosystem-smoke.yml'
   push:
@@ -12,7 +14,10 @@ on:
     paths:
       - '.agents/plugins/marketplace.json'
       - 'packages/codex-plugin/**'
+      - 'scripts/sync-codex-plugin-registry.mjs'
+      - 'scripts/validate-plugin-offline.mjs'
       - 'skills/**'
+      - 'data/release-status.json'
       - '.github/workflows/ecosystem-smoke.yml'
   workflow_dispatch:
 
@@ -29,42 +34,62 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Build bundled plugin registry
+        run: npm run sync:plugin-registry
       - name: Validate Codex marketplace and plugin manifest
         run: |
           node - <<'NODE'
           const fs=require('fs')
           const market=JSON.parse(fs.readFileSync('.agents/plugins/marketplace.json','utf8'))
           const plugin=JSON.parse(fs.readFileSync('packages/codex-plugin/.codex-plugin/plugin.json','utf8'))
+          const pkg=JSON.parse(fs.readFileSync('package.json','utf8'))
           if(market.name!=='skillradar') throw new Error('marketplace name mismatch')
           const item=market.plugins.find(x=>x.name==='skillradar')
           if(!item || item.source?.path!=='./packages/codex-plugin') throw new Error('marketplace plugin source mismatch')
-          if(plugin.name!=='skillradar' || plugin.version!=='0.3.0') throw new Error('plugin manifest mismatch')
+          if(plugin.name!=='skillradar' || plugin.version!==pkg.version) throw new Error('plugin/package version mismatch')
+          if(!fs.existsSync('packages/codex-plugin/data/registry.json')) throw new Error('bundled registry missing')
           if(!fs.existsSync('skills/skillradar/SKILL.md')) throw new Error('skills.sh-compatible SKILL.md missing')
-          console.log('Ecosystem manifests passed.')
+          console.log(`Ecosystem manifests passed for v${plugin.version}.`)
           NODE
       - name: Confirm skills CLI can discover the repo
         run: npx -y skills@latest add . --list --full-depth
       - name: Install current Codex CLI
         run: npm install -g @openai/codex
-      - name: Verify the public one-line Codex install path
+      - name: Verify plugin-only offline routing
+        run: npm run validate:plugin-offline
+      - name: Verify public Codex install when this version is released
+        id: public_install
         shell: bash
         run: |
+          VERSION="v$(node -p "require('./package.json').version")"
+          RELEASED="$(node -e "try{process.stdout.write(require('./data/release-status.json').version||'')}catch{}")"
+          if [ "$RELEASED" != "$VERSION" ]; then
+            echo "released=false" >> "$GITHUB_OUTPUT"
+            echo "Public install check deferred: ${VERSION} is not the recorded release yet."
+            exit 0
+          fi
           export HOME="${RUNNER_TEMP}/skillradar-home"
           export CODEX_HOME="${HOME}/.codex"
           mkdir -p "$HOME" "$CODEX_HOME"
-          codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.3.0 --json
+          codex plugin marketplace add changchangidea-oss/SkillRadar --ref "$VERSION" --json
           codex plugin add skillradar@skillradar --json
           codex plugin list --json > "${RUNNER_TEMP}/plugins.json"
           grep -q 'skillradar' "${RUNNER_TEMP}/plugins.json"
-          find "$CODEX_HOME/plugins" -type f -name SKILL.md -print | grep -q '/skillradar/'
-          echo "Public Codex marketplace install passed."
-      - name: Record ecosystem verification
+          PLUGIN_ROOT="$(find "$CODEX_HOME" -type f -path '*/skillradar*/scripts/skillradar.mjs' -print -quit | xargs dirname | xargs dirname)"
+          test -f "$PLUGIN_ROOT/data/registry.json"
+          SKILLRADAR_OFFLINE=1 node "$PLUGIN_ROOT/scripts/skillradar.mjs" match 'Next.js React shadcn AI dashboard' > "${RUNNER_TEMP}/route.json"
+          node -e 'const r=require(process.argv[1]);if(r.source!=="skillradar-registry"||r.registry?.mode!=="local-bundled"||r.matches?.length!==3)process.exit(1)' "${RUNNER_TEMP}/route.json"
+          echo "released=true" >> "$GITHUB_OUTPUT"
+          echo "Public Codex marketplace install + offline route passed for ${VERSION}."
+      - name: Record public ecosystem verification
+        if: github.event_name != 'pull_request' && steps.public_install.outputs.released == 'true'
         run: |
-          node -e 'const fs=require("fs");fs.writeFileSync("data/ecosystem-status.json",JSON.stringify({verifiedAt:new Date().toISOString(),version:"v0.3.0",skillsCliDiscovery:"passed",codexMarketplaceInstall:"passed",command:"codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.3.0 && codex plugin add skillradar@skillradar",verifiedBy:"GitHub Actions"},null,2)+"\n")'
+          VERSION="v$(node -p "require('./package.json').version")"
+          node -e 'const fs=require("fs");const v=process.argv[1];fs.writeFileSync("data/ecosystem-status.json",JSON.stringify({verifiedAt:new Date().toISOString(),version:v,skillsCliDiscovery:"passed",codexMarketplaceInstall:"passed",offlineBundledRouting:"passed",command:`codex plugin marketplace add changchangidea-oss/SkillRadar --ref ${v} && codex plugin add skillradar@skillradar`,verifiedBy:"GitHub Actions"},null,2)+"\n")' "$VERSION"
           git add data/ecosystem-status.json
           if git diff --cached --quiet; then exit 0; fi
           git config user.name "skillradar-ecosystem-bot"
           git config user.email "skillradar-ecosystem-bot@users.noreply.github.com"
-          git commit -m "chore(ecosystem): record install verification"
+          git commit -m "chore(ecosystem): record ${VERSION} install verification"
           git pull --rebase origin main
           git push origin HEAD:main
