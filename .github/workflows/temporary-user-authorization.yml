@@ -10,32 +10,73 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: temporary-user-authorization
+  cancel-in-progress: true
+
 jobs:
   authorize-and-close-external-gaps:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: GitHub user device authorization
+      - name: Start GitHub CLI device authorization
         shell: bash
         run: |
-          unset GH_TOKEN GITHUB_TOKEN
-          echo 'SECURITY: GitHub CLI device authorization only. No token is printed or committed.'
-          echo 'Authorize the code shown below at https://github.com/login/device'
-          gh auth login --hostname github.com --git-protocol https --web --scopes 'repo,workflow'
-          gh api user --jq '"AUTHORIZED_GITHUB_USER=" + .login'
+          rm -f /tmp/gh-auth.log /tmp/gh-auth.rc /tmp/device-code.txt
+          nohup bash -c 'env -u GH_TOKEN -u GITHUB_TOKEN gh auth login --hostname github.com --git-protocol https --web --scopes "repo,workflow" > /tmp/gh-auth.log 2>&1; echo $? > /tmp/gh-auth.rc' >/dev/null 2>&1 &
+          echo $! >/tmp/gh-auth.pid
+          for i in $(seq 1 30); do
+            CODE="$(grep -Eo '[A-Z0-9]{4}-[A-Z0-9]{4}' /tmp/gh-auth.log 2>/dev/null | head -n1 || true)"
+            if [ -n "$CODE" ]; then
+              printf '%s\n' "$CODE" >/tmp/device-code.txt
+              echo 'Device code generated and will be uploaded as a private Actions artifact.'
+              exit 0
+            fi
+            if [ -f /tmp/gh-auth.rc ]; then
+              cat /tmp/gh-auth.log
+              exit 1
+            fi
+            sleep 1
+          done
+          echo 'Could not obtain a device code.' >&2
+          cat /tmp/gh-auth.log || true
+          exit 1
+
+      - name: Upload private device code
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-device-code
+          path: /tmp/device-code.txt
+          retention-days: 1
+          if-no-files-found: error
+
+      - name: Wait for user authorization
+        shell: bash
+        run: |
+          for i in $(seq 1 120); do
+            if [ -f /tmp/gh-auth.rc ]; then
+              RC="$(cat /tmp/gh-auth.rc)"
+              if [ "$RC" != '0' ]; then cat /tmp/gh-auth.log; exit "$RC"; fi
+              env -u GH_TOKEN -u GITHUB_TOKEN gh api user --jq '"AUTHORIZED_GITHUB_USER=" + .login'
+              exit 0
+            fi
+            sleep 5
+          done
+          echo 'Authorization timed out.' >&2
+          exit 1
 
       - name: Enable GitHub Pages once
         env:
           REPO: changchangidea-oss/SkillRadar
         shell: bash
         run: |
-          if gh api "repos/${REPO}/pages" >/dev/null 2>&1; then
+          if env -u GH_TOKEN -u GITHUB_TOKEN gh api "repos/${REPO}/pages" >/dev/null 2>&1; then
             echo 'PAGES_ALREADY_ENABLED=true'
           else
-            gh api --method POST "repos/${REPO}/pages" -f build_type=workflow >/tmp/pages.json
+            env -u GH_TOKEN -u GITHUB_TOKEN gh api --method POST "repos/${REPO}/pages" -f build_type=workflow >/tmp/pages.json
             echo 'PAGES_ENABLED=true'
           fi
-          gh workflow run pages.yml --repo "$REPO" --ref main
+          env -u GH_TOKEN -u GITHUB_TOKEN gh workflow run pages.yml --repo "$REPO" --ref main
 
       - name: Publish Agent Skills Show and Tell
         shell: bash
@@ -62,11 +103,11 @@ jobs:
 
           Feedback on the safety model, ranking signals, and portability approach is welcome.
           EOF
-          REPO_ID="$(gh api graphql -f query='query { repository(owner:"agentskills", name:"agentskills") { id } }' --jq '.data.repository.id')"
-          CAT_ID="$(gh api graphql -f query='query { repository(owner:"agentskills", name:"agentskills") { discussionCategories(first:100) { nodes { id name } } } }' --jq '.data.repository.discussionCategories.nodes[] | select((.name|ascii_downcase)=="show and tell") | .id' | head -n1)"
+          REPO_ID="$(env -u GH_TOKEN -u GITHUB_TOKEN gh api graphql -f query='query { repository(owner:"agentskills", name:"agentskills") { id } }' --jq '.data.repository.id')"
+          CAT_ID="$(env -u GH_TOKEN -u GITHUB_TOKEN gh api graphql -f query='query { repository(owner:"agentskills", name:"agentskills") { discussionCategories(first:100) { nodes { id name } } } }' --jq '.data.repository.discussionCategories.nodes[] | select((.name|ascii_downcase)=="show and tell") | .id' | head -n1)"
           if [ -z "$CAT_ID" ]; then echo 'Show and tell category not found' >&2; exit 1; fi
           BODY="$(cat /tmp/discussion.md)"
-          gh api graphql \
+          env -u GH_TOKEN -u GITHUB_TOKEN gh api graphql \
             -f query='mutation($repositoryId:ID!,$categoryId:ID!,$title:String!,$body:String!){createDiscussion(input:{repositoryId:$repositoryId,categoryId:$categoryId,title:$title,body:$body}){discussion{url}}}' \
             -f repositoryId="$REPO_ID" \
             -f categoryId="$CAT_ID" \
@@ -105,11 +146,11 @@ jobs:
           ### Integrity note
           This request is for indexing only. The project deliberately does not generate fake installs, Stars, Forks, or telemetry to influence ranking. `data/skills-sh-status.json` checks directory visibility without installing the skill.
           EOF
-          URL="$(gh issue create --repo vercel-labs/skills --title 'Listing: Request indexing for changchangidea-oss/SkillRadar' --body-file /tmp/skills-sh.md)"
+          URL="$(env -u GH_TOKEN -u GITHUB_TOKEN gh issue create --repo vercel-labs/skills --title 'Listing: Request indexing for changchangidea-oss/SkillRadar' --body-file /tmp/skills-sh.md)"
           echo "SKILLS_SH_ISSUE_URL=${URL}"
 
       - name: Final authorization summary
         shell: bash
         run: |
           echo 'External permission bootstrap completed.'
-          echo 'The OAuth token exists only on this ephemeral GitHub-hosted runner.'
+          echo 'The OAuth token exists only on this ephemeral GitHub-hosted runner and will disappear with the runner.'
