@@ -1,0 +1,73 @@
+name: Publish v0.3.2 Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/release-trigger-v0.3.2.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: skillradar-release-v0.3.2
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify committed bundled registry is current
+        run: |
+          npm run sync:plugin-registry
+          git diff --exit-code -- packages/codex-plugin/data/registry.json
+          npm run validate
+          npm run validate:plugin-offline
+      - name: Build Codex plugin archive
+        run: |
+          cd packages/codex-plugin
+          zip -qr ../../skillradar-codex-plugin-v0.3.2.zip .
+      - name: Create or refresh GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v0.3.2 >/dev/null 2>&1; then
+            gh release upload v0.3.2 skillradar-codex-plugin-v0.3.2.zip --clobber
+          else
+            gh release create v0.3.2 \
+              --target "${GITHUB_SHA}" \
+              --title "SkillRadar v0.3.2 — Registry-first explicit routing" \
+              --notes-file docs/releases/v0.3.2.md \
+              skillradar-codex-plugin-v0.3.2.zip
+          fi
+      - name: Record auditable release status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RELEASE_URL="$(gh release view v0.3.2 --json url --jq .url)"
+          RELEASE_CREATED="$(gh release view v0.3.2 --json createdAt --jq .createdAt)"
+          cat > data/release-status.json <<EOF
+          {
+            "version": "v0.3.2",
+            "status": "published",
+            "releaseUrl": "${RELEASE_URL}",
+            "createdAt": "${RELEASE_CREATED}",
+            "asset": "skillradar-codex-plugin-v0.3.2.zip",
+            "verifiedBy": "GitHub Actions"
+          }
+          EOF
+          git add data/release-status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "skillradar-release-bot"
+          git config user.email "skillradar-release-bot@users.noreply.github.com"
+          git commit -m "chore(release): record v0.3.2 publication"
+          git pull --rebase origin main
+          git push origin HEAD:main
