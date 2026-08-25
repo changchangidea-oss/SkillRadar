@@ -1,6 +1,6 @@
 {
   "name": "skillradar",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Discover, parse, safety-scan, classify, rank, inspect, and route Codex tasks to high-signal agent skills.",
   "author": {"name": "SkillRadar contributors"},
   "homepage": "https://github.com/changchangidea-oss/SkillRadar",
@@ -11,7 +11,7 @@
   "interface": {
     "displayName": "SkillRadar",
     "shortDescription": "Find the right skill for every Codex task",
-    "longDescription": "Search the live SkillRadar registry, including daily discovered and safety-scanned skills, then route Codex tasks using relevance, quality, security and maintenance signals.",
+    "longDescription": "Route Codex tasks against a bundled, safety-gated SkillRadar registry first, with network fallback only when local data is unavailable. Results combine task relevance, quality, security and maintenance signals.",
     "developerName": "SkillRadar",
     "category": "Developer Tools",
     "capabilities": ["Interactive","Read"],
