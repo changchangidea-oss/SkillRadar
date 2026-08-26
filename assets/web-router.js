@@ -24,7 +24,7 @@
     ['服装', ['fashion', 'campaign']], ['时尚', ['fashion', 'brand']], ['交互', ['interaction', 'ux', 'ui']], ['数媒', ['digital-media', 'creative-coding']], ['影视', ['film', 'video', 'editing', 'vfx']],
     ['工艺', ['craft', 'fabrication']], ['民间艺术', ['illustration', 'hand-drawn', 'collage', 'pattern', 'craft']], ['纹样', ['pattern', 'illustration', 'vector']],
   ];
-  const SPECIFICITY_SIGNALS = new Set(['playwright', 'mcp', 'rag', 'embeddings', 'orchestration', 'fastapi', 'node', 'graphql', 'redis', 'sqlite', 'vitest', 'docker', 'kubernetes', 'vulnerability', 'secrets', 'permissions', 'reactnative', 'expo', 'swiftui', 'android', 'kotlin', 'flutter', 'slack', 'gmail', 'calendar', 'webhook', 'documentation', 'github', 'notion', 'figma']);
+  const SPECIFICITY_SIGNALS = new Set(['playwright', 'mcp', 'rag', 'embeddings', 'orchestration', 'fastapi', 'node', 'graphql', 'redis', 'sqlite', 'vitest', 'docker', 'kubernetes', 'vulnerability', 'secrets', 'permissions', 'reactnative', 'expo', 'swiftui', 'android', 'kotlin', 'flutter', 'slack', 'gmail', 'calendar', 'webhook', 'documentation', 'github', 'notion', 'figma', 'poster']);
 
   function canon(value) {
     return String(value).toLowerCase()

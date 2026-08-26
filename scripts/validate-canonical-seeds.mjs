@@ -6,6 +6,7 @@ import {
   canonicalCandidateKeys,
   matchingSeedsForRepositorySearch,
   prioritizeAnalysisCandidates,
+  prioritizeCanonicalCandidates,
   prioritizeRepositoryItems,
   prioritizeTreeEntries
 } from './lib/canonical-seeds.mjs'
@@ -51,4 +52,10 @@ const capped=prioritizeAnalysisCandidates([
 ],canonicalKeys)
 assert(capped[0]?.key===firstCanonical,'configured canonical source:path must be analyzed ahead of the global cap')
 assert(capped[1]?.key==='organic/high-stars','organic candidates must retain channel/star ordering after canonical paths')
-console.log('Canonical seed validation passed: exact related searches deterministically discover the intended upstream Skills, unrelated domains stay organic, multi-seed queries are isolated and ordered, configured paths precede the global analysis cap, and downstream security scanning remains unchanged.')
+const published=prioritizeCanonicalCandidates([
+  {key:'organic/high-score'},
+  {source:firstCanonical.slice(0,firstCanonical.indexOf(':')),skillPath:firstCanonical.slice(firstCanonical.indexOf(':')+1)},
+  {key:'organic/next-score'}
+],canonicalKeys)
+assert(`${published[0]?.source}:${published[0]?.skillPath}`===firstCanonical&&published.slice(1).map(x=>x.key).join(',')==='organic/high-score,organic/next-score','eligible canonical paths must precede the publication cap without reordering organic candidates')
+console.log('Canonical seed validation passed: exact related searches deterministically discover the intended upstream Skills, unrelated domains stay organic, multi-seed queries are isolated and ordered, configured paths precede analysis/publication caps after normal gates, and downstream security scanning remains unchanged.')
