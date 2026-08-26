@@ -21,6 +21,8 @@ jobs:
         run: npm run validate:canonical-seeds
       - name: Adoption metrics fixture policy
         run: npm run validate:adoption-metrics
+      - name: Adoption feedback and promotion policy
+        run: npm run validate:adoption-policy
       - name: Public discoverability contract
         run: node scripts/validate-public-discoverability.mjs
       - name: Web UI safety and router parity
@@ -41,6 +43,8 @@ jobs:
         run: npm run benchmark:router
       - name: Expanded router eval
         run: npm run eval:router
+      - name: Adoption Golden Eval — 100 tasks
+        run: npm run eval:golden
       - name: Shadow ranking snapshot safety and contract gate
         run: npm run shadow:router
       - name: Shadow multi-snapshot promotion policy
