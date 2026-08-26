@@ -92,10 +92,11 @@ let registrySnapshot=null
 for(const test of spec.cases){
   const prod=run('match',test.task)
   if(!registrySnapshot){
-    if(prod.registry?.contentHash&&prod.registry.contentHash!==bundledRegistry.contentHash)throw new Error('router Registry hash does not match bundled Registry file')
+    if(prod.registry?.contentHash&&prod.registry.contentHash!==bundledRegistry.contentHash)throw new Error('router Registry contentHash does not match bundled Registry file')
     registrySnapshot={
-      contentHash:prod.registry?.contentHash||bundledRegistry.contentHash||null,
-      contentHashVersion:Number(bundledRegistry.contentHashVersion||1),
+      // Internal Shadow identity uses the stable routing hash. Legacy contentHash remains unchanged for compatibility.
+      contentHash:bundledRegistry.routingContentHash||prod.registry?.contentHash||bundledRegistry.contentHash||null,
+      contentHashVersion:Number(bundledRegistry.routingContentHashVersion||1),
       generatedAt:prod.registry?.generatedAt||bundledRegistry.generatedAt||null,
       totalCount:Number(prod.registry?.totalCount||bundledRegistry.totalCount||0),
       mode:prod.registry?.mode||'local-bundled'
