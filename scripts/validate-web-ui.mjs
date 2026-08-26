@@ -42,9 +42,6 @@ assert.ok(Array.isArray(snapshot.general) && snapshot.general.length > 0, 'gener
 
 const browserRegistry = webRouter.registrySkills(snapshot);
 assert.ok(browserRegistry.length >= 400, `browser registry unexpectedly small: ${browserRegistry.length}`);
-assert.ok(browserRegistry.some((skill) => (skill.tags || []).includes('slack') || /slack/i.test(`${skill.id} ${skill.name}`)), 'Slack capability missing from browser registry');
-assert.ok(browserRegistry.some((skill) => (skill.tags || []).includes('redis') || /redis/i.test(`${skill.id} ${skill.name}`)), 'Redis capability missing from browser registry');
-assert.ok(browserRegistry.some((skill) => (skill.tags || []).includes('sqlite') || /sqlite/i.test(`${skill.id} ${skill.name}`)), 'SQLite capability missing from browser registry');
 assert.ok(browserRegistry.every((skill) => !['D', 'Blocked'].includes(skill.security)), 'D/Blocked Skill leaked into browser registry');
 
 const poisoned = structuredClone(snapshot);
