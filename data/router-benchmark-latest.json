@@ -1,0 +1,185 @@
+{
+  "generatedAt": "2026-08-26T02:04:06.259Z",
+  "benchmarkVersion": 1,
+  "rankingVersion": "2.1",
+  "cases": 7,
+  "passed": 7,
+  "passRate": 1,
+  "unsafeTop3": 0,
+  "averageTop1Score": 85.1,
+  "projectContextFixture": "passed",
+  "results": [
+    {
+      "id": "ai-dashboard",
+      "pass": true,
+      "top3": [
+        "nextjs",
+        "ai-sdk",
+        "shadcn"
+      ],
+      "top1_score": 67,
+      "expected_hits": 3,
+      "signal_hits": 4,
+      "signals": [
+        "nextjs",
+        "app-router",
+        "react",
+        "tool-calling",
+        "ai",
+        "streaming",
+        "shadcn",
+        "dashboard"
+      ],
+      "context": {
+        "mode": "task-only",
+        "signals": [],
+        "evidence": []
+      }
+    },
+    {
+      "id": "ai-streaming",
+      "pass": true,
+      "top3": [
+        "ai-sdk",
+        "garrytan/gstack/plan-ceo-review-a1c71a",
+        "garrytan/gstack/setup-browser-cookies-af7145"
+      ],
+      "top1_score": 90,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "signals": [
+        "ai-sdk",
+        "tool-calling",
+        "streaming",
+        "vercel"
+      ],
+      "context": {
+        "mode": "task-only",
+        "signals": [],
+        "evidence": []
+      }
+    },
+    {
+      "id": "next-app-router",
+      "pass": true,
+      "top3": [
+        "nextjs",
+        "langgenius/dify/how-to-write-component-43f895",
+        "affaan-m/ECC/backend-patterns-ac648c"
+      ],
+      "top1_score": 100,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "signals": [
+        "nextjs",
+        "app-router",
+        "server-components",
+        "architect",
+        "react",
+        "route",
+        "handlers"
+      ],
+      "context": {
+        "mode": "task-only",
+        "signals": [],
+        "evidence": []
+      }
+    },
+    {
+      "id": "shadcn-system",
+      "pass": true,
+      "top3": [
+        "shadcn",
+        "nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max",
+        "figma/mcp-server-guide/create-design-system-rules"
+      ],
+      "top1_score": 89,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "signals": [
+        "shadcn",
+        "design-system",
+        "accessible",
+        "dashboard"
+      ],
+      "context": {
+        "mode": "task-only",
+        "signals": [],
+        "evidence": []
+      }
+    },
+    {
+      "id": "react-performance",
+      "pass": true,
+      "top3": [
+        "react-best-practices",
+        "alirezarezvani/claude-skills/senior-frontend-a7068f",
+        "langgenius/dify/how-to-write-component-43f895"
+      ],
+      "top1_score": 83,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "signals": [
+        "review",
+        "react",
+        "typescript",
+        "component",
+        "performance"
+      ],
+      "context": {
+        "mode": "task-only",
+        "signals": [],
+        "evidence": []
+      }
+    },
+    {
+      "id": "frontend-polish",
+      "pass": true,
+      "top3": [
+        "frontend-design",
+        "pbakaus/impeccable/audit",
+        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18"
+      ],
+      "top1_score": 87,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "signals": [
+        "visual",
+        "production",
+        "polish",
+        "react",
+        "dashboard",
+        "interface",
+        "quality"
+      ],
+      "context": {
+        "mode": "task-only",
+        "signals": [],
+        "evidence": []
+      }
+    },
+    {
+      "id": "zh-spatial-rendering",
+      "pass": true,
+      "top3": [
+        "curiositech/some_claude_skills/interior-design-expert",
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
+      ],
+      "top1_score": 80,
+      "expected_hits": 0,
+      "signal_hits": 4,
+      "signals": [
+        "-architecture",
+        "-interior",
+        "-spatial",
+        "-rendering"
+      ],
+      "context": {
+        "mode": "task-only",
+        "signals": [],
+        "evidence": []
+      }
+    }
+  ]
+}
