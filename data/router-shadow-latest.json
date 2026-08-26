@@ -1,57 +1,57 @@
 {
-  "generatedAt": "2026-08-26T23:22:17.234Z",
+  "generatedAt": "2026-08-26T23:44:19.619Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "bfc43e52cd3b796d145dc9a2fe154fa42f7c022ba5c47c1a82dfcdcae75d9d9e",
+    "contentHash": "19fad1a35cd431da8fb0414dc053d1cdf46d4e1825c8ce7813e3542c4b07dc2d",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-26T23:21:46.361Z",
-    "totalCount": 476,
+    "generatedAt": "2026-08-26T23:43:48.528Z",
+    "totalCount": 428,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 48,
+    "passed": 50,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 38,
+    "coveragePassed": 40,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 10,
-    "specificityFailures": 6,
+    "lowEvidenceTop3": 0,
+    "specificityFailures": 3,
     "capabilityGapCases": 32,
-    "averageRecommendationCount": 2.06,
+    "averageRecommendationCount": 1.94,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 137,
-    "anchorSignalHitsTotal": 32,
-    "averageTop1Score": 79.7
+    "signalHitsTotal": 130,
+    "anchorSignalHitsTotal": 29,
+    "averageTop1Score": 75
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 48,
+    "passed": 50,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 38,
+    "coveragePassed": 40,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 9,
-    "specificityFailures": 6,
+    "lowEvidenceTop3": 0,
+    "specificityFailures": 3,
     "capabilityGapCases": 32,
-    "averageRecommendationCount": 2.06,
+    "averageRecommendationCount": 1.94,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 137,
-    "anchorSignalHitsTotal": 32,
-    "averageTop1Score": 79.7
+    "signalHitsTotal": 130,
+    "anchorSignalHitsTotal": 29,
+    "averageTop1Score": 75
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": 1
+    "evidenceDelta": 0
   },
-  "decision": "snapshot-win",
+  "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
   "comparisons": [
     {
@@ -165,14 +165,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f"
+        "stephonGAO/milu/frontend-design-25832f",
+        "nirholas/three.ws/crypto-market-dashboard-guide"
       ],
       "candidateTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f"
+        "stephonGAO/milu/frontend-design-25832f",
+        "nirholas/three.ws/crypto-market-dashboard-guide"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -285,19 +287,19 @@
     },
     {
       "id": "mcp-agent-tools",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
-        "artokun/comfyui-mcp/color-correction-674ba1",
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
+        "nirholas/three.ws/agenti-mcp-guide",
+        "nirholas/three.ws/mcp-servers-guide"
       ],
       "candidateTop3": [
         "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
-        "artokun/comfyui-mcp/color-correction-674ba1",
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
+        "nirholas/three.ws/agenti-mcp-guide",
+        "nirholas/three.ws/mcp-servers-guide"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -331,16 +333,10 @@
       "candidatePass": false,
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
-      "productionTop3": [
-        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
-        "opensquilla/opensquilla/meta-paper-write-b8b8ab"
-      ],
-      "candidateTop3": [
-        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
-        "opensquilla/opensquilla/meta-paper-write-b8b8ab"
-      ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -474,14 +470,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
+        "nirholas/three.ws/github-to-mcp-guide",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
       "candidateTop3": [
         "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
+        "nirholas/three.ws/github-to-mcp-guide",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -573,22 +571,20 @@
     },
     {
       "id": "sqlite-pipeline",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "fastrepl/anarlog/migrate-to-sqlite-1e3a5a",
-        "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5",
-        "EverMind-AI/EverOS/add-memory-kind-42f902"
+        "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5"
       ],
       "candidateTop3": [
         "fastrepl/anarlog/migrate-to-sqlite-1e3a5a",
-        "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5",
-        "EverMind-AI/EverOS/add-memory-kind-42f902"
+        "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -642,16 +638,10 @@
       "candidatePass": false,
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
-      "productionTop3": [
-        "langgenius/dify/frontend-testing-c86f15",
-        "langgenius/dify/e2e-cucumber-playwright-1de203"
-      ],
-      "candidateTop3": [
-        "langgenius/dify/frontend-testing-c86f15",
-        "langgenius/dify/e2e-cucumber-playwright-1de203"
-      ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -911,26 +901,26 @@
     },
     {
       "id": "flutter-mobile",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
-        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
-        "flutter/agent-plugins/dart-add-unit-test-98a461"
+        "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
+        "flutter/agent-plugins/flutter-add-integration-test-91cc8c"
       ],
       "candidateTop3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
-        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
-        "flutter/agent-plugins/flutter-add-widget-preview-8e7a10"
+        "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
+        "flutter/agent-plugins/flutter-add-integration-test-91cc8c"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
-      "lowEvidenceDelta": -1
+      "lowEvidenceDelta": 0
     },
     {
       "id": "github-pr-triage",
@@ -939,15 +929,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "github",
-        "volcengine/OpenViking/github-e2cb41"
+        "github"
       ],
       "candidateTop3": [
-        "github",
-        "volcengine/OpenViking/github-e2cb41"
+        "github"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -961,13 +949,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "slackapi/slack-skills-plugin/slack-messaging-fa1468",
-        "slackapi/slack-skills-plugin/slack-api-fc39b8",
-        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
+        "screenpipe/screenpipe/screenpipe-cli-613d28",
+        "slackapi/slack-skills-plugin/slack-api-fc39b8"
       ],
       "candidateTop3": [
         "slackapi/slack-skills-plugin/slack-messaging-fa1468",
-        "slackapi/slack-skills-plugin/slack-api-fc39b8",
-        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
+        "screenpipe/screenpipe/screenpipe-cli-613d28",
+        "slackapi/slack-skills-plugin/slack-api-fc39b8"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1005,14 +993,10 @@
       "candidatePass": false,
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
-      "productionTop3": [
-        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18"
-      ],
-      "candidateTop3": [
-        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18"
-      ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1088,7 +1072,7 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "nexu-io/open-design/token-map"
+        "figma/mcp-server-guide/figma-generate-design"
       ],
       "candidateTop3": [
         "figma",
@@ -1127,22 +1111,20 @@
     },
     {
       "id": "zh-poster-brand",
-      "productionPass": true,
-      "candidatePass": true,
+      "productionPass": false,
+      "candidatePass": false,
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
-        "nexu-io/open-design/image-poster",
-        "nexu-io/open-design/magazine-poster"
+        "stephonGAO/milu/frontend-design-25832f",
+        "artokun/comfyui-mcp/ernie-image-1a1575"
       ],
       "candidateTop3": [
-        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
-        "nexu-io/open-design/image-poster",
-        "nexu-io/open-design/magazine-poster"
+        "stephonGAO/milu/frontend-design-25832f",
+        "artokun/comfyui-mcp/ernie-image-1a1575"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1156,13 +1138,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "nexu-io/open-design/hyperframes",
-        "remotion-dev/skills/remotion-multimedia"
+        "nirholas/three.ws/create-3d-avatar",
+        "heygen-com/hyperframes/hyperframes-keyframes"
       ],
       "candidateTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "nexu-io/open-design/hyperframes",
-        "remotion-dev/skills/remotion-multimedia"
+        "nirholas/three.ws/create-3d-avatar",
+        "heygen-com/hyperframes/hyperframes-keyframes"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1178,14 +1160,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nexu-io/open-design/x-research",
-        "mitsuhiko/agent-stuff/openscad",
-        "nexu-io/open-design/rewrite-plan"
+        "nirholas/three.ws/vc-research-intelligence",
+        "nirholas/three.ws/pay-for-service",
+        "nirholas/three.ws/okx-growth-competition"
       ],
       "candidateTop3": [
-        "nexu-io/open-design/x-research",
-        "mitsuhiko/agent-stuff/openscad",
-        "nexu-io/open-design/rewrite-plan"
+        "nirholas/three.ws/vc-research-intelligence",
+        "nirholas/three.ws/pay-for-service",
+        "nirholas/three.ws/okx-growth-competition"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
