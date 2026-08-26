@@ -9,6 +9,8 @@ on:
     paths:
       - 'scripts/update-design-radar.mjs'
       - 'scripts/update-general-radar.mjs'
+      - 'scripts/update-general-radar-with-canonical-seeds.mjs'
+      - 'scripts/validate-canonical-seeds.mjs'
       - 'scripts/normalize-general-tags.mjs'
       - 'scripts/apply-safety-gate.mjs'
       - 'scripts/sync-codex-plugin-registry.mjs'
@@ -18,6 +20,7 @@ on:
       - 'packages/codex-plugin/scripts/skillradar.mjs'
       - 'packages/codex-plugin/scripts/skill-budget.mjs'
       - 'data/general-domains.json'
+      - 'data/general-canonical-seeds.json'
       - 'data/design-skill-index.json'
       - 'data/design-skills-1.json'
       - 'data/design-skills-2.json'
@@ -53,6 +56,8 @@ jobs:
           cp scripts/update-design-radar.mjs scripts/runtime/update-design-radar.mjs
           node scripts/runtime/update-design-radar.mjs
           rm -rf scripts/runtime
+      - name: Validate canonical General Radar seeds
+        run: npm run validate:canonical-seeds
       - name: Discover general Agent Skills Radar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
