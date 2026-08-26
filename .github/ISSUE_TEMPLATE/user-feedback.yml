@@ -1,0 +1,48 @@
+name: User feedback
+description: Tell us how you used SkillRadar and what would make it more useful.
+title: "[feedback] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Real usage reports are especially useful. Positive, negative, and partial-success reports are all welcome.
+  - type: dropdown
+    id: path
+    attributes:
+      label: How did you use SkillRadar?
+      options:
+        - Codex Plugin
+        - skills.sh / Agent Skill
+        - Registry website
+        - Local repository / CLI
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: job
+    attributes:
+      label: What were you trying to do?
+      placeholder: "I needed to find a Skill for ..."
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What happened?
+      description: What worked, what did not, and whether the recommendation was useful.
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: What would make you use it again?
+    validations:
+      required: true
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public evidence
+      description: Optional. This only controls whether maintainers may cite your issue as public adoption evidence; it does not change the GitHub issue's visibility.
+      options:
+        - label: Maintainers may cite this public issue as evidence of real external SkillRadar usage.

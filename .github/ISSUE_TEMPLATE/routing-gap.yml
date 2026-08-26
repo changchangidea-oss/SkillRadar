@@ -1,0 +1,54 @@
+name: Routing gap or wrong match
+description: Report a missing technology capability or an irrelevant SkillRadar Top-3 result.
+title: "[routing] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        SkillRadar intentionally prefers an explicit capability gap over filling Top-3 with unrelated generic Skills. This report helps improve discovery and routing without weakening the safety gate.
+  - type: textarea
+    id: task
+    attributes:
+      label: Task you routed
+      description: Paste the task text, removing private project details.
+      placeholder: "Find skills for ..."
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: SkillRadar result
+      description: Paste the Top-3 result or the explicit capability-gap output, including match_score/security when available.
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong?
+      options:
+        - Missing capability / no relevant Skill found
+        - Irrelevant Skill appeared in Top-3
+        - Correct Skill ranked too low
+        - Security grade or safety behavior looks wrong
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: expected-tech
+    attributes:
+      label: Expected technology or service
+      placeholder: "Redis, Slack, FastAPI, Flutter..."
+  - type: textarea
+    id: candidate
+    attributes:
+      label: Known public Skill candidate (optional)
+      description: If you know a real public repository/SKILL.md that should be discovered, link or name it here. Do not submit invented candidates.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I did not include secrets, credentials, or private source code.
+          required: true
