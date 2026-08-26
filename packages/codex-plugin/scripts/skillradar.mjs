@@ -141,15 +141,18 @@ function diversify(ranked,limit=3){
     }
     const chosen=pool.splice(bestIndex,1)[0];selected.push(chosen);for(const label of Object.keys(taskSignalWeights(chosen)))covered.add(label)
   }
-  for(const c of ranked)if(selected.length<limit&&!selected.some(x=>x.id===c.id))selected.push(c)
   return selected.slice(0,limit)
+}
+function capabilityGap(matches,limit=3){
+  const returned=matches.length
+  return returned<limit?{detected:true,requested:limit,returned,missing:limit-returned,reason:'Fewer than 3 candidates met the strong-match floor; weak candidates were not backfilled.'}:{detected:false,requested:limit,returned,missing:0}
 }
 function safetyAdvisory(matches){const top=matches[0];if(!top||top.security!=='C')return null;const alternative=matches.slice(1).find(x=>['A','B'].includes(x.security)&&top.match_score-x.match_score<=5);if(!alternative)return {level:'review',message:'Top match is security grade C. Review its SKILL.md and scripts before installation or execution.'};return {level:'review',message:`Top match is security grade C. Prefer the nearby ${alternative.security}-grade alternative when task coverage is comparable.`,alternative:{id:alternative.id,name:alternative.name,match_score:alternative.match_score,skillradar_score:alternative.skillradar_score,security:alternative.security,source:alternative.source}}}
 async function registryResult(){
   const loaded=await loadRegistry(),registry=loaded.skills,context=projectContext()
   if(cmd==='inspect'){const id=value.toLowerCase();const skill=registry.find(s=>String(s.id).toLowerCase()===id||String(s.name).toLowerCase()===id);if(!skill)throw new Error(`Skill not found or blocked by safety gate: ${value}`);return {source:'skillradar-registry',registry:loaded.meta,context,skill:{...skill,skillradar_score:skill.score||70}}}
   const ranked=registry.map(s=>scoreSkill(s,value,context)).filter(s=>cmd==='match'||s.match_score>24).sort((a,b)=>b.match_score-a.match_score||b.specialty_hits-a.specialty_hits||b.skillradar_score-a.skillradar_score)
-  if(cmd==='match'){const matches=diversify(ranked,3);return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1',strategy:'task-first field-weighted evidence + coverage + quality/security/freshness prior + bounded project-context bonus + complementary task-facet coverage rerank'},matches,advisory:safetyAdvisory(matches)}}
+  if(cmd==='match'){const matches=diversify(ranked,3);return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1',strategy:'task-first field-weighted evidence + coverage + quality/security/freshness prior + bounded project-context bonus + complementary task-facet coverage rerank; weak candidates are not backfilled'},matches,capability_gap:capabilityGap(matches,3),advisory:safetyAdvisory(matches)}}
   return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1'},skills:ranked.slice(0,8)}
 }
 async function remote(){if(!base||offline)return null;if(cmd==='match'){const r=await fetch(`${base}/api/router`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({task:value,agent:'codex',limit:3})});if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}const endpoint=cmd==='inspect'?`/api/skill?id=${encodeURIComponent(value)}`:`/api/skills?q=${encodeURIComponent(value)}&limit=8`;const r=await fetch(base+endpoint);if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}

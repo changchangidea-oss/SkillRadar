@@ -34,6 +34,8 @@ function runMatch(task, cwd=root, extraEnv={}) {
 const results=[]
 let unsafeTop3=0
 let top1ScoreTotal=0
+let capabilityGapCases=0
+let recommendationTotal=0
 for (const test of spec.cases) {
   const result=runMatch(test.task, root, {SKILLRADAR_PROJECT_CONTEXT:'0'})
   const matches=result.matches||[]
@@ -42,16 +44,23 @@ for (const test of spec.cases) {
   const signals=[...new Set(matches.flatMap(x=>x.match_details?.matched_signals||[]).map(canon))]
   const signalHits=(test.requiredSignalTerms||[]).filter(term=>signals.some(s=>s.includes(canon(term)))).length
   const unsafe=matches.filter(x=>['D','Blocked'].includes(x.security)).length
+  const gap=result.capability_gap||null
+  const gapConsistent=matches.length===3
+    ? !gap?.detected
+    : Boolean(gap?.detected)&&Number(gap?.returned)===matches.length&&Number(gap?.missing)===3-matches.length
   unsafeTop3+=unsafe
+  if(gap?.detected)capabilityGapCases++
+  recommendationTotal+=matches.length
   top1ScoreTotal+=Number(matches[0]?.match_score||0)
   const pass = result.source==='skillradar-registry'
     && result.registry?.mode==='local-bundled'
     && result.ranking?.version==='2.1'
-    && matches.length===3
+    && matches.length<=3
+    && gapConsistent
     && unsafe===0
     && expectedHits>=Number(test.minExpectedHits||0)
     && signalHits>=Number(test.minSignalHits||0)
-  results.push({id:test.id,pass,top3:matches.map(x=>x.id),top1_score:matches[0]?.match_score||0,expected_hits:expectedHits,signal_hits:signalHits,signals,context:result.context})
+  results.push({id:test.id,pass,top3:matches.map(x=>x.id),recommendation_count:matches.length,capability_gap:Boolean(gap?.detected),top1_score:matches[0]?.match_score||0,expected_hits:expectedHits,signal_hits:signalHits,signals,context:result.context})
 }
 
 // Project context must be a bounded secondary signal, not a replacement for task evidence.
@@ -83,6 +92,7 @@ fs.rmSync(tmp,{recursive:true,force:true})
 const passCount=results.filter(x=>x.pass).length
 const passRate=results.length?passCount/results.length:0
 const avgTop1=results.length?top1ScoreTotal/results.length:0
+const avgRecommendations=results.length?recommendationTotal/results.length:0
 const summary={
   generatedAt:new Date().toISOString(),
   benchmarkVersion:spec.schemaVersion,
@@ -91,6 +101,8 @@ const summary={
   passed:passCount,
   passRate:Number(passRate.toFixed(3)),
   unsafeTop3,
+  capabilityGapCases,
+  averageRecommendationCount:Number(avgRecommendations.toFixed(2)),
   averageTop1Score:Number(avgTop1.toFixed(1)),
   projectContextFixture:contextPass?'passed':'failed',
   results

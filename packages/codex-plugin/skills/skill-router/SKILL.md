@@ -25,12 +25,19 @@ SkillRadar v0.5 keeps task evidence primary, then uses a bounded project-context
 
 Project context can add only a small bounded bonus and must be reported separately from task evidence. A currently installed framework must not replace or reinterpret the user's explicit task.
 
+## Strong recommendation contract
+`match` returns **up to 3 strong recommendations**, not an artificially padded Top 3. SkillRadar's complementary reranker already applies a relative strong-match floor. Candidates below that floor must not be backfilled only to reach three results.
+
+When fewer than three candidates meet the floor, the CLI returns top-level `capability_gap` metadata with `detected: true`, the number returned, and the number missing. Treat that as useful evidence that the current Registry is sparse for this task. Do not hide the gap by substituting unrelated local skills, arbitrary web results, or manually invented candidates.
+
+A capability gap is a discovery/coverage signal, not permission to install anything automatically. It should feed later Radar discovery and evaluation work.
+
 ## Workflow
 1. Convert the user's task into a concise routing query without dropping important frameworks, technologies, design disciplines, or requested capabilities.
 2. For explicit `$skill-router`, recommendation, comparison, ranking, or Top N requests, run `node ../../scripts/skillradar.mjs match '<task>'` **before** selecting candidates.
-3. Read the canonical registry evidence: top-level `source`, `registry.mode`, `ranking.version`, `context.mode`, and for each result `match_score`, `skillradar_score`, `security`, `source`, `reason`, and `match_details`.
+3. Read the canonical registry evidence: top-level `source`, `registry.mode`, `ranking.version`, `context.mode`, `capability_gap`, and for each result `match_score`, `skillradar_score`, `security`, `source`, `reason`, and `match_details`.
 4. Treat `match_details.matched_signals` / `coverage` as task evidence. Treat `project_context_signals` / `project_context_bonus` only as secondary context evidence.
-5. Return the Registry Top 3 by default unless the user asks for another N. Preserve SkillRadar ordering unless you clearly explain a safety override.
+5. Return up to 3 strong Registry recommendations by default unless the user asks for another N. Preserve SkillRadar ordering unless you clearly explain a safety override. If `capability_gap.detected` is true, surface the gap instead of padding the list.
 6. Prefer A/B security skills when relevance is close. If the Top-1 result is C and SkillRadar returns an `advisory`, surface the safer nearby alternative.
 7. Only after the Registry result is known, inspect whether those candidates are already installed locally. Local availability is supplemental metadata, not a replacement ranking.
 8. If a Registry candidate is not installed, show its source/install URL before running any third-party scripts. Do not silently swap it for a different installed skill.
@@ -44,6 +51,7 @@ For explicit routing/recommendation requests, include enough evidence to prove t
 - `registry.mode: local-bundled` when the bundled snapshot is healthy
 - `ranking.version: 2.1`
 - `context.mode: project-aware` or `task-only`
+- `capability_gap` when fewer than 3 strong recommendations are returned
 - for every recommended result: `match_score`, `skillradar_score`, `security`, `source`, and `reason`
 - summarize useful `match_details`, especially task matched signals / coverage and any project-context bonus, when the ranking needs explanation
 
