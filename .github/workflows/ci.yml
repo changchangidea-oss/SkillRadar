@@ -23,5 +23,9 @@ jobs:
         run: npm run validate:plugin-offline
       - name: Router quality benchmark
         run: npm run benchmark:router
+      - name: Expanded router eval
+        run: npm run eval:router
+      - name: Shadow ranking safety and contract gate
+        run: npm run shadow:router
       - name: Skill Budget Doctor acceptance
         run: npm run validate:skill-budget
