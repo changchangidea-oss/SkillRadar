@@ -128,13 +128,26 @@ function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.cate
 function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
 function taskSignalWeights(s){return s.match_details?.matched_signal_weights||{}}
 const SPECIFICITY_SIGNALS=new Set(['playwright','mcp','rag','embeddings','orchestration','fastapi','node','graphql','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation','github','notion','figma','poster'])
+const CANDIDATE_EVIDENCE_RULES={
+  mcp:{identity:['mcp'],minSignals:2},orchestration:{identity:['agent','orchestration'],minSignals:1},
+  sqlite:{identity:['sqlite'],minSignals:2},vitest:{identity:['vitest'],minSignals:2},
+  flutter:{identity:['flutter'],minSignals:2},webhook:{identity:['webhook','automation'],minSignals:2}
+}
 function requestedSpecificitySignals(query){
   return [...new Set(querySignals(query).map(x=>canon(x.label)).filter(x=>SPECIFICITY_SIGNALS.has(x)))]
+}
+function candidateEvidencePass(skill,required=[]){
+  const matched=new Set((skill.match_details?.matched_signals||[]).map(canon)),identity=new Set(String(skill.name||'').toLowerCase().split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean))
+  const matchedRequired=required.filter(signal=>matched.has(signal))
+  if(matchedRequired.some(signal=>!CANDIDATE_EVIDENCE_RULES[signal]))return true
+  const applicable=matchedRequired.map(signal=>({signal,rule:CANDIDATE_EVIDENCE_RULES[signal]})).filter(x=>x.rule)
+  if(!applicable.length)return true
+  return applicable.some(({signal,rule})=>matched.has(signal)&&matched.size>=rule.minSignals&&rule.identity.some(term=>identity.has(canon(term))))
 }
 function enforceSpecificity(ranked,required=[]){
   if(!required.length)return ranked
   const wanted=new Set(required)
-  return ranked.filter(skill=>(skill.match_details?.matched_signals||[]).some(signal=>wanted.has(canon(signal))))
+  return ranked.filter(skill=>(skill.match_details?.matched_signals||[]).some(signal=>wanted.has(canon(signal)))&&candidateEvidencePass(skill,required))
 }
 function diversify(ranked,limit=3){
   if(!ranked.length)return[]

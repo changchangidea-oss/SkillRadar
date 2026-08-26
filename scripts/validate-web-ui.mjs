@@ -107,6 +107,13 @@ const parityQueries = [
   'Next.js AI dashboard with tool calling and shadcn/ui',
 ];
 
+const candidateEvidenceQueries = new Set([
+  'SQLite migration and query design',
+  'Vitest test suite',
+  'Flutter mobile app',
+  'MCP server tool integration',
+]);
+
 for (const query of parityQueries) {
   const browser = webRouter.match(snapshot, query, 3);
   const plugin = pluginMatch(query);
@@ -123,8 +130,39 @@ for (const query of parityQueries) {
     for (const skill of browser.matches) {
       const matched = new Set((skill.match_details?.matched_signals || []).map(webRouter.canon));
       assert.ok([...required].some((signal) => matched.has(signal)), `generic backfill bypassed specificity for ${query}: ${skill.id}`);
+      if (candidateEvidenceQueries.has(query)) {
+        assert.ok(webRouter.candidateEvidencePass(skill, browser.specificity.required_signals), `repository-context candidate bypassed identity/task evidence for ${query}: ${skill.id}`);
+      }
     }
   }
+}
+
+const repositoryContextFalsePositives = new Set([
+  'artokun/comfyui-mcp/color-correction-674ba1',
+  'OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e',
+  'sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa',
+  'opensquilla/opensquilla/meta-paper-write-b8b8ab',
+  'EverMind-AI/EverOS/add-memory-kind-42f902',
+  'langgenius/dify/frontend-testing-c86f15',
+  'langgenius/dify/e2e-cucumber-playwright-1de203',
+  'flutter/agent-plugins/dart-write-documentation-4c8bb5',
+  'flutter/agent-plugins/dart-add-unit-test-98a461',
+  'sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18',
+]);
+
+for (const query of ['Create an MCP agent that can call tools and coordinate assistants', 'Build an LLM agent workflow with tools and orchestration', 'Build a SQLite data pipeline and analytics workflow', 'Create Vitest unit and integration tests', 'Build a Flutter mobile interface', 'Build webhook API automation and integrations']) {
+  const browser = webRouter.match(snapshot, query, 3);
+  const plugin = pluginMatch(query);
+  assert.deepEqual(browser.matches.map((skill) => skill.id), plugin.matches.map((skill) => skill.id), `candidate-level browser/plugin mismatch for ${query}`);
+  assert.ok(browser.matches.every((skill) => webRouter.candidateEvidencePass(skill, browser.specificity.required_signals)), `candidate-level filter leaked repository-context evidence for ${query}`);
+  assert.ok(browser.matches.every((skill) => !repositoryContextFalsePositives.has(skill.id)), `known repository-context false positive leaked for ${query}`);
+}
+
+for (const [query, preservedSignal] of [['SQLite and Redis caching', 'redis'], ['Flutter and SwiftUI mobile apps', 'swiftui']]) {
+  const browser = webRouter.match(snapshot, query, 3);
+  const plugin = pluginMatch(query);
+  assert.deepEqual(browser.matches.map((skill) => skill.id), plugin.matches.map((skill) => skill.id), `mixed-specificity browser/plugin mismatch for ${query}`);
+  assert.ok(browser.matches.some((skill) => (skill.match_details?.matched_signals || []).map(webRouter.canon).includes(preservedSignal)), `candidate for untightened ${preservedSignal} capability was incorrectly filtered for ${query}`);
 }
 
 console.log(`Web UI safety + router parity passed for ${parityQueries.length} named/multi-capability queries.`);
