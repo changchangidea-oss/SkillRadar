@@ -23,12 +23,15 @@ function run(command,task){
 function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.category||''].map(canon).filter(Boolean))}
 function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
 function weights(s){return s.match_details?.matched_signal_weights||{}}
+function inferredGap(matches,limit=3){return matches.length<limit?{detected:true,requested:limit,returned:matches.length,missing:limit-matches.length}:{detected:false,requested:limit,returned:matches.length,missing:0}}
 
-// Shadow candidate: production scoring stays untouched; only Top-3 reranking is evaluated.
-// It is not used by normal SkillRadar routing and cannot promote itself.
+// Shadow candidate: production scoring stays untouched; only reranking is evaluated.
+// The candidate must obey the same strong-match output contract as production:
+// at most three results, with no weak backfill below the existing relative floor.
 function candidateRerank(ranked,limit=3){
   if(!ranked.length)return []
-  const selected=[ranked[0]],pool=ranked.slice(1),covered=new Set(Object.keys(weights(ranked[0])))
+  const floor=Math.max(20,Number(ranked[0].match_score||0)-28)
+  const selected=[ranked[0]],pool=ranked.slice(1).filter(x=>Number(x.match_score||0)>=floor),covered=new Set(Object.keys(weights(ranked[0])))
   while(selected.length<limit&&pool.length){
     let bestIndex=0,best=-Infinity
     for(let i=0;i<pool.length;i++){
@@ -59,8 +62,10 @@ function evaluate(test,matches,meta){
   const signals=evidenceSignals(matches)
   const signalHits=(test.requiredSignalTerms||[]).filter(term=>signals.some(s=>s.includes(canon(term))||canon(term).includes(s))).length
   const unsafe=matches.filter(x=>['D','Blocked'].includes(x.security)).length
-  const pass=meta.source==='skillradar-registry'&&meta.registryMode==='local-bundled'&&matches.length===3&&unsafe===0&&expectedHits>=Number(test.minExpectedHits||0)&&signalHits>=Number(test.minSignalHits||0)
-  return {id:test.id,domain:test.domain,tier:test.tier,pass,top3:matches.map(x=>x.id),top1_score:Number(matches[0]?.match_score||0),expected_hits:expectedHits,signal_hits:signalHits,unsafe_top3:unsafe}
+  const gap=meta.capabilityGap||inferredGap(matches,3)
+  const gapConsistent=matches.length===3?!gap.detected:Boolean(gap.detected)&&Number(gap.returned)===matches.length&&Number(gap.missing)===3-matches.length
+  const pass=meta.source==='skillradar-registry'&&meta.registryMode==='local-bundled'&&matches.length<=3&&gapConsistent&&unsafe===0&&expectedHits>=Number(test.minExpectedHits||0)&&signalHits>=Number(test.minSignalHits||0)
+  return {id:test.id,domain:test.domain,tier:test.tier,pass,top3:matches.map(x=>x.id),recommendation_count:matches.length,capability_gap:Boolean(gap.detected),top1_score:Number(matches[0]?.match_score||0),expected_hits:expectedHits,signal_hits:signalHits,unsafe_top3:unsafe}
 }
 function summary(rows){
   const contract=rows.filter(x=>x.tier==='contract'),coverage=rows.filter(x=>x.tier!=='contract')
@@ -73,6 +78,8 @@ function summary(rows){
     coveragePassed:coverage.filter(x=>x.pass).length,
     coverageCases:coverage.length,
     unsafeTop3:sum('unsafe_top3'),
+    capabilityGapCases:rows.filter(x=>x.capability_gap).length,
+    averageRecommendationCount:Number((sum('recommendation_count')/Math.max(1,rows.length)).toFixed(2)),
     expectedHitsTotal:sum('expected_hits'),
     signalHitsTotal:sum('signal_hits'),
     averageTop1Score:Number((sum('top1_score')/Math.max(1,rows.length)).toFixed(1))
@@ -83,10 +90,11 @@ const productionRows=[],candidateRows=[],comparisons=[]
 for(const test of spec.cases){
   const prod=run('match',test.task)
   const search=run('search',test.task)
-  const production=evaluate(test,prod.matches||[],{source:prod.source,registryMode:prod.registry?.mode})
-  const candidate=evaluate(test,candidateRerank(search.skills||[],3),{source:search.source,registryMode:search.registry?.mode})
+  const candidateMatches=candidateRerank(search.skills||[],3)
+  const production=evaluate(test,prod.matches||[],{source:prod.source,registryMode:prod.registry?.mode,capabilityGap:prod.capability_gap})
+  const candidate=evaluate(test,candidateMatches,{source:search.source,registryMode:search.registry?.mode,capabilityGap:inferredGap(candidateMatches,3)})
   productionRows.push(production);candidateRows.push(candidate)
-  comparisons.push({id:test.id,productionPass:production.pass,candidatePass:candidate.pass,productionTop3:production.top3,candidateTop3:candidate.top3,expectedHitDelta:candidate.expected_hits-production.expected_hits,signalHitDelta:candidate.signal_hits-production.signal_hits})
+  comparisons.push({id:test.id,productionPass:production.pass,candidatePass:candidate.pass,productionTop3:production.top3,candidateTop3:candidate.top3,productionRecommendationCount:production.recommendation_count,candidateRecommendationCount:candidate.recommendation_count,expectedHitDelta:candidate.expected_hits-production.expected_hits,signalHitDelta:candidate.signal_hits-production.signal_hits})
 }
 const production=summary(productionRows),candidate=summary(candidateRows)
 const safetyPass=candidate.unsafeTop3===0
