@@ -1,0 +1,56 @@
+name: Install problem
+description: Report a SkillRadar installation or first-run failure.
+title: "[install] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying SkillRadar. Please share enough detail to reproduce the failure. Do not paste API keys, tokens, credentials, or private repository content.
+  - type: dropdown
+    id: install-path
+    attributes:
+      label: Install path
+      options:
+        - Codex Plugin marketplace
+        - skills.sh / npx skills add
+        - Local repository checkout
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Codex/agent version, Node.js version if relevant.
+      placeholder: "macOS 15; Codex ...; Node 22"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command or action
+      description: What did you run or click?
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened?
+      description: Include the exact error text when safe to share.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed secrets, tokens, credentials, and private data from this report.
+          required: true
