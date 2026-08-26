@@ -19,7 +19,6 @@ function canon(value=''){
     .replace(/reverse[ -]engineering/g,'reverse-engineering')
     .replace(/react[ -]native/g,'react-native')
     .replace(/test[ -]driven[ -]development/g,'tdd')
-    .replace(/react[ -]native/g,'react-native')
     .replace(/[^a-z0-9+#.-]+/g,'-')
 }
 
@@ -32,11 +31,18 @@ function runRouter(command,task,extraEnv={}){
   })
   return JSON.parse(raw)
 }
+function evidenceSignals(matches){
+  return [...new Set((matches||[]).flatMap(x=>[
+    ...(x.match_details?.matched_signals||[]),
+    x.id||'',
+    x.name||''
+  ]).map(canon).filter(Boolean))]
+}
 
 export function evaluateCase(test,matches,meta={}){
   const ids=new Set((matches||[]).map(x=>x.id))
   const expectedHits=(test.expectedAnyIds||[]).filter(x=>ids.has(x)).length
-  const signals=[...new Set((matches||[]).flatMap(x=>x.match_details?.matched_signals||[]).map(canon))]
+  const signals=evidenceSignals(matches)
   const signalHits=(test.requiredSignalTerms||[]).filter(term=>signals.some(s=>s.includes(canon(term))||canon(term).includes(s))).length
   const unsafe=(matches||[]).filter(x=>['D','Blocked'].includes(x.security)).length
   const candidates=(matches||[]).map(x=>({
