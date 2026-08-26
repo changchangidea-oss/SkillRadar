@@ -2,6 +2,12 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import {
+  matchingSeedsForRepositorySearch,
+  prioritizeRepositoryItems,
+  prioritizeTreeEntries,
+  shouldSeedRepositorySearch
+} from './lib/canonical-seeds.mjs'
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..')
 const seedPath=path.join(root,'data/general-canonical-seeds.json')
@@ -9,41 +15,21 @@ const seeds=JSON.parse(await fs.readFile(seedPath,'utf8'))
 const originalFetch=globalThis.fetch
 
 const seedRepos=new Map(seeds.map(seed=>[seed.repo,seed]))
-const searchNeedles=[...new Set(seeds.flatMap(seed=>seed.searchTerms||[]).filter(Boolean).map(x=>String(x).toLowerCase()))]
-
-export function shouldSeedRepositorySearch(url){
-  const u=String(url)
-  if(!u.includes('/search/repositories?'))return false
-  const decoded=decodeURIComponent(u).toLowerCase()
-  return searchNeedles.some(x=>decoded.includes(x))
-}
-
-export function prioritizeRepositoryItems(items,seedRepo){
-  if(!seedRepo)return items||[]
-  const rest=(items||[]).filter(x=>x?.full_name!==seedRepo.full_name)
-  return [seedRepo,...rest]
-}
-
-export function prioritizeTreeEntries(entries,paths=[]){
-  const wanted=new Set(paths)
-  const first=[],rest=[]
-  for(const entry of entries||[]){(wanted.has(entry?.path)?first:rest).push(entry)}
-  first.sort((a,b)=>paths.indexOf(a.path)-paths.indexOf(b.path))
-  return [...first,...rest]
-}
 
 if(process.env.SKILLRADAR_CANONICAL_SEED_SELFTEST==='1'){
-  const seed=seeds[0]
-  if(!seed?.repo||!seed?.paths?.length||!seed?.searchTerms?.length)throw new Error('canonical seed config missing repo/paths/searchTerms')
-  if(!shouldSeedRepositorySearch('https://api.github.com/search/repositories?q=Google%20Workspace%20CLI%20agent%20skills%20Gmail%20Calendar'))throw new Error('Google Workspace search must activate canonical seed discovery')
-  if(shouldSeedRepositorySearch('https://api.github.com/search/repositories?q=agent%20skills%20React%20Next.js%20frontend'))throw new Error('generic agent-skills frontend search must not activate Google Workspace canonical discovery')
-  if(shouldSeedRepositorySearch('https://api.github.com/search/repositories?q=agent%20skills%20security%20authentication%20OAuth'))throw new Error('generic security search must not activate Google Workspace canonical discovery')
-  const repo={full_name:seed.repo}
-  const items=prioritizeRepositoryItems([{full_name:'other/repo'},repo],repo)
-  if(items[0]?.full_name!==seed.repo||items.filter(x=>x.full_name===seed.repo).length!==1)throw new Error('canonical repo must be first and deduplicated')
-  const tree=prioritizeTreeEntries([{path:'z/SKILL.md'},{path:seed.paths[1]},{path:seed.paths[0]}],seed.paths)
-  if(tree[0]?.path!==seed.paths[0]||tree[1]?.path!==seed.paths[1])throw new Error('canonical skill paths must be ordered before the 30-file discovery cap')
-  console.log('Canonical General Radar seed self-test passed: only explicit Google Workspace searches seed the official repo, unrelated agent-skill searches do not, and configured Skill paths are prioritized without bypassing downstream scanning.')
+  for(const seed of seeds)if(!seed?.repo||!seed?.paths?.length||!seed?.searchTerms?.length)throw new Error(`canonical seed config missing repo/paths/searchTerms: ${seed?.repo||'unknown'}`)
+  const mobileUrl='https://api.github.com/search/repositories?q=agent%20skills%20React%20Native%20Expo%20Flutter'
+  const mobile=matchingSeedsForRepositorySearch(mobileUrl,seeds)
+  if(!mobile.some(seed=>seed.repo==='callstackincubator/agent-skills')||!mobile.some(seed=>seed.repo==='flutter/agent-plugins'))throw new Error('mobile search must activate only related canonical seeds')
+  if(mobile.some(seed=>seed.repo==='fastapi/fastapi'))throw new Error('mobile search must not activate FastAPI canonical discovery')
+  if(shouldSeedRepositorySearch('https://api.github.com/search/repositories?q=agent%20skills%20React%20Next.js%20frontend',seeds))throw new Error('unrelated frontend search must not activate canonical discovery')
+  const repos=mobile.map(seed=>({full_name:seed.repo}))
+  const items=prioritizeRepositoryItems([{full_name:'other/repo'},repos[0]],repos)
+  if(items.slice(0,repos.length).some((item,index)=>item.full_name!==repos[index].full_name)||items.filter(x=>x.full_name===repos[0].full_name).length!==1)throw new Error('canonical repos must be ordered and deduplicated')
+  const seed=seeds.find(item=>item.repo==='googleworkspace/cli')
+  const tree=prioritizeTreeEntries([{path:'z/SKILL.md'},...seed.paths.slice().reverse().map(path=>({path}))],seed.paths)
+  if(seed.paths.some((skillPath,index)=>tree[index]?.path!==skillPath))throw new Error('canonical skill paths must be ordered before the 30-file discovery cap')
+  console.log('Canonical General Radar seed self-test passed: each repository query injects only its exact related upstream seeds, multiple related seeds retain config order, unrelated domains stay organic, and configured Skill paths remain ahead of the discovery cap without bypassing downstream scanning.')
   process.exit(0)
 }
 
@@ -74,10 +60,10 @@ globalThis.fetch=async function skillRadarSeededFetch(input,init){
   const response=await originalFetch(input,init)
   if(!response.ok)return response
 
-  if(shouldSeedRepositorySearch(url)){
+  const matchingSeeds=matchingSeedsForRepositorySearch(url,seeds)
+  if(matchingSeeds.length){
     const data=await response.json()
-    let items=data.items||[]
-    for(const seed of seeds)items=prioritizeRepositoryItems(items,seedRepoMeta.get(seed.repo))
+    const items=prioritizeRepositoryItems(data.items||[],matchingSeeds.map(seed=>seedRepoMeta.get(seed.repo)))
     return jsonResponse({...data,items},response)
   }
 

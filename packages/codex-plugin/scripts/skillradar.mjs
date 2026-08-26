@@ -127,7 +127,7 @@ function scoreSkill(s,query,context){
 function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.category||''].map(canon).filter(Boolean))}
 function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
 function taskSignalWeights(s){return s.match_details?.matched_signal_weights||{}}
-const SPECIFICITY_SIGNALS=new Set(['mcp','orchestration','fastapi','node','graphql','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation'])
+const SPECIFICITY_SIGNALS=new Set(['playwright','mcp','rag','embeddings','orchestration','fastapi','node','graphql','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation','github','notion','figma'])
 function requestedSpecificitySignals(query){
   return [...new Set(querySignals(query).map(x=>canon(x.label)).filter(x=>SPECIFICITY_SIGNALS.has(x)))]
 }

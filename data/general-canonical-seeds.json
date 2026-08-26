@@ -8,5 +8,63 @@
       "skills/gws-calendar/SKILL.md"
     ],
     "reason": "Canonical upstream Google Workspace Skills for Gmail and Calendar. These seeds guarantee discovery only for explicit related searches; normal content and script security scanning still applies."
+  },
+  {
+    "repo": "fastapi/fastapi",
+    "hint": "backend-api",
+    "searchTerms": ["fastapi"],
+    "paths": [
+      "fastapi/.agents/skills/fastapi/SKILL.md"
+    ],
+    "reason": "Official FastAPI Skill. The seed only guarantees that an explicit FastAPI repository search analyzes the canonical path; all normal content and script security scanning still applies."
+  },
+  {
+    "repo": "redis/agent-skills",
+    "hint": "data-database",
+    "searchTerms": ["redis"],
+    "paths": [
+      "skills/redis-core/SKILL.md",
+      "skills/redis-semantic-cache/SKILL.md",
+      "skills/redis-security/SKILL.md"
+    ],
+    "reason": "Official Redis agent Skills for core modeling, caching, and security. Paths are prioritized for explicit Redis searches and remain subject to the unchanged downstream safety gate."
+  },
+  {
+    "repo": "SecureSkills-io/sqlite-skill",
+    "hint": "data-database",
+    "searchTerms": ["sqlite"],
+    "paths": [
+      "SKILL.md"
+    ],
+    "reason": "Focused open-source SQLite Skill with local-only operation. Discovery is deterministic for explicit SQLite searches, while its bundled script must still pass the complete downstream scan."
+  },
+  {
+    "repo": "callstackincubator/agent-skills",
+    "hint": "mobile",
+    "searchTerms": ["react native", "react-native"],
+    "paths": [
+      "skills/react-native-best-practices/SKILL.md"
+    ],
+    "reason": "Callstack's dedicated React Native best-practices Skill. It is only seeded for explicit React Native searches and receives the same security and quality evaluation as organic candidates."
+  },
+  {
+    "repo": "flutter/agent-plugins",
+    "hint": "mobile",
+    "searchTerms": ["flutter"],
+    "paths": [
+      "skills/flutter-apply-architecture-best-practices/SKILL.md",
+      "skills/flutter-add-integration-test/SKILL.md",
+      "skills/flutter-build-responsive-layout/SKILL.md"
+    ],
+    "reason": "Official Flutter organization Skills covering architecture, integration testing, and responsive UI. Explicit Flutter searches prioritize these paths without bypassing scanning."
+  },
+  {
+    "repo": "RevealUIStudio/revskills",
+    "hint": "security",
+    "searchTerms": ["secrets", "permissions"],
+    "paths": [
+      "skills/security-hardening/SKILL.md"
+    ],
+    "reason": "The security-hardening Skill explicitly covers secrets management and permissions policy and previously passed the live Radar safety gate. Seeding preserves discovery, not approval; every run scans it again."
   }
 ]

@@ -17,5 +17,11 @@ assert(!anchorSignalMatches('native','react-native'),'generic native must not pr
 assert(anchorSignalMatches('graphql-server','graphql'),'GraphQL should match as a complete canonical word')
 assert(!anchorSignalMatches('graphqlish-server','graphql'),'technology names must not match partial words')
 assert(anchorSignalMatches('gws-calendar-agenda','calendar'),'service anchors may match complete words in compound signals')
+assert(anchorSignalMatches('github-actions','github'),'GitHub should match as a complete service name')
+assert(!anchorSignalMatches('githubish-actions','github'),'partial service names must not satisfy anchors')
+assert(anchorSignalMatches('figma-design-system','figma'),'Figma should match as a complete service name')
+assert(!anchorSignalMatches('research','notion'),'generic research must not prove Notion')
+assert(anchorSignalMatches('rag','rag'),'short canonical technology names may match exactly')
+assert(!anchorSignalMatches('storage','rag'),'short anchors must not match inside unrelated words')
 
-console.log('Router Eval specificity validation passed: technology anchors require exact canonical word/phrase boundaries; API cannot prove FastAPI and native cannot prove React Native.')
+console.log('Router Eval specificity validation passed: named technology and service anchors require exact canonical word/phrase boundaries; generic API, native, research, and partial words cannot satisfy them.')
