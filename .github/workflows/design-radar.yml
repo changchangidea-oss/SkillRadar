@@ -9,6 +9,7 @@ on:
     paths:
       - 'scripts/update-design-radar.mjs'
       - 'scripts/update-general-radar.mjs'
+      - 'scripts/normalize-general-tags.mjs'
       - 'scripts/apply-safety-gate.mjs'
       - 'scripts/sync-codex-plugin-registry.mjs'
       - 'scripts/validate.mjs'
@@ -56,6 +57,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run radar:general
+      - name: Normalize generated general routing tags
+        run: npm run normalize:general-tags
       - name: Apply Codex safety gate
         run: node scripts/apply-safety-gate.mjs
       - name: Refresh bundled Codex registry
