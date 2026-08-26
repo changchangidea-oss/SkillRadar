@@ -3,23 +3,31 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SkillRadar Metrics — Open Skill Infrastructure</title>
-<meta name="description" content="Public operational metrics and daily ranking history for SkillRadar.">
+<meta name="description" content="Public operational and adoption metrics for SkillRadar.">
 <style>
 :root{color-scheme:dark;--bg:#0b0e0c;--panel:#111612;--line:#263129;--text:#f2f5ef;--muted:#87948b;--green:#8fd39a;--green2:#dff6e1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{width:min(1180px,calc(100% - 36px));margin:0 auto;padding:42px 0 80px}a{color:inherit}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:70px}.brand{font-weight:800;font-size:21px}.nav{display:flex;gap:18px;color:var(--muted);font-size:14px}.eyebrow{color:var(--green);font-size:12px;letter-spacing:.08em;font-weight:800;text-transform:uppercase}h1{font-size:clamp(42px,7vw,74px);line-height:.98;margin:16px 0 20px;letter-spacing:-.045em;max-width:880px}header p{color:#a5b0a8;max-width:780px;font-size:18px;line-height:1.6}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:44px 0}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px}.card{padding:24px}.label{color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.08em}.value{font-size:45px;font-weight:800;margin:18px 0 6px}.detail{color:var(--green);font-size:13px}.panel{padding:28px;margin-top:18px}.panel h2{margin:4px 0 8px;font-size:25px}.panel p{color:var(--muted);line-height:1.55}.pipeline{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:26px}.step{border:1px solid var(--line);border-radius:12px;padding:14px 10px;text-align:center;color:#b9c3bb;font-size:12px}.step b{display:block;color:var(--green2);margin-bottom:6px}.history{margin-top:18px;border-top:1px solid var(--line)}.run{display:grid;grid-template-columns:150px 1fr 110px 110px;gap:12px;padding:15px 4px;border-bottom:1px solid #1e2720;align-items:center}.run small{color:var(--muted)}.bar{height:8px;border-radius:99px;background:#1d271f;overflow:hidden}.bar span{display:block;height:100%;background:var(--green)}.foot{color:#6e7b72;margin-top:30px;font-size:12px}@media(max-width:820px){.cards{grid-template-columns:1fr 1fr}.pipeline{grid-template-columns:1fr 1fr}.run{grid-template-columns:1fr 1fr}.nav{display:none}}@media(max-width:520px){.cards{grid-template-columns:1fr}}
 </style>
 </head>
 <body><main class="wrap">
 <div class="top"><div class="brand">◉ SkillRadar</div><div class="nav"><a href="./">Registry</a><a href="https://github.com/changchangidea-oss/SkillRadar">GitHub</a></div></div>
-<header><div class="eyebrow">Public operational metrics</div><h1>Evidence over claims.</h1><p>SkillRadar publishes the outputs of its daily discovery, parsing, static security scan, classification and ranking pipeline. The web UI and Codex plugin consume the same generated registry.</p></header>
+<header><div class="eyebrow">Public operational metrics</div><h1>Evidence over claims.</h1><p>SkillRadar publishes daily discovery, safety, routing and adoption evidence. Verifiable counts are shown as measured; counts without a stable public source remain unknown rather than estimated.</p></header>
 <section class="cards">
 <div class="card"><div class="label">INDEXED SKILLS</div><div class="value" id="skills">—</div><div class="detail" id="skillDetail">loading registry</div></div>
 <div class="card"><div class="label">DESIGN DOMAINS</div><div class="value" id="domains">12</div><div class="detail">dynamic Top 20 per field</div></div>
 <div class="card"><div class="label">LATEST RADAR</div><div class="value" id="radar">—</div><div class="detail" id="radarDetail">daily security gate</div></div>
 <div class="card"><div class="label">CODEX ROUTING</div><div class="value">TOP 3</div><div class="detail">same safety-gated registry</div></div>
 </section>
+<section class="panel"><div class="eyebrow">External adoption</div><h2>Real public signals only</h2><p>Maintainer accounts and bots are excluded from external actor counts. CI smoke tests are not installs. Unsupported distribution counts remain unknown instead of being inferred.</p>
+<section class="cards">
+<div class="card"><div class="label">GITHUB STARS</div><div class="value" id="stars">—</div><div class="detail" id="forks">loading GitHub snapshot</div></div>
+<div class="card"><div class="label">EXTERNAL ACTORS</div><div class="value" id="externalActors">—</div><div class="detail" id="externalActorDetail">issues + PR authors</div></div>
+<div class="card"><div class="label">PLUGIN ZIP DOWNLOADS</div><div class="value" id="releaseDownloads">—</div><div class="detail">GitHub release assets only</div></div>
+<div class="card"><div class="label">SKILLS.SH INSTALLS</div><div class="value" id="skillsShInstalls">—</div><div class="detail" id="skillsShDetail">unknown unless verifiable</div></div>
+</section>
+<p id="adoptionGenerated">Loading adoption snapshot…</p></section>
 <section class="panel"><div class="eyebrow">Closed loop</div><h2>Discovery → safety → routing</h2><p>This is not a bookmark collection. Candidates are parsed from real <code>SKILL.md</code> files, inspected for risky capabilities, classified, ranked against a stable seed baseline, then published to the registry consumed by Codex.</p><div class="pipeline"><div class="step"><b>01</b>Discover</div><div class="step"><b>02</b>Parse</div><div class="step"><b>03</b>Security</div><div class="step"><b>04</b>Classify</div><div class="step"><b>05</b>Rank</div><div class="step"><b>06</b>Publish</div><div class="step"><b>07</b>Codex</div></div></section>
 <section class="panel"><div class="eyebrow">Daily history</div><h2>Radar snapshots</h2><p>Each daily ranking snapshot is committed to GitHub. This makes movement inspectable instead of hiding ranking changes behind a hosted black box.</p><div class="history" id="history"><div class="run"><small>Loading ranking-history.json…</small></div></div></section>
-<div class="foot">Data source: repository-generated JSON on the current branch. Static safety grades are conservative heuristics, not a formal security audit.</div>
+<div class="foot">Data source: repository-generated JSON on the current branch. Static safety grades are conservative heuristics, not a formal security audit. Adoption rules: <a href="https://github.com/changchangidea-oss/SkillRadar/blob/main/docs/ADOPTION.md">docs/ADOPTION.md</a>.</div>
 </main>
 <script>
 const j=(p)=>fetch(p,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(p);return r.json()});
@@ -31,5 +39,21 @@ Promise.all([j('data/design-skill-index.json'),j('data/design-domains.json'),j('
  document.querySelector('#radarDetail').textContent=`${r.activeCount??0} active · ${r.reviewCount??0} review · ${r.blockedCount??0} blocked`;
  const snaps=(h.snapshots||[]).slice(-14).reverse();
  document.querySelector('#history').innerHTML=snaps.length?snaps.map(s=>{const domains=Object.values(s.domains||{});const radar=domains.flat().filter(x=>x.source==='radar').length;const avg=domains.length?Math.round(domains.reduce((a,x)=>a+(x[0]?.score||0),0)/domains.length):0;return `<div class="run"><div><b>${s.date}</b><br><small>${new Date(s.generatedAt).toLocaleString()}</small></div><div><small>Radar entries in Top 20</small><div class="bar"><span style="width:${Math.min(100,radar*4)}%"></span></div></div><div><b>${radar}</b><br><small>rank slots</small></div><div><b>${avg}</b><br><small>avg #1 score</small></div></div>`}).join(''):'<div class="run"><small>No daily snapshots yet.</small></div>';
-}).catch(e=>{document.querySelector('#history').innerHTML='<div class="run"><small>Metrics data is temporarily unavailable.</small></div>';console.error(e)});
+}).catch(e=>{document.querySelector('#history').innerHTML='<div class="run"><small>Operational metrics are temporarily unavailable.</small></div>';console.error(e)});
+
+j('data/adoption-latest.json').then(a=>{
+ const g=a.github||{};
+ const d=a.distribution||{};
+ document.querySelector('#stars').textContent=g.stars??'—';
+ document.querySelector('#forks').textContent=`${g.forks??0} forks · ${g.watchers??0} watchers`;
+ document.querySelector('#externalActors').textContent=g.externalActorsObserved??'—';
+ document.querySelector('#externalActorDetail').textContent=`${g.externalIssueAuthors??0} issue authors · ${g.externalPrAuthors??0} PR authors`;
+ document.querySelector('#releaseDownloads').textContent=g.releasePluginZipDownloads??'—';
+ document.querySelector('#skillsShInstalls').textContent=d.skillsShInstalls==null?'UNKNOWN':d.skillsShInstalls;
+ document.querySelector('#skillsShDetail').textContent=d.skillsShInstallsStatus||'unknown unless verifiable';
+ document.querySelector('#adoptionGenerated').textContent=`Snapshot: ${a.generatedAt?new Date(a.generatedAt).toLocaleString():'unknown'} · source: ${a.source||'unknown'}`;
+}).catch(e=>{
+ document.querySelector('#adoptionGenerated').textContent='Adoption snapshot is not available yet.';
+ console.error(e);
+});
 </script></body></html>
