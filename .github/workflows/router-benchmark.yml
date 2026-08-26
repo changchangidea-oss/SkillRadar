@@ -1,0 +1,53 @@
+name: Router Quality Benchmark
+
+on:
+  pull_request:
+    paths:
+      - 'packages/codex-plugin/scripts/skillradar.mjs'
+      - 'packages/codex-plugin/data/registry.json'
+      - 'scripts/benchmark-router.mjs'
+      - 'data/router-benchmark.json'
+      - 'package.json'
+      - '.github/workflows/router-benchmark.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'packages/codex-plugin/scripts/skillradar.mjs'
+      - 'packages/codex-plugin/data/registry.json'
+      - 'scripts/benchmark-router.mjs'
+      - 'data/router-benchmark.json'
+      - 'package.json'
+      - '.github/workflows/router-benchmark.yml'
+  schedule:
+    - cron: '37 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Refresh bundled registry
+        run: npm run sync:plugin-registry
+      - name: Run golden router benchmark
+        run: SKILLRADAR_PROJECT_CONTEXT=0 SKILLRADAR_BENCHMARK_WRITE=1 npm run benchmark:router
+      - name: Show benchmark summary
+        run: node -e 'const r=require("./data/router-benchmark-latest.json"); console.log(JSON.stringify({rankingVersion:r.rankingVersion,cases:r.cases,passed:r.passed,passRate:r.passRate,unsafeTop3:r.unsafeTop3,averageTop1Score:r.averageTop1Score,projectContextFixture:r.projectContextFixture},null,2))'
+      - name: Commit benchmark status
+        if: github.event_name != 'pull_request'
+        run: |
+          git add data/router-benchmark-latest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "skillradar-benchmark-bot"
+          git config user.email "skillradar-benchmark-bot@users.noreply.github.com"
+          git commit -m "chore(benchmark): update router quality status"
+          git pull --rebase origin main
+          git push origin HEAD:main
