@@ -15,6 +15,8 @@ const requiredRouterContract = [
   "node ../../scripts/skillradar.mjs match '<user task>'",
   'source: skillradar-registry',
   'registry.mode: local-bundled',
+  'ranking.version: 2.1',
+  'context.mode: project-aware',
   'match_score',
   'skillradar_score',
   'Local availability is supplemental metadata, not a replacement ranking.'
@@ -36,9 +38,9 @@ for (const phrase of ["node ../../scripts/skill-budget.mjs audit '<current proje
 }
 if (!fs.existsSync(path.join(pluginDst, 'scripts/skill-budget.mjs'))) throw new Error('plugin-only copy missing Skill Budget Doctor')
 
-function runMatch(query, extraEnv = {}) {
+function runMatch(query, extraEnv = {}, cwd = tmp) {
   const raw = execFileSync(process.execPath, [path.join(pluginDst, 'scripts/skillradar.mjs'), 'match', query], {
-    cwd: tmp,
+    cwd,
     encoding: 'utf8',
     env: { ...process.env, SKILLRADAR_OFFLINE: '1', ...extraEnv },
     stdio: ['ignore', 'pipe', 'pipe']
@@ -49,13 +51,15 @@ function runMatch(query, extraEnv = {}) {
 const result = runMatch('Next.js React shadcn AI dashboard streaming tool calling App Router')
 if (result.source !== 'skillradar-registry') throw new Error('offline plugin did not use SkillRadar registry')
 if (result.registry?.mode !== 'local-bundled') throw new Error(`expected local-bundled mode, got ${result.registry?.mode}`)
-if (result.ranking?.version !== '2.0') throw new Error(`expected ranking v2, got ${result.ranking?.version}`)
+if (result.ranking?.version !== '2.1') throw new Error(`expected ranking v2.1, got ${result.ranking?.version}`)
+if (!['task-only','project-aware'].includes(result.context?.mode)) throw new Error('router did not expose context mode')
 if (!Array.isArray(result.matches) || result.matches.length !== 3) throw new Error('offline router did not return Top 3')
 for (const item of result.matches) {
   for (const key of ['match_score', 'skillradar_score', 'security', 'source', 'reason', 'match_details']) {
     if (item[key] === undefined || item[key] === null || item[key] === '') throw new Error(`offline result missing ${key}`)
   }
-  if (item.match_details?.ranking_version !== '2.0') throw new Error(`offline result missing ranking v2 evidence for ${item.id}`)
+  if (item.match_details?.ranking_version !== '2.1') throw new Error(`offline result missing ranking v2.1 evidence for ${item.id}`)
+  if (item.match_details?.project_context_bonus === undefined) throw new Error(`offline result missing project-context evidence for ${item.id}`)
   if (['D', 'Blocked'].includes(item.security)) throw new Error(`unsafe offline result: ${item.id}`)
 }
 
@@ -76,7 +80,7 @@ const fixture = {
 }
 const fixturePath = path.join(tmp, 'fixture.json')
 fs.writeFileSync(fixturePath, JSON.stringify(fixture))
-const policy = runMatch('dashboard nextjs react', { SKILLRADAR_REGISTRY_PATH: fixturePath })
+const policy = runMatch('dashboard nextjs react', { SKILLRADAR_REGISTRY_PATH: fixturePath, SKILLRADAR_PROJECT_CONTEXT: '0' })
 if (policy.matches?.[0]?.security !== 'C') throw new Error('policy fixture did not produce C-grade top match')
 if (!policy.advisory || policy.advisory.level !== 'review') throw new Error('C-grade top match did not produce review advisory')
 if (!['A', 'B'].includes(policy.advisory.alternative?.security)) throw new Error('C-grade advisory did not identify A/B alternative')
@@ -101,10 +105,35 @@ const zhFixture = {
 }
 const zhFixturePath = path.join(tmp, 'zh-fixture.json')
 fs.writeFileSync(zhFixturePath, JSON.stringify(zhFixture))
-const zhPolicy = runMatch('建筑可视化和室内空间渲染', { SKILLRADAR_REGISTRY_PATH: zhFixturePath })
+const zhPolicy = runMatch('建筑可视化和室内空间渲染', { SKILLRADAR_REGISTRY_PATH: zhFixturePath, SKILLRADAR_PROJECT_CONTEXT: '0' })
 if (zhPolicy.matches?.[0]?.id !== 'interior-rendering') throw new Error(`Chinese multi-facet intent regression: expected interior-rendering, got ${zhPolicy.matches?.[0]?.id}`)
 const zhSignals = zhPolicy.matches[0].match_details?.matched_signals || []
 if (zhSignals.filter(x => x.includes(':')).length < 4) throw new Error(`Chinese multi-facet evidence collapsed: ${JSON.stringify(zhSignals)}`)
 
+// Project-aware ranking: project metadata may break ties, but explicit task evidence must remain dominant.
+const projectDir = path.join(tmp, 'project-fixture')
+fs.mkdirSync(projectDir)
+fs.writeFileSync(path.join(projectDir, 'package.json'), JSON.stringify({name:'next-app',dependencies:{next:'16.0.0',react:'19.0.0','@ai-sdk/react':'1.0.0'}}))
+fs.writeFileSync(path.join(projectDir, 'components.json'), '{}')
+const contextFixture = {
+  schemaVersion: 2, generatedAt: 'test', source: 'context-fixture', coreCount: 3, designCount: 0, generalCount: 0, totalCount: 3, contentHash: 'context',
+  core: [
+    {id:'next-context',name:'Next Context',source:'fixture/next',category:'Frontend',tags:['nextjs','react','app-router','shadcn'],summary:'Next.js application architecture',security:'A',score:80},
+    {id:'python-context',name:'Python Context',source:'fixture/python',category:'Backend',tags:['python','fastapi','api'],summary:'Python FastAPI service architecture',security:'A',score:80},
+    {id:'generic-context',name:'Generic Context',source:'fixture/generic',category:'Architecture',tags:['architecture'],summary:'Generic application architecture',security:'A',score:80}
+  ], design: [], general: []
+}
+const contextFixturePath=path.join(tmp,'context-fixture.json')
+fs.writeFileSync(contextFixturePath,JSON.stringify(contextFixture))
+const contextual=runMatch('improve this application architecture',{SKILLRADAR_REGISTRY_PATH:contextFixturePath},projectDir)
+if(contextual.context?.mode!=='project-aware') throw new Error('project fixture did not enable project-aware context')
+if(!contextual.context.signals.includes('nextjs')||!contextual.context.signals.includes('shadcn')) throw new Error(`project context did not detect expected signals: ${JSON.stringify(contextual.context)}`)
+if(contextual.matches?.[0]?.id!=='next-context') throw new Error(`project context failed tie-break: ${contextual.matches?.[0]?.id}`)
+if(Number(contextual.matches[0].match_details?.project_context_bonus||0)<=0) throw new Error('project context did not emit a bounded bonus')
+if(Number(contextual.matches[0].match_details?.project_context_bonus||0)>6) throw new Error('project context bonus exceeded hard cap')
+
+const taskDominance=runMatch('build a Python FastAPI API service',{SKILLRADAR_REGISTRY_PATH:contextFixturePath},projectDir)
+if(taskDominance.matches?.[0]?.id!=='python-context') throw new Error(`project context overrode explicit task evidence: ${taskDominance.matches?.[0]?.id}`)
+
 fs.rmSync(tmp, { recursive: true, force: true })
-console.log('Offline Codex plugin validation passed: registry-first contract + ranking v2 evidence + plugin-only Top 3 + C-grade safety advisory + Chinese multi-facet intent + manage-skills doctor contract.')
+console.log('Offline Codex plugin validation passed: registry-first + ranking v2.1 + bounded project context + task dominance + Top 3 + C-grade safety advisory + Chinese multi-facet intent + manage-skills doctor contract.')
