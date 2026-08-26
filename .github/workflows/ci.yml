@@ -27,7 +27,9 @@ jobs:
         run: npm run benchmark:router
       - name: Expanded router eval
         run: npm run eval:router
-      - name: Shadow ranking safety and contract gate
+      - name: Shadow ranking snapshot safety and contract gate
         run: npm run shadow:router
+      - name: Shadow multi-snapshot promotion policy
+        run: npm run validate:shadow-history
       - name: Skill Budget Doctor acceptance
         run: npm run validate:skill-budget
