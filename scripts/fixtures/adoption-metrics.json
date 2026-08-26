@@ -1,0 +1,42 @@
+{
+  "repo": {
+    "stargazers_count": 12,
+    "forks_count": 3,
+    "subscribers_count": 2,
+    "open_issues_count": 6
+  },
+  "issuesAndPrs": [
+    {
+      "user": { "login": "changchangidea-oss", "type": "User" }
+    },
+    {
+      "user": { "login": "alice", "type": "User" }
+    },
+    {
+      "user": { "login": "alice", "type": "User" }
+    },
+    {
+      "user": { "login": "github-actions[bot]", "type": "Bot" }
+    },
+    {
+      "user": { "login": "bob", "type": "User" },
+      "pull_request": { "url": "https://example.invalid/pr/1" }
+    },
+    {
+      "user": { "login": "alice", "type": "User" },
+      "pull_request": { "url": "https://example.invalid/pr/2" }
+    }
+  ],
+  "releases": [
+    {
+      "assets": [
+        { "name": "skillradar-codex-plugin-v0.5.0.zip", "download_count": 7 },
+        { "name": "skillradar-codex-plugin-v0.5.0.zip.sha256", "download_count": 2 },
+        { "name": "other-artifact.txt", "download_count": 5 }
+      ]
+    },
+    {
+      "assets": []
+    }
+  ]
+}
