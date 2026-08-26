@@ -30,7 +30,7 @@ function loadLegacyLocalRegistry(){
   if(!core||!manifest||!design.length)return null
   return {skills:dedupeAndGate([...core.map(normalizeCore),...design.map(x=>normalizeDiscovered(x,'Design')),...general.map(x=>normalizeDiscovered(x,'General'))]),meta:{mode:'local-repository',generatedAt:manifest.generatedAt,totalCount:core.length+design.length+general.length,source:'repository-data'}}
 }
-async function fetchJson(url){if(offline)throw new Error('network disabled by SKILLRADAR_OFFLINE=1');const r=await fetch(url,{headers:{accept:'application/json','user-agent':'SkillRadar-Codex-Plugin/0.4.0'}});if(!r.ok)throw new Error(`${r.status} ${r.statusText}`);return r.json()}
+async function fetchJson(url){if(offline)throw new Error('network disabled by SKILLRADAR_OFFLINE=1');const r=await fetch(url,{headers:{accept:'application/json','user-agent':'SkillRadar-Codex-Plugin/0.5.0'}});if(!r.ok)throw new Error(`${r.status} ${r.statusText}`);return r.json()}
 async function loadNetworkRegistry(){const core=await fetchJson(`${RAW}/skills.json`),manifest=await fetchJson(`${RAW}/design-skill-index.json`),design=[];for(const file of manifest.chunks||[])design.push(...await fetchJson(`${RAW}/${file}`));let general=[];try{general=await fetchJson(`${RAW}/general-skills-radar.json`)}catch{}return {skills:dedupeAndGate([...core.map(normalizeCore),...design.map(x=>normalizeDiscovered(x,'Design')),...general.map(x=>normalizeDiscovered(x,'General'))]),meta:{mode:'network-fallback',generatedAt:manifest.generatedAt,totalCount:core.length+design.length+general.length,source:RAW}}}
 async function loadRegistry(){return loadBundledRegistry()||loadLegacyLocalRegistry()||(offline?(()=>{throw new Error('Bundled SkillRadar registry is missing; offline routing cannot continue.')})():await loadNetworkRegistry())}
 
@@ -67,9 +67,45 @@ function querySignals(text){
   for(const [term,needle] of facets)concepts.push({label:`${needle}:${term}`,terms:[term],weight:2.25,kind:'zh-facet'})
   return concepts
 }
+
+const DEP_SIGNALS=[
+  [/^next$/,['nextjs','react']],[/^react$/,['react']],[/^typescript$/,['typescript']],[/^tailwindcss$/,['tailwind']],
+  [/^@ai-sdk\//,['ai-sdk','ai']],[/^ai$/,['ai-sdk','ai']],[/^@supabase\//,['supabase','postgres','database']],
+  [/^prisma$/,['prisma','database']],[/^drizzle-orm$/,['drizzle','database']],[/^@cloudflare\//,['cloudflare-workers','workers']],
+  [/^wrangler$/,['cloudflare-workers','workers']],[/^@playwright\//,['playwright','e2e','testing']],[/^vitest$/,['vitest','testing']],
+  [/^expo$/,['expo','react-native','mobile']],[/^react-native$/,['react-native','mobile']],[/^vite$/,['vite']],[/^svelte$/,['svelte']],[/^vue$/,['vue']]
+]
+function projectContext(){
+  if(process.env.SKILLRADAR_PROJECT_CONTEXT==='0')return {mode:'task-only',signals:[],evidence:[]}
+  const cwd=process.cwd(),signals=new Set(),evidence=[]
+  const add=(terms,why)=>{let changed=false;for(const t of terms){const c=canon(t);if(c&&!signals.has(c)){signals.add(c);changed=true}}if(changed)evidence.push(why)}
+  try{
+    const pkg=JSON.parse(fs.readFileSync(path.join(cwd,'package.json'),'utf8'))
+    const deps={...(pkg.dependencies||{}),...(pkg.devDependencies||{}),...(pkg.peerDependencies||{})}
+    for(const name of Object.keys(deps))for(const [pattern,terms] of DEP_SIGNALS)if(pattern.test(name)){add(terms,`dependency:${name}`);break}
+  }catch{}
+  const files=new Set();try{for(const name of fs.readdirSync(cwd).slice(0,200))files.add(name)}catch{}
+  if(files.has('components.json'))add(['shadcn','design-system'],'file:components.json')
+  if([...files].some(x=>/^wrangler\.(toml|jsonc?|yaml|yml)$/i.test(x)))add(['cloudflare-workers','workers'],'file:wrangler')
+  if([...files].some(x=>/^tailwind\.config\./i.test(x)))add(['tailwind'],'file:tailwind-config')
+  if([...files].some(x=>/^playwright\.config\./i.test(x)))add(['playwright','e2e','testing'],'file:playwright-config')
+  if([...files].some(x=>/^vitest\.config\./i.test(x)))add(['vitest','testing'],'file:vitest-config')
+  if(fs.existsSync(path.join(cwd,'app')))add(['app-router'],'dir:app')
+  if(fs.existsSync(path.join(cwd,'supabase')))add(['supabase','postgres','database'],'dir:supabase')
+  return signals.size?{mode:'project-aware',signals:[...signals],evidence:evidence.slice(0,20)}:{mode:'task-only',signals:[],evidence:[]}
+}
+
 function fieldText(s){return {identity:`${s.id||''} ${s.name||''}`.toLowerCase(),tags:`${(s.tags||[]).join(' ')} ${(s.uses||[]).join(' ')}`.toLowerCase(),domains:`${(s.domains||[]).join(' ')} ${s.category||''}`.toLowerCase(),summary:String(s.summary||'').toLowerCase(),source:String(s.source||'').toLowerCase()}}
 function fieldContains(text,term){const normalized=String(text).toLowerCase().replace(/next\.js/g,'nextjs').replace(/shadcn\/ui/g,'shadcn').replace(/tool[ -]calling/g,'tool-calling').replace(/function[ -]calling/g,'function-calling').replace(/app[ -]router/g,'app-router').replace(/design[ -]system/g,'design-system');const set=new Set(normalized.split(/[^a-z0-9+#.-]+/).map(canon).filter(Boolean));return set.has(term)||(term.length>=5&&normalized.includes(term))}
-function scoreSkill(s,query){
+function projectEvidence(fields,context){
+  if(context.mode!=='project-aware'||!context.signals.length)return {matched:[],coverage:0,bonus:0}
+  const matched=[]
+  for(const signal of context.signals){if(Object.values(fields).some(text=>fieldContains(text,signal)))matched.push(signal)}
+  const coverage=matched.length/context.signals.length
+  const bonus=Math.min(6,matched.length*1.35+coverage*1.5)
+  return {matched:[...new Set(matched)].slice(0,10),coverage:Number(coverage.toFixed(2)),bonus:Number(bonus.toFixed(1))}
+}
+function scoreSkill(s,query,context){
   const signals=querySignals(query),fields=fieldText(s),totalWeight=Math.max(1,signals.reduce((n,x)=>n+x.weight,0));let matchedWeight=0,evidence=0;const matched=[],fieldHits={identity:0,tags:0,domains:0,summary:0,source:0}
   for(const sig of signals){
     let best=0,bestField=null,bestTerm=null
@@ -79,9 +115,11 @@ function scoreSkill(s,query){
   }
   const coverage=matchedWeight/totalWeight
   const skillradar=s.score||70,securityBonus=s.security==='A'?4:s.security==='B'?2:s.security==='C'?0:-100,freshness=Math.max(0,Math.min(100,s.maintenance??70))*.04
-  const coverageScore=coverage*55,evidenceScore=Math.min(22,evidence*1.45),qualityPrior=skillradar*.15
-  const matchScore=Math.max(0,Math.min(100,Math.round(coverageScore+evidenceScore+qualityPrior+securityBonus+freshness)))
-  return {...s,match_score:matchScore,skillradar_score:skillradar,specialty_hits:fieldHits.identity+fieldHits.tags,match_details:{ranking_version:'2.0',matched_signals:[...new Set(matched)].slice(0,12),coverage:Number(coverage.toFixed(2)),field_hits:fieldHits,quality_prior:Number(qualityPrior.toFixed(1)),security_bonus:securityBonus,freshness_bonus:Number(freshness.toFixed(1))},reason:matched.length?`Matched task signals: ${[...new Set(matched)].slice(0,8).join(', ')}; coverage ${Math.round(coverage*100)}%; security ${s.security}; SkillRadar score ${skillradar}.`:`No strong lexical task signal; retained only by quality/security prior; security ${s.security}; SkillRadar score ${skillradar}.`}
+  const coverageScore=coverage*55,evidenceScore=Math.min(22,evidence*1.45),qualityPrior=skillradar*.15,project=projectEvidence(fields,context)
+  const matchScore=Math.max(0,Math.min(100,Math.round(coverageScore+evidenceScore+qualityPrior+securityBonus+freshness+project.bonus)))
+  const taskReason=matched.length?`Matched task signals: ${[...new Set(matched)].slice(0,8).join(', ')}; coverage ${Math.round(coverage*100)}%`:'No strong lexical task signal'
+  const projectReason=project.matched.length?`; project context: ${project.matched.join(', ')} (+${project.bonus})`:''
+  return {...s,match_score:matchScore,skillradar_score:skillradar,specialty_hits:fieldHits.identity+fieldHits.tags,match_details:{ranking_version:'2.1',matched_signals:[...new Set(matched)].slice(0,12),coverage:Number(coverage.toFixed(2)),field_hits:fieldHits,quality_prior:Number(qualityPrior.toFixed(1)),security_bonus:securityBonus,freshness_bonus:Number(freshness.toFixed(1)),project_context_signals:project.matched,project_context_coverage:project.coverage,project_context_bonus:project.bonus},reason:`${taskReason}${projectReason}; security ${s.security}; SkillRadar score ${skillradar}.`}
 }
 function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.category||''].map(canon).filter(Boolean))}
 function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
@@ -93,11 +131,11 @@ function diversify(ranked,limit=3){
 }
 function safetyAdvisory(matches){const top=matches[0];if(!top||top.security!=='C')return null;const alternative=matches.slice(1).find(x=>['A','B'].includes(x.security)&&top.match_score-x.match_score<=5);if(!alternative)return {level:'review',message:'Top match is security grade C. Review its SKILL.md and scripts before installation or execution.'};return {level:'review',message:`Top match is security grade C. Prefer the nearby ${alternative.security}-grade alternative when task coverage is comparable.`,alternative:{id:alternative.id,name:alternative.name,match_score:alternative.match_score,skillradar_score:alternative.skillradar_score,security:alternative.security,source:alternative.source}}}
 async function registryResult(){
-  const loaded=await loadRegistry(),registry=loaded.skills
-  if(cmd==='inspect'){const id=value.toLowerCase();const skill=registry.find(s=>String(s.id).toLowerCase()===id||String(s.name).toLowerCase()===id);if(!skill)throw new Error(`Skill not found or blocked by safety gate: ${value}`);return {source:'skillradar-registry',registry:loaded.meta,skill:{...skill,skillradar_score:skill.score||70}}}
-  const ranked=registry.map(s=>scoreSkill(s,value)).filter(s=>cmd==='match'||s.match_score>24).sort((a,b)=>b.match_score-a.match_score||b.specialty_hits-a.specialty_hits||b.skillradar_score-a.skillradar_score)
-  if(cmd==='match'){const matches=diversify(ranked,3);return {source:'skillradar-registry',registry:loaded.meta,ranking:{version:'2.0',strategy:'field-weighted lexical evidence + task coverage + quality/security/freshness prior + diversity rerank'},matches,advisory:safetyAdvisory(matches)}}
-  return {source:'skillradar-registry',registry:loaded.meta,ranking:{version:'2.0'},skills:ranked.slice(0,8)}
+  const loaded=await loadRegistry(),registry=loaded.skills,context=projectContext()
+  if(cmd==='inspect'){const id=value.toLowerCase();const skill=registry.find(s=>String(s.id).toLowerCase()===id||String(s.name).toLowerCase()===id);if(!skill)throw new Error(`Skill not found or blocked by safety gate: ${value}`);return {source:'skillradar-registry',registry:loaded.meta,context,skill:{...skill,skillradar_score:skill.score||70}}}
+  const ranked=registry.map(s=>scoreSkill(s,value,context)).filter(s=>cmd==='match'||s.match_score>24).sort((a,b)=>b.match_score-a.match_score||b.specialty_hits-a.specialty_hits||b.skillradar_score-a.skillradar_score)
+  if(cmd==='match'){const matches=diversify(ranked,3);return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1',strategy:'task-first field-weighted evidence + coverage + quality/security/freshness prior + bounded project-context bonus + diversity rerank'},matches,advisory:safetyAdvisory(matches)}}
+  return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1'},skills:ranked.slice(0,8)}
 }
 async function remote(){if(!base||offline)return null;if(cmd==='match'){const r=await fetch(`${base}/api/router`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({task:value,agent:'codex',limit:3})});if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}const endpoint=cmd==='inspect'?`/api/skill?id=${encodeURIComponent(value)}`:`/api/skills?q=${encodeURIComponent(value)}&limit=8`;const r=await fetch(base+endpoint);if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}
 try{try{console.log(JSON.stringify(await registryResult(),null,2))}catch(localError){if(offline)throw localError;if(base){try{const result=await remote();if(result){console.log(JSON.stringify(result,null,2));process.exit(0)}}catch(remoteError){console.error(`Remote API fallback failed: ${remoteError.message}`)}}throw localError}}catch(e){console.error(e.message);process.exit(1)}
