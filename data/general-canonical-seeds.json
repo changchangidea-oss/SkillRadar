@@ -77,5 +77,43 @@
       "skills/create-slack-app/SKILL.md"
     ],
     "reason": "Official Slack organization Skills for messaging, Web API use, and app creation. Explicit Slack searches prioritize these paths for full Radar analysis without granting automatic Registry acceptance."
+  },
+  {
+    "repo": "FuZhiyu/superRA",
+    "hint": "ai-agents",
+    "searchTerms": ["multi-agent orchestration"],
+    "paths": [
+      "skills/agent-orchestration/SKILL.md"
+    ],
+    "reason": "Focused MIT-licensed agent-orchestration Skill covering delegation, parallel agents, reviewers, and workflow state. The exact upstream path is prioritized only for the dedicated orchestration query and remains subject to all normal scans and gates."
+  },
+  {
+    "repo": "antfu/skills",
+    "hint": "testing-quality",
+    "searchTerms": ["vitest"],
+    "paths": [
+      "skills/vitest/SKILL.md"
+    ],
+    "reason": "Anthony Fu's MIT-licensed Vitest Skill covers unit tests, mocks, fixtures, coverage, and configuration. Deterministic discovery does not bypass content, relevance, script, or safety evaluation."
+  },
+  {
+    "repo": "hookdeck/webhook-skills",
+    "hint": "automation-integrations",
+    "searchTerms": ["webhook"],
+    "paths": [
+      "skills/webhook-handler-patterns/SKILL.md"
+    ],
+    "reason": "Hookdeck's MIT-licensed webhook handler Skill directly covers verification, idempotency, retries, API handlers, and integrations. It must pass the unchanged Radar scan before publication."
+  },
+  {
+    "repo": "nexu-io/open-design",
+    "hint": "design-media",
+    "searchTerms": ["poster"],
+    "paths": [
+      "design-templates/html-ppt-zhangzara-bold-poster/SKILL.md",
+      "design-templates/image-poster/SKILL.md",
+      "design-templates/magazine-poster/SKILL.md"
+    ],
+    "reason": "Apache-2.0 poster-design Skills that previously passed live SkillRadar discovery. Canonical paths prevent transient design-search volatility from erasing the capability, without bypassing any downstream safety or relevance gate."
   }
 ]
