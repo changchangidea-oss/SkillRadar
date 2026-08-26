@@ -25,6 +25,14 @@
     ['工艺', ['craft', 'fabrication']], ['民间艺术', ['illustration', 'hand-drawn', 'collage', 'pattern', 'craft']], ['纹样', ['pattern', 'illustration', 'vector']],
   ];
   const SPECIFICITY_SIGNALS = new Set(['playwright', 'mcp', 'rag', 'embeddings', 'orchestration', 'fastapi', 'node', 'graphql', 'redis', 'sqlite', 'vitest', 'docker', 'kubernetes', 'vulnerability', 'secrets', 'permissions', 'reactnative', 'expo', 'swiftui', 'android', 'kotlin', 'flutter', 'slack', 'gmail', 'calendar', 'webhook', 'documentation', 'github', 'notion', 'figma', 'poster']);
+  const CANDIDATE_EVIDENCE_RULES = {
+    mcp: { identity: ['mcp'], minSignals: 2 },
+    orchestration: { identity: ['agent', 'orchestration'], minSignals: 1 },
+    sqlite: { identity: ['sqlite'], minSignals: 2 },
+    vitest: { identity: ['vitest'], minSignals: 2 },
+    flutter: { identity: ['flutter'], minSignals: 2 },
+    webhook: { identity: ['webhook', 'automation'], minSignals: 2 },
+  };
 
   function canon(value) {
     return String(value).toLowerCase()
@@ -229,10 +237,21 @@
     return [...new Set(querySignals(query).map((signal) => canon(signal.label)).filter((signal) => SPECIFICITY_SIGNALS.has(signal)))];
   }
 
+  function candidateEvidencePass(skill, required = []) {
+    const applicable = required.map((signal) => ({ signal, rule: CANDIDATE_EVIDENCE_RULES[signal] })).filter(({ rule }) => rule);
+    if (!applicable.length) return true;
+    const matched = new Set((skill.match_details?.matched_signals || []).map(canon));
+    const identity = new Set(String(skill.name || '').toLowerCase().split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean));
+    return applicable.some(({ signal, rule }) => matched.has(signal)
+      && matched.size >= rule.minSignals
+      && rule.identity.some((term) => identity.has(canon(term))));
+  }
+
   function enforceSpecificity(ranked, required = []) {
     if (!required.length) return ranked;
     const wanted = new Set(required);
-    return ranked.filter((skill) => (skill.match_details?.matched_signals || []).some((signal) => wanted.has(canon(signal))));
+    return ranked.filter((skill) => (skill.match_details?.matched_signals || []).some((signal) => wanted.has(canon(signal)))
+      && candidateEvidencePass(skill, required));
   }
 
   function diversify(ranked, limit = 3) {
@@ -319,5 +338,5 @@
     };
   }
 
-  global.SkillRadarWebRouter = Object.freeze({ canon, querySignals, registrySkills, scoreSkill, requestedSpecificitySignals, match });
+  global.SkillRadarWebRouter = Object.freeze({ canon, querySignals, registrySkills, scoreSkill, requestedSpecificitySignals, candidateEvidencePass, match });
 })(globalThis);
