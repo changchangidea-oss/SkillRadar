@@ -103,6 +103,7 @@ const parityQueries = [
   'Kubernetes deployment',
   'Playwright end to end tests',
   'Figma design system handoff',
+  '为新消费品牌设计一张中文活动海报',
   'Next.js AI dashboard with tool calling and shadcn/ui',
 ];
 

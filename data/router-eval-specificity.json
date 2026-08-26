@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "qualityPolicyVersion": 3,
-  "description": "Specificity gates for open-domain routing cases. Anchors use exact canonical word/phrase boundaries so generic workflow/integration/data/research matches, API for FastAPI, and native for React Native cannot count as named-technology or named-service evidence.",
+  "qualityPolicyVersion": 4,
+  "description": "Specificity gates for open-domain routing cases. Anchors use exact canonical word/phrase boundaries so generic workflow/integration/data/research/photo matches, API for FastAPI, and native for React Native cannot count as named-technology, named-service, or named-medium evidence.",
   "cases": {
     "playwright-e2e": {"anchorSignalTerms":["playwright"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "mcp-agent-tools": {"anchorSignalTerms":["mcp"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
@@ -27,6 +27,7 @@
     "github-ci": {"anchorSignalTerms":["github"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "github-pr-triage": {"anchorSignalTerms":["github"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "notion-research": {"anchorSignalTerms":["notion"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
-    "figma-design-system": {"anchorSignalTerms":["figma"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0}
+    "figma-design-system": {"anchorSignalTerms":["figma"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "zh-poster-brand": {"anchorSignalTerms":["poster"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0}
   }
 }

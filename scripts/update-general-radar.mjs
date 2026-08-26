@@ -2,7 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import crypto from 'node:crypto'
 import { fileURLToPath } from 'node:url'
-import { canonicalCandidateKeys, prioritizeAnalysisCandidates } from './lib/canonical-seeds.mjs'
+import { canonicalCandidateKeys, prioritizeAnalysisCandidates, prioritizeCanonicalCandidates } from './lib/canonical-seeds.mjs'
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..')
 const p=(...parts)=>path.join(root,...parts)
@@ -151,7 +151,11 @@ for(const old of previous.candidates||[]){
   if(age<=RETAIN_DAYS){const item=retainWithScanProvenance(old);if(item.security==='D'&&item.securityFindings?.some(x=>x.name==='legacy-unverified-script-scan'))metrics.unverified_retained++;retained.push(item)}
 }
 const all=[...analyzed,...retained].sort((a,b)=>b.signalScore-a.signalScore)
-const live=all.filter(x=>x.status==='active'&&['A','B','C'].includes(x.security)&&x.scriptScan?.complete===true).slice(0,260)
+const eligible=all.filter(x=>x.status==='active'&&['A','B','C'].includes(x.security)&&x.scriptScan?.complete===true)
+// A configured canonical path that passed every normal gate must not disappear
+// behind the 260-entry publication cap. This only changes ordering of eligible
+// candidates; review, D, Blocked, incomplete, or low-relevance entries remain out.
+const live=prioritizeCanonicalCandidates(eligible,canonicalKeys).slice(0,260)
 await writeJson('data/general-skills-radar.json',live)
 await writeJson('data/general-radar-registry.json',{generatedAt:iso(),candidateCount:all.length,candidates:all,errors:errors.slice(0,80)})
 await writeJson('data/general-radar-latest.json',{generatedAt:iso(),taxonomyDomains:domains.length,repositoryQueries:metrics.repository_queries,codeQueries:metrics.code_queries,repositoriesSeen:metrics.repositories_seen.size,skillFilesSeen:metrics.skill_files_seen.size,analyzed:analyzed.length,retained:retained.length,active:live.length,review:all.filter(x=>x.status==='review').length,blocked:all.filter(x=>x.status==='blocked').length,lowRelevance:all.filter(x=>x.status==='low-relevance').length,partialScriptScans:metrics.partial_script_scans,unverifiedRetained:metrics.unverified_retained,channels:metrics.channels,errorCount:errors.length})

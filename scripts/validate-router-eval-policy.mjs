@@ -23,5 +23,7 @@ assert(anchorSignalMatches('figma-design-system','figma'),'Figma should match as
 assert(!anchorSignalMatches('research','notion'),'generic research must not prove Notion')
 assert(anchorSignalMatches('rag','rag'),'short canonical technology names may match exactly')
 assert(!anchorSignalMatches('storage','rag'),'short anchors must not match inside unrelated words')
+assert(anchorSignalMatches('poster-design','poster'),'poster must match as an exact design-medium anchor')
+assert(!anchorSignalMatches('apply-photo-filter','poster'),'generic photo editing must not prove poster capability')
 
 console.log('Router Eval specificity validation passed: named technology and service anchors require exact canonical word/phrase boundaries; generic API, native, research, and partial words cannot satisfy them.')

@@ -37,10 +37,20 @@ export function canonicalCandidateKeys(seeds=[]){
   return new Set(seeds.flatMap(seed=>(seed.paths||[]).map(skillPath=>`${seed.repo}:${skillPath}`)))
 }
 
+function candidateKey(item={}){
+  return item.key||`${item.source||''}:${item.skillPath||''}`
+}
+
 export function prioritizeAnalysisCandidates(items,canonicalKeys=new Set()){
   return [...(items||[])].sort((a,b)=>
-    Number(canonicalKeys.has(b?.key))-Number(canonicalKeys.has(a?.key))
+    Number(canonicalKeys.has(candidateKey(b)))-Number(canonicalKeys.has(candidateKey(a)))
     ||((b?.channels?.length||0)-(a?.channels?.length||0))
     ||((b?.repoStars||0)-(a?.repoStars||0))
   )
+}
+
+export function prioritizeCanonicalCandidates(items,canonicalKeys=new Set()){
+  const canonical=[],organic=[]
+  for(const item of items||[])(canonicalKeys.has(candidateKey(item))?canonical:organic).push(item)
+  return [...canonical,...organic]
 }
