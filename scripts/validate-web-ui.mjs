@@ -63,7 +63,8 @@ assert.match(appSource, /packages\/codex-plugin\/data\/registry\.json/, 'web app
 assert.match(appSource, /webRouter\.match\(registrySnapshot, query, 3\)/, 'web app must use the shared Matching v2.1 browser router');
 assert.doesNotMatch(appSource, /const\s+syn\s*=\s*\{/, 'legacy substring synonym router must not return');
 assert.doesNotMatch(appSource, /hit\s*\*\s*10\s*\+\s*s\.score\s*\*\s*\.35/, 'legacy substring score formula must not return');
-assert.doesNotMatch(appSource, /\$\{skill\.(?:name|source|summary|category|security|id)\}/, 'raw Skill fields must not be interpolated into innerHTML');
+assert.doesNotMatch(appSource, />\s*\$\{skill\.(?:name|source|summary|category|security|id)\}\s*</, 'raw Skill fields must not be inserted into HTML text contexts');
+assert.doesNotMatch(appSource, /(?:data-s|href|title|class)=["']\$\{skill\.(?:name|source|summary|category|security|id)\}/, 'raw Skill fields must not be inserted into HTML attribute contexts');
 assert.doesNotMatch(appSource, /href=["']?\$\{candidate\.githubUrl\}/, 'raw candidate URLs must not enter href');
 
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
