@@ -2462,7 +2462,7 @@
     },
     {
       "date": "2026-08-26",
-      "generatedAt": "2026-08-26T07:57:29.508Z",
+      "generatedAt": "2026-08-26T13:25:53.627Z",
       "domains": {
         "ui-design": [
           {
@@ -2633,16 +2633,6 @@
             "source": "seed"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/poster-design",
-            "score": 72,
-            "source": "radar"
-          },
-          {
-            "skillId": "Design-Machines-Studio/depot/layout",
-            "score": 69,
-            "source": "radar"
-          },
-          {
             "skillId": "narumiruna/skills/svg-illustration",
             "score": 66,
             "source": "seed"
@@ -2666,6 +2656,16 @@
             "skillId": "curiositech/some_claude_skills/collage-layout-expert",
             "score": 65,
             "source": "seed"
+          },
+          {
+            "skillId": "vercel-labs/agent-skills/web-design-guidelines",
+            "score": 64,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/quieter",
+            "score": 63,
+            "source": "seed"
           }
         ],
         "operations-design": [
@@ -2678,11 +2678,6 @@
             "skillId": "leonxlnx/taste-skill/high-end-visual-design",
             "score": 76,
             "source": "seed"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/make-product-commercial",
-            "score": 76,
-            "source": "radar"
           },
           {
             "skillId": "calesthio/generative-media-skills/ecommerce-product-imagery",
@@ -2705,11 +2700,6 @@
             "source": "seed"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/poster-design",
-            "score": 73,
-            "source": "radar"
-          },
-          {
             "skillId": "mblode/agent-skills/ui-design",
             "score": 66,
             "source": "seed"
@@ -2723,31 +2713,6 @@
             "skillId": "anthropics/skills/frontend-design",
             "score": 65,
             "source": "seed"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/ai-banner-design",
-            "score": 65,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/brand-promo-video-generator",
-            "score": 65,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/outfit-design",
-            "score": 65,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/product-detail-page",
-            "score": 65,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/minimalist-product-ad-generator",
-            "score": 64,
-            "source": "radar"
           },
           {
             "skillId": "pbakaus/impeccable/colorize",
@@ -2768,6 +2733,41 @@
             "skillId": "calesthio/generative-media-skills/visual-style-direction",
             "score": 63,
             "source": "seed"
+          },
+          {
+            "skillId": "nexu-io/open-design/guizang-ppt",
+            "score": 60,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/hyperframes",
+            "score": 59,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/codex-interactive-capability-map",
+            "score": 59,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+            "score": 59,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-broadside",
+            "score": 59,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-capsule",
+            "score": 58,
+            "source": "radar"
+          },
+          {
+            "skillId": "remotion-dev/skills/remotion-best-practices",
+            "score": 57,
+            "source": "seed"
           }
         ],
         "video-design": [
@@ -2780,6 +2780,11 @@
             "skillId": "remotion-dev/skills/remotion-multimedia",
             "score": 73,
             "source": "seed"
+          },
+          {
+            "skillId": "nexu-io/open-design/hyperframes",
+            "score": 66,
+            "source": "radar"
           },
           {
             "skillId": "remotion-dev/skills/remotion-create",
@@ -2842,34 +2847,29 @@
             "source": "seed"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/make-product-commercial",
-            "score": 61,
+            "skillId": "nexu-io/open-design/codex-interactive-capability-map",
+            "score": 59,
             "source": "radar"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/brand-promo-video-generator",
-            "score": 58,
+            "skillId": "nexu-io/open-design/mobile-onboarding",
+            "score": 59,
             "source": "radar"
           },
           {
-            "skillId": "curiositech/port-daddy/rust-gpui-motion",
-            "score": 57,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-capsule",
+            "score": 59,
             "source": "radar"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/minimalist-product-ad-generator",
-            "score": 56,
+            "skillId": "nexu-io/open-design/image-poster",
+            "score": 59,
             "source": "radar"
           },
           {
-            "skillId": "curiositech/port-daddy/swiss-modern-website-design",
-            "score": 56,
+            "skillId": "nexu-io/open-design/video-shortform",
+            "score": 59,
             "source": "radar"
-          },
-          {
-            "skillId": "leonxlnx/taste-skill/high-end-visual-design",
-            "score": 54,
-            "source": "seed"
           }
         ],
         "industrial-design": [
@@ -2929,11 +2929,6 @@
             "source": "seed"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/create-white-background-product-mockup",
-            "score": 50,
-            "source": "radar"
-          },
-          {
             "skillId": "borghei/claude-skills/product-designer",
             "score": 47,
             "source": "seed"
@@ -2972,6 +2967,11 @@
             "skillId": "curiositech/some_claude_skills/ux-friction-analyzer",
             "score": 43,
             "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/native-app-designer",
+            "score": 43,
+            "source": "seed"
           }
         ],
         "environmental-design": [
@@ -2996,11 +2996,6 @@
             "source": "seed"
           },
           {
-            "skillId": "GML-MMGroup/AdCraft/video_agent_scene_design",
-            "score": 64,
-            "source": "radar"
-          },
-          {
             "skillId": "calesthio/generative-media-skills/neural-reality-capture",
             "score": 63,
             "source": "seed"
@@ -3009,51 +3004,6 @@
             "skillId": "calesthio/generative-media-skills/lighting-direction",
             "score": 62,
             "source": "seed"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/product-detail-page",
-            "score": 60,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/ai-product",
-            "score": 56,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/outfit-design",
-            "score": 54,
-            "source": "radar"
-          },
-          {
-            "skillId": "GML-MMGroup/AdCraft/video_agent_character_design",
-            "score": 54,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/create-white-background-product-mockup",
-            "score": 51,
-            "source": "radar"
-          },
-          {
-            "skillId": "curiositech/port-daddy/rust-gpui-motion",
-            "score": 50,
-            "source": "radar"
-          },
-          {
-            "skillId": "SaehwanPark/fog-of-intent/fog-intent-agent-ecology-designer",
-            "score": 49,
-            "source": "radar"
-          },
-          {
-            "skillId": "GML-MMGroup/AdCraft/video_agent_prop_design",
-            "score": 49,
-            "source": "radar"
-          },
-          {
-            "skillId": "GML-MMGroup/AdCraft/video_agent_storyboard_design",
-            "score": 49,
-            "source": "radar"
           },
           {
             "skillId": "roble3/cc-blender-skill/blender-export",
@@ -3066,13 +3016,63 @@
             "source": "seed"
           },
           {
-            "skillId": "SaehwanPark/fog-of-intent/fog-intent-simulation-designer",
-            "score": 46,
-            "source": "radar"
-          },
-          {
             "skillId": "remotion-dev/skills/remotion-render",
             "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/3d-asset-production",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/production-design-direction",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/threejs-scene-composition",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/arrange",
+            "score": 43,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/layout",
+            "score": 43,
+            "source": "seed"
+          },
+          {
+            "skillId": "monumentalsystems/atlas-agent-teams/blender",
+            "score": 43,
+            "source": "seed"
+          },
+          {
+            "skillId": "mitsuhiko/agent-stuff/openscad",
+            "score": 35,
+            "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/design-critic",
+            "score": 35,
+            "source": "seed"
+          },
+          {
+            "skillId": "meshy-dev/meshy-3d-agent/meshy-3d-printing",
+            "score": 34,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/meshy-3d",
+            "score": 33,
             "source": "seed"
           }
         ],
@@ -3086,11 +3086,6 @@
             "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
             "score": 77,
             "source": "seed"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/poster-design",
-            "score": 76,
-            "source": "radar"
           },
           {
             "skillId": "pbakaus/impeccable/colorize",
@@ -3123,11 +3118,6 @@
             "source": "seed"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/outfit-design",
-            "score": 65,
-            "source": "radar"
-          },
-          {
             "skillId": "curiositech/some_claude_skills/design-trend-analyzer",
             "score": 64,
             "source": "seed"
@@ -3143,38 +3133,48 @@
             "source": "seed"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/make-product-commercial",
-            "score": 63,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-studio",
+            "score": 62,
             "source": "radar"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/ai-banner-design",
-            "score": 61,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/brand-promo-video-generator",
-            "score": 61,
-            "source": "radar"
-          },
-          {
-            "skillId": "Design-Machines-Studio/depot/layout",
-            "score": 60,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/photo-collage",
-            "score": 60,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/fashion-model-replacement",
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
             "score": 59,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-coral",
+            "score": 58,
             "source": "radar"
           },
           {
             "skillId": "anthropics/skills/frontend-design",
             "score": 57,
+            "source": "seed"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-pin-and-paper",
+            "score": 56,
+            "source": "radar"
+          },
+          {
+            "skillId": "pbakaus/impeccable/typeset",
+            "score": 55,
+            "source": "seed"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-editorial-tri-tone",
+            "score": 55,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/replit-deck",
+            "score": 55,
+            "source": "radar"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/design-critic",
+            "score": 54,
             "source": "seed"
           }
         ],
@@ -3210,11 +3210,6 @@
             "source": "seed"
           },
           {
-            "skillId": "SaehwanPark/fog-of-intent/foi-test-player",
-            "score": 68,
-            "source": "radar"
-          },
-          {
             "skillId": "curiositech/some_claude_skills/native-app-designer",
             "score": 65,
             "source": "seed"
@@ -3230,53 +3225,58 @@
             "source": "seed"
           },
           {
-            "skillId": "curiositech/port-daddy/web-design-expert",
-            "score": 58,
+            "skillId": "nexu-io/open-design/codex-interactive-capability-map",
+            "score": 63,
             "source": "radar"
           },
           {
-            "skillId": "vercel-labs/agent-skills/web-design-guidelines",
-            "score": 56,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/port-daddy/dag-visual-editor-design",
-            "score": 56,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+            "score": 63,
             "source": "radar"
           },
           {
-            "skillId": "pbakaus/impeccable/audit",
-            "score": 55,
-            "source": "seed"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/product-detail-page",
-            "score": 55,
+            "skillId": "nexu-io/open-design/mobile-onboarding",
+            "score": 63,
             "source": "radar"
           },
           {
-            "skillId": "SaehwanPark/fog-of-intent/fog-intent-agent-ecology-designer",
-            "score": 54,
+            "skillId": "nexu-io/open-design/waitlist-page",
+            "score": 62,
             "source": "radar"
           },
           {
-            "skillId": "ibelick/ui-skills/baseline-ui",
-            "score": 53,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/port-daddy/beautiful-gui-design",
-            "score": 53,
+            "skillId": "nexu-io/open-design/hr-onboarding",
+            "score": 61,
             "source": "radar"
           },
           {
-            "skillId": "Free-Templates-cc/free-react-templates/design-md",
-            "score": 53,
+            "skillId": "nexu-io/open-design/hyperframes",
+            "score": 60,
             "source": "radar"
           },
           {
-            "skillId": "curiositech/port-daddy/sound-design-and-audio",
-            "score": 52,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-broadside",
+            "score": 60,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-capsule",
+            "score": 60,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-grove",
+            "score": 60,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-playful",
+            "score": 60,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/x-research",
+            "score": 60,
             "source": "radar"
           }
         ],
@@ -3342,11 +3342,6 @@
             "source": "seed"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/lip-product-commercial",
-            "score": 53,
-            "source": "radar"
-          },
-          {
             "skillId": "calesthio/generative-media-skills/editing-montage",
             "score": 52,
             "source": "seed"
@@ -3378,6 +3373,11 @@
           },
           {
             "skillId": "calesthio/generative-media-skills/3d-asset-production",
+            "score": 52,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/neural-reality-capture",
             "score": 52,
             "source": "seed"
           }
@@ -3439,11 +3439,6 @@
             "source": "seed"
           },
           {
-            "skillId": "curiositech/port-daddy/sound-design-and-audio",
-            "score": 50,
-            "source": "radar"
-          },
-          {
             "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
             "score": 47,
             "source": "seed"
@@ -3482,6 +3477,11 @@
             "skillId": "pbakaus/impeccable/quieter",
             "score": 44,
             "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/typeset",
+            "score": 44,
+            "source": "seed"
           }
         ],
         "folk-art": [
@@ -3501,17 +3501,7 @@
             "source": "seed"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/poster-design",
-            "score": 62,
-            "source": "radar"
-          },
-          {
-            "skillId": "Design-Machines-Studio/depot/layout",
-            "score": 59,
-            "source": "radar"
-          },
-          {
-            "skillId": "curiositech/port-daddy/swiss-modern-website-design",
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-daisy-days",
             "score": 57,
             "source": "radar"
           },
@@ -3541,13 +3531,18 @@
             "source": "seed"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/product-packaging",
-            "score": 54,
+            "skillId": "nexu-io/open-design/live-dashboard",
+            "score": 51,
             "source": "radar"
           },
           {
-            "skillId": "curiositech/port-daddy/native-app-designer",
-            "score": 49,
+            "skillId": "nexu-io/open-design/pricing-page",
+            "score": 48,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/saas-landing",
+            "score": 48,
             "source": "radar"
           },
           {
@@ -3571,17 +3566,22 @@
             "source": "seed"
           },
           {
-            "skillId": "Free-Templates-cc/free-react-templates/popular-web-designs",
-            "score": 45,
-            "source": "radar"
-          },
-          {
             "skillId": "pbakaus/impeccable/critique",
             "score": 44,
             "source": "seed"
           },
           {
             "skillId": "pbakaus/impeccable/bolder",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/distill",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/quieter",
             "score": 44,
             "source": "seed"
           }
@@ -3623,34 +3623,24 @@
             "source": "seed"
           },
           {
-            "skillId": "GML-MMGroup/AdCraft/video_agent_scene_design",
-            "score": 59,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/outfit-design",
-            "score": 57,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/product-detail-page",
-            "score": 57,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/ai-product",
-            "score": 56,
-            "source": "radar"
-          },
-          {
             "skillId": "roble3/cc-blender-skill/blender-export",
             "score": 54,
             "source": "seed"
           },
           {
+            "skillId": "nexu-io/open-design/video-shortform",
+            "score": 54,
+            "source": "radar"
+          },
+          {
             "skillId": "calesthio/generative-media-skills/3d-asset-production",
             "score": 52,
             "source": "seed"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-mat",
+            "score": 52,
+            "source": "radar"
           },
           {
             "skillId": "pbakaus/impeccable/arrange",
@@ -3673,18 +3663,28 @@
             "source": "seed"
           },
           {
-            "skillId": "curiositech/port-daddy/rust-gpui-motion",
-            "score": 51,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/create-white-background-product-mockup",
-            "score": 51,
-            "source": "radar"
-          },
-          {
             "skillId": "monumentalsystems/atlas-agent-teams/blender",
             "score": 50,
+            "source": "seed"
+          },
+          {
+            "skillId": "remotion-dev/skills/remotion-render",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "mitsuhiko/agent-stuff/openscad",
+            "score": 43,
+            "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/design-critic",
+            "score": 43,
+            "source": "seed"
+          },
+          {
+            "skillId": "yizhiyanhua-ai/fireworks-tech-graph/fireworks-tech-graph",
+            "score": 42,
             "source": "seed"
           }
         ]

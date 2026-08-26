@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-26T08:00:38.985Z",
+  "generatedAt": "2026-08-26T13:29:01.962Z",
   "evalVersion": 2,
-  "specificityPolicyVersion": 3,
+  "specificityPolicyVersion": 4,
   "rankingVersion": "2.1",
   "cases": 54,
   "passed": 54,
@@ -19,13 +19,13 @@
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "specificityFailures": 0,
-  "capabilityGapCases": 33,
-  "averageRecommendationCount": 2,
-  "averageRelevantTop3": 2,
-  "averageTop1Score": 80,
+  "capabilityGapCases": 32,
+  "averageRecommendationCount": 2.06,
+  "averageRelevantTop3": 2.06,
+  "averageTop1Score": 79.7,
   "expectedHitsTotal": 32,
-  "signalHitsTotal": 136,
-  "anchorSignalHitsTotal": 31,
+  "signalHitsTotal": 137,
+  "anchorSignalHitsTotal": 32,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -34,7 +34,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 2.17
+      "averageRecommendationCount": 2
     },
     "Frontend": {
       "cases": 8,
@@ -59,9 +59,9 @@
       "passed": 5,
       "lowEvidenceTop3": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 4,
+      "capabilityGapCases": 2,
       "passRate": 1,
-      "averageRecommendationCount": 1.6
+      "averageRecommendationCount": 2.2
     },
     "DevOps & Cloud": {
       "cases": 5,
@@ -86,9 +86,9 @@
       "passed": 4,
       "lowEvidenceTop3": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 3,
+      "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 1.5
     },
     "Security": {
       "cases": 4,
@@ -104,18 +104,18 @@
       "passed": 4,
       "lowEvidenceTop3": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 0,
+      "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 3
+      "averageRecommendationCount": 2.75
     },
     "Automation & Integrations": {
       "cases": 4,
       "passed": 4,
       "lowEvidenceTop3": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 3,
+      "capabilityGapCases": 2,
       "passRate": 1,
-      "averageRecommendationCount": 1.5
+      "averageRecommendationCount": 2.25
     },
     "Docs & Research": {
       "cases": 4,
@@ -671,7 +671,7 @@
       "top3": [
         "playwright-testing",
         "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "curiositech/port-daddy/playwright-e2e-design"
+        "voidmatcha/e2e-skills/skill-material-b6c108"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -717,8 +717,8 @@
           ]
         },
         {
-          "id": "curiositech/port-daddy/playwright-e2e-design",
-          "score": 67,
+          "id": "voidmatcha/e2e-skills/skill-material-b6c108",
+          "score": 70,
           "coverage": 0.6,
           "expected": false,
           "relevant": true,
@@ -740,8 +740,8 @@
         "playwright-testing",
         "langgenius-dify-e2e-cucumber-playwright-1de203",
         "e2e-cucumber-playwright",
-        "curiositech-port-daddy-playwright-e2e-design",
-        "playwright-e2e-design"
+        "voidmatcha-e2e-skills-skill-material-b6c108",
+        "playwright-test-generator"
       ]
     },
     {
@@ -805,9 +805,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
         "artokun/comfyui-mcp/color-correction-674ba1",
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
+        "slackapi/slack-skills-plugin/slack-messaging-fa1468"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -822,7 +822,7 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
+          "id": "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
           "score": 55,
           "coverage": 0.39,
           "expected": false,
@@ -850,8 +850,8 @@
           ]
         },
         {
-          "id": "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
-          "score": 55,
+          "id": "slackapi/slack-skills-plugin/slack-messaging-fa1468",
+          "score": 54,
           "coverage": 0.39,
           "expected": false,
           "relevant": true,
@@ -868,13 +868,13 @@
         "mcp",
         "agent",
         "tools",
-        "sickn33-agentic-awesome-skills-activecampaign-automation-d2e395",
-        "activecampaign-automation",
+        "opendigitalproductfactory-opendigitalproductfactory-dpf-record-decision-outcome-3a235e",
+        "dpf-record-decision-outcome",
         "can",
         "artokun-comfyui-mcp-color-correction-674ba1",
         "color-correction",
-        "opendigitalproductfactory-opendigitalproductfactory-dpf-record-decision-outcome-3a235e",
-        "dpf-record-decision-outcome"
+        "slackapi-slack-skills-plugin-slack-messaging-fa1468",
+        "slack-messaging"
       ]
     },
     {
@@ -883,10 +883,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "ai-sdk",
-        "mastra-ai/mastra/ralph-plan-eb726f"
+        "ai-sdk"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 74,
       "expected_hits": 1,
@@ -894,7 +893,7 @@
       "anchor_signal_hits": 0,
       "anchor_candidate_count": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -912,19 +911,6 @@
             "outputs",
             "streaming"
           ]
-        },
-        {
-          "id": "mastra-ai/mastra/ralph-plan-eb726f",
-          "score": 46,
-          "coverage": 0.28,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 1,
-          "anchor_hits": 0,
-          "signals": [
-            "structured",
-            "ai"
-          ]
         }
       ],
       "signals": [
@@ -932,9 +918,7 @@
         "ai",
         "outputs",
         "streaming",
-        "ai-sdk",
-        "mastra-ai-mastra-ralph-plan-eb726f",
-        "ralph-plan"
+        "ai-sdk"
       ]
     },
     {
@@ -1273,18 +1257,17 @@
       "pass": true,
       "top3": [
         "affaan-m/ECC/backend-patterns-ac648c",
-        "affaan-m/ECC/mcp-server-patterns-980f90",
         "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 92,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1302,21 +1285,6 @@
             "api",
             "backend",
             "architecture"
-          ]
-        },
-        {
-          "id": "affaan-m/ECC/mcp-server-patterns-980f90",
-          "score": 76,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 3,
-          "anchor_hits": 1,
-          "signals": [
-            "node",
-            "server",
-            "api",
-            "backend"
           ]
         },
         {
@@ -1342,8 +1310,6 @@
         "architecture",
         "affaan-m-ecc-backend-patterns-ac648c",
         "backend-patterns",
-        "affaan-m-ecc-mcp-server-patterns-980f90",
-        "mcp-server-patterns",
         "sickn33-agentic-awesome-skills-nodejs-backend-patterns-05e8c8",
         "nodejs-backend-patterns"
       ]
@@ -1505,8 +1471,8 @@
       "pass": true,
       "top3": [
         "supabase-postgres-best-practices",
-        "sickn33/agentic-awesome-skills/address-github-comments-7e99d1",
-        "sickn33/agentic-awesome-skills/architect-review-7586e7"
+        "sickn33/agentic-awesome-skills/architect-review-7586e7",
+        "affaan-m/ECC/backend-patterns-ac648c"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -1534,8 +1500,8 @@
           ]
         },
         {
-          "id": "sickn33/agentic-awesome-skills/address-github-comments-7e99d1",
-          "score": 49,
+          "id": "sickn33/agentic-awesome-skills/architect-review-7586e7",
+          "score": 48,
           "coverage": 0.35,
           "expected": false,
           "relevant": true,
@@ -1547,8 +1513,8 @@
           ]
         },
         {
-          "id": "sickn33/agentic-awesome-skills/architect-review-7586e7",
-          "score": 48,
+          "id": "affaan-m/ECC/backend-patterns-ac648c",
+          "score": 46,
           "coverage": 0.35,
           "expected": false,
           "relevant": true,
@@ -1565,10 +1531,10 @@
         "database",
         "supabase-postgres-best-practices",
         "review",
-        "sickn33-agentic-awesome-skills-address-github-comments-7e99d1",
-        "address-github-comments",
         "sickn33-agentic-awesome-skills-architect-review-7586e7",
-        "architect-review"
+        "architect-review",
+        "affaan-m-ecc-backend-patterns-ac648c",
+        "backend-patterns"
       ]
     },
     {
@@ -1577,39 +1543,80 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "curiositech/port-daddy/background-job-queue-design"
+        "redis/agent-skills/redis-semantic-cache-9c2b67",
+        "redis/agent-skills/redis-security-5fdcbb",
+        "redis/agent-skills/redis-core-29e2a4"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
-      "top1_score": 41,
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 72,
       "expected_hits": 0,
-      "signal_hits": 1,
+      "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 3,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "curiositech/port-daddy/background-job-queue-design",
-          "score": 41,
-          "coverage": 0.33,
+          "id": "redis/agent-skills/redis-semantic-cache-9c2b67",
+          "score": 72,
+          "coverage": 0.67,
           "expected": false,
           "relevant": true,
-          "required_hits": 1,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "signals": [
+            "redis",
+            "cache",
+            "backend",
+            "data"
+          ]
+        },
+        {
+          "id": "redis/agent-skills/redis-security-5fdcbb",
+          "score": 70,
+          "coverage": 0.67,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "signals": [
+            "redis",
+            "backend",
+            "data",
+            "access"
+          ]
+        },
+        {
+          "id": "redis/agent-skills/redis-core-29e2a4",
+          "score": 59,
+          "coverage": 0.5,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
           "anchor_hits": 1,
           "signals": [
             "design",
-            "redis"
+            "redis",
+            "data"
           ]
         }
       ],
       "signals": [
-        "design",
         "redis",
-        "curiositech-port-daddy-background-job-queue-design",
-        "background-job-queue-design"
+        "cache",
+        "backend",
+        "data",
+        "redis-agent-skills-redis-semantic-cache-9c2b67",
+        "redis-semantic-cache",
+        "access",
+        "redis-agent-skills-redis-security-5fdcbb",
+        "redis-security",
+        "design",
+        "redis-agent-skills-redis-core-29e2a4",
+        "redis-core"
       ]
     },
     {
@@ -1619,23 +1626,37 @@
       "pass": true,
       "top3": [
         "fastrepl/anarlog/migrate-to-sqlite-1e3a5a",
+        "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5",
         "EverMind-AI/EverOS/add-memory-kind-42f902"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 49,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
         {
           "id": "fastrepl/anarlog/migrate-to-sqlite-1e3a5a",
           "score": 49,
+          "coverage": 0.34,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "signals": [
+            "sqlite",
+            "data"
+          ]
+        },
+        {
+          "id": "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5",
+          "score": 38,
           "coverage": 0.34,
           "expected": false,
           "relevant": true,
@@ -1664,6 +1685,8 @@
         "data",
         "fastrepl-anarlog-migrate-to-sqlite-1e3a5a",
         "migrate-to-sqlite",
+        "secureskills-io-sqlite-skill-sqlite-skill-0e95f5",
+        "sqlite-skill",
         "evermind-ai-everos-add-memory-kind-42f902",
         "add-memory-kind"
       ]
@@ -2468,18 +2491,17 @@
       "pass": true,
       "top3": [
         "TalissonVitorino/kmp-ios-skills/image-loading-cede3d",
-        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed",
-        "curiositech/port-daddy/native-app-designer"
+        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 67,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2509,19 +2531,6 @@
             "ios",
             "swiftui"
           ]
-        },
-        {
-          "id": "curiositech/port-daddy/native-app-designer",
-          "score": 40,
-          "coverage": 0.36,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "signals": [
-            "ios",
-            "swiftui"
-          ]
         }
       ],
       "signals": [
@@ -2531,9 +2540,7 @@
         "talissonvitorino-kmp-ios-skills-image-loading-cede3d",
         "image-loading",
         "sickn33-agentic-awesome-skills-ios-developer-5fd6ed",
-        "ios-developer",
-        "curiositech-port-daddy-native-app-designer",
-        "native-app-designer"
+        "ios-developer"
       ]
     },
     {
@@ -2542,13 +2549,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "TalissonVitorino/kmp-ios-skills/android-patterns-5144e0",
         "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
+        "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58",
         "callstackincubator/agent-skills/agent-device-f62531"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 91,
+      "top1_score": 69,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 2,
@@ -2559,20 +2566,6 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "TalissonVitorino/kmp-ios-skills/android-patterns-5144e0",
-          "score": 91,
-          "coverage": 1,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 3,
-          "anchor_hits": 2,
-          "signals": [
-            "android",
-            "kotlin",
-            "mobile"
-          ]
-        },
-        {
           "id": "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
           "score": 69,
           "coverage": 0.67,
@@ -2582,6 +2575,19 @@
           "anchor_hits": 1,
           "signals": [
             "android",
+            "mobile"
+          ]
+        },
+        {
+          "id": "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58",
+          "score": 66,
+          "coverage": 0.67,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "signals": [
+            "kotlin",
             "mobile"
           ]
         },
@@ -2601,12 +2607,12 @@
       ],
       "signals": [
         "android",
-        "kotlin",
         "mobile",
-        "talissonvitorino-kmp-ios-skills-android-patterns-5144e0",
-        "android-patterns",
         "talissonvitorino-kmp-ios-skills-mobile-testing-70813f",
         "mobile-testing",
+        "kotlin",
+        "talissonvitorino-kmp-ios-skills-coroutines-patterns-ed3a58",
+        "coroutines-patterns",
         "callstackincubator-agent-skills-agent-device-f62531",
         "agent-device"
       ]
@@ -2690,17 +2696,18 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "github"
+        "github",
+        "volcengine/OpenViking/github-e2cb41"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 88,
       "expected_hits": 1,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2720,6 +2727,21 @@
             "ci",
             "automation"
           ]
+        },
+        {
+          "id": "volcengine/OpenViking/github-e2cb41",
+          "score": 70,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "signals": [
+            "github",
+            "issues",
+            "ci",
+            "automation"
+          ]
         }
       ],
       "signals": [
@@ -2728,7 +2750,8 @@
         "pull",
         "issues",
         "ci",
-        "automation"
+        "automation",
+        "volcengine-openviking-github-e2cb41"
       ]
     },
     {
@@ -2737,17 +2760,19 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "slackapi/slack-skills-plugin/slack-messaging-fa1468"
+        "slackapi/slack-skills-plugin/slack-messaging-fa1468",
+        "slackapi/slack-skills-plugin/slack-api-fc39b8",
+        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 57,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 3,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2763,13 +2788,43 @@
             "slack",
             "integration"
           ]
+        },
+        {
+          "id": "slackapi/slack-skills-plugin/slack-api-fc39b8",
+          "score": 53,
+          "coverage": 0.47,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "signals": [
+            "slack",
+            "integration"
+          ]
+        },
+        {
+          "id": "slackapi/slack-skills-plugin/create-slack-app-9a524c",
+          "score": 53,
+          "coverage": 0.47,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "signals": [
+            "slack",
+            "integration"
+          ]
         }
       ],
       "signals": [
         "slack",
         "integration",
         "slackapi-slack-skills-plugin-slack-messaging-fa1468",
-        "slack-messaging"
+        "slack-messaging",
+        "slackapi-slack-skills-plugin-slack-api-fc39b8",
+        "slack-api",
+        "slackapi-slack-skills-plugin-create-slack-app-9a524c",
+        "create-slack-app"
       ]
     },
     {
@@ -3070,7 +3125,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "Free-Templates-cc/free-react-templates/popular-web-designs"
+        "nexu-io/open-design/token-map"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3115,7 +3170,7 @@
           ]
         },
         {
-          "id": "Free-Templates-cc/free-react-templates/popular-web-designs",
+          "id": "nexu-io/open-design/token-map",
           "score": 61,
           "coverage": 0.46,
           "expected": false,
@@ -3137,8 +3192,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "free-templates-cc-free-react-templates-popular-web-designs",
-        "popular-web-designs"
+        "nexu-io-open-design-token-map",
+        "token-map"
       ]
     },
     {
@@ -3222,68 +3277,66 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "weshopai/weshop-skill-package/poster-design",
-        "curiositech/port-daddy/swiss-modern-website-design",
-        "weshopai/weshop-skill-package/brand-promo-video-generator"
+        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
+        "nexu-io/open-design/image-poster",
+        "nexu-io/open-design/magazine-poster"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 82,
+      "top1_score": 78,
       "expected_hits": 0,
       "signal_hits": 3,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 3,
       "specificity_pass": true,
       "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "weshopai/weshop-skill-package/poster-design",
-          "score": 82,
+          "id": "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
+          "score": 78,
           "coverage": 0.71,
           "expected": false,
           "relevant": true,
           "required_hits": 3,
-          "anchor_hits": 0,
+          "anchor_hits": 1,
           "signals": [
             "visual",
             "typography",
             "poster",
-            "brand",
-            "campaign"
-          ]
-        },
-        {
-          "id": "curiositech/port-daddy/swiss-modern-website-design",
-          "score": 76,
-          "coverage": 0.71,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "signals": [
-            "visual",
-            "graphic",
-            "typography",
             "layout",
             "brand"
           ]
         },
         {
-          "id": "weshopai/weshop-skill-package/brand-promo-video-generator",
-          "score": 81,
-          "coverage": 0.71,
+          "id": "nexu-io/open-design/image-poster",
+          "score": 72,
+          "coverage": 0.57,
           "expected": false,
           "relevant": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
+          "required_hits": 3,
+          "anchor_hits": 1,
           "signals": [
             "visual",
             "typography",
-            "layout",
-            "brand",
-            "campaign"
+            "poster",
+            "brand"
+          ]
+        },
+        {
+          "id": "nexu-io/open-design/magazine-poster",
+          "score": 67,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "signals": [
+            "visual",
+            "typography",
+            "poster",
+            "layout"
           ]
         }
       ],
@@ -3291,16 +3344,14 @@
         "visual",
         "typography",
         "poster",
-        "brand",
-        "campaign",
-        "weshopai-weshop-skill-package-poster-design",
-        "poster-design",
-        "graphic",
         "layout",
-        "curiositech-port-daddy-swiss-modern-website-design",
-        "swiss-modern-website-design",
-        "weshopai-weshop-skill-package-brand-promo-video-generator",
-        "brand-promo-video-generator"
+        "brand",
+        "nexu-io-open-design-html-ppt-zhangzara-bold-poster",
+        "html-ppt-zhangzara-bold-poster",
+        "nexu-io-open-design-image-poster",
+        "image-poster",
+        "nexu-io-open-design-magazine-poster",
+        "magazine-poster"
       ]
     },
     {
@@ -3309,13 +3360,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "curiositech/port-daddy/rust-gpui-motion",
         "remotion-dev/skills/remotion-best-practices",
-        "weshopai/weshop-skill-package/make-product-commercial"
+        "nexu-io/open-design/hyperframes",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 93,
+      "top1_score": 85,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3325,21 +3376,6 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "curiositech/port-daddy/rust-gpui-motion",
-          "score": 93,
-          "coverage": 1,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "signals": [
-            "video",
-            "motion",
-            "editing",
-            "animation"
-          ]
-        },
         {
           "id": "remotion-dev/skills/remotion-best-practices",
           "score": 85,
@@ -3355,8 +3391,22 @@
           ]
         },
         {
-          "id": "weshopai/weshop-skill-package/make-product-commercial",
-          "score": 84,
+          "id": "nexu-io/open-design/hyperframes",
+          "score": 79,
+          "coverage": 0.75,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "signals": [
+            "video",
+            "motion",
+            "animation"
+          ]
+        },
+        {
+          "id": "remotion-dev/skills/remotion-multimedia",
+          "score": 83,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3373,13 +3423,13 @@
         "video",
         "motion",
         "editing",
-        "animation",
-        "curiositech-port-daddy-rust-gpui-motion",
-        "rust-gpui-motion",
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
-        "weshopai-weshop-skill-package-make-product-commercial",
-        "make-product-commercial"
+        "animation",
+        "nexu-io-open-design-hyperframes",
+        "hyperframes",
+        "remotion-dev-skills-remotion-multimedia",
+        "remotion-multimedia"
       ]
     },
     {
@@ -3388,13 +3438,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "curiositech/port-daddy/background-job-queue-design",
-        "weshopai/weshop-skill-package/create-white-background-product-mockup",
-        "mitsuhiko/agent-stuff/openscad"
+        "nexu-io/open-design/x-research",
+        "mitsuhiko/agent-stuff/openscad",
+        "nexu-io/open-design/rewrite-plan"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 89,
+      "top1_score": 75,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3405,24 +3455,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "curiositech/port-daddy/background-job-queue-design",
-          "score": 89,
-          "coverage": 1,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "signals": [
-            "cad",
-            "industrial-design",
-            "industrial",
-            "product",
-            "cad"
-          ]
-        },
-        {
-          "id": "weshopai/weshop-skill-package/create-white-background-product-mockup",
-          "score": 77,
+          "id": "nexu-io/open-design/x-research",
+          "score": 75,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3447,19 +3481,33 @@
             "industrial",
             "cad"
           ]
+        },
+        {
+          "id": "nexu-io/open-design/rewrite-plan",
+          "score": 72,
+          "coverage": 0.67,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "signals": [
+            "industrial-design",
+            "industrial",
+            "product"
+          ]
         }
       ],
       "signals": [
-        "cad",
         "industrial-design",
         "industrial",
         "product",
-        "curiositech-port-daddy-background-job-queue-design",
-        "background-job-queue-design",
-        "weshopai-weshop-skill-package-create-white-background-product-mockup",
-        "create-white-background-product-mockup",
+        "nexu-io-open-design-x-research",
+        "x-research",
+        "cad",
         "mitsuhiko-agent-stuff-openscad",
-        "openscad"
+        "openscad",
+        "nexu-io-open-design-rewrite-plan",
+        "rewrite-plan"
       ]
     }
   ]

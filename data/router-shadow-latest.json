@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T08:00:53.652Z",
+  "generatedAt": "2026-08-26T13:29:16.844Z",
   "evalVersion": 2,
-  "specificityPolicyVersion": 3,
+  "specificityPolicyVersion": 4,
   "registrySnapshot": {
-    "contentHash": "29afab82da5efe88c38612dd48242785e19c28644c4ffd4386e8622ba78550ef",
+    "contentHash": "08f2056615abed88ca9fd37ff9d65a131cd3b81cecc247fa6c76ab98ae53de0f",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-26T08:00:29.250Z",
-    "totalCount": 440,
+    "generatedAt": "2026-08-26T13:28:52.098Z",
+    "totalCount": 473,
     "mode": "local-bundled"
   },
   "production": {
@@ -20,12 +20,12 @@
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 0,
-    "capabilityGapCases": 33,
-    "averageRecommendationCount": 2,
+    "capabilityGapCases": 32,
+    "averageRecommendationCount": 2.06,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 136,
-    "anchorSignalHitsTotal": 31,
-    "averageTop1Score": 80
+    "signalHitsTotal": 137,
+    "anchorSignalHitsTotal": 32,
+    "averageTop1Score": 79.7
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
@@ -38,12 +38,12 @@
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 0,
-    "capabilityGapCases": 33,
-    "averageRecommendationCount": 2,
+    "capabilityGapCases": 32,
+    "averageRecommendationCount": 2.06,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 136,
-    "anchorSignalHitsTotal": 31,
-    "averageTop1Score": 80
+    "signalHitsTotal": 137,
+    "anchorSignalHitsTotal": 32,
+    "averageTop1Score": 79.7
   },
   "gates": {
     "safetyPass": true,
@@ -248,7 +248,7 @@
       "productionTop3": [
         "playwright-testing",
         "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "curiositech/port-daddy/playwright-e2e-design"
+        "voidmatcha/e2e-skills/skill-material-b6c108"
       ],
       "candidateTop3": [
         "playwright-testing",
@@ -290,14 +290,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
         "artokun/comfyui-mcp/color-correction-674ba1",
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
+        "slackapi/slack-skills-plugin/slack-messaging-fa1468"
       ],
       "candidateTop3": [
-        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
         "artokun/comfyui-mcp/color-correction-674ba1",
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
+        "slackapi/slack-skills-plugin/slack-messaging-fa1468"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -313,15 +313,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "ai-sdk",
-        "mastra-ai/mastra/ralph-plan-eb726f"
+        "ai-sdk"
       ],
       "candidateTop3": [
-        "ai-sdk",
-        "mastra-ai/mastra/ralph-plan-eb726f"
+        "ai-sdk"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -455,16 +453,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "affaan-m/ECC/backend-patterns-ac648c",
-        "affaan-m/ECC/mcp-server-patterns-980f90",
         "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
       ],
       "candidateTop3": [
         "affaan-m/ECC/backend-patterns-ac648c",
-        "affaan-m/ECC/mcp-server-patterns-980f90",
         "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -537,13 +533,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "supabase-postgres-best-practices",
-        "sickn33/agentic-awesome-skills/address-github-comments-7e99d1",
-        "sickn33/agentic-awesome-skills/architect-review-7586e7"
+        "sickn33/agentic-awesome-skills/architect-review-7586e7",
+        "affaan-m/ECC/backend-patterns-ac648c"
       ],
       "candidateTop3": [
         "supabase-postgres-best-practices",
-        "sickn33/agentic-awesome-skills/address-github-comments-7e99d1",
-        "sickn33/agentic-awesome-skills/architect-review-7586e7"
+        "sickn33/agentic-awesome-skills/architect-review-7586e7",
+        "affaan-m/ECC/backend-patterns-ac648c"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -559,13 +555,17 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "curiositech/port-daddy/background-job-queue-design"
+        "redis/agent-skills/redis-semantic-cache-9c2b67",
+        "redis/agent-skills/redis-security-5fdcbb",
+        "redis/agent-skills/redis-core-29e2a4"
       ],
       "candidateTop3": [
-        "curiositech/port-daddy/background-job-queue-design"
+        "redis/agent-skills/redis-semantic-cache-9c2b67",
+        "redis/agent-skills/redis-security-5fdcbb",
+        "redis/agent-skills/redis-core-29e2a4"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -579,14 +579,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "fastrepl/anarlog/migrate-to-sqlite-1e3a5a",
+        "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5",
         "EverMind-AI/EverOS/add-memory-kind-42f902"
       ],
       "candidateTop3": [
         "fastrepl/anarlog/migrate-to-sqlite-1e3a5a",
+        "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5",
         "EverMind-AI/EverOS/add-memory-kind-42f902"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -871,16 +873,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "TalissonVitorino/kmp-ios-skills/image-loading-cede3d",
-        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed",
-        "curiositech/port-daddy/native-app-designer"
+        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed"
       ],
       "candidateTop3": [
         "TalissonVitorino/kmp-ios-skills/image-loading-cede3d",
-        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed",
-        "curiositech/port-daddy/native-app-designer"
+        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -893,13 +893,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "TalissonVitorino/kmp-ios-skills/android-patterns-5144e0",
         "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
+        "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58",
         "callstackincubator/agent-skills/agent-device-f62531"
       ],
       "candidateTop3": [
-        "TalissonVitorino/kmp-ios-skills/android-patterns-5144e0",
         "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
+        "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58",
         "callstackincubator/agent-skills/agent-device-f62531"
       ],
       "productionRecommendationCount": 3,
@@ -922,7 +922,7 @@
       ],
       "candidateTop3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
-        "flutter/agent-plugins/code-documentation-406253",
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
         "flutter/agent-plugins/flutter-add-widget-preview-8e7a10"
       ],
       "productionRecommendationCount": 3,
@@ -939,13 +939,15 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "github"
+        "github",
+        "volcengine/OpenViking/github-e2cb41"
       ],
       "candidateTop3": [
-        "github"
+        "github",
+        "volcengine/OpenViking/github-e2cb41"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -958,13 +960,17 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "slackapi/slack-skills-plugin/slack-messaging-fa1468"
+        "slackapi/slack-skills-plugin/slack-messaging-fa1468",
+        "slackapi/slack-skills-plugin/slack-api-fc39b8",
+        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
       ],
       "candidateTop3": [
-        "slackapi/slack-skills-plugin/slack-messaging-fa1468"
+        "slackapi/slack-skills-plugin/slack-messaging-fa1468",
+        "slackapi/slack-skills-plugin/slack-api-fc39b8",
+        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1082,12 +1088,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "Free-Templates-cc/free-react-templates/popular-web-designs"
+        "nexu-io/open-design/token-map"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "Free-Templates-cc/free-react-templates/popular-web-designs"
+        "nexu-io/open-design/token-map"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1126,14 +1132,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "weshopai/weshop-skill-package/poster-design",
-        "curiositech/port-daddy/swiss-modern-website-design",
-        "weshopai/weshop-skill-package/brand-promo-video-generator"
+        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
+        "nexu-io/open-design/image-poster",
+        "nexu-io/open-design/magazine-poster"
       ],
       "candidateTop3": [
-        "weshopai/weshop-skill-package/poster-design",
-        "curiositech/port-daddy/swiss-modern-website-design",
-        "weshopai/weshop-skill-package/brand-promo-video-generator"
+        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
+        "nexu-io/open-design/image-poster",
+        "nexu-io/open-design/magazine-poster"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1149,14 +1155,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "curiositech/port-daddy/rust-gpui-motion",
         "remotion-dev/skills/remotion-best-practices",
-        "weshopai/weshop-skill-package/make-product-commercial"
+        "nexu-io/open-design/hyperframes",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "candidateTop3": [
-        "curiositech/port-daddy/rust-gpui-motion",
         "remotion-dev/skills/remotion-best-practices",
-        "weshopai/weshop-skill-package/make-product-commercial"
+        "nexu-io/open-design/hyperframes",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1172,14 +1178,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "curiositech/port-daddy/background-job-queue-design",
-        "weshopai/weshop-skill-package/create-white-background-product-mockup",
-        "mitsuhiko/agent-stuff/openscad"
+        "nexu-io/open-design/x-research",
+        "mitsuhiko/agent-stuff/openscad",
+        "nexu-io/open-design/rewrite-plan"
       ],
       "candidateTop3": [
-        "curiositech/port-daddy/background-job-queue-design",
-        "weshopai/weshop-skill-package/create-white-background-product-mockup",
-        "mitsuhiko/agent-stuff/openscad"
+        "nexu-io/open-design/x-research",
+        "mitsuhiko/agent-stuff/openscad",
+        "nexu-io/open-design/rewrite-plan"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
