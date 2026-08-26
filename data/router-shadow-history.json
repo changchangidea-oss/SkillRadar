@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-26T06:22:28.848Z",
+  "updatedAt": "2026-08-26T07:00:59.840Z",
   "requiredSnapshots": 3,
   "currentContentHashVersion": 2,
   "snapshots": [
@@ -193,6 +193,61 @@
         "signalHitsTotal": 126,
         "anchorSignalHitsTotal": 18,
         "averageTop1Score": 74.5
+      },
+      "gates": {
+        "safetyPass": true,
+        "contractNonRegression": true,
+        "coverageNonRegression": true,
+        "evidenceDelta": 0
+      },
+      "decision": "hold"
+    },
+    {
+      "generatedAt": "2026-08-26T07:00:59.840Z",
+      "registrySnapshot": {
+        "contentHash": "854fa7f40d694d1d1bded8ccc2f4722e458d4150964b0ded46147af704fcab82",
+        "contentHashVersion": 2,
+        "generatedAt": "2026-08-26T07:00:28.722Z",
+        "totalCount": 480,
+        "mode": "local-bundled"
+      },
+      "evalVersion": 2,
+      "specificityPolicyVersion": 3,
+      "production": {
+        "profile": "ranking-v2.1",
+        "cases": 54,
+        "passed": 51,
+        "contractPassed": 10,
+        "contractCases": 10,
+        "coveragePassed": 41,
+        "coverageCases": 44,
+        "unsafeTop3": 0,
+        "lowEvidenceTop3": 0,
+        "specificityFailures": 3,
+        "capabilityGapCases": 35,
+        "averageRecommendationCount": 1.89,
+        "expectedHitsTotal": 32,
+        "signalHitsTotal": 132,
+        "anchorSignalHitsTotal": 28,
+        "averageTop1Score": 77.5
+      },
+      "candidate": {
+        "profile": "facet-heavy-rerank-v0.6-shadow",
+        "cases": 54,
+        "passed": 51,
+        "contractPassed": 10,
+        "contractCases": 10,
+        "coveragePassed": 41,
+        "coverageCases": 44,
+        "unsafeTop3": 0,
+        "lowEvidenceTop3": 0,
+        "specificityFailures": 3,
+        "capabilityGapCases": 35,
+        "averageRecommendationCount": 1.89,
+        "expectedHitsTotal": 32,
+        "signalHitsTotal": 132,
+        "anchorSignalHitsTotal": 28,
+        "averageTop1Score": 77.5
       },
       "gates": {
         "safetyPass": true,
