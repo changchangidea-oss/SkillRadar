@@ -52,11 +52,26 @@ function hitCount(signals,terms=[],matcher=signalMatches){
   return terms.filter(term=>signals.some(signal=>matcher(signal,term))).length
 }
 
+function candidateEvidencePolicy(test,anchorTerms=[]){
+  const identityTerms=test.candidateIdentityAnchorTerms||[]
+  const configured=Object.prototype.hasOwnProperty.call(test,'minCandidateRequiredHits')
+    ||Object.prototype.hasOwnProperty.call(test,'minCandidateAnchorHits')
+    ||identityTerms.length>0
+  return {
+    configured,
+    identityTerms,
+    minRequiredHits:Number(test.minCandidateRequiredHits||0),
+    minAnchorHits:Number(test.minCandidateAnchorHits??(anchorTerms.length?1:0)),
+    minIdentityHits:Number(test.minCandidateIdentityAnchorHits??(identityTerms.length?1:0))
+  }
+}
+
 export function evaluateRoutingCase(test,matches=[],meta={}){
   const ids=new Set(matches.map(x=>x.id))
   const expectedHits=(test.expectedAnyIds||[]).filter(x=>ids.has(x)).length
   const requiredTerms=test.requiredSignalTerms||[]
   const anchorTerms=test.anchorSignalTerms||[]
+  const candidatePolicy=candidateEvidencePolicy(test,anchorTerms)
   const signals=evidenceSignals(matches)
   const signalHits=hitCount(signals,requiredTerms)
   const anchorSignalHits=hitCount(signals,anchorTerms,anchorSignalMatches)
@@ -64,24 +79,33 @@ export function evaluateRoutingCase(test,matches=[],meta={}){
   const minSignalHits=Number(test.minSignalHits||0)
   const candidates=matches.map(x=>{
     const candidateSignals=(x.match_details?.matched_signals||[]).map(canon).filter(Boolean)
+    const candidateIdentitySignals=[x.name||''].map(canon).filter(Boolean)
     const requiredHits=hitCount(candidateSignals,requiredTerms)
     const anchorHits=hitCount(candidateSignals,anchorTerms,anchorSignalMatches)
+    const identityAnchorHits=hitCount(candidateIdentitySignals,candidatePolicy.identityTerms,anchorSignalMatches)
     const expected=(test.expectedAnyIds||[]).includes(x.id)
-    const relevant=expected||(anchorTerms.length?anchorHits>0:requiredHits>=Math.max(1,minSignalHits))
+    const legacyRelevant=expected||(anchorTerms.length?anchorHits>0:requiredHits>=Math.max(1,minSignalHits))
+    const candidateEvidencePass=requiredHits>=candidatePolicy.minRequiredHits
+      && anchorHits>=candidatePolicy.minAnchorHits
+      && identityAnchorHits>=candidatePolicy.minIdentityHits
+    const relevant=candidatePolicy.configured?candidateEvidencePass:legacyRelevant
     return {
       id:x.id,
       score:Number(x.match_score||0),
       coverage:Number(x.match_details?.coverage||0),
       expected,
       relevant,
+      candidate_evidence_pass:candidateEvidencePass,
       required_hits:requiredHits,
       anchor_hits:anchorHits,
+      identity_anchor_hits:identityAnchorHits,
       signals:candidateSignals
     }
   })
   const relevantTop3=candidates.filter(x=>x.relevant).length
   const lowEvidenceTop3=candidates.length-relevantTop3
   const anchorCandidateCount=candidates.filter(x=>x.anchor_hits>0).length
+  const candidateEvidenceFailures=candidates.filter(x=>!x.candidate_evidence_pass).length
   const gap=meta.capabilityGap||null
   const gapConsistent=matches.length===3
     ? !gap?.detected
@@ -112,6 +136,7 @@ export function evaluateRoutingCase(test,matches=[],meta={}){
     signal_hits:signalHits,
     anchor_signal_hits:anchorSignalHits,
     anchor_candidate_count:anchorCandidateCount,
+    candidate_evidence_failures:candidateEvidenceFailures,
     specificity_pass:specificityPass,
     relevant_top3:relevantTop3,
     low_evidence_top3:lowEvidenceTop3,
@@ -129,10 +154,11 @@ export function summarizeRoutingResults(results=[]){
   const specificityFailures=results.filter(x=>!x.specificity_pass).length
   const byDomain={}
   for(const row of results){
-    const bucket=byDomain[row.domain]||{cases:0,passed:0,lowEvidenceTop3:0,specificityFailures:0,capabilityGapCases:0,recommendations:0}
+    const bucket=byDomain[row.domain]||{cases:0,passed:0,lowEvidenceTop3:0,candidateEvidenceFailures:0,specificityFailures:0,capabilityGapCases:0,recommendations:0}
     bucket.cases++
     if(row.pass)bucket.passed++
     bucket.lowEvidenceTop3+=row.low_evidence_top3
+    bucket.candidateEvidenceFailures+=row.candidate_evidence_failures||0
     if(!row.specificity_pass)bucket.specificityFailures++
     if(row.capability_gap)bucket.capabilityGapCases++
     bucket.recommendations+=row.recommendation_count
@@ -152,6 +178,7 @@ export function summarizeRoutingResults(results=[]){
     coverage:{cases:coverage.length,passed:coverage.filter(x=>x.pass).length,passRate:Number((coverage.filter(x=>x.pass).length/Math.max(1,coverage.length)).toFixed(3))},
     unsafeTop3:sum('unsafe_top3'),
     lowEvidenceTop3:sum('low_evidence_top3'),
+    candidateEvidenceFailures:sum('candidate_evidence_failures'),
     specificityFailures,
     capabilityGapCases,
     averageRecommendationCount:Number((sum('recommendation_count')/Math.max(1,results.length)).toFixed(2)),
