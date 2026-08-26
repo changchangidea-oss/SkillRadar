@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-26T08:00:55.185Z",
+  "repository": "changchangidea-oss/SkillRadar",
+  "source": "github-api",
+  "github": {
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0,
+    "openIssuesAndPullRequests": 0,
+    "externalIssueAuthors": 0,
+    "externalPrAuthors": 0,
+    "externalActorsObserved": 0,
+    "releases": 5,
+    "releaseAssetDownloads": 0,
+    "releasePluginZipDownloads": 0
+  },
+  "distribution": {
+    "codexMarketplaceInstalls": null,
+    "codexMarketplaceInstallsStatus": "unknown-no-public-verifiable-count-source",
+    "skillsShInstalls": null,
+    "skillsShInstallsStatus": "unknown-no-stable-verifiable-count-source"
+  },
+  "rules": {
+    "maintainerLoginsExcluded": [
+      "changchangidea-oss"
+    ],
+    "botsExcludedFromExternalActors": true,
+    "ciSmokeTestsCountAsInstalls": false,
+    "unverifiableCountsAreEstimated": false
+  }
+}

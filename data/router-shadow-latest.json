@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-08-26T07:11:31.473Z",
+  "generatedAt": "2026-08-26T08:00:53.652Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 3,
   "registrySnapshot": {
-    "contentHash": "728dad3bc21febf04e47f5822b13990f48d72bd22e1ecdbc83568ccc6f39ad3a",
+    "contentHash": "29afab82da5efe88c38612dd48242785e19c28644c4ffd4386e8622ba78550ef",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-26T07:10:57.799Z",
-    "totalCount": 482,
+    "generatedAt": "2026-08-26T08:00:29.250Z",
+    "totalCount": 440,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 53,
+    "passed": 54,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 43,
+    "coveragePassed": 44,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 1,
-    "specificityFailures": 1,
+    "lowEvidenceTop3": 0,
+    "specificityFailures": 0,
     "capabilityGapCases": 33,
     "averageRecommendationCount": 2,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 135,
-    "anchorSignalHitsTotal": 30,
-    "averageTop1Score": 79.5
+    "signalHitsTotal": 136,
+    "anchorSignalHitsTotal": 31,
+    "averageTop1Score": 80
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 53,
+    "passed": 54,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 43,
+    "coveragePassed": 44,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 1,
-    "specificityFailures": 1,
+    "lowEvidenceTop3": 0,
+    "specificityFailures": 0,
     "capabilityGapCases": 33,
     "averageRecommendationCount": 2,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 135,
-    "anchorSignalHitsTotal": 30,
-    "averageTop1Score": 79.5
+    "signalHitsTotal": 136,
+    "anchorSignalHitsTotal": 31,
+    "averageTop1Score": 80
   },
   "gates": {
     "safetyPass": true,
@@ -185,14 +185,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "weshopai/weshop-skill-package/fpv-tour-video-generator",
+        "curiositech/some_claude_skills/interior-design-expert",
         "roble3/cc-blender-skill/blender-rendering",
-        "curiositech/some_claude_skills/interior-design-expert"
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "candidateTop3": [
-        "weshopai/weshop-skill-package/fpv-tour-video-generator",
+        "curiositech/some_claude_skills/interior-design-expert",
         "roble3/cc-blender-skill/blender-rendering",
-        "curiositech/some_claude_skills/interior-design-expert"
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -248,7 +248,7 @@
       "productionTop3": [
         "playwright-testing",
         "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "voidmatcha/e2e-skills/skill-material-b6c108"
+        "curiositech/port-daddy/playwright-e2e-design"
       ],
       "candidateTop3": [
         "playwright-testing",
@@ -292,12 +292,12 @@
       "productionTop3": [
         "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
         "artokun/comfyui-mcp/color-correction-674ba1",
-        "JasonColapietro/suede-creator-skills/suede-mcp-qa"
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
       ],
       "candidateTop3": [
         "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
         "artokun/comfyui-mcp/color-correction-674ba1",
-        "JasonColapietro/suede-creator-skills/suede-mcp-qa"
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -335,11 +335,11 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
-        "code-yeongyu/oh-my-openagent/ulw-research"
+        "opensquilla/opensquilla/meta-paper-write-b8b8ab"
       ],
       "candidateTop3": [
         "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
-        "code-yeongyu/oh-my-openagent/ulw-research"
+        "opensquilla/opensquilla/meta-paper-write-b8b8ab"
       ],
       "productionRecommendationCount": 2,
       "candidateRecommendationCount": 2,
@@ -554,14 +554,18 @@
     },
     {
       "id": "redis-cache",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
+      "productionTop3": [
+        "curiositech/port-daddy/background-job-queue-design"
+      ],
+      "candidateTop3": [
+        "curiositech/port-daddy/background-job-queue-design"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -800,13 +804,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "code-yeongyu/oh-my-openagent/security-research",
-        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d"
+        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
+        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
       "candidateTop3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "code-yeongyu/oh-my-openagent/security-research",
-        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d"
+        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
+        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -823,16 +827,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
-        "JasonColapietro/suede-creator-skills/suede-code-grader"
+        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5"
       ],
       "candidateTop3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
-        "JasonColapietro/suede-creator-skills/suede-code-grader"
+        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -869,14 +871,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "TalissonVitorino/kmp-ios-skills/image-loading-cede3d",
-        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed"
+        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed",
+        "curiositech/port-daddy/native-app-designer"
       ],
       "candidateTop3": [
         "TalissonVitorino/kmp-ios-skills/image-loading-cede3d",
-        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed"
+        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed",
+        "curiositech/port-daddy/native-app-designer"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -954,15 +958,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "slackapi/slack-skills-plugin/slack-messaging-fa1468",
-        "JasonColapietro/suede-creator-skills/suede-community-marketing"
+        "slackapi/slack-skills-plugin/slack-messaging-fa1468"
       ],
       "candidateTop3": [
-        "slackapi/slack-skills-plugin/slack-messaging-fa1468",
-        "JasonColapietro/suede-creator-skills/suede-community-marketing"
+        "slackapi/slack-skills-plugin/slack-messaging-fa1468"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1080,12 +1082,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "JasonColapietro/suede-creator-skills/suede-design"
+        "Free-Templates-cc/free-react-templates/popular-web-designs"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "JasonColapietro/suede-creator-skills/suede-design"
+        "Free-Templates-cc/free-react-templates/popular-web-designs"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1125,13 +1127,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "weshopai/weshop-skill-package/poster-design",
-        "weshopai/weshop-skill-package/apply-photo-filter",
-        "pbakaus/impeccable/bolder"
+        "curiositech/port-daddy/swiss-modern-website-design",
+        "weshopai/weshop-skill-package/brand-promo-video-generator"
       ],
       "candidateTop3": [
         "weshopai/weshop-skill-package/poster-design",
-        "weshopai/weshop-skill-package/apply-photo-filter",
-        "pbakaus/impeccable/bolder"
+        "curiositech/port-daddy/swiss-modern-website-design",
+        "weshopai/weshop-skill-package/brand-promo-video-generator"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1147,12 +1149,12 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "weshopai/weshop-skill-package/make-talking-video",
+        "curiositech/port-daddy/rust-gpui-motion",
         "remotion-dev/skills/remotion-best-practices",
         "weshopai/weshop-skill-package/make-product-commercial"
       ],
       "candidateTop3": [
-        "weshopai/weshop-skill-package/make-talking-video",
+        "curiositech/port-daddy/rust-gpui-motion",
         "remotion-dev/skills/remotion-best-practices",
         "weshopai/weshop-skill-package/make-product-commercial"
       ],
@@ -1170,14 +1172,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "JasonColapietro/suede-creator-skills/suede-emails",
-        "JasonColapietro/suede-creator-skills/suede-marketing-loops",
-        "JasonColapietro/suede-creator-skills/suede-marketing-plan"
+        "curiositech/port-daddy/background-job-queue-design",
+        "weshopai/weshop-skill-package/create-white-background-product-mockup",
+        "mitsuhiko/agent-stuff/openscad"
       ],
       "candidateTop3": [
-        "JasonColapietro/suede-creator-skills/suede-emails",
-        "JasonColapietro/suede-creator-skills/suede-marketing-loops",
-        "JasonColapietro/suede-creator-skills/suede-marketing-plan"
+        "curiositech/port-daddy/background-job-queue-design",
+        "weshopai/weshop-skill-package/create-white-background-product-mockup",
+        "mitsuhiko/agent-stuff/openscad"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
