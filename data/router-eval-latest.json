@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-26T07:00:41.044Z",
+  "generatedAt": "2026-08-26T07:11:11.069Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 3,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 51,
-  "passRate": 0.944,
+  "passed": 53,
+  "passRate": 0.981,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,19 +13,19 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 41,
-    "passRate": 0.932
+    "passed": 43,
+    "passRate": 0.977
   },
   "unsafeTop3": 0,
-  "lowEvidenceTop3": 0,
-  "specificityFailures": 3,
-  "capabilityGapCases": 35,
-  "averageRecommendationCount": 1.89,
-  "averageRelevantTop3": 1.89,
-  "averageTop1Score": 77.5,
+  "lowEvidenceTop3": 1,
+  "specificityFailures": 1,
+  "capabilityGapCases": 33,
+  "averageRecommendationCount": 2,
+  "averageRelevantTop3": 1.98,
+  "averageTop1Score": 79.5,
   "expectedHitsTotal": 32,
-  "signalHitsTotal": 132,
-  "anchorSignalHitsTotal": 28,
+  "signalHitsTotal": 135,
+  "anchorSignalHitsTotal": 30,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -34,7 +34,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 2
+      "averageRecommendationCount": 2.17
     },
     "Frontend": {
       "cases": 8,
@@ -48,7 +48,7 @@
     "Design & Media": {
       "cases": 5,
       "passed": 5,
-      "lowEvidenceTop3": 0,
+      "lowEvidenceTop3": 1,
       "specificityFailures": 0,
       "capabilityGapCases": 0,
       "passRate": 1,
@@ -92,12 +92,12 @@
     },
     "Security": {
       "cases": 4,
-      "passed": 3,
+      "passed": 4,
       "lowEvidenceTop3": 0,
-      "specificityFailures": 1,
-      "capabilityGapCases": 4,
-      "passRate": 0.75,
-      "averageRecommendationCount": 1.25
+      "specificityFailures": 0,
+      "capabilityGapCases": 2,
+      "passRate": 1,
+      "averageRecommendationCount": 2
     },
     "Mobile": {
       "cases": 4,
@@ -110,12 +110,12 @@
     },
     "Automation & Integrations": {
       "cases": 4,
-      "passed": 3,
+      "passed": 4,
       "lowEvidenceTop3": 0,
-      "specificityFailures": 1,
+      "specificityFailures": 0,
       "capabilityGapCases": 3,
-      "passRate": 0.75,
-      "averageRecommendationCount": 1.25
+      "passRate": 1,
+      "averageRecommendationCount": 1.75
     },
     "Docs & Research": {
       "cases": 4,
@@ -495,13 +495,13 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "curiositech/some_claude_skills/interior-design-expert",
+        "weshopai/weshop-skill-package/fpv-tour-video-generator",
         "roble3/cc-blender-skill/blender-rendering",
-        "calesthio/generative-media-skills/neural-reality-capture"
+        "curiositech/some_claude_skills/interior-design-expert"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 80,
+      "top1_score": 83,
       "expected_hits": 0,
       "signal_hits": 4,
       "anchor_signal_hits": 0,
@@ -512,8 +512,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "curiositech/some_claude_skills/interior-design-expert",
-          "score": 80,
+          "id": "weshopai/weshop-skill-package/fpv-tour-video-generator",
+          "score": 83,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -540,8 +540,8 @@
           ]
         },
         {
-          "id": "calesthio/generative-media-skills/neural-reality-capture",
-          "score": 77,
+          "id": "curiositech/some_claude_skills/interior-design-expert",
+          "score": 80,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -558,13 +558,13 @@
         "architecture",
         "interior",
         "spatial",
-        "curiositech-some-claude-skills-interior-design-expert",
-        "interior-design-expert",
+        "weshopai-weshop-skill-package-fpv-tour-video-generator",
+        "fpv-tour-video-generator",
         "rendering",
         "roble3-cc-blender-skill-blender-rendering",
         "blender-rendering",
-        "calesthio-generative-media-skills-neural-reality-capture",
-        "neural-reality-capture"
+        "curiositech-some-claude-skills-interior-design-expert",
+        "interior-design-expert"
       ]
     },
     {
@@ -807,7 +807,7 @@
       "top3": [
         "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
         "artokun/comfyui-mcp/color-correction-674ba1",
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
+        "JasonColapietro/suede-creator-skills/suede-mcp-qa"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -850,16 +850,16 @@
           ]
         },
         {
-          "id": "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
-          "score": 55,
+          "id": "JasonColapietro/suede-creator-skills/suede-mcp-qa",
+          "score": 49,
           "coverage": 0.39,
           "expected": false,
           "relevant": true,
-          "required_hits": 3,
+          "required_hits": 2,
           "anchor_hits": 1,
           "signals": [
             "mcp",
-            "agent",
+            "call",
             "tools"
           ]
         }
@@ -873,8 +873,9 @@
         "can",
         "artokun-comfyui-mcp-color-correction-674ba1",
         "color-correction",
-        "opendigitalproductfactory-opendigitalproductfactory-dpf-record-decision-outcome-3a235e",
-        "dpf-record-decision-outcome"
+        "call",
+        "jasoncolapietro-suede-creator-skills-suede-mcp-qa",
+        "suede-mcp-qa"
       ]
     },
     {
@@ -943,17 +944,18 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa"
+        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
+        "code-yeongyu/oh-my-openagent/ulw-research"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 68,
       "expected_hits": 0,
       "signal_hits": 1,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -970,6 +972,19 @@
             "workflow",
             "orchestration"
           ]
+        },
+        {
+          "id": "code-yeongyu/oh-my-openagent/ulw-research",
+          "score": 54,
+          "coverage": 0.41,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "signals": [
+            "agent",
+            "orchestration"
+          ]
         }
       ],
       "signals": [
@@ -977,7 +992,9 @@
         "workflow",
         "orchestration",
         "sickn33-agentic-awesome-skills-kubernetes-deployment-7095fa",
-        "kubernetes-deployment"
+        "kubernetes-deployment",
+        "code-yeongyu-oh-my-openagent-ulw-research",
+        "ulw-research"
       ]
     },
     {
@@ -1490,7 +1507,7 @@
       "top3": [
         "supabase-postgres-best-practices",
         "sickn33/agentic-awesome-skills/address-github-comments-7e99d1",
-        "TalissonVitorino/kmp-ios-skills/room-patterns-b1ea2c"
+        "sickn33/agentic-awesome-skills/architect-review-7586e7"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -1531,15 +1548,15 @@
           ]
         },
         {
-          "id": "TalissonVitorino/kmp-ios-skills/room-patterns-b1ea2c",
-          "score": 49,
+          "id": "sickn33/agentic-awesome-skills/architect-review-7586e7",
+          "score": 48,
           "coverage": 0.35,
           "expected": false,
           "relevant": true,
           "required_hits": 1,
           "anchor_hits": 0,
           "signals": [
-            "queries",
+            "review",
             "database"
           ]
         }
@@ -1551,9 +1568,8 @@
         "review",
         "sickn33-agentic-awesome-skills-address-github-comments-7e99d1",
         "address-github-comments",
-        "queries",
-        "talissonvitorino-kmp-ios-skills-room-patterns-b1ea2c",
-        "room-patterns"
+        "sickn33-agentic-awesome-skills-architect-review-7586e7",
+        "architect-review"
       ]
     },
     {
@@ -2221,21 +2237,50 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
-        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e",
+        "code-yeongyu/oh-my-openagent/security-research",
+        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
-      "top1_score": 56,
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 65,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "RevealUIStudio/revskills/security-hardening-f5fe4e",
+          "score": 65,
+          "coverage": 0.55,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "signals": [
+            "review",
+            "security",
+            "vulnerability"
+          ]
+        },
+        {
+          "id": "code-yeongyu/oh-my-openagent/security-research",
+          "score": 62,
+          "coverage": 0.55,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "signals": [
+            "review",
+            "security",
+            "vulnerability"
+          ]
+        },
         {
           "id": "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
           "score": 56,
@@ -2248,50 +2293,55 @@
             "security",
             "vulnerability"
           ]
-        },
-        {
-          "id": "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
-          "score": 50,
-          "coverage": 0.39,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "signals": [
-            "security",
-            "vulnerability"
-          ]
         }
       ],
       "signals": [
+        "review",
         "security",
         "vulnerability",
+        "revealuistudio-revskills-security-hardening-f5fe4e",
+        "security-hardening",
+        "code-yeongyu-oh-my-openagent-security-research",
+        "security-research",
         "mukul975-anthropic-cybersecurity-skills-building-vulnerability-exception-tracking-system-29c77d",
-        "building-vulnerability-exception-tracking-system",
-        "sickn33-agentic-awesome-skills-api-fuzzing-bug-bounty-3b1229",
-        "api-fuzzing-bug-bounty"
+        "building-vulnerability-exception-tracking-system"
       ]
     },
     {
       "id": "secrets-permissions",
       "domain": "Security",
       "tier": "coverage",
-      "pass": false,
+      "pass": true,
       "top3": [
-        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e",
+        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
+        "JasonColapietro/suede-creator-skills/suede-code-grader"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
-      "top1_score": 48,
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 50,
       "expected_hits": 0,
-      "signal_hits": 1,
-      "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
-      "specificity_pass": false,
-      "relevant_top3": 1,
+      "signal_hits": 2,
+      "anchor_signal_hits": 2,
+      "anchor_candidate_count": 3,
+      "specificity_pass": true,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "RevealUIStudio/revskills/security-hardening-f5fe4e",
+          "score": 50,
+          "coverage": 0.39,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "signals": [
+            "secrets",
+            "authentication"
+          ]
+        },
         {
           "id": "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
           "score": 48,
@@ -2304,13 +2354,31 @@
             "audit",
             "permissions"
           ]
+        },
+        {
+          "id": "JasonColapietro/suede-creator-skills/suede-code-grader",
+          "score": 30,
+          "coverage": 0.22,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "signals": [
+            "permissions"
+          ]
         }
       ],
       "signals": [
+        "secrets",
+        "authentication",
+        "revealuistudio-revskills-security-hardening-f5fe4e",
+        "security-hardening",
         "audit",
         "permissions",
         "denissergeevitch-agents-best-practices-agents-best-practices-0e95f5",
-        "agents-best-practices"
+        "agents-best-practices",
+        "jasoncolapietro-suede-creator-skills-suede-code-grader",
+        "suede-code-grader"
       ]
     },
     {
@@ -2647,21 +2715,57 @@
       "id": "slack-workflow",
       "domain": "Automation & Integrations",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "slackapi/slack-skills-plugin/slack-messaging-fa1468",
+        "JasonColapietro/suede-creator-skills/suede-community-marketing"
+      ],
+      "recommendation_count": 2,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 57,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "signal_hits": 2,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 2,
+      "specificity_pass": true,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "slackapi/slack-skills-plugin/slack-messaging-fa1468",
+          "score": 57,
+          "coverage": 0.47,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "signals": [
+            "slack",
+            "integration"
+          ]
+        },
+        {
+          "id": "JasonColapietro/suede-creator-skills/suede-community-marketing",
+          "score": 33,
+          "coverage": 0.2,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "signals": [
+            "slack"
+          ]
+        }
+      ],
+      "signals": [
+        "slack",
+        "integration",
+        "slackapi-slack-skills-plugin-slack-messaging-fa1468",
+        "slack-messaging",
+        "jasoncolapietro-suede-creator-skills-suede-community-marketing",
+        "suede-community-marketing"
+      ]
     },
     {
       "id": "gmail-calendar",
@@ -2961,7 +3065,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "nexu-io/open-design/token-map"
+        "JasonColapietro/suede-creator-skills/suede-design"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3006,16 +3110,17 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/token-map",
-          "score": 61,
-          "coverage": 0.46,
+          "id": "JasonColapietro/suede-creator-skills/suede-design",
+          "score": 71,
+          "coverage": 0.62,
           "expected": false,
           "relevant": true,
           "required_hits": 2,
           "anchor_hits": 1,
           "signals": [
             "design-system",
-            "figma"
+            "figma",
+            "implementation"
           ]
         }
       ],
@@ -3028,8 +3133,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "nexu-io-open-design-token-map",
-        "token-map"
+        "jasoncolapietro-suede-creator-skills-suede-design",
+        "suede-design"
       ]
     },
     {
@@ -3113,41 +3218,25 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nexu-io/open-design/html-ppt-zhangzara-broadside",
-        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
-        "nexu-io/open-design/html-ppt-zhangzara-coral"
+        "weshopai/weshop-skill-package/poster-design",
+        "weshopai/weshop-skill-package/apply-photo-filter",
+        "pbakaus/impeccable/bolder"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 78,
+      "top1_score": 82,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
       "anchor_candidate_count": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
-      "low_evidence_top3": 0,
+      "relevant_top3": 2,
+      "low_evidence_top3": 1,
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "nexu-io/open-design/html-ppt-zhangzara-broadside",
-          "score": 78,
-          "coverage": 0.71,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "signals": [
-            "visual",
-            "typography",
-            "layout",
-            "brand",
-            "campaign"
-          ]
-        },
-        {
-          "id": "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
-          "score": 78,
+          "id": "weshopai/weshop-skill-package/poster-design",
+          "score": 82,
           "coverage": 0.71,
           "expected": false,
           "relevant": true,
@@ -3157,14 +3246,29 @@
             "visual",
             "typography",
             "poster",
-            "layout",
-            "brand"
+            "brand",
+            "campaign"
           ]
         },
         {
-          "id": "nexu-io/open-design/html-ppt-zhangzara-coral",
-          "score": 78,
-          "coverage": 0.71,
+          "id": "weshopai/weshop-skill-package/apply-photo-filter",
+          "score": 71,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": false,
+          "required_hits": 1,
+          "anchor_hits": 0,
+          "signals": [
+            "visual",
+            "graphic",
+            "layout",
+            "campaign"
+          ]
+        },
+        {
+          "id": "pbakaus/impeccable/bolder",
+          "score": 74,
+          "coverage": 0.57,
           "expected": false,
           "relevant": true,
           "required_hits": 2,
@@ -3173,24 +3277,24 @@
             "visual",
             "typography",
             "layout",
-            "brand",
-            "campaign"
+            "brand"
           ]
         }
       ],
       "signals": [
         "visual",
         "typography",
-        "layout",
+        "poster",
         "brand",
         "campaign",
-        "nexu-io-open-design-html-ppt-zhangzara-broadside",
-        "html-ppt-zhangzara-broadside",
-        "poster",
-        "nexu-io-open-design-html-ppt-zhangzara-bold-poster",
-        "html-ppt-zhangzara-bold-poster",
-        "nexu-io-open-design-html-ppt-zhangzara-coral",
-        "html-ppt-zhangzara-coral"
+        "weshopai-weshop-skill-package-poster-design",
+        "poster-design",
+        "graphic",
+        "layout",
+        "weshopai-weshop-skill-package-apply-photo-filter",
+        "apply-photo-filter",
+        "pbakaus-impeccable-bolder",
+        "bolder"
       ]
     },
     {
@@ -3199,13 +3303,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "weshopai/weshop-skill-package/make-talking-video",
         "remotion-dev/skills/remotion-best-practices",
-        "nexu-io/open-design/hyperframes",
-        "remotion-dev/skills/remotion-multimedia"
+        "weshopai/weshop-skill-package/make-product-commercial"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 85,
+      "top1_score": 95,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3215,6 +3319,21 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "weshopai/weshop-skill-package/make-talking-video",
+          "score": 95,
+          "coverage": 1,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "signals": [
+            "video",
+            "motion",
+            "editing",
+            "animation"
+          ]
+        },
         {
           "id": "remotion-dev/skills/remotion-best-practices",
           "score": 85,
@@ -3230,22 +3349,8 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/hyperframes",
-          "score": 78,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "signals": [
-            "video",
-            "motion",
-            "animation"
-          ]
-        },
-        {
-          "id": "remotion-dev/skills/remotion-multimedia",
-          "score": 83,
+          "id": "weshopai/weshop-skill-package/make-product-commercial",
+          "score": 84,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3262,13 +3367,13 @@
         "video",
         "motion",
         "editing",
+        "animation",
+        "weshopai-weshop-skill-package-make-talking-video",
+        "make-talking-video",
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
-        "animation",
-        "nexu-io-open-design-hyperframes",
-        "hyperframes",
-        "remotion-dev-skills-remotion-multimedia",
-        "remotion-multimedia"
+        "weshopai-weshop-skill-package-make-product-commercial",
+        "make-product-commercial"
       ]
     },
     {
@@ -3277,13 +3382,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nexu-io/open-design/x-research",
-        "mitsuhiko/agent-stuff/openscad",
-        "nexu-io/open-design/rewrite-plan"
+        "JasonColapietro/suede-creator-skills/suede-emails",
+        "JasonColapietro/suede-creator-skills/suede-marketing-loops",
+        "JasonColapietro/suede-creator-skills/suede-marketing-plan"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 75,
+      "top1_score": 96,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3294,59 +3399,65 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "nexu-io/open-design/x-research",
-          "score": 75,
-          "coverage": 0.67,
+          "id": "JasonColapietro/suede-creator-skills/suede-emails",
+          "score": 96,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "signals": [
-            "industrial-design",
-            "industrial",
-            "product"
-          ]
-        },
-        {
-          "id": "mitsuhiko/agent-stuff/openscad",
-          "score": 68,
-          "coverage": 0.56,
-          "expected": false,
-          "relevant": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 0,
           "signals": [
             "cad",
+            "industrial-design",
             "industrial",
+            "product",
             "cad"
           ]
         },
         {
-          "id": "nexu-io/open-design/rewrite-plan",
-          "score": 72,
-          "coverage": 0.67,
+          "id": "JasonColapietro/suede-creator-skills/suede-marketing-loops",
+          "score": 96,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 0,
           "signals": [
+            "cad",
             "industrial-design",
             "industrial",
-            "product"
+            "product",
+            "cad"
+          ]
+        },
+        {
+          "id": "JasonColapietro/suede-creator-skills/suede-marketing-plan",
+          "score": 96,
+          "coverage": 1,
+          "expected": false,
+          "relevant": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "signals": [
+            "cad",
+            "industrial-design",
+            "industrial",
+            "product",
+            "cad"
           ]
         }
       ],
       "signals": [
+        "cad",
         "industrial-design",
         "industrial",
         "product",
-        "nexu-io-open-design-x-research",
-        "x-research",
-        "cad",
-        "mitsuhiko-agent-stuff-openscad",
-        "openscad",
-        "nexu-io-open-design-rewrite-plan",
-        "rewrite-plan"
+        "jasoncolapietro-suede-creator-skills-suede-emails",
+        "suede-emails",
+        "jasoncolapietro-suede-creator-skills-suede-marketing-loops",
+        "suede-marketing-loops",
+        "jasoncolapietro-suede-creator-skills-suede-marketing-plan",
+        "suede-marketing-plan"
       ]
     }
   ]
