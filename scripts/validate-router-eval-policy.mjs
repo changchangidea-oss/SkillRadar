@@ -59,4 +59,14 @@ assert(!comfyFalsePositive.pass,'ComfyUI color correction must not become an MCP
 const dedicatedMcp=evaluateRoutingCase(mcpPolicy,[match('example/mcp-agent-builder','MCP Agent Builder',['mcp','agent','tools'])],gapMeta(1))
 assert(dedicatedMcp.pass,'a dedicated MCP agent candidate with direct task evidence should pass')
 
+const legacyExpectedPolicy={
+  id:'fixture-legacy-expected',domain:'Legacy',tier:'contract',expectedAnyIds:['example/expected-skill'],minExpectedHits:1,
+  requiredSignalTerms:[],minSignalHits:0,
+  anchorSignalTerms:['named-service'],minAnchorSignalHits:0,minAnchorCandidates:0,maxLowEvidenceTop3:0
+}
+const legacyExpected=evaluateRoutingCase(legacyExpectedPolicy,[match('example/expected-skill','Expected Skill',[])],gapMeta(1))
+assert(legacyExpected.pass,'an unconfigured legacy case may still use its expected-ID relevance shortcut')
+assert(legacyExpected.candidate_evidence_failures===0,'unconfigured legacy cases must not report candidate-policy failures')
+assert(legacyExpected.candidates[0].candidate_evidence_pass,'candidate evidence status must reflect the applicable legacy relevance policy')
+
 console.log('Router Eval specificity validation passed: exact anchors remain strict, and policy v5 rejects repository/ecosystem-context false positives unless each candidate carries its own identity plus task evidence.')
