@@ -19,6 +19,8 @@ jobs:
         run: SKILLRADAR_DESIGN_DEDUPE_SELFTEST=1 node scripts/dedupe-design-radar.mjs
       - name: Canonical General Radar seed policy
         run: npm run validate:canonical-seeds
+      - name: Adoption metrics fixture policy
+        run: npm run validate:adoption-metrics
       - name: Normalize generated general routing tags
         run: npm run normalize:general-tags
       - name: Build bundled plugin registry
