@@ -1,3 +1,4 @@
+import crypto from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
 import { REGISTRY_CONTENT_HASH_VERSION, routingContentHash } from './lib/registry-routing-hash.mjs'
@@ -38,11 +39,15 @@ const seen = new Set()
 const core = uniqueInto(rawCore, seen)
 const design = uniqueInto(rawDesign, seen)
 const general = uniqueInto(rawGeneral, seen)
-const contentHash = routingContentHash({core,design,general})
+
+// Preserve the existing contentHash contract for compatibility with current validators/clients.
+const contentHash = crypto.createHash('sha256').update(JSON.stringify({core,design,general})).digest('hex')
+// Shadow/history use a separate routing-only hash so volatile Radar metadata cannot fake a new Registry state.
+const routingHash = routingContentHash({core,design,general})
 const generalLatest = readJson(path.join(dataDir, 'general-radar-latest.json'), {})
 const snapshot = {
   schemaVersion: 2,
-  contentHashVersion: REGISTRY_CONTENT_HASH_VERSION,
+  routingContentHashVersion: REGISTRY_CONTENT_HASH_VERSION,
   generatedAt: [manifest.generatedAt, generalLatest.generatedAt].filter(Boolean).sort().at(-1) || new Date().toISOString().slice(0, 10),
   source: 'skillradar-safety-gated-registry',
   coreCount: core.length,
@@ -50,6 +55,7 @@ const snapshot = {
   generalCount: general.length,
   totalCount: core.length + design.length + general.length,
   contentHash,
+  routingContentHash: routingHash,
   core,
   design,
   general
@@ -57,4 +63,4 @@ const snapshot = {
 
 fs.mkdirSync(outDir, { recursive: true })
 fs.writeFileSync(outFile, `${JSON.stringify(snapshot, null, 2)}\n`)
-console.log(`Bundled Codex registry: ${snapshot.totalCount} unique skills (${snapshot.coreCount} core + ${snapshot.designCount} design + ${snapshot.generalCount} general), routing sha256 ${contentHash.slice(0, 12)}…`)
+console.log(`Bundled Codex registry: ${snapshot.totalCount} unique skills (${snapshot.coreCount} core + ${snapshot.designCount} design + ${snapshot.generalCount} general), content sha256 ${contentHash.slice(0, 12)}…, routing sha256 ${routingHash.slice(0, 12)}…`)
