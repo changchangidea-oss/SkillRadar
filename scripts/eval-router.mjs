@@ -18,6 +18,8 @@ function canon(value=''){
     .replace(/design[ -]system/g,'design-system')
     .replace(/reverse[ -]engineering/g,'reverse-engineering')
     .replace(/react[ -]native/g,'react-native')
+    .replace(/test[ -]driven[ -]development/g,'tdd')
+    .replace(/react[ -]native/g,'react-native')
     .replace(/[^a-z0-9+#.-]+/g,'-')
 }
 
@@ -37,6 +39,15 @@ export function evaluateCase(test,matches,meta={}){
   const signals=[...new Set((matches||[]).flatMap(x=>x.match_details?.matched_signals||[]).map(canon))]
   const signalHits=(test.requiredSignalTerms||[]).filter(term=>signals.some(s=>s.includes(canon(term))||canon(term).includes(s))).length
   const unsafe=(matches||[]).filter(x=>['D','Blocked'].includes(x.security)).length
+  const candidates=(matches||[]).map(x=>({
+    id:x.id,
+    score:Number(x.match_score||0),
+    coverage:Number(x.match_details?.coverage||0),
+    expected:(test.expectedAnyIds||[]).includes(x.id),
+    signals:(x.match_details?.matched_signals||[]).map(canon)
+  }))
+  const relevantTop3=candidates.filter(x=>x.expected||x.coverage>=0.2).length
+  const lowEvidenceTop3=candidates.length-relevantTop3
   const structural=meta.source==='skillradar-registry'&&meta.registryMode==='local-bundled'&&(matches||[]).length===3
   const pass=structural&&unsafe===0&&expectedHits>=Number(test.minExpectedHits||0)&&signalHits>=Number(test.minSignalHits||0)
   return {
@@ -48,7 +59,10 @@ export function evaluateCase(test,matches,meta={}){
     top1_score:Number(matches?.[0]?.match_score||0),
     expected_hits:expectedHits,
     signal_hits:signalHits,
+    relevant_top3:relevantTop3,
+    low_evidence_top3:lowEvidenceTop3,
     unsafe_top3:unsafe,
+    candidates,
     signals
   }
 }
@@ -57,11 +71,13 @@ export function summarize(results){
   const contract=results.filter(x=>x.tier==='contract')
   const coverage=results.filter(x=>x.tier!=='contract')
   const unsafeTop3=results.reduce((n,x)=>n+x.unsafe_top3,0)
+  const lowEvidenceTop3=results.reduce((n,x)=>n+x.low_evidence_top3,0)
   const avgTop1=results.length?results.reduce((n,x)=>n+x.top1_score,0)/results.length:0
+  const avgRelevant=results.length?results.reduce((n,x)=>n+x.relevant_top3,0)/results.length:0
   const byDomain={}
   for(const row of results){
-    const bucket=byDomain[row.domain]||{cases:0,passed:0}
-    bucket.cases++;if(row.pass)bucket.passed++
+    const bucket=byDomain[row.domain]||{cases:0,passed:0,lowEvidenceTop3:0}
+    bucket.cases++;if(row.pass)bucket.passed++;bucket.lowEvidenceTop3+=row.low_evidence_top3
     byDomain[row.domain]=bucket
   }
   for(const bucket of Object.values(byDomain))bucket.passRate=Number((bucket.passed/Math.max(1,bucket.cases)).toFixed(3))
@@ -72,6 +88,8 @@ export function summarize(results){
     contract:{cases:contract.length,passed:contract.filter(x=>x.pass).length,passRate:Number((contract.filter(x=>x.pass).length/Math.max(1,contract.length)).toFixed(3))},
     coverage:{cases:coverage.length,passed:coverage.filter(x=>x.pass).length,passRate:Number((coverage.filter(x=>x.pass).length/Math.max(1,coverage.length)).toFixed(3))},
     unsafeTop3,
+    lowEvidenceTop3,
+    averageRelevantTop3:Number(avgRelevant.toFixed(2)),
     averageTop1Score:Number(avgTop1.toFixed(1)),
     byDomain
   }
