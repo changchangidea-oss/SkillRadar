@@ -107,6 +107,13 @@ const parityQueries = [
   'Next.js AI dashboard with tool calling and shadcn/ui',
 ];
 
+const candidateEvidenceQueries = new Set([
+  'SQLite migration and query design',
+  'Vitest test suite',
+  'Flutter mobile app',
+  'MCP server tool integration',
+]);
+
 for (const query of parityQueries) {
   const browser = webRouter.match(snapshot, query, 3);
   const plugin = pluginMatch(query);
@@ -123,8 +130,18 @@ for (const query of parityQueries) {
     for (const skill of browser.matches) {
       const matched = new Set((skill.match_details?.matched_signals || []).map(webRouter.canon));
       assert.ok([...required].some((signal) => matched.has(signal)), `generic backfill bypassed specificity for ${query}: ${skill.id}`);
+      if (candidateEvidenceQueries.has(query)) {
+        assert.ok(webRouter.candidateEvidencePass(skill, browser.specificity.required_signals), `repository-context candidate bypassed identity/task evidence for ${query}: ${skill.id}`);
+      }
     }
   }
+}
+
+for (const query of ['Create an MCP agent that can call tools and coordinate assistants', 'Build an LLM agent workflow with tools and orchestration', 'Build a SQLite data pipeline and analytics workflow', 'Create Vitest unit and integration tests', 'Build a Flutter mobile interface', 'Build webhook API automation and integrations']) {
+  const browser = webRouter.match(snapshot, query, 3);
+  const plugin = pluginMatch(query);
+  assert.deepEqual(browser.matches.map((skill) => skill.id), plugin.matches.map((skill) => skill.id), `candidate-level browser/plugin mismatch for ${query}`);
+  assert.ok(browser.matches.every((skill) => webRouter.candidateEvidencePass(skill, browser.specificity.required_signals)), `candidate-level filter leaked repository-context evidence for ${query}`);
 }
 
 console.log(`Web UI safety + router parity passed for ${parityQueries.length} named/multi-capability queries.`);
