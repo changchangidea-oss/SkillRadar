@@ -35,7 +35,7 @@ const results=[]
 let unsafeTop3=0
 let top1ScoreTotal=0
 for (const test of spec.cases) {
-  const result=runMatch(test.task)
+  const result=runMatch(test.task, root, {SKILLRADAR_PROJECT_CONTEXT:'0'})
   const matches=result.matches||[]
   const ids=new Set(matches.map(x=>x.id))
   const expectedHits=(test.expectedAnyIds||[]).filter(x=>ids.has(x)).length
@@ -64,18 +64,20 @@ fs.writeFileSync(path.join(tmp,'components.json'), '{}')
 const fixture={
   schemaVersion:2,generatedAt:'test',source:'context-fixture',coreCount:3,designCount:0,generalCount:0,totalCount:3,contentHash:'context-fixture',
   core:[
-    {id:'next-context',name:'Next Context',source:'fixture/next',category:'Frontend',tags:['nextjs','react','app-router'],summary:'Next.js application architecture',security:'A',score:80,maintenance:80},
+    {id:'next-context',name:'Next Context',source:'fixture/next',category:'Frontend',tags:['nextjs','react','app-router','shadcn','ai-sdk'],summary:'Next.js application architecture',security:'A',score:80,maintenance:80},
     {id:'python-context',name:'Python Context',source:'fixture/python',category:'Backend',tags:['python','fastapi'],summary:'Python service architecture',security:'A',score:80,maintenance:80},
     {id:'generic-context',name:'Generic Context',source:'fixture/generic',category:'Architecture',tags:['architecture'],summary:'Generic application architecture',security:'A',score:80,maintenance:80}
   ],design:[],general:[]
 }
 const fixturePath=path.join(tmp,'registry.json')
 fs.writeFileSync(fixturePath,JSON.stringify(fixture))
-const contextual=runMatch('improve this application architecture',tmp,{SKILLRADAR_REGISTRY_PATH:fixturePath})
+const contextual=runMatch('improve this application architecture',tmp,{SKILLRADAR_REGISTRY_PATH:fixturePath,SKILLRADAR_PROJECT_CONTEXT:'1'})
 const contextPass=contextual.context?.mode==='project-aware'
   && contextual.context?.signals?.includes('nextjs')
+  && contextual.context?.signals?.includes('shadcn')
   && contextual.matches?.[0]?.id==='next-context'
   && Number(contextual.matches?.[0]?.match_details?.project_context_bonus||0)>0
+  && Number(contextual.matches?.[0]?.match_details?.project_context_bonus||0)<=6
 fs.rmSync(tmp,{recursive:true,force:true})
 
 const passCount=results.filter(x=>x.pass).length
