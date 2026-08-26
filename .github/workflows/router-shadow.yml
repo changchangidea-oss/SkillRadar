@@ -15,6 +15,8 @@ on:
       - 'packages/codex-plugin/scripts/skillradar.mjs'
       - 'scripts/eval-router.mjs'
       - 'scripts/shadow-router.mjs'
+      - 'scripts/shadow-history.mjs'
+      - 'scripts/validate-shadow-history.mjs'
       - 'scripts/normalize-general-tags.mjs'
       - 'scripts/sync-codex-plugin-registry.mjs'
       - '.github/workflows/router-shadow.yml'
@@ -45,19 +47,23 @@ jobs:
         run: npm run benchmark:router
       - name: Run expanded router eval
         run: SKILLRADAR_EVAL_WRITE=1 npm run eval:router
-      - name: Run shadow ranking comparison
+      - name: Run one shadow snapshot
         run: SKILLRADAR_SHADOW_WRITE=1 npm run shadow:router
+      - name: Update distinct-Registry shadow history
+        run: SKILLRADAR_SHADOW_HISTORY_WRITE=1 npm run shadow:history
       - name: Show auditable summary
         run: |
           node - <<'NODE'
           const e=require('./data/router-eval-latest.json')
           const s=require('./data/router-shadow-latest.json')
-          console.log(`Eval: ${e.passed}/${e.cases}; contract ${e.contract.passed}/${e.contract.cases}; coverage ${e.coverage.passed}/${e.coverage.cases}; unsafe=${e.unsafeTop3}; avgTop1=${e.averageTop1Score}; avgRelevantTop3=${e.averageRelevantTop3}; lowEvidenceTop3=${e.lowEvidenceTop3}`)
-          console.log(`Shadow: ${s.decision}; production=${s.production.passed}/${s.production.cases}; candidate=${s.candidate.passed}/${s.candidate.cases}; evidenceDelta=${s.gates.evidenceDelta}`)
+          const h=require('./data/router-shadow-history-latest.json')
+          console.log(`Eval: ${e.passed}/${e.cases}; contract ${e.contract.passed}/${e.contract.cases}; coverage ${e.coverage.passed}/${e.coverage.cases}; unsafe=${e.unsafeTop3}; avgTop1=${e.averageTop1Score}; avgRecommendations=${e.averageRecommendationCount}; capabilityGaps=${e.capabilityGapCases}`)
+          console.log(`Shadow snapshot: ${s.decision}; production=${s.production.passed}/${s.production.cases}; candidate=${s.candidate.passed}/${s.candidate.cases}; evidenceDelta=${s.gates.evidenceDelta}; registry=${s.registrySnapshot?.contentHash||'missing'}`)
+          console.log(`Shadow history: ${h.decision}; distinctRegistrySnapshots=${h.uniqueRegistrySnapshots}/${h.requiredSnapshots}; consecutiveWins=${h.consecutiveWins}; aggregateEvidenceDelta=${h.aggregateEvidenceDelta}`)
           NODE
       - name: Commit normalized registry evidence and eval status
         run: |
-          git add data/general-skills-radar.json packages/codex-plugin/data/registry.json data/router-eval-latest.json data/router-shadow-latest.json
+          git add data/general-skills-radar.json packages/codex-plugin/data/registry.json data/router-eval-latest.json data/router-shadow-latest.json data/router-shadow-history.json data/router-shadow-history-latest.json
           if git diff --cached --quiet; then exit 0; fi
           git config user.name "skillradar-shadow-bot"
           git config user.email "skillradar-shadow-bot@users.noreply.github.com"
