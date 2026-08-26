@@ -38,7 +38,8 @@ const STOP=new Set('the a an and or for to of in on with from by is are be as th
 const PHRASES={
   'next.js':['nextjs'],'app router':['app-router'],'server components':['server-components','rsc'],
   'shadcn/ui':['shadcn'],'ai sdk':['ai-sdk'],'tool calling':['tool-calling','function-calling'],'function calling':['function-calling','tool-calling'],
-  'design system':['design-system'],'cloudflare workers':['cloudflare-workers','workers'],'ci/cd':['ci-cd'],'end to end':['e2e']
+  'design system':['design-system'],'cloudflare workers':['cloudflare-workers','workers'],'react native':['react-native'],
+  'ci/cd':['ci-cd'],'end to end':['e2e']
 }
 const ZH_FACETS=[
   ['用户体验',['ux','research','usability']],['工业设计',['industrial-design','industrial','product','cad']],['产品设计',['product','industrial']],['3d打印',['3d-printing','fabrication','3d']],
@@ -48,7 +49,7 @@ const ZH_FACETS=[
   ['服装',['fashion','campaign']],['时尚',['fashion','brand']],['交互',['interaction','ux','ui']],['数媒',['digital-media','creative-coding']],['影视',['film','video','editing','vfx']],
   ['工艺',['craft','fabrication']],['民间艺术',['illustration','hand-drawn','collage','pattern','craft']],['纹样',['pattern','illustration','vector']]
 ]
-function canon(t){return String(t).toLowerCase().replace(/next\.js/g,'nextjs').replace(/shadcn\/ui/g,'shadcn').replace(/tool[- ]calling/g,'tool-calling').replace(/function[- ]calling/g,'function-calling').replace(/server[- ]components/g,'server-components').replace(/app[- ]router/g,'app-router').replace(/design[- ]system/g,'design-system').replace(/[^a-z0-9+#.-]+/g,'').trim()}
+function canon(t){return String(t).toLowerCase().replace(/next\.js/g,'nextjs').replace(/node\.?js/g,'node').replace(/shadcn\/ui/g,'shadcn').replace(/tool[- ]calling/g,'tool-calling').replace(/function[- ]calling/g,'function-calling').replace(/server[- ]components/g,'server-components').replace(/app[- ]router/g,'app-router').replace(/design[- ]system/g,'design-system').replace(/vulnerabilities/g,'vulnerability').replace(/[^a-z0-9+#.-]+/g,'').trim()}
 function querySignals(text){
   const raw=String(text).toLowerCase(),concepts=[],consumed=new Set()
   for(const [phrase,aliases] of Object.entries(PHRASES)){
@@ -96,7 +97,7 @@ function projectContext(){
 }
 
 function fieldText(s){return {identity:`${s.id||''} ${s.name||''}`.toLowerCase(),tags:`${(s.tags||[]).join(' ')} ${(s.uses||[]).join(' ')}`.toLowerCase(),domains:`${(s.domains||[]).join(' ')} ${s.category||''}`.toLowerCase(),summary:String(s.summary||'').toLowerCase(),source:String(s.source||'').toLowerCase()}}
-function fieldContains(text,term){const normalized=String(text).toLowerCase().replace(/next\.js/g,'nextjs').replace(/shadcn\/ui/g,'shadcn').replace(/tool[ -]calling/g,'tool-calling').replace(/function[ -]calling/g,'function-calling').replace(/app[ -]router/g,'app-router').replace(/design[ -]system/g,'design-system');const set=new Set(normalized.split(/[^a-z0-9+#.-]+/).map(canon).filter(Boolean));return set.has(term)||(term.length>=5&&normalized.includes(term))}
+function fieldContains(text,term){const normalized=String(text).toLowerCase().replace(/next\.js/g,'nextjs').replace(/node\.?js/g,'node').replace(/shadcn\/ui/g,'shadcn').replace(/tool[ -]calling/g,'tool-calling').replace(/function[ -]calling/g,'function-calling').replace(/app[ -]router/g,'app-router').replace(/design[ -]system/g,'design-system').replace(/vulnerabilities/g,'vulnerability');const set=new Set(normalized.split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean));return set.has(term)||(term.length>=5&&normalized.includes(term))}
 function projectEvidence(fields,context){
   if(context.mode!=='project-aware'||!context.signals.length)return {matched:[],coverage:0,bonus:0}
   const matched=[]
@@ -126,6 +127,15 @@ function scoreSkill(s,query,context){
 function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.category||''].map(canon).filter(Boolean))}
 function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
 function taskSignalWeights(s){return s.match_details?.matched_signal_weights||{}}
+const SPECIFICITY_SIGNALS=new Set(['mcp','orchestration','fastapi','node','graphql','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation'])
+function requestedSpecificitySignals(query){
+  return [...new Set(querySignals(query).map(x=>canon(x.label)).filter(x=>SPECIFICITY_SIGNALS.has(x)))]
+}
+function enforceSpecificity(ranked,required=[]){
+  if(!required.length)return ranked
+  const wanted=new Set(required)
+  return ranked.filter(skill=>(skill.match_details?.matched_signals||[]).some(signal=>wanted.has(canon(signal))))
+}
 function diversify(ranked,limit=3){
   if(!ranked.length)return[]
   const selected=[ranked[0]],pool=ranked.slice(1).filter(x=>x.match_score>=Math.max(20,ranked[0].match_score-28)),covered=new Set(Object.keys(taskSignalWeights(ranked[0])))
@@ -143,17 +153,23 @@ function diversify(ranked,limit=3){
   }
   return selected.slice(0,limit)
 }
-function capabilityGap(matches,limit=3){
+function capabilityGap(matches,limit=3,required=[]){
   const returned=matches.length
-  return returned<limit?{detected:true,requested:limit,returned,missing:limit-returned,reason:'Fewer than 3 candidates met the strong-match floor; weak candidates were not backfilled.'}:{detected:false,requested:limit,returned,missing:0}
+  const reason=required.length
+    ?`Fewer than 3 candidates had explicit evidence for the requested named technology/service signals (${required.join(', ')}); unrelated generic candidates were not backfilled.`
+    :'Fewer than 3 candidates met the strong-match floor; weak candidates were not backfilled.'
+  return returned<limit?{detected:true,requested:limit,returned,missing:limit-returned,reason}:{detected:false,requested:limit,returned,missing:0}
 }
 function safetyAdvisory(matches){const top=matches[0];if(!top||top.security!=='C')return null;const alternative=matches.slice(1).find(x=>['A','B'].includes(x.security)&&top.match_score-x.match_score<=5);if(!alternative)return {level:'review',message:'Top match is security grade C. Review its SKILL.md and scripts before installation or execution.'};return {level:'review',message:`Top match is security grade C. Prefer the nearby ${alternative.security}-grade alternative when task coverage is comparable.`,alternative:{id:alternative.id,name:alternative.name,match_score:alternative.match_score,skillradar_score:alternative.skillradar_score,security:alternative.security,source:alternative.source}}}
 async function registryResult(){
   const loaded=await loadRegistry(),registry=loaded.skills,context=projectContext()
   if(cmd==='inspect'){const id=value.toLowerCase();const skill=registry.find(s=>String(s.id).toLowerCase()===id||String(s.name).toLowerCase()===id);if(!skill)throw new Error(`Skill not found or blocked by safety gate: ${value}`);return {source:'skillradar-registry',registry:loaded.meta,context,skill:{...skill,skillradar_score:skill.score||70}}}
   const ranked=registry.map(s=>scoreSkill(s,value,context)).filter(s=>cmd==='match'||s.match_score>24).sort((a,b)=>b.match_score-a.match_score||b.specialty_hits-a.specialty_hits||b.skillradar_score-a.skillradar_score)
-  if(cmd==='match'){const matches=diversify(ranked,3);return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1',strategy:'task-first field-weighted evidence + coverage + quality/security/freshness prior + bounded project-context bonus + complementary task-facet coverage rerank; weak candidates are not backfilled'},matches,capability_gap:capabilityGap(matches,3),advisory:safetyAdvisory(matches)}}
-  return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1'},skills:ranked.slice(0,8)}
+  const requiredSpecificitySignals=requestedSpecificitySignals(value)
+  const relevantRanked=enforceSpecificity(ranked,requiredSpecificitySignals)
+  const specificity={enforced:requiredSpecificitySignals.length>0,required_signals:requiredSpecificitySignals,eligible_candidates:relevantRanked.length,filtered_candidates:ranked.length-relevantRanked.length}
+  if(cmd==='match'){const matches=diversify(relevantRanked,3);return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1',strategy:'task-first field-weighted evidence + coverage + quality/security/freshness prior + bounded project-context bonus + complementary task-facet coverage rerank; named technologies/services require explicit per-candidate evidence; weak candidates are not backfilled'},specificity,matches,capability_gap:capabilityGap(matches,3,requiredSpecificitySignals),advisory:safetyAdvisory(matches)}}
+  return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1'},specificity,skills:relevantRanked.slice(0,8)}
 }
 async function remote(){if(!base||offline)return null;if(cmd==='match'){const r=await fetch(`${base}/api/router`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({task:value,agent:'codex',limit:3})});if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}const endpoint=cmd==='inspect'?`/api/skill?id=${encodeURIComponent(value)}`:`/api/skills?q=${encodeURIComponent(value)}&limit=8`;const r=await fetch(base+endpoint);if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}
 try{try{console.log(JSON.stringify(await registryResult(),null,2))}catch(localError){if(offline)throw localError;if(base){try{const result=await remote();if(result){console.log(JSON.stringify(result,null,2));process.exit(0)}}catch(remoteError){console.error(`Remote API fallback failed: ${remoteError.message}`)}}throw localError}}catch(e){console.error(e.message);process.exit(1)}

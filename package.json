@@ -7,6 +7,7 @@
     "validate": "node scripts/validate.mjs",
     "validate:plugin-offline": "node scripts/validate-plugin-offline.mjs",
     "validate:skill-budget": "node scripts/validate-skill-budget.mjs",
+    "validate:router-eval-policy": "node scripts/validate-router-eval-policy.mjs",
     "validate:shadow-history": "node scripts/validate-shadow-history.mjs",
     "validate:canonical-seeds": "node scripts/validate-canonical-seeds.mjs",
     "validate:registry-hash": "node scripts/validate-registry-content-hash.mjs",

@@ -15,6 +15,8 @@ jobs:
           node-version: 22
       - name: General Radar security self-test
         run: SKILLRADAR_SECURITY_SELFTEST=1 node scripts/update-general-radar.mjs
+      - name: Design Radar id normalization self-test
+        run: SKILLRADAR_DESIGN_DEDUPE_SELFTEST=1 node scripts/dedupe-design-radar.mjs
       - name: Canonical General Radar seed policy
         run: npm run validate:canonical-seeds
       - name: Normalize generated general routing tags
@@ -23,6 +25,8 @@ jobs:
         run: npm run sync:plugin-registry
       - name: Registry routing content hash policy
         run: npm run validate:registry-hash
+      - name: Exact technology anchor matching policy
+        run: npm run validate:router-eval-policy
       - name: Validate registry and offline router
         run: npm run validate
       - name: Plugin-only offline acceptance

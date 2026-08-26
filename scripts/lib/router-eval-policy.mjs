@@ -22,6 +22,20 @@ export function signalMatches(signal,term){
   return t.length>=5&&(s.includes(t)||t.includes(s))
 }
 
+// Named-technology anchors are stricter than ordinary routing signals. Match a
+// complete canonical word/phrase inside the signal, never the reverse. This
+// lets `backend-fastapi-api` prove FastAPI while preventing `api` from doing so;
+// likewise, `native` cannot prove React Native.
+export function anchorSignalMatches(signal,term){
+  const signalParts=canon(signal).split('-').filter(Boolean)
+  const termParts=canon(term).split('-').filter(Boolean)
+  if(!signalParts.length||!termParts.length||termParts.length>signalParts.length)return false
+  for(let i=0;i<=signalParts.length-termParts.length;i++){
+    if(termParts.every((part,index)=>signalParts[i+index]===part))return true
+  }
+  return false
+}
+
 export function evidenceSignals(matches=[]){
   return [...new Set(matches.flatMap(x=>[
     ...(x.match_details?.matched_signals||[]),
@@ -34,8 +48,8 @@ export function applySpecificityPolicy(test,policy={}){
   return {...test,...(policy?.cases?.[test.id]||{})}
 }
 
-function hitCount(signals,terms=[]){
-  return terms.filter(term=>signals.some(signal=>signalMatches(signal,term))).length
+function hitCount(signals,terms=[],matcher=signalMatches){
+  return terms.filter(term=>signals.some(signal=>matcher(signal,term))).length
 }
 
 export function evaluateRoutingCase(test,matches=[],meta={}){
@@ -45,13 +59,13 @@ export function evaluateRoutingCase(test,matches=[],meta={}){
   const anchorTerms=test.anchorSignalTerms||[]
   const signals=evidenceSignals(matches)
   const signalHits=hitCount(signals,requiredTerms)
-  const anchorSignalHits=hitCount(signals,anchorTerms)
+  const anchorSignalHits=hitCount(signals,anchorTerms,anchorSignalMatches)
   const unsafe=matches.filter(x=>['D','Blocked'].includes(x.security)).length
   const minSignalHits=Number(test.minSignalHits||0)
   const candidates=matches.map(x=>{
     const candidateSignals=(x.match_details?.matched_signals||[]).map(canon).filter(Boolean)
     const requiredHits=hitCount(candidateSignals,requiredTerms)
-    const anchorHits=hitCount(candidateSignals,anchorTerms)
+    const anchorHits=hitCount(candidateSignals,anchorTerms,anchorSignalMatches)
     const expected=(test.expectedAnyIds||[]).includes(x.id)
     const relevant=expected||(anchorTerms.length?anchorHits>0:requiredHits>=Math.max(1,minSignalHits))
     return {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "qualityPolicyVersion": 1,
-  "description": "Specificity gates for open-domain routing cases. Anchors prevent generic workflow/integration/data matches from being counted as evidence for a named technology or service.",
+  "qualityPolicyVersion": 2,
+  "description": "Specificity gates for open-domain routing cases. Anchors use exact canonical word/phrase boundaries so generic workflow/integration/data matches, API for FastAPI, and native for React Native cannot count as named-technology evidence.",
   "cases": {
     "mcp-agent-tools": {"anchorSignalTerms":["mcp"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "llm-agent-workflow": {"anchorSignalTerms":["orchestration"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
