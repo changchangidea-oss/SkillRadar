@@ -85,10 +85,11 @@ export function evaluateRoutingCase(test,matches=[],meta={}){
     const identityAnchorHits=hitCount(candidateIdentitySignals,candidatePolicy.identityTerms,anchorSignalMatches)
     const expected=(test.expectedAnyIds||[]).includes(x.id)
     const legacyRelevant=expected||(anchorTerms.length?anchorHits>0:requiredHits>=Math.max(1,minSignalHits))
-    const candidateEvidencePass=requiredHits>=candidatePolicy.minRequiredHits
+    const configuredEvidencePass=requiredHits>=candidatePolicy.minRequiredHits
       && anchorHits>=candidatePolicy.minAnchorHits
       && identityAnchorHits>=candidatePolicy.minIdentityHits
-    const relevant=candidatePolicy.configured?candidateEvidencePass:legacyRelevant
+    const candidateEvidencePass=candidatePolicy.configured?configuredEvidencePass:legacyRelevant
+    const relevant=candidateEvidencePass
     return {
       id:x.id,
       score:Number(x.match_score||0),
