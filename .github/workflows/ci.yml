@@ -21,6 +21,8 @@ jobs:
         run: npm run normalize:general-tags
       - name: Build bundled plugin registry
         run: npm run sync:plugin-registry
+      - name: Registry routing content hash policy
+        run: npm run validate:registry-hash
       - name: Validate registry and offline router
         run: npm run validate
       - name: Plugin-only offline acceptance

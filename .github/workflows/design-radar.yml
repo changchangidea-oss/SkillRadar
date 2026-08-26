@@ -14,13 +14,19 @@ on:
       - 'scripts/normalize-general-tags.mjs'
       - 'scripts/apply-safety-gate.mjs'
       - 'scripts/sync-codex-plugin-registry.mjs'
+      - 'scripts/validate-registry-content-hash.mjs'
       - 'scripts/validate.mjs'
       - 'scripts/validate-plugin-offline.mjs'
       - 'scripts/validate-skill-budget.mjs'
+      - 'scripts/eval-router.mjs'
+      - 'scripts/shadow-router.mjs'
+      - 'scripts/shadow-history.mjs'
+      - 'scripts/validate-shadow-history.mjs'
       - 'packages/codex-plugin/scripts/skillradar.mjs'
       - 'packages/codex-plugin/scripts/skill-budget.mjs'
       - 'data/general-domains.json'
       - 'data/general-canonical-seeds.json'
+      - 'data/router-eval-v2.json'
       - 'data/design-skill-index.json'
       - 'data/design-skills-1.json'
       - 'data/design-skills-2.json'
@@ -68,22 +74,106 @@ jobs:
         run: node scripts/apply-safety-gate.mjs
       - name: Refresh bundled Codex registry
         run: npm run sync:plugin-registry
+      - name: Validate Registry routing content hash
+        run: npm run validate:registry-hash
       - name: Validate generated registry, router and budget doctor
         run: |
           npm run validate
           npm run validate:plugin-offline
           npm run validate:skill-budget
-      - name: Commit generated registry when changed
+          npm run validate:shadow-history
+      - name: Run expanded router eval
+        env:
+          SKILLRADAR_EVAL_WRITE: '1'
+        run: npm run eval:router
+      - name: Run one shadow snapshot
+        env:
+          SKILLRADAR_SHADOW_WRITE: '1'
+        run: npm run shadow:router
+      - name: Update distinct-Registry shadow history
+        env:
+          SKILLRADAR_SHADOW_HISTORY_WRITE: '1'
+        run: npm run shadow:history
+      - name: Show auditable routing summary
         run: |
-          git add data/design-seed-baseline.json data/design-skill-index.json data/design-skills-radar.json data/design-domains.json data/radar-latest.json data/radar-registry.json data/ranking-history.json data/general-skills-radar.json data/general-radar-registry.json data/general-radar-latest.json packages/codex-plugin/data/registry.json
-          if git diff --cached --quiet; then
-            echo "No registry changes."
+          node - <<'NODE'
+          const e=require('./data/router-eval-latest.json')
+          const s=require('./data/router-shadow-latest.json')
+          const h=require('./data/router-shadow-history-latest.json')
+          console.log(`Eval: ${e.passed}/${e.cases}; contract ${e.contract.passed}/${e.contract.cases}; coverage ${e.coverage.passed}/${e.coverage.cases}; unsafe=${e.unsafeTop3}; capabilityGaps=${e.capabilityGapCases}; avgRecommendations=${e.averageRecommendationCount}`)
+          console.log(`Shadow: ${s.decision}; registryHashVersion=${s.registrySnapshot?.contentHashVersion}; production=${s.production.passed}/${s.production.cases}; candidate=${s.candidate.passed}/${s.candidate.cases}; evidenceDelta=${s.gates.evidenceDelta}`)
+          console.log(`History: ${h.decision}; hashVersion=${h.contentHashVersion}; distinct=${h.uniqueRegistrySnapshots}/${h.requiredSnapshots}; legacy=${h.legacyRegistrySnapshots}; windowComplete=${h.windowComplete}`)
+          NODE
+      - name: Commit generated registry and routing evidence when changed
+        run: |
+          generated_files=(
+            data/design-seed-baseline.json
+            data/design-skill-index.json
+            data/design-skills-radar.json
+            data/design-domains.json
+            data/radar-latest.json
+            data/radar-registry.json
+            data/ranking-history.json
+            data/general-skills-radar.json
+            data/general-radar-registry.json
+            data/general-radar-latest.json
+            packages/codex-plugin/data/registry.json
+            data/router-eval-latest.json
+            data/router-shadow-latest.json
+            data/router-shadow-history.json
+            data/router-shadow-history-latest.json
+          )
+
+          if git diff --quiet -- "${generated_files[@]}"; then
+            echo "No registry or routing evidence changes."
             exit 0
           fi
+
+          snapshot_dir="$(mktemp -d)"
+          for file in "${generated_files[@]}"; do
+            if [ -f "$file" ]; then
+              mkdir -p "$snapshot_dir/$(dirname "$file")"
+              cp "$file" "$snapshot_dir/$file"
+            fi
+          done
+
+          git fetch origin main
+          source_drift=0
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            case "$file" in
+              scripts/*|.github/workflows/*|package.json|packages/codex-plugin/scripts/*|packages/codex-plugin/skills/*|data/skills.json|data/router-eval-v2.json|data/general-domains.json|data/general-canonical-seeds.json|data/design-skills-1.json|data/design-skills-2.json|data/design-skills-3.json|data/design-skills-4.json)
+                echo "Source changed during Radar run: $file"
+                source_drift=1
+                ;;
+              *)
+                echo "Concurrent non-source update will be preserved from latest main: $file"
+                ;;
+            esac
+          done < <(git diff --name-only HEAD..origin/main)
+
+          if [ "$source_drift" -ne 0 ]; then
+            echo "Refusing to publish outputs generated from stale source. A later source-triggered run must regenerate them."
+            exit 2
+          fi
+
+          git reset --hard origin/main
+          for file in "${generated_files[@]}"; do
+            if [ -f "$snapshot_dir/$file" ]; then
+              mkdir -p "$(dirname "$file")"
+              cp "$snapshot_dir/$file" "$file"
+            fi
+          done
+
+          git add "${generated_files[@]}"
+          if git diff --cached --quiet; then
+            echo "Latest main already contains the same generated outputs."
+            exit 0
+          fi
+
           git config user.name "skillradar-bot"
           git config user.email "skillradar-bot@users.noreply.github.com"
-          git commit -m "chore(radar): refresh design + general skills and bundled plugin registry"
-          git pull --rebase origin main
+          git commit -m "chore(radar): refresh registry + router eval/shadow evidence"
           git push origin HEAD:main
 
   publish:

@@ -6,6 +6,7 @@ import { execFileSync } from 'node:child_process'
 const root=path.resolve('.')
 const router=path.join(root,'packages/codex-plugin/scripts/skillradar.mjs')
 const spec=JSON.parse(fs.readFileSync(path.join(root,'data/router-eval-v2.json'),'utf8'))
+const bundledRegistry=JSON.parse(fs.readFileSync(path.join(root,'packages/codex-plugin/data/registry.json'),'utf8'))
 
 function canon(value=''){
   return String(value).toLowerCase()
@@ -91,11 +92,14 @@ let registrySnapshot=null
 for(const test of spec.cases){
   const prod=run('match',test.task)
   if(!registrySnapshot){
+    if(prod.registry?.contentHash&&prod.registry.contentHash!==bundledRegistry.contentHash)throw new Error('router Registry contentHash does not match bundled Registry file')
     registrySnapshot={
-      contentHash:prod.registry?.contentHash||null,
-      generatedAt:prod.registry?.generatedAt||null,
-      totalCount:Number(prod.registry?.totalCount||0),
-      mode:prod.registry?.mode||null
+      // Internal Shadow identity uses the stable routing hash. Legacy contentHash remains unchanged for compatibility.
+      contentHash:bundledRegistry.routingContentHash||prod.registry?.contentHash||bundledRegistry.contentHash||null,
+      contentHashVersion:Number(bundledRegistry.routingContentHashVersion||1),
+      generatedAt:prod.registry?.generatedAt||bundledRegistry.generatedAt||null,
+      totalCount:Number(prod.registry?.totalCount||bundledRegistry.totalCount||0),
+      mode:prod.registry?.mode||'local-bundled'
     }
   }
   const search=run('search',test.task)
