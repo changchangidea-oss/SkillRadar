@@ -106,26 +106,41 @@ function projectEvidence(fields,context){
   return {matched:[...new Set(matched)].slice(0,10),coverage:Number(coverage.toFixed(2)),bonus:Number(bonus.toFixed(1))}
 }
 function scoreSkill(s,query,context){
-  const signals=querySignals(query),fields=fieldText(s),totalWeight=Math.max(1,signals.reduce((n,x)=>n+x.weight,0));let matchedWeight=0,evidence=0;const matched=[],fieldHits={identity:0,tags:0,domains:0,summary:0,source:0}
+  const signals=querySignals(query),fields=fieldText(s),totalWeight=Math.max(1,signals.reduce((n,x)=>n+x.weight,0));let matchedWeight=0,evidence=0;const matched=[],matchedSignalWeights={},fieldHits={identity:0,tags:0,domains:0,summary:0,source:0}
   for(const sig of signals){
     let best=0,bestField=null,bestTerm=null
     for(const term of sig.terms){for(const [field,text] of Object.entries(fields)){if(!fieldContains(text,term))continue;const weight=field==='identity'?4.5:field==='tags'?3.7:field==='domains'?2.8:field==='summary'?2.1:.7;if(weight>best){best=weight;bestField=field;bestTerm=term}}}
     if(!bestField)continue
-    matchedWeight+=sig.weight;evidence+=sig.weight*best;fieldHits[bestField]++;matched.push(sig.label||bestTerm)
+    const label=sig.label||bestTerm
+    matchedWeight+=sig.weight;evidence+=sig.weight*best;fieldHits[bestField]++;matched.push(label);matchedSignalWeights[label]=Math.max(Number(matchedSignalWeights[label]||0),Number(sig.weight||0))
   }
   const coverage=matchedWeight/totalWeight
   const skillradar=s.score||70,securityBonus=s.security==='A'?4:s.security==='B'?2:s.security==='C'?0:-100,freshness=Math.max(0,Math.min(100,s.maintenance??70))*.04
-  const coverageScore=coverage*55,evidenceScore=Math.min(22,evidence*1.45),qualityPrior=skillradar*.15,project=projectEvidence(fields,context)
+  const coverageScore=coverage*55,evidenceScore=Math.min(22,evidence*1.45),qualityPrior=skillradar*.15,rawProject=projectEvidence(fields,context)
+  const project={...rawProject,bonus:Number((coverage>0?rawProject.bonus:Math.min(2,rawProject.bonus)).toFixed(1))}
   const matchScore=Math.max(0,Math.min(100,Math.round(coverageScore+evidenceScore+qualityPrior+securityBonus+freshness+project.bonus)))
   const taskReason=matched.length?`Matched task signals: ${[...new Set(matched)].slice(0,8).join(', ')}; coverage ${Math.round(coverage*100)}%`:'No strong lexical task signal'
   const projectReason=project.matched.length?`; project context: ${project.matched.join(', ')} (+${project.bonus})`:''
-  return {...s,match_score:matchScore,skillradar_score:skillradar,specialty_hits:fieldHits.identity+fieldHits.tags,match_details:{ranking_version:'2.1',matched_signals:[...new Set(matched)].slice(0,12),coverage:Number(coverage.toFixed(2)),field_hits:fieldHits,quality_prior:Number(qualityPrior.toFixed(1)),security_bonus:securityBonus,freshness_bonus:Number(freshness.toFixed(1)),project_context_signals:project.matched,project_context_coverage:project.coverage,project_context_bonus:project.bonus},reason:`${taskReason}${projectReason}; security ${s.security}; SkillRadar score ${skillradar}.`}
+  return {...s,match_score:matchScore,skillradar_score:skillradar,specialty_hits:fieldHits.identity+fieldHits.tags,match_details:{ranking_version:'2.1',matched_signals:[...new Set(matched)].slice(0,12),matched_signal_weights:matchedSignalWeights,coverage:Number(coverage.toFixed(2)),field_hits:fieldHits,quality_prior:Number(qualityPrior.toFixed(1)),security_bonus:securityBonus,freshness_bonus:Number(freshness.toFixed(1)),project_context_signals:project.matched,project_context_coverage:project.coverage,project_context_bonus:project.bonus},reason:`${taskReason}${projectReason}; security ${s.security}; SkillRadar score ${skillradar}.`}
 }
 function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.category||''].map(canon).filter(Boolean))}
 function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
+function taskSignalWeights(s){return s.match_details?.matched_signal_weights||{}}
 function diversify(ranked,limit=3){
-  if(!ranked.length)return[];const selected=[];const pool=ranked.filter(x=>x.match_score>=Math.max(20,ranked[0].match_score-28))
-  while(selected.length<limit&&pool.length){let bestIndex=0,bestScore=-Infinity;for(let i=0;i<pool.length;i++){const c=pool[i];const maxSim=selected.length?Math.max(...selected.map(s=>similarity(c,s))):0;const sameSource=selected.some(s=>s.source===c.source)?1:0;const adjusted=c.match_score-maxSim*8-sameSource;if(adjusted>bestScore){bestScore=adjusted;bestIndex=i}}selected.push(pool.splice(bestIndex,1)[0])}
+  if(!ranked.length)return[]
+  const selected=[ranked[0]],pool=ranked.slice(1).filter(x=>x.match_score>=Math.max(20,ranked[0].match_score-28)),covered=new Set(Object.keys(taskSignalWeights(ranked[0])))
+  while(selected.length<limit&&pool.length){
+    let bestIndex=0,bestScore=-Infinity
+    for(let i=0;i<pool.length;i++){
+      const c=pool[i],weights=taskSignalWeights(c);let uncoveredWeight=0
+      for(const [label,weight] of Object.entries(weights))if(!covered.has(label))uncoveredWeight+=Number(weight)||0
+      const complementBonus=Math.min(22,uncoveredWeight*4)
+      const maxSim=Math.max(...selected.map(s=>similarity(c,s))),sameSource=selected.some(s=>s.source===c.source)?1:0
+      const adjusted=c.match_score+complementBonus-maxSim*6-sameSource*.5
+      if(adjusted>bestScore){bestScore=adjusted;bestIndex=i}
+    }
+    const chosen=pool.splice(bestIndex,1)[0];selected.push(chosen);for(const label of Object.keys(taskSignalWeights(chosen)))covered.add(label)
+  }
   for(const c of ranked)if(selected.length<limit&&!selected.some(x=>x.id===c.id))selected.push(c)
   return selected.slice(0,limit)
 }
@@ -134,7 +149,7 @@ async function registryResult(){
   const loaded=await loadRegistry(),registry=loaded.skills,context=projectContext()
   if(cmd==='inspect'){const id=value.toLowerCase();const skill=registry.find(s=>String(s.id).toLowerCase()===id||String(s.name).toLowerCase()===id);if(!skill)throw new Error(`Skill not found or blocked by safety gate: ${value}`);return {source:'skillradar-registry',registry:loaded.meta,context,skill:{...skill,skillradar_score:skill.score||70}}}
   const ranked=registry.map(s=>scoreSkill(s,value,context)).filter(s=>cmd==='match'||s.match_score>24).sort((a,b)=>b.match_score-a.match_score||b.specialty_hits-a.specialty_hits||b.skillradar_score-a.skillradar_score)
-  if(cmd==='match'){const matches=diversify(ranked,3);return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1',strategy:'task-first field-weighted evidence + coverage + quality/security/freshness prior + bounded project-context bonus + diversity rerank'},matches,advisory:safetyAdvisory(matches)}}
+  if(cmd==='match'){const matches=diversify(ranked,3);return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1',strategy:'task-first field-weighted evidence + coverage + quality/security/freshness prior + bounded project-context bonus + complementary task-facet coverage rerank'},matches,advisory:safetyAdvisory(matches)}}
   return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1'},skills:ranked.slice(0,8)}
 }
 async function remote(){if(!base||offline)return null;if(cmd==='match'){const r=await fetch(`${base}/api/router`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({task:value,agent:'codex',limit:3})});if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}const endpoint=cmd==='inspect'?`/api/skill?id=${encodeURIComponent(value)}`:`/api/skills?q=${encodeURIComponent(value)}&limit=8`;const r=await fetch(base+endpoint);if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}
