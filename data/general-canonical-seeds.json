@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "googleworkspace/cli",
+    "hint": "automation-integrations",
+    "paths": [
+      "skills/gws-gmail/SKILL.md",
+      "skills/gws-calendar/SKILL.md"
+    ],
+    "reason": "Canonical upstream Google Workspace Skills for Gmail and Calendar. These seeds guarantee discovery only; normal content and script security scanning still applies."
+  }
+]
