@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "description": "Expanded SkillRadar routing evaluation. Contract cases preserve release-critical behavior; coverage cases measure broader ecosystem routing without pretending every open-domain task has a single canonical skill.",
+  "thresholds": {
+    "contractPassRate": 1.0,
+    "coveragePassRate": 0.85,
+    "unsafeTop3": 0,
+    "minAverageTop1Score": 55
+  },
+  "cases": [
+    {"id":"ai-dashboard","domain":"AI Agents","tier":"contract","task":"Build a Next.js React shadcn/ui AI dashboard with streaming, tool calling and App Router","expectedAnyIds":["ai-sdk","nextjs","shadcn"],"minExpectedHits":3,"requiredSignalTerms":["nextjs","app-router","shadcn","tool-calling"],"minSignalHits":4},
+    {"id":"ai-streaming","domain":"AI Agents","tier":"contract","task":"Implement AI streaming and tool calling with the Vercel AI SDK","expectedAnyIds":["ai-sdk"],"minExpectedHits":1,"requiredSignalTerms":["ai-sdk","tool-calling"],"minSignalHits":2},
+    {"id":"next-app-router","domain":"Frontend","tier":"contract","task":"Architect a modern Next.js App Router application with React Server Components and Route Handlers","expectedAnyIds":["nextjs"],"minExpectedHits":1,"requiredSignalTerms":["nextjs","app-router","server-components"],"minSignalHits":2},
+    {"id":"shadcn-system","domain":"Frontend","tier":"contract","task":"Create an accessible shadcn/ui design system for a responsive dashboard","expectedAnyIds":["shadcn"],"minExpectedHits":1,"requiredSignalTerms":["shadcn","design-system"],"minSignalHits":2},
+    {"id":"react-performance","domain":"Frontend","tier":"contract","task":"Review a React TypeScript app for component structure and performance problems","expectedAnyIds":["react-best-practices"],"minExpectedHits":1,"requiredSignalTerms":["react","typescript","performance"],"minSignalHits":2},
+    {"id":"frontend-polish","domain":"Frontend","tier":"contract","task":"Improve the visual quality and production polish of a React dashboard interface","expectedAnyIds":["frontend-design"],"minExpectedHits":1,"requiredSignalTerms":["react","dashboard"],"minSignalHits":1},
+    {"id":"zh-spatial-rendering","domain":"Design & Media","tier":"contract","task":"建筑可视化和室内空间渲染","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["architecture","interior","spatial","rendering"],"minSignalHits":3},
+    {"id":"supabase-rls","domain":"Data & Database","tier":"contract","task":"Design a Supabase Postgres schema with RLS security and query performance","expectedAnyIds":["supabase-postgres-best-practices"],"minExpectedHits":1,"requiredSignalTerms":["supabase","postgres","rls","security"],"minSignalHits":3},
+    {"id":"cloudflare-workers","domain":"DevOps & Cloud","tier":"contract","task":"Build and review a TypeScript Cloudflare Workers edge API","expectedAnyIds":["workers-best-practices"],"minExpectedHits":1,"requiredSignalTerms":["cloudflare","workers","typescript"],"minSignalHits":2},
+    {"id":"playwright-e2e","domain":"Testing & Quality","tier":"contract","task":"Create resilient Playwright end to end browser tests for a web application","expectedAnyIds":["playwright-testing"],"minExpectedHits":1,"requiredSignalTerms":["playwright","e2e","browser"],"minSignalHits":2},
+
+    {"id":"rag-embeddings","domain":"AI Agents","tier":"coverage","task":"Build a RAG assistant with embeddings and retrieval","expectedAnyIds":["ai-sdk"],"minExpectedHits":1,"requiredSignalTerms":["rag","embeddings"],"minSignalHits":1},
+    {"id":"mcp-agent-tools","domain":"AI Agents","tier":"coverage","task":"Create an MCP agent that can call tools and coordinate assistants","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["mcp","agent","tools"],"minSignalHits":2},
+    {"id":"structured-output","domain":"AI Agents","tier":"coverage","task":"Generate structured AI outputs with schema validation and streaming","expectedAnyIds":["ai-sdk"],"minExpectedHits":1,"requiredSignalTerms":["structured","streaming"],"minSignalHits":1},
+    {"id":"llm-agent-workflow","domain":"AI Agents","tier":"coverage","task":"Build an LLM agent workflow with tools and orchestration","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["agent","tools"],"minSignalHits":1},
+
+    {"id":"core-web-vitals","domain":"Frontend","tier":"coverage","task":"Audit LCP CLS network and Core Web Vitals performance","expectedAnyIds":["web-perf"],"minExpectedHits":1,"requiredSignalTerms":["lcp","cls","performance"],"minSignalHits":2},
+    {"id":"tailwind-radix-components","domain":"Frontend","tier":"coverage","task":"Build accessible Tailwind Radix UI components","expectedAnyIds":["shadcn"],"minExpectedHits":1,"requiredSignalTerms":["tailwind","radix","ui"],"minSignalHits":2},
+    {"id":"react-landing-polish","domain":"Frontend","tier":"coverage","task":"Design a polished production React web landing page","expectedAnyIds":["frontend-design"],"minExpectedHits":1,"requiredSignalTerms":["react","web"],"minSignalHits":1},
+    {"id":"next-data-fetching","domain":"Frontend","tier":"coverage","task":"Implement Next.js App Router data fetching and route architecture","expectedAnyIds":["nextjs"],"minExpectedHits":1,"requiredSignalTerms":["nextjs","app-router"],"minSignalHits":2},
+
+    {"id":"fastapi-rest","domain":"Backend & API","tier":"coverage","task":"Build a Python FastAPI REST backend API","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["python","fastapi","api"],"minSignalHits":2},
+    {"id":"node-api","domain":"Backend & API","tier":"coverage","task":"Build a Node server API with backend architecture","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["node","api","backend"],"minSignalHits":2},
+    {"id":"graphql-server","domain":"Backend & API","tier":"coverage","task":"Design a GraphQL server API backend","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["graphql","api","server"],"minSignalHits":2},
+    {"id":"root-cause-api-debug","domain":"Backend & API","tier":"coverage","task":"Use root-cause debugging and verification to diagnose a broken API regression","expectedAnyIds":["systematic-debugging"],"minExpectedHits":1,"requiredSignalTerms":["root-cause","debugging","verification"],"minSignalHits":2},
+
+    {"id":"postgres-schema","domain":"Data & Database","tier":"coverage","task":"Optimize a Postgres schema and database performance","expectedAnyIds":["supabase-postgres-best-practices"],"minExpectedHits":1,"requiredSignalTerms":["postgres","performance"],"minSignalHits":1},
+    {"id":"postgres-query","domain":"Data & Database","tier":"coverage","task":"Review slow Postgres queries and database indexes","expectedAnyIds":["supabase-postgres-best-practices"],"minExpectedHits":1,"requiredSignalTerms":["postgres","database"],"minSignalHits":1},
+    {"id":"redis-cache","domain":"Data & Database","tier":"coverage","task":"Design a Redis cache for backend data access","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["redis","data"],"minSignalHits":1},
+    {"id":"sqlite-pipeline","domain":"Data & Database","tier":"coverage","task":"Build a SQLite data pipeline and analytics workflow","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["sqlite","data","analytics"],"minSignalHits":2},
+
+    {"id":"tdd-feature","domain":"Testing & Quality","tier":"coverage","task":"Implement a feature with test driven development and regression prevention","expectedAnyIds":["test-driven-development"],"minExpectedHits":1,"requiredSignalTerms":["tdd","testing"],"minSignalHits":1},
+    {"id":"code-review-refactor","domain":"Testing & Quality","tier":"coverage","task":"Perform a code review for quality maintainability and refactor risk","expectedAnyIds":["code-review"],"minExpectedHits":1,"requiredSignalTerms":["code-review","quality","refactor"],"minSignalHits":2},
+    {"id":"vitest-unit","domain":"Testing & Quality","tier":"coverage","task":"Create Vitest unit and integration tests","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["vitest","testing","unit"],"minSignalHits":2},
+    {"id":"regression-debug","domain":"Testing & Quality","tier":"coverage","task":"Systematically debug a regression and verify the root cause before patching","expectedAnyIds":["systematic-debugging"],"minExpectedHits":1,"requiredSignalTerms":["debugging","root-cause","verification"],"minSignalHits":2},
+
+    {"id":"vercel-deployment","domain":"DevOps & Cloud","tier":"coverage","task":"Set up Vercel deployment CI and rollback workflows","expectedAnyIds":["deployments-cicd"],"minExpectedHits":1,"requiredSignalTerms":["vercel","deployment","ci"],"minSignalHits":2},
+    {"id":"docker-kubernetes","domain":"DevOps & Cloud","tier":"coverage","task":"Deploy a Docker service to Kubernetes cloud infrastructure","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["docker","kubernetes","deployment"],"minSignalHits":2},
+    {"id":"github-ci","domain":"DevOps & Cloud","tier":"coverage","task":"Investigate GitHub CI workflow failures in a repository","expectedAnyIds":["github"],"minExpectedHits":1,"requiredSignalTerms":["github","ci"],"minSignalHits":2},
+    {"id":"cloudflare-edge","domain":"DevOps & Cloud","tier":"coverage","task":"Review Cloudflare Workers edge deployment architecture","expectedAnyIds":["workers-best-practices"],"minExpectedHits":1,"requiredSignalTerms":["cloudflare","workers","edge"],"minSignalHits":2},
+
+    {"id":"oauth-oidc","domain":"Security","tier":"coverage","task":"Implement secure OAuth OIDC authentication and protected routes","expectedAnyIds":["auth"],"minExpectedHits":1,"requiredSignalTerms":["oauth","oidc","security"],"minSignalHits":2},
+    {"id":"supabase-security","domain":"Security","tier":"coverage","task":"Audit Supabase RLS security policies for Postgres","expectedAnyIds":["supabase-postgres-best-practices"],"minExpectedHits":1,"requiredSignalTerms":["supabase","rls","security"],"minSignalHits":2},
+    {"id":"vulnerability-review","domain":"Security","tier":"coverage","task":"Review an application for security vulnerabilities and secure coding risks","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["security","vulnerability"],"minSignalHits":1},
+    {"id":"secrets-permissions","domain":"Security","tier":"coverage","task":"Audit secrets permissions and authentication boundaries","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["secrets","permissions","auth"],"minSignalHits":1},
+
+    {"id":"react-native-expo","domain":"Mobile","tier":"coverage","task":"Build a React Native Expo mobile application","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["react-native","expo","mobile"],"minSignalHits":2},
+    {"id":"swiftui-ios","domain":"Mobile","tier":"coverage","task":"Build an iOS interface with SwiftUI mobile patterns","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["swiftui","ios","mobile"],"minSignalHits":2},
+    {"id":"android-kotlin","domain":"Mobile","tier":"coverage","task":"Build an Android Kotlin mobile application","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["android","kotlin","mobile"],"minSignalHits":2},
+    {"id":"flutter-mobile","domain":"Mobile","tier":"coverage","task":"Build a Flutter mobile interface","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["flutter","mobile"],"minSignalHits":1},
+
+    {"id":"github-pr-triage","domain":"Automation & Integrations","tier":"coverage","task":"Triage GitHub pull requests issues and CI automation","expectedAnyIds":["github"],"minExpectedHits":1,"requiredSignalTerms":["github","issues","ci"],"minSignalHits":2},
+    {"id":"slack-workflow","domain":"Automation & Integrations","tier":"coverage","task":"Automate a Slack workflow and integration","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["slack","workflow","integration"],"minSignalHits":2},
+    {"id":"gmail-calendar","domain":"Automation & Integrations","tier":"coverage","task":"Automate Gmail and calendar integration workflows","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["gmail","calendar","integration"],"minSignalHits":2},
+    {"id":"webhook-automation","domain":"Automation & Integrations","tier":"coverage","task":"Build webhook API automation and integrations","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["webhook","api","automation"],"minSignalHits":2},
+
+    {"id":"reverse-engineer-product","domain":"Docs & Research","tier":"coverage","task":"Reverse engineer a product information architecture and UX patterns","expectedAnyIds":["reverse-engineer"],"minExpectedHits":1,"requiredSignalTerms":["research","ux","reverse-engineering"],"minSignalHits":1},
+    {"id":"notion-research","domain":"Docs & Research","tier":"coverage","task":"Organize research notes project planning and knowledge in Notion","expectedAnyIds":["notion"],"minExpectedHits":1,"requiredSignalTerms":["notion","research","planning"],"minSignalHits":2},
+    {"id":"technical-docs","domain":"Docs & Research","tier":"coverage","task":"Write technical documentation for system architecture and planning","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["documentation","architecture","planning"],"minSignalHits":2},
+    {"id":"figma-design-system","domain":"Docs & Research","tier":"coverage","task":"Inspect a Figma design system and connect it to implementation","expectedAnyIds":["figma"],"minExpectedHits":1,"requiredSignalTerms":["figma","design-system"],"minSignalHits":2},
+
+    {"id":"zh-ux-research","domain":"Design & Media","tier":"coverage","task":"做一个用户体验研究和可用性分析方案","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["ux","research","usability"],"minSignalHits":2},
+    {"id":"zh-poster-brand","domain":"Design & Media","tier":"coverage","task":"设计品牌海报和视觉传播系统","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["poster","brand","visual"],"minSignalHits":2},
+    {"id":"zh-video-motion","domain":"Design & Media","tier":"coverage","task":"制作视频剪辑和动效设计","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["video","editing","motion"],"minSignalHits":2},
+    {"id":"zh-industrial-cad","domain":"Design & Media","tier":"coverage","task":"工业设计产品建模和CAD方案","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["industrial-design","product","cad"],"minSignalHits":2}
+  ]
+}
