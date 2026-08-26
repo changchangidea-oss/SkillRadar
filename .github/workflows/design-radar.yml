@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/update-design-radar.mjs'
+      - 'scripts/dedupe-design-radar.mjs'
       - 'scripts/update-general-radar.mjs'
       - 'scripts/update-general-radar-with-canonical-seeds.mjs'
       - 'scripts/validate-canonical-seeds.mjs'
@@ -62,6 +63,8 @@ jobs:
           cp scripts/update-design-radar.mjs scripts/runtime/update-design-radar.mjs
           node scripts/runtime/update-design-radar.mjs
           rm -rf scripts/runtime
+      - name: Normalize generated design Registry ids
+        run: node scripts/dedupe-design-radar.mjs
       - name: Validate canonical General Radar seeds
         run: npm run validate:canonical-seeds
       - name: Discover general Agent Skills Radar
