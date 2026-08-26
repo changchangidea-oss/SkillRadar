@@ -18,6 +18,8 @@ let state={schemaVersion:1,snapshots:[]}
 let r=evaluateHistory(state,snapshot('registry-01'),{required:3,limit:20})
 assert(r.status.decision==='accumulating-evidence','one snapshot must not promote')
 assert(r.status.uniqueRegistrySnapshots===1,'first snapshot count incorrect')
+assert(r.status.windowComplete===false,'one snapshot must report an incomplete window')
+assert(r.status.safetyPass===true&&r.status.contractNonRegression===true&&r.status.coverageNonRegression===true,'incomplete safe window must not be mislabeled as failed')
 state=r.history
 
 r=evaluateHistory(state,snapshot('registry-01','snapshot-win',2),{required:3,limit:20})
@@ -30,6 +32,7 @@ assert(r.status.uniqueRegistrySnapshots===2,'second distinct registry not counte
 state=r.history
 r=evaluateHistory(state,snapshot('registry-03'),{required:3,limit:20})
 assert(r.status.uniqueRegistrySnapshots===3,'third distinct registry not counted')
+assert(r.status.windowComplete===true,'three distinct snapshots must complete the window')
 assert(r.status.consecutiveWins===true,'three wins should be consecutive')
 assert(r.status.aggregateEvidenceDelta>=3,'aggregate improvement floor not met')
 assert(r.status.decision==='promotion-eligible','three distinct safe wins should become promotion eligible')
@@ -38,13 +41,19 @@ state={schemaVersion:1,snapshots:[snapshot('registry-11'),snapshot('registry-12'
 r=evaluateHistory(state,snapshot('registry-13'),{required:3,limit:20})
 assert(r.status.decision==='hold','mixed three-snapshot window must hold')
 
+state={schemaVersion:1,snapshots:[]}
+r=evaluateHistory(state,snapshot('registry-20','reject',1,{safetyPass:false}),{required:3,limit:20})
+assert(r.status.decision==='reject','an unsafe snapshot must reject immediately even before the history window is full')
+assert(r.status.windowComplete===false,'single unsafe snapshot should still report incomplete window')
+assert(r.status.safetyPass===false,'unsafe gate was not preserved')
+
 state={schemaVersion:1,snapshots:[snapshot('registry-21'),snapshot('registry-22')]}
 r=evaluateHistory(state,snapshot('registry-23','reject',1,{safetyPass:false}),{required:3,limit:20})
-assert(r.status.decision==='reject','unsafe latest window must reject')
-assert(r.status.safetyPass===false,'unsafe gate was not preserved')
+assert(r.status.decision==='reject','unsafe full window must reject')
+assert(r.status.safetyPass===false,'unsafe full-window gate was not preserved')
 
 state={schemaVersion:1,snapshots:[snapshot('registry-31','snapshot-win',0),snapshot('registry-32','snapshot-win',0)]}
 r=evaluateHistory(state,snapshot('registry-33','snapshot-win',0),{required:3,limit:20})
 assert(r.status.decision==='hold','zero-evidence wins must not promote')
 
-console.log('Shadow history validation passed: duplicate Registry snapshots do not count; one win cannot promote; 3 distinct safe wins are required; mixed/unsafe/zero-evidence windows cannot promote.')
+console.log('Shadow history validation passed: incomplete windows are not mislabeled as failed; duplicate Registry snapshots do not count; one win cannot promote; unsafe snapshots reject immediately; 3 distinct safe wins are required; mixed/zero-evidence windows cannot promote.')
