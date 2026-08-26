@@ -1,0 +1,3206 @@
+{
+  "generatedAt": "2026-08-26T03:05:59.847Z",
+  "evalVersion": 2,
+  "rankingVersion": "2.1",
+  "cases": 54,
+  "passed": 53,
+  "passRate": 0.981,
+  "contract": {
+    "cases": 10,
+    "passed": 10,
+    "passRate": 1
+  },
+  "coverage": {
+    "cases": 44,
+    "passed": 43,
+    "passRate": 0.977
+  },
+  "unsafeTop3": 0,
+  "lowEvidenceTop3": 1,
+  "capabilityGapCases": 22,
+  "averageRecommendationCount": 2.31,
+  "averageRelevantTop3": 2.3,
+  "averageTop1Score": 79.4,
+  "byDomain": {
+    "AI Agents": {
+      "cases": 6,
+      "passed": 6,
+      "lowEvidenceTop3": 0,
+      "capabilityGapCases": 2,
+      "passRate": 1,
+      "averageRecommendationCount": 2.5
+    },
+    "Frontend": {
+      "cases": 8,
+      "passed": 8,
+      "lowEvidenceTop3": 0,
+      "capabilityGapCases": 6,
+      "passRate": 1,
+      "averageRecommendationCount": 1.88
+    },
+    "Design & Media": {
+      "cases": 5,
+      "passed": 5,
+      "lowEvidenceTop3": 0,
+      "capabilityGapCases": 0,
+      "passRate": 1,
+      "averageRecommendationCount": 3
+    },
+    "Data & Database": {
+      "cases": 5,
+      "passed": 5,
+      "lowEvidenceTop3": 0,
+      "capabilityGapCases": 2,
+      "passRate": 1,
+      "averageRecommendationCount": 2.2
+    },
+    "DevOps & Cloud": {
+      "cases": 5,
+      "passed": 5,
+      "lowEvidenceTop3": 0,
+      "capabilityGapCases": 4,
+      "passRate": 1,
+      "averageRecommendationCount": 1.6
+    },
+    "Testing & Quality": {
+      "cases": 5,
+      "passed": 5,
+      "lowEvidenceTop3": 0,
+      "capabilityGapCases": 3,
+      "passRate": 1,
+      "averageRecommendationCount": 2
+    },
+    "Backend & API": {
+      "cases": 4,
+      "passed": 4,
+      "lowEvidenceTop3": 0,
+      "capabilityGapCases": 1,
+      "passRate": 1,
+      "averageRecommendationCount": 2.5
+    },
+    "Security": {
+      "cases": 4,
+      "passed": 4,
+      "lowEvidenceTop3": 1,
+      "capabilityGapCases": 2,
+      "passRate": 1,
+      "averageRecommendationCount": 2
+    },
+    "Mobile": {
+      "cases": 4,
+      "passed": 4,
+      "lowEvidenceTop3": 0,
+      "capabilityGapCases": 0,
+      "passRate": 1,
+      "averageRecommendationCount": 3
+    },
+    "Automation & Integrations": {
+      "cases": 4,
+      "passed": 3,
+      "lowEvidenceTop3": 0,
+      "capabilityGapCases": 0,
+      "passRate": 0.75,
+      "averageRecommendationCount": 3
+    },
+    "Docs & Research": {
+      "cases": 4,
+      "passed": 4,
+      "lowEvidenceTop3": 0,
+      "capabilityGapCases": 2,
+      "passRate": 1,
+      "averageRecommendationCount": 2.25
+    }
+  },
+  "results": [
+    {
+      "id": "ai-dashboard",
+      "domain": "AI Agents",
+      "tier": "contract",
+      "pass": true,
+      "top3": [
+        "nextjs",
+        "ai-sdk",
+        "shadcn"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 67,
+      "expected_hits": 3,
+      "signal_hits": 4,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "nextjs",
+          "score": 67,
+          "coverage": 0.41,
+          "expected": true,
+          "signals": [
+            "nextjs",
+            "app-router",
+            "react"
+          ]
+        },
+        {
+          "id": "ai-sdk",
+          "score": 61,
+          "coverage": 0.33,
+          "expected": true,
+          "signals": [
+            "tool-calling",
+            "ai",
+            "streaming"
+          ]
+        },
+        {
+          "id": "shadcn",
+          "score": 57,
+          "coverage": 0.26,
+          "expected": true,
+          "signals": [
+            "shadcn",
+            "dashboard"
+          ]
+        }
+      ],
+      "signals": [
+        "nextjs",
+        "app-router",
+        "react",
+        "tool-calling",
+        "ai",
+        "streaming",
+        "ai-sdk",
+        "shadcn",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "ai-streaming",
+      "domain": "AI Agents",
+      "tier": "contract",
+      "pass": true,
+      "top3": [
+        "ai-sdk"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 90,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "ai-sdk",
+          "score": 90,
+          "coverage": 0.85,
+          "expected": true,
+          "signals": [
+            "ai-sdk",
+            "tool-calling",
+            "streaming",
+            "vercel"
+          ]
+        }
+      ],
+      "signals": [
+        "ai-sdk",
+        "tool-calling",
+        "streaming",
+        "vercel"
+      ]
+    },
+    {
+      "id": "next-app-router",
+      "domain": "Frontend",
+      "tier": "contract",
+      "pass": true,
+      "top3": [
+        "nextjs"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 100,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "nextjs",
+          "score": 100,
+          "coverage": 1,
+          "expected": true,
+          "signals": [
+            "nextjs",
+            "app-router",
+            "server-components",
+            "architect",
+            "react",
+            "route",
+            "handlers"
+          ]
+        }
+      ],
+      "signals": [
+        "nextjs",
+        "app-router",
+        "server-components",
+        "architect",
+        "react",
+        "route",
+        "handlers"
+      ]
+    },
+    {
+      "id": "shadcn-system",
+      "domain": "Frontend",
+      "tier": "contract",
+      "pass": true,
+      "top3": [
+        "shadcn"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 89,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "shadcn",
+          "score": 89,
+          "coverage": 0.86,
+          "expected": true,
+          "signals": [
+            "shadcn",
+            "design-system",
+            "accessible",
+            "dashboard"
+          ]
+        }
+      ],
+      "signals": [
+        "shadcn",
+        "design-system",
+        "accessible",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "react-performance",
+      "domain": "Frontend",
+      "tier": "contract",
+      "pass": true,
+      "top3": [
+        "react-best-practices",
+        "alirezarezvani/claude-skills/senior-frontend-a7068f",
+        "langgenius/dify/how-to-write-component-43f895"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 83,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "react-best-practices",
+          "score": 83,
+          "coverage": 0.69,
+          "expected": true,
+          "signals": [
+            "review",
+            "react",
+            "typescript",
+            "component",
+            "performance"
+          ]
+        },
+        {
+          "id": "alirezarezvani/claude-skills/senior-frontend-a7068f",
+          "score": 76,
+          "coverage": 0.69,
+          "expected": false,
+          "signals": [
+            "review",
+            "react",
+            "typescript",
+            "component",
+            "performance"
+          ]
+        },
+        {
+          "id": "langgenius/dify/how-to-write-component-43f895",
+          "score": 71,
+          "coverage": 0.54,
+          "expected": false,
+          "signals": [
+            "review",
+            "react",
+            "typescript",
+            "component"
+          ]
+        }
+      ],
+      "signals": [
+        "review",
+        "react",
+        "typescript",
+        "component",
+        "performance",
+        "react-best-practices",
+        "alirezarezvani-claude-skills-senior-frontend-a7068f",
+        "senior-frontend",
+        "langgenius-dify-how-to-write-component-43f895",
+        "how-to-write-component"
+      ]
+    },
+    {
+      "id": "frontend-polish",
+      "domain": "Frontend",
+      "tier": "contract",
+      "pass": true,
+      "top3": [
+        "frontend-design",
+        "stephonGAO/milu/frontend-design-25832f"
+      ],
+      "recommendation_count": 2,
+      "capability_gap": true,
+      "top1_score": 87,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 2,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "frontend-design",
+          "score": 87,
+          "coverage": 0.78,
+          "expected": true,
+          "signals": [
+            "visual",
+            "production",
+            "polish",
+            "react",
+            "dashboard",
+            "interface"
+          ]
+        },
+        {
+          "id": "stephonGAO/milu/frontend-design-25832f",
+          "score": 77,
+          "coverage": 0.66,
+          "expected": false,
+          "signals": [
+            "quality",
+            "production",
+            "react",
+            "dashboard",
+            "interface"
+          ]
+        }
+      ],
+      "signals": [
+        "visual",
+        "production",
+        "polish",
+        "react",
+        "dashboard",
+        "interface",
+        "frontend-design",
+        "quality",
+        "stephongao-milu-frontend-design-25832f"
+      ]
+    },
+    {
+      "id": "zh-spatial-rendering",
+      "domain": "Design & Media",
+      "tier": "contract",
+      "pass": true,
+      "top3": [
+        "curiositech/some_claude_skills/interior-design-expert",
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 80,
+      "expected_hits": 0,
+      "signal_hits": 4,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "curiositech/some_claude_skills/interior-design-expert",
+          "score": 80,
+          "coverage": 0.75,
+          "expected": false,
+          "signals": [
+            "-architecture",
+            "-interior",
+            "-spatial"
+          ]
+        },
+        {
+          "id": "roble3/cc-blender-skill/blender-rendering",
+          "score": 79,
+          "coverage": 0.75,
+          "expected": false,
+          "signals": [
+            "-architecture",
+            "-rendering",
+            "-interior"
+          ]
+        },
+        {
+          "id": "calesthio/generative-media-skills/neural-reality-capture",
+          "score": 77,
+          "coverage": 0.75,
+          "expected": false,
+          "signals": [
+            "-architecture",
+            "-interior",
+            "-spatial"
+          ]
+        }
+      ],
+      "signals": [
+        "-architecture",
+        "-interior",
+        "-spatial",
+        "curiositech-some-claude-skills-interior-design-expert",
+        "interior-design-expert",
+        "-rendering",
+        "roble3-cc-blender-skill-blender-rendering",
+        "blender-rendering",
+        "calesthio-generative-media-skills-neural-reality-capture",
+        "neural-reality-capture"
+      ]
+    },
+    {
+      "id": "supabase-rls",
+      "domain": "Data & Database",
+      "tier": "contract",
+      "pass": true,
+      "top3": [
+        "supabase-postgres-best-practices"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 98,
+      "expected_hits": 1,
+      "signal_hits": 4,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "supabase-postgres-best-practices",
+          "score": 98,
+          "coverage": 1,
+          "expected": true,
+          "signals": [
+            "design",
+            "supabase",
+            "postgres",
+            "schema",
+            "rls",
+            "security",
+            "query",
+            "performance"
+          ]
+        }
+      ],
+      "signals": [
+        "design",
+        "supabase",
+        "postgres",
+        "schema",
+        "rls",
+        "security",
+        "query",
+        "performance",
+        "supabase-postgres-best-practices"
+      ]
+    },
+    {
+      "id": "cloudflare-workers",
+      "domain": "DevOps & Cloud",
+      "tier": "contract",
+      "pass": true,
+      "top3": [
+        "workers-best-practices"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 90,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "workers-best-practices",
+          "score": 90,
+          "coverage": 0.86,
+          "expected": true,
+          "signals": [
+            "cloudflare-workers",
+            "review",
+            "typescript",
+            "edge"
+          ]
+        }
+      ],
+      "signals": [
+        "cloudflare-workers",
+        "review",
+        "typescript",
+        "edge",
+        "workers-best-practices"
+      ]
+    },
+    {
+      "id": "playwright-e2e",
+      "domain": "Testing & Quality",
+      "tier": "contract",
+      "pass": true,
+      "top3": [
+        "playwright-testing",
+        "langgenius/dify/e2e-cucumber-playwright-1de203",
+        "voidmatcha/e2e-skills/skill-material-b6c108"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 90,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "playwright-testing",
+          "score": 90,
+          "coverage": 0.88,
+          "expected": true,
+          "signals": [
+            "end-to-end",
+            "resilient",
+            "playwright",
+            "browser",
+            "tests"
+          ]
+        },
+        {
+          "id": "langgenius/dify/e2e-cucumber-playwright-1de203",
+          "score": 81,
+          "coverage": 0.72,
+          "expected": false,
+          "signals": [
+            "end-to-end",
+            "playwright",
+            "browser",
+            "tests"
+          ]
+        },
+        {
+          "id": "voidmatcha/e2e-skills/skill-material-b6c108",
+          "score": 70,
+          "coverage": 0.6,
+          "expected": false,
+          "signals": [
+            "end-to-end",
+            "playwright",
+            "tests"
+          ]
+        }
+      ],
+      "signals": [
+        "end-to-end",
+        "resilient",
+        "playwright",
+        "browser",
+        "tests",
+        "playwright-testing",
+        "langgenius-dify-e2e-cucumber-playwright-1de203",
+        "e2e-cucumber-playwright",
+        "voidmatcha-e2e-skills-skill-material-b6c108",
+        "playwright-test-generator"
+      ]
+    },
+    {
+      "id": "rag-embeddings",
+      "domain": "AI Agents",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "ai-sdk",
+        "ruvnet/ruflo/vector-search-f41cc6",
+        "TalissonVitorino/kmp-ios-skills/verified-email-1b3dd8"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 57,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "ai-sdk",
+          "score": 57,
+          "coverage": 0.47,
+          "expected": true,
+          "signals": [
+            "rag",
+            "embeddings"
+          ]
+        },
+        {
+          "id": "ruvnet/ruflo/vector-search-f41cc6",
+          "score": 41,
+          "coverage": 0.27,
+          "expected": false,
+          "signals": [
+            "embeddings"
+          ]
+        },
+        {
+          "id": "TalissonVitorino/kmp-ios-skills/verified-email-1b3dd8",
+          "score": 33,
+          "coverage": 0.27,
+          "expected": false,
+          "signals": [
+            "retrieval"
+          ]
+        }
+      ],
+      "signals": [
+        "rag",
+        "embeddings",
+        "ai-sdk",
+        "ruvnet-ruflo-vector-search-f41cc6",
+        "vector-search",
+        "retrieval",
+        "talissonvitorino-kmp-ios-skills-verified-email-1b3dd8",
+        "verified-email"
+      ]
+    },
+    {
+      "id": "mcp-agent-tools",
+      "domain": "AI Agents",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
+        "affaan-m/ECC/mcp-server-patterns-980f90"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 55,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
+          "score": 55,
+          "coverage": 0.39,
+          "expected": false,
+          "signals": [
+            "mcp",
+            "agent",
+            "tools"
+          ]
+        },
+        {
+          "id": "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
+          "score": 55,
+          "coverage": 0.39,
+          "expected": false,
+          "signals": [
+            "mcp",
+            "agent",
+            "tools"
+          ]
+        },
+        {
+          "id": "affaan-m/ECC/mcp-server-patterns-980f90",
+          "score": 50,
+          "coverage": 0.39,
+          "expected": false,
+          "signals": [
+            "mcp",
+            "agent",
+            "tools"
+          ]
+        }
+      ],
+      "signals": [
+        "mcp",
+        "agent",
+        "tools",
+        "sickn33-agentic-awesome-skills-activecampaign-automation-d2e395",
+        "activecampaign-automation",
+        "opendigitalproductfactory-opendigitalproductfactory-dpf-record-decision-outcome-3a235e",
+        "dpf-record-decision-outcome",
+        "affaan-m-ecc-mcp-server-patterns-980f90",
+        "mcp-server-patterns"
+      ]
+    },
+    {
+      "id": "structured-output",
+      "domain": "AI Agents",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "ai-sdk",
+        "Francixco90/metodologia-frames-agent-os/design-shotgun"
+      ],
+      "recommendation_count": 2,
+      "capability_gap": true,
+      "top1_score": 74,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 2,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "ai-sdk",
+          "score": 74,
+          "coverage": 0.56,
+          "expected": true,
+          "signals": [
+            "structured",
+            "ai",
+            "outputs",
+            "streaming"
+          ]
+        },
+        {
+          "id": "Francixco90/metodologia-frames-agent-os/design-shotgun",
+          "score": 49,
+          "coverage": 0.44,
+          "expected": false,
+          "signals": [
+            "generate",
+            "structured",
+            "ai"
+          ]
+        }
+      ],
+      "signals": [
+        "structured",
+        "ai",
+        "outputs",
+        "streaming",
+        "ai-sdk",
+        "generate",
+        "francixco90-metodologia-frames-agent-os-design-shotgun",
+        "design-shotgun"
+      ]
+    },
+    {
+      "id": "llm-agent-workflow",
+      "domain": "AI Agents",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
+        "ai-sdk",
+        "code-yeongyu/oh-my-openagent/ulw-plan-7fbd14"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 68,
+      "expected_hits": 0,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
+          "score": 68,
+          "coverage": 0.64,
+          "expected": false,
+          "signals": [
+            "agent",
+            "workflow",
+            "orchestration"
+          ]
+        },
+        {
+          "id": "ai-sdk",
+          "score": 53,
+          "coverage": 0.36,
+          "expected": false,
+          "signals": [
+            "agent",
+            "tools"
+          ]
+        },
+        {
+          "id": "code-yeongyu/oh-my-openagent/ulw-plan-7fbd14",
+          "score": 54,
+          "coverage": 0.41,
+          "expected": false,
+          "signals": [
+            "agent",
+            "workflow"
+          ]
+        }
+      ],
+      "signals": [
+        "agent",
+        "workflow",
+        "orchestration",
+        "sickn33-agentic-awesome-skills-kubernetes-deployment-7095fa",
+        "kubernetes-deployment",
+        "tools",
+        "ai-sdk",
+        "code-yeongyu-oh-my-openagent-ulw-plan-7fbd14",
+        "ulw-plan"
+      ]
+    },
+    {
+      "id": "core-web-vitals",
+      "domain": "Frontend",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "web-perf"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 97,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "web-perf",
+          "score": 97,
+          "coverage": 1,
+          "expected": true,
+          "signals": [
+            "audit",
+            "lcp",
+            "cls",
+            "network",
+            "core",
+            "web",
+            "vitals",
+            "performance"
+          ]
+        }
+      ],
+      "signals": [
+        "audit",
+        "lcp",
+        "cls",
+        "network",
+        "core",
+        "web",
+        "vitals",
+        "performance",
+        "web-perf",
+        "web-performance"
+      ]
+    },
+    {
+      "id": "tailwind-radix-components",
+      "domain": "Frontend",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "shadcn",
+        "plugin87/full-stack-design-skills/inclusive-design-patterns-2ec4c0"
+      ],
+      "recommendation_count": 2,
+      "capability_gap": true,
+      "top1_score": 85,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 2,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "shadcn",
+          "score": 85,
+          "coverage": 0.78,
+          "expected": true,
+          "signals": [
+            "accessible",
+            "tailwind",
+            "radix",
+            "ui"
+          ]
+        },
+        {
+          "id": "plugin87/full-stack-design-skills/inclusive-design-patterns-2ec4c0",
+          "score": 62,
+          "coverage": 0.61,
+          "expected": false,
+          "signals": [
+            "accessible",
+            "ui",
+            "components"
+          ]
+        }
+      ],
+      "signals": [
+        "accessible",
+        "tailwind",
+        "radix",
+        "ui",
+        "shadcn",
+        "components",
+        "plugin87-full-stack-design-skills-inclusive-design-patterns-2ec4c0",
+        "inclusive-design-patterns"
+      ]
+    },
+    {
+      "id": "react-landing-polish",
+      "domain": "Frontend",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "frontend-design",
+        "stephonGAO/milu/frontend-design-25832f",
+        "plugin87/full-stack-design-skills/frontend-framework-guide-006d8f"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 92,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "frontend-design",
+          "score": 92,
+          "coverage": 0.87,
+          "expected": true,
+          "signals": [
+            "design",
+            "polished",
+            "production",
+            "react",
+            "web",
+            "landing"
+          ]
+        },
+        {
+          "id": "stephonGAO/milu/frontend-design-25832f",
+          "score": 79,
+          "coverage": 0.7,
+          "expected": false,
+          "signals": [
+            "design",
+            "production",
+            "react",
+            "web",
+            "landing"
+          ]
+        },
+        {
+          "id": "plugin87/full-stack-design-skills/frontend-framework-guide-006d8f",
+          "score": 65,
+          "coverage": 0.57,
+          "expected": false,
+          "signals": [
+            "design",
+            "production",
+            "react",
+            "web"
+          ]
+        }
+      ],
+      "signals": [
+        "design",
+        "polished",
+        "production",
+        "react",
+        "web",
+        "landing",
+        "frontend-design",
+        "stephongao-milu-frontend-design-25832f",
+        "plugin87-full-stack-design-skills-frontend-framework-guide-006d8f",
+        "frontend-framework-guide"
+      ]
+    },
+    {
+      "id": "next-data-fetching",
+      "domain": "Frontend",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "nextjs",
+        "affaan-m/ECC/backend-patterns-ac648c"
+      ],
+      "recommendation_count": 2,
+      "capability_gap": true,
+      "top1_score": 88,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 2,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "nextjs",
+          "score": 88,
+          "coverage": 0.79,
+          "expected": true,
+          "signals": [
+            "nextjs",
+            "app-router",
+            "fetching",
+            "route",
+            "architecture"
+          ]
+        },
+        {
+          "id": "affaan-m/ECC/backend-patterns-ac648c",
+          "score": 66,
+          "coverage": 0.53,
+          "expected": false,
+          "signals": [
+            "nextjs",
+            "data",
+            "route",
+            "architecture"
+          ]
+        }
+      ],
+      "signals": [
+        "nextjs",
+        "app-router",
+        "fetching",
+        "route",
+        "architecture",
+        "data",
+        "affaan-m-ecc-backend-patterns-ac648c",
+        "backend-patterns"
+      ]
+    },
+    {
+      "id": "fastapi-rest",
+      "domain": "Backend & API",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "langfuse/langfuse/backend-dev-guidelines-ac63b0",
+        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
+        "warpdotdev/warp/oz-platform-526ece"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 63,
+      "expected_hits": 0,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "langfuse/langfuse/backend-dev-guidelines-ac63b0",
+          "score": 63,
+          "coverage": 0.6,
+          "expected": false,
+          "signals": [
+            "rest",
+            "backend",
+            "api"
+          ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
+          "score": 60,
+          "coverage": 0.6,
+          "expected": false,
+          "signals": [
+            "rest",
+            "backend",
+            "api"
+          ]
+        },
+        {
+          "id": "warpdotdev/warp/oz-platform-526ece",
+          "score": 59,
+          "coverage": 0.6,
+          "expected": false,
+          "signals": [
+            "rest",
+            "backend",
+            "api"
+          ]
+        }
+      ],
+      "signals": [
+        "rest",
+        "backend",
+        "api",
+        "langfuse-langfuse-backend-dev-guidelines-ac63b0",
+        "backend-dev-guidelines",
+        "sickn33-agentic-awesome-skills-api-fuzzing-bug-bounty-3b1229",
+        "api-fuzzing-bug-bounty",
+        "warpdotdev-warp-oz-platform-526ece",
+        "oz-platform"
+      ]
+    },
+    {
+      "id": "node-api",
+      "domain": "Backend & API",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "affaan-m/ECC/backend-patterns-ac648c",
+        "affaan-m/ECC/mcp-server-patterns-980f90",
+        "kubesphere/kubesphere/kubesphere-core-406d5d"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 81,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "affaan-m/ECC/backend-patterns-ac648c",
+          "score": 81,
+          "coverage": 0.81,
+          "expected": false,
+          "signals": [
+            "server",
+            "api",
+            "backend",
+            "architecture"
+          ]
+        },
+        {
+          "id": "affaan-m/ECC/mcp-server-patterns-980f90",
+          "score": 61,
+          "coverage": 0.57,
+          "expected": false,
+          "signals": [
+            "node",
+            "server",
+            "backend"
+          ]
+        },
+        {
+          "id": "kubesphere/kubesphere/kubesphere-core-406d5d",
+          "score": 63,
+          "coverage": 0.62,
+          "expected": false,
+          "signals": [
+            "api",
+            "backend",
+            "architecture"
+          ]
+        }
+      ],
+      "signals": [
+        "server",
+        "api",
+        "backend",
+        "architecture",
+        "affaan-m-ecc-backend-patterns-ac648c",
+        "backend-patterns",
+        "node",
+        "affaan-m-ecc-mcp-server-patterns-980f90",
+        "mcp-server-patterns",
+        "kubesphere-kubesphere-kubesphere-core-406d5d",
+        "kubesphere-core"
+      ]
+    },
+    {
+      "id": "graphql-server",
+      "domain": "Backend & API",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "affaan-m/ECC/backend-patterns-ac648c",
+        "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
+        "dreamhunter2333/cloudflare_temp_email/cf-temp-mail-agent-mail-84e9cf"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 81,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "affaan-m/ECC/backend-patterns-ac648c",
+          "score": 81,
+          "coverage": 0.8,
+          "expected": false,
+          "signals": [
+            "design",
+            "server",
+            "api",
+            "backend"
+          ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
+          "score": 77,
+          "coverage": 0.8,
+          "expected": false,
+          "signals": [
+            "design",
+            "graphql",
+            "api",
+            "backend"
+          ]
+        },
+        {
+          "id": "dreamhunter2333/cloudflare_temp_email/cf-temp-mail-agent-mail-84e9cf",
+          "score": 61,
+          "coverage": 0.6,
+          "expected": false,
+          "signals": [
+            "server",
+            "api",
+            "backend"
+          ]
+        }
+      ],
+      "signals": [
+        "design",
+        "server",
+        "api",
+        "backend",
+        "affaan-m-ecc-backend-patterns-ac648c",
+        "backend-patterns",
+        "graphql",
+        "sickn33-agentic-awesome-skills-api-patterns-4d18ab",
+        "api-patterns",
+        "dreamhunter2333-cloudflare-temp-email-cf-temp-mail-agent-mail-84e9cf",
+        "cf-temp-mail-agent-mail"
+      ]
+    },
+    {
+      "id": "root-cause-api-debug",
+      "domain": "Backend & API",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "systematic-debugging"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 78,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "systematic-debugging",
+          "score": 78,
+          "coverage": 0.61,
+          "expected": true,
+          "signals": [
+            "root-cause",
+            "debugging",
+            "verification",
+            "regression"
+          ]
+        }
+      ],
+      "signals": [
+        "root-cause",
+        "debugging",
+        "verification",
+        "regression",
+        "systematic-debugging"
+      ]
+    },
+    {
+      "id": "postgres-schema",
+      "domain": "Data & Database",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "supabase-postgres-best-practices"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 86,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "supabase-postgres-best-practices",
+          "score": 86,
+          "coverage": 0.79,
+          "expected": true,
+          "signals": [
+            "postgres",
+            "schema",
+            "database",
+            "performance"
+          ]
+        }
+      ],
+      "signals": [
+        "postgres",
+        "schema",
+        "database",
+        "performance",
+        "supabase-postgres-best-practices"
+      ]
+    },
+    {
+      "id": "postgres-query",
+      "domain": "Data & Database",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "supabase-postgres-best-practices",
+        "langgenius/dify/backend-code-review-850842",
+        "TalissonVitorino/kmp-ios-skills/room-patterns-b1ea2c"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 58,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "supabase-postgres-best-practices",
+          "score": 58,
+          "coverage": 0.39,
+          "expected": true,
+          "signals": [
+            "postgres",
+            "database"
+          ]
+        },
+        {
+          "id": "langgenius/dify/backend-code-review-850842",
+          "score": 52,
+          "coverage": 0.35,
+          "expected": false,
+          "signals": [
+            "review",
+            "database"
+          ]
+        },
+        {
+          "id": "TalissonVitorino/kmp-ios-skills/room-patterns-b1ea2c",
+          "score": 49,
+          "coverage": 0.35,
+          "expected": false,
+          "signals": [
+            "queries",
+            "database"
+          ]
+        }
+      ],
+      "signals": [
+        "postgres",
+        "database",
+        "supabase-postgres-best-practices",
+        "review",
+        "langgenius-dify-backend-code-review-850842",
+        "backend-code-review",
+        "queries",
+        "talissonvitorino-kmp-ios-skills-room-patterns-b1ea2c",
+        "room-patterns"
+      ]
+    },
+    {
+      "id": "redis-cache",
+      "domain": "Data & Database",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "affaan-m/ECC/backend-patterns-ac648c",
+        "Francixco90/metodologia-frames-agent-os/design-taste-frontend",
+        "sickn33/agentic-awesome-skills/accesslint-diff-3ee889"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 69,
+      "expected_hits": 0,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "affaan-m/ECC/backend-patterns-ac648c",
+          "score": 69,
+          "coverage": 0.67,
+          "expected": false,
+          "signals": [
+            "design",
+            "backend",
+            "data",
+            "access"
+          ]
+        },
+        {
+          "id": "Francixco90/metodologia-frames-agent-os/design-taste-frontend",
+          "score": 57,
+          "coverage": 0.5,
+          "expected": false,
+          "signals": [
+            "design",
+            "redis",
+            "access"
+          ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/accesslint-diff-3ee889",
+          "score": 60,
+          "coverage": 0.5,
+          "expected": false,
+          "signals": [
+            "backend",
+            "data",
+            "access"
+          ]
+        }
+      ],
+      "signals": [
+        "design",
+        "backend",
+        "data",
+        "access",
+        "affaan-m-ecc-backend-patterns-ac648c",
+        "backend-patterns",
+        "redis",
+        "francixco90-metodologia-frames-agent-os-design-taste-frontend",
+        "design-taste-frontend",
+        "sickn33-agentic-awesome-skills-accesslint-diff-3ee889",
+        "accesslint-diff"
+      ]
+    },
+    {
+      "id": "sqlite-pipeline",
+      "domain": "Data & Database",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "sickn33/agentic-awesome-skills/advanced-evaluation-787f9c",
+        "artokun/comfyui-mcp/ltx-director-0ea0ef",
+        "TalissonVitorino/kmp-ios-skills/analytics-patterns-d35922"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 48,
+      "expected_hits": 0,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/advanced-evaluation-787f9c",
+          "score": 48,
+          "coverage": 0.39,
+          "expected": false,
+          "signals": [
+            "data",
+            "pipeline"
+          ]
+        },
+        {
+          "id": "artokun/comfyui-mcp/ltx-director-0ea0ef",
+          "score": 48,
+          "coverage": 0.39,
+          "expected": false,
+          "signals": [
+            "data",
+            "workflow"
+          ]
+        },
+        {
+          "id": "TalissonVitorino/kmp-ios-skills/analytics-patterns-d35922",
+          "score": 40,
+          "coverage": 0.22,
+          "expected": false,
+          "signals": [
+            "analytics"
+          ]
+        }
+      ],
+      "signals": [
+        "data",
+        "pipeline",
+        "sickn33-agentic-awesome-skills-advanced-evaluation-787f9c",
+        "advanced-evaluation",
+        "workflow",
+        "artokun-comfyui-mcp-ltx-director-0ea0ef",
+        "ltx-director",
+        "analytics",
+        "talissonvitorino-kmp-ios-skills-analytics-patterns-d35922",
+        "analytics-patterns"
+      ]
+    },
+    {
+      "id": "tdd-feature",
+      "domain": "Testing & Quality",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "test-driven-development"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 91,
+      "expected_hits": 1,
+      "signal_hits": 1,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "test-driven-development",
+          "score": 91,
+          "coverage": 0.86,
+          "expected": true,
+          "signals": [
+            "implement",
+            "feature",
+            "driven",
+            "regression",
+            "prevention"
+          ]
+        }
+      ],
+      "signals": [
+        "implement",
+        "feature",
+        "driven",
+        "regression",
+        "prevention",
+        "tdd"
+      ]
+    },
+    {
+      "id": "code-review-refactor",
+      "domain": "Testing & Quality",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "code-review",
+        "react-best-practices"
+      ],
+      "recommendation_count": 2,
+      "capability_gap": true,
+      "top1_score": 91,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 2,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "code-review",
+          "score": 91,
+          "coverage": 0.87,
+          "expected": true,
+          "signals": [
+            "perform",
+            "code",
+            "review",
+            "quality",
+            "maintainability",
+            "refactor"
+          ]
+        },
+        {
+          "id": "react-best-practices",
+          "score": 76,
+          "coverage": 0.57,
+          "expected": false,
+          "signals": [
+            "perform",
+            "code",
+            "review",
+            "refactor"
+          ]
+        }
+      ],
+      "signals": [
+        "perform",
+        "code",
+        "review",
+        "quality",
+        "maintainability",
+        "refactor",
+        "code-review",
+        "react-best-practices"
+      ]
+    },
+    {
+      "id": "vitest-unit",
+      "domain": "Testing & Quality",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "langgenius/dify/frontend-testing-c86f15",
+        "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
+        "langgenius/dify/e2e-cucumber-playwright-1de203"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 77,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "langgenius/dify/frontend-testing-c86f15",
+          "score": 77,
+          "coverage": 0.77,
+          "expected": false,
+          "signals": [
+            "vitest",
+            "integration",
+            "tests"
+          ]
+        },
+        {
+          "id": "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
+          "score": 72,
+          "coverage": 0.77,
+          "expected": false,
+          "signals": [
+            "unit",
+            "integration",
+            "tests"
+          ]
+        },
+        {
+          "id": "langgenius/dify/e2e-cucumber-playwright-1de203",
+          "score": 77,
+          "coverage": 0.77,
+          "expected": false,
+          "signals": [
+            "vitest",
+            "integration",
+            "tests"
+          ]
+        }
+      ],
+      "signals": [
+        "vitest",
+        "integration",
+        "tests",
+        "langgenius-dify-frontend-testing-c86f15",
+        "frontend-testing",
+        "unit",
+        "talissonvitorino-kmp-ios-skills-mobile-testing-70813f",
+        "mobile-testing",
+        "langgenius-dify-e2e-cucumber-playwright-1de203",
+        "e2e-cucumber-playwright"
+      ]
+    },
+    {
+      "id": "regression-debug",
+      "domain": "Testing & Quality",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "systematic-debugging"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 85,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "systematic-debugging",
+          "score": 85,
+          "coverage": 0.74,
+          "expected": true,
+          "signals": [
+            "debug",
+            "regression",
+            "root",
+            "cause",
+            "before",
+            "patching"
+          ]
+        }
+      ],
+      "signals": [
+        "debug",
+        "regression",
+        "root",
+        "cause",
+        "before",
+        "patching",
+        "systematic-debugging"
+      ]
+    },
+    {
+      "id": "vercel-deployment",
+      "domain": "DevOps & Cloud",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "deployments-cicd"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 81,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "deployments-cicd",
+          "score": 81,
+          "coverage": 0.75,
+          "expected": true,
+          "signals": [
+            "vercel",
+            "deployment",
+            "ci",
+            "rollback",
+            "workflows"
+          ]
+        }
+      ],
+      "signals": [
+        "vercel",
+        "deployment",
+        "ci",
+        "rollback",
+        "workflows",
+        "deployments-cicd",
+        "deployments-ci-cd"
+      ]
+    },
+    {
+      "id": "docker-kubernetes",
+      "domain": "DevOps & Cloud",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
+        "workers-best-practices",
+        "deployments-cicd"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 74,
+      "expected_hits": 0,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
+          "score": 74,
+          "coverage": 0.65,
+          "expected": false,
+          "signals": [
+            "deploy",
+            "service",
+            "kubernetes",
+            "cloud"
+          ]
+        },
+        {
+          "id": "workers-best-practices",
+          "score": 47,
+          "coverage": 0.3,
+          "expected": false,
+          "signals": [
+            "deploy",
+            "cloud"
+          ]
+        },
+        {
+          "id": "deployments-cicd",
+          "score": 47,
+          "coverage": 0.3,
+          "expected": false,
+          "signals": [
+            "deploy",
+            "cloud"
+          ]
+        }
+      ],
+      "signals": [
+        "deploy",
+        "service",
+        "kubernetes",
+        "cloud",
+        "sickn33-agentic-awesome-skills-kubernetes-deployment-7095fa",
+        "kubernetes-deployment",
+        "workers-best-practices",
+        "deployments-cicd",
+        "deployments-ci-cd"
+      ]
+    },
+    {
+      "id": "github-ci",
+      "domain": "DevOps & Cloud",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "github",
+        "deployments-cicd"
+      ],
+      "recommendation_count": 2,
+      "capability_gap": true,
+      "top1_score": 78,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 2,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "github",
+          "score": 78,
+          "coverage": 0.64,
+          "expected": true,
+          "signals": [
+            "github",
+            "ci",
+            "workflow",
+            "repository"
+          ]
+        },
+        {
+          "id": "deployments-cicd",
+          "score": 66,
+          "coverage": 0.5,
+          "expected": false,
+          "signals": [
+            "ci",
+            "workflow",
+            "failures"
+          ]
+        }
+      ],
+      "signals": [
+        "github",
+        "ci",
+        "workflow",
+        "repository",
+        "failures",
+        "deployments-cicd",
+        "deployments-ci-cd"
+      ]
+    },
+    {
+      "id": "cloudflare-edge",
+      "domain": "DevOps & Cloud",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "workers-best-practices"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 88,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "workers-best-practices",
+          "score": 88,
+          "coverage": 0.82,
+          "expected": true,
+          "signals": [
+            "cloudflare-workers",
+            "review",
+            "edge",
+            "deployment"
+          ]
+        }
+      ],
+      "signals": [
+        "cloudflare-workers",
+        "review",
+        "edge",
+        "deployment",
+        "workers-best-practices"
+      ]
+    },
+    {
+      "id": "oauth-oidc",
+      "domain": "Security",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "auth"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 88,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "auth",
+          "score": 88,
+          "coverage": 0.87,
+          "expected": true,
+          "signals": [
+            "implement",
+            "oauth",
+            "oidc",
+            "authentication",
+            "protected",
+            "routes"
+          ]
+        }
+      ],
+      "signals": [
+        "implement",
+        "oauth",
+        "oidc",
+        "authentication",
+        "protected",
+        "routes",
+        "auth"
+      ]
+    },
+    {
+      "id": "supabase-security",
+      "domain": "Security",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "supabase-postgres-best-practices"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 88,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "supabase-postgres-best-practices",
+          "score": 88,
+          "coverage": 0.82,
+          "expected": true,
+          "signals": [
+            "audit",
+            "supabase",
+            "rls",
+            "security",
+            "postgres"
+          ]
+        }
+      ],
+      "signals": [
+        "audit",
+        "supabase",
+        "rls",
+        "security",
+        "postgres",
+        "supabase-postgres-best-practices"
+      ]
+    },
+    {
+      "id": "vulnerability-review",
+      "domain": "Security",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "sickn33/agentic-awesome-skills/acceptance-orchestrator-7f1527",
+        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
+        "code-review"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 59,
+      "expected_hits": 0,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/acceptance-orchestrator-7f1527",
+          "score": 59,
+          "coverage": 0.5,
+          "expected": false,
+          "signals": [
+            "review",
+            "security",
+            "coding"
+          ]
+        },
+        {
+          "id": "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
+          "score": 51,
+          "coverage": 0.39,
+          "expected": false,
+          "signals": [
+            "security",
+            "vulnerabilities"
+          ]
+        },
+        {
+          "id": "code-review",
+          "score": 50,
+          "coverage": 0.3,
+          "expected": false,
+          "signals": [
+            "review",
+            "coding"
+          ]
+        }
+      ],
+      "signals": [
+        "review",
+        "security",
+        "coding",
+        "sickn33-agentic-awesome-skills-acceptance-orchestrator-7f1527",
+        "acceptance-orchestrator",
+        "vulnerabilities",
+        "mukul975-anthropic-cybersecurity-skills-building-vulnerability-exception-tracking-system-29c77d",
+        "building-vulnerability-exception-tracking-system",
+        "code-review"
+      ]
+    },
+    {
+      "id": "secrets-permissions",
+      "domain": "Security",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "auth",
+        "pbakaus/impeccable/audit",
+        "langgenius/dify/how-to-write-component-43f895"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 40,
+      "expected_hits": 0,
+      "signal_hits": 1,
+      "relevant_top3": 2,
+      "low_evidence_top3": 1,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "auth",
+          "score": 40,
+          "coverage": 0.22,
+          "expected": false,
+          "signals": [
+            "authentication"
+          ]
+        },
+        {
+          "id": "pbakaus/impeccable/audit",
+          "score": 38,
+          "coverage": 0.17,
+          "expected": false,
+          "signals": [
+            "audit"
+          ]
+        },
+        {
+          "id": "langgenius/dify/how-to-write-component-43f895",
+          "score": 35,
+          "coverage": 0.22,
+          "expected": false,
+          "signals": [
+            "boundaries"
+          ]
+        }
+      ],
+      "signals": [
+        "authentication",
+        "auth",
+        "audit",
+        "pbakaus-impeccable-audit",
+        "boundaries",
+        "langgenius-dify-how-to-write-component-43f895",
+        "how-to-write-component"
+      ]
+    },
+    {
+      "id": "react-native-expo",
+      "domain": "Mobile",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "curiositech/some_claude_skills/native-app-designer",
+        "expo/expo/expo-review-4e5e61",
+        "sickn33/agentic-awesome-skills/3d-web-experience-4d9a38"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 56,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "curiositech/some_claude_skills/native-app-designer",
+          "score": 56,
+          "coverage": 0.5,
+          "expected": false,
+          "signals": [
+            "native",
+            "mobile"
+          ]
+        },
+        {
+          "id": "expo/expo/expo-review-4e5e61",
+          "score": 53,
+          "coverage": 0.5,
+          "expected": false,
+          "signals": [
+            "expo",
+            "mobile"
+          ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/3d-web-experience-4d9a38",
+          "score": 52,
+          "coverage": 0.5,
+          "expected": false,
+          "signals": [
+            "react",
+            "mobile"
+          ]
+        }
+      ],
+      "signals": [
+        "native",
+        "mobile",
+        "curiositech-some-claude-skills-native-app-designer",
+        "native-app-designer",
+        "expo",
+        "expo-expo-expo-review-4e5e61",
+        "expo-review",
+        "react",
+        "sickn33-agentic-awesome-skills-3d-web-experience-4d9a38",
+        "3d-web-experience"
+      ]
+    },
+    {
+      "id": "swiftui-ios",
+      "domain": "Mobile",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
+        "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70",
+        "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 71,
+      "expected_hits": 0,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
+          "score": 71,
+          "coverage": 0.64,
+          "expected": false,
+          "signals": [
+            "interface",
+            "mobile",
+            "patterns"
+          ]
+        },
+        {
+          "id": "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70",
+          "score": 70,
+          "coverage": 0.59,
+          "expected": false,
+          "signals": [
+            "ios",
+            "mobile",
+            "patterns"
+          ]
+        },
+        {
+          "id": "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58",
+          "score": 69,
+          "coverage": 0.59,
+          "expected": false,
+          "signals": [
+            "ios",
+            "mobile",
+            "patterns"
+          ]
+        }
+      ],
+      "signals": [
+        "interface",
+        "mobile",
+        "patterns",
+        "sleekdotdesign-agent-skills-sleek-design-mobile-apps",
+        "sleek-design-mobile-apps",
+        "ios",
+        "talissonvitorino-kmp-ios-skills-accessibility-patterns-14fe70",
+        "accessibility-patterns",
+        "talissonvitorino-kmp-ios-skills-coroutines-patterns-ed3a58",
+        "coroutines-patterns"
+      ]
+    },
+    {
+      "id": "android-kotlin",
+      "domain": "Mobile",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "TalissonVitorino/kmp-ios-skills/android-patterns-5144e0",
+        "TalissonVitorino/kmp-ios-skills/koin-patterns-60d06c",
+        "TalissonVitorino/kmp-ios-skills/ktor-patterns-ae7698"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 91,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "TalissonVitorino/kmp-ios-skills/android-patterns-5144e0",
+          "score": 91,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "android",
+            "kotlin",
+            "mobile"
+          ]
+        },
+        {
+          "id": "TalissonVitorino/kmp-ios-skills/koin-patterns-60d06c",
+          "score": 90,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "android",
+            "kotlin",
+            "mobile"
+          ]
+        },
+        {
+          "id": "TalissonVitorino/kmp-ios-skills/ktor-patterns-ae7698",
+          "score": 85,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "android",
+            "kotlin",
+            "mobile"
+          ]
+        }
+      ],
+      "signals": [
+        "android",
+        "kotlin",
+        "mobile",
+        "talissonvitorino-kmp-ios-skills-android-patterns-5144e0",
+        "android-patterns",
+        "talissonvitorino-kmp-ios-skills-koin-patterns-60d06c",
+        "koin-patterns",
+        "talissonvitorino-kmp-ios-skills-ktor-patterns-ae7698",
+        "ktor-patterns"
+      ]
+    },
+    {
+      "id": "flutter-mobile",
+      "domain": "Mobile",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
+        "plugin87/full-stack-design-skills/responsive-universal-design-105379",
+        "frontend-design"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 70,
+      "expected_hits": 0,
+      "signal_hits": 1,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
+          "score": 70,
+          "coverage": 0.7,
+          "expected": false,
+          "signals": [
+            "mobile",
+            "interface"
+          ]
+        },
+        {
+          "id": "plugin87/full-stack-design-skills/responsive-universal-design-105379",
+          "score": 66,
+          "coverage": 0.7,
+          "expected": false,
+          "signals": [
+            "mobile",
+            "interface"
+          ]
+        },
+        {
+          "id": "frontend-design",
+          "score": 48,
+          "coverage": 0.39,
+          "expected": false,
+          "signals": [
+            "interface"
+          ]
+        }
+      ],
+      "signals": [
+        "mobile",
+        "interface",
+        "sleekdotdesign-agent-skills-sleek-design-mobile-apps",
+        "sleek-design-mobile-apps",
+        "plugin87-full-stack-design-skills-responsive-universal-design-105379",
+        "responsive-universal-design",
+        "frontend-design"
+      ]
+    },
+    {
+      "id": "github-pr-triage",
+      "domain": "Automation & Integrations",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "github",
+        "voidmatcha/e2e-skills/e2e-reviewer-50810f",
+        "code-yeongyu/oh-my-openagent/github-triage-2ea94d"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 81,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "github",
+          "score": 81,
+          "coverage": 0.7,
+          "expected": true,
+          "signals": [
+            "triage",
+            "github",
+            "issues",
+            "ci",
+            "automation"
+          ]
+        },
+        {
+          "id": "voidmatcha/e2e-skills/e2e-reviewer-50810f",
+          "score": 66,
+          "coverage": 0.61,
+          "expected": false,
+          "signals": [
+            "pull",
+            "requests",
+            "ci",
+            "automation"
+          ]
+        },
+        {
+          "id": "code-yeongyu/oh-my-openagent/github-triage-2ea94d",
+          "score": 57,
+          "coverage": 0.39,
+          "expected": false,
+          "signals": [
+            "triage",
+            "github",
+            "issues"
+          ]
+        }
+      ],
+      "signals": [
+        "triage",
+        "github",
+        "issues",
+        "ci",
+        "automation",
+        "pull",
+        "requests",
+        "voidmatcha-e2e-skills-e2e-reviewer-50810f",
+        "e2e-reviewer",
+        "code-yeongyu-oh-my-openagent-github-triage-2ea94d",
+        "github-triage"
+      ]
+    },
+    {
+      "id": "slack-workflow",
+      "domain": "Automation & Integrations",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "plugin87/full-stack-design-skills/design-to-code-workflow-ff9644",
+        "artokun/comfyui-mcp/ltx-director-0ea0ef",
+        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 76,
+      "expected_hits": 0,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "plugin87/full-stack-design-skills/design-to-code-workflow-ff9644",
+          "score": 76,
+          "coverage": 0.8,
+          "expected": false,
+          "signals": [
+            "automate",
+            "workflow",
+            "integration"
+          ]
+        },
+        {
+          "id": "artokun/comfyui-mcp/ltx-director-0ea0ef",
+          "score": 59,
+          "coverage": 0.53,
+          "expected": false,
+          "signals": [
+            "workflow",
+            "integration"
+          ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
+          "score": 56,
+          "coverage": 0.53,
+          "expected": false,
+          "signals": [
+            "automate",
+            "integration"
+          ]
+        }
+      ],
+      "signals": [
+        "automate",
+        "workflow",
+        "integration",
+        "plugin87-full-stack-design-skills-design-to-code-workflow-ff9644",
+        "design-to-code-workflow",
+        "artokun-comfyui-mcp-ltx-director-0ea0ef",
+        "ltx-director",
+        "sickn33-agentic-awesome-skills-activecampaign-automation-d2e395",
+        "activecampaign-automation"
+      ]
+    },
+    {
+      "id": "gmail-calendar",
+      "domain": "Automation & Integrations",
+      "tier": "coverage",
+      "pass": false,
+      "top3": [
+        "plugin87/full-stack-design-skills/design-to-code-workflow-ff9644",
+        "artokun/comfyui-mcp/flux-txt2img-a6c76e",
+        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 62,
+      "expected_hits": 0,
+      "signal_hits": 1,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "plugin87/full-stack-design-skills/design-to-code-workflow-ff9644",
+          "score": 62,
+          "coverage": 0.63,
+          "expected": false,
+          "signals": [
+            "automate",
+            "integration",
+            "workflows"
+          ]
+        },
+        {
+          "id": "artokun/comfyui-mcp/flux-txt2img-a6c76e",
+          "score": 52,
+          "coverage": 0.42,
+          "expected": false,
+          "signals": [
+            "integration",
+            "workflows"
+          ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
+          "score": 50,
+          "coverage": 0.42,
+          "expected": false,
+          "signals": [
+            "automate",
+            "integration"
+          ]
+        }
+      ],
+      "signals": [
+        "automate",
+        "integration",
+        "workflows",
+        "plugin87-full-stack-design-skills-design-to-code-workflow-ff9644",
+        "design-to-code-workflow",
+        "artokun-comfyui-mcp-flux-txt2img-a6c76e",
+        "flux-txt2img",
+        "sickn33-agentic-awesome-skills-activecampaign-automation-d2e395",
+        "activecampaign-automation"
+      ]
+    },
+    {
+      "id": "webhook-automation",
+      "domain": "Automation & Integrations",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18",
+        "artokun/comfyui-mcp/krea2-identity-edit-b3cf0d",
+        "langfuse/langfuse/backend-dev-guidelines-ac63b0"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 95,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18",
+          "score": 95,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "webhook",
+            "api",
+            "automation",
+            "integrations"
+          ]
+        },
+        {
+          "id": "artokun/comfyui-mcp/krea2-identity-edit-b3cf0d",
+          "score": 77,
+          "coverage": 0.78,
+          "expected": false,
+          "signals": [
+            "api",
+            "automation",
+            "integrations"
+          ]
+        },
+        {
+          "id": "langfuse/langfuse/backend-dev-guidelines-ac63b0",
+          "score": 74,
+          "coverage": 0.78,
+          "expected": false,
+          "signals": [
+            "api",
+            "automation",
+            "integrations"
+          ]
+        }
+      ],
+      "signals": [
+        "webhook",
+        "api",
+        "automation",
+        "integrations",
+        "sickn33-agentic-awesome-skills-hugging-face-trackio-2d1b18",
+        "hugging-face-trackio",
+        "artokun-comfyui-mcp-krea2-identity-edit-b3cf0d",
+        "krea2-identity-edit",
+        "langfuse-langfuse-backend-dev-guidelines-ac63b0",
+        "backend-dev-guidelines"
+      ]
+    },
+    {
+      "id": "reverse-engineer-product",
+      "domain": "Docs & Research",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "reverse-engineer"
+      ],
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 99,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 1,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "reverse-engineer",
+          "score": 99,
+          "coverage": 1,
+          "expected": true,
+          "signals": [
+            "reverse",
+            "engineer",
+            "product",
+            "information",
+            "architecture",
+            "ux",
+            "patterns"
+          ]
+        }
+      ],
+      "signals": [
+        "reverse",
+        "engineer",
+        "product",
+        "information",
+        "architecture",
+        "ux",
+        "patterns",
+        "reverse-engineer"
+      ]
+    },
+    {
+      "id": "notion-research",
+      "domain": "Docs & Research",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "notion",
+        "this-rs/project-orchestrator/project-orchestrator-0e95f5"
+      ],
+      "recommendation_count": 2,
+      "capability_gap": true,
+      "top1_score": 86,
+      "expected_hits": 1,
+      "signal_hits": 3,
+      "relevant_top3": 2,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "notion",
+          "score": 86,
+          "coverage": 0.84,
+          "expected": true,
+          "signals": [
+            "research",
+            "notes",
+            "project",
+            "planning",
+            "knowledge",
+            "notion"
+          ]
+        },
+        {
+          "id": "this-rs/project-orchestrator/project-orchestrator-0e95f5",
+          "score": 60,
+          "coverage": 0.44,
+          "expected": false,
+          "signals": [
+            "research",
+            "project",
+            "knowledge"
+          ]
+        }
+      ],
+      "signals": [
+        "research",
+        "notes",
+        "project",
+        "planning",
+        "knowledge",
+        "notion",
+        "this-rs-project-orchestrator-project-orchestrator-0e95f5",
+        "project-orchestrator"
+      ]
+    },
+    {
+      "id": "technical-docs",
+      "domain": "Docs & Research",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-sysml-architecture-substrate-c8b895",
+        "angular/angular/adev-writing-guide-0332ed",
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-architecture-review-5072cc"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 67,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "OpenDigitalProductFactory/opendigitalproductfactory/dpf-sysml-architecture-substrate-c8b895",
+          "score": 67,
+          "coverage": 0.5,
+          "expected": false,
+          "signals": [
+            "system",
+            "architecture",
+            "planning"
+          ]
+        },
+        {
+          "id": "angular/angular/adev-writing-guide-0332ed",
+          "score": 47,
+          "coverage": 0.36,
+          "expected": false,
+          "signals": [
+            "technical",
+            "documentation"
+          ]
+        },
+        {
+          "id": "OpenDigitalProductFactory/opendigitalproductfactory/dpf-architecture-review-5072cc",
+          "score": 56,
+          "coverage": 0.36,
+          "expected": false,
+          "signals": [
+            "architecture",
+            "planning"
+          ]
+        }
+      ],
+      "signals": [
+        "system",
+        "architecture",
+        "planning",
+        "opendigitalproductfactory-opendigitalproductfactory-dpf-sysml-architecture-substrate-c8b895",
+        "dpf-sysml-architecture-substrate",
+        "technical",
+        "documentation",
+        "angular-angular-adev-writing-guide-0332ed",
+        "adev-writing-guide",
+        "opendigitalproductfactory-opendigitalproductfactory-dpf-architecture-review-5072cc",
+        "dpf-architecture-review"
+      ]
+    },
+    {
+      "id": "figma-design-system",
+      "domain": "Docs & Research",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "figma",
+        "figma/mcp-server-guide/figma-design-to-code",
+        "Francixco90/metodologia-frames-agent-os/design-paint"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 88,
+      "expected_hits": 1,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "figma",
+          "score": 88,
+          "coverage": 0.87,
+          "expected": true,
+          "signals": [
+            "design-system",
+            "inspect",
+            "figma",
+            "connect",
+            "implementation"
+          ]
+        },
+        {
+          "id": "figma/mcp-server-guide/figma-design-to-code",
+          "score": 69,
+          "coverage": 0.58,
+          "expected": false,
+          "signals": [
+            "design-system",
+            "figma",
+            "it"
+          ]
+        },
+        {
+          "id": "Francixco90/metodologia-frames-agent-os/design-paint",
+          "score": 64,
+          "coverage": 0.62,
+          "expected": false,
+          "signals": [
+            "design-system",
+            "it",
+            "implementation"
+          ]
+        }
+      ],
+      "signals": [
+        "design-system",
+        "inspect",
+        "figma",
+        "connect",
+        "implementation",
+        "it",
+        "figma-mcp-server-guide-figma-design-to-code",
+        "figma-design-to-code",
+        "francixco90-metodologia-frames-agent-os-design-paint",
+        "design-paint"
+      ]
+    },
+    {
+      "id": "zh-ux-research",
+      "domain": "Design & Media",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "borghei/claude-skills/product-designer",
+        "curiositech/some_claude_skills/ux-friction-analyzer",
+        "reverse-engineer"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 95,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "borghei/claude-skills/product-designer",
+          "score": 95,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "-ux",
+            "-research",
+            "-usability"
+          ]
+        },
+        {
+          "id": "curiositech/some_claude_skills/ux-friction-analyzer",
+          "score": 92,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "-ux",
+            "-research",
+            "-usability"
+          ]
+        },
+        {
+          "id": "reverse-engineer",
+          "score": 80,
+          "coverage": 0.67,
+          "expected": false,
+          "signals": [
+            "-ux",
+            "-research"
+          ]
+        }
+      ],
+      "signals": [
+        "-ux",
+        "-research",
+        "-usability",
+        "borghei-claude-skills-product-designer",
+        "product-designer",
+        "curiositech-some-claude-skills-ux-friction-analyzer",
+        "ux-friction-analyzer",
+        "reverse-engineer"
+      ]
+    },
+    {
+      "id": "zh-poster-brand",
+      "domain": "Design & Media",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "Francixco90/metodologia-frames-agent-os/motion-graphics",
+        "Francixco90/metodologia-frames-agent-os/banner-design",
+        "pbakaus/impeccable/bolder"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 75,
+      "expected_hits": 0,
+      "signal_hits": 2,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "Francixco90/metodologia-frames-agent-os/motion-graphics",
+          "score": 75,
+          "coverage": 0.71,
+          "expected": false,
+          "signals": [
+            "-visual",
+            "-graphic",
+            "-typography",
+            "-layout",
+            "-brand"
+          ]
+        },
+        {
+          "id": "Francixco90/metodologia-frames-agent-os/banner-design",
+          "score": 70,
+          "coverage": 0.57,
+          "expected": false,
+          "signals": [
+            "-visual",
+            "-typography",
+            "-brand",
+            "-campaign"
+          ]
+        },
+        {
+          "id": "pbakaus/impeccable/bolder",
+          "score": 74,
+          "coverage": 0.57,
+          "expected": false,
+          "signals": [
+            "-visual",
+            "-typography",
+            "-layout",
+            "-brand"
+          ]
+        }
+      ],
+      "signals": [
+        "-visual",
+        "-graphic",
+        "-typography",
+        "-layout",
+        "-brand",
+        "francixco90-metodologia-frames-agent-os-motion-graphics",
+        "motion-graphics",
+        "-campaign",
+        "francixco90-metodologia-frames-agent-os-banner-design",
+        "banner-design",
+        "pbakaus-impeccable-bolder",
+        "bolder"
+      ]
+    },
+    {
+      "id": "zh-video-motion",
+      "domain": "Design & Media",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "Francixco90/metodologia-frames-agent-os/remotion-markup",
+        "remotion-dev/skills/remotion-best-practices",
+        "remotion-dev/skills/remotion-multimedia"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 90,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "Francixco90/metodologia-frames-agent-os/remotion-markup",
+          "score": 90,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "-video",
+            "-motion",
+            "-editing",
+            "-animation"
+          ]
+        },
+        {
+          "id": "remotion-dev/skills/remotion-best-practices",
+          "score": 85,
+          "coverage": 0.75,
+          "expected": false,
+          "signals": [
+            "-video",
+            "-motion",
+            "-editing"
+          ]
+        },
+        {
+          "id": "remotion-dev/skills/remotion-multimedia",
+          "score": 83,
+          "coverage": 0.75,
+          "expected": false,
+          "signals": [
+            "-video",
+            "-motion",
+            "-editing"
+          ]
+        }
+      ],
+      "signals": [
+        "-video",
+        "-motion",
+        "-editing",
+        "-animation",
+        "francixco90-metodologia-frames-agent-os-remotion-markup",
+        "remotion-markup",
+        "remotion-dev-skills-remotion-best-practices",
+        "remotion-best-practices",
+        "remotion-dev-skills-remotion-multimedia",
+        "remotion-multimedia"
+      ]
+    },
+    {
+      "id": "zh-industrial-cad",
+      "domain": "Design & Media",
+      "tier": "coverage",
+      "pass": true,
+      "top3": [
+        "cogni-work/insight-wave/products-v0",
+        "Francixco90/metodologia-frames-agent-os/stitch-remotion-walkthrough",
+        "Francixco90/metodologia-frames-agent-os/remotion-video-production"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 94,
+      "expected_hits": 0,
+      "signal_hits": 3,
+      "relevant_top3": 3,
+      "low_evidence_top3": 0,
+      "unsafe_top3": 0,
+      "candidates": [
+        {
+          "id": "cogni-work/insight-wave/products-v0",
+          "score": 94,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "cad",
+            "-industrial-design",
+            "-industrial",
+            "-product",
+            "-cad"
+          ]
+        },
+        {
+          "id": "Francixco90/metodologia-frames-agent-os/stitch-remotion-walkthrough",
+          "score": 92,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "cad",
+            "-industrial-design",
+            "-industrial",
+            "-product",
+            "-cad"
+          ]
+        },
+        {
+          "id": "Francixco90/metodologia-frames-agent-os/remotion-video-production",
+          "score": 90,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "cad",
+            "-industrial-design",
+            "-industrial",
+            "-product",
+            "-cad"
+          ]
+        }
+      ],
+      "signals": [
+        "cad",
+        "-industrial-design",
+        "-industrial",
+        "-product",
+        "-cad",
+        "cogni-work-insight-wave-products-v0",
+        "products",
+        "francixco90-metodologia-frames-agent-os-stitch-remotion-walkthrough",
+        "stitch-remotion-walkthrough",
+        "francixco90-metodologia-frames-agent-os-remotion-video-production",
+        "remotion-video-production"
+      ]
+    }
+  ]
+}

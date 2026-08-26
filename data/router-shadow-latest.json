@@ -1,0 +1,1002 @@
+{
+  "generatedAt": "2026-08-26T03:06:16.296Z",
+  "evalVersion": 2,
+  "registrySnapshot": {
+    "contentHash": "d35fdfc432e90d2e0ede4fb9834006267104e0cea450fde2263673d76531a979",
+    "generatedAt": "2026-08-26T02:08:05.642Z",
+    "totalCount": 468,
+    "mode": "local-bundled"
+  },
+  "production": {
+    "profile": "ranking-v2.1",
+    "cases": 54,
+    "passed": 53,
+    "contractPassed": 10,
+    "contractCases": 10,
+    "coveragePassed": 43,
+    "coverageCases": 44,
+    "unsafeTop3": 0,
+    "capabilityGapCases": 22,
+    "averageRecommendationCount": 2.31,
+    "expectedHitsTotal": 32,
+    "signalHitsTotal": 134,
+    "averageTop1Score": 79.4
+  },
+  "candidate": {
+    "profile": "facet-heavy-rerank-v0.6-shadow",
+    "cases": 54,
+    "passed": 53,
+    "contractPassed": 10,
+    "contractCases": 10,
+    "coveragePassed": 43,
+    "coverageCases": 44,
+    "unsafeTop3": 0,
+    "capabilityGapCases": 22,
+    "averageRecommendationCount": 2.31,
+    "expectedHitsTotal": 32,
+    "signalHitsTotal": 134,
+    "averageTop1Score": 79.4
+  },
+  "gates": {
+    "safetyPass": true,
+    "contractNonRegression": true,
+    "coverageNonRegression": true,
+    "evidenceDelta": 0
+  },
+  "decision": "hold",
+  "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
+  "comparisons": [
+    {
+      "id": "ai-dashboard",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "nextjs",
+        "ai-sdk",
+        "shadcn"
+      ],
+      "candidateTop3": [
+        "nextjs",
+        "ai-sdk",
+        "shadcn"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "ai-streaming",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "ai-sdk"
+      ],
+      "candidateTop3": [
+        "ai-sdk"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "next-app-router",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "nextjs"
+      ],
+      "candidateTop3": [
+        "nextjs"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "shadcn-system",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "shadcn"
+      ],
+      "candidateTop3": [
+        "shadcn"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "react-performance",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "react-best-practices",
+        "alirezarezvani/claude-skills/senior-frontend-a7068f",
+        "langgenius/dify/how-to-write-component-43f895"
+      ],
+      "candidateTop3": [
+        "react-best-practices",
+        "alirezarezvani/claude-skills/senior-frontend-a7068f",
+        "langgenius/dify/how-to-write-component-43f895"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "frontend-polish",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "frontend-design",
+        "stephonGAO/milu/frontend-design-25832f"
+      ],
+      "candidateTop3": [
+        "frontend-design",
+        "stephonGAO/milu/frontend-design-25832f"
+      ],
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "zh-spatial-rendering",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "curiositech/some_claude_skills/interior-design-expert",
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
+      ],
+      "candidateTop3": [
+        "curiositech/some_claude_skills/interior-design-expert",
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "supabase-rls",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "supabase-postgres-best-practices"
+      ],
+      "candidateTop3": [
+        "supabase-postgres-best-practices"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "cloudflare-workers",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "workers-best-practices"
+      ],
+      "candidateTop3": [
+        "workers-best-practices"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "playwright-e2e",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "playwright-testing",
+        "langgenius/dify/e2e-cucumber-playwright-1de203",
+        "voidmatcha/e2e-skills/skill-material-b6c108"
+      ],
+      "candidateTop3": [
+        "playwright-testing",
+        "langgenius/dify/e2e-cucumber-playwright-1de203",
+        "voidmatcha/e2e-skills/skill-material-b6c108"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "rag-embeddings",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "ai-sdk",
+        "ruvnet/ruflo/vector-search-f41cc6",
+        "TalissonVitorino/kmp-ios-skills/verified-email-1b3dd8"
+      ],
+      "candidateTop3": [
+        "ai-sdk",
+        "ruvnet/ruflo/vector-search-f41cc6",
+        "TalissonVitorino/kmp-ios-skills/verified-email-1b3dd8"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "mcp-agent-tools",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
+        "affaan-m/ECC/mcp-server-patterns-980f90"
+      ],
+      "candidateTop3": [
+        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
+        "affaan-m/ECC/mcp-server-patterns-980f90"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "structured-output",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "ai-sdk",
+        "Francixco90/metodologia-frames-agent-os/design-shotgun"
+      ],
+      "candidateTop3": [
+        "ai-sdk",
+        "Francixco90/metodologia-frames-agent-os/design-shotgun"
+      ],
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "llm-agent-workflow",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
+        "ai-sdk",
+        "code-yeongyu/oh-my-openagent/ulw-plan-7fbd14"
+      ],
+      "candidateTop3": [
+        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
+        "ai-sdk",
+        "code-yeongyu/oh-my-openagent/ulw-plan-7fbd14"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "core-web-vitals",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "web-perf"
+      ],
+      "candidateTop3": [
+        "web-perf"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "tailwind-radix-components",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "shadcn",
+        "plugin87/full-stack-design-skills/inclusive-design-patterns-2ec4c0"
+      ],
+      "candidateTop3": [
+        "shadcn",
+        "plugin87/full-stack-design-skills/inclusive-design-patterns-2ec4c0"
+      ],
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "react-landing-polish",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "frontend-design",
+        "stephonGAO/milu/frontend-design-25832f",
+        "plugin87/full-stack-design-skills/frontend-framework-guide-006d8f"
+      ],
+      "candidateTop3": [
+        "frontend-design",
+        "stephonGAO/milu/frontend-design-25832f",
+        "plugin87/full-stack-design-skills/frontend-framework-guide-006d8f"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "next-data-fetching",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "nextjs",
+        "affaan-m/ECC/backend-patterns-ac648c"
+      ],
+      "candidateTop3": [
+        "nextjs",
+        "affaan-m/ECC/backend-patterns-ac648c"
+      ],
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "fastapi-rest",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "langfuse/langfuse/backend-dev-guidelines-ac63b0",
+        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
+        "warpdotdev/warp/oz-platform-526ece"
+      ],
+      "candidateTop3": [
+        "langfuse/langfuse/backend-dev-guidelines-ac63b0",
+        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
+        "warpdotdev/warp/oz-platform-526ece"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "node-api",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "affaan-m/ECC/backend-patterns-ac648c",
+        "affaan-m/ECC/mcp-server-patterns-980f90",
+        "kubesphere/kubesphere/kubesphere-core-406d5d"
+      ],
+      "candidateTop3": [
+        "affaan-m/ECC/backend-patterns-ac648c",
+        "affaan-m/ECC/mcp-server-patterns-980f90",
+        "kubesphere/kubesphere/kubesphere-core-406d5d"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "graphql-server",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "affaan-m/ECC/backend-patterns-ac648c",
+        "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
+        "dreamhunter2333/cloudflare_temp_email/cf-temp-mail-agent-mail-84e9cf"
+      ],
+      "candidateTop3": [
+        "affaan-m/ECC/backend-patterns-ac648c",
+        "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
+        "dreamhunter2333/cloudflare_temp_email/cf-temp-mail-agent-mail-84e9cf"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "root-cause-api-debug",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "systematic-debugging"
+      ],
+      "candidateTop3": [
+        "systematic-debugging"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "postgres-schema",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "supabase-postgres-best-practices"
+      ],
+      "candidateTop3": [
+        "supabase-postgres-best-practices"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "postgres-query",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "supabase-postgres-best-practices",
+        "langgenius/dify/backend-code-review-850842",
+        "TalissonVitorino/kmp-ios-skills/room-patterns-b1ea2c"
+      ],
+      "candidateTop3": [
+        "supabase-postgres-best-practices",
+        "langgenius/dify/backend-code-review-850842",
+        "TalissonVitorino/kmp-ios-skills/room-patterns-b1ea2c"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "redis-cache",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "affaan-m/ECC/backend-patterns-ac648c",
+        "Francixco90/metodologia-frames-agent-os/design-taste-frontend",
+        "sickn33/agentic-awesome-skills/accesslint-diff-3ee889"
+      ],
+      "candidateTop3": [
+        "affaan-m/ECC/backend-patterns-ac648c",
+        "Francixco90/metodologia-frames-agent-os/design-taste-frontend",
+        "sickn33/agentic-awesome-skills/accesslint-diff-3ee889"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "sqlite-pipeline",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "sickn33/agentic-awesome-skills/advanced-evaluation-787f9c",
+        "artokun/comfyui-mcp/ltx-director-0ea0ef",
+        "TalissonVitorino/kmp-ios-skills/analytics-patterns-d35922"
+      ],
+      "candidateTop3": [
+        "sickn33/agentic-awesome-skills/advanced-evaluation-787f9c",
+        "artokun/comfyui-mcp/ltx-director-0ea0ef",
+        "TalissonVitorino/kmp-ios-skills/analytics-patterns-d35922"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "tdd-feature",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "test-driven-development"
+      ],
+      "candidateTop3": [
+        "test-driven-development"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "code-review-refactor",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "code-review",
+        "react-best-practices"
+      ],
+      "candidateTop3": [
+        "code-review",
+        "react-best-practices"
+      ],
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "vitest-unit",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "langgenius/dify/frontend-testing-c86f15",
+        "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
+        "langgenius/dify/e2e-cucumber-playwright-1de203"
+      ],
+      "candidateTop3": [
+        "langgenius/dify/frontend-testing-c86f15",
+        "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
+        "langgenius/dify/e2e-cucumber-playwright-1de203"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "regression-debug",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "systematic-debugging"
+      ],
+      "candidateTop3": [
+        "systematic-debugging"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "vercel-deployment",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "deployments-cicd"
+      ],
+      "candidateTop3": [
+        "deployments-cicd"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "docker-kubernetes",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
+        "workers-best-practices",
+        "deployments-cicd"
+      ],
+      "candidateTop3": [
+        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
+        "workers-best-practices",
+        "deployments-cicd"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "github-ci",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "github",
+        "deployments-cicd"
+      ],
+      "candidateTop3": [
+        "github",
+        "deployments-cicd"
+      ],
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "cloudflare-edge",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "workers-best-practices"
+      ],
+      "candidateTop3": [
+        "workers-best-practices"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "oauth-oidc",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "auth"
+      ],
+      "candidateTop3": [
+        "auth"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "supabase-security",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "supabase-postgres-best-practices"
+      ],
+      "candidateTop3": [
+        "supabase-postgres-best-practices"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "vulnerability-review",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "sickn33/agentic-awesome-skills/acceptance-orchestrator-7f1527",
+        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
+        "code-review"
+      ],
+      "candidateTop3": [
+        "sickn33/agentic-awesome-skills/acceptance-orchestrator-7f1527",
+        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
+        "code-review"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "secrets-permissions",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "auth",
+        "pbakaus/impeccable/audit",
+        "langgenius/dify/how-to-write-component-43f895"
+      ],
+      "candidateTop3": [
+        "auth",
+        "pbakaus/impeccable/audit",
+        "code-review"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "react-native-expo",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "curiositech/some_claude_skills/native-app-designer",
+        "expo/expo/expo-review-4e5e61",
+        "sickn33/agentic-awesome-skills/3d-web-experience-4d9a38"
+      ],
+      "candidateTop3": [
+        "curiositech/some_claude_skills/native-app-designer",
+        "expo/expo/expo-review-4e5e61",
+        "sickn33/agentic-awesome-skills/3d-web-experience-4d9a38"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "swiftui-ios",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
+        "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70",
+        "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58"
+      ],
+      "candidateTop3": [
+        "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
+        "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70",
+        "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "android-kotlin",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "TalissonVitorino/kmp-ios-skills/android-patterns-5144e0",
+        "TalissonVitorino/kmp-ios-skills/koin-patterns-60d06c",
+        "TalissonVitorino/kmp-ios-skills/ktor-patterns-ae7698"
+      ],
+      "candidateTop3": [
+        "TalissonVitorino/kmp-ios-skills/android-patterns-5144e0",
+        "TalissonVitorino/kmp-ios-skills/koin-patterns-60d06c",
+        "TalissonVitorino/kmp-ios-skills/ktor-patterns-ae7698"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "flutter-mobile",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
+        "plugin87/full-stack-design-skills/responsive-universal-design-105379",
+        "frontend-design"
+      ],
+      "candidateTop3": [
+        "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
+        "plugin87/full-stack-design-skills/responsive-universal-design-105379",
+        "frontend-design"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "github-pr-triage",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "github",
+        "voidmatcha/e2e-skills/e2e-reviewer-50810f",
+        "code-yeongyu/oh-my-openagent/github-triage-2ea94d"
+      ],
+      "candidateTop3": [
+        "github",
+        "voidmatcha/e2e-skills/e2e-reviewer-50810f",
+        "code-yeongyu/oh-my-openagent/github-triage-2ea94d"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "slack-workflow",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "plugin87/full-stack-design-skills/design-to-code-workflow-ff9644",
+        "artokun/comfyui-mcp/ltx-director-0ea0ef",
+        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395"
+      ],
+      "candidateTop3": [
+        "plugin87/full-stack-design-skills/design-to-code-workflow-ff9644",
+        "artokun/comfyui-mcp/ltx-director-0ea0ef",
+        "artokun/comfyui-mcp/rgthree-253853"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "gmail-calendar",
+      "productionPass": false,
+      "candidatePass": false,
+      "productionTop3": [
+        "plugin87/full-stack-design-skills/design-to-code-workflow-ff9644",
+        "artokun/comfyui-mcp/flux-txt2img-a6c76e",
+        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395"
+      ],
+      "candidateTop3": [
+        "plugin87/full-stack-design-skills/design-to-code-workflow-ff9644",
+        "artokun/comfyui-mcp/flux-txt2img-a6c76e",
+        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "webhook-automation",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18",
+        "artokun/comfyui-mcp/krea2-identity-edit-b3cf0d",
+        "langfuse/langfuse/backend-dev-guidelines-ac63b0"
+      ],
+      "candidateTop3": [
+        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18",
+        "artokun/comfyui-mcp/krea2-identity-edit-b3cf0d",
+        "langfuse/langfuse/backend-dev-guidelines-ac63b0"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "reverse-engineer-product",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "reverse-engineer"
+      ],
+      "candidateTop3": [
+        "reverse-engineer"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "notion-research",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "notion",
+        "this-rs/project-orchestrator/project-orchestrator-0e95f5"
+      ],
+      "candidateTop3": [
+        "notion",
+        "this-rs/project-orchestrator/project-orchestrator-0e95f5"
+      ],
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "technical-docs",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-sysml-architecture-substrate-c8b895",
+        "angular/angular/adev-writing-guide-0332ed",
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-architecture-review-5072cc"
+      ],
+      "candidateTop3": [
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-sysml-architecture-substrate-c8b895",
+        "notion",
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-architecture-review-5072cc"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "figma-design-system",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "figma",
+        "figma/mcp-server-guide/figma-design-to-code",
+        "Francixco90/metodologia-frames-agent-os/design-paint"
+      ],
+      "candidateTop3": [
+        "figma",
+        "figma/mcp-server-guide/figma-design-to-code",
+        "Francixco90/metodologia-frames-agent-os/design-paint"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "zh-ux-research",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "borghei/claude-skills/product-designer",
+        "curiositech/some_claude_skills/ux-friction-analyzer",
+        "reverse-engineer"
+      ],
+      "candidateTop3": [
+        "borghei/claude-skills/product-designer",
+        "curiositech/some_claude_skills/ux-friction-analyzer",
+        "reverse-engineer"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "zh-poster-brand",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "Francixco90/metodologia-frames-agent-os/motion-graphics",
+        "Francixco90/metodologia-frames-agent-os/banner-design",
+        "pbakaus/impeccable/bolder"
+      ],
+      "candidateTop3": [
+        "Francixco90/metodologia-frames-agent-os/motion-graphics",
+        "Francixco90/metodologia-frames-agent-os/banner-design",
+        "pbakaus/impeccable/bolder"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "zh-video-motion",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "Francixco90/metodologia-frames-agent-os/remotion-markup",
+        "remotion-dev/skills/remotion-best-practices",
+        "remotion-dev/skills/remotion-multimedia"
+      ],
+      "candidateTop3": [
+        "Francixco90/metodologia-frames-agent-os/remotion-markup",
+        "remotion-dev/skills/remotion-best-practices",
+        "remotion-dev/skills/remotion-multimedia"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    },
+    {
+      "id": "zh-industrial-cad",
+      "productionPass": true,
+      "candidatePass": true,
+      "productionTop3": [
+        "cogni-work/insight-wave/products-v0",
+        "Francixco90/metodologia-frames-agent-os/stitch-remotion-walkthrough",
+        "Francixco90/metodologia-frames-agent-os/remotion-video-production"
+      ],
+      "candidateTop3": [
+        "cogni-work/insight-wave/products-v0",
+        "Francixco90/metodologia-frames-agent-os/stitch-remotion-walkthrough",
+        "Francixco90/metodologia-frames-agent-os/remotion-video-production"
+      ],
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
+      "expectedHitDelta": 0,
+      "signalHitDelta": 0
+    }
+  ]
+}

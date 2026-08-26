@@ -10,19 +10,7 @@
     "summary": "Track and visualize ML training experiments with Trackio. Use when logging metrics during training (Python API), firing alerts for training diagnostics, or retrieving/analyzing logged metrics (CLI). Supports real-time dashboard visualization, alerts with webhooks, HF Space syncing, and...",
     "category": "Automation & Integrations",
     "tags": [
-      "automation",
-      "github",
-      "slack",
-      "webhooks",
-      "workflow",
-      "workflows",
-      "integration",
-      "debugging",
-      "code",
-      "review",
-      "cloud",
-      "deployment",
-      "ci"
+      "webhooks"
     ],
     "domains": [
       "automation-integrations",
@@ -127,20 +115,7 @@
     "summary": "You are a frontend designer-engineer, not a layout generator.",
     "category": "Frontend",
     "tags": [
-      "frontend",
-      "react",
-      "ui",
-      "css",
-      "tailwind",
-      "components",
-      "testing",
-      "unit",
-      "integration",
-      "code",
-      "review",
-      "writing",
-      "planning",
-      "technical"
+      "frontend"
     ],
     "domains": [
       "frontend",
@@ -237,20 +212,7 @@
     "summary": "You are a frontend designer-engineer, not a layout generator.",
     "category": "Frontend",
     "tags": [
-      "frontend",
-      "react",
-      "ui",
-      "css",
-      "tailwind",
-      "components",
-      "testing",
-      "unit",
-      "integration",
-      "code",
-      "review",
-      "writing",
-      "planning",
-      "technical"
+      "frontend"
     ],
     "domains": [
       "frontend",
@@ -347,20 +309,8 @@
     "summary": "Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and production-ready K8s configurations.",
     "category": "DevOps & Cloud",
     "tags": [
-      "devops",
-      "cloud",
       "deployment",
-      "ci",
-      "cd",
-      "docker",
-      "kubernetes",
-      "infrastructure",
-      "security",
-      "secrets",
-      "permissions",
-      "secure",
-      "testing",
-      "review"
+      "kubernetes"
     ],
     "domains": [
       "devops-cloud",
@@ -470,19 +420,7 @@
     "summary": "Comprehensive guidance for building scalable, maintainable, and production-ready Node.js backend applications with modern frameworks, architectural patterns, and best practices.",
     "category": "Backend & API",
     "tags": [
-      "backend",
-      "api",
-      "server",
-      "node",
-      "go",
-      "rest",
-      "graphql",
-      "auth",
-      "authentication",
-      "permissions",
-      "testing",
-      "unit",
-      "review"
+      "backend"
     ],
     "domains": [
       "backend-api",
@@ -579,20 +517,7 @@
     "summary": "Generates Jest unit and integration tests in JavaScript or TypeScript. Covers mocking, snapshots, async testing, and React component testing. Use when user mentions \"Jest\", \"describe/it/expect\", \"jest.mock\", \"toMatchSnapshot\". Triggers on: \"Jest\", \"expect().toBe()\", \"jest.mock\",...",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "unit",
-      "integration",
-      "jest",
-      "debugging",
-      "code",
-      "review",
-      "quality",
-      "api",
-      "node",
-      "go",
-      "rest",
-      "ai",
-      "rag"
+      "testing"
     ],
     "domains": [
       "testing-quality",
@@ -700,18 +625,7 @@
     "summary": "Guide for game-engine internals, source trees, plugins, and engine-specific security research. Use this skill when researching Unreal, Unity, Source, Godot, custom engines, engine detectors, engine explorers, or engine protection patterns relevant to modding, reverse engineering, and anti-cheat.",
     "category": "Docs & Research",
     "tags": [
-      "documentation",
-      "research",
-      "architecture",
-      "analysis",
-      "technical",
-      "mobile",
-      "expo",
-      "native",
-      "github",
-      "workflow",
-      "apis",
-      "workflows"
+      "research"
     ],
     "domains": [
       "docs-research",
@@ -815,20 +729,8 @@
     "summary": "Use when reviewing Playwright or Cypress E2E specs, Page Objects (POM), PRs, pull requests, patches, diffs, or changed test files — asked to review tests, audit test quality, or find weak, flaky, or silently-passing tests; when tests pass CI but prove nothing or miss bugs; when auditing missing awaits, vacuous or alway",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "unit",
-      "e2e",
       "playwright",
-      "vitest",
-      "jest",
-      "debugging",
-      "code",
-      "review",
-      "quality",
-      "ai",
-      "agents",
-      "llm",
-      "tools"
+      "review"
     ],
     "domains": [
       "testing-quality",
@@ -946,17 +848,7 @@
     "summary": "Plan or restructure website hierarchy, navigation, URL patterns, breadcrumbs, and internal linking. Use when mapping pages, sections, and site structure, but not for XML sitemap auditing or schema markup.",
     "category": "Automation & Integrations",
     "tags": [
-      "automation",
-      "github",
-      "slack",
-      "integrations",
-      "documentation",
-      "docs",
-      "architecture",
-      "planning",
-      "security",
-      "auth",
-      "authentication"
+      "architecture"
     ],
     "domains": [
       "automation-integrations",
@@ -1061,17 +953,9 @@
       "frontend",
       "react",
       "nextjs",
-      "ui",
-      "css",
       "tailwind",
       "components",
-      "testing",
-      "unit",
-      "vitest",
-      "code",
-      "review",
-      "quality",
-      "ai"
+      "review"
     ],
     "domains": [
       "frontend",
@@ -1196,20 +1080,8 @@
     "summary": "Use this skill to generate new Playwright end-to-end tests from scratch — for a page, a user flow, a form, or a component — taking them from zero to reviewed, passing specs. Reach for it whenever someone wants to add, write, create, or scaffold Playwright E2E coverage, fill coverage gaps for uncovered routes, or bootst",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "unit",
-      "integration",
-      "e2e",
       "playwright",
-      "vitest",
-      "jest",
-      "debugging",
-      "code",
-      "review",
-      "frontend",
-      "react",
-      "nextjs",
-      "ui"
+      "review"
     ],
     "domains": [
       "testing-quality",
@@ -1322,22 +1194,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integration, Core Data, networking, and App Store optimization.",
     "category": "DevOps & Cloud",
-    "tags": [
-      "devops",
-      "cloud",
-      "deployment",
-      "ci",
-      "cd",
-      "security",
-      "auth",
-      "authentication",
-      "vulnerability",
-      "secure",
-      "coding",
-      "automation",
-      "github",
-      "workflow"
-    ],
+    "tags": [],
     "domains": [
       "devops-cloud",
       "security",
@@ -1439,22 +1296,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integration, Core Data, networking, and App Store optimization.",
     "category": "DevOps & Cloud",
-    "tags": [
-      "devops",
-      "cloud",
-      "deployment",
-      "ci",
-      "cd",
-      "security",
-      "auth",
-      "authentication",
-      "vulnerability",
-      "secure",
-      "coding",
-      "automation",
-      "github",
-      "workflow"
-    ],
+    "tags": [],
     "domains": [
       "devops-cloud",
       "security",
@@ -1556,20 +1398,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Expert in building immersive scroll-driven experiences - parallax",
     "category": "Mobile",
-    "tags": [
-      "mobile",
-      "ios",
-      "android",
-      "react",
-      "native",
-      "ai",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "ui",
-      "css"
-    ],
+    "tags": [],
     "domains": [
       "mobile",
       "ai-agents",
@@ -1664,14 +1493,7 @@
     "category": "Docs & Research",
     "tags": [
       "documentation",
-      "docs",
-      "writing",
-      "architecture",
-      "integration",
-      "code",
-      "review",
-      "workflow",
-      "integrations"
+      "review"
     ],
     "domains": [
       "docs-research",
@@ -1765,18 +1587,7 @@
     "summary": "Adversarial multi-agent planning skill. Self-orchestrates 5 hostile category members (unspecified-low, unspecified-high, deep, ultrabrain, artistry) via team-mode for ruthless cross-critique debate, distills only the defensible insights, then MANDATORILY hands the distilled insight bundle to the `plan` agent for execut",
     "category": "Docs & Research",
     "tags": [
-      "documentation",
-      "docs",
-      "research",
-      "planning",
-      "analysis",
-      "ai",
-      "agents",
-      "tools",
-      "rag",
-      "tool",
-      "integration",
-      "code"
+      "planning"
     ],
     "domains": [
       "docs-research",
@@ -1871,17 +1682,7 @@
     "summary": "Adversarial multi-agent planning skill. Self-orchestrates 5 hostile category members (unspecified-low, unspecified-high, deep, ultrabrain, artistry) via team-mode for ruthless cross-critique debate, distills only the defensible insights, then MANDATORILY hands the distilled insight bundle to the `plan` agent for execut",
     "category": "Docs & Research",
     "tags": [
-      "documentation",
-      "docs",
-      "research",
-      "planning",
-      "analysis",
-      "ai",
-      "tools",
-      "rag",
-      "tool",
-      "integration",
-      "code"
+      "planning"
     ],
     "domains": [
       "docs-research",
@@ -1976,19 +1777,11 @@
     "category": "Testing & Quality",
     "tags": [
       "testing",
-      "e2e",
-      "playwright",
       "vitest",
       "code-review",
-      "code",
       "review",
-      "ai",
-      "agents",
-      "rag",
-      "tool",
       "frontend",
-      "react",
-      "ui"
+      "react"
     ],
     "domains": [
       "testing-quality",
@@ -2084,22 +1877,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Project Guidelines Skill (Example)",
     "category": "Frontend",
-    "tags": [
-      "frontend",
-      "react",
-      "nextjs",
-      "ui",
-      "css",
-      "tailwind",
-      "components",
-      "testing",
-      "unit",
-      "integration",
-      "e2e",
-      "playwright",
-      "code",
-      "documentation"
-    ],
+    "tags": [],
     "domains": [
       "frontend",
       "testing-quality",
@@ -2220,20 +1998,7 @@
     "summary": "Build Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-platform deployment.",
     "category": "DevOps & Cloud",
     "tags": [
-      "devops",
-      "cloud",
-      "deployment",
-      "ci",
-      "mobile",
-      "ios",
-      "android",
-      "native",
-      "testing",
-      "unit",
-      "integration",
-      "code",
-      "review",
-      "quality"
+      "deployment"
     ],
     "domains": [
       "devops-cloud",
@@ -2332,22 +2097,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "Testing & Quality",
-    "tags": [
-      "testing",
-      "unit",
-      "integration",
-      "jest",
-      "code-review",
-      "code",
-      "review",
-      "quality",
-      "docs",
-      "knowledge",
-      "analysis",
-      "technical",
-      "ai",
-      "agents"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "docs-research",
@@ -2452,16 +2202,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "ACTIVATES ONLY on an explicit user request for the ulw-plan workflow: the user themselves saying ulw-plan, ulw plan, /skill:ulw-plan, or asking in their own words for a work plan before coding. NEVER self-activates: a bare ulw/ultrawork run, an agent-side routing decision, or reading this file is not a request, and the",
     "category": "Docs & Research",
-    "tags": [
-      "research",
-      "writing",
-      "planning",
-      "analysis",
-      "ai",
-      "agents",
-      "code",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "docs-research"
     ],
@@ -2549,15 +2290,7 @@
     "summary": "Use only when the user explicitly requests a review or audit of backend code under `api/`. Supports pending-change, file-focused, and pasted-diff reviews. Do not use for implementation-only requests, diagnosis without review intent, frontend code, or backend code outside `api/`.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "rag",
-      "tool",
-      "documentation",
-      "docs",
-      "architecture",
       "code-review",
-      "code",
       "review"
     ],
     "domains": [
@@ -2653,18 +2386,10 @@
     "category": "Testing & Quality",
     "tags": [
       "testing",
-      "e2e",
       "playwright",
       "vitest",
-      "code",
       "review",
-      "ai",
-      "agents",
-      "rag",
-      "tool",
-      "automation",
-      "workflow",
-      "workflows"
+      "automation"
     ],
     "domains": [
       "testing-quality",
@@ -2760,22 +2485,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Configure and author rgthree-comfy nodes — Fast Groups Bypasser/Muter (group toggles), Power Lora Loader, Context/Context Big, Seed, Any Switch. Use when a workflow contains rgthree nodes, when asked to add stage/section toggles or an A/B switch, when stacking LoRAs, or when an rgthree node needs configuring. Covers th",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "backend",
-      "server",
-      "node",
-      "python",
-      "rest",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -2875,22 +2585,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use when working in the DPF codebase and facing an open question with 2+ architecturally-distinct options. Maps each option to the closed PRINCIPLE_DIMENSIONS registry, invokes the principle_decide MCP tool, surfaces the contribution ledger to the operator, and defers if a commandment conflict is flagged. Composes with",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "calling",
-      "unit",
-      "code",
-      "review",
-      "quality",
-      "docs",
-      "research",
-      "architecture"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -2984,21 +2679,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant copy,\" \"multivariate test,\" \"hypothesis,\" \"should I test this,\"...",
     "category": "Docs & Research",
-    "tags": [
-      "documentation",
-      "research",
-      "planning",
-      "analysis",
-      "technical",
-      "data",
-      "analytics",
-      "ai",
-      "agents",
-      "tools",
-      "rag",
-      "mcp",
-      "tool"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "data-database",
@@ -3101,20 +2782,7 @@
     "summary": "Master software architect specializing in modern architecture",
     "category": "DevOps & Cloud",
     "tags": [
-      "cloud",
-      "deployment",
-      "ci",
-      "cd",
-      "docker",
-      "kubernetes",
-      "aws",
-      "infrastructure",
-      "documentation",
-      "knowledge",
-      "architecture",
-      "planning",
-      "analysis",
-      "technical"
+      "architecture"
     ],
     "domains": [
       "devops-cloud",
@@ -3230,13 +2898,7 @@
     "summary": "Use when a user asks for a plan for a coding task, to generate a clear, actionable, and atomic checklist.",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "unit",
-      "code",
-      "review",
-      "permissions",
       "coding",
-      "docs",
       "planning"
     ],
     "domains": [
@@ -3328,16 +2990,9 @@
     "category": "Mobile",
     "tags": [
       "mobile",
-      "ios",
       "android",
-      "expo",
-      "native",
       "research",
-      "analysis",
-      "unit",
-      "integration",
-      "debugging",
-      "code"
+      "analysis"
     ],
     "domains": [
       "mobile",
@@ -3440,16 +3095,7 @@
     "summary": "(builtin) Initialize hierarchical AGENTS.md knowledge base",
     "category": "Docs & Research",
     "tags": [
-      "knowledge",
-      "planning",
-      "analysis",
-      "github",
-      "workflow",
-      "workflows",
-      "ai",
-      "agents",
-      "tools",
-      "tool"
+      "knowledge"
     ],
     "domains": [
       "docs-research",
@@ -3544,17 +3190,8 @@
     "summary": "Use when implementing or refactoring React/TypeScript components and the task requires decisions about component ownership, feature boundaries, state, data flow, effects, or interaction ownership. Do not use for review-only requests, test-only work, copy-only edits, or styling-only changes.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "rag",
-      "tool",
       "react",
-      "nextjs",
-      "ui",
-      "components",
-      "workflow",
-      "apis",
-      "workflows"
+      "components"
     ],
     "domains": [
       "ai-agents",
@@ -3649,18 +3286,7 @@
     "summary": "Use when a unit of work is functionally complete and needs to leave the working tree. Decide the integration shape first, confirm the branch is green, obtain independent semantic review of the stable committed tree before pregate or publication, sweep for loose/overlapping work, then hand off to dpf-pr-with-dco.",
     "category": "Testing & Quality",
     "tags": [
-      "unit",
-      "integration",
-      "debugging",
-      "code",
-      "review",
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "ci",
-      "infrastructure"
+      "review"
     ],
     "domains": [
       "testing-quality",
@@ -3753,16 +3379,9 @@
     "summary": "Cross-platform image loading overview - Coil on Android/Compose, AsyncImage on SwiftUI/iOS, plus caching, transformations, placeholders, and error/loading states across platforms. For Coil 3 specifics in Compose or Compose Multiplatform (AsyncImage vs SubcomposeAsyncImage, ImageRequest, LocalPlatformContext) prefer and",
     "category": "Mobile",
     "tags": [
-      "mobile",
-      "ios",
       "android",
       "swift",
-      "swiftui",
-      "kotlin",
-      "integration",
-      "code",
-      "oidc",
-      "coding"
+      "swiftui"
     ],
     "domains": [
       "mobile"
@@ -3853,18 +3472,8 @@
     "category": "Backend & API",
     "tags": [
       "backend",
-      "api",
       "server",
-      "node",
-      "go",
-      "rest",
-      "graphql",
       "database",
-      "sql",
-      "supabase",
-      "redis",
-      "data",
-      "research",
       "architecture"
     ],
     "domains": [
@@ -3967,22 +3576,7 @@
     "installUrl": "https://github.com/warpdotdev/warp",
     "summary": "Use Warp's REST API and command line to run, configure, and inspect Oz cloud agents",
     "category": "Automation & Integrations",
-    "tags": [
-      "automation",
-      "github",
-      "workflow",
-      "workflows",
-      "auth",
-      "authentication",
-      "secrets",
-      "permissions",
-      "api",
-      "server",
-      "node",
-      "python",
-      "go",
-      "rest"
-    ],
+    "tags": [],
     "domains": [
       "automation-integrations",
       "security",
@@ -4102,18 +3696,7 @@
     "summary": "'Enable Microsoft Defender for Cloud (CSPM + CWPP) across VMs, containers,",
     "category": "DevOps & Cloud",
     "tags": [
-      "devops",
-      "cloud",
-      "deployment",
-      "ci",
-      "aws",
-      "automation",
-      "github",
-      "workflow",
-      "workflows",
-      "sql",
-      "data",
-      "analytics"
+      "cloud"
     ],
     "domains": [
       "devops-cloud",
@@ -4226,15 +3809,9 @@
     "summary": "Use for authorized macOS and Mach-O reverse engineering including codesign, Objective-C/Swift recovery, endpoint security surfaces, and Apple platform malware analysis.",
     "category": "Mobile",
     "tags": [
-      "mobile",
-      "ios",
       "swift",
-      "research",
-      "knowledge",
       "analysis",
-      "security",
-      "auth",
-      "coding"
+      "security"
     ],
     "domains": [
       "mobile",
@@ -4326,16 +3903,7 @@
     "summary": "Analyze main branch implementation and configuration to find missing, incorrect, or outdated documentation in docs/. Use when asked to audit doc coverage, sync docs with code, or propose doc updates/structure changes. Only update English docs under docs/** and never touch translated docs under docs/ja, docs/ko, or docs",
     "category": "Docs & Research",
     "tags": [
-      "documentation",
-      "docs",
-      "knowledge",
-      "architecture",
-      "ai",
-      "agents",
-      "rag",
-      "mcp",
-      "workflow",
-      "workflows"
+      "documentation"
     ],
     "domains": [
       "docs-research",
@@ -4434,12 +4002,7 @@
     "summary": "Guide for PCIe DMA threat modeling, FPGA-based memory access, and defensive implications in game security. Use this skill when researching pcileech, BAR and TLP behavior, page-table walking, IOMMU or VT-d, device impersonation, firmware mimicry, or DMA detection and mitigation in game security research.",
     "category": "Docs & Research",
     "tags": [
-      "research",
-      "knowledge",
-      "architecture",
-      "expo",
-      "workflow",
-      "workflows"
+      "research"
     ],
     "domains": [
       "docs-research",
@@ -4534,20 +4097,7 @@
     "summary": ">",
     "category": "Data & Database",
     "tags": [
-      "database",
-      "sql",
-      "postgres",
-      "supabase",
-      "mysql",
-      "sqlite",
-      "redis",
-      "data",
-      "analytics",
-      "pipelines",
-      "integration",
-      "code",
-      "quality",
-      "backend"
+      "database"
     ],
     "domains": [
       "data-database",
@@ -4663,18 +4213,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Full production pipeline covering story to scenes, Z-Image start frames, Qwen Edit end frames, WAN FLF video clips, ffmpeg concatenation",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "testing",
-      "code",
-      "review",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -4766,20 +4305,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Swap an OUTFIT or transfer CLOTHING onto a person LOCALLY, keeping their face, pose and background. Use for \"put this jacket on her\", \"change his shirt\", \"clothes swap\", \"try on\", \"outfit transfer\", \"virtual try-on\", \"dress her in\", \"wear this outfit\". Prefer this over API/cloud edit nodes and over generic img2img/inpa",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "server",
-      "node",
-      "go",
-      "rest",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -4871,21 +4397,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Author ComfyUI-LoRA-Manager nodes from the panel. Use when adding a LoRA Manager loader, stacker, prompt, or text node, or when panel_add_node refuses AUTOCOMPLETE_TEXT_LORAS / AUTOCOMPLETE_TEXT_PROMPT after waiting for a widget.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "github",
-      "workflow",
-      "workflows",
-      "backend",
-      "server",
-      "node",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "automation-integrations",
@@ -4986,20 +4498,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Drive the LTX Director (Timeline) node. Its Add Image/Text/Audio buttons are DOM-only and cannot be clicked by an agent; edit the hidden timeline_data JSON widget instead. Load when a workflow contains LTXDirector / LTXDirectorGuide / PromptRelayEncodeTimeline, or when asked to add, move, retime, or remove timeline seg",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "server",
-      "node",
-      "go",
-      "rest",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -5093,17 +4592,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Audit and improve portal navigation, route organization, and page hierarchy for complex web apps. Use when evaluating top nav, sub nav, workspace chrome, page grouping, information architecture, menu overlap, or when planning a scalable navigation model for future growth.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "tool",
-      "assistants",
-      "review",
-      "ui",
-      "css",
-      "components"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -5194,15 +4683,8 @@
     "summary": "Use in the DPF codebase after a WWMD/kernel decision is made. Records the decision result, evidence summary, and next action through governed MCP tools so Build Studio and reviewers share one source of truth.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
       "tools",
-      "mcp",
-      "tool",
-      "calling",
-      "code",
-      "review",
-      "ui"
+      "review"
     ],
     "domains": [
       "ai-agents",
@@ -5291,20 +4773,7 @@
     "summary": "Use when a Playwright end-to-end test has already run and failed and the user wants the root cause and a concrete fix. Trigger on a failing Playwright spec, TimeoutError, broken or ambiguous selector, post-deploy suite failure, retry-only flake, hydration or timing race, or a passes-locally-but-fails-in-CI split. Accep",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "e2e",
-      "playwright",
-      "vitest",
-      "jest",
-      "debugging",
-      "code",
-      "review",
-      "backend",
-      "api",
-      "node",
-      "python",
-      "rest",
-      "github"
+      "playwright"
     ],
     "domains": [
       "testing-quality",
@@ -5411,20 +4880,9 @@
     "summary": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Gen",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
       "frontend",
       "react",
-      "vue",
-      "ui",
-      "css",
-      "components",
-      "code"
+      "components"
     ],
     "domains": [
       "ai-agents",
@@ -5518,17 +4976,7 @@
     "installUrl": "https://github.com/stephonGAO/milu",
     "summary": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project update",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "ui",
-      "ci"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents"
     ],
@@ -5613,18 +5061,7 @@
     "summary": "Vector search via embeddings_* (large-scale HNSW) and ruvllm_hnsw_* (WASM router for ≤11 hot patterns), with RaBitQ 1-bit quantization for 32× memory reduction",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "rag",
-      "embeddings",
-      "mcp",
-      "tool",
-      "backend",
-      "api",
-      "integration",
-      "code",
-      "quality"
+      "embeddings"
     ],
     "domains": [
       "ai-agents",
@@ -5719,22 +5156,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Advanced .faf (Foundational AI-context Format) specialist. IANA-registered format, MCP server config, championship scoring, bi-directional sync.",
     "category": "Data & Database",
-    "tags": [
-      "database",
-      "sql",
-      "mysql",
-      "data",
-      "analytics",
-      "frontend",
-      "react",
-      "ui",
-      "css",
-      "tailwind",
-      "deployment",
-      "ci",
-      "docker",
-      "kubernetes"
-    ],
+    "tags": [],
     "domains": [
       "data-database",
       "frontend",
@@ -5853,20 +5275,9 @@
     "summary": "Provide comprehensive techniques for testing REST, SOAP, and GraphQL APIs during bug bounty hunting and penetration testing engagements. Covers vulnerability discovery, authentication bypass, IDOR exploitation, and API-specific attack vectors.",
     "category": "Backend & API",
     "tags": [
-      "backend",
-      "api",
-      "python",
-      "go",
-      "rest",
       "graphql",
-      "security",
-      "auth",
       "authentication",
-      "vulnerability",
-      "secure",
-      "documentation",
-      "docs",
-      "planning"
+      "vulnerability"
     ],
     "domains": [
       "backend-api",
@@ -5976,18 +5387,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, and execution readiness.",
     "category": "Docs & Research",
-    "tags": [
-      "documentation",
-      "planning",
-      "analysis",
-      "technical",
-      "testing",
-      "unit",
-      "code",
-      "review",
-      "quality",
-      "analytics"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "testing-quality",
@@ -6077,17 +5477,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Add an iOS App Clip target to an Expo app. Use when the user mentions App Clip, AASA, apple-app-site-association, appclips, smart app banner, or wants to ship a lightweight iOS Clip invoked from a URL alongside their parent app.",
     "category": "Mobile",
-    "tags": [
-      "mobile",
-      "ios",
-      "swift",
-      "expo",
-      "react",
-      "native",
-      "ui",
-      "components",
-      "data"
-    ],
+    "tags": [],
     "domains": [
       "mobile",
       "frontend",
@@ -6186,14 +5576,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Completely delete and rewrite a file or module from scratch when structural rot makes patching impossible.",
     "category": "Docs & Research",
-    "tags": [
-      "writing",
-      "architecture",
-      "planning",
-      "technical",
-      "ai",
-      "mcp"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "security"
@@ -6279,14 +5662,7 @@
     "summary": "Mobile game development principles. Touch input, battery, performance, app stores.",
     "category": "Mobile",
     "tags": [
-      "mobile",
-      "ios",
-      "android",
-      "testing",
-      "unit",
-      "review",
-      "quality",
-      "permissions"
+      "mobile"
     ],
     "domains": [
       "mobile",
@@ -6376,18 +5752,7 @@
     "summary": "Build a vulnerability exception and risk acceptance tracking system covering approval workflows, compensating controls documentation, and automatic expiration for vulnerabilities that miss SLA remediation timelines. Use when standing up a governance process for risk acceptance and exception approvals to support PCI DSS",
     "category": "Data & Database",
     "tags": [
-      "database",
-      "sql",
-      "postgres",
-      "sqlite",
-      "data",
-      "github",
-      "slack",
-      "workflow",
-      "workflows",
-      "documentation",
-      "docs",
-      "architecture"
+      "documentation"
     ],
     "domains": [
       "data-database",
@@ -6499,16 +5864,7 @@
     "installUrl": "https://github.com/abpframework/abp",
     "summary": "ABP CLI commands - generate-proxy, install-libs, add-package-ref, new-module, install-module, abp update, abp clean, abp suite generate. Use when the user asks how to run ABP CLI commands, generate proxies, install libraries, or use ABP Suite.",
     "category": "Docs & Research",
-    "tags": [
-      "documentation",
-      "docs",
-      "architecture",
-      "ai",
-      "agents",
-      "tool",
-      "ci",
-      "infrastructure"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "ai-agents"
@@ -6603,14 +5959,7 @@
     "category": "Docs & Research",
     "tags": [
       "research",
-      "architecture",
-      "analysis",
-      "testing",
-      "unit",
-      "debugging",
-      "code",
-      "review",
-      "mobile"
+      "architecture"
     ],
     "domains": [
       "docs-research",
@@ -6711,15 +6060,7 @@
     "summary": "Guide for reverse engineering protected games and anti-cheat components across user mode, kernel mode, and hypervisor-aware environments. Use this skill when analyzing drivers, IOCTL protocols, callback registration, injected-code artifacts, integrity checks, protected binaries, or debugging security-sensitive game com",
     "category": "Docs & Research",
     "tags": [
-      "research",
-      "architecture",
-      "analysis",
-      "ios",
-      "android",
-      "testing",
-      "unit",
-      "debugging",
-      "code"
+      "debugging"
     ],
     "domains": [
       "docs-research",
@@ -6819,21 +6160,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "Testing & Quality",
-    "tags": [
-      "testing",
-      "unit",
-      "integration",
-      "debugging",
-      "code",
-      "review",
-      "quality",
-      "documentation",
-      "docs",
-      "architecture",
-      "security",
-      "auth",
-      "secrets"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "docs-research",
@@ -6939,17 +6266,7 @@
     "summary": "Debug a WRONG or imperfect render (not a hard error) by inspecting inputs and intermediate steps with run-to-node. Render one branch up to an output, preview-tap latents/masks/preprocessor maps, localize the first bad stage, then fix. Use when a final image/video completes but looks wrong, such as artifacts, wrong subj",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "debugging",
-      "code",
-      "review",
-      "quality",
-      "workflow",
-      "workflows"
+      "review"
     ],
     "domains": [
       "ai-agents",
@@ -7043,20 +6360,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Build Flux txt2img workflows with Flux.1 Dev (SRPO), Flux 2 Klein 9B, Turbo LoRAs, FluxGuidance, and DualCLIPLoader patterns",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "server",
-      "node",
-      "go",
-      "rest",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -7150,20 +6454,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Build Lightricks LTX-2 / LTX-2.3 video workflows covering text-to-video, image-to-video, GGUF and bundled checkpoints, distilled model, camera control LoRAs, synchronized audio, two-stage upscaling, and swapping alternate/GGUF base models",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "server",
-      "node",
-      "python",
-      "go",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -7263,19 +6554,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Build Qwen Image 2512 text-to-image workflows with QwenImageIntegratedKSampler, separate component loading, lightning LoRAs, and fine-tuned model variants",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "server",
-      "node",
-      "go",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -7369,15 +6648,6 @@
     "summary": "Use when working in the DPF codebase and a new piece of work needs to enter the backlog — feature gap, bug, tool gap, skill gap, doc gap, automated detection, user request. The DPF BI lifecycle gate sits in front of the planning step: a plan is for a BI, not for floating intent. This skill walks the substrate-verify → ",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "code",
-      "research",
-      "writing",
       "planning"
     ],
     "domains": [
@@ -7471,21 +6741,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use in the DPF codebase before pushing or opening a PR when a branch needs local merged-code verification. Merges against current main in an isolated path, runs the required gates, records the result, and blocks red pushes.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "calling",
-      "unit",
-      "integration",
-      "code",
-      "review",
-      "react",
-      "ui"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality"
@@ -7584,15 +6840,8 @@
     "summary": "General Kotlin Coroutines and Flow patterns - structured concurrency, scopes, error handling (supervisorScope, CoroutineExceptionHandler), cancellation, and Flow operators. Single-platform/JVM-oriented concepts. For multiplatform shared code, iOS main-thread/Darwin dispatchers, or exposing Flow to Swift, use shared-cor",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
       "swift",
-      "kotlin",
-      "expo",
-      "react",
-      "ui",
-      "database",
-      "data"
+      "kotlin"
     ],
     "domains": [
       "mobile"
@@ -7683,14 +6932,7 @@
     "category": "Mobile",
     "tags": [
       "mobile",
-      "ios",
-      "android",
-      "swift",
-      "swiftui",
-      "kotlin",
-      "ui",
-      "components",
-      "ai"
+      "android"
     ],
     "domains": [
       "mobile"
@@ -7778,15 +7020,7 @@
     "summary": "Analytics integration patterns - event tracking, screen tracking, user properties, Firebase Analytics, custom analytics providers, and privacy compliance.",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "swift",
-      "swiftui",
-      "kotlin",
-      "data",
-      "analytics",
-      "server",
-      "go"
+      "analytics"
     ],
     "domains": [
       "mobile"
@@ -7873,20 +7107,7 @@
     "installUrl": "https://github.com/plugin87/full-stack-design-skills",
     "summary": "Master universal design principles for UI, web, and applications. Use this skill whenever you need to apply color theory, typography, layout systems, spacing, visual hierarchy, or contrast guidelines. Triggers include design critiques, UI specs, accessibility concerns, design system foundations, responsive layout probl",
     "category": "Frontend",
-    "tags": [
-      "frontend",
-      "react",
-      "ui",
-      "css",
-      "tailwind",
-      "components",
-      "ai",
-      "tools",
-      "rag",
-      "tool",
-      "mobile",
-      "ios"
-    ],
+    "tags": [],
     "domains": [
       "frontend",
       "ai-agents",
@@ -7978,20 +7199,7 @@
     "installUrl": "https://github.com/plugin87/full-stack-design-skills",
     "summary": "Master universal design principles for UI, web, and applications. Use this skill whenever you need to apply color theory, typography, layout systems, spacing, visual hierarchy, or contrast guidelines. Triggers include design critiques, UI specs, accessibility concerns, design system foundations, responsive layout probl",
     "category": "Frontend",
-    "tags": [
-      "frontend",
-      "react",
-      "ui",
-      "css",
-      "tailwind",
-      "components",
-      "ai",
-      "tools",
-      "rag",
-      "tool",
-      "mobile",
-      "ios"
-    ],
+    "tags": [],
     "domains": [
       "frontend",
       "ai-agents",
@@ -8083,21 +7291,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Find and fix WCAG 2.2 accessibility issues. Two modes — report (sweep a codebase or page, produce a prioritized written report, no edits) and fix (audit→edit→verify loop on a target). Prefers direct-CDP live-DOM auditing; falls back to a browser-MCP composition or HTML-string audits.",
     "category": "Testing & Quality",
-    "tags": [
-      "testing",
-      "playwright",
-      "code",
-      "review",
-      "quality",
-      "ai",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "react",
-      "ui",
-      "components"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "ai-agents",
@@ -8197,19 +7391,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Analyze cross-channel campaign data, quantify uncertainty, and propose evidence-labeled budget tests without overstating causality.",
     "category": "Data & Database",
-    "tags": [
-      "sql",
-      "data",
-      "analytics",
-      "ai",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "unit",
-      "code",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "data-database",
       "ai-agents",
@@ -8307,17 +7489,7 @@
     "installUrl": "https://github.com/dreamhunter2333/cloudflare_temp_email",
     "summary": "Upgrade npm dependencies across all sub-packages of the project. Use when the user asks to upgrade/update dependencies, bump deps, refresh lockfiles, or update wrangler. Runs pnpm upgrades on frontend/, worker/, pages/, and vitepress-docs/, plus npm upgrades on e2e/.",
     "category": "DevOps & Cloud",
-    "tags": [
-      "cloud",
-      "deployment",
-      "ci",
-      "cd",
-      "docker",
-      "cloudflare",
-      "go",
-      "e2e",
-      "playwright"
-    ],
+    "tags": [],
     "domains": [
       "devops-cloud",
       "backend-api"
@@ -8418,16 +7590,9 @@
     "summary": "Guide for graphics API interception, overlay rendering, and render-pipeline analysis across DirectX, OpenGL, and Vulkan. Use this skill when working with Present or SwapBuffers hooks, DXGI swap chains, shader or draw-call interception, screenshot-sensitive overlays, or graphics debugging in game security research.",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "integration",
       "debugging",
-      "code",
-      "quality",
       "research",
-      "analysis",
-      "deployment",
-      "ci",
-      "infrastructure"
+      "analysis"
     ],
     "domains": [
       "testing-quality",
@@ -8526,16 +7691,8 @@
     "summary": "Guide for evidence-grounded game-security research, citation verification, uncertainty, reproducible analysis, and detector evaluation. Use when validating technical claims, synthesizing README or wiki resources, comparing security techniques, assessing telemetry or models, or deciding whether evidence supports an anti",
     "category": "Docs & Research",
     "tags": [
-      "documentation",
       "research",
-      "analysis",
-      "technical",
-      "testing",
-      "unit",
-      "code",
-      "review",
-      "quality",
-      "native"
+      "analysis"
     ],
     "domains": [
       "docs-research",
@@ -8635,22 +7792,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "Testing & Quality",
-    "tags": [
-      "testing",
-      "integration",
-      "debugging",
-      "code",
-      "review",
-      "quality",
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "rag",
-      "tool",
-      "auth",
-      "secure"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "ai-agents",
@@ -8752,19 +7894,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "Testing & Quality",
-    "tags": [
-      "integration",
-      "code",
-      "review",
-      "quality",
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "tool",
-      "deployment",
-      "ci"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "ai-agents"
@@ -8855,16 +7985,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Read-only GitHub triage for issues AND PRs. 1 item = 1 background task (category: quick). Analyzes all open items and writes evidence-backed reports to /tmp/{datetime}/. Every claim requires a GitHub permalink as proof. NEVER takes any action on GitHub - no comments, no merges, no closes, no labels. Reports only. Trigg",
     "category": "Docs & Research",
-    "tags": [
-      "architecture",
-      "analysis",
-      "ai",
-      "agents",
-      "tools",
-      "tool",
-      "code",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "ai-agents"
@@ -8959,17 +8080,8 @@
     "summary": "Nuclear-grade 16-agent pre-publish release gate. Runs /get-unpublished-changes to detect all changes since last npm release, spawns up to 10 ultrabrain agents for deep per-change analysis, invokes /review-work (5 agents) for holistic review, and 1 oracle for overall release synthesis. Runs ONLY when the user explicitly",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "docs",
       "analysis",
-      "code",
-      "review",
-      "quality"
+      "review"
     ],
     "domains": [
       "ai-agents",
@@ -9062,16 +8174,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Read-only GitHub triage for issues AND PRs. 1 item = 1 background task (category: quick). Analyzes all open items and writes evidence-backed reports to /tmp/{datetime}/. Every claim requires a GitHub permalink as proof. NEVER takes any action on GitHub - no comments, no merges, no closes, no labels. Reports only. Trigg",
     "category": "Docs & Research",
-    "tags": [
-      "architecture",
-      "analysis",
-      "ai",
-      "agents",
-      "tools",
-      "tool",
-      "code",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "ai-agents"
@@ -9166,17 +8269,8 @@
     "summary": "Nuclear-grade 16-agent pre-publish release gate. Runs /get-unpublished-changes to detect all changes since last npm release, spawns up to 10 ultrabrain agents for deep per-change analysis, invokes /review-work (5 agents) for holistic review, and 1 oracle for overall release synthesis. Runs ONLY when the user explicitly",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "docs",
       "analysis",
-      "code",
-      "review",
-      "quality"
+      "review"
     ],
     "domains": [
       "ai-agents",
@@ -9269,16 +8363,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "ACTIVATES ONLY on an explicit user request for the ulw-plan workflow: the user themselves saying ulw-plan, ulw plan, /skill:ulw-plan, or asking in their own words for a work plan before coding. NEVER self-activates: a bare ulw/ultrawork run, an agent-side routing decision, or reading this file is not a request, and the",
     "category": "Docs & Research",
-    "tags": [
-      "research",
-      "writing",
-      "planning",
-      "analysis",
-      "ui",
-      "components",
-      "ai",
-      "agents"
-    ],
+    "tags": [],
     "domains": [
       "docs-research"
     ],
@@ -9376,19 +8461,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Anime/illustration text-to-image (ANIMA 1.0, ~2B Cosmos DiT). Use for anime, manga, illustrated characters; accepts Danbooru tags + natural language; runs/trains on <6GB VRAM; includes anime inpainting via Anima-LLLite ControlNet",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "github",
-      "workflow",
-      "workflows",
-      "code",
-      "review",
-      "quality"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "automation-integrations",
@@ -9485,19 +8558,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Diagnose and fix video/image color OBJECTIVELY with the get_image (action:\"analyze_color\") tool (scopes/stats such as black/white points, contrast, saturation, clipping, cast) instead of eyeballing a contact sheet. Covers the \"washed out\" signature, why reference color-match (mkl/ColorMatch/ColorMatchAdobe) CAN'T add c",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "server",
-      "node",
-      "python",
-      "go",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -9594,21 +8655,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Core ComfyUI knowledge covering workflow format, node types, pipeline patterns, and MCP tool usage",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "server",
-      "node",
-      "python",
-      "rest",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -9713,20 +8760,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Build Baidu ERNIE-Image / ERNIE-Image-Turbo workflows, primarily TEXT-TO-IMAGE. Pick ERNIE when you need precise multilingual text rendering, posters/signage, manga/anime multi-panel layouts, or strong instruction following for complex multi-object scenes. Also supports denoise-based image-to-image refine (NOT instruct",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "github",
-      "workflow",
-      "workflows",
-      "unit",
-      "code",
-      "review",
-      "quality"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "automation-integrations",
@@ -9824,19 +8858,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Use when installing a model family from an installer pack, or when building/deriving a new pack from an upstream installer or a workflow JSON. Explains the manifest-driven packs/ system and tells you to invite the user to contribute new packs back upstream.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "github",
-      "workflow",
-      "workflows",
-      "server",
-      "node",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "automation-integrations",
@@ -9933,19 +8955,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Build MiniMax H3 (Hailuo) local video workflows with native T2V/I2V/R2V nodes, Comfy-Org INT8 weights, turbo LoRAs for 8GB VRAM, 15-second stereo-audio clips, and the official MiniMax prompting guides (cite by link, do not copy).",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "github",
-      "workflow",
-      "workflows",
-      "documentation",
-      "docs",
-      "writing"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "automation-integrations",
@@ -10046,20 +9056,8 @@
     "summary": "Use when a DPF contributor needs to verify worktree edits on the **Contributor preview** runtime (port 3001) without rebuilding the Live portal image. Triggers — making any edit under apps/web/ that needs visual or HTTP-level confirmation; iterating on /build, /platform, /admin, or any other server-rendered route; debu",
     "category": "Testing & Quality",
     "tags": [
-      "unit",
-      "integration",
-      "vitest",
-      "debugging",
-      "code",
       "review",
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "server",
-      "go",
-      "rest"
+      "server"
     ],
     "domains": [
       "testing-quality",
@@ -10176,15 +9174,7 @@
     "summary": "Use when reviewing or updating a DPF specification, design doc, or implementation plan for architectural alignment — in Build Studio planning/review or during external Claude/Codex development. Applies the chief-architect lens: canonical contracts, data-model stewardship, kernel principles, and standards research, prod",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "code-review",
-      "code",
       "review",
-      "docs",
       "research",
       "architecture",
       "planning"
@@ -10280,17 +9270,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use when an open problem needs candidate approaches before a decision — authoring a spec, scoping a feature, choosing a design. Generate 2-4 architecturally-distinct options grounded in the existing substrate (grep + code graph + specs) rather than invented in a vacuum, then hand off to dpf-decision-via-kernel when the",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "code",
-      "docs",
-      "research",
-      "architecture"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -10381,17 +9361,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use when Claude, Codex, or another external contributor needs to hand branch, file, test, evidence, and unresolved-question context back to Build Studio through governed MCP records.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "integration",
-      "code",
-      "review",
-      "ui"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality"
@@ -10478,18 +9448,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use when a DPF backlog item is triaged 'build' and the embedded Build Studio pipeline is the right executor for the work. Build Studio is optional, not mandatory: external Claude Code / Codex / Grok host-worktree builds are first-class when they claim a Workroom, record evidence, and ship through PR health. This skill ",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "code",
-      "review",
-      "quality",
-      "research",
-      "architecture"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -10582,19 +9541,8 @@
     "summary": "Use when DPF platform work needs SysML v2 systems-architecture reasoning: internal EA substrate, requirements/constraints, interfaces/ports, allocations, verification cases, data architecture authority, AI agent/tool authority, Build Studio planning, current-state architecture catch-up, or external Codex/Claude/Grok pl",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "documentation",
-      "docs",
-      "research",
       "architecture",
-      "planning",
-      "code",
-      "review",
-      "quality"
+      "planning"
     ],
     "domains": [
       "ai-agents",
@@ -10691,20 +9639,7 @@
     "summary": "Provide technical guidance for Android camera development with CameraX.",
     "category": "Mobile",
     "tags": [
-      "mobile",
-      "ios",
-      "android",
-      "kotlin",
-      "testing",
-      "unit",
-      "integration",
-      "code",
-      "review",
-      "quality",
-      "workflow",
-      "integrations",
-      "apis",
-      "workflows"
+      "android"
     ],
     "domains": [
       "mobile",
@@ -10800,17 +9735,7 @@
     "installUrl": "https://github.com/TalissonVitorino/kmp-ios-skills",
     "summary": "Instructions to make or update an app's UI so that it adapts to different",
     "category": "Mobile",
-    "tags": [
-      "mobile",
-      "ios",
-      "android",
-      "kotlin",
-      "testing",
-      "code",
-      "review",
-      "ui",
-      "components"
-    ],
+    "tags": [],
     "domains": [
       "mobile",
       "testing-quality"
@@ -10901,12 +9826,8 @@
     "category": "Docs & Research",
     "tags": [
       "documentation",
-      "docs",
       "writing",
-      "technical",
-      "ui",
       "components",
-      "code",
       "review"
     ],
     "domains": [
@@ -11007,20 +9928,7 @@
     "summary": "API design principles and decision-making. REST vs GraphQL vs tRPC selection, response formats, versioning, pagination.",
     "category": "Backend & API",
     "tags": [
-      "backend",
-      "api",
-      "python",
-      "rest",
-      "graphql",
-      "security",
-      "auth",
-      "authentication",
-      "oauth",
-      "permissions",
-      "testing",
-      "unit",
-      "code",
-      "review"
+      "graphql"
     ],
     "domains": [
       "backend-api",
@@ -11123,22 +10031,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Autonomous DevSecOps & FinOps Guardrails. Orchestrates Gemini 3 Flash to audit Linux Kernel patches, Terraform cost drifts, and K8s compliance.",
     "category": "DevOps & Cloud",
-    "tags": [
-      "cloud",
-      "deployment",
-      "ci",
-      "cd",
-      "kubernetes",
-      "infrastructure",
-      "testing",
-      "unit",
-      "integration",
-      "code",
-      "review",
-      "quality",
-      "security",
-      "auth"
-    ],
+    "tags": [],
     "domains": [
       "devops-cloud",
       "testing-quality",
@@ -11262,19 +10155,7 @@
     "summary": "Scaffold, write, debug, and enhance enterprise-grade Playwright E2E tests in Java using Page Object Model, JUnit 5, Allure reporting, and parallel execution.",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "unit",
-      "integration",
-      "e2e",
-      "playwright",
-      "code",
-      "quality",
-      "automation",
-      "github",
-      "ai",
-      "tools",
-      "mcp",
-      "tool"
+      "playwright"
     ],
     "domains": [
       "testing-quality",
@@ -11383,14 +10264,7 @@
     "summary": "Guide for game-hacking technique taxonomy and threat modeling relevant to game security. Use this skill when researching memory access, code injection, overlays, input simulation, engine-specific attack surfaces, or how modern anti-cheat systems constrain user-mode, kernel-mode, hypervisor, and DMA-based cheat implemen",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "react",
-      "research",
-      "architecture",
-      "api",
-      "server",
-      "go"
+      "research"
     ],
     "domains": [
       "mobile",
@@ -11487,17 +10361,6 @@
     "summary": "Guide for understanding and contributing to the awesome-game-security curated resource list. Use this skill when adding new resources, organizing categories, mapping topics across anti-cheat, Windows kernel, DMA, reverse engineering, and game-engine research, or maintaining README.md format consistency.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "mobile",
-      "ios",
-      "android",
-      "documentation",
       "research"
     ],
     "domains": [
@@ -11603,20 +10466,7 @@
     "summary": ">",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "integration",
-      "playwright",
-      "vitest",
-      "code",
-      "quality",
-      "frontend",
-      "react",
-      "nextjs",
-      "vue",
-      "ui",
-      "css",
-      "tailwind",
-      "components"
+      "frontend"
     ],
     "domains": [
       "testing-quality",
@@ -11735,22 +10585,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "Testing & Quality",
-    "tags": [
-      "integration",
-      "debugging",
-      "code",
-      "review",
-      "quality",
-      "documentation",
-      "docs",
-      "knowledge",
-      "architecture",
-      "planning",
-      "ai",
-      "agents",
-      "llm",
-      "tools"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "docs-research",
@@ -11860,22 +10695,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Discover Civitai models with the BUILT-IN download_model action:\"search_civitai\" and install/generate them locally. Find a checkpoint/LoRA/embedding on Civitai, download it into ComfyUI, and use its trigger words. Optionally pair the official Civitai MCP for community features (images browsing, posting, collections).",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "embeddings",
-      "mcp",
-      "tool",
-      "backend",
-      "api",
-      "server",
-      "node",
-      "go",
-      "rest",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -11980,19 +10800,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Build Krea 2 Turbo txt2img workflows with the native krea2 CLIPLoader, Qwen3-VL encoder, Qwen image VAE, 8-step turbo settings, and Ideogram-style JSON prompting",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "server",
-      "node",
-      "go",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -12089,20 +10897,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Model family compatibility matrix covering loaders, resolutions, samplers, CFG, VAE, ControlNet, and LoRA compatibility for SD 1.5, SDXL, Flux, SD3, and video models",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "embeddings",
-      "mcp",
-      "tool",
-      "server",
-      "node",
-      "go",
-      "rest",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -12201,19 +10996,7 @@
     "summary": "ComfyUI prompt engineering knowledge covering CLIP text encoding syntax, weight modifiers, model-specific prompting strategies, and best practices",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "rag",
-      "embeddings",
-      "mcp",
-      "tool",
-      "writing",
-      "knowledge",
-      "architecture",
-      "technical",
-      "workflow",
-      "workflows"
+      "knowledge"
     ],
     "domains": [
       "ai-agents",
@@ -12316,12 +11099,7 @@
     "summary": "Create a GitHub issue and pull request in oracle/graalvm-reachability-metadata, link the PR to the issue, and request reviews from the standard reviewer set except the PR author.",
     "category": "Automation & Integrations",
     "tags": [
-      "automation",
       "github",
-      "workflow",
-      "auth",
-      "permissions",
-      "unit",
       "review"
     ],
     "domains": [
@@ -12413,20 +11191,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use when adding a NEW business archetype to the DPF platform — a new industry or vertical the storefront-templates taxonomy does not yet cover, or when an archetype idea is floated and needs the paved road. Covers all four provisioning dimensions (template substrate, WSID profession corpus, AI coworker decision, skills",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "unit",
-      "code",
-      "review",
-      "docs",
-      "research",
-      "writing",
-      "architecture"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -12519,18 +11284,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use in the DPF codebase after decision context is gathered and 2-4 options need WWMD/kernel scoring. Maps options to principle dimensions, calls principle_decide, and returns a human-readable recommendation with audit detail preserved.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "calling",
-      "code",
-      "review",
-      "docs",
-      "research",
-      "architecture"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -12621,17 +11375,8 @@
     "summary": "Use in the DPF codebase when durable knowledge lives only in a human's head and needs to enter the system — a founder/operator decision rationale, the 'why' behind a choice, a profession technique, domain context a new build depends on. Researches what the system already knows, then interviews in rounds of numbered que",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "documentation",
-      "docs",
       "research",
-      "knowledge",
-      "planning",
-      "code"
+      "knowledge"
     ],
     "domains": [
       "ai-agents",
@@ -12722,18 +11467,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use when creating a NEW AI coworker on the DPF platform, from any dev surface (Claude/Codex session, Build Studio, MCP client) — or when a coworker idea is floated and needs the paved road. Walks the enforced lifecycle: establish a draft through the establish_coworker factory door, complete the code-side definition che",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "unit",
-      "vitest",
-      "code",
-      "docs",
-      "research"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality"
@@ -12824,16 +11558,9 @@
     "category": "Mobile",
     "tags": [
       "mobile",
-      "ios",
       "android",
       "swift",
-      "kotlin",
-      "testing",
-      "unit",
-      "integration",
-      "code",
-      "ai",
-      "rag"
+      "testing"
     ],
     "domains": [
       "mobile",
@@ -12925,19 +11652,7 @@
     "summary": "|",
     "category": "Automation & Integrations",
     "tags": [
-      "automation",
-      "github",
-      "workflow",
-      "workflows",
-      "documentation",
-      "docs",
-      "research",
-      "architecture",
-      "analysis",
-      "testing",
-      "unit",
-      "integration",
-      "code"
+      "github"
     ],
     "domains": [
       "automation-integrations",
@@ -13057,20 +11772,7 @@
     "summary": ">",
     "category": "Backend & API",
     "tags": [
-      "backend",
-      "api",
-      "server",
-      "node",
-      "python",
-      "fastapi",
-      "django",
-      "go",
-      "rest",
-      "graphql",
-      "integration",
-      "code",
-      "quality",
-      "database"
+      "backend"
     ],
     "domains": [
       "backend-api",
@@ -13190,16 +11892,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Compare HEAD with the latest published npm versions and list all unpublished changes by release layer. Triggers: unpublished changes, changelog, what changed, whats new.",
     "category": "Docs & Research",
-    "tags": [
-      "docs",
-      "analysis",
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "components"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "ai-agents"
@@ -13286,16 +11979,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Goal-like loop that uses ultrawork mode to decompose work into systematic, evidence-bound steps.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "tool",
-      "testing",
-      "unit",
-      "code",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -13384,18 +12068,8 @@
     "summary": "Use only when the user explicitly requests a review or audit of frontend code under `web/` or `packages/dify-ui/`. Supports pending-change, file-focused, and pasted-diff reviews. Do not use for implementation-only requests, diagnosis without review intent, or backend-only code.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "rag",
-      "tool",
-      "testing",
       "code-review",
-      "code",
-      "review",
-      "quality",
-      "documentation",
-      "docs",
-      "architecture"
+      "review"
     ],
     "domains": [
       "ai-agents",
@@ -13499,13 +12173,7 @@
     "tags": [
       "frontend",
       "react",
-      "vue",
-      "svelte",
-      "ui",
-      "css",
-      "components",
-      "mobile",
-      "architecture"
+      "svelte"
     ],
     "domains": [
       "frontend"
@@ -13594,22 +12262,7 @@
     "installUrl": "https://github.com/owasp-dep-scan/dep-scan",
     "summary": "This document describes the skill profile an AI agent should use when reviewing or modifying `dep-scan`.",
     "category": "Automation & Integrations",
-    "tags": [
-      "automation",
-      "github",
-      "workflow",
-      "integrations",
-      "workflows",
-      "documentation",
-      "docs",
-      "knowledge",
-      "architecture",
-      "analysis",
-      "security",
-      "auth",
-      "authentication",
-      "secrets"
-    ],
+    "tags": [],
     "domains": [
       "automation-integrations",
       "docs-research",
@@ -13720,20 +12373,7 @@
     "summary": "Authoring ComfyUI v2 frontend extensions with @comfyorg/extension-api, covering defineNode/defineExtension/defineWidget, shell UI (sidebar tabs, commands, hotkeys), typed events, and handles. Use when writing or editing ComfyUI web-UI extension code (custom node JS, sidebar panels, widgets).",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "backend",
-      "api",
-      "server",
-      "node",
-      "python",
-      "rest",
-      "frontend",
-      "react",
-      "vue"
+      "frontend"
     ],
     "domains": [
       "ai-agents",
@@ -13842,21 +12482,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Authoring & publishing ComfyUI custom nodes to the Comfy Registry, covering node structure, pyproject.toml spec, comfy-cli publishing, and CI",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "server",
-      "node",
-      "python",
-      "go",
-      "github",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -13966,18 +12592,7 @@
     "installUrl": "https://github.com/jdubois/dr-jskill",
     "summary": "Creates Java + Spring Boot projects: Web applications, full-stack apps with Vue.js or Angular or React or vanilla JS, PostgreSQL, REST APIs, and Docker. Use when creating Spring Boot projects, setting up Java microservices, or building enterprise applications with the Spring Framework.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "tool",
-      "integration",
-      "code",
-      "review",
-      "github",
-      "integrations",
-      "apis"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -14096,13 +12711,7 @@
     "summary": "Implement an approved plan in the stax Rust codebase — write/edit source, add happy/error/edge tests, keep README/docs/skills.md in sync, and self-verify with cargo check + make lint-fast. Use when implementing a stax feature/bugfix, or on a repair pass fixing specific reviewer/verifier FAIL items. Optionally delegate ",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "unit",
-      "integration",
-      "code",
-      "review",
-      "github",
-      "workflow"
+      "review"
     ],
     "domains": [
       "testing-quality",
@@ -14188,17 +12797,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use before shipping a DPF change to find what it breaks somewhere else — a refactor, a renamed field, a contract/schema/enum edit, a shared helper, or a diff you do not trust. Traces callers, dependents and tests through the code graph, then proves the load-bearing facts by running code.",
     "category": "Testing & Quality",
-    "tags": [
-      "debugging",
-      "code",
-      "review",
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "auth",
-      "coding"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "ai-agents"
@@ -14287,18 +12886,7 @@
     "summary": "Use when working in the DPF codebase and tempted to claim a cause for an observed symptom. Before naming the cause, query the live DB / status fields / log streams / runtime state for evidence — don't read a log line and assume its suggested cause without verification. Composes with dpf-systematic-debugging as the pred",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "debugging",
-      "code",
-      "review",
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "docs",
-      "research",
-      "analysis"
+      "debugging"
     ],
     "domains": [
       "testing-quality",
@@ -14397,20 +12985,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use when ready to open a DPF pull request.",
     "category": "Testing & Quality",
-    "tags": [
-      "vitest",
-      "debugging",
-      "code",
-      "review",
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "ci",
-      "cd",
-      "infrastructure"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "ai-agents",
@@ -14508,19 +13083,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use before a WWMD/kernel OR a WWWD/business decision when the agent needs context. Queries DPF MCP and local repo state — and, for business decisions, the organization's own mission + WWWD corpus (org-overlay stance/principle pages) — before options are scored.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "integration",
-      "code",
-      "review",
-      "docs",
-      "architecture",
-      "planning"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -14614,12 +13177,8 @@
     "summary": "Core Android development patterns for Kotlin, including coroutines, lifecycle management, and functional programming idioms.",
     "category": "Mobile",
     "tags": [
-      "ios",
       "android",
-      "kotlin",
-      "expo",
-      "ai",
-      "ui"
+      "kotlin"
     ],
     "domains": [
       "mobile"
@@ -14704,16 +13263,8 @@
     "summary": "Master responsive design principles and universal design for mobile-first web and cross-device experiences. Use this skill for mobile-first strategy, responsive breakpoints, flexible layouts, touch-friendly interfaces, device testing, accessibility across devices, performance on mobile, viewport configuration, and resp",
     "category": "Frontend",
     "tags": [
-      "frontend",
-      "ui",
-      "css",
-      "tailwind",
-      "components",
       "mobile",
-      "ios",
-      "android",
-      "testing",
-      "code"
+      "testing"
     ],
     "domains": [
       "frontend",
@@ -14804,16 +13355,8 @@
     "summary": "Master responsive design principles and universal design for mobile-first web and cross-device experiences. Use this skill for mobile-first strategy, responsive breakpoints, flexible layouts, touch-friendly interfaces, device testing, accessibility across devices, performance on mobile, viewport configuration, and resp",
     "category": "Frontend",
     "tags": [
-      "frontend",
-      "ui",
-      "css",
-      "tailwind",
-      "components",
       "mobile",
-      "ios",
-      "android",
-      "testing",
-      "code"
+      "testing"
     ],
     "domains": [
       "frontend",
@@ -14904,19 +13447,8 @@
     "summary": "Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 or official MCP docs for latest API. Use when building or debugging an MCP server — tools, resources, prompts, validation, or transport choice.",
     "category": "Docs & Research",
     "tags": [
-      "documentation",
-      "docs",
-      "research",
-      "ai",
-      "agents",
       "tools",
-      "mcp",
-      "tool",
-      "assistants",
-      "api",
-      "server",
-      "node",
-      "go"
+      "server"
     ],
     "domains": [
       "docs-research",
@@ -15023,20 +13555,7 @@
     "summary": "Grounds every implementation decision in official documentation. Use when you want authoritative, source-cited code free from outdated patterns. Use when building with any framework or library where correctness matters.",
     "category": "Frontend",
     "tags": [
-      "react",
-      "nextjs",
-      "vue",
-      "svelte",
-      "ui",
-      "css",
-      "tailwind",
-      "documentation",
-      "docs",
-      "api",
-      "node",
-      "python",
-      "django",
-      "go"
+      "documentation"
     ],
     "domains": [
       "frontend",
@@ -15147,21 +13666,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Design frictionless signup experiences for developers including GitHub OAuth, API key generation, and onboarding personalization. Trigger phrases: developer signup, dev registration, OAuth flow, API key onboarding, reduce signup friction, developer authentication, signup conversion,...",
     "category": "Backend & API",
-    "tags": [
-      "backend",
-      "api",
-      "python",
-      "go",
-      "docs",
-      "research",
-      "writing",
-      "planning",
-      "technical",
-      "unit",
-      "integration",
-      "code",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "backend-api",
       "docs-research",
@@ -15275,14 +13780,7 @@
     "category": "Automation & Integrations",
     "tags": [
       "automation",
-      "workflow",
-      "workflows",
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "data"
+      "tools"
     ],
     "domains": [
       "automation-integrations",
@@ -15380,12 +13878,7 @@
     "summary": "Use when you need to address review or issue comments on an open GitHub Pull Request using the gh CLI.",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "unit",
-      "code",
-      "review",
-      "auth",
-      "permissions"
+      "review"
     ],
     "domains": [
       "testing-quality",
@@ -15473,19 +13966,7 @@
     "category": "Backend & API",
     "tags": [
       "backend",
-      "api",
-      "server",
-      "rest",
-      "testing",
-      "unit",
-      "integration",
-      "vitest",
-      "code",
-      "review",
-      "security",
-      "auth",
-      "secrets",
-      "permissions"
+      "review"
     ],
     "domains": [
       "backend-api",
@@ -15592,16 +14073,7 @@
     "category": "Docs & Research",
     "tags": [
       "research",
-      "architecture",
-      "analysis",
-      "api",
-      "server",
-      "node",
-      "go",
-      "rest",
-      "security",
-      "vulnerability",
-      "secure"
+      "security"
     ],
     "domains": [
       "docs-research",
@@ -15705,17 +14177,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "Testing & Quality",
-    "tags": [
-      "code",
-      "review",
-      "quality",
-      "ai",
-      "llm",
-      "tools",
-      "tool",
-      "ci",
-      "cd"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "ai-agents"
@@ -15803,19 +14265,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": "Harness learning subsystem coordinator. Produces Tier 4 auto-update proposal payloads consumed by the orchestrator (which surfaces them via AskUserQuestion) and orchestrates Apply/Rollback flows. Triggers when harness learning proposals are pending or learning lifecycle management is needed.",
     "category": "Testing & Quality",
-    "tags": [
-      "code",
-      "quality",
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "tool",
-      "api",
-      "server",
-      "go",
-      "rest"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "ai-agents",
@@ -15906,22 +14356,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "Security",
-    "tags": [
-      "security",
-      "auth",
-      "authentication",
-      "permissions",
-      "vulnerability",
-      "secure",
-      "coding",
-      "testing",
-      "code",
-      "review",
-      "quality",
-      "backend",
-      "api",
-      "server"
-    ],
+    "tags": [],
     "domains": [
       "security",
       "testing-quality",
@@ -16028,17 +14463,7 @@
     "installUrl": "https://github.com/Yeachan-Heo/clawhip",
     "summary": "Attach/install/use clawhip as a daemon-first notification gateway runtime for OpenClaw / Clawdbot",
     "category": "Automation & Integrations",
-    "tags": [
-      "automation",
-      "github",
-      "workflow",
-      "api",
-      "server",
-      "go",
-      "rest",
-      "docs",
-      "architecture"
-    ],
+    "tags": [],
     "domains": [
       "automation-integrations",
       "backend-api"
@@ -16143,19 +14568,7 @@
     "summary": "AI agent orchestrator with Neo4j knowledge graph, Meilisearch search, and Tree-sitter parsing. Use for coordinating multiple coding agents on complex projects with shared context and plans.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "security",
-      "auth",
-      "authentication",
-      "oauth",
-      "oidc",
       "coding",
-      "documentation",
-      "docs",
       "knowledge"
     ],
     "domains": [
@@ -16276,18 +14689,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use when adding a DPF work carrier or lifecycle. Routes it through one case, a WorkUnit adapter, the source registry, and canonical status projection.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "unit",
-      "code",
-      "review",
-      "server",
-      "node",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -16377,13 +14779,6 @@
     "summary": "Steward the live data architecture — explain the Prisma→EA data-model mirror, the ERD, schema-drift conformance findings, and impact. Use when asked about the data model, ERD, table/model relationships, foreign keys/indexes, schema structure, or \"show/refresh the data architecture\".",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "code",
-      "review",
-      "research",
       "architecture"
     ],
     "domains": [
@@ -16474,16 +14869,7 @@
     "summary": "Use for agriculture-ranching operating plans and decision briefs spanning fields, pasture, crops, hay, livestock, working animals, equipment, inputs, vendors, weather, markets, and obligations. Keeps location, evidence date, authority, and human approval explicit.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "research",
-      "knowledge",
-      "planning",
-      "analysis",
-      "testing"
+      "planning"
     ],
     "domains": [
       "ai-agents",
@@ -16574,17 +14960,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "See, open, and file backlog items for your OWN area — the BIs against your surface (portfolio) and occupation — and track their status. Scope is resolved from your identity and cannot be widened, so it stays safe on a small local model and for sensitive portfolios.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "code",
-      "review",
-      "sql",
-      "postgres",
-      "data"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -16674,15 +15050,7 @@
     "summary": "Use when a DPF symptom needs a root cause — a failing build, a wedged runtime, a stuck job, wrong output.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "debugging",
-      "code",
-      "research",
-      "knowledge"
+      "debugging"
     ],
     "domains": [
       "ai-agents",
@@ -16779,14 +15147,7 @@
     "summary": "Upgrades, or migrates, an Android project to use Android Gradle Plugin",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "ai",
-      "tools",
-      "tool",
-      "python",
-      "go"
+      "android"
     ],
     "domains": [
       "mobile",
@@ -16874,15 +15235,7 @@
     "summary": "Analyzes Perfetto traces to find the root cause of latency, memory, or",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "research",
-      "knowledge",
-      "analysis",
-      "debugging",
-      "code",
-      "review"
+      "analysis"
     ],
     "domains": [
       "mobile",
@@ -16974,18 +15327,7 @@
     "summary": "Use this skill when upgrading or migrating an Android project from any",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "native",
-      "documentation",
-      "docs",
-      "knowledge",
-      "planning",
-      "analysis",
-      "ai",
-      "llm",
-      "tool"
+      "android"
     ],
     "domains": [
       "mobile",
@@ -17084,18 +15426,8 @@
     "summary": "Room persistence for the Android target (androidx.room) - @Entity, @Dao, RoomDatabase, migrations, TypeConverters, and Flow-returning queries. Android-side database. For shared/multiplatform persistence in commonMain use sqldelight-patterns. For the broader Android data layer (Repository pattern, Room plus remote sourc",
     "category": "Mobile",
     "tags": [
-      "ios",
       "android",
-      "kotlin",
-      "expo",
-      "react",
-      "database",
-      "sql",
-      "sqlite",
-      "data",
-      "testing",
-      "integration",
-      "code"
+      "database"
     ],
     "domains": [
       "mobile",
@@ -17191,14 +15523,7 @@
     "summary": ">",
     "category": "Frontend",
     "tags": [
-      "react",
-      "nextjs",
-      "ui",
-      "components",
-      "api",
-      "node",
-      "go",
-      "rest"
+      "components"
     ],
     "domains": [
       "frontend",
@@ -17298,14 +15623,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "|",
     "category": "Frontend",
-    "tags": [
-      "ui",
-      "components",
-      "code",
-      "review",
-      "auth",
-      "coding"
-    ],
+    "tags": [],
     "domains": [
       "frontend"
     ],
@@ -17390,14 +15708,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "|",
     "category": "Frontend",
-    "tags": [
-      "ui",
-      "components",
-      "slack",
-      "workflow",
-      "code",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "frontend"
     ],
@@ -17482,12 +15793,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Ingeniero de Sistemas de Andru.ia. Diseña, redacta y despliega nuevas habilidades (skills) dentro del repositorio siguiendo el Estándar de Diamante.",
     "category": "Data & Database",
-    "tags": [
-      "data",
-      "testing",
-      "review",
-      "permissions"
-    ],
+    "tags": [],
     "domains": [
       "data-database"
     ],
@@ -17570,16 +15876,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Fetch any X/Twitter post as clean LLM-friendly JSON. Converts x.com, twitter.com, or adhx.com links into structured data with full article content, author info, and engagement metrics. No scraping or browser required.",
     "category": "Security",
-    "tags": [
-      "auth",
-      "authentication",
-      "permissions",
-      "testing",
-      "unit",
-      "code",
-      "review",
-      "data"
-    ],
+    "tags": [],
     "domains": [
       "security",
       "testing-quality",
@@ -17677,19 +15974,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Interact with GitHub issues - create, list, and view issues.",
     "category": "Docs & Research",
-    "tags": [
-      "documentation",
-      "docs",
-      "planning",
-      "ai",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "testing",
-      "unit",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "ai-agents",
@@ -17789,10 +16074,8 @@
     "category": "DevOps & Cloud",
     "tags": [
       "cloud",
-      "ci",
       "cloudflare",
-      "github",
-      "workflow"
+      "github"
     ],
     "domains": [
       "devops-cloud",
@@ -17876,15 +16159,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Remove unused code from this project with ultrawork mode, LSP-verified safety, atomic commits. Triggers: remove dead code, dead code, cleanup, remove unused.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "docs-research"
@@ -17980,16 +16255,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "QA the omo Senpi adapter (packages/omo-senpi, packages/senpi-task) against the REAL senpi binary in strict isolation, and write every artifact to the one canonical evidence path .omo/evidence/omo-senpi-adapter/<slug>/. The live drivers under packages/omo-senpi/scripts/qa/ create their own isolated SENPI_CODING_AGENT_DI",
     "category": "Docs & Research",
-    "tags": [
-      "writing",
-      "unit",
-      "e2e",
-      "code",
-      "review",
-      "node",
-      "go",
-      "rest"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "testing-quality"
@@ -18077,15 +16343,7 @@
     "installUrl": "https://github.com/langgenius/dify",
     "summary": "Summarize user input for Agent Builder E2E coverage.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "rag",
-      "tool",
-      "workflow",
-      "workflows",
-      "cloud",
-      "ci"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "automation-integrations"
@@ -18170,20 +16428,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Train custom LoRAs with ostris AI-Toolkit. Covers WAN 2.2/2.1 (people, styles, video motion) and Z-Image (Turbo & Base, low-VRAM image LoRAs). Use when the user wants to train a WAN or Z-Image LoRA; covers local + RunPod setup, dataset prep, key params, and using the result in a ComfyUI workflow.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "backend",
-      "server",
-      "node",
-      "python",
-      "github",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -18293,21 +16538,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Self-heal and report bugs to make the ecosystem better. Use when you hit ANY defect in comfyui-mcp or the sidebar panel, or in a third-party custom node or ComfyUI core. Diagnose it, and for OUR repos (comfyui-mcp, comfyui-mcp-panel, comfyui-mcp-issue-worker) fix it locally FIRST so the user is unblocked, then file a r",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "api",
-      "server",
-      "node",
-      "go",
-      "rest",
-      "github",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -18412,13 +16643,7 @@
     "summary": "Use in the DPF codebase when WWMD/kernel cannot answer a decision because principles, ownership, evidence, or domain context are missing. Captures the gap for founder review without bypassing governed MCP scope.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "code",
-      "review",
-      "architecture"
+      "review"
     ],
     "domains": [
       "ai-agents",
@@ -18504,18 +16729,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use when driving the live DPF portal through the browser (Claude-in-Chrome) — messaging a coworker, clicking through a build's gates, filling an admin form — OR observing what the build/inference engine is doing: which model ran a phase, why a tool call failed, where a build is stuck. Covers the DOM mechanics that fail",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "vitest",
-      "code",
-      "database",
-      "sql",
-      "postgres",
-      "data"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -18618,15 +16832,7 @@
     "installUrl": "https://github.com/TalissonVitorino/kmp-ios-skills",
     "summary": "Use this skill to migrate your Jetpack Compose app to add adaptive edge-to-edge",
     "category": "Mobile",
-    "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "ui",
-      "components",
-      "ai",
-      "llm"
-    ],
+    "tags": [],
     "domains": [
       "mobile"
     ],
@@ -18711,13 +16917,8 @@
     "summary": "Koin DI fundamentals and DSL reference - module {}, single/factory/scoped declarations, the *Of constructor DSL, scopes, named qualifiers, parameters, and get()/inject() resolution. General Koin concepts, not a platform-specific setup. For Kotlin Multiplatform shared DI use kmp-di; for structuring an Android app's modu",
     "category": "Mobile",
     "tags": [
-      "ios",
       "android",
-      "kotlin",
-      "database",
-      "data",
-      "testing",
-      "unit"
+      "kotlin"
     ],
     "domains": [
       "mobile"
@@ -18804,13 +17005,7 @@
     "summary": "Analyzes Android build files and R8 keep rules to identify redundancies,",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "ui",
-      "components",
-      "research",
-      "analysis"
+      "android"
     ],
     "domains": [
       "mobile"
@@ -18897,14 +17092,7 @@
     "summary": "Catalog-only control for a preregistered e2e-reviewer ablation.",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "e2e",
-      "playwright",
-      "code",
-      "review",
-      "ai",
-      "tool",
-      "data"
+      "review"
     ],
     "domains": [
       "testing-quality"
@@ -18991,13 +17179,6 @@
     "summary": "CEO/founder-mode plan review. (gstack)",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "calling",
-      "code",
       "review"
     ],
     "domains": [
@@ -19113,18 +17294,7 @@
     "installUrl": "https://github.com/garrytan/gstack",
     "summary": "Import cookies from your real Chromium browser into the headless browse session. (gstack)",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "calling",
-      "auth",
-      "testing",
-      "code",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "security",
@@ -19241,15 +17411,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "|",
     "category": "Testing & Quality",
-    "tags": [
-      "unit",
-      "code",
-      "review",
-      "quality",
-      "ui",
-      "expo",
-      "native"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "frontend"
@@ -19335,16 +17497,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "Self-contained floating chat widget with welcome screen, social links, meeting button, and message input. Single HTML file, zero dependencies.",
     "category": "Frontend",
-    "tags": [
-      "ui",
-      "css",
-      "integration",
-      "code",
-      "review",
-      "slack",
-      "calendar",
-      "workflow"
-    ],
+    "tags": [],
     "domains": [
       "frontend",
       "testing-quality",
@@ -19441,13 +17594,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "16:9 HTML deck in editorial-minimalist taste. Warm cream slides, serif display + grotesque body, hairline rules, monospace meta, generous macro-whitespace, one accent. Distilled from Leonxlnx/taste-skill `minimalist-skill`.",
     "category": "Frontend",
-    "tags": [
-      "ui",
-      "code",
-      "review",
-      "expo",
-      "native"
-    ],
+    "tags": [],
     "domains": [
       "frontend"
     ],
@@ -19537,18 +17684,7 @@
     "summary": "You are an API mocking expert specializing in realistic mock services for development, testing, and demos. Design mocks that simulate real API behavior and enable parallel development.",
     "category": "Backend & API",
     "tags": [
-      "backend",
-      "api",
-      "server",
-      "testing",
-      "unit",
-      "integration",
-      "code",
-      "review",
-      "workflow",
-      "integrations",
-      "apis",
-      "workflows"
+      "testing"
     ],
     "domains": [
       "backend-api",
@@ -19651,12 +17787,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traza la hoja de ruta óptima para proyectos de IA en español.",
     "category": "Data & Database",
-    "tags": [
-      "security",
-      "permissions",
-      "planning",
-      "technical"
-    ],
+    "tags": [],
     "domains": [
       "data-database",
       "security",
@@ -19740,12 +17871,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Estratega de Inteligencia de Dominio de Andru.ia. Analiza el nicho específico de un proyecto para inyectar conocimientos, regulaciones y estándares únicos del sector. Actívalo tras definir el nicho.",
     "category": "Data & Database",
-    "tags": [
-      "security",
-      "permissions",
-      "testing",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "data-database",
       "security"
@@ -19828,15 +17954,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "You are an accessibility expert specializing in WCAG compliance, inclusive design, and assistive technology compatibility. Conduct audits, identify barriers, and provide remediation guidance.",
     "category": "Testing & Quality",
-    "tags": [
-      "testing",
-      "unit",
-      "review",
-      "ai",
-      "rag",
-      "mcp",
-      "tool"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "ai-agents",
@@ -19922,16 +18040,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Diff a live page's accessibility violations against a baseline — by default compares uncommitted changes (stash-based), or pass --branch [<name>] to diff against a branch. Reports only new violations introduced, violations fixed, and pre-existing count. Use `scan` for a full audit with no diffing.",
     "category": "Data & Database",
-    "tags": [
-      "data",
-      "server",
-      "node",
-      "go",
-      "rest",
-      "testing",
-      "code",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "data-database",
       "backend-api",
@@ -20025,15 +18134,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Audit a live page for accessibility issues, locate each WCAG violation precisely, and return a selector-grounded fix worklist without editing.",
     "category": "Data & Database",
-    "tags": [
-      "data",
-      "testing",
-      "code",
-      "review",
-      "server",
-      "node",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "data-database",
       "testing-quality",
@@ -20126,14 +18227,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Advogado especialista em todas as areas do Direito brasileiro: familia, criminal, trabalhista, tributario, consumidor, imobiliario, empresarial, civil e constitucional.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "go",
-      "rest"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "data-database"
@@ -20224,19 +18318,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "code",
-      "quality",
-      "server",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality"
@@ -20326,14 +18408,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": "moai-adk-go local dev reference — version management/release process (sec 5), shell-script hook development (sec 7), build & dev commands (sec 10). Load only when performing these specific tasks.",
     "category": "Testing & Quality",
-    "tags": [
-      "code",
-      "quality",
-      "github",
-      "workflow",
-      "python",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality"
     ],
@@ -20423,16 +18498,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "Testing & Quality",
-    "tags": [
-      "code",
-      "review",
-      "quality",
-      "ai",
-      "llm",
-      "tools",
-      "tool",
-      "github"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "ai-agents"
@@ -20520,11 +18586,7 @@
     "summary": "Use when Codex needs language-server diagnostics, definitions, references, symbols, or rename safety checks in the current workspace.",
     "category": "Docs & Research",
     "tags": [
-      "tools",
-      "mcp",
-      "tool",
-      "server",
-      "go"
+      "server"
     ],
     "domains": [
       "docs-research",
@@ -20608,19 +18670,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Codex-only team orchestration: run a named team of cooperating Codex workers with durable, script-managed state. MUST USE when the user asks Codex to create, run, coordinate, inspect, archive, or delete a team of agents/threads/sessions, or to work on something as a team in parallel. FIRST inspects the active tool surf",
     "category": "Docs & Research",
-    "tags": [
-      "writing",
-      "knowledge",
-      "ai",
-      "agents",
-      "tools",
-      "tool",
-      "calling",
-      "backend",
-      "server",
-      "node",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "ai-agents",
@@ -20725,22 +18775,7 @@
     "installUrl": "https://github.com/unbrowse-ai/unbrowse",
     "summary": "The action engine of the internet. Unbrowse is the open-source action layer for AI agents: it learns a site's internal API routes from real browsing, then replays them as fast, cheap, indexed routes (cache hit under 200ms) instead of re-driving a browser. Capture once, replay everywhere. The default agent flow is ONE c",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "integration",
-      "playwright",
-      "code",
-      "review",
-      "api",
-      "server",
-      "node",
-      "python",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -20850,20 +18885,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Train a custom anime LoRA on the ANIMA base model with Citron's local Gradio trainer (kohya sd-scripts), <6GB VRAM, character/style LoRAs; covers setup, dataset prep, training params, and using the result in the anima-base workflow",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "backend",
-      "server",
-      "python",
-      "rest",
-      "github",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -20966,22 +18988,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Pick the right ComfyUI startup flags for VRAM, attention, caching, and speed. The full decision matrix for OOM (--novram / --cache-none / --disable-smart-memory), shared-VRAM creep on Windows (--reserve-vram N), model-switching with big text encoders (--cache-none), high-VRAM throughput (--gpu-only / --highvram), and a",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "backend",
-      "server",
-      "node",
-      "python",
-      "go",
-      "rest",
-      "github",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -21086,20 +19093,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Build Ideogram 4 (Ideogram Ultra) txt2img and img2img workflows with the local open-weights model, dual conditional/unconditional models with DualModelGuider, Qwen3-VL text encoder, and structured JSON (\"compositional deconstruction\") prompts for strong text rendering and layout control",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "github",
-      "workflow",
-      "workflows",
-      "api",
-      "server",
-      "node",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "automation-integrations",
@@ -21202,18 +19196,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Curated download URLs and target directories, organized by family (Flux, WAN, LTX, Qwen, Z-Image, SD15/SDXL), for every model the comfyui-mcp skills reference, covering checkpoints, VAEs, text encoders, and LoRAs. Use when downloading models with download_model (action:\"download\" / action:\"download_civitai\"), when a wo",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "workflow",
-      "workflows",
-      "api",
-      "server",
-      "rest"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "automation-integrations",
@@ -21315,15 +19298,7 @@
     "summary": "Build accessible web experiences that work for everyone. Use this skill whenever dealing with WCAG compliance, semantic HTML, ARIA patterns, screen reader testing, keyboard navigation, contrast ratios, accessibility audits, or inclusive design patterns. Triggers include: accessibility concerns, form design, modal dialo",
     "category": "Frontend",
     "tags": [
-      "frontend",
-      "ui",
-      "css",
-      "tailwind",
-      "ios",
-      "expo",
-      "native",
-      "testing",
-      "code"
+      "testing"
     ],
     "domains": [
       "frontend",
@@ -21412,15 +19387,7 @@
     "summary": "Build accessible web experiences that work for everyone. Use this skill whenever dealing with WCAG compliance, semantic HTML, ARIA patterns, screen reader testing, keyboard navigation, contrast ratios, accessibility audits, or inclusive design patterns. Triggers include: accessibility concerns, form design, modal dialo",
     "category": "Frontend",
     "tags": [
-      "frontend",
-      "ui",
-      "css",
-      "tailwind",
-      "ios",
-      "expo",
-      "native",
-      "testing",
-      "code"
+      "testing"
     ],
     "domains": [
       "frontend",
@@ -21508,13 +19475,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "|",
     "category": "Frontend",
-    "tags": [
-      "ui",
-      "code",
-      "review",
-      "expo",
-      "native"
-    ],
+    "tags": [],
     "domains": [
       "frontend"
     ],
@@ -21598,17 +19559,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "|",
     "category": "Frontend",
-    "tags": [
-      "ui",
-      "css",
-      "components",
-      "code",
-      "review",
-      "quality",
-      "ai",
-      "rag",
-      "tool"
-    ],
+    "tags": [],
     "domains": [
       "frontend",
       "testing-quality"
@@ -21703,14 +19654,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "16:9 HTML deck in tactical-telemetry / CRT-terminal taste. Deactivated-CRT charcoal slides, white-phosphor monospace, hazard-red accent, scanline overlay, ASCII syntax, density over decoration. Distilled from Leonxlnx/taste-skill `brutalist-skill` (Tactical Telemetry mode).",
     "category": "Frontend",
-    "tags": [
-      "ui",
-      "css",
-      "security",
-      "coding",
-      "code",
-      "review"
-    ],
+    "tags": [],
     "domains": [
       "frontend"
     ],
@@ -21801,21 +19745,7 @@
     "installUrl": "https://github.com/expo/expo",
     "summary": "Run Expo's configured AI code reviewer on local changes or an expo/expo pull request, summarize findings and reviewer coverage, retain PR previews by default for later posting, and post only when explicitly requested. Use when the user invokes /expo-review or asks Claude Code to run the repository's Expo code-review CL",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "ios",
-      "android",
-      "expo",
-      "react",
-      "native",
-      "security",
-      "auth"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "mobile",
@@ -21923,15 +19853,7 @@
     "summary": "Create, iterate, and scale paid ad creative for Google Ads, Meta, LinkedIn, TikTok, and similar platforms. Use when generating headlines, descriptions, primary text, or large sets of ad variations for testing and performance optimization.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "data",
-      "testing",
-      "code",
-      "quality"
+      "testing"
     ],
     "domains": [
       "ai-agents",
@@ -22033,18 +19955,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Build persistent agents on Azure AI Foundry using the Microsoft Agent Framework Python SDK.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "docs",
-      "architecture",
-      "planning",
-      "analysis"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "docs-research",
@@ -22145,15 +20056,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Enforces a strict input boundary protocol (detect, classify, filter, verify) to ensure untrusted data never reaches business logic raw.",
     "category": "Data & Database",
-    "tags": [
-      "database",
-      "sql",
-      "data",
-      "ci",
-      "infrastructure",
-      "writing",
-      "planning"
-    ],
+    "tags": [],
     "domains": [
       "data-database"
     ],
@@ -22248,13 +20151,8 @@
     "category": "DevOps & Cloud",
     "tags": [
       "cloud",
-      "deployment",
-      "ci",
       "cloudflare",
-      "api",
-      "server",
-      "ai",
-      "agents"
+      "server"
     ],
     "domains": [
       "devops-cloud",
@@ -22360,16 +20258,7 @@
     "summary": "QA the omo Codex Light edition (lazycodex / packages/omo-codex) itself, in strict isolation so ONLY our plugin is exercised, never the user's real ~/.codex. The first-party method drives the real `codex app-server` against an isolated CODEX_HOME plus a LOCAL mock model (no real API call), and proves a plugin hook fired",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "docs",
-      "api",
-      "server",
-      "node",
-      "go"
+      "server"
     ],
     "domains": [
       "ai-agents",
@@ -22485,13 +20374,7 @@
     "summary": "Full PR lifecycle in a fresh task-owned git worktree: implement via the ulw-loop skill with mandatory evidence-bound manual QA → reviewer-readable English PR → verification loop (CI + Cubic, where Cubic is skipped only when its quota is exhausted) → merge by default → worktree cleanup. Decomposes one task into the smal",
     "category": "Docs & Research",
     "tags": [
-      "docs",
-      "architecture",
-      "unit",
-      "code",
-      "review",
-      "github",
-      "workflow"
+      "review"
     ],
     "domains": [
       "docs-research",
@@ -22601,13 +20484,7 @@
     "summary": "Full PR lifecycle in a fresh task-owned git worktree: implement via the ulw-loop skill with mandatory evidence-bound manual QA → reviewer-readable English PR → verification loop (CI + Cubic, where Cubic is skipped only when its quota is exhausted) → merge by default → worktree cleanup. Decomposes one task into the smal",
     "category": "Docs & Research",
     "tags": [
-      "docs",
-      "architecture",
-      "unit",
-      "code",
-      "review",
-      "github",
-      "workflow"
+      "review"
     ],
     "domains": [
       "docs-research",
@@ -22716,10 +20593,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Use when the user asks about Codex Rules behavior, injected project rules, supported rule file locations, matching, or environment configuration.",
     "category": "Docs & Research",
-    "tags": [
-      "components",
-      "coding"
-    ],
+    "tags": [],
     "domains": [
       "docs-research"
     ],
@@ -22798,19 +20672,7 @@
     "installUrl": "https://github.com/artokun/comfyui-mcp",
     "summary": "Keep the ComfyUI sidebar panel node-pack (comfyui-agent-panel) in step with the orchestrator after comfyui-mcp updates. Use this whenever the orchestrator was just updated (install_comfyui (action:\"self_update\"), npm i -g comfyui-mcp, a new version in the ENVIRONMENT line), when a panel/bridge command fails in a way th",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "server",
-      "node",
-      "go",
-      "rest",
-      "workflow",
-      "workflows"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "backend-api",
@@ -22913,19 +20775,7 @@
     "summary": "Build Qwen Image Edit workflows covering model loading, conditioning, LoRAs, prompt patterns, and XY plot testing",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "testing",
-      "unit",
-      "code",
-      "quality",
-      "api",
-      "server",
-      "node",
-      "go"
+      "testing"
     ],
     "domains": [
       "ai-agents",
@@ -23027,12 +20877,7 @@
     "summary": "Use when clearing Dependabot or security-advisory alerts on the DPF repo — a batch of npm vulnerability alerts, a 'bump the vulnerable dependency' ask, or a security-tab sweep. Covers the DPF pattern for transitive vulnerabilities, lockfile regeneration, verification, and shipping a DCO PR.",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "tools",
-      "tool",
-      "code",
       "security",
-      "auth",
       "vulnerability"
     ],
     "domains": [
@@ -23136,18 +20981,8 @@
     "summary": "Best practices for Android Intent security. Use this skill when auditing",
     "category": "Mobile",
     "tags": [
-      "ios",
       "android",
-      "kotlin",
-      "expo",
-      "react",
-      "security",
-      "auth",
-      "permissions",
-      "vulnerability",
-      "secure",
-      "ui",
-      "components"
+      "security"
     ],
     "domains": [
       "mobile",
@@ -23251,12 +21086,7 @@
     "summary": ">",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "workflow",
-      "workflows",
-      "debugging"
+      "android"
     ],
     "domains": [
       "mobile",
@@ -23343,19 +21173,7 @@
     "summary": "Use this skill to integrate the Jetpack Compose Styles API into an Android",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "expo",
-      "native",
-      "testing",
-      "unit",
-      "integration",
-      "code",
-      "review",
-      "workflow",
-      "apis",
-      "workflows"
+      "android"
     ],
     "domains": [
       "mobile",
@@ -23457,15 +21275,7 @@
     "summary": "Material 3 Expressive design patterns for Jetpack Compose - expressive theming, motion physics, shape morphing, typography emphasis, color emphasis, and all 28 expressive components.",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "expo",
-      "native",
-      "ui",
-      "components",
-      "ai",
-      "tool"
+      "components"
     ],
     "domains": [
       "mobile"
@@ -23559,19 +21369,7 @@
     "installUrl": "https://github.com/TalissonVitorino/kmp-ios-skills",
     "summary": "Translates natural language data intents into syntactically valid Perfetto",
     "category": "Mobile",
-    "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "native",
-      "documentation",
-      "research",
-      "writing",
-      "analysis",
-      "ai",
-      "tools",
-      "tool"
-    ],
+    "tags": [],
     "domains": [
       "mobile",
       "docs-research",
@@ -23675,21 +21473,7 @@
     "installUrl": "https://github.com/TalissonVitorino/kmp-ios-skills",
     "summary": "Provides a complete workflow for implementing verified email retrieval",
     "category": "Mobile",
-    "tags": [
-      "mobile",
-      "ios",
-      "android",
-      "kotlin",
-      "security",
-      "auth",
-      "authentication",
-      "oauth",
-      "secure",
-      "backend",
-      "api",
-      "server",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "mobile",
       "security",
@@ -23796,16 +21580,7 @@
     "summary": "Expert in building 3D experiences for the web - Three.js, React",
     "category": "Mobile",
     "tags": [
-      "mobile",
-      "ios",
-      "android",
-      "expo",
-      "react",
-      "integration",
-      "code",
-      "review",
-      "frontend",
-      "ui"
+      "react"
     ],
     "domains": [
       "mobile",
@@ -23913,15 +21688,8 @@
     "summary": "Use when a coding task should be driven end-to-end from issue intake through implementation, review, deployment, and acceptance verification with minimal human re-intervention.",
     "category": "Security",
     "tags": [
-      "security",
-      "secrets",
-      "permissions",
       "coding",
-      "testing",
-      "unit",
-      "code",
-      "review",
-      "data"
+      "review"
     ],
     "domains": [
       "security",
@@ -24018,13 +21786,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Triage acc's open promises and close them with honest real-world verdicts via acc_act(runtime=\"outcome\").",
     "category": "Data & Database",
-    "tags": [
-      "unit",
-      "code",
-      "review",
-      "ai",
-      "mcp"
-    ],
+    "tags": [],
     "domains": [
       "data-database",
       "testing-quality"
@@ -24114,14 +21876,7 @@
     "summary": "This skill should be used when the user asks to \"implement LLM-as-judge\", \"compare model outputs\", \"create evaluation rubrics\", \"mitigate evaluation bias\", or mentions direct scoring, pairwise comparison, position bias, evaluation pipelines, or automated quality assessment.",
     "category": "Data & Database",
     "tags": [
-      "pipelines",
-      "unit",
-      "debugging",
-      "code",
-      "quality",
-      "research",
-      "knowledge",
-      "planning"
+      "pipelines"
     ],
     "domains": [
       "data-database",
@@ -24225,14 +21980,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Advogado criminalista especializado em Maria da Penha, violencia domestica, feminicidio, direito penal brasileiro, medidas protetivas, inquerito policial e acao penal.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "go",
-      "rest"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "data-database"
@@ -24323,17 +22071,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "Use when summarizing agent evaluations where autonomous, assisted, failed, timed-out, or invalid outcomes must remain distinct and comparable.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "data",
-      "ci",
-      "infrastructure"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "data-database"
@@ -24429,18 +22167,7 @@
     "summary": "Testing and benchmarking LLM agents including behavioral testing,",
     "category": "AI Agents",
     "tags": [
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "testing",
-      "integration",
-      "quality",
-      "knowledge",
-      "planning",
-      "analysis"
+      "testing"
     ],
     "domains": [
       "ai-agents",
@@ -24539,15 +22266,8 @@
     "summary": "Automates visual regression testing for DB Console UI changes. Compares screenshots and network requests between the current branch and its merge base using roachprod, playwright-cli, and ImageMagick. Use when the user wants to verify UI changes haven't introduced visual or behavioral regressions.",
     "category": "Data & Database",
     "tags": [
-      "database",
-      "sql",
-      "data",
       "testing",
-      "playwright",
-      "code",
-      "ai",
-      "tools",
-      "tool"
+      "playwright"
     ],
     "domains": [
       "data-database",
@@ -24657,16 +22377,7 @@
     "summary": "KubeSphere central controller Skill. Routes to specific Skills based on user requests: multi-cluster management (kubesphere-cluster-management), multi-tenant management (kubesphere-multi-tenant-management), extension management (kubesphere-extension-management). Also provides core architecture, API routing, and API uti",
     "category": "Docs & Research",
     "tags": [
-      "documentation",
-      "docs",
-      "architecture",
-      "api",
-      "server",
-      "python",
-      "rest",
-      "react",
-      "ui",
-      "components"
+      "architecture"
     ],
     "domains": [
       "docs-research",
@@ -24781,11 +22492,7 @@
     "installUrl": "https://github.com/dreamhunter2333/cloudflare_temp_email",
     "summary": "Upgrade the project version number. Use when the user asks to bump the version, upgrade the version, or prepare a new release version. Supports major, minor, and patch upgrades.",
     "category": "Backend & API",
-    "tags": [
-      "cloud",
-      "cloudflare",
-      "frontend"
-    ],
+    "tags": [],
     "domains": [
       "backend-api",
       "devops-cloud"
@@ -24867,12 +22574,7 @@
     "summary": "Authoring guide for Native SDK TypeScript services under src/services: ordinary scriptc static-tier TypeScript reached through generated typed Cmd clients, shared record shapes, hermetic vendored npm, streaming, deadlines, cancellation, devhost simulation, authority, replay, and the two carriers (in-process thread pool",
     "category": "Mobile",
     "tags": [
-      "expo",
-      "native",
-      "ai",
-      "rag",
-      "tool",
-      "writing"
+      "native"
     ],
     "domains": [
       "mobile"
@@ -24963,22 +22665,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "rag",
-      "mcp",
-      "tool",
-      "calling",
-      "code",
-      "review",
-      "quality",
-      "backend",
-      "server",
-      "go"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -25079,20 +22766,7 @@
     "summary": ">",
     "category": "Frontend",
     "tags": [
-      "frontend",
-      "react",
-      "nextjs",
-      "ui",
-      "css",
-      "tailwind",
-      "components",
-      "code",
-      "quality",
-      "backend",
-      "api",
-      "server",
-      "go",
-      "rest"
+      "react"
     ],
     "domains": [
       "frontend",
@@ -25197,16 +22871,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Easter egg command - about oh-my-opencode. Triggers: omomomo, about, easter egg.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "docs",
-      "frontend",
-      "ui"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "docs-research"
@@ -25299,15 +22964,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Publish oh-my-opencode to npm by triggering the GitHub Actions publish workflow and verifying its artifacts. Ship-only: never runs pre-publish-review or re-reviews merged code unless the user explicitly asks. Argument: <patch|minor|major|explicit-semver>. Triggers: publish, release, deploy, npm publish.",
     "category": "Docs & Research",
-    "tags": [
-      "knowledge",
-      "auth",
-      "authentication",
-      "coding",
-      "ai",
-      "agents",
-      "mcp"
-    ],
+    "tags": [],
     "domains": [
       "docs-research",
       "security",
@@ -25413,14 +23070,7 @@
     "category": "Security",
     "tags": [
       "security",
-      "auth",
       "vulnerability",
-      "coding",
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
       "research"
     ],
     "domains": [
@@ -25524,13 +23174,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Use when Codex needs to understand or respond to automatic comment-checker feedback emitted after an edit-like PostToolUse hook.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "components"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "docs-research"
@@ -25613,15 +23257,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Automates browser interactions for web testing, form filling, screenshots, and data extraction. Use when the user needs to navigate websites, interact with web pages, fill forms, take screenshots, test web applications, or extract information from web pages.",
     "category": "Automation & Integrations",
-    "tags": [
-      "automation",
-      "workflow",
-      "workflows",
-      "analysis",
-      "api",
-      "go",
-      "rest"
-    ],
+    "tags": [],
     "domains": [
       "automation-integrations",
       "docs-research"
@@ -25724,12 +23360,7 @@
     "installUrl": "https://github.com/cesarferreira/stax",
     "summary": "Measure whether a stax change regresses performance — release-build command latency via hyperfine, or cargo bench where present — against a baseline of the pre-change revision. Use only for perf-sensitive changes (stack tree build, git rebase/merge/worktree ops, metadata scanning, branch/PR loops); skip pure correctnes",
     "category": "Security",
-    "tags": [
-      "security",
-      "ai",
-      "tool",
-      "workflow"
-    ],
+    "tags": [],
     "domains": [
       "security"
     ],
@@ -25811,13 +23442,6 @@
     "summary": "Produce a file-level implementation plan for a stax Rust CLI change (new command, flag, bugfix, refactor, behavior change). Use before any implementation to decompose the work, name target files, define acceptance criteria and the test matrix, and flag docs that must change. Load when planning stax work, revising a pla",
     "category": "Testing & Quality",
     "tags": [
-      "testing",
-      "unit",
-      "integration",
-      "code",
-      "auth",
-      "documentation",
-      "docs",
       "planning"
     ],
     "domains": [
@@ -25907,18 +23531,7 @@
     "installUrl": "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
     "summary": "Use in the DPF codebase at a task or session boundary when a finding has been confirmed and is durable.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "tools",
-      "mcp",
-      "tool",
-      "code",
-      "review",
-      "documentation",
-      "docs",
-      "knowledge"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -26022,13 +23635,7 @@
     "summary": "|",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "ai",
-      "calling",
-      "unit",
-      "review"
+      "android"
     ],
     "domains": [
       "mobile"
@@ -26115,16 +23722,7 @@
     "summary": "Gradle build configuration quick patterns - Version Catalogs, convention plugins, multi-module setup. For deep build-logic design prefer android-skills:android-gradle-logic, and for diagnosing slow builds (build scans, configuration cache, kapt to KSP migration, CI) use android-skills:gradle-build-performance.",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "expo",
-      "testing",
-      "unit",
-      "review",
-      "ai",
-      "tools",
-      "tool"
+      "android"
     ],
     "domains": [
       "mobile",
@@ -26222,18 +23820,7 @@
     "summary": "Bridge the gap between design and development for seamless component creation. Use this skill for design-to-code processes, component specification documentation, developer handoff, component generation strategies, design system implementation in code, Figma → React workflows, automated component generation, design tok",
     "category": "Frontend",
     "tags": [
-      "frontend",
-      "react",
-      "ui",
-      "css",
-      "tailwind",
-      "components",
-      "unit",
-      "integration",
-      "code",
-      "review",
-      "workflow",
-      "workflows"
+      "react"
     ],
     "domains": [
       "frontend",
@@ -26341,16 +23928,7 @@
     "tags": [
       "frontend",
       "react",
-      "ui",
-      "tailwind",
-      "components",
-      "testing",
-      "integration",
-      "debugging",
-      "code",
-      "quality",
-      "auth",
-      "authentication"
+      "testing"
     ],
     "domains": [
       "frontend",
@@ -26456,16 +24034,7 @@
     "tags": [
       "frontend",
       "react",
-      "ui",
-      "tailwind",
-      "components",
-      "testing",
-      "integration",
-      "debugging",
-      "code",
-      "quality",
-      "auth",
-      "authentication"
+      "testing"
     ],
     "domains": [
       "frontend",
@@ -26568,13 +24137,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "Phase 1 sample plugin synthesizing a SKILL.md frontmatter for backwards-compat tests.",
     "category": "Frontend",
-    "tags": [
-      "e2e",
-      "code",
-      "review",
-      "expo",
-      "native"
-    ],
+    "tags": [],
     "domains": [
       "frontend",
       "testing-quality"
@@ -26657,15 +24220,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "|",
     "category": "Frontend",
-    "tags": [
-      "ui",
-      "ai",
-      "tools",
-      "rag",
-      "tool",
-      "github",
-      "workflow"
-    ],
+    "tags": [],
     "domains": [
       "frontend",
       "ai-agents"
@@ -26758,15 +24313,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "|",
     "category": "Frontend",
-    "tags": [
-      "ui",
-      "css",
-      "components",
-      "code",
-      "review",
-      "auth",
-      "coding"
-    ],
+    "tags": [],
     "domains": [
       "frontend"
     ],
@@ -26858,16 +24405,7 @@
     "installUrl": "https://github.com/nexu-io/open-design",
     "summary": "|",
     "category": "Frontend",
-    "tags": [
-      "ui",
-      "css",
-      "components",
-      "api",
-      "rest",
-      "graphql",
-      "data",
-      "analytics"
-    ],
+    "tags": [],
     "domains": [
       "frontend",
       "backend-api"
@@ -26966,15 +24504,7 @@
     "installUrl": "https://github.com/sickn33/agentic-awesome-skills",
     "summary": "AI-powered presentation generation via the 2slides API — create slides from text, match a reference image style, summarize documents into decks, add AI voice narration, and export pages/audio. Use for any \\\"make slides\\\", \\\"create a deck\\\", or \\\"slides from this document\\\" request.",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "tools",
-      "mcp",
-      "tool",
-      "unit",
-      "integration",
-      "code"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "testing-quality",
@@ -27084,19 +24614,7 @@
     "installUrl": "https://github.com/LetsFG/LetsFG",
     "summary": ">-",
     "category": "Automation & Integrations",
-    "tags": [
-      "automation",
-      "github",
-      "workflow",
-      "integrations",
-      "api",
-      "server",
-      "python",
-      "go",
-      "integration",
-      "code",
-      "quality"
-    ],
+    "tags": [],
     "domains": [
       "automation-integrations",
       "backend-api",
@@ -27207,17 +24725,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "Testing & Quality",
-    "tags": [
-      "code",
-      "quality",
-      "deployment",
-      "ci",
-      "vercel",
-      "ai",
-      "llm",
-      "tools",
-      "tool"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "devops-cloud",
@@ -27313,17 +24821,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "Testing & Quality",
-    "tags": [
-      "code",
-      "quality",
-      "ai",
-      "llm",
-      "tools",
-      "tool",
-      "ci",
-      "cd",
-      "vercel"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "ai-agents",
@@ -27419,21 +24917,7 @@
     "installUrl": "https://github.com/modu-ai/moai-adk",
     "summary": ">",
     "category": "AI Agents",
-    "tags": [
-      "ai",
-      "agents",
-      "llm",
-      "tools",
-      "mcp",
-      "tool",
-      "assistants",
-      "documentation",
-      "docs",
-      "knowledge",
-      "architecture",
-      "code",
-      "quality"
-    ],
+    "tags": [],
     "domains": [
       "ai-agents",
       "docs-research",
@@ -27537,14 +25021,7 @@
     "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
     "summary": "Create a high-signal bug issue or PR in the repo that owns the defect. Use this whenever the user asks to report, file, open, or triage a LazyCodex, lazycodex-ai, omo-codex, Codex plugin, or upstream Codex CLI bug, especially when they need source-backed root cause, reproduction steps, fix guidance, and GitHub routing.",
     "category": "Testing & Quality",
-    "tags": [
-      "integration",
-      "debugging",
-      "code",
-      "docs",
-      "ui",
-      "components"
-    ],
+    "tags": [],
     "domains": [
       "testing-quality",
       "docs-research"
@@ -27643,12 +25120,7 @@
     "category": "Testing & Quality",
     "tags": [
       "code-review",
-      "code",
-      "review",
-      "github",
-      "ai",
-      "agents",
-      "mcp"
+      "review"
     ],
     "domains": [
       "testing-quality",
@@ -27748,16 +25220,8 @@
     "summary": "Ktor HTTP client for an Android-only app - OkHttp/Android engine setup, ContentNegotiation with kotlinx.serialization, plugins/interceptors, and error handling on a single platform. For shared/multiplatform networking (commonMain, Darwin engine on iOS) use kmp-networking. For deeper, source-backed Ktor coverage (HttpCl",
     "category": "Mobile",
     "tags": [
-      "ios",
       "android",
-      "kotlin",
-      "expo",
-      "api",
-      "server",
-      "go",
-      "testing",
-      "unit",
-      "code"
+      "kotlin"
     ],
     "domains": [
       "mobile",
@@ -27860,18 +25324,7 @@
     "summary": "Provides knowledge and workflows to implement Android's Restore Credentials",
     "category": "Mobile",
     "tags": [
-      "ios",
-      "android",
-      "kotlin",
-      "backend",
-      "api",
-      "server",
-      "go",
-      "rest",
-      "integration",
-      "e2e",
-      "code",
-      "review"
+      "android"
     ],
     "domains": [
       "mobile",
@@ -27978,15 +25431,7 @@
     "summary": "Master CSS architecture, styling strategies, and pixel-perfect component implementation. Use this skill for CSS architecture patterns (BEM, OOCSS, atomic), Tailwind CSS configuration and best practices, CSS-in-JS libraries, component styling patterns, CSS modules, responsive styling, performance optimization, and acces",
     "category": "Frontend",
     "tags": [
-      "frontend",
-      "ui",
-      "css",
       "tailwind",
-      "components",
-      "ai",
-      "tools",
-      "tool",
-      "docs",
       "architecture"
     ],
     "domains": [
@@ -28084,16 +25529,7 @@
     "summary": "Design accessible and inclusive UI patterns that work for everyone, regardless of ability. Use this skill for accessible color combinations, accessible typography, form patterns with proper labeling, motion and animation safety, icon accessibility, accessible interactive components, multilingual design, and inclusive t",
     "category": "Frontend",
     "tags": [
-      "frontend",
-      "ui",
-      "css",
-      "tailwind",
-      "components",
-      "ai",
-      "tools",
-      "tool",
-      "mobile",
-      "native"
+      "components"
     ],
     "domains": [
       "frontend",

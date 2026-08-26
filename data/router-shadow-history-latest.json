@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-08-26T03:06:16.296Z",
+  "requiredSnapshots": 3,
+  "uniqueRegistrySnapshots": 1,
+  "evaluatedWindow": 1,
+  "safetyPass": false,
+  "contractNonRegression": false,
+  "coverageNonRegression": false,
+  "consecutiveWins": false,
+  "aggregateEvidenceDelta": 0,
+  "decision": "accumulating-evidence",
+  "note": "Promotion eligibility requires the latest 3 distinct Registry snapshots to all be snapshot-win with safety, contract and coverage non-regression. Re-running the same Registry contentHash does not add evidence. This gate never changes production automatically."
+}
