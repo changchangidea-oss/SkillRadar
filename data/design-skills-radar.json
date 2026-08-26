@@ -1,39 +1,5 @@
 [
   {
-    "id": "nexu-io/open-design/hyperframes",
-    "name": "hyperframes",
-    "source": "nexu-io/open-design",
-    "summary": "Create video compositions, animations, title cards, overlays, captions, voiceovers, audio-reactive visuals, and scene transitions in HyperFrames HTML. Use when asked to build any HTML-based video content, add captions or subtitles synced to audio, generate text-to-speech narration, create audio-reactive animation (beat",
-    "security": "C",
-    "signalScore": 77,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "vfx",
-      "typography",
-      "audio",
-      "product",
-      "prototype",
-      "visual"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/hyperframes/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "operations-design",
-      "ui-design"
-    ],
-    "qualityScore": 96,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:38.371Z",
-    "lastSeenAt": "2026-08-26T13:25:38.371Z"
-  },
-  {
     "id": "nexu-io/open-design/codex-interactive-capability-map",
     "name": "codex-interactive-capability-map",
     "source": "nexu-io/open-design",
@@ -41,29 +7,31 @@
     "security": "A",
     "signalScore": 77,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "interaction",
       "prototype",
+      "visual",
       "video",
       "motion",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/examples/codex-interactive-capability-map/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "digital-media-film"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:52.977Z",
-    "lastSeenAt": "2026-08-26T13:25:52.977Z"
+    "lastSeenAt": "2026-08-26T23:18:27.123Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
@@ -73,7 +41,7 @@
     "security": "B",
     "signalScore": 75,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "ux",
@@ -100,7 +68,7 @@
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:34.877Z",
-    "lastSeenAt": "2026-08-26T13:25:34.877Z"
+    "lastSeenAt": "2026-08-26T23:18:07.307Z"
   },
   {
     "id": "nexu-io/open-design/mobile-onboarding",
@@ -110,31 +78,31 @@
     "security": "A",
     "signalScore": 75,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "ux",
       "prototype",
       "mobile",
       "accessibility",
-      "video",
-      "typography",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/mobile-onboarding/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "video-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:41.733Z",
-    "lastSeenAt": "2026-08-26T13:25:41.733Z"
+    "lastSeenAt": "2026-08-26T23:18:14.845Z"
   },
   {
     "id": "nexu-io/open-design/hr-onboarding",
@@ -144,30 +112,30 @@
     "security": "A",
     "signalScore": 74,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "prototype",
       "accessibility",
-      "video",
-      "typography",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/hr-onboarding/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "video-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:28.036Z",
-    "lastSeenAt": "2026-08-26T13:25:28.036Z"
+    "lastSeenAt": "2026-08-26T23:17:59.876Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-studio",
@@ -177,7 +145,7 @@
     "security": "B",
     "signalScore": 74,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "fashion",
       "design",
@@ -188,8 +156,8 @@
       "art-direction",
       "research",
       "prototype",
-      "video",
-      "typography"
+      "typography",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-studio/SKILL.md",
@@ -197,13 +165,13 @@
     "domains": [
       "fashion-design",
       "experience-design",
-      "video-design",
-      "visual-communication"
+      "visual-communication",
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:36.866Z",
-    "lastSeenAt": "2026-08-26T13:25:36.866Z"
+    "lastSeenAt": "2026-08-26T23:18:09.325Z"
   },
   {
     "id": "nexu-io/open-design/contact-widget",
@@ -213,7 +181,7 @@
     "security": "B",
     "signalScore": 73,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
@@ -235,7 +203,7 @@
     "qualityScore": 79,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:25.236Z",
-    "lastSeenAt": "2026-08-26T13:25:25.236Z"
+    "lastSeenAt": "2026-08-26T23:17:56.811Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-broadside",
@@ -245,7 +213,7 @@
     "security": "B",
     "signalScore": 73,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
@@ -267,12 +235,12 @@
       "experience-design",
       "visual-communication",
       "operations-design",
-      "video-design"
+      "fashion-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:31.968Z",
-    "lastSeenAt": "2026-08-26T13:25:31.968Z"
+    "lastSeenAt": "2026-08-26T23:18:04.170Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-capsule",
@@ -282,31 +250,33 @@
     "security": "B",
     "signalScore": 73,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "research",
       "prototype",
+      "brand",
+      "visual",
       "video",
       "motion",
       "typography",
-      "brand",
-      "visual"
+      "layout",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-capsule/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "visual-communication"
+      "visual-communication",
+      "video-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:32.153Z",
-    "lastSeenAt": "2026-08-26T13:25:32.153Z"
+    "lastSeenAt": "2026-08-26T23:18:04.376Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-grove",
@@ -316,32 +286,32 @@
     "security": "B",
     "signalScore": 73,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-grove/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "operations-design"
+      "operations-design",
+      "ui-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:33.485Z",
-    "lastSeenAt": "2026-08-26T13:25:33.485Z"
+    "lastSeenAt": "2026-08-26T23:18:05.781Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-playful",
@@ -351,131 +321,32 @@
     "security": "B",
     "signalScore": 73,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-playful/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "operations-design"
+      "operations-design",
+      "ui-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:35.055Z",
-    "lastSeenAt": "2026-08-26T13:25:35.055Z"
-  },
-  {
-    "id": "nexu-io/open-design/image-poster",
-    "name": "image-poster",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "A",
-    "signalScore": 73,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "film",
-      "typography",
-      "ux",
-      "prototype",
-      "brand",
-      "editorial",
-      "illustration"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/image-poster/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "visual-communication",
-      "fashion-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:38.809Z",
-    "lastSeenAt": "2026-08-26T13:25:38.809Z"
-  },
-  {
-    "id": "nexu-io/open-design/video-shortform",
-    "name": "video-shortform",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "A",
-    "signalScore": 73,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "audio",
-      "product",
-      "prototype",
-      "photo"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/video-shortform/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "operations-design",
-      "architecture-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:46.484Z",
-    "lastSeenAt": "2026-08-26T13:25:46.484Z"
-  },
-  {
-    "id": "nexu-io/open-design/web-prototype-taste-brutalist",
-    "name": "web-prototype-taste-brutalist",
-    "source": "nexu-io/open-design",
-    "summary": "Swiss industrial-print web prototype. Newsprint canvas, monolithic black grotesque, viewport-bleeding numerals, hairline grid dividers, hazard-red accent, ASCII syntax decoration. Distilled from Leonxlnx/taste-skill `brutalist-skill` (Swiss Industrial Print mode).",
-    "security": "B",
-    "signalScore": 73,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "typography",
-      "layout",
-      "editorial",
-      "color",
-      "prototype"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/web-prototype-taste-brutalist/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "visual-communication",
-      "experience-design",
-      "ui-design"
-    ],
-    "qualityScore": 77,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:46.889Z",
-    "lastSeenAt": "2026-08-26T13:25:46.889Z"
+    "lastSeenAt": "2026-08-26T23:18:07.515Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-biennale-yellow",
@@ -485,7 +356,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -493,23 +364,23 @@
       "layout",
       "editorial",
       "color",
-      "video",
       "design",
-      "prototype"
+      "prototype",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-biennale-yellow/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
-      "video-design",
       "experience-design",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:31.209Z",
-    "lastSeenAt": "2026-08-26T13:25:31.210Z"
+    "lastSeenAt": "2026-08-26T23:18:03.378Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
@@ -519,7 +390,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -527,23 +398,24 @@
       "layout",
       "editorial",
       "color",
-      "video",
       "design",
-      "motion"
+      "video",
+      "motion",
+      "prototype"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-bold-poster/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
-      "video-design",
       "operations-design",
-      "experience-design"
+      "experience-design",
+      "video-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:31.793Z",
-    "lastSeenAt": "2026-08-26T13:25:31.793Z"
+    "lastSeenAt": "2026-08-26T23:18:03.995Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-coral",
@@ -553,7 +425,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -574,12 +446,12 @@
       "visual-communication",
       "fashion-design",
       "experience-design",
-      "video-design"
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:32.735Z",
-    "lastSeenAt": "2026-08-26T13:25:32.735Z"
+    "lastSeenAt": "2026-08-26T23:18:04.940Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-editorial-tri-tone",
@@ -589,7 +461,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -600,7 +472,7 @@
       "design",
       "research",
       "prototype",
-      "video"
+      "fashion"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-editorial-tri-tone/SKILL.md",
@@ -608,13 +480,13 @@
     "domains": [
       "visual-communication",
       "experience-design",
-      "video-design",
-      "fashion-design"
+      "fashion-design",
+      "ui-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:33.281Z",
-    "lastSeenAt": "2026-08-26T13:25:33.281Z"
+    "lastSeenAt": "2026-08-26T23:18:05.561Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-long-table",
@@ -624,7 +496,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -632,59 +504,24 @@
       "layout",
       "editorial",
       "color",
-      "video",
       "design",
       "product",
-      "prototype"
+      "prototype",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-long-table/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
-      "video-design",
       "experience-design",
-      "operations-design"
-    ],
-    "qualityScore": 71,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:33.662Z",
-    "lastSeenAt": "2026-08-26T13:25:33.662Z"
-  },
-  {
-    "id": "nexu-io/open-design/html-ppt-zhangzara-monochrome",
-    "name": "html-ppt-zhangzara-monochrome",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "B",
-    "signalScore": 72,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "editing",
-      "typography",
-      "research",
-      "prototype",
-      "visual",
-      "brand",
-      "layout",
-      "color"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-monochrome/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "visual-communication",
+      "operations-design",
       "ui-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:34.080Z",
-    "lastSeenAt": "2026-08-26T13:25:34.080Z"
+    "firstSeenAt": "2026-08-26T13:25:33.662Z",
+    "lastSeenAt": "2026-08-26T23:18:05.948Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-neo-grid-bold",
@@ -694,7 +531,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -702,25 +539,25 @@
       "layout",
       "editorial",
       "color",
-      "video",
       "design",
-      "motion",
       "research",
-      "prototype"
+      "prototype",
+      "video",
+      "motion"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-neo-grid-bold/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
-      "video-design",
       "experience-design",
-      "operations-design"
+      "operations-design",
+      "video-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:34.246Z",
-    "lastSeenAt": "2026-08-26T13:25:34.246Z"
+    "lastSeenAt": "2026-08-26T23:18:06.536Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-pin-and-paper",
@@ -730,7 +567,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -740,8 +577,7 @@
       "color",
       "design",
       "research",
-      "prototype",
-      "video"
+      "prototype"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-pin-and-paper/SKILL.md",
@@ -749,13 +585,13 @@
     "domains": [
       "visual-communication",
       "experience-design",
-      "video-design",
-      "fashion-design"
+      "fashion-design",
+      "folk-art"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:34.608Z",
-    "lastSeenAt": "2026-08-26T13:25:34.608Z"
+    "lastSeenAt": "2026-08-26T23:18:07.028Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-sakura-chroma",
@@ -765,7 +601,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -776,7 +612,8 @@
       "design",
       "product",
       "photo",
-      "video"
+      "video",
+      "prototype"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-sakura-chroma/SKILL.md",
@@ -784,13 +621,13 @@
     "domains": [
       "visual-communication",
       "operations-design",
-      "video-design",
-      "experience-design"
+      "experience-design",
+      "fashion-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:35.775Z",
-    "lastSeenAt": "2026-08-26T13:25:35.776Z"
+    "lastSeenAt": "2026-08-26T23:18:08.306Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-soft-editorial",
@@ -800,7 +637,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -811,7 +648,7 @@
       "design",
       "research",
       "prototype",
-      "video"
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-soft-editorial/SKILL.md",
@@ -819,13 +656,13 @@
     "domains": [
       "visual-communication",
       "experience-design",
-      "video-design",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:36.466Z",
-    "lastSeenAt": "2026-08-26T13:25:36.466Z"
+    "lastSeenAt": "2026-08-26T23:18:08.863Z"
   },
   {
     "id": "nexu-io/open-design/trading-analysis-dashboard-template",
@@ -835,29 +672,29 @@
     "security": "A",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "interaction",
       "prototype",
-      "video",
-      "typography",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/trading-analysis-dashboard-template/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "video-design"
     ],
     "qualityScore": 68,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:46.137Z",
-    "lastSeenAt": "2026-08-26T13:25:46.137Z"
+    "lastSeenAt": "2026-08-26T23:18:19.565Z"
   },
   {
     "id": "nexu-io/open-design/waitlist-page",
@@ -867,31 +704,32 @@
     "security": "C",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "prototype",
       "mobile",
       "accessibility",
-      "video",
-      "typography",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "brand",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/waitlist-page/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "operations-design"
     ],
     "qualityScore": 74,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:46.660Z",
-    "lastSeenAt": "2026-08-26T13:25:46.660Z"
+    "lastSeenAt": "2026-08-26T23:18:20.185Z"
   },
   {
     "id": "nexu-io/open-design/web-prototype-taste-editorial",
@@ -901,7 +739,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
@@ -914,14 +752,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:47.062Z",
-    "lastSeenAt": "2026-08-26T13:25:47.062Z"
+    "lastSeenAt": "2026-08-26T23:18:20.575Z"
   },
   {
     "id": "nexu-io/open-design/web-prototype-taste-soft",
@@ -931,7 +769,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
@@ -944,14 +782,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:47.250Z",
-    "lastSeenAt": "2026-08-26T13:25:47.250Z"
+    "lastSeenAt": "2026-08-26T23:18:20.778Z"
   },
   {
     "id": "nexu-io/open-design/webgl-experience",
@@ -961,30 +799,30 @@
     "security": "A",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "experience",
       "design",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
-      "color"
+      "typography",
+      "color",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/webgl-experience/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "operations-design"
+      "operations-design",
+      "fashion-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:47.704Z",
-    "lastSeenAt": "2026-08-26T13:25:47.705Z"
+    "lastSeenAt": "2026-08-26T23:18:21.227Z"
   },
   {
     "id": "nexu-io/open-design/x-research",
@@ -994,7 +832,7 @@
     "security": "B",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
@@ -1007,14 +845,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "industrial-design"
     ],
     "qualityScore": 65,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:49.036Z",
-    "lastSeenAt": "2026-08-26T13:25:49.036Z"
+    "lastSeenAt": "2026-08-26T23:18:22.700Z"
   },
   {
     "id": "nexu-io/open-design/critique-theater",
@@ -1024,27 +862,28 @@
     "security": "A",
     "signalScore": 72,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
       "accessibility",
-      "video",
-      "ui"
+      "ui",
+      "brand",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/atoms/critique-theater/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "operations-design"
+      "operations-design",
+      "video-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:49.753Z",
-    "lastSeenAt": "2026-08-26T13:25:49.753Z"
+    "lastSeenAt": "2026-08-26T23:18:23.486Z"
   },
   {
     "id": "nexu-io/open-design/guizang-ppt",
@@ -1054,7 +893,7 @@
     "security": "C",
     "signalScore": 71,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "brand",
@@ -1065,7 +904,9 @@
       "motion",
       "research",
       "prototype",
-      "editing"
+      "layout",
+      "editorial",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/guizang-ppt/SKILL.md",
@@ -1073,43 +914,13 @@
     "domains": [
       "operations-design",
       "experience-design",
-      "video-design",
-      "visual-communication"
+      "visual-communication",
+      "fashion-design"
     ],
     "qualityScore": 78,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:27.873Z",
-    "lastSeenAt": "2026-08-26T13:25:27.873Z"
-  },
-  {
-    "id": "nexu-io/open-design/html-ppt-taste-editorial",
-    "name": "html-ppt-taste-editorial",
-    "source": "nexu-io/open-design",
-    "summary": "16:9 HTML deck in editorial-minimalist taste. Warm cream slides, serif display + grotesque body, hairline rules, monospace meta, generous macro-whitespace, one accent. Distilled from Leonxlnx/taste-skill `minimalist-skill`.",
-    "security": "B",
-    "signalScore": 71,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "prototype",
-      "photo"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-taste-editorial/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "operations-design",
-      "fashion-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:29.854Z",
-    "lastSeenAt": "2026-08-26T13:25:29.854Z"
+    "lastSeenAt": "2026-08-26T23:17:59.707Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-daisy-days",
@@ -1119,7 +930,7 @@
     "security": "B",
     "signalScore": 71,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "art",
       "illustration",
@@ -1129,8 +940,8 @@
       "craft",
       "typography",
       "layout",
-      "video",
-      "design"
+      "design",
+      "prototype"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-daisy-days/SKILL.md",
@@ -1138,79 +949,47 @@
     "domains": [
       "folk-art",
       "visual-communication",
-      "video-design",
-      "experience-design"
+      "experience-design",
+      "fashion-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:33.108Z",
-    "lastSeenAt": "2026-08-26T13:25:33.108Z"
+    "lastSeenAt": "2026-08-26T23:18:05.391Z"
   },
   {
-    "id": "nexu-io/open-design/wireframe-greybox",
-    "name": "wireframe-greybox",
+    "id": "nexu-io/open-design/video-shortform",
+    "name": "video-shortform",
     "source": "nexu-io/open-design",
     "summary": "|",
     "security": "A",
     "signalScore": 71,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
-      "visual",
-      "brand",
-      "layout",
-      "color",
-      "prototype"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/wireframe-greybox/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "visual-communication",
-      "experience-design",
-      "ui-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:48.283Z",
-    "lastSeenAt": "2026-08-26T13:25:48.283Z"
-  },
-  {
-    "id": "nexu-io/open-design/worker-visualizer",
-    "name": "worker-visualizer",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "B",
-    "signalScore": 71,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "typography",
-      "audio",
+      "product",
       "prototype",
-      "visual",
-      "brand",
-      "color"
+      "photo",
+      "video",
+      "motion",
+      "map",
+      "environment",
+      "lighting"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/worker-visualizer/SKILL.md",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/video-shortform/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
-      "visual-communication",
-      "operations-design"
+      "operations-design",
+      "architecture-design",
+      "video-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:48.860Z",
-    "lastSeenAt": "2026-08-26T13:25:48.860Z"
+    "firstSeenAt": "2026-08-26T13:25:46.484Z",
+    "lastSeenAt": "2026-08-26T23:18:19.982Z"
   },
   {
     "id": "nexu-io/open-design/todo-write",
@@ -1220,7 +999,7 @@
     "security": "A",
     "signalScore": 71,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
@@ -1231,43 +1010,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:51.436Z",
-    "lastSeenAt": "2026-08-26T13:25:51.437Z"
-  },
-  {
-    "id": "nexu-io/open-design/audio-jingle",
-    "name": "audio-jingle",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "A",
-    "signalScore": 70,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "audio",
-      "prototype"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/audio-jingle/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "operations-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:24.614Z",
-    "lastSeenAt": "2026-08-26T13:25:24.614Z"
+    "lastSeenAt": "2026-08-26T23:18:25.388Z"
   },
   {
     "id": "nexu-io/open-design/clinical-case-report",
@@ -1277,7 +1027,7 @@
     "security": "A",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
@@ -1288,14 +1038,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 74,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:25.028Z",
-    "lastSeenAt": "2026-08-26T13:25:25.028Z"
+    "lastSeenAt": "2026-08-26T23:17:56.578Z"
   },
   {
     "id": "nexu-io/open-design/dcf-valuation",
@@ -1305,7 +1055,7 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
@@ -1317,45 +1067,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 72,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:26.041Z",
-    "lastSeenAt": "2026-08-26T13:25:26.041Z"
-  },
-  {
-    "id": "nexu-io/open-design/eng-runbook",
-    "name": "eng-runbook",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "A",
-    "signalScore": 70,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "typography",
-      "prototype",
-      "ui",
-      "layout"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/eng-runbook/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "ui-design",
-      "visual-communication"
-    ],
-    "qualityScore": 61,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:26.839Z",
-    "lastSeenAt": "2026-08-26T13:25:26.839Z"
+    "lastSeenAt": "2026-08-26T23:17:57.744Z"
   },
   {
     "id": "nexu-io/open-design/flowai-live-dashboard-template",
@@ -1365,7 +1084,7 @@
     "security": "C",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "interaction",
@@ -1374,7 +1093,7 @@
       "ui",
       "layout",
       "typography",
-      "video"
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/flowai-live-dashboard-template/SKILL.md",
@@ -1382,13 +1101,13 @@
     "domains": [
       "experience-design",
       "ui-design",
-      "video-design",
-      "visual-communication"
+      "visual-communication",
+      "operations-design"
     ],
     "qualityScore": 74,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:27.219Z",
-    "lastSeenAt": "2026-08-26T13:25:27.219Z"
+    "lastSeenAt": "2026-08-26T23:17:59.035Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-taste-brutalist",
@@ -1398,7 +1117,7 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "color",
@@ -1406,21 +1125,22 @@
       "visual",
       "illustration",
       "video",
-      "motion"
+      "motion",
+      "prototype"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-taste-brutalist/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "fashion-design",
-      "video-design",
       "operations-design",
-      "experience-design"
+      "experience-design",
+      "folk-art"
     ],
     "qualityScore": 77,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:29.681Z",
-    "lastSeenAt": "2026-08-26T13:25:29.681Z"
+    "lastSeenAt": "2026-08-26T23:18:01.710Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-block-frame",
@@ -1430,31 +1150,31 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-block-frame/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:31.417Z",
-    "lastSeenAt": "2026-08-26T13:25:31.417Z"
+    "lastSeenAt": "2026-08-26T23:18:03.555Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-blue-professional",
@@ -1464,31 +1184,31 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-blue-professional/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:31.599Z",
-    "lastSeenAt": "2026-08-26T13:25:31.599Z"
+    "lastSeenAt": "2026-08-26T23:18:03.791Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-cartesian",
@@ -1498,7 +1218,7 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
@@ -1508,7 +1228,7 @@
       "layout",
       "editorial",
       "color",
-      "video"
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-cartesian/SKILL.md",
@@ -1516,13 +1236,13 @@
     "domains": [
       "experience-design",
       "visual-communication",
-      "video-design",
-      "ui-design"
+      "ui-design",
+      "video-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:32.338Z",
-    "lastSeenAt": "2026-08-26T13:25:32.338Z"
+    "lastSeenAt": "2026-08-26T23:18:04.590Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-cobalt-grid",
@@ -1532,30 +1252,30 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-cobalt-grid/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "video-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:32.553Z",
-    "lastSeenAt": "2026-08-26T13:25:32.553Z"
+    "lastSeenAt": "2026-08-26T23:18:04.757Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-creative-mode",
@@ -1565,31 +1285,31 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "art-direction"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-creative-mode/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "fashion-design"
+      "fashion-design",
+      "ui-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:32.910Z",
-    "lastSeenAt": "2026-08-26T13:25:32.910Z"
+    "lastSeenAt": "2026-08-26T23:18:05.146Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-mat",
@@ -1599,31 +1319,68 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "architecture",
+      "map",
+      "interior"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-mat/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "architecture-design"
+      "architecture-design",
+      "ui-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:33.878Z",
-    "lastSeenAt": "2026-08-26T13:25:33.878Z"
+    "lastSeenAt": "2026-08-26T23:18:06.113Z"
+  },
+  {
+    "id": "nexu-io/open-design/html-ppt-zhangzara-monochrome",
+    "name": "html-ppt-zhangzara-monochrome",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "B",
+    "signalScore": 70,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "research",
+      "prototype",
+      "visual",
+      "brand",
+      "typography",
+      "layout",
+      "color",
+      "video",
+      "editing"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-monochrome/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "video-design",
+      "ui-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:34.080Z",
+    "lastSeenAt": "2026-08-26T23:18:06.368Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-raw-grid",
@@ -1633,31 +1390,31 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-raw-grid/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:35.230Z",
-    "lastSeenAt": "2026-08-26T13:25:35.230Z"
+    "lastSeenAt": "2026-08-26T23:18:07.717Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-retro-zine",
@@ -1667,31 +1424,32 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "photo",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-retro-zine/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "operations-design"
+      "operations-design",
+      "fashion-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:35.604Z",
-    "lastSeenAt": "2026-08-26T13:25:35.604Z"
+    "lastSeenAt": "2026-08-26T23:18:08.094Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-scatterbrain",
@@ -1701,30 +1459,30 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "art-direction"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-scatterbrain/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "fashion-design"
+      "fashion-design",
+      "ui-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:36.028Z",
-    "lastSeenAt": "2026-08-26T13:25:36.028Z"
+    "lastSeenAt": "2026-08-26T23:18:08.504Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-signal",
@@ -1734,31 +1492,31 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-signal/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:36.207Z",
-    "lastSeenAt": "2026-08-26T13:25:36.207Z"
+    "lastSeenAt": "2026-08-26T23:18:08.686Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-stencil-tablet",
@@ -1768,31 +1526,31 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-stencil-tablet/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:36.660Z",
-    "lastSeenAt": "2026-08-26T13:25:36.660Z"
+    "lastSeenAt": "2026-08-26T23:18:09.086Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-vellum",
@@ -1802,7 +1560,7 @@
     "security": "B",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
@@ -1812,7 +1570,7 @@
       "layout",
       "editorial",
       "color",
-      "video"
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-vellum/SKILL.md",
@@ -1820,108 +1578,80 @@
     "domains": [
       "experience-design",
       "visual-communication",
-      "video-design",
-      "ui-design"
+      "ui-design",
+      "video-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:37.038Z",
-    "lastSeenAt": "2026-08-26T13:25:37.038Z"
+    "lastSeenAt": "2026-08-26T23:18:09.559Z"
   },
   {
-    "id": "nexu-io/open-design/invoice",
-    "name": "invoice",
+    "id": "nexu-io/open-design/hyperframes",
+    "name": "hyperframes",
     "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "A",
+    "summary": "Create video compositions, animations, title cards, overlays, captions, voiceovers, audio-reactive visuals, and scene transitions in HyperFrames HTML. Use when asked to build any HTML-based video content, add captions or subtitles synced to audio, generate text-to-speech narration, create audio-reactive animation (beat",
+    "security": "C",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "video",
       "design",
+      "motion",
+      "vfx",
       "typography",
+      "audio",
+      "product",
       "prototype",
-      "brand",
-      "layout",
-      "color"
+      "visual"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/invoice/SKILL.md",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/hyperframes/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "video-design",
       "experience-design",
-      "visual-communication",
+      "operations-design",
       "ui-design"
     ],
-    "qualityScore": 61,
+    "qualityScore": 96,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:38.994Z",
-    "lastSeenAt": "2026-08-26T13:25:38.994Z"
+    "firstSeenAt": "2026-08-26T13:25:38.371Z",
+    "lastSeenAt": "2026-08-26T23:18:11.044Z"
   },
   {
-    "id": "nexu-io/open-design/kanban-board",
-    "name": "kanban-board",
+    "id": "nexu-io/open-design/image-poster",
+    "name": "image-poster",
     "source": "nexu-io/open-design",
     "summary": "|",
     "security": "A",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
       "ux",
       "prototype",
-      "ui",
-      "layout"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/kanban-board/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "ui-design",
-      "visual-communication"
-    ],
-    "qualityScore": 61,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:39.602Z",
-    "lastSeenAt": "2026-08-26T13:25:39.602Z"
-  },
-  {
-    "id": "nexu-io/open-design/meeting-notes",
-    "name": "meeting-notes",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "A",
-    "signalScore": 70,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
+      "brand",
       "typography",
-      "prototype",
-      "ui",
-      "layout"
+      "editorial",
+      "illustration",
+      "photo"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/meeting-notes/SKILL.md",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/image-poster/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
-      "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "fashion-design",
+      "operations-design"
     ],
-    "qualityScore": 61,
+    "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:41.393Z",
-    "lastSeenAt": "2026-08-26T13:25:41.393Z"
+    "firstSeenAt": "2026-08-26T13:25:38.809Z",
+    "lastSeenAt": "2026-08-26T23:18:11.566Z"
   },
   {
     "id": "nexu-io/open-design/pm-spec",
@@ -1931,29 +1661,29 @@
     "security": "A",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
       "product",
       "prototype",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/pm-spec/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "video-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:44.143Z",
-    "lastSeenAt": "2026-08-26T13:25:44.143Z"
+    "lastSeenAt": "2026-08-26T23:18:17.568Z"
   },
   {
     "id": "nexu-io/open-design/social-media-matrix-tracker-template",
@@ -1963,31 +1693,31 @@
     "security": "C",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "ux",
       "product",
       "interaction",
       "prototype",
-      "video",
-      "typography",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/social-media-matrix-tracker-template/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "video-design"
     ],
     "qualityScore": 68,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:45.580Z",
-    "lastSeenAt": "2026-08-26T13:25:45.580Z"
+    "lastSeenAt": "2026-08-26T23:18:18.980Z"
   },
   {
     "id": "nexu-io/open-design/team-okrs",
@@ -1997,30 +1727,30 @@
     "security": "A",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
       "product",
       "prototype",
       "visual",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/team-okrs/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:45.963Z",
-    "lastSeenAt": "2026-08-26T13:25:45.963Z"
+    "lastSeenAt": "2026-08-26T23:18:19.364Z"
   },
   {
     "id": "nexu-io/open-design/weekly-update",
@@ -2030,30 +1760,63 @@
     "security": "A",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
       "product",
       "prototype",
       "visual",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/weekly-update/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:47.871Z",
-    "lastSeenAt": "2026-08-26T13:25:47.871Z"
+    "lastSeenAt": "2026-08-26T23:18:21.396Z"
+  },
+  {
+    "id": "nexu-io/open-design/wireframe-greybox",
+    "name": "wireframe-greybox",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "A",
+    "signalScore": 70,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "visual",
+      "brand",
+      "typography",
+      "layout",
+      "color",
+      "design",
+      "prototype",
+      "ui"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/wireframe-greybox/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "experience-design",
+      "ui-design",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:48.283Z",
+    "lastSeenAt": "2026-08-26T23:18:21.850Z"
   },
   {
     "id": "nexu-io/open-design/discovery-question-form",
@@ -2063,7 +1826,7 @@
     "security": "A",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
@@ -2074,14 +1837,44 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "fashion-design"
     ],
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:50.496Z",
-    "lastSeenAt": "2026-08-26T13:25:50.496Z"
+    "lastSeenAt": "2026-08-26T23:18:24.300Z"
+  },
+  {
+    "id": "nexu-io/open-design/html-ppt-taste-editorial",
+    "name": "html-ppt-taste-editorial",
+    "source": "nexu-io/open-design",
+    "summary": "16:9 HTML deck in editorial-minimalist taste. Warm cream slides, serif display + grotesque body, hairline rules, monospace meta, generous macro-whitespace, one accent. Distilled from Leonxlnx/taste-skill `minimalist-skill`.",
+    "security": "B",
+    "signalScore": 69,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "photo",
+      "video",
+      "motion"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-taste-editorial/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "video-design",
+      "fashion-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:29.854Z",
+    "lastSeenAt": "2026-08-26T23:18:01.882Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-8-bit-orbit",
@@ -2091,63 +1884,32 @@
     "security": "B",
     "signalScore": 69,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
-      "design",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
       "color",
+      "design",
       "ux",
-      "prototype"
+      "prototype",
+      "photo",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-8-bit-orbit/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "visual-communication",
       "experience-design",
-      "operations-design"
+      "operations-design",
+      "fashion-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:31.017Z",
-    "lastSeenAt": "2026-08-26T13:25:31.017Z"
-  },
-  {
-    "id": "nexu-io/open-design/html-ppt-zhangzara-peoples-platform",
-    "name": "html-ppt-zhangzara-peoples-platform",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "B",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "typography",
-      "prototype",
-      "visual",
-      "layout",
-      "color"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-peoples-platform/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 71,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:34.432Z",
-    "lastSeenAt": "2026-08-26T13:25:34.432Z"
+    "lastSeenAt": "2026-08-26T23:18:03.198Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-zhangzara-retro-windows",
@@ -2157,30 +1919,30 @@
     "security": "B",
     "signalScore": 69,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
-      "design",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
       "color",
-      "prototype"
+      "design",
+      "prototype",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-retro-windows/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "visual-communication",
       "experience-design",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:35.430Z",
-    "lastSeenAt": "2026-08-26T13:25:35.430Z"
+    "lastSeenAt": "2026-08-26T23:18:07.911Z"
   },
   {
     "id": "nexu-io/open-design/ib-pitch-book",
@@ -2190,7 +1952,7 @@
     "security": "C",
     "signalScore": 69,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -2198,23 +1960,55 @@
       "layout",
       "editorial",
       "color",
-      "video",
       "design",
-      "prototype"
+      "prototype",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/ib-pitch-book/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
-      "video-design",
       "experience-design",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 78,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:38.578Z",
-    "lastSeenAt": "2026-08-26T13:25:38.578Z"
+    "lastSeenAt": "2026-08-26T23:18:11.396Z"
+  },
+  {
+    "id": "nexu-io/open-design/kanban-board",
+    "name": "kanban-board",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "A",
+    "signalScore": 69,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "ux",
+      "prototype",
+      "ui",
+      "layout",
+      "typography",
+      "color"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/kanban-board/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:39.602Z",
+    "lastSeenAt": "2026-08-26T23:18:12.295Z"
   },
   {
     "id": "nexu-io/open-design/patch-edit",
@@ -2224,7 +2018,7 @@
     "security": "A",
     "signalScore": 69,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
@@ -2235,14 +2029,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:51.085Z",
-    "lastSeenAt": "2026-08-26T13:25:51.085Z"
+    "lastSeenAt": "2026-08-26T23:18:24.920Z"
   },
   {
     "id": "nexu-io/open-design/article-magazine",
@@ -2252,26 +2046,28 @@
     "security": "B",
     "signalScore": 69,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/examples/article-magazine/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "visual-communication"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:51.869Z",
-    "lastSeenAt": "2026-08-26T13:25:51.869Z"
+    "lastSeenAt": "2026-08-26T23:18:25.769Z"
   },
   {
     "id": "nexu-io/open-design/card-twitter",
@@ -2281,26 +2077,26 @@
     "security": "B",
     "signalScore": 69,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
-      "video",
-      "visual"
+      "visual",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/examples/card-twitter/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "fashion-design"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:52.424Z",
-    "lastSeenAt": "2026-08-26T13:25:52.424Z"
+    "lastSeenAt": "2026-08-26T23:18:26.485Z"
   },
   {
     "id": "nexu-io/open-design/card-xiaohongshu",
@@ -2310,26 +2106,26 @@
     "security": "B",
     "signalScore": 69,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
-      "video",
-      "visual"
+      "visual",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/examples/card-xiaohongshu/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "fashion-design"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:52.599Z",
-    "lastSeenAt": "2026-08-26T13:25:52.599Z"
+    "lastSeenAt": "2026-08-26T23:18:26.652Z"
   },
   {
     "id": "nexu-io/open-design/data-report",
@@ -2339,26 +2135,26 @@
     "security": "B",
     "signalScore": 69,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
-      "video",
-      "visual"
+      "visual",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/examples/data-report/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "fashion-design"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:53.575Z",
-    "lastSeenAt": "2026-08-26T13:25:53.575Z"
+    "lastSeenAt": "2026-08-26T23:18:27.779Z"
   },
   {
     "id": "nexu-io/open-design/sample-plugin",
@@ -2368,7 +2164,7 @@
     "security": "A",
     "signalScore": 68,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
@@ -2379,46 +2175,76 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:24.426Z",
-    "lastSeenAt": "2026-08-26T13:25:24.426Z"
+    "lastSeenAt": "2026-08-26T23:17:55.870Z"
   },
   {
-    "id": "nexu-io/open-design/live-dashboard",
-    "name": "live-dashboard",
+    "id": "nexu-io/open-design/audio-jingle",
+    "name": "audio-jingle",
     "source": "nexu-io/open-design",
     "summary": "|",
-    "security": "C",
+    "security": "A",
     "signalScore": 68,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "motion",
-      "typography",
-      "product",
       "prototype",
-      "visual"
+      "video",
+      "audio"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/live-dashboard/SKILL.md",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/audio-jingle/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
+      "video-design",
       "operations-design",
-      "folk-art"
+      "digital-media-film"
     ],
-    "qualityScore": 74,
+    "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:40.944Z",
-    "lastSeenAt": "2026-08-26T13:25:40.944Z"
+    "firstSeenAt": "2026-08-26T13:25:24.614Z",
+    "lastSeenAt": "2026-08-26T23:17:56.107Z"
+  },
+  {
+    "id": "nexu-io/open-design/web-prototype-taste-brutalist",
+    "name": "web-prototype-taste-brutalist",
+    "source": "nexu-io/open-design",
+    "summary": "Swiss industrial-print web prototype. Newsprint canvas, monolithic black grotesque, viewport-bleeding numerals, hairline grid dividers, hazard-red accent, ASCII syntax decoration. Distilled from Leonxlnx/taste-skill `brutalist-skill` (Swiss Industrial Print mode).",
+    "security": "B",
+    "signalScore": 68,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "typography",
+      "layout",
+      "editorial",
+      "color",
+      "design",
+      "prototype",
+      "video",
+      "motion"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/web-prototype-taste-brutalist/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "experience-design",
+      "video-design",
+      "ui-design"
+    ],
+    "qualityScore": 77,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:46.889Z",
+    "lastSeenAt": "2026-08-26T23:18:20.350Z"
   },
   {
     "id": "nexu-io/open-design/build-test",
@@ -2428,7 +2254,7 @@
     "security": "A",
     "signalScore": 68,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
@@ -2439,14 +2265,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:49.401Z",
-    "lastSeenAt": "2026-08-26T13:25:49.401Z"
+    "lastSeenAt": "2026-08-26T23:18:23.144Z"
   },
   {
     "id": "nexu-io/open-design/code-import",
@@ -2456,7 +2282,7 @@
     "security": "A",
     "signalScore": 68,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
@@ -2467,14 +2293,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:49.587Z",
-    "lastSeenAt": "2026-08-26T13:25:49.587Z"
+    "lastSeenAt": "2026-08-26T23:18:23.311Z"
   },
   {
     "id": "nexu-io/open-design/diff-review",
@@ -2484,7 +2310,7 @@
     "security": "A",
     "signalScore": 68,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
@@ -2495,14 +2321,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:50.137Z",
-    "lastSeenAt": "2026-08-26T13:25:50.138Z"
+    "lastSeenAt": "2026-08-26T23:18:23.891Z"
   },
   {
     "id": "nexu-io/open-design/direction-picker",
@@ -2512,26 +2338,26 @@
     "security": "A",
     "signalScore": 68,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
-      "video",
-      "visual"
+      "visual",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/atoms/direction-picker/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "fashion-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:50.315Z",
-    "lastSeenAt": "2026-08-26T13:25:50.315Z"
+    "lastSeenAt": "2026-08-26T23:18:24.103Z"
   },
   {
     "id": "nexu-io/open-design/critique",
@@ -2541,29 +2367,93 @@
     "security": "C",
     "signalScore": 67,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "prototype",
       "mobile",
+      "visual",
       "video",
-      "motion",
-      "visual"
+      "motion"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/critique/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "digital-media-film"
     ],
     "qualityScore": 65,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:25.414Z",
-    "lastSeenAt": "2026-08-26T13:25:25.414Z"
+    "lastSeenAt": "2026-08-26T23:17:57.019Z"
+  },
+  {
+    "id": "nexu-io/open-design/eng-runbook",
+    "name": "eng-runbook",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "A",
+    "signalScore": 67,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "ui",
+      "layout",
+      "typography",
+      "color"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/eng-runbook/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "visual-communication",
+      "video-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:26.839Z",
+    "lastSeenAt": "2026-08-26T23:17:58.525Z"
+  },
+  {
+    "id": "nexu-io/open-design/html-ppt-zhangzara-peoples-platform",
+    "name": "html-ppt-zhangzara-peoples-platform",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "B",
+    "signalScore": 67,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "visual",
+      "typography",
+      "layout",
+      "color",
+      "campaign",
+      "video"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-zhangzara-peoples-platform/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "operations-design",
+      "fashion-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:34.432Z",
+    "lastSeenAt": "2026-08-26T23:18:06.778Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt",
@@ -2573,7 +2463,7 @@
     "security": "C",
     "signalScore": 67,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
@@ -2590,13 +2480,45 @@
     "domains": [
       "experience-design",
       "visual-communication",
-      "video-design",
-      "operations-design"
+      "operations-design",
+      "fashion-design"
     ],
     "qualityScore": 82,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:37.654Z",
-    "lastSeenAt": "2026-08-26T13:25:37.654Z"
+    "lastSeenAt": "2026-08-26T23:18:10.243Z"
+  },
+  {
+    "id": "nexu-io/open-design/invoice",
+    "name": "invoice",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "A",
+    "signalScore": 67,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "brand",
+      "typography",
+      "layout",
+      "color",
+      "ui"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/invoice/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "ui-design",
+      "video-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:38.994Z",
+    "lastSeenAt": "2026-08-26T23:18:11.725Z"
   },
   {
     "id": "nexu-io/open-design/last30days",
@@ -2606,12 +2528,11 @@
     "security": "C",
     "signalScore": 67,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
       "environment"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
@@ -2619,14 +2540,45 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "environmental-design",
-      "architecture-design"
+      "architecture-design",
+      "operations-design"
     ],
     "qualityScore": 76,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:40.524Z",
-    "lastSeenAt": "2026-08-26T13:25:40.524Z"
+    "lastSeenAt": "2026-08-26T23:18:13.500Z"
+  },
+  {
+    "id": "nexu-io/open-design/meeting-notes",
+    "name": "meeting-notes",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "A",
+    "signalScore": 67,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "ui",
+      "layout",
+      "typography",
+      "color"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/meeting-notes/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:41.393Z",
+    "lastSeenAt": "2026-08-26T23:18:14.348Z"
   },
   {
     "id": "nexu-io/open-design/mobile-app",
@@ -2636,30 +2588,30 @@
     "security": "C",
     "signalScore": 67,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "prototype",
       "mobile",
-      "video",
-      "typography",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/mobile-app/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "video-design"
     ],
     "qualityScore": 68,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:41.567Z",
-    "lastSeenAt": "2026-08-26T13:25:41.567Z"
+    "lastSeenAt": "2026-08-26T23:18:14.587Z"
   },
   {
     "id": "nexu-io/open-design/replit-deck",
@@ -2669,7 +2621,7 @@
     "security": "C",
     "signalScore": 67,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "campaign",
@@ -2693,38 +2645,7 @@
     "qualityScore": 74,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:44.542Z",
-    "lastSeenAt": "2026-08-26T13:25:44.542Z"
-  },
-  {
-    "id": "nexu-io/open-design/design-extract",
-    "name": "design-extract",
-    "source": "nexu-io/open-design",
-    "summary": "Extract design tokens (color / typography / spacing) from imported source code, screenshots, or Figma exports into the canonical token bag token-map consumes.",
-    "security": "C",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "typography",
-      "prototype",
-      "ui",
-      "figma"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/atoms/design-extract/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:49.919Z",
-    "lastSeenAt": "2026-08-26T13:25:49.919Z"
+    "lastSeenAt": "2026-08-26T23:18:17.969Z"
   },
   {
     "id": "nexu-io/open-design/handoff",
@@ -2734,27 +2655,27 @@
     "security": "B",
     "signalScore": 67,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
-      "video",
       "ui",
-      "figma"
+      "figma",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/atoms/handoff/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "operations-design"
+      "operations-design",
+      "video-design"
     ],
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:50.896Z",
-    "lastSeenAt": "2026-08-26T13:25:50.896Z"
+    "lastSeenAt": "2026-08-26T23:18:24.674Z"
   },
   {
     "id": "nexu-io/open-design/dashboard",
@@ -2764,30 +2685,31 @@
     "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "ux",
       "prototype",
       "accessibility",
-      "video",
-      "typography",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "brand",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/dashboard/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "operations-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:25.583Z",
-    "lastSeenAt": "2026-08-26T13:25:25.583Z"
+    "lastSeenAt": "2026-08-26T23:17:57.281Z"
   },
   {
     "id": "nexu-io/open-design/gamified-app",
@@ -2797,31 +2719,31 @@
     "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "prototype",
       "mobile",
-      "video",
-      "typography",
       "brand",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/gamified-app/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:27.391Z",
-    "lastSeenAt": "2026-08-26T13:25:27.391Z"
+    "lastSeenAt": "2026-08-26T23:17:59.256Z"
   },
   {
     "id": "nexu-io/open-design/kami-landing",
@@ -2831,62 +2753,30 @@
     "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
       "prototype",
-      "video",
       "brand",
       "editorial",
-      "color"
+      "color",
+      "ui",
+      "design-system"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/kami-landing/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:39.394Z",
-    "lastSeenAt": "2026-08-26T13:25:39.394Z"
-  },
-  {
-    "id": "nexu-io/open-design/motion-frames",
-    "name": "motion-frames",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "typography",
-      "prototype",
-      "brand",
-      "layout",
-      "color"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/motion-frames/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "visual-communication",
-      "ui-design"
-    ],
-    "qualityScore": 61,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:41.923Z",
-    "lastSeenAt": "2026-08-26T13:25:41.923Z"
+    "lastSeenAt": "2026-08-26T23:18:12.087Z"
   },
   {
     "id": "nexu-io/open-design/open-design-landing-deck",
@@ -2896,7 +2786,7 @@
     "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "brand",
@@ -2914,12 +2804,12 @@
       "operations-design",
       "experience-design",
       "fashion-design",
-      "video-design"
+      "folk-art"
     ],
     "qualityScore": 65,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:42.298Z",
-    "lastSeenAt": "2026-08-26T13:25:42.298Z"
+    "lastSeenAt": "2026-08-26T23:18:15.527Z"
   },
   {
     "id": "nexu-io/open-design/open-design-landing",
@@ -2929,7 +2819,7 @@
     "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "brand",
@@ -2937,7 +2827,9 @@
       "visual",
       "video",
       "motion",
-      "prototype"
+      "prototype",
+      "layout",
+      "editorial"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/open-design-landing/SKILL.md",
@@ -2945,13 +2837,13 @@
     "domains": [
       "operations-design",
       "experience-design",
-      "video-design",
-      "visual-communication"
+      "visual-communication",
+      "folk-art"
     ],
     "qualityScore": 69,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:43.003Z",
-    "lastSeenAt": "2026-08-26T13:25:43.003Z"
+    "lastSeenAt": "2026-08-26T23:18:16.354Z"
   },
   {
     "id": "nexu-io/open-design/pricing-page",
@@ -2961,30 +2853,33 @@
     "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "ux",
       "product",
       "prototype",
-      "video",
-      "typography",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "art",
+      "color",
+      "pattern",
+      "craft"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/pricing-page/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "folk-art"
+      "folk-art",
+      "visual-communication"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:44.369Z",
-    "lastSeenAt": "2026-08-26T13:25:44.369Z"
+    "lastSeenAt": "2026-08-26T23:18:17.794Z"
   },
   {
     "id": "nexu-io/open-design/saas-landing",
@@ -2994,63 +2889,33 @@
     "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "ux",
       "product",
       "prototype",
-      "video",
-      "typography",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "art",
+      "color",
+      "pattern",
+      "craft"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/saas-landing/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "folk-art"
+      "folk-art",
+      "visual-communication"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:44.840Z",
-    "lastSeenAt": "2026-08-26T13:25:44.841Z"
-  },
-  {
-    "id": "nexu-io/open-design/sprite-animation",
-    "name": "sprite-animation",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "typography",
-      "prototype",
-      "brand",
-      "layout",
-      "color"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/sprite-animation/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "visual-communication",
-      "ui-design"
-    ],
-    "qualityScore": 61,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:45.778Z",
-    "lastSeenAt": "2026-08-26T13:25:45.778Z"
+    "lastSeenAt": "2026-08-26T23:18:18.190Z"
   },
   {
     "id": "nexu-io/open-design/web-prototype",
@@ -3060,31 +2925,31 @@
     "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "brand",
       "typography",
       "layout",
       "editorial",
       "color",
-      "video",
       "design",
       "prototype",
-      "mobile"
+      "mobile",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/web-prototype/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
-      "video-design",
       "experience-design",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 74,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:47.486Z",
-    "lastSeenAt": "2026-08-26T13:25:47.486Z"
+    "lastSeenAt": "2026-08-26T23:18:21.020Z"
   },
   {
     "id": "nexu-io/open-design/wireframe-annotated",
@@ -3094,30 +2959,63 @@
     "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "ux",
       "prototype",
       "mobile",
-      "video",
-      "typography",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/wireframe-annotated/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "video-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:48.075Z",
-    "lastSeenAt": "2026-08-26T13:25:48.075Z"
+    "lastSeenAt": "2026-08-26T23:18:21.635Z"
+  },
+  {
+    "id": "nexu-io/open-design/worker-visualizer",
+    "name": "worker-visualizer",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "B",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "visual",
+      "brand",
+      "typography",
+      "color",
+      "video",
+      "audio"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/worker-visualizer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "video-design",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:48.860Z",
+    "lastSeenAt": "2026-08-26T23:18:22.534Z"
   },
   {
     "id": "nexu-io/open-design/token-map",
@@ -3127,14 +3025,13 @@
     "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
       "typography",
       "illustration",
       "color",
-      "video",
       "design",
       "ui",
       "design-system",
@@ -3145,14 +3042,14 @@
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
-      "video-design",
       "ui-design",
-      "fashion-design"
+      "fashion-design",
+      "folk-art"
     ],
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:51.622Z",
-    "lastSeenAt": "2026-08-26T13:25:51.623Z"
+    "lastSeenAt": "2026-08-26T23:18:25.554Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-graphify-dark-graph",
@@ -3162,27 +3059,29 @@
     "security": "C",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "architecture",
+      "map"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-graphify-dark-graph/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "architecture-design"
+      "architecture-design",
+      "ui-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:28.391Z",
-    "lastSeenAt": "2026-08-26T13:25:28.391Z"
+    "lastSeenAt": "2026-08-26T23:18:00.219Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-knowledge-arch-blueprint",
@@ -3192,27 +3091,29 @@
     "security": "C",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "architecture",
+      "map"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-knowledge-arch-blueprint/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "architecture-design"
+      "architecture-design",
+      "ui-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:28.749Z",
-    "lastSeenAt": "2026-08-26T13:25:28.749Z"
+    "lastSeenAt": "2026-08-26T23:18:00.581Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-presenter-mode-reveal",
@@ -3222,27 +3123,29 @@
     "security": "C",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-presenter-mode-reveal/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "visual-communication"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:29.321Z",
-    "lastSeenAt": "2026-08-26T13:25:29.321Z"
+    "lastSeenAt": "2026-08-26T23:18:01.228Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-product-launch",
@@ -3252,27 +3155,29 @@
     "security": "C",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-product-launch/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "visual-communication"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:29.508Z",
-    "lastSeenAt": "2026-08-26T13:25:29.508Z"
+    "lastSeenAt": "2026-08-26T23:18:01.490Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-weekly-report",
@@ -3282,27 +3187,29 @@
     "security": "C",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-weekly-report/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "visual-communication"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:30.480Z",
-    "lastSeenAt": "2026-08-26T13:25:30.480Z"
+    "lastSeenAt": "2026-08-26T23:18:02.505Z"
   },
   {
     "id": "nexu-io/open-design/kami-deck",
@@ -3312,7 +3219,7 @@
     "security": "C",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "research",
@@ -3322,7 +3229,8 @@
       "layout",
       "editorial",
       "color",
-      "video"
+      "ui",
+      "design-system"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/kami-deck/SKILL.md",
@@ -3330,44 +3238,48 @@
     "domains": [
       "experience-design",
       "visual-communication",
-      "video-design",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 65,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:39.180Z",
-    "lastSeenAt": "2026-08-26T13:25:39.180Z"
+    "lastSeenAt": "2026-08-26T23:18:11.895Z"
   },
   {
-    "id": "nexu-io/open-design/figma-extract",
-    "name": "figma-extract",
+    "id": "nexu-io/open-design/live-dashboard",
+    "name": "live-dashboard",
     "source": "nexu-io/open-design",
-    "summary": "Pull a Figma file's node tree, design tokens, and embedded assets into the project cwd as a structured snapshot.",
+    "summary": "|",
     "security": "C",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
+      "product",
       "prototype",
-      "ui",
-      "figma"
+      "visual",
+      "video",
+      "motion",
+      "art",
+      "color",
+      "pattern",
+      "craft"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/atoms/figma-extract/SKILL.md",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/live-dashboard/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
-      "ui-design",
-      "arts-crafts"
+      "operations-design",
+      "folk-art",
+      "visual-communication"
     ],
-    "qualityScore": 73,
+    "qualityScore": 74,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:50.697Z",
-    "lastSeenAt": "2026-08-26T13:25:50.697Z"
+    "firstSeenAt": "2026-08-26T13:25:40.944Z",
+    "lastSeenAt": "2026-08-26T23:18:13.911Z"
   },
   {
     "id": "nexu-io/open-design/rewrite-plan",
@@ -3377,7 +3289,7 @@
     "security": "C",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "product",
@@ -3390,107 +3302,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "industrial-design"
     ],
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:51.265Z",
-    "lastSeenAt": "2026-08-26T13:25:51.265Z"
-  },
-  {
-    "id": "nexu-io/open-design/finance-report",
-    "name": "finance-report",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "typography",
-      "prototype",
-      "ui",
-      "layout"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/finance-report/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "ui-design",
-      "visual-communication"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:27.038Z",
-    "lastSeenAt": "2026-08-26T13:25:27.038Z"
-  },
-  {
-    "id": "nexu-io/open-design/github-dashboard",
-    "name": "github-dashboard",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "typography",
-      "prototype",
-      "visual",
-      "layout",
-      "color"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/github-dashboard/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "visual-communication",
-      "ui-design"
-    ],
-    "qualityScore": 68,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:27.559Z",
-    "lastSeenAt": "2026-08-26T13:25:27.559Z"
-  },
-  {
-    "id": "nexu-io/open-design/html-ppt-xhs-white-editorial",
-    "name": "html-ppt-xhs-white-editorial",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "prototype",
-      "visual"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-xhs-white-editorial/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "operations-design",
-      "visual-communication"
-    ],
-    "qualityScore": 71,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:30.830Z",
-    "lastSeenAt": "2026-08-26T13:25:30.830Z"
+    "lastSeenAt": "2026-08-26T23:18:25.160Z"
   },
   {
     "id": "nexu-io/open-design/simple-deck",
@@ -3500,63 +3319,30 @@
     "security": "C",
     "signalScore": 64,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
       "product",
       "prototype",
       "visual",
+      "typography",
       "layout",
-      "color"
+      "color",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/simple-deck/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 68,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:45.008Z",
-    "lastSeenAt": "2026-08-26T13:25:45.008Z"
-  },
-  {
-    "id": "nexu-io/open-design/social-media-dashboard",
-    "name": "social-media-dashboard",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "typography",
-      "visual",
-      "brand",
-      "layout",
-      "color",
-      "prototype"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/social-media-dashboard/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "visual-communication",
-      "experience-design",
-      "ui-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:45.385Z",
-    "lastSeenAt": "2026-08-26T13:25:45.385Z"
+    "lastSeenAt": "2026-08-26T23:18:18.419Z"
   },
   {
     "id": "nexu-io/open-design/saas-landing-skill",
@@ -3566,61 +3352,60 @@
     "security": "C",
     "signalScore": 64,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
       "product",
       "prototype",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/docs/examples/saas-landing-skill/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "video-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:49.232Z",
-    "lastSeenAt": "2026-08-26T13:25:49.232Z"
+    "lastSeenAt": "2026-08-26T23:18:22.968Z"
   },
   {
-    "id": "nexu-io/open-design/blog-post",
-    "name": "blog-post",
+    "id": "nexu-io/open-design/design-extract",
+    "name": "design-extract",
     "source": "nexu-io/open-design",
-    "summary": "|",
+    "summary": "Extract design tokens (color / typography / spacing) from imported source code, screenshots, or Figma exports into the canonical token bag token-map consumes.",
     "security": "C",
-    "signalScore": 63,
+    "signalScore": 64,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
+      "prototype",
+      "ui",
       "typography",
-      "layout",
-      "editorial",
-      "color",
-      "prototype"
+      "figma",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/blog-post/SKILL.md",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/atoms/design-extract/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "visual-communication",
       "experience-design",
-      "ui-design"
+      "ui-design",
+      "video-design",
+      "folk-art"
     ],
-    "qualityScore": 61,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:24.822Z",
-    "lastSeenAt": "2026-08-26T13:25:24.822Z"
+    "firstSeenAt": "2026-08-26T13:25:49.919Z",
+    "lastSeenAt": "2026-08-26T23:18:23.654Z"
   },
   {
     "id": "nexu-io/open-design/dating-web",
@@ -3630,31 +3415,31 @@
     "security": "C",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "brand",
       "typography",
       "layout",
       "editorial",
       "color",
-      "video",
       "design",
       "product",
-      "prototype"
+      "prototype",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/dating-web/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
-      "video-design",
       "experience-design",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:25.797Z",
-    "lastSeenAt": "2026-08-26T13:25:25.797Z"
+    "lastSeenAt": "2026-08-26T23:17:57.501Z"
   },
   {
     "id": "nexu-io/open-design/digital-eguide",
@@ -3664,30 +3449,30 @@
     "security": "C",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "brand",
       "typography",
       "layout",
       "editorial",
       "color",
-      "video",
       "design",
-      "prototype"
+      "prototype",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/digital-eguide/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
-      "video-design",
       "experience-design",
-      "ui-design"
+      "ui-design",
+      "video-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:26.241Z",
-    "lastSeenAt": "2026-08-26T13:25:26.241Z"
+    "lastSeenAt": "2026-08-26T23:17:57.960Z"
   },
   {
     "id": "nexu-io/open-design/docs-page",
@@ -3697,30 +3482,30 @@
     "security": "C",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "typography",
       "layout",
       "editorial",
       "color",
-      "video",
       "design",
-      "prototype"
+      "prototype",
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/docs-page/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
-      "video-design",
       "experience-design",
-      "ui-design"
+      "ui-design",
+      "folk-art"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:26.482Z",
-    "lastSeenAt": "2026-08-26T13:25:26.482Z"
+    "lastSeenAt": "2026-08-26T23:17:58.143Z"
   },
   {
     "id": "nexu-io/open-design/email-marketing",
@@ -3730,29 +3515,31 @@
     "security": "C",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
       "product",
       "prototype",
       "brand",
-      "photo"
+      "photo",
+      "video",
+      "typography",
+      "layout",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/email-marketing/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
       "operations-design",
-      "visual-communication"
+      "visual-communication",
+      "ui-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:26.667Z",
-    "lastSeenAt": "2026-08-26T13:25:26.667Z"
+    "lastSeenAt": "2026-08-26T23:17:58.320Z"
   },
   {
     "id": "nexu-io/open-design/live-artifact",
@@ -3762,7 +3549,7 @@
     "security": "C",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
@@ -3773,46 +3560,14 @@
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
+      "video-design",
       "ui-design"
     ],
     "qualityScore": 74,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:40.738Z",
-    "lastSeenAt": "2026-08-26T13:25:40.738Z"
-  },
-  {
-    "id": "nexu-io/open-design/magazine-poster",
-    "name": "magazine-poster",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "typography",
-      "layout",
-      "editorial",
-      "color",
-      "prototype"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/magazine-poster/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "visual-communication",
-      "experience-design",
-      "ui-design"
-    ],
-    "qualityScore": 61,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:41.198Z",
-    "lastSeenAt": "2026-08-26T13:25:41.198Z"
+    "lastSeenAt": "2026-08-26T23:18:13.700Z"
   },
   {
     "id": "nexu-io/open-design/orbit-general",
@@ -3822,7 +3577,7 @@
     "security": "C",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "visual",
       "brand",
@@ -3839,176 +3594,46 @@
     "domains": [
       "visual-communication",
       "experience-design",
-      "video-design",
-      "operations-design"
+      "operations-design",
+      "fashion-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:43.186Z",
-    "lastSeenAt": "2026-08-26T13:25:43.186Z"
+    "lastSeenAt": "2026-08-26T23:18:16.522Z"
   },
   {
-    "id": "nexu-io/open-design/orbit-github",
-    "name": "orbit-github",
+    "id": "nexu-io/open-design/social-media-dashboard",
+    "name": "social-media-dashboard",
     "source": "nexu-io/open-design",
     "summary": "|",
     "security": "C",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
-      "design",
-      "typography",
       "visual",
       "brand",
+      "typography",
       "layout",
       "color",
-      "ui",
-      "figma"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/orbit-github/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "visual-communication",
-      "ui-design",
-      "experience-design"
-    ],
-    "qualityScore": 61,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:43.367Z",
-    "lastSeenAt": "2026-08-26T13:25:43.367Z"
-  },
-  {
-    "id": "nexu-io/open-design/orbit-gmail",
-    "name": "orbit-gmail",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
       "design",
-      "typography",
-      "visual",
-      "brand",
-      "layout",
-      "color",
-      "ui",
-      "figma"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/orbit-gmail/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "visual-communication",
-      "ui-design",
-      "experience-design"
-    ],
-    "qualityScore": 61,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:43.575Z",
-    "lastSeenAt": "2026-08-26T13:25:43.576Z"
-  },
-  {
-    "id": "nexu-io/open-design/orbit-notion",
-    "name": "orbit-notion",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "typography",
       "prototype",
-      "visual",
-      "brand",
-      "color"
+      "ui"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/orbit-notion/SKILL.md",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/social-media-dashboard/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "experience-design",
       "visual-communication",
-      "ui-design"
-    ],
-    "qualityScore": 61,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:43.924Z",
-    "lastSeenAt": "2026-08-26T13:25:43.924Z"
-  },
-  {
-    "id": "nexu-io/open-design/social-carousel",
-    "name": "social-carousel",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "typography",
-      "prototype",
-      "brand",
-      "layout",
-      "color"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/social-carousel/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
       "experience-design",
-      "visual-communication",
-      "ui-design"
+      "ui-design",
+      "operations-design"
     ],
-    "qualityScore": 61,
+    "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:45.172Z",
-    "lastSeenAt": "2026-08-26T13:25:45.172Z"
-  },
-  {
-    "id": "nexu-io/open-design/tweaks",
-    "name": "tweaks",
-    "source": "nexu-io/open-design",
-    "summary": "|",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 91661,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "brand",
-      "visual",
-      "prototype"
-    ],
-    "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/tweaks/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "experience-design",
-      "visual-communication"
-    ],
-    "qualityScore": 65,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:46.308Z",
-    "lastSeenAt": "2026-08-26T13:25:46.308Z"
+    "firstSeenAt": "2026-08-26T13:25:45.385Z",
+    "lastSeenAt": "2026-08-26T23:18:18.801Z"
   },
   {
     "id": "nexu-io/open-design/wireframe-mobile-flow",
@@ -4018,61 +3643,92 @@
     "security": "C",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
       "prototype",
       "mobile",
       "ui",
-      "layout"
+      "layout",
+      "typography",
+      "color"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/wireframe-mobile-flow/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
       "ui-design",
-      "visual-communication"
+      "visual-communication",
+      "video-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:48.460Z",
-    "lastSeenAt": "2026-08-26T13:25:48.460Z"
+    "lastSeenAt": "2026-08-26T23:18:22.088Z"
   },
   {
-    "id": "nexu-io/open-design/wireframe-sketch",
-    "name": "wireframe-sketch",
+    "id": "nexu-io/open-design/figma-extract",
+    "name": "figma-extract",
     "source": "nexu-io/open-design",
-    "summary": "|",
+    "summary": "Pull a Figma file's node tree, design tokens, and embedded assets into the project cwd as a structured snapshot.",
     "security": "C",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
-      "video",
       "design",
-      "typography",
       "prototype",
-      "brand",
-      "layout",
-      "color"
+      "ui",
+      "typography",
+      "figma",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
-    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/wireframe-sketch/SKILL.md",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/plugins/_official/atoms/figma-extract/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "experience-design",
+      "ui-design",
       "video-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:50.697Z",
+    "lastSeenAt": "2026-08-26T23:18:24.505Z"
+  },
+  {
+    "id": "nexu-io/open-design/github-dashboard",
+    "name": "github-dashboard",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "visual",
+      "typography",
+      "layout",
+      "color",
+      "ui"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/github-dashboard/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
       "experience-design",
       "visual-communication",
-      "ui-design"
+      "ui-design",
+      "video-design"
     ],
-    "qualityScore": 61,
+    "qualityScore": 68,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-08-26T13:25:48.650Z",
-    "lastSeenAt": "2026-08-26T13:25:48.650Z"
+    "firstSeenAt": "2026-08-26T13:25:27.559Z",
+    "lastSeenAt": "2026-08-26T23:17:59.462Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-course-module",
@@ -4082,26 +3738,28 @@
     "security": "C",
     "signalScore": 62,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-course-module/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "visual-communication"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:28.203Z",
-    "lastSeenAt": "2026-08-26T13:25:28.203Z"
+    "lastSeenAt": "2026-08-26T23:18:00.042Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-hermes-cyber-terminal",
@@ -4111,26 +3769,28 @@
     "security": "C",
     "signalScore": 62,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-hermes-cyber-terminal/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "visual-communication"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:28.558Z",
-    "lastSeenAt": "2026-08-26T13:25:28.558Z"
+    "lastSeenAt": "2026-08-26T23:18:00.406Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-obsidian-claude-gradient",
@@ -4140,26 +3800,28 @@
     "security": "C",
     "signalScore": 62,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-obsidian-claude-gradient/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "visual-communication"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:28.915Z",
-    "lastSeenAt": "2026-08-26T13:25:28.915Z"
+    "lastSeenAt": "2026-08-26T23:18:00.747Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-pitch-deck",
@@ -4169,26 +3831,28 @@
     "security": "C",
     "signalScore": 62,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-pitch-deck/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "visual-communication"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:29.106Z",
-    "lastSeenAt": "2026-08-26T13:25:29.106Z"
+    "lastSeenAt": "2026-08-26T23:18:00.913Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-tech-sharing",
@@ -4198,26 +3862,28 @@
     "security": "C",
     "signalScore": 62,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-tech-sharing/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "visual-communication"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:30.052Z",
-    "lastSeenAt": "2026-08-26T13:25:30.052Z"
+    "lastSeenAt": "2026-08-26T23:18:02.064Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-testing-safety-alert",
@@ -4227,26 +3893,28 @@
     "security": "C",
     "signalScore": 62,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
+      "visual",
       "video",
-      "visual"
+      "ui",
+      "layout"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-testing-safety-alert/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "ui-design"
+      "ui-design",
+      "visual-communication"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:30.305Z",
-    "lastSeenAt": "2026-08-26T13:25:30.305Z"
+    "lastSeenAt": "2026-08-26T23:18:02.241Z"
   },
   {
     "id": "nexu-io/open-design/html-ppt-xhs-pastel-card",
@@ -4256,27 +3924,288 @@
     "security": "C",
     "signalScore": 62,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
-      "video",
       "visual",
-      "photo"
+      "photo",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-xhs-pastel-card/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "operations-design",
-      "fashion-design"
+      "fashion-design",
+      "ui-design"
     ],
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:30.654Z",
-    "lastSeenAt": "2026-08-26T13:25:30.654Z"
+    "lastSeenAt": "2026-08-26T23:18:02.728Z"
+  },
+  {
+    "id": "nexu-io/open-design/html-ppt-xhs-white-editorial",
+    "name": "html-ppt-xhs-white-editorial",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "visual",
+      "video",
+      "motion",
+      "layout",
+      "editorial"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/html-ppt-xhs-white-editorial/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "visual-communication",
+      "video-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:30.830Z",
+    "lastSeenAt": "2026-08-26T23:18:02.951Z"
+  },
+  {
+    "id": "nexu-io/open-design/orbit-github",
+    "name": "orbit-github",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "visual",
+      "brand",
+      "typography",
+      "layout",
+      "color",
+      "design",
+      "ui",
+      "figma",
+      "prototype"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/orbit-github/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "ui-design",
+      "experience-design",
+      "operations-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:43.367Z",
+    "lastSeenAt": "2026-08-26T23:18:16.701Z"
+  },
+  {
+    "id": "nexu-io/open-design/orbit-gmail",
+    "name": "orbit-gmail",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "visual",
+      "brand",
+      "typography",
+      "layout",
+      "color",
+      "design",
+      "ui",
+      "figma",
+      "prototype"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/orbit-gmail/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "ui-design",
+      "experience-design",
+      "operations-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:43.575Z",
+    "lastSeenAt": "2026-08-26T23:18:16.879Z"
+  },
+  {
+    "id": "nexu-io/open-design/tweaks",
+    "name": "tweaks",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "brand",
+      "visual",
+      "video",
+      "motion",
+      "prototype",
+      "layout",
+      "color"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/tweaks/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "experience-design",
+      "visual-communication",
+      "fashion-design"
+    ],
+    "qualityScore": 65,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:46.308Z",
+    "lastSeenAt": "2026-08-26T23:18:19.803Z"
+  },
+  {
+    "id": "nexu-io/open-design/blog-post",
+    "name": "blog-post",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "typography",
+      "layout",
+      "editorial",
+      "color",
+      "design",
+      "prototype",
+      "ui"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/blog-post/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "experience-design",
+      "ui-design",
+      "video-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:24.822Z",
+    "lastSeenAt": "2026-08-26T23:17:56.363Z"
+  },
+  {
+    "id": "nexu-io/open-design/finance-report",
+    "name": "finance-report",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "ui",
+      "layout",
+      "typography",
+      "color"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/finance-report/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "visual-communication",
+      "video-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:27.038Z",
+    "lastSeenAt": "2026-08-26T23:17:58.763Z"
+  },
+  {
+    "id": "nexu-io/open-design/magazine-poster",
+    "name": "magazine-poster",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "typography",
+      "layout",
+      "editorial",
+      "color",
+      "design",
+      "prototype",
+      "ui"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/magazine-poster/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "experience-design",
+      "ui-design",
+      "video-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:41.198Z",
+    "lastSeenAt": "2026-08-26T23:18:14.130Z"
+  },
+  {
+    "id": "nexu-io/open-design/motion-frames",
+    "name": "motion-frames",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "brand",
+      "typography",
+      "layout",
+      "color",
+      "video",
+      "motion"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/motion-frames/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "video-design",
+      "ui-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:41.923Z",
+    "lastSeenAt": "2026-08-26T23:18:15.056Z"
   },
   {
     "id": "nexu-io/open-design/orbit-linear",
@@ -4286,28 +4215,158 @@
     "security": "C",
     "signalScore": 60,
     "installs": 0,
-    "repoStars": 91661,
+    "repoStars": 91782,
     "tags": [
       "design",
       "prototype",
-      "video",
       "visual",
       "brand",
       "layout",
-      "color"
+      "color",
+      "video"
     ],
     "installUrl": "https://github.com/nexu-io/open-design",
     "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/orbit-linear/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
       "visual-communication",
-      "operations-design"
+      "operations-design",
+      "fashion-design"
     ],
     "qualityScore": 61,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-08-26T13:25:43.748Z",
-    "lastSeenAt": "2026-08-26T13:25:43.748Z"
+    "lastSeenAt": "2026-08-26T23:18:17.130Z"
+  },
+  {
+    "id": "nexu-io/open-design/orbit-notion",
+    "name": "orbit-notion",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "visual",
+      "brand",
+      "typography",
+      "color",
+      "ui",
+      "figma"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/orbit-notion/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "ui-design",
+      "operations-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:43.924Z",
+    "lastSeenAt": "2026-08-26T23:18:17.312Z"
+  },
+  {
+    "id": "nexu-io/open-design/social-carousel",
+    "name": "social-carousel",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "brand",
+      "typography",
+      "layout",
+      "color",
+      "ui"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/social-carousel/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "ui-design",
+      "operations-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:45.172Z",
+    "lastSeenAt": "2026-08-26T23:18:18.626Z"
+  },
+  {
+    "id": "nexu-io/open-design/sprite-animation",
+    "name": "sprite-animation",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "brand",
+      "typography",
+      "layout",
+      "color",
+      "video",
+      "motion"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/sprite-animation/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "video-design",
+      "ui-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:45.778Z",
+    "lastSeenAt": "2026-08-26T23:18:19.193Z"
+  },
+  {
+    "id": "nexu-io/open-design/wireframe-sketch",
+    "name": "wireframe-sketch",
+    "source": "nexu-io/open-design",
+    "summary": "|",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 91782,
+    "tags": [
+      "design",
+      "prototype",
+      "brand",
+      "typography",
+      "layout",
+      "color",
+      "ui"
+    ],
+    "installUrl": "https://github.com/nexu-io/open-design",
+    "skillsUrl": "https://github.com/nexu-io/open-design/blob/main/design-templates/wireframe-sketch/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "ui-design",
+      "video-design"
+    ],
+    "qualityScore": 61,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-08-26T13:25:48.650Z",
+    "lastSeenAt": "2026-08-26T23:18:22.315Z"
   }
 ]

@@ -2462,7 +2462,7 @@
     },
     {
       "date": "2026-08-26",
-      "generatedAt": "2026-08-26T13:25:53.627Z",
+      "generatedAt": "2026-08-26T23:18:27.832Z",
       "domains": {
         "ui-design": [
           {
@@ -2740,11 +2740,6 @@
             "source": "radar"
           },
           {
-            "skillId": "nexu-io/open-design/hyperframes",
-            "score": 59,
-            "source": "radar"
-          },
-          {
             "skillId": "nexu-io/open-design/codex-interactive-capability-map",
             "score": 59,
             "source": "radar"
@@ -2768,6 +2763,11 @@
             "skillId": "remotion-dev/skills/remotion-best-practices",
             "score": 57,
             "source": "seed"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-sakura-chroma",
+            "score": 57,
+            "source": "radar"
           }
         ],
         "video-design": [
@@ -2780,11 +2780,6 @@
             "skillId": "remotion-dev/skills/remotion-multimedia",
             "score": 73,
             "source": "seed"
-          },
-          {
-            "skillId": "nexu-io/open-design/hyperframes",
-            "score": 66,
-            "source": "radar"
           },
           {
             "skillId": "remotion-dev/skills/remotion-create",
@@ -2847,29 +2842,34 @@
             "source": "seed"
           },
           {
-            "skillId": "nexu-io/open-design/codex-interactive-capability-map",
-            "score": 59,
+            "skillId": "nexu-io/open-design/hyperframes",
+            "score": 56,
             "source": "radar"
           },
           {
-            "skillId": "nexu-io/open-design/mobile-onboarding",
-            "score": 59,
-            "source": "radar"
+            "skillId": "leonxlnx/taste-skill/high-end-visual-design",
+            "score": 54,
+            "source": "seed"
           },
           {
             "skillId": "nexu-io/open-design/html-ppt-zhangzara-capsule",
-            "score": 59,
+            "score": 54,
             "source": "radar"
           },
           {
-            "skillId": "nexu-io/open-design/image-poster",
-            "score": 59,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
+            "score": 54,
             "source": "radar"
           },
           {
-            "skillId": "nexu-io/open-design/video-shortform",
-            "score": 59,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-neo-grid-bold",
+            "score": 54,
             "source": "radar"
+          },
+          {
+            "skillId": "pbakaus/impeccable/animate",
+            "score": 52,
+            "source": "seed"
           }
         ],
         "industrial-design": [
@@ -3153,6 +3153,11 @@
             "source": "seed"
           },
           {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-broadside",
+            "score": 57,
+            "source": "radar"
+          },
+          {
             "skillId": "nexu-io/open-design/html-ppt-zhangzara-pin-and-paper",
             "score": 56,
             "source": "radar"
@@ -3168,14 +3173,9 @@
             "source": "radar"
           },
           {
-            "skillId": "nexu-io/open-design/replit-deck",
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-sakura-chroma",
             "score": 55,
             "source": "radar"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/design-critic",
-            "score": 54,
-            "source": "seed"
           }
         ],
         "experience-design": [
@@ -3250,11 +3250,6 @@
             "source": "radar"
           },
           {
-            "skillId": "nexu-io/open-design/hyperframes",
-            "score": 60,
-            "source": "radar"
-          },
-          {
             "skillId": "nexu-io/open-design/html-ppt-zhangzara-broadside",
             "score": 60,
             "source": "radar"
@@ -3277,6 +3272,11 @@
           {
             "skillId": "nexu-io/open-design/x-research",
             "score": 60,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-studio",
+            "score": 59,
             "source": "radar"
           }
         ],
@@ -3516,6 +3516,11 @@
             "source": "seed"
           },
           {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-pin-and-paper",
+            "score": 55,
+            "source": "radar"
+          },
+          {
             "skillId": "pbakaus/impeccable/impeccable",
             "score": 54,
             "source": "seed"
@@ -3531,8 +3536,28 @@
             "source": "seed"
           },
           {
-            "skillId": "nexu-io/open-design/live-dashboard",
+            "skillId": "nexu-io/open-design/html-ppt-taste-brutalist",
             "score": 51,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/token-map",
+            "score": 51,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/live-dashboard",
+            "score": 49,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/open-design-landing-deck",
+            "score": 48,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/open-design-landing",
+            "score": 48,
             "source": "radar"
           },
           {
@@ -3558,31 +3583,6 @@
           {
             "skillId": "leonxlnx/taste-skill/high-end-visual-design",
             "score": 46,
-            "source": "seed"
-          },
-          {
-            "skillId": "lovstudio/skills/lovstudio-png2svg",
-            "score": 45,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/critique",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/bolder",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/distill",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/quieter",
-            "score": 44,
             "source": "seed"
           }
         ],
@@ -3629,7 +3629,7 @@
           },
           {
             "skillId": "nexu-io/open-design/video-shortform",
-            "score": 54,
+            "score": 53,
             "source": "radar"
           },
           {

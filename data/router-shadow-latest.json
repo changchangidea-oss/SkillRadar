@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-08-26T13:29:16.844Z",
+  "generatedAt": "2026-08-26T23:22:17.234Z",
   "evalVersion": 2,
-  "specificityPolicyVersion": 4,
+  "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "08f2056615abed88ca9fd37ff9d65a131cd3b81cecc247fa6c76ab98ae53de0f",
+    "contentHash": "bfc43e52cd3b796d145dc9a2fe154fa42f7c022ba5c47c1a82dfcdcae75d9d9e",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-26T13:28:52.098Z",
-    "totalCount": 473,
+    "generatedAt": "2026-08-26T23:21:46.361Z",
+    "totalCount": 476,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 54,
+    "passed": 48,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 44,
+    "coveragePassed": 38,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 0,
-    "specificityFailures": 0,
+    "lowEvidenceTop3": 10,
+    "specificityFailures": 6,
     "capabilityGapCases": 32,
     "averageRecommendationCount": 2.06,
     "expectedHitsTotal": 32,
@@ -30,14 +30,14 @@
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 54,
+    "passed": 48,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 44,
+    "coveragePassed": 38,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 0,
-    "specificityFailures": 0,
+    "lowEvidenceTop3": 9,
+    "specificityFailures": 6,
     "capabilityGapCases": 32,
     "averageRecommendationCount": 2.06,
     "expectedHitsTotal": 32,
@@ -49,9 +49,9 @@
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": 0
+    "evidenceDelta": 1
   },
-  "decision": "hold",
+  "decision": "snapshot-win",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
   "comparisons": [
     {
@@ -285,19 +285,19 @@
     },
     {
       "id": "mcp-agent-tools",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
       "productionTop3": [
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
         "artokun/comfyui-mcp/color-correction-674ba1",
-        "slackapi/slack-skills-plugin/slack-messaging-fa1468"
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
       ],
       "candidateTop3": [
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
         "artokun/comfyui-mcp/color-correction-674ba1",
-        "slackapi/slack-skills-plugin/slack-messaging-fa1468"
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -327,10 +327,10 @@
     },
     {
       "id": "llm-agent-workflow",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
       "productionTop3": [
         "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
         "opensquilla/opensquilla/meta-paper-write-b8b8ab"
@@ -573,10 +573,10 @@
     },
     {
       "id": "sqlite-pipeline",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
       "productionTop3": [
         "fastrepl/anarlog/migrate-to-sqlite-1e3a5a",
         "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5",
@@ -638,10 +638,10 @@
     },
     {
       "id": "vitest-unit",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
       "productionTop3": [
         "langgenius/dify/frontend-testing-c86f15",
         "langgenius/dify/e2e-cucumber-playwright-1de203"
@@ -911,10 +911,10 @@
     },
     {
       "id": "flutter-mobile",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
       "productionTop3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
         "flutter/agent-plugins/dart-write-documentation-4c8bb5",
@@ -930,7 +930,7 @@
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
-      "lowEvidenceDelta": 0
+      "lowEvidenceDelta": -1
     },
     {
       "id": "github-pr-triage",
@@ -1001,10 +1001,10 @@
     },
     {
       "id": "webhook-automation",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
       "productionTop3": [
         "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18"
       ],
@@ -1093,7 +1093,7 @@
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "nexu-io/open-design/token-map"
+        "figma/mcp-server-guide/figma-generate-design"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
