@@ -32,16 +32,17 @@ export function evaluateHistory(existing,current,{required=3,limit=20}={}){
   const snapshots=history.slice(-Math.max(required,limit))
   const uniqueCount=snapshots.length
   const window=snapshots.slice(-required)
-  const safetyPass=window.length===required&&window.every(x=>x.gates?.safetyPass===true)
-  const contractPass=window.length===required&&window.every(x=>x.gates?.contractNonRegression===true)
-  const coveragePass=window.length===required&&window.every(x=>x.gates?.coverageNonRegression===true)
-  const consecutiveWins=window.length===required&&window.every(x=>x.decision==='snapshot-win')
+  const windowComplete=window.length===required
+  const safetyPass=window.every(x=>x.gates?.safetyPass===true)
+  const contractPass=window.every(x=>x.gates?.contractNonRegression===true)
+  const coveragePass=window.every(x=>x.gates?.coverageNonRegression===true)
+  const consecutiveWins=windowComplete&&window.every(x=>x.decision==='snapshot-win')
   const aggregateEvidenceDelta=window.reduce((n,x)=>n+Number(x.gates?.evidenceDelta||0),0)
-  const latestReject=window.some(x=>x.decision==='reject')
+  const hasReject=window.some(x=>x.decision==='reject')
   let decision='accumulating-evidence'
-  if(uniqueCount>=required){
-    if(latestReject||!safetyPass||!contractPass||!coveragePass)decision='reject'
-    else if(consecutiveWins&&aggregateEvidenceDelta>=required)decision='promotion-eligible'
+  if(hasReject||!safetyPass||!contractPass||!coveragePass)decision='reject'
+  else if(windowComplete){
+    if(consecutiveWins&&aggregateEvidenceDelta>=required)decision='promotion-eligible'
     else decision='hold'
   }
   return {
@@ -51,13 +52,14 @@ export function evaluateHistory(existing,current,{required=3,limit=20}={}){
       requiredSnapshots:required,
       uniqueRegistrySnapshots:uniqueCount,
       evaluatedWindow:window.length,
+      windowComplete,
       safetyPass,
       contractNonRegression:contractPass,
       coverageNonRegression:coveragePass,
       consecutiveWins,
       aggregateEvidenceDelta,
       decision,
-      note:'Promotion eligibility requires the latest 3 distinct Registry snapshots to all be snapshot-win with safety, contract and coverage non-regression. Re-running the same Registry contentHash does not add evidence. This gate never changes production automatically.'
+      note:'Promotion eligibility requires the latest 3 distinct Registry snapshots to all be snapshot-win with safety, contract and coverage non-regression. Re-running the same Registry contentHash does not add evidence. An incomplete window is reported separately from gate failure. This gate never changes production automatically.'
     }
   }
 }
