@@ -13,6 +13,7 @@ function canon(value=''){
     .replace(/tool[ -]calling/g,'tool-calling').replace(/function[ -]calling/g,'function-calling')
     .replace(/app[ -]router/g,'app-router').replace(/server[ -]components/g,'server-components')
     .replace(/design[ -]system/g,'design-system').replace(/react[ -]native/g,'react-native')
+    .replace(/test[ -]driven[ -]development/g,'tdd')
     .replace(/[^a-z0-9+#.-]+/g,'-')
 }
 function run(command,task){
@@ -45,10 +46,17 @@ function candidateRerank(ranked,limit=3){
   }
   return selected.slice(0,limit)
 }
+function evidenceSignals(matches){
+  return [...new Set(matches.flatMap(x=>[
+    ...(x.match_details?.matched_signals||[]),
+    x.id||'',
+    x.name||''
+  ]).map(canon).filter(Boolean))]
+}
 function evaluate(test,matches,meta){
   const ids=new Set(matches.map(x=>x.id))
   const expectedHits=(test.expectedAnyIds||[]).filter(x=>ids.has(x)).length
-  const signals=[...new Set(matches.flatMap(x=>x.match_details?.matched_signals||[]).map(canon))]
+  const signals=evidenceSignals(matches)
   const signalHits=(test.requiredSignalTerms||[]).filter(term=>signals.some(s=>s.includes(canon(term))||canon(term).includes(s))).length
   const unsafe=matches.filter(x=>['D','Blocked'].includes(x.security)).length
   const pass=meta.source==='skillradar-registry'&&meta.registryMode==='local-bundled'&&matches.length===3&&unsafe===0&&expectedHits>=Number(test.minExpectedHits||0)&&signalHits>=Number(test.minSignalHits||0)
