@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "phase": "v0.6-adoption-sprint",
+  "goldenEval": {
+    "cases": 100,
+    "minimumPassRate": 0.9,
+    "minimumDomainPassRate": 0.8,
+    "unsafeTop3": 0
+  },
+  "feedback": {
+    "mode": "observation-only",
+    "anonymousAllowed": true,
+    "automaticRankingWeightChanges": false,
+    "productionRouterMayReadFeedbackArtifacts": false
+  },
+  "promotion": {
+    "requires": [
+      "golden-eval",
+      "router-benchmark",
+      "expanded-eval",
+      "shadow-history",
+      "security-gate",
+      "human-review"
+    ]
+  }
+}
