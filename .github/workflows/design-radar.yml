@@ -11,6 +11,7 @@ on:
       - 'scripts/dedupe-design-radar.mjs'
       - 'scripts/update-general-radar.mjs'
       - 'scripts/update-general-radar-with-canonical-seeds.mjs'
+      - 'scripts/update-adoption-metrics.mjs'
       - 'scripts/lib/canonical-seeds.mjs'
       - 'scripts/validate-canonical-seeds.mjs'
       - 'scripts/normalize-general-tags.mjs'
@@ -41,6 +42,8 @@ on:
 permissions:
   actions: read
   contents: write
+  issues: read
+  pull-requests: read
   pages: write
   id-token: write
 
@@ -101,6 +104,10 @@ jobs:
         env:
           SKILLRADAR_SHADOW_HISTORY_WRITE: '1'
         run: npm run shadow:history
+      - name: Refresh verifiable public adoption metrics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run adoption:snapshot
       - name: Show auditable routing summary
         run: |
           node - <<'NODE'
@@ -111,7 +118,7 @@ jobs:
           console.log(`Shadow: ${s.decision}; registryHashVersion=${s.registrySnapshot?.contentHashVersion}; production=${s.production.passed}/${s.production.cases}; candidate=${s.candidate.passed}/${s.candidate.cases}; evidenceDelta=${s.gates.evidenceDelta}`)
           console.log(`History: ${h.decision}; hashVersion=${h.contentHashVersion}; distinct=${h.uniqueRegistrySnapshots}/${h.requiredSnapshots}; legacy=${h.legacyRegistrySnapshots}; windowComplete=${h.windowComplete}`)
           NODE
-      - name: Commit generated registry and routing evidence when changed
+      - name: Commit generated registry, routing and adoption evidence when changed
         run: |
           generated_files=(
             data/design-seed-baseline.json
@@ -129,10 +136,11 @@ jobs:
             data/router-shadow-latest.json
             data/router-shadow-history.json
             data/router-shadow-history-latest.json
+            data/adoption-latest.json
           )
 
           if git diff --quiet -- "${generated_files[@]}"; then
-            echo "No registry or routing evidence changes."
+            echo "No registry, routing or adoption evidence changes."
             exit 0
           fi
 
@@ -180,7 +188,7 @@ jobs:
 
           git config user.name "skillradar-bot"
           git config user.email "skillradar-bot@users.noreply.github.com"
-          git commit -m "chore(radar): refresh registry + router eval/shadow evidence"
+          git commit -m "chore(radar): refresh registry + routing + adoption evidence"
           git push origin HEAD:main
 
   publish:
