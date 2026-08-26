@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "qualityPolicyVersion": 1,
+  "description": "Specificity gates for open-domain routing cases. Anchors prevent generic workflow/integration/data matches from being counted as evidence for a named technology or service.",
+  "cases": {
+    "mcp-agent-tools": {"anchorSignalTerms":["mcp"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "llm-agent-workflow": {"anchorSignalTerms":["orchestration"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "fastapi-rest": {"anchorSignalTerms":["fastapi"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "node-api": {"anchorSignalTerms":["node"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "graphql-server": {"anchorSignalTerms":["graphql"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "redis-cache": {"anchorSignalTerms":["redis"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "sqlite-pipeline": {"anchorSignalTerms":["sqlite"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "vitest-unit": {"anchorSignalTerms":["vitest"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "docker-kubernetes": {"anchorSignalTerms":["docker","kubernetes"],"minAnchorSignalHits":2,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "vulnerability-review": {"anchorSignalTerms":["vulnerability"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "secrets-permissions": {"anchorSignalTerms":["secrets","permissions"],"minAnchorSignalHits":2,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "react-native-expo": {"anchorSignalTerms":["react-native","expo"],"minAnchorSignalHits":2,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "swiftui-ios": {"anchorSignalTerms":["swiftui"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "android-kotlin": {"anchorSignalTerms":["android","kotlin"],"minAnchorSignalHits":2,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "flutter-mobile": {"anchorSignalTerms":["flutter"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "slack-workflow": {"anchorSignalTerms":["slack"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "gmail-calendar": {"anchorSignalTerms":["gmail","calendar"],"minAnchorSignalHits":2,"minAnchorCandidates":2,"maxLowEvidenceTop3":0},
+    "webhook-automation": {"anchorSignalTerms":["webhook"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "technical-docs": {"anchorSignalTerms":["documentation"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0}
+  }
+}
