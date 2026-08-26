@@ -32,3 +32,15 @@ export function prioritizeTreeEntries(entries,paths=[]){
   first.sort((a,b)=>paths.indexOf(a.path)-paths.indexOf(b.path))
   return [...first,...rest]
 }
+
+export function canonicalCandidateKeys(seeds=[]){
+  return new Set(seeds.flatMap(seed=>(seed.paths||[]).map(skillPath=>`${seed.repo}:${skillPath}`)))
+}
+
+export function prioritizeAnalysisCandidates(items,canonicalKeys=new Set()){
+  return [...(items||[])].sort((a,b)=>
+    Number(canonicalKeys.has(b?.key))-Number(canonicalKeys.has(a?.key))
+    ||((b?.channels?.length||0)-(a?.channels?.length||0))
+    ||((b?.repoStars||0)-(a?.repoStars||0))
+  )
+}

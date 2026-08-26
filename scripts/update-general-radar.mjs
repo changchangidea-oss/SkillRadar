@@ -2,6 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import crypto from 'node:crypto'
 import { fileURLToPath } from 'node:url'
+import { canonicalCandidateKeys, prioritizeAnalysisCandidates } from './lib/canonical-seeds.mjs'
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..')
 const p=(...parts)=>path.join(root,...parts)
@@ -81,6 +82,8 @@ async function repoMeta(fullName,cache){if(cache.has(fullName))return cache.get(
 async function repoTree(repo,cache){const key=repo.full_name;if(cache.has(key))return cache.get(key);const data=await gh(`https://api.github.com/repos/${key}/git/trees/${encodeURIComponent(repo.default_branch)}?recursive=1`);const paths=(data.tree||[]).filter(x=>x.type==='blob').map(x=>x.path);cache.set(key,paths);return paths}
 
 const domains=await readJson('data/general-domains.json',[])
+const canonicalSeeds=await readJson('data/general-canonical-seeds.json',[])
+const canonicalKeys=canonicalCandidateKeys(canonicalSeeds)
 const previous=await readJson('data/general-radar-registry.json',{candidates:[]})
 const prevMap=new Map((previous.candidates||[]).map(x=>[`${x.source}:${x.skillPath}`,x]))
 const coarse=new Map(),errors=[],repoCache=new Map(),treeCache=new Map()
@@ -118,7 +121,10 @@ for(const domain of domains){
 }
 for(const q of ['agent skills in:name,description,readme','claude skills in:name,description,readme','codex skills in:name,description,readme']){try{await discoverRepoQuery(q,null,'ecosystem_search')}catch(e){errors.push({stage:'ecosystem-search',query:q,error:String(e.message||e)})};await sleep(140)}
 
-const coarseList=[...coarse.values()].sort((a,b)=>(b.channels.length-a.channels.length)||(b.repoStars-a.repoStars)).slice(0,MAX_ANALYZE)
+// Canonical seeds guarantee analysis, not acceptance. Put only their configured
+// source:path pairs ahead of the global cap, then run the exact same content,
+// script, relevance, and D/Blocked safety gates as every organic candidate.
+const coarseList=prioritizeAnalysisCandidates([...coarse.values()],canonicalKeys).slice(0,MAX_ANALYZE)
 const analyzed=[]
 for(const item of coarseList){
   try{
