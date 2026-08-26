@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "description": "Golden routing tasks for SkillRadar. These cases measure stable product behavior, not leaderboard gaming.",
+  "thresholds": {
+    "passRate": 1.0,
+    "unsafeTop3": 0,
+    "minAverageTop1Score": 70
+  },
+  "cases": [
+    {
+      "id": "ai-dashboard",
+      "task": "Build a Next.js React shadcn/ui AI dashboard with streaming, tool calling and App Router",
+      "expectedAnyIds": ["ai-sdk", "nextjs", "shadcn"],
+      "minExpectedHits": 2,
+      "requiredSignalTerms": ["nextjs", "app-router", "shadcn", "tool-calling"],
+      "minSignalHits": 3
+    },
+    {
+      "id": "ai-streaming",
+      "task": "Implement AI streaming and tool calling with the Vercel AI SDK",
+      "expectedAnyIds": ["ai-sdk"],
+      "minExpectedHits": 1,
+      "requiredSignalTerms": ["ai-sdk", "tool-calling"],
+      "minSignalHits": 2
+    },
+    {
+      "id": "next-app-router",
+      "task": "Architect a modern Next.js App Router application with React Server Components and Route Handlers",
+      "expectedAnyIds": ["nextjs"],
+      "minExpectedHits": 1,
+      "requiredSignalTerms": ["nextjs", "app-router", "server-components"],
+      "minSignalHits": 2
+    },
+    {
+      "id": "shadcn-system",
+      "task": "Create an accessible shadcn/ui design system for a responsive dashboard",
+      "expectedAnyIds": ["shadcn"],
+      "minExpectedHits": 1,
+      "requiredSignalTerms": ["shadcn", "design-system"],
+      "minSignalHits": 2
+    },
+    {
+      "id": "react-performance",
+      "task": "Review a React TypeScript app for component structure and performance problems",
+      "expectedAnyIds": ["react-best-practices"],
+      "minExpectedHits": 1,
+      "requiredSignalTerms": ["react", "typescript", "performance"],
+      "minSignalHits": 2
+    },
+    {
+      "id": "frontend-polish",
+      "task": "Improve the visual quality and production polish of a React dashboard interface",
+      "expectedAnyIds": ["frontend-design"],
+      "minExpectedHits": 1,
+      "requiredSignalTerms": ["react", "dashboard"],
+      "minSignalHits": 1
+    },
+    {
+      "id": "zh-spatial-rendering",
+      "task": "建筑可视化和室内空间渲染",
+      "expectedAnyIds": [],
+      "minExpectedHits": 0,
+      "requiredSignalTerms": ["architecture", "interior", "spatial", "rendering"],
+      "minSignalHits": 3
+    }
+  ]
+}
