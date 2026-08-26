@@ -5,6 +5,7 @@ function snapshot(hash,decision='snapshot-win',evidenceDelta=1,overrides={},cont
   return {
     generatedAt:`2026-08-${String(hash).slice(-2).padStart(2,'0')}T00:00:00.000Z`,
     evalVersion:2,
+    specificityPolicyVersion:1,
     registrySnapshot:{contentHash:hash,contentHashVersion,totalCount:468,mode:'local-bundled'},
     production:{profile:'ranking-v2.1',passed:53,cases:54},
     candidate:{profile:'facet-heavy-rerank-v0.6-shadow',passed:53,cases:54},
@@ -29,15 +30,41 @@ assert(r.status.uniqueRegistrySnapshots===1,'duplicate v2 registry hash must not
 assert(r.status.decision==='accumulating-evidence','duplicate snapshot must not promote')
 state=r.history
 
+const reevaluated=snapshot('registry-01','hold',0)
+reevaluated.generatedAt='2026-08-20T12:00:00.000Z'
+reevaluated.evalVersion=3
+reevaluated.specificityPolicyVersion=2
+reevaluated.production={profile:'ranking-v2.2-audit',passed:52,cases:54}
+reevaluated.candidate={profile:'facet-heavy-rerank-v0.7-shadow',passed:52,cases:54}
+r=evaluateHistory(state,reevaluated,{required:3,limit:20})
+assert(r.status.uniqueRegistrySnapshots===1,'same Registry hash with a new Eval/profile/policy must still count once')
+assert(r.history.snapshots.length===1,'same Registry hash must replace rather than append audit evidence')
+assert(r.history.snapshots[0].evalVersion===3,'latest Eval version should replace prior audit evidence for the Registry')
+assert(r.history.snapshots[0].specificityPolicyVersion===2,'latest specificity policy should be retained for audit')
+assert(r.history.snapshots[0].production.profile==='ranking-v2.2-audit','latest production profile should be retained for audit')
+assert(r.status.decision==='accumulating-evidence','re-evaluating one Registry must not complete the window')
+state=r.history
+
 r=evaluateHistory(state,snapshot('registry-02'),{required:3,limit:20})
 assert(r.status.uniqueRegistrySnapshots===2,'second distinct v2 registry not counted')
 state=r.history
 r=evaluateHistory(state,snapshot('registry-03'),{required:3,limit:20})
 assert(r.status.uniqueRegistrySnapshots===3,'third distinct v2 registry not counted')
 assert(r.status.windowComplete===true,'three distinct v2 snapshots must complete the window')
-assert(r.status.consecutiveWins===true,'three v2 wins should be consecutive')
+assert(r.status.consecutiveWins===false,'a hold for registry-01 must remain the current audit evidence and prevent consecutive wins')
+assert(r.status.decision==='hold','three distinct registries including a hold must not promote')
+
+// Replace the same registry-01 audit result with a later win. This still stays at three distinct registries.
+const registry01Win=snapshot('registry-01','snapshot-win',2)
+registry01Win.generatedAt='2026-08-25T12:00:00.000Z'
+registry01Win.evalVersion=4
+registry01Win.specificityPolicyVersion=3
+r=evaluateHistory(r.history,registry01Win,{required:3,limit:20})
+assert(r.status.uniqueRegistrySnapshots===3,'re-evaluating an existing Registry must not create a fourth snapshot')
+assert(r.status.windowComplete===true,'three distinct registries should remain a complete window')
+assert(r.status.consecutiveWins===true,'latest evidence for all three distinct registries is now winning')
 assert(r.status.aggregateEvidenceDelta>=3,'aggregate improvement floor not met')
-assert(r.status.decision==='promotion-eligible','three distinct safe v2 wins should become promotion eligible')
+assert(r.status.decision==='promotion-eligible','three distinct safe winning Registry states should become promotion eligible')
 
 state={schemaVersion:2,snapshots:[snapshot('registry-11'),snapshot('registry-12','hold',0)]}
 r=evaluateHistory(state,snapshot('registry-13'),{required:3,limit:20})
@@ -80,4 +107,4 @@ assert(r.status.legacyRegistrySnapshots===1,'legacy snapshot should remain audit
 assert(r.status.windowComplete===true,'three v2 snapshots should complete the current-version window')
 assert(r.status.decision==='promotion-eligible','three distinct safe winning v2 snapshots can promote even with audit-only v1 history')
 
-console.log('Shadow history validation passed: incomplete windows are not mislabeled as failed; duplicate hashes do not count; unsafe snapshots reject immediately; 3 distinct safe wins are required; and legacy contentHash versions remain audit-only and cannot bridge the current promotion window.')
+console.log('Shadow history validation passed: evidence is keyed only by Registry hash+version; Eval/profile/policy re-runs replace audit evidence without inflating snapshot count; incomplete windows stay truthful; unsafe snapshots reject; and legacy hash versions remain audit-only.')
