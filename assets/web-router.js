@@ -13,6 +13,8 @@
     'design system': ['design-system'],
     'cloudflare workers': ['cloudflare-workers', 'workers'],
     'react native': ['react-native'],
+    'environment variables': ['environment-variables', 'env-vars'],
+    'env vars': ['environment-variables', 'env-vars'],
     'ci/cd': ['ci-cd'],
     'end to end': ['e2e'],
   };
@@ -24,7 +26,7 @@
     ['服装', ['fashion', 'campaign']], ['时尚', ['fashion', 'brand']], ['交互', ['interaction', 'ux', 'ui']], ['数媒', ['digital-media', 'creative-coding']], ['影视', ['film', 'video', 'editing', 'vfx']],
     ['工艺', ['craft', 'fabrication']], ['民间艺术', ['illustration', 'hand-drawn', 'collage', 'pattern', 'craft']], ['纹样', ['pattern', 'illustration', 'vector']],
   ];
-  const SPECIFICITY_SIGNALS = new Set(['playwright', 'mcp', 'rag', 'embeddings', 'orchestration', 'fastapi', 'node', 'graphql', 'redis', 'sqlite', 'vitest', 'docker', 'kubernetes', 'vulnerability', 'secrets', 'permissions', 'reactnative', 'expo', 'swiftui', 'android', 'kotlin', 'flutter', 'slack', 'gmail', 'calendar', 'webhook', 'documentation', 'github', 'notion', 'figma']);
+  const SPECIFICITY_SIGNALS = new Set(['playwright', 'mcp', 'rag', 'embeddings', 'orchestration', 'fastapi', 'node', 'graphql', 'redis', 'sqlite', 'vitest', 'docker', 'kubernetes', 'vulnerability', 'secrets', 'permissions', 'reactnative', 'expo', 'swiftui', 'android', 'kotlin', 'flutter', 'slack', 'gmail', 'calendar', 'webhook', 'documentation', 'github', 'notion', 'figma', 'cron', 'cdn', 'environmentvariables', 'envvars']);
 
   function canon(value) {
     return String(value).toLowerCase()
@@ -37,6 +39,9 @@
       .replace(/app[- ]router/g, 'app-router')
       .replace(/design[- ]system/g, 'design-system')
       .replace(/vulnerabilities/g, 'vulnerability')
+      .replace(/^secret$/, 'secrets')
+      .replace(/^permission$/, 'permissions')
+      .replace(/^(redis|sqlite|graphql|fastapi|vitest|flutter|swiftui|kubernetes|playwright|github|notion|figma|slack|gmail|calendar|mcp|node)-(backed|based|powered)$/, '$1')
       .replace(/[^a-z0-9+#.-]+/g, '')
       .trim();
   }
