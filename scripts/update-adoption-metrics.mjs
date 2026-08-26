@@ -111,7 +111,10 @@ const snapshot = {
     codexMarketplaceInstalls: null,
     codexMarketplaceInstallsStatus: 'unknown-no-public-verifiable-count-source',
     skillsShInstalls: null,
-    skillsShInstallsStatus: 'unknown-no-stable-verifiable-count-source',
+    skillsShInstallsStatus: 'unknown-official-api-requires-vercel-oidc-not-configured-in-github-actions',
+    skillsShListingMode: 'automatic-after-real-skills-cli-installs',
+    skillsShPublicUrl: `https://skills.sh/${repository}`,
+    skillsShBadgeUrl: `https://skills.sh/b/${repository}`,
   },
   rules: {
     maintainerLoginsExcluded: [...maintainers].sort(),

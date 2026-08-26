@@ -42,6 +42,14 @@ assert.equal(first.github.releaseAssetDownloads, 14);
 assert.equal(first.github.releasePluginZipDownloads, 7, 'checksum and unrelated assets must not count as plugin ZIP installs');
 assert.equal(first.distribution.codexMarketplaceInstalls, null);
 assert.equal(first.distribution.skillsShInstalls, null);
+assert.equal(
+  first.distribution.skillsShInstallsStatus,
+  'unknown-official-api-requires-vercel-oidc-not-configured-in-github-actions',
+  'skills.sh has an official install-count API, but the GitHub evidence job must not claim a number without the required Vercel OIDC credential',
+);
+assert.equal(first.distribution.skillsShListingMode, 'automatic-after-real-skills-cli-installs');
+assert.equal(first.distribution.skillsShPublicUrl, 'https://skills.sh/changchangidea-oss/SkillRadar');
+assert.equal(first.distribution.skillsShBadgeUrl, 'https://skills.sh/b/changchangidea-oss/SkillRadar');
 assert.equal(first.rules.ciSmokeTestsCountAsInstalls, false);
 assert.equal(first.rules.unverifiableCountsAreEstimated, false);
 assert.deepEqual(first.rules.maintainerLoginsExcluded, ['changchangidea-oss']);

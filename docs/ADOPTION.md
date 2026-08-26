@@ -26,6 +26,22 @@ Do not manufacture or inflate adoption evidence. In particular:
 - do not create fake Issues, PRs, comments, or testimonials;
 - do not weaken D/Blocked filtering, security grades, routing specificity, or benchmark gates to make demos look better.
 
+## skills.sh evidence
+
+SkillRadar's standard Agent Skill can be discovered by the `skills` CLI from `skills/skillradar/SKILL.md`.
+
+The skills.sh directory does not require a manual submission request. Its public documentation says Skills appear on the leaderboard automatically after real users install a repository with the `skills` CLI, and those anonymous install signals are used for leaderboard counts.
+
+skills.sh also exposes an official API whose Skill objects include a deduplicated `installs` count. That API currently requires Vercel OIDC authentication. SkillRadar's GitHub Actions pipeline does not have that credential, so the daily adoption snapshot must leave `skillsShInstalls` as `unknown` rather than scrape, estimate, or manufacture a count.
+
+Public references:
+
+- directory: `https://skills.sh/changchangidea-oss/SkillRadar`
+- install-count badge: `https://skills.sh/b/changchangidea-oss/SkillRadar`
+- install command: `npx skills add changchangidea-oss/SkillRadar --skill skillradar`
+
+A CI discovery/smoke test is not an external install and must not be counted as adoption.
+
 ## Public adoption snapshot
 
 When an adoption snapshot is published, record:
@@ -33,7 +49,7 @@ When an adoption snapshot is published, record:
 - timestamp in UTC;
 - repository Stars and Forks;
 - number of distinct external Issue/PR/feedback authors;
-- install counts only from sources that expose a verifiable number;
+- install counts only from sources that expose a verifiable number and are available to the evidence pipeline;
 - index/list inclusions with a public source;
 - links to public usage evidence.
 
@@ -52,4 +68,4 @@ These are project goals, not OpenAI eligibility requirements and not claims abou
 
 ## Maintainer rule
 
-If a metric cannot be verified, publish `unknown` rather than estimating it. The project should prefer a small honest number over a large unverifiable one.
+If a metric cannot be verified by the evidence pipeline, publish `unknown` rather than estimating it. The project should prefer a small honest number over a large unverifiable one.
