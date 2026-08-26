@@ -15,6 +15,8 @@ jobs:
           node-version: 22
       - name: General Radar security self-test
         run: SKILLRADAR_SECURITY_SELFTEST=1 node scripts/update-general-radar.mjs
+      - name: Normalize generated general routing tags
+        run: npm run normalize:general-tags
       - name: Build bundled plugin registry
         run: npm run sync:plugin-registry
       - name: Validate registry and offline router
