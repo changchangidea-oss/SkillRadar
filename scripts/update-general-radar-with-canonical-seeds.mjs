@@ -35,6 +35,20 @@ export function prioritizeTreeEntries(entries,paths=[]){
   return [...first,...rest]
 }
 
+if(process.env.SKILLRADAR_CANONICAL_SEED_SELFTEST==='1'){
+  const seed=seeds[0]
+  if(!seed?.repo||!seed?.paths?.length)throw new Error('canonical seed config missing repo/paths')
+  if(!shouldSeedRepositorySearch('https://api.github.com/search/repositories?q=Google%20Workspace%20CLI%20agent%20skills%20Gmail%20Calendar'))throw new Error('Google Workspace search must activate canonical seed discovery')
+  if(shouldSeedRepositorySearch('https://api.github.com/search/repositories?q=React%20Next.js%20frontend'))throw new Error('unrelated frontend search must not activate canonical seed discovery')
+  const repo={full_name:seed.repo}
+  const items=prioritizeRepositoryItems([{full_name:'other/repo'},repo],repo)
+  if(items[0]?.full_name!==seed.repo||items.filter(x=>x.full_name===seed.repo).length!==1)throw new Error('canonical repo must be first and deduplicated')
+  const tree=prioritizeTreeEntries([{path:'z/SKILL.md'},{path:seed.paths[1]},{path:seed.paths[0]}],seed.paths)
+  if(tree[0]?.path!==seed.paths[0]||tree[1]?.path!==seed.paths[1])throw new Error('canonical skill paths must be ordered before the 30-file discovery cap')
+  console.log('Canonical General Radar seed self-test passed: relevant searches seed the official repo, unrelated searches do not, and configured Skill paths are prioritized without bypassing downstream scanning.')
+  process.exit(0)
+}
+
 async function jsonResponse(data,response){
   return new Response(JSON.stringify(data),{
     status:response.status,
@@ -70,8 +84,7 @@ globalThis.fetch=async function skillRadarSeededFetch(input,init){
   }
 
   for(const [repo,seed] of seedRepos){
-    const encodedRepo=repo.split('/').join('/')
-    if(url.includes(`/repos/${encodedRepo}/git/trees/`)&&url.includes('recursive=1')){
+    if(url.includes(`/repos/${repo}/git/trees/`)&&url.includes('recursive=1')){
       const data=await response.json()
       return jsonResponse({...data,tree:prioritizeTreeEntries(data.tree,seed.paths||[])},response)
     }
