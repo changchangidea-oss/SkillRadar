@@ -66,5 +66,16 @@
       "skills/security-hardening/SKILL.md"
     ],
     "reason": "The security-hardening Skill explicitly covers secrets management and permissions policy and previously passed the live Radar safety gate. Seeding preserves discovery, not approval; every run scans it again."
+  },
+  {
+    "repo": "slackapi/slack-skills-plugin",
+    "hint": "automation-integrations",
+    "searchTerms": ["slack"],
+    "paths": [
+      "skills/slack-messaging/SKILL.md",
+      "skills/slack-api/SKILL.md",
+      "skills/create-slack-app/SKILL.md"
+    ],
+    "reason": "Official Slack organization Skills for messaging, Web API use, and app creation. Explicit Slack searches prioritize these paths for full Radar analysis without granting automatic Registry acceptance."
   }
 ]
