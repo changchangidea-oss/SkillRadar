@@ -1,0 +1,64 @@
+name: Router Eval and Shadow Ranking
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 4 * * 1,4'
+  push:
+    branches: [main]
+    paths:
+      - 'data/router-eval-v2.json'
+      - 'data/skills.json'
+      - 'data/design-skills-*.json'
+      - 'data/general-skills-radar.json'
+      - 'packages/codex-plugin/scripts/skillradar.mjs'
+      - 'scripts/eval-router.mjs'
+      - 'scripts/shadow-router.mjs'
+      - 'scripts/sync-codex-plugin-registry.mjs'
+      - '.github/workflows/router-shadow.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: skillradar-router-shadow
+  cancel-in-progress: false
+
+jobs:
+  eval-shadow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Refresh bundled registry
+        run: |
+          npm run sync:plugin-registry
+          git diff --exit-code -- packages/codex-plugin/data/registry.json
+      - name: Run release-critical benchmark
+        run: npm run benchmark:router
+      - name: Run expanded router eval
+        run: SKILLRADAR_EVAL_WRITE=1 npm run eval:router
+      - name: Run shadow ranking comparison
+        run: SKILLRADAR_SHADOW_WRITE=1 npm run shadow:router
+      - name: Show auditable summary
+        run: |
+          node - <<'NODE'
+          const e=require('./data/router-eval-latest.json')
+          const s=require('./data/router-shadow-latest.json')
+          console.log(`Eval: ${e.passed}/${e.cases}; contract ${e.contract.passed}/${e.contract.cases}; coverage ${e.coverage.passed}/${e.coverage.cases}; unsafe=${e.unsafeTop3}; avgTop1=${e.averageTop1Score}`)
+          console.log(`Shadow: ${s.decision}; production=${s.production.passed}/${s.production.cases}; candidate=${s.candidate.passed}/${s.candidate.cases}; evidenceDelta=${s.gates.evidenceDelta}`)
+          NODE
+      - name: Commit eval and shadow status
+        run: |
+          git add data/router-eval-latest.json data/router-shadow-latest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "skillradar-shadow-bot"
+          git config user.email "skillradar-shadow-bot@users.noreply.github.com"
+          git commit -m "chore(shadow): update router eval status"
+          git pull --rebase origin main
+          git push origin HEAD:main
