@@ -53,7 +53,10 @@ if (result.source !== 'skillradar-registry') throw new Error('offline plugin did
 if (result.registry?.mode !== 'local-bundled') throw new Error(`expected local-bundled mode, got ${result.registry?.mode}`)
 if (result.ranking?.version !== '2.1') throw new Error(`expected ranking v2.1, got ${result.ranking?.version}`)
 if (!['task-only','project-aware'].includes(result.context?.mode)) throw new Error('router did not expose context mode')
-if (!Array.isArray(result.matches) || result.matches.length !== 3) throw new Error('offline router did not return Top 3')
+if (!Array.isArray(result.matches) || result.matches.length < 1 || result.matches.length > 3) throw new Error('offline router did not return between 1 and 3 strong recommendations')
+const resultGap=result.capability_gap||null
+if(result.matches.length===3&&resultGap?.detected) throw new Error('router reported a capability gap despite returning 3 recommendations')
+if(result.matches.length<3&&(!resultGap?.detected||Number(resultGap.returned)!==result.matches.length||Number(resultGap.missing)!==3-result.matches.length)) throw new Error('router did not expose a consistent capability gap')
 for (const item of result.matches) {
   for (const key of ['match_score', 'skillradar_score', 'security', 'source', 'reason', 'match_details']) {
     if (item[key] === undefined || item[key] === null || item[key] === '') throw new Error(`offline result missing ${key}`)
@@ -62,6 +65,20 @@ for (const item of result.matches) {
   if (item.match_details?.project_context_bonus === undefined) throw new Error(`offline result missing project-context evidence for ${item.id}`)
   if (['D', 'Blocked'].includes(item.security)) throw new Error(`unsafe offline result: ${item.id}`)
 }
+
+const weakBackfillFixture={
+  schemaVersion:2,generatedAt:'test',source:'weak-backfill-fixture',coreCount:3,designCount:0,generalCount:0,totalCount:3,contentHash:'weak-backfill',
+  core:[
+    {id:'strong-match',name:'Rare Anchor Specialist',source:'fixture/strong',category:'Specialist',tags:['rare-anchor','rare-task','primary'],summary:'Rare anchor rare task primary specialist.',security:'A',score:95},
+    {id:'weak-one',name:'Unrelated Utility',source:'fixture/weak-one',category:'Utility',tags:['unrelated'],summary:'Generic unrelated helper.',security:'A',score:99},
+    {id:'weak-two',name:'Other Utility',source:'fixture/weak-two',category:'Utility',tags:['other'],summary:'Another generic helper.',security:'A',score:99}
+  ],design:[],general:[]
+}
+const weakBackfillPath=path.join(tmp,'weak-backfill.json')
+fs.writeFileSync(weakBackfillPath,JSON.stringify(weakBackfillFixture))
+const weakBackfill=runMatch('rare-anchor rare-task primary',{SKILLRADAR_REGISTRY_PATH:weakBackfillPath,SKILLRADAR_PROJECT_CONTEXT:'0'})
+if(weakBackfill.matches?.length!==1||weakBackfill.matches?.[0]?.id!=='strong-match') throw new Error(`weak candidates were backfilled: ${JSON.stringify(weakBackfill.matches?.map(x=>x.id))}`)
+if(!weakBackfill.capability_gap?.detected||weakBackfill.capability_gap?.missing!==2) throw new Error('weak-backfill fixture did not expose missing recommendation capacity')
 
 const fixture = {
   schemaVersion: 1,
@@ -136,4 +153,4 @@ const taskDominance=runMatch('build a Python FastAPI API service',{SKILLRADAR_RE
 if(taskDominance.matches?.[0]?.id!=='python-context') throw new Error(`project context overrode explicit task evidence: ${taskDominance.matches?.[0]?.id}`)
 
 fs.rmSync(tmp, { recursive: true, force: true })
-console.log('Offline Codex plugin validation passed: registry-first + ranking v2.1 + bounded project context + task dominance + Top 3 + C-grade safety advisory + Chinese multi-facet intent + manage-skills doctor contract.')
+console.log('Offline Codex plugin validation passed: registry-first + ranking v2.1 + bounded project context + task dominance + up-to-Top-3 strong recommendations + capability-gap contract + C-grade safety advisory + Chinese multi-facet intent + manage-skills doctor contract.')
