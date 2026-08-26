@@ -1,0 +1,114 @@
+name: Publish v0.5.0 Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/release-trigger-v0.5.0.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: skillradar-release-v0.5.0
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify version and committed bundled registry
+        run: |
+          node - <<'NODE'
+          const pkg=require('./package.json')
+          const plugin=require('./packages/codex-plugin/.codex-plugin/plugin.json')
+          if(pkg.version!=='0.5.0'||plugin.version!=='0.5.0') throw new Error(`release expects 0.5.0, got package=${pkg.version} plugin=${plugin.version}`)
+          NODE
+          npm run sync:plugin-registry
+          git diff --exit-code -- packages/codex-plugin/data/registry.json
+          npm run validate
+          npm run validate:plugin-offline
+          npm run validate:skill-budget
+          npm run benchmark:router
+      - name: Verify hardened general Radar has run
+        run: |
+          node - <<'NODE'
+          const r=require('./data/general-radar-latest.json')
+          const s=require('./data/general-skills-radar.json')
+          if(!r.generatedAt) throw new Error('general Radar has not generated a real snapshot yet')
+          if(typeof r.partialScriptScans!=='number') throw new Error('general Radar snapshot predates fail-closed script scanning')
+          if(typeof r.unverifiedRetained!=='number') throw new Error('general Radar snapshot predates retained scan-provenance gating')
+          if(!Array.isArray(s) || s.length < 1) throw new Error('general Radar produced no routable skills; refusing release')
+          const invalid=s.filter(x=>!['A','B','C'].includes(x.security)||x.scriptScan?.complete!==true||Number(x.scriptScan?.total)!==Number(x.scriptScan?.scanned))
+          if(invalid.length) throw new Error(`general routing shard contains ${invalid.length} skills without complete scan provenance`)
+          console.log(`Hardened General Radar ready: ${s.length} routable skills; ${r.partialScriptScans} partial scans and ${r.unverifiedRetained} unverified retained candidates kept out of routing.`)
+          NODE
+      - name: Verify committed Router Quality Benchmark
+        run: |
+          node - <<'NODE'
+          const b=require('./data/router-benchmark-latest.json')
+          if(b.rankingVersion!=='2.1') throw new Error(`expected ranking 2.1 benchmark, got ${b.rankingVersion}`)
+          if(b.cases<7||b.passed!==b.cases||b.passRate!==1) throw new Error(`benchmark incomplete: ${b.passed}/${b.cases}, passRate=${b.passRate}`)
+          if(b.unsafeTop3!==0) throw new Error(`unsafe Top-3 benchmark results: ${b.unsafeTop3}`)
+          if(b.averageTop1Score<70) throw new Error(`average Top-1 below floor: ${b.averageTop1Score}`)
+          if(b.projectContextFixture!=='passed') throw new Error('project context fixture is not passed')
+          const ai=b.results?.find(x=>x.id==='ai-dashboard')
+          const need=['nextjs','ai-sdk','shadcn']
+          if(!ai?.pass||!need.every(id=>ai.top3?.includes(id))||ai.expected_hits!==3||ai.signal_hits<4) throw new Error(`AI Dashboard facet coverage regression: ${JSON.stringify(ai)}`)
+          console.log(`Router benchmark ready: ${b.passed}/${b.cases}, unsafe=${b.unsafeTop3}, avgTop1=${b.averageTop1Score}, AI Dashboard=${ai.top3.join(' / ')}`)
+          NODE
+      - name: Build Codex plugin archive
+        run: |
+          cd packages/codex-plugin
+          zip -qr ../../skillradar-codex-plugin-v0.5.0.zip .
+          cd ../..
+          sha256sum skillradar-codex-plugin-v0.5.0.zip > skillradar-codex-plugin-v0.5.0.zip.sha256
+      - name: Create or refresh GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v0.5.0 >/dev/null 2>&1; then
+            gh release upload v0.5.0 skillradar-codex-plugin-v0.5.0.zip skillradar-codex-plugin-v0.5.0.zip.sha256 --clobber
+          else
+            gh release create v0.5.0 \
+              --target "${GITHUB_SHA}" \
+              --title "SkillRadar v0.5.0 — Measurable project-aware routing quality" \
+              --notes-file docs/releases/v0.5.0.md \
+              skillradar-codex-plugin-v0.5.0.zip \
+              skillradar-codex-plugin-v0.5.0.zip.sha256
+          fi
+      - name: Record auditable release status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RELEASE_URL="$(gh release view v0.5.0 --json url --jq .url)"
+          RELEASE_CREATED="$(gh release view v0.5.0 --json createdAt --jq .createdAt)"
+          ASSET_DIGEST="$(cut -d' ' -f1 skillradar-codex-plugin-v0.5.0.zip.sha256)"
+          cat > data/release-status.json <<EOF
+          {
+            "version": "v0.5.0",
+            "status": "published",
+            "releaseUrl": "${RELEASE_URL}",
+            "createdAt": "${RELEASE_CREATED}",
+            "asset": "skillradar-codex-plugin-v0.5.0.zip",
+            "sha256": "${ASSET_DIGEST}",
+            "rankingVersion": "2.1",
+            "routerBenchmark": "passed",
+            "verifiedBy": "GitHub Actions"
+          }
+          EOF
+          git add data/release-status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "skillradar-release-bot"
+          git config user.email "skillradar-release-bot@users.noreply.github.com"
+          git commit -m "chore(release): record v0.5.0 publication"
+          git pull --rebase origin main
+          git push origin HEAD:main
