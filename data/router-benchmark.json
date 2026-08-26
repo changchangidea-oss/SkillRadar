@@ -11,9 +11,9 @@
       "id": "ai-dashboard",
       "task": "Build a Next.js React shadcn/ui AI dashboard with streaming, tool calling and App Router",
       "expectedAnyIds": ["ai-sdk", "nextjs", "shadcn"],
-      "minExpectedHits": 2,
+      "minExpectedHits": 3,
       "requiredSignalTerms": ["nextjs", "app-router", "shadcn", "tool-calling"],
-      "minSignalHits": 3
+      "minSignalHits": 4
     },
     {
       "id": "ai-streaming",
