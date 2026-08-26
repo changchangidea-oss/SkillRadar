@@ -158,4 +158,11 @@ for (const query of ['Create an MCP agent that can call tools and coordinate ass
   assert.ok(browser.matches.every((skill) => !repositoryContextFalsePositives.has(skill.id)), `known repository-context false positive leaked for ${query}`);
 }
 
+for (const [query, preservedSignal] of [['SQLite and Redis caching', 'redis'], ['Flutter and SwiftUI mobile apps', 'swiftui']]) {
+  const browser = webRouter.match(snapshot, query, 3);
+  const plugin = pluginMatch(query);
+  assert.deepEqual(browser.matches.map((skill) => skill.id), plugin.matches.map((skill) => skill.id), `mixed-specificity browser/plugin mismatch for ${query}`);
+  assert.ok(browser.matches.some((skill) => (skill.match_details?.matched_signals || []).map(webRouter.canon).includes(preservedSignal)), `candidate for untightened ${preservedSignal} capability was incorrectly filtered for ${query}`);
+}
+
 console.log(`Web UI safety + router parity passed for ${parityQueries.length} named/multi-capability queries.`);
