@@ -15,7 +15,7 @@
     "validate:adoption-policy": "node scripts/validate-adoption-policy.mjs",
     "benchmark:router": "node scripts/benchmark-router.mjs",
     "eval:router": "node scripts/eval-router.mjs",
-    "eval:golden": "node scripts/eval-router-golden.mjs",
+    "eval:golden": "node scripts/eval-router-golden-v2.mjs",
     "shadow:router": "node scripts/shadow-router.mjs",
     "shadow:history": "node scripts/shadow-history.mjs",
     "normalize:general-tags": "node scripts/normalize-general-tags.mjs",
