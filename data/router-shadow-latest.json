@@ -1,42 +1,49 @@
 {
-  "generatedAt": "2026-08-26T05:19:01.404Z",
+  "generatedAt": "2026-08-26T06:22:28.848Z",
   "evalVersion": 2,
+  "specificityPolicyVersion": 2,
   "registrySnapshot": {
-    "contentHash": "64b5d51b11bd0fb1079a7b11240f3a85dc7eb394bc8270726bc2ab0467adf74c",
+    "contentHash": "37312c8a4fdeaa9f2d3a2192540c5c7540f146b15af5b3cd083853e57c071715",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-26T05:18:34.721Z",
-    "totalCount": 461,
+    "generatedAt": "2026-08-26T06:22:05.221Z",
+    "totalCount": 458,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 54,
+    "passed": 48,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 44,
+    "coveragePassed": 38,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "capabilityGapCases": 21,
-    "averageRecommendationCount": 2.35,
+    "lowEvidenceTop3": 6,
+    "specificityFailures": 6,
+    "capabilityGapCases": 33,
+    "averageRecommendationCount": 1.93,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 139,
-    "averageTop1Score": 79.7
+    "signalHitsTotal": 126,
+    "anchorSignalHitsTotal": 18,
+    "averageTop1Score": 74.5
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 54,
+    "passed": 48,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 44,
+    "coveragePassed": 38,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "capabilityGapCases": 21,
-    "averageRecommendationCount": 2.35,
+    "lowEvidenceTop3": 6,
+    "specificityFailures": 6,
+    "capabilityGapCases": 33,
+    "averageRecommendationCount": 1.93,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 139,
-    "averageTop1Score": 79.7
+    "signalHitsTotal": 126,
+    "anchorSignalHitsTotal": 18,
+    "averageTop1Score": 74.5
   },
   "gates": {
     "safetyPass": true,
@@ -51,6 +58,8 @@
       "id": "ai-dashboard",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "nextjs",
         "ai-sdk",
@@ -64,12 +73,16 @@
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "ai-streaming",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "ai-sdk"
       ],
@@ -79,29 +92,35 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "next-app-router",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "nextjs",
-        "RevealUIStudio/revskills/next-best-practices"
+        "nextjs"
       ],
       "candidateTop3": [
-        "nextjs",
-        "RevealUIStudio/revskills/next-best-practices"
+        "nextjs"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "shadcn-system",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "shadcn"
       ],
@@ -111,12 +130,16 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "react-performance",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "react-best-practices",
         "alirezarezvani/claude-skills/senior-frontend-a7068f",
@@ -130,12 +153,16 @@
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "frontend-polish",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
         "stephonGAO/milu/frontend-design-25832f"
@@ -147,31 +174,39 @@
       "productionRecommendationCount": 2,
       "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "zh-spatial-rendering",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "weshopai/weshop-skill-package/fpv-tour-video-generator",
-        "roble3/cc-blender-skill/blender-rendering",
-        "curiositech/some_claude_skills/interior-design-expert"
+        "ammar-hasan/narova/narova-3d-production",
+        "curiositech/some_claude_skills/interior-design-expert",
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "candidateTop3": [
-        "weshopai/weshop-skill-package/fpv-tour-video-generator",
-        "roble3/cc-blender-skill/blender-rendering",
-        "curiositech/some_claude_skills/interior-design-expert"
+        "ammar-hasan/narova/narova-3d-production",
+        "curiositech/some_claude_skills/interior-design-expert",
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "supabase-rls",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "supabase-postgres-best-practices"
       ],
@@ -181,12 +216,16 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "cloudflare-workers",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "workers-best-practices"
       ],
@@ -196,12 +235,16 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "playwright-e2e",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "playwright-testing",
         "langgenius/dify/e2e-cucumber-playwright-1de203",
@@ -215,12 +258,16 @@
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "rag-embeddings",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "ai-sdk",
         "ModelEngine-Group/nexent/prompts-writing-6544cb",
@@ -234,65 +281,81 @@
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "mcp-agent-tools",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
-        "ModelEngine-Group/nexent/prompts-writing-6544cb",
+        "artokun/comfyui-mcp/color-correction-674ba1",
         "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
       ],
       "candidateTop3": [
         "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
-        "ModelEngine-Group/nexent/prompts-writing-6544cb",
+        "artokun/comfyui-mcp/color-correction-674ba1",
         "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "structured-output",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "ai-sdk"
+        "ai-sdk",
+        "Yoodaddy0311/artibot/design-system-reference",
+        "mastra-ai/mastra/ralph-plan-eb726f"
       ],
       "candidateTop3": [
-        "ai-sdk"
+        "ai-sdk",
+        "Yoodaddy0311/artibot/design-system-reference",
+        "mastra-ai/mastra/ralph-plan-eb726f"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "llm-agent-workflow",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
-        "ai-sdk",
-        "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8"
+        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa"
       ],
       "candidateTop3": [
-        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
-        "ai-sdk",
-        "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8"
+        "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "core-web-vitals",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "web-perf"
       ],
@@ -302,29 +365,37 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "tailwind-radix-components",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "shadcn",
-        "RevealUIStudio/revskills/tailwind-v4"
+        "uygnoey/skills-from-claude-blog/frontend-design-aesthetics"
       ],
       "candidateTop3": [
         "shadcn",
-        "RevealUIStudio/revskills/tailwind-v4"
+        "uygnoey/skills-from-claude-blog/frontend-design-aesthetics"
       ],
       "productionRecommendationCount": 2,
       "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "react-landing-polish",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
         "stephonGAO/milu/frontend-design-25832f"
@@ -336,88 +407,96 @@
       "productionRecommendationCount": 2,
       "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "next-data-fetching",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "nextjs",
-        "RevealUIStudio/revskills/next-best-practices",
         "affaan-m/ECC/backend-patterns-ac648c"
       ],
       "candidateTop3": [
         "nextjs",
-        "RevealUIStudio/revskills/next-best-practices",
         "affaan-m/ECC/backend-patterns-ac648c"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "fastapi-rest",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionTop3": [
-        "langfuse/langfuse/backend-dev-guidelines-ac63b0",
-        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
-        "warpdotdev/warp/oz-platform-526ece"
-      ],
-      "candidateTop3": [
-        "langfuse/langfuse/backend-dev-guidelines-ac63b0",
-        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
-        "warpdotdev/warp/oz-platform-526ece"
-      ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "node-api",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "affaan-m/ECC/backend-patterns-ac648c",
         "affaan-m/ECC/mcp-server-patterns-980f90",
-        "dreamhunter2333/cloudflare_temp_email/cf-temp-mail-agent-mail-84e9cf"
+        "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
       ],
       "candidateTop3": [
         "affaan-m/ECC/backend-patterns-ac648c",
         "affaan-m/ECC/mcp-server-patterns-980f90",
-        "dreamhunter2333/cloudflare_temp_email/cf-temp-mail-agent-mail-84e9cf"
+        "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "graphql-server",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "affaan-m/ECC/backend-patterns-ac648c",
         "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
-        "dreamhunter2333/cloudflare_temp_email/cf-temp-mail-agent-mail-84e9cf"
+        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
       "candidateTop3": [
-        "affaan-m/ECC/backend-patterns-ac648c",
         "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
-        "dreamhunter2333/cloudflare_temp_email/cf-temp-mail-agent-mail-84e9cf"
+        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "root-cause-api-debug",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "systematic-debugging"
       ],
@@ -427,12 +506,16 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "postgres-schema",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "supabase-postgres-best-practices"
       ],
@@ -442,69 +525,69 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "postgres-query",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "supabase-postgres-best-practices",
-        "RevealUIStudio/revskills/drizzle-db",
-        "sickn33/agentic-awesome-skills/address-github-comments-7e99d1"
+        "sickn33/agentic-awesome-skills/address-github-comments-7e99d1",
+        "TalissonVitorino/kmp-ios-skills/room-patterns-b1ea2c"
       ],
       "candidateTop3": [
         "supabase-postgres-best-practices",
-        "RevealUIStudio/revskills/drizzle-db",
-        "sickn33/agentic-awesome-skills/address-github-comments-7e99d1"
+        "sickn33/agentic-awesome-skills/address-github-comments-7e99d1",
+        "TalissonVitorino/kmp-ios-skills/room-patterns-b1ea2c"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "redis-cache",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionTop3": [
-        "affaan-m/ECC/backend-patterns-ac648c",
-        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
-        "sickn33/agentic-awesome-skills/accesslint-diff-3ee889"
-      ],
-      "candidateTop3": [
-        "affaan-m/ECC/backend-patterns-ac648c",
-        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
-        "sickn33/agentic-awesome-skills/accesslint-diff-3ee889"
-      ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "sqlite-pipeline",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionTop3": [
-        "artokun/comfyui-mcp/ltx-director-0ea0ef",
-        "artokun/comfyui-mcp/comfyui-core-c840f7",
-        "TalissonVitorino/kmp-ios-skills/analytics-patterns-d35922"
-      ],
-      "candidateTop3": [
-        "artokun/comfyui-mcp/ltx-director-0ea0ef",
-        "artokun/comfyui-mcp/comfyui-core-c840f7",
-        "TalissonVitorino/kmp-ios-skills/analytics-patterns-d35922"
-      ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "tdd-feature",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "test-driven-development"
       ],
@@ -514,12 +597,16 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "code-review-refactor",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "code-review",
         "react-best-practices",
@@ -533,31 +620,39 @@
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "vitest-unit",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "langgenius/dify/frontend-testing-c86f15",
-        "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
-        "langgenius/dify/e2e-cucumber-playwright-1de203"
+        "langgenius/dify/e2e-cucumber-playwright-1de203",
+        "mastra-ai/mastra/testing-core-processors-54fff8"
       ],
       "candidateTop3": [
         "langgenius/dify/frontend-testing-c86f15",
-        "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
-        "langgenius/dify/e2e-cucumber-playwright-1de203"
+        "langgenius/dify/e2e-cucumber-playwright-1de203",
+        "mastra-ai/mastra/testing-core-processors-54fff8"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "regression-debug",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "systematic-debugging"
       ],
@@ -567,12 +662,16 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "vercel-deployment",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "deployments-cicd",
         "RaheesAhmed/SajiCode/devops-da514f"
@@ -584,12 +683,16 @@
       "productionRecommendationCount": 2,
       "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "docker-kubernetes",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "RaheesAhmed/SajiCode/devops-da514f",
         "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
@@ -603,12 +706,16 @@
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "github-ci",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "github",
         "deployments-cicd"
@@ -620,12 +727,16 @@
       "productionRecommendationCount": 2,
       "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "cloudflare-edge",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "workers-best-practices"
       ],
@@ -635,12 +746,16 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "oauth-oidc",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "auth"
       ],
@@ -650,12 +765,16 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "supabase-security",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "supabase-postgres-best-practices"
       ],
@@ -665,88 +784,96 @@
       "productionRecommendationCount": 1,
       "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "vulnerability-review",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "RevealUIStudio/revskills/security-hardening",
-        "code-review",
-        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d"
+        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
+        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
       "candidateTop3": [
-        "RevealUIStudio/revskills/security-hardening",
-        "code-review",
-        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d"
+        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
+        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "secrets-permissions",
-      "productionPass": true,
-      "candidatePass": true,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
       "productionTop3": [
-        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
-        "RevealUIStudio/revskills/security-hardening",
-        "langgenius/dify/how-to-write-component-43f895"
+        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5"
       ],
       "candidateTop3": [
-        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
-        "RevealUIStudio/revskills/security-hardening",
-        "auth"
+        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "react-native-expo",
-      "productionPass": true,
-      "candidatePass": true,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
       "productionTop3": [
-        "curiositech/some_claude_skills/native-app-designer",
-        "expo/expo/expo-review-4e5e61",
         "sickn33/agentic-awesome-skills/add-app-clip-43a9ab"
       ],
       "candidateTop3": [
-        "curiositech/some_claude_skills/native-app-designer",
-        "expo/expo/expo-review-4e5e61",
         "sickn33/agentic-awesome-skills/add-app-clip-43a9ab"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "swiftui-ios",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
-        "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70",
-        "eddremonts86/ai-os/antfu-design-patterns"
+        "TalissonVitorino/kmp-ios-skills/image-loading-cede3d",
+        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed"
       ],
       "candidateTop3": [
-        "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
-        "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70",
-        "eddremonts86/ai-os/antfu-design-patterns"
+        "TalissonVitorino/kmp-ios-skills/image-loading-cede3d",
+        "sickn33/agentic-awesome-skills/ios-developer-5fd6ed"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "android-kotlin",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "TalissonVitorino/kmp-ios-skills/android-patterns-5144e0",
         "TalissonVitorino/kmp-ios-skills/koin-patterns-60d06c",
@@ -760,122 +887,138 @@
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "flutter-mobile",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionTop3": [
-        "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
-        "plugin87/full-stack-design-skills/responsive-universal-design-105379",
-        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max"
-      ],
-      "candidateTop3": [
-        "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
-        "plugin87/full-stack-design-skills/responsive-universal-design-105379",
-        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max"
-      ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "github-pr-triage",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "github",
-        "voidmatcha/e2e-skills/e2e-reviewer-50810f",
-        "code-yeongyu/oh-my-openagent/github-triage-2ea94d"
+        "voidmatcha/e2e-skills/e2e-reviewer-50810f"
       ],
       "candidateTop3": [
         "github",
-        "voidmatcha/e2e-skills/e2e-reviewer-50810f",
-        "code-yeongyu/oh-my-openagent/github-triage-2ea94d"
+        "voidmatcha/e2e-skills/e2e-reviewer-50810f"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "slack-workflow",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8",
-        "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
-        "artokun/comfyui-mcp/ltx-director-0ea0ef"
+        "uygnoey/skills-from-claude-blog/event-build",
+        "uygnoey/skills-from-claude-blog/weekly-metrics-report",
+        "uygnoey/skills-from-claude-blog/report-proofreader"
       ],
       "candidateTop3": [
-        "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8",
-        "artokun/comfyui-mcp/ltx-director-0ea0ef",
-        "artokun/comfyui-mcp/rgthree-253853"
+        "uygnoey/skills-from-claude-blog/event-build",
+        "uygnoey/skills-from-claude-blog/weekly-metrics-report",
+        "uygnoey/skills-from-claude-blog/report-proofreader"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "gmail-calendar",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "googleworkspace/cli/gws-calendar-agenda-c125ff",
-        "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8",
-        "googleworkspace/cli/gws-gmail-read-e6b4b1"
+        "googleworkspace/cli/gws-gmail-read-e6b4b1",
+        "googleworkspace/cli/gws-calendar-03339c"
       ],
       "candidateTop3": [
         "googleworkspace/cli/gws-calendar-agenda-c125ff",
-        "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8",
-        "googleworkspace/cli/gws-gmail-read-e6b4b1"
+        "googleworkspace/cli/gws-gmail-read-e6b4b1",
+        "googleworkspace/cli/gws-calendar-03339c"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "webhook-automation",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18",
-        "langgenius/dify/backend-code-review-850842",
-        "artokun/comfyui-mcp/krea2-identity-edit-b3cf0d"
+        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18"
       ],
       "candidateTop3": [
-        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18",
-        "langgenius/dify/backend-code-review-850842",
-        "artokun/comfyui-mcp/krea2-identity-edit-b3cf0d"
+        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "reverse-engineer-product",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "reverse-engineer"
+        "reverse-engineer",
+        "bitjaru/styleseed/ss-flow"
       ],
       "candidateTop3": [
-        "reverse-engineer"
+        "reverse-engineer",
+        "bitjaru/styleseed/ss-flow"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "notion-research",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "notion",
         "this-rs/project-orchestrator/project-orchestrator-0e95f5"
@@ -887,31 +1030,39 @@
       "productionRecommendationCount": 2,
       "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "technical-docs",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-sysml-architecture-substrate-c8b895",
-        "angular/angular/adev-writing-guide-0332ed",
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-architecture-review-5072cc"
+        "notion",
+        "figma/mcp-server-guide/create-design-system-rules",
+        "angular/angular/adev-writing-guide-0332ed"
       ],
       "candidateTop3": [
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-sysml-architecture-substrate-c8b895",
         "notion",
-        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-architecture-review-5072cc"
+        "figma/mcp-server-guide/create-design-system-rules",
+        "angular/angular/adev-writing-guide-0332ed"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "figma-design-system",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
@@ -925,12 +1076,16 @@
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "zh-ux-research",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
@@ -944,64 +1099,78 @@
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "zh-poster-brand",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "weshopai/weshop-skill-package/poster-design",
-        "weshopai/weshop-skill-package/apply-photo-filter",
-        "pbakaus/impeccable/bolder"
+        "pbakaus/impeccable/bolder",
+        "Yoodaddy0311/artibot/brand-guidelines",
+        "pbakaus/impeccable/impeccable"
       ],
       "candidateTop3": [
-        "weshopai/weshop-skill-package/poster-design",
-        "weshopai/weshop-skill-package/apply-photo-filter",
-        "pbakaus/impeccable/bolder"
+        "pbakaus/impeccable/bolder",
+        "Yoodaddy0311/artibot/brand-guidelines",
+        "pbakaus/impeccable/impeccable"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "zh-video-motion",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "weshopai/weshop-skill-package/make-talking-video",
         "remotion-dev/skills/remotion-best-practices",
-        "weshopai/weshop-skill-package/make-product-commercial"
+        "uygnoey/skills-from-claude-blog/visual-ideation-workflow",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "candidateTop3": [
-        "weshopai/weshop-skill-package/make-talking-video",
         "remotion-dev/skills/remotion-best-practices",
-        "weshopai/weshop-skill-package/make-product-commercial"
+        "uygnoey/skills-from-claude-blog/visual-ideation-workflow",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     },
     {
       "id": "zh-industrial-cad",
       "productionPass": true,
       "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "SpiralCloudOmega/DevTeam6/loudness-metering",
-        "code-yeongyu/oh-my-openagent/ulw-research",
-        "weshopai/weshop-skill-package/create-white-background-product-mockup"
+        "uygnoey/skills-from-claude-blog/cowork-getting-started",
+        "ammar-hasan/narova/narova-stock-extensions",
+        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max"
       ],
       "candidateTop3": [
-        "SpiralCloudOmega/DevTeam6/loudness-metering",
-        "code-yeongyu/oh-my-openagent/ulw-research",
-        "weshopai/weshop-skill-package/create-white-background-product-mockup"
+        "uygnoey/skills-from-claude-blog/cowork-getting-started",
+        "ammar-hasan/narova/narova-stock-extensions",
+        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
+      "lowEvidenceDelta": 0
     }
   ]
 }
