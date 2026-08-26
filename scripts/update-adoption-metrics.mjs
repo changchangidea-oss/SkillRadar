@@ -86,7 +86,7 @@ const snapshot = {
     stars: Number(repo.stargazers_count || 0),
     forks: Number(repo.forks_count || 0),
     watchers: Number(repo.subscribers_count || 0),
-    openIssues: Number(repo.open_issues_count || 0),
+    openIssuesAndPullRequests: Number(repo.open_issues_count || 0),
     externalIssueAuthors: externalIssueAuthors.size,
     externalPrAuthors: externalPrAuthors.size,
     externalActorsObserved: externalActors.size,
