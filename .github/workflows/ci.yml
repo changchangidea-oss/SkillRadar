@@ -25,6 +25,8 @@ jobs:
         run: npm run sync:plugin-registry
       - name: Registry routing content hash policy
         run: npm run validate:registry-hash
+      - name: Exact technology anchor matching policy
+        run: npm run validate:router-eval-policy
       - name: Validate registry and offline router
         run: npm run validate
       - name: Plugin-only offline acceptance

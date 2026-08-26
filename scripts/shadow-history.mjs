@@ -5,15 +5,16 @@ import { pathToFileURL } from 'node:url'
 
 function readJson(file,fallback){try{return JSON.parse(fs.readFileSync(file,'utf8'))}catch{return fallback}}
 function hashVersion(snapshot){return Number(snapshot.registrySnapshot?.contentHashVersion||1)}
-function fingerprint(snapshot){
+function registryFingerprint(snapshot){
   const hash=snapshot.registrySnapshot?.contentHash||''
-  return [hashVersion(snapshot),hash,snapshot.evalVersion||'',snapshot.production?.profile||'',snapshot.candidate?.profile||''].join('::')
+  return [hashVersion(snapshot),hash].join('::')
 }
 function compact(snapshot){
   return {
     generatedAt:snapshot.generatedAt,
     registrySnapshot:snapshot.registrySnapshot||null,
     evalVersion:snapshot.evalVersion,
+    specificityPolicyVersion:snapshot.specificityPolicyVersion,
     production:snapshot.production,
     candidate:snapshot.candidate,
     gates:snapshot.gates,
@@ -21,16 +22,25 @@ function compact(snapshot){
   }
 }
 export function evaluateHistory(existing,current,{required=3,limit=20}={}){
-  const history=Array.isArray(existing?.snapshots)?existing.snapshots.slice():[]
   const candidate=compact(current)
-  const key=fingerprint(candidate)
-  const currentHashVersion=hashVersion(candidate)
   if(!candidate.registrySnapshot?.contentHash)throw new Error('shadow snapshot missing registrySnapshot.contentHash')
   if(!['snapshot-win','hold','reject'].includes(candidate.decision))throw new Error(`invalid single-snapshot decision: ${candidate.decision}`)
-  const idx=history.findIndex(x=>fingerprint(x)===key)
-  if(idx>=0)history[idx]=candidate
-  else history.push(candidate)
-  history.sort((a,b)=>String(a.generatedAt||'').localeCompare(String(b.generatedAt||'')))
+
+  // Promotion evidence is a property of distinct routing Registry states, not of
+  // how many times the same Registry was evaluated. Re-evaluating one Registry
+  // under a newer Eval/policy/profile replaces its audit result and cannot add
+  // another snapshot toward the promotion window.
+  const byRegistry=new Map()
+  const existingSnapshots=Array.isArray(existing?.snapshots)?existing.snapshots.slice():[]
+  existingSnapshots.sort((a,b)=>String(a.generatedAt||'').localeCompare(String(b.generatedAt||'')))
+  for(const raw of existingSnapshots){
+    const snapshot=compact(raw)
+    if(snapshot.registrySnapshot?.contentHash)byRegistry.set(registryFingerprint(snapshot),snapshot)
+  }
+  byRegistry.set(registryFingerprint(candidate),candidate)
+
+  const history=[...byRegistry.values()].sort((a,b)=>String(a.generatedAt||'').localeCompare(String(b.generatedAt||'')))
+  const currentHashVersion=hashVersion(candidate)
   const activeHistory=history.filter(x=>hashVersion(x)===currentHashVersion)
   const legacyCount=history.length-activeHistory.length
   const uniqueCount=activeHistory.length
@@ -64,7 +74,7 @@ export function evaluateHistory(existing,current,{required=3,limit=20}={}){
       consecutiveWins,
       aggregateEvidenceDelta,
       decision,
-      note:'Promotion eligibility uses only snapshots with the current Registry contentHashVersion and requires the latest 3 distinct routing-content snapshots to all be snapshot-win with safety, contract and coverage non-regression. Re-running the same routing contentHash does not add evidence. Legacy hash versions remain auditable but never count toward the current promotion window. This gate never changes production automatically.'
+      note:'Promotion eligibility is keyed only by routing Registry contentHashVersion + contentHash. Re-evaluating the same Registry under a different Eval, specificity policy, or ranking profile replaces that Registry snapshot and never adds evidence. Only the latest 3 distinct current-version Registry states can qualify, and all must be snapshot-win with safety, contract and coverage non-regression. Legacy hash versions remain auditable but never count toward the current promotion window. This gate never changes production automatically.'
     }
   }
 }

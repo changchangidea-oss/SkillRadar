@@ -84,6 +84,7 @@ jobs:
           npm run validate
           npm run validate:plugin-offline
           npm run validate:skill-budget
+          npm run validate:router-eval-policy
           npm run validate:shadow-history
       - name: Run expanded router eval
         env:

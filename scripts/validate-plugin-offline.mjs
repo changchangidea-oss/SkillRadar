@@ -80,6 +80,23 @@ const weakBackfill=runMatch('rare-anchor rare-task primary',{SKILLRADAR_REGISTRY
 if(weakBackfill.matches?.length!==1||weakBackfill.matches?.[0]?.id!=='strong-match') throw new Error(`weak candidates were backfilled: ${JSON.stringify(weakBackfill.matches?.map(x=>x.id))}`)
 if(!weakBackfill.capability_gap?.detected||weakBackfill.capability_gap?.missing!==2) throw new Error('weak-backfill fixture did not expose missing recommendation capacity')
 
+const technologyFixture={
+  schemaVersion:2,generatedAt:'test',source:'technology-specificity-fixture',coreCount:3,designCount:0,generalCount:0,totalCount:3,contentHash:'technology-specificity',
+  core:[
+    {id:'fastapi-specialist',name:'FastAPI Specialist',source:'fixture/fastapi',category:'Backend',tags:['fastapi','python','rest'],summary:'Build FastAPI services.',security:'A',score:80},
+    {id:'generic-api',name:'Generic API',source:'fixture/generic-api',category:'Backend',tags:['api','rest','backend'],summary:'Generic API architecture.',security:'A',score:100},
+    {id:'native-designer',name:'Native Designer',source:'fixture/native',category:'Mobile',tags:['native','mobile'],summary:'Generic native mobile design.',security:'A',score:100}
+  ],design:[],general:[]
+}
+const technologyFixturePath=path.join(tmp,'technology-specificity.json')
+fs.writeFileSync(technologyFixturePath,JSON.stringify(technologyFixture))
+const fastapiSpecific=runMatch('Build a Python FastAPI REST backend API',{SKILLRADAR_REGISTRY_PATH:technologyFixturePath,SKILLRADAR_PROJECT_CONTEXT:'0'})
+if(fastapiSpecific.matches?.length!==1||fastapiSpecific.matches[0].id!=='fastapi-specialist') throw new Error(`generic API proved FastAPI: ${JSON.stringify(fastapiSpecific.matches?.map(x=>x.id))}`)
+if(!fastapiSpecific.capability_gap?.detected||fastapiSpecific.capability_gap?.missing!==2) throw new Error('FastAPI-specific fixture did not expose missing recommendation capacity')
+const reactNativeGap=runMatch('Build a React Native mobile application',{SKILLRADAR_REGISTRY_PATH:technologyFixturePath,SKILLRADAR_PROJECT_CONTEXT:'0'})
+if(reactNativeGap.matches?.length!==0) throw new Error(`generic native proved React Native: ${JSON.stringify(reactNativeGap.matches?.map(x=>x.id))}`)
+if(!reactNativeGap.capability_gap?.detected||reactNativeGap.capability_gap?.missing!==3) throw new Error('React Native capability gap was not explicit')
+
 const fixture = {
   schemaVersion: 1,
   generatedAt: 'test',
