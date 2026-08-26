@@ -38,7 +38,7 @@ jobs:
       - name: Refresh bundled registry
         run: npm run sync:plugin-registry
       - name: Run golden router benchmark
-        run: SKILLRADAR_PROJECT_CONTEXT=0 SKILLRADAR_BENCHMARK_WRITE=1 npm run benchmark:router
+        run: SKILLRADAR_BENCHMARK_WRITE=1 npm run benchmark:router
       - name: Show benchmark summary
         run: node -e 'const r=require("./data/router-benchmark-latest.json"); console.log(JSON.stringify({rankingVersion:r.rankingVersion,cases:r.cases,passed:r.passed,passRate:r.passRate,unsafeTop3:r.unsafeTop3,averageTop1Score:r.averageTop1Score,projectContextFixture:r.projectContextFixture},null,2))'
       - name: Commit benchmark status
