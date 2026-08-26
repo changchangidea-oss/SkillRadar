@@ -11,9 +11,11 @@ on:
       - 'data/skills.json'
       - 'data/design-skills-*.json'
       - 'data/general-skills-radar.json'
+      - 'data/general-domains.json'
       - 'packages/codex-plugin/scripts/skillradar.mjs'
       - 'scripts/eval-router.mjs'
       - 'scripts/shadow-router.mjs'
+      - 'scripts/normalize-general-tags.mjs'
       - 'scripts/sync-codex-plugin-registry.mjs'
       - '.github/workflows/router-shadow.yml'
 
@@ -35,10 +37,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Normalize general routing tags
+        run: npm run normalize:general-tags
       - name: Refresh bundled registry
-        run: |
-          npm run sync:plugin-registry
-          git diff --exit-code -- packages/codex-plugin/data/registry.json
+        run: npm run sync:plugin-registry
       - name: Run release-critical benchmark
         run: npm run benchmark:router
       - name: Run expanded router eval
@@ -50,15 +52,15 @@ jobs:
           node - <<'NODE'
           const e=require('./data/router-eval-latest.json')
           const s=require('./data/router-shadow-latest.json')
-          console.log(`Eval: ${e.passed}/${e.cases}; contract ${e.contract.passed}/${e.contract.cases}; coverage ${e.coverage.passed}/${e.coverage.cases}; unsafe=${e.unsafeTop3}; avgTop1=${e.averageTop1Score}`)
+          console.log(`Eval: ${e.passed}/${e.cases}; contract ${e.contract.passed}/${e.contract.cases}; coverage ${e.coverage.passed}/${e.coverage.cases}; unsafe=${e.unsafeTop3}; avgTop1=${e.averageTop1Score}; avgRelevantTop3=${e.averageRelevantTop3}; lowEvidenceTop3=${e.lowEvidenceTop3}`)
           console.log(`Shadow: ${s.decision}; production=${s.production.passed}/${s.production.cases}; candidate=${s.candidate.passed}/${s.candidate.cases}; evidenceDelta=${s.gates.evidenceDelta}`)
           NODE
-      - name: Commit eval and shadow status
+      - name: Commit normalized registry evidence and eval status
         run: |
-          git add data/router-eval-latest.json data/router-shadow-latest.json
+          git add data/general-skills-radar.json packages/codex-plugin/data/registry.json data/router-eval-latest.json data/router-shadow-latest.json
           if git diff --cached --quiet; then exit 0; fi
           git config user.name "skillradar-shadow-bot"
           git config user.email "skillradar-shadow-bot@users.noreply.github.com"
-          git commit -m "chore(shadow): update router eval status"
+          git commit -m "chore(shadow): update normalized routing eval status"
           git pull --rebase origin main
           git push origin HEAD:main
