@@ -11,6 +11,7 @@
     "validate:shadow-history": "node scripts/validate-shadow-history.mjs",
     "validate:canonical-seeds": "node scripts/validate-canonical-seeds.mjs",
     "validate:registry-hash": "node scripts/validate-registry-content-hash.mjs",
+    "validate:adoption-metrics": "node scripts/validate-adoption-metrics.mjs",
     "benchmark:router": "node scripts/benchmark-router.mjs",
     "eval:router": "node scripts/eval-router.mjs",
     "shadow:router": "node scripts/shadow-router.mjs",
