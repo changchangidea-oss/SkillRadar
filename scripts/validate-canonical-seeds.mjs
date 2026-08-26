@@ -15,7 +15,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..')
 const seeds=JSON.parse(await fs.readFile(path.join(root,'data/general-canonical-seeds.json'),'utf8'))
 function assert(condition,message){if(!condition)throw new Error(message)}
 
-const expectedRepos=['googleworkspace/cli','fastapi/fastapi','redis/agent-skills','SecureSkills-io/sqlite-skill','callstackincubator/agent-skills','flutter/agent-plugins','RevealUIStudio/revskills','slackapi/slack-skills-plugin']
+const expectedRepos=['googleworkspace/cli','fastapi/fastapi','redis/agent-skills','SecureSkills-io/sqlite-skill','callstackincubator/agent-skills','flutter/agent-plugins','RevealUIStudio/revskills','slackapi/slack-skills-plugin','FuZhiyu/superRA','antfu/skills','hookdeck/webhook-skills','nexu-io/open-design']
 assert(expectedRepos.every(repo=>seeds.some(seed=>seed.repo===repo)),`canonical seed coverage incomplete: ${expectedRepos.filter(repo=>!seeds.some(seed=>seed.repo===repo)).join(', ')}`)
 for(const seed of seeds)assert(seed?.repo&&seed?.paths?.length&&seed?.searchTerms?.length,`invalid canonical seed: ${seed?.repo||'unknown'}`)
 
@@ -25,7 +25,11 @@ const cases=[
   ['agent skills Supabase Redis SQLite data pipelines',['redis/agent-skills','SecureSkills-io/sqlite-skill']],
   ['agent skills React Native Expo Flutter',['callstackincubator/agent-skills','flutter/agent-plugins']],
   ['agent skills security secrets permissions',['RevealUIStudio/revskills']],
-  ['agent skills Slack Gmail integrations',['googleworkspace/cli','slackapi/slack-skills-plugin']]
+  ['agent skills Slack Gmail integrations',['googleworkspace/cli','slackapi/slack-skills-plugin']],
+  ['agent skills multi-agent orchestration tools',['FuZhiyu/superRA']],
+  ['agent skills testing Playwright Vitest e2e',['antfu/skills']],
+  ['agent skills webhook API automation integrations',['hookdeck/webhook-skills']],
+  ['agent skills poster brand graphic design',['nexu-io/open-design']]
 ]
 for(const [query,repos] of cases){
   const matched=matchingSeedsForRepositorySearch(`https://api.github.com/search/repositories?q=${encodeURIComponent(query)}`,seeds).map(seed=>seed.repo)
