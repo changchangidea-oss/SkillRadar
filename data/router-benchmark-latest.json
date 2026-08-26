@@ -1,11 +1,13 @@
 {
-  "generatedAt": "2026-08-26T02:04:06.259Z",
+  "generatedAt": "2026-08-26T03:05:46.912Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
   "passed": 7,
   "passRate": 1,
   "unsafeTop3": 0,
+  "capabilityGapCases": 4,
+  "averageRecommendationCount": 2,
   "averageTop1Score": 85.1,
   "projectContextFixture": "passed",
   "results": [
@@ -17,6 +19,8 @@
         "ai-sdk",
         "shadcn"
       ],
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 67,
       "expected_hits": 3,
       "signal_hits": 4,
@@ -40,10 +44,10 @@
       "id": "ai-streaming",
       "pass": true,
       "top3": [
-        "ai-sdk",
-        "garrytan/gstack/plan-ceo-review-a1c71a",
-        "garrytan/gstack/setup-browser-cookies-af7145"
+        "ai-sdk"
       ],
+      "recommendation_count": 1,
+      "capability_gap": true,
       "top1_score": 90,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -63,10 +67,10 @@
       "id": "next-app-router",
       "pass": true,
       "top3": [
-        "nextjs",
-        "langgenius/dify/how-to-write-component-43f895",
-        "affaan-m/ECC/backend-patterns-ac648c"
+        "nextjs"
       ],
+      "recommendation_count": 1,
+      "capability_gap": true,
       "top1_score": 100,
       "expected_hits": 1,
       "signal_hits": 3,
@@ -89,10 +93,10 @@
       "id": "shadcn-system",
       "pass": true,
       "top3": [
-        "shadcn",
-        "nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max",
-        "figma/mcp-server-guide/create-design-system-rules"
+        "shadcn"
       ],
+      "recommendation_count": 1,
+      "capability_gap": true,
       "top1_score": 89,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -116,6 +120,8 @@
         "alirezarezvani/claude-skills/senior-frontend-a7068f",
         "langgenius/dify/how-to-write-component-43f895"
       ],
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 83,
       "expected_hits": 1,
       "signal_hits": 3,
@@ -137,9 +143,10 @@
       "pass": true,
       "top3": [
         "frontend-design",
-        "pbakaus/impeccable/audit",
-        "sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18"
+        "stephonGAO/milu/frontend-design-25832f"
       ],
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 87,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -166,6 +173,8 @@
         "roble3/cc-blender-skill/blender-rendering",
         "calesthio/generative-media-skills/neural-reality-capture"
       ],
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 80,
       "expected_hits": 0,
       "signal_hits": 4,
