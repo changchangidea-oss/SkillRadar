@@ -21,8 +21,10 @@ on:
       - 'scripts/sync-codex-plugin-registry.mjs'
       - '.github/workflows/router-shadow.yml'
 
+# The Daily Pipeline is the sole repository writer for generated Registry/Eval/Shadow evidence.
+# This workflow may regenerate evidence in its ephemeral workspace, but it can never push it.
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: skillradar-router-shadow
@@ -34,22 +36,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Normalize general routing tags
+      - name: Normalize general routing tags in workspace
         run: npm run normalize:general-tags
-      - name: Refresh bundled registry
+      - name: Refresh bundled registry in workspace
         run: npm run sync:plugin-registry
+      - name: Validate Registry routing content hash
+        run: npm run validate:registry-hash
       - name: Run release-critical benchmark
         run: npm run benchmark:router
-      - name: Run expanded router eval
+      - name: Run expanded router eval in workspace
         run: SKILLRADAR_EVAL_WRITE=1 npm run eval:router
-      - name: Run one shadow snapshot
+      - name: Run one shadow snapshot in workspace
         run: SKILLRADAR_SHADOW_WRITE=1 npm run shadow:router
-      - name: Update distinct-Registry shadow history
+      - name: Update distinct-Registry shadow history in workspace
         run: SKILLRADAR_SHADOW_HISTORY_WRITE=1 npm run shadow:history
       - name: Show auditable summary
         run: |
@@ -58,15 +61,6 @@ jobs:
           const s=require('./data/router-shadow-latest.json')
           const h=require('./data/router-shadow-history-latest.json')
           console.log(`Eval: ${e.passed}/${e.cases}; contract ${e.contract.passed}/${e.contract.cases}; coverage ${e.coverage.passed}/${e.coverage.cases}; unsafe=${e.unsafeTop3}; avgTop1=${e.averageTop1Score}; avgRecommendations=${e.averageRecommendationCount}; capabilityGaps=${e.capabilityGapCases}`)
-          console.log(`Shadow snapshot: ${s.decision}; production=${s.production.passed}/${s.production.cases}; candidate=${s.candidate.passed}/${s.candidate.cases}; evidenceDelta=${s.gates.evidenceDelta}; registry=${s.registrySnapshot?.contentHash||'missing'}`)
-          console.log(`Shadow history: ${h.decision}; distinctRegistrySnapshots=${h.uniqueRegistrySnapshots}/${h.requiredSnapshots}; consecutiveWins=${h.consecutiveWins}; aggregateEvidenceDelta=${h.aggregateEvidenceDelta}`)
+          console.log(`Shadow snapshot: ${s.decision}; hashVersion=${s.registrySnapshot?.contentHashVersion}; production=${s.production.passed}/${s.production.cases}; candidate=${s.candidate.passed}/${s.candidate.cases}; evidenceDelta=${s.gates.evidenceDelta}; registry=${s.registrySnapshot?.contentHash||'missing'}`)
+          console.log(`Shadow history: ${h.decision}; hashVersion=${h.contentHashVersion}; distinctRegistrySnapshots=${h.uniqueRegistrySnapshots}/${h.requiredSnapshots}; consecutiveWins=${h.consecutiveWins}; aggregateEvidenceDelta=${h.aggregateEvidenceDelta}`)
           NODE
-      - name: Commit normalized registry evidence and eval status
-        run: |
-          git add data/general-skills-radar.json packages/codex-plugin/data/registry.json data/router-eval-latest.json data/router-shadow-latest.json data/router-shadow-history.json data/router-shadow-history-latest.json
-          if git diff --cached --quiet; then exit 0; fi
-          git config user.name "skillradar-shadow-bot"
-          git config user.email "skillradar-shadow-bot@users.noreply.github.com"
-          git commit -m "chore(shadow): update normalized routing eval status"
-          git pull --rebase origin main
-          git push origin HEAD:main
