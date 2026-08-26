@@ -39,6 +39,7 @@ const PHRASES={
   'next.js':['nextjs'],'app router':['app-router'],'server components':['server-components','rsc'],
   'shadcn/ui':['shadcn'],'ai sdk':['ai-sdk'],'tool calling':['tool-calling','function-calling'],'function calling':['function-calling','tool-calling'],
   'design system':['design-system'],'cloudflare workers':['cloudflare-workers','workers'],'react native':['react-native'],
+  'environment variables':['environment-variables','env-vars'],'env vars':['environment-variables','env-vars'],
   'ci/cd':['ci-cd'],'end to end':['e2e']
 }
 const ZH_FACETS=[
@@ -49,7 +50,7 @@ const ZH_FACETS=[
   ['服装',['fashion','campaign']],['时尚',['fashion','brand']],['交互',['interaction','ux','ui']],['数媒',['digital-media','creative-coding']],['影视',['film','video','editing','vfx']],
   ['工艺',['craft','fabrication']],['民间艺术',['illustration','hand-drawn','collage','pattern','craft']],['纹样',['pattern','illustration','vector']]
 ]
-function canon(t){return String(t).toLowerCase().replace(/next\.js/g,'nextjs').replace(/node\.?js/g,'node').replace(/shadcn\/ui/g,'shadcn').replace(/tool[- ]calling/g,'tool-calling').replace(/function[- ]calling/g,'function-calling').replace(/server[- ]components/g,'server-components').replace(/app[- ]router/g,'app-router').replace(/design[- ]system/g,'design-system').replace(/vulnerabilities/g,'vulnerability').replace(/[^a-z0-9+#.-]+/g,'').trim()}
+function canon(t){return String(t).toLowerCase().replace(/next\.js/g,'nextjs').replace(/node\.?js/g,'node').replace(/shadcn\/ui/g,'shadcn').replace(/tool[- ]calling/g,'tool-calling').replace(/function[- ]calling/g,'function-calling').replace(/server[- ]components/g,'server-components').replace(/app[- ]router/g,'app-router').replace(/design[- ]system/g,'design-system').replace(/vulnerabilities/g,'vulnerability').replace(/^secret$/,'secrets').replace(/^permission$/,'permissions').replace(/^(redis|sqlite|graphql|fastapi|vitest|flutter|swiftui|kubernetes|playwright|github|notion|figma|slack|gmail|calendar|mcp|node)-(backed|based|powered)$/,'$1').replace(/[^a-z0-9+#.-]+/g,'').trim()}
 function querySignals(text){
   const raw=String(text).toLowerCase(),concepts=[],consumed=new Set()
   for(const [phrase,aliases] of Object.entries(PHRASES)){
@@ -127,7 +128,7 @@ function scoreSkill(s,query,context){
 function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.category||''].map(canon).filter(Boolean))}
 function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
 function taskSignalWeights(s){return s.match_details?.matched_signal_weights||{}}
-const SPECIFICITY_SIGNALS=new Set(['playwright','mcp','rag','embeddings','orchestration','fastapi','node','graphql','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation','github','notion','figma'])
+const SPECIFICITY_SIGNALS=new Set(['playwright','mcp','rag','embeddings','orchestration','fastapi','node','graphql','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation','github','notion','figma','cron','cdn','environmentvariables','envvars'])
 function requestedSpecificitySignals(query){
   return [...new Set(querySignals(query).map(x=>canon(x.label)).filter(x=>SPECIFICITY_SIGNALS.has(x)))]
 }

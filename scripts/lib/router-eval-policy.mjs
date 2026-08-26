@@ -19,6 +19,13 @@ export function signalMatches(signal,term){
   const s=canon(signal),t=canon(term)
   if(!s||!t)return false
   if(s===t)return true
+  const signalParts=s.split('-').filter(Boolean)
+  const termParts=t.split('-').filter(Boolean)
+  if(termParts.length&&termParts.length<=signalParts.length){
+    for(let i=0;i<=signalParts.length-termParts.length;i++){
+      if(termParts.every((part,index)=>signalParts[i+index]===part))return true
+    }
+  }
   return t.length>=5&&(s.includes(t)||t.includes(s))
 }
 
@@ -94,16 +101,22 @@ export function evaluateRoutingCase(test,matches=[],meta={}){
   const specificityPass=anchorSignalHits>=Number(test.minAnchorSignalHits||0)
     && anchorCandidateCount>=Number(test.minAnchorCandidates||0)
     && lowEvidenceTop3<=maxLowEvidence
-  const pass=structural
+  const cleanGapPass=Boolean(test.allowCleanCapabilityGap)
+    && structural
+    && unsafe===0
+    && Boolean(gap?.detected)
+    && matches.length===0
+  const pass=cleanGapPass||(structural
     && unsafe===0
     && expectedHits>=Number(test.minExpectedHits||0)
     && signalHits>=minSignalHits
-    && specificityPass
+    && specificityPass)
   return {
     id:test.id,
     domain:test.domain,
     tier:test.tier,
     pass,
+    clean_gap_pass:cleanGapPass,
     top3:matches.map(x=>x.id),
     recommendation_count:matches.length,
     capability_gap:Boolean(gap?.detected),
@@ -126,14 +139,14 @@ export function summarizeRoutingResults(results=[]){
   const coverage=results.filter(x=>x.tier!=='contract')
   const sum=(key)=>results.reduce((n,x)=>n+Number(x[key]||0),0)
   const capabilityGapCases=results.filter(x=>x.capability_gap).length
-  const specificityFailures=results.filter(x=>!x.specificity_pass).length
+  const specificityFailures=results.filter(x=>!x.specificity_pass&&!x.clean_gap_pass).length
   const byDomain={}
   for(const row of results){
     const bucket=byDomain[row.domain]||{cases:0,passed:0,lowEvidenceTop3:0,specificityFailures:0,capabilityGapCases:0,recommendations:0}
     bucket.cases++
     if(row.pass)bucket.passed++
     bucket.lowEvidenceTop3+=row.low_evidence_top3
-    if(!row.specificity_pass)bucket.specificityFailures++
+    if(!row.specificity_pass&&!row.clean_gap_pass)bucket.specificityFailures++
     if(row.capability_gap)bucket.capabilityGapCases++
     bucket.recommendations+=row.recommendation_count
     byDomain[row.domain]=bucket
