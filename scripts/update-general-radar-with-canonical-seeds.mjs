@@ -9,10 +9,7 @@ const seeds=JSON.parse(await fs.readFile(seedPath,'utf8'))
 const originalFetch=globalThis.fetch
 
 const seedRepos=new Map(seeds.map(seed=>[seed.repo,seed]))
-const searchNeedles=[...new Set(seeds.flatMap(seed=>[
-  seed.hint,
-  ...(seed.paths||[]).flatMap(p=>p.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean))
-]).filter(Boolean).map(x=>String(x).toLowerCase()))]
+const searchNeedles=[...new Set(seeds.flatMap(seed=>seed.searchTerms||[]).filter(Boolean).map(x=>String(x).toLowerCase()))]
 
 export function shouldSeedRepositorySearch(url){
   const u=String(url)
@@ -37,15 +34,16 @@ export function prioritizeTreeEntries(entries,paths=[]){
 
 if(process.env.SKILLRADAR_CANONICAL_SEED_SELFTEST==='1'){
   const seed=seeds[0]
-  if(!seed?.repo||!seed?.paths?.length)throw new Error('canonical seed config missing repo/paths')
+  if(!seed?.repo||!seed?.paths?.length||!seed?.searchTerms?.length)throw new Error('canonical seed config missing repo/paths/searchTerms')
   if(!shouldSeedRepositorySearch('https://api.github.com/search/repositories?q=Google%20Workspace%20CLI%20agent%20skills%20Gmail%20Calendar'))throw new Error('Google Workspace search must activate canonical seed discovery')
-  if(shouldSeedRepositorySearch('https://api.github.com/search/repositories?q=React%20Next.js%20frontend'))throw new Error('unrelated frontend search must not activate canonical seed discovery')
+  if(shouldSeedRepositorySearch('https://api.github.com/search/repositories?q=agent%20skills%20React%20Next.js%20frontend'))throw new Error('generic agent-skills frontend search must not activate Google Workspace canonical discovery')
+  if(shouldSeedRepositorySearch('https://api.github.com/search/repositories?q=agent%20skills%20security%20authentication%20OAuth'))throw new Error('generic security search must not activate Google Workspace canonical discovery')
   const repo={full_name:seed.repo}
   const items=prioritizeRepositoryItems([{full_name:'other/repo'},repo],repo)
   if(items[0]?.full_name!==seed.repo||items.filter(x=>x.full_name===seed.repo).length!==1)throw new Error('canonical repo must be first and deduplicated')
   const tree=prioritizeTreeEntries([{path:'z/SKILL.md'},{path:seed.paths[1]},{path:seed.paths[0]}],seed.paths)
   if(tree[0]?.path!==seed.paths[0]||tree[1]?.path!==seed.paths[1])throw new Error('canonical skill paths must be ordered before the 30-file discovery cap')
-  console.log('Canonical General Radar seed self-test passed: relevant searches seed the official repo, unrelated searches do not, and configured Skill paths are prioritized without bypassing downstream scanning.')
+  console.log('Canonical General Radar seed self-test passed: only explicit Google Workspace searches seed the official repo, unrelated agent-skill searches do not, and configured Skill paths are prioritized without bypassing downstream scanning.')
   process.exit(0)
 }
 
