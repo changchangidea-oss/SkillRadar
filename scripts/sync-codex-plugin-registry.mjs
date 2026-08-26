@@ -23,6 +23,25 @@ function uniqueInto(list, seen) {
   }
   return out
 }
+function routingProjection(skill) {
+  return {
+    id: skill.id || null,
+    name: skill.name || null,
+    source: skill.source || null,
+    category: skill.category || null,
+    tags: skill.tags || [],
+    summary: skill.summary || null,
+    security: skill.security || 'B',
+    score: skill.score ?? skill.signalScore ?? 70,
+    maintenance: skill.maintenance ?? skill.maintenanceScore ?? 70,
+    installs: skill.installs || 0,
+    installUrl: skill.installUrl || null,
+    skillsUrl: skill.skillsUrl || null,
+    discovery: skill.discovery || null,
+    domains: skill.domains || [],
+    uses: skill.uses || []
+  }
+}
 
 const rawCore = readJson(path.join(dataDir, 'skills.json'), [])
 const manifest = readJson(path.join(dataDir, 'design-skill-index.json'), { chunks: [] })
@@ -38,11 +57,16 @@ const seen = new Set()
 const core = uniqueInto(rawCore, seen)
 const design = uniqueInto(rawDesign, seen)
 const general = uniqueInto(rawGeneral, seen)
-const payloadForHash = JSON.stringify({ core, design, general })
+const payloadForHash = JSON.stringify({
+  core: core.map(routingProjection),
+  design: design.map(routingProjection),
+  general: general.map(routingProjection)
+})
 const contentHash = crypto.createHash('sha256').update(payloadForHash).digest('hex')
 const generalLatest = readJson(path.join(dataDir, 'general-radar-latest.json'), {})
 const snapshot = {
   schemaVersion: 2,
+  contentHashVersion: 2,
   generatedAt: [manifest.generatedAt, generalLatest.generatedAt].filter(Boolean).sort().at(-1) || new Date().toISOString().slice(0, 10),
   source: 'skillradar-safety-gated-registry',
   coreCount: core.length,
@@ -57,4 +81,4 @@ const snapshot = {
 
 fs.mkdirSync(outDir, { recursive: true })
 fs.writeFileSync(outFile, `${JSON.stringify(snapshot, null, 2)}\n`)
-console.log(`Bundled Codex registry: ${snapshot.totalCount} unique skills (${snapshot.coreCount} core + ${snapshot.designCount} design + ${snapshot.generalCount} general), sha256 ${contentHash.slice(0, 12)}…`)
+console.log(`Bundled Codex registry: ${snapshot.totalCount} unique skills (${snapshot.coreCount} core + ${snapshot.designCount} design + ${snapshot.generalCount} general), routing sha256 ${contentHash.slice(0, 12)}…`)
