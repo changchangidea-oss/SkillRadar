@@ -1,21 +1,21 @@
 {
   "name": "skillradar",
-  "version": "0.4.0",
-  "description": "Discover, safety-scan, classify, rank, inspect, and route Codex tasks to high-signal agent skills, with a read-only skill-context budget doctor.",
+  "version": "0.5.0",
+  "description": "Discover, safety-scan, classify, rank, inspect, and route Codex tasks to high-signal agent skills, with project-aware matching and a read-only skill-context budget doctor.",
   "author": {"name": "SkillRadar contributors"},
   "homepage": "https://github.com/changchangidea-oss/SkillRadar",
   "repository": "https://github.com/changchangidea-oss/SkillRadar",
   "license": "MIT",
-  "keywords": ["skills","codex","agents","skill-discovery","skill-router","design","security","radar","context-budget"],
+  "keywords": ["skills","codex","agents","skill-discovery","skill-router","design","security","radar","context-budget","benchmark"],
   "skills": "./skills/",
   "interface": {
     "displayName": "SkillRadar",
     "shortDescription": "Find the right skill and keep Codex context lean",
-    "longDescription": "Route Codex tasks against a bundled safety-gated core + design + general registry using evidence-weighted matching v2, and diagnose skill catalog pressure with the read-only Skill Budget Doctor.",
+    "longDescription": "Route Codex tasks against a bundled safety-gated core + design + general registry using task-first Matching v2.1 with bounded project context, and diagnose skill catalog pressure with the read-only Skill Budget Doctor.",
     "developerName": "SkillRadar",
     "category": "Developer Tools",
     "capabilities": ["Interactive","Read"],
     "websiteURL": "https://changchangidea-oss.github.io/SkillRadar/",
-    "defaultPrompt": ["Query SkillRadar's bundled registry first, then route this task with safety evidence; use manage-skills when the Codex skill catalog is crowded"]
+    "defaultPrompt": ["Query SkillRadar's bundled registry first, route this task with task evidence plus bounded project-context evidence, and use manage-skills when the Codex skill catalog is crowded"]
   }
 }
