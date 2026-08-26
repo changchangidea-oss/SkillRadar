@@ -1,14 +1,294 @@
-let skills=[];
-let cats=[...new Set(skills.map(s=>s.category))];let listMode='trending',filterCat='All',q='',sort='score';let installed=new Set(JSON.parse(localStorage.getItem('sr-installed')||'[]')),favs=new Set(JSON.parse(localStorage.getItem('sr-favs')||'[]'));const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];function esc(s=''){return String(s).replace(/[&<>\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[m]))}function initials(n){return n.split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase()}function badge(s){return `${s.official?'<span class="badge off">Official</span>':''}<span class="badge '+s.security+'">Security '+s.security+'</span>`}function card(s){return `<article class='card' data-s='${s.id}'><div class='ctop'><div class='ico'>${initials(s.name)}</div><div><h3>${s.name}</h3><div class='src'>${s.source}</div></div></div><div class='badges'>${badge(s)}${s.tags.slice(0,2).map(t=>`<span class='badge'>${t}</span>`).join('')}</div><p>${s.summary}</p><div class='bottom'><div class='score'>${s.score}<small>SkillRadar</small></div><span class='rise'>↑ ${s.rising}</span></div></article>`}function renderHome(){$('#countAll').textContent=skills.length+'+';$('#countVerified').textContent=skills.filter(s=>s.verified).length;$('#featured').innerHTML=skills.slice().sort((a,b)=>b.score-a.score).slice(0,6).map(card).join('');$('#rank').innerHTML=skills.slice().sort((a,b)=>b.rising-a.rising).slice(0,6).map((s,i)=>`<div class='rankrow' data-s='${s.id}'><span>${String(i+1).padStart(2,'0')}</span><div><b>${s.name}</b><small>${s.source}</small></div><span class='rise'>↑ ${s.rising}</span><b>${s.score}</b></div>`).join('');$('#catsHome').innerHTML=cats.slice(0,8).map(c=>`<button class='cat' data-cat='${c}'><span>${c==='AI Agents'?'✦':'◫'}</span><b>${c}</b><small>${skills.filter(s=>s.category===c).length} indexed skills</small></button>`).join('');bindSkills();bindCats()}
-function show(v){$$('.view').forEach(x=>x.classList.remove('on'));$$('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.v===v));if(['trending','rising','official'].includes(v)){listMode=v;$('#listView').classList.add('on');$('#listK').textContent=v.toUpperCase();$('#listTitle').textContent=v==='official'?'Official skills':v[0].toUpperCase()+v.slice(1)+' skills';$('#listSub').textContent=v==='official'?'Verified sources and official OpenAI plugins.':'Ranked by relevance, quality, safety and momentum.';renderList()}else{$('#'+v).classList.add('on');if(v==='mine')renderMine();if(v==='designRadar')renderDesignRadar()}scrollTo(0,0)}function renderList(){let a=skills.slice();if(listMode==='official')a=a.filter(s=>s.official||s.verified);if(filterCat!=='All')a=a.filter(s=>s.category===filterCat);if(q){const ts=q.toLowerCase().split(/\s+/);a=a.filter(s=>{const h=(s.name+' '+s.summary+' '+s.tags.join(' ')+' '+s.category).toLowerCase();return ts.every(t=>h.includes(t))})}a.sort((a,b)=>sort==='name'?a.name.localeCompare(b.name):sort==='rising'?b.rising-a.rising:b.score-a.score);$('#listCount').textContent=a.length+' results';$('#chips').innerHTML=['All',...cats].map(c=>`<button class='${filterCat===c?'active':''}' data-fc='${c}'>${c}</button>`).join('');$('#list').innerHTML=a.length?a.map(s=>`<div class='row' data-s='${s.id}'><div class='identity'><div class='ico'>${initials(s.name)}</div><div><b>${s.name}</b><small>${s.source} · ${s.category}</small></div></div><div class='desc'>${s.summary}</div><b>${s.security}</b><div class='score'>${s.score}</div></div>`).join(''):`<div class='empty'>No matching skills.</div>`;$$('[data-fc]').forEach(b=>b.onclick=()=>{filterCat=b.dataset.fc;renderList()});bindSkills()}
-function openSkill(id){const s=skills.find(x=>x.id===id);if(!s)return;$('#modal').innerHTML=`<div class='ctop'><div class='ico'>${initials(s.name)}</div><div><h2 style='margin:0'>${s.name}</h2><div class='src'>${s.source}</div></div></div><div class='badges'>${badge(s)}${s.tags.map(t=>`<span class='badge'>${t}</span>`).join('')}</div><p style='font-size:17px;color:#565d53'>${s.summary}</p><div class='metrics'><div><b>${s.score}</b><small>SKILLRADAR</small></div><div><b>${s.growth}</b><small>GROWTH</small></div><div><b>${s.maintenance}</b><small>MAINTENANCE</small></div><div><b>${s.security}</b><small>SECURITY</small></div></div><h4>BEST FOR</h4><div class='use'>${s.uses.map(u=>`<div>✓ ${u}</div>`).join('')}</div><div class='actions'><button class='btn' id='markI'>${installed.has(s.id)?'Installed ✓':'Mark installed'}</button><button class='ghost' id='markF'>${favs.has(s.id)?'Favorited ★':'Favorite ☆'}</button><button class='ghost' id='copyCmd'>Copy install hint</button></div>`;$('#modalbg').classList.add('on');$('#markI').onclick=()=>{installed.has(s.id)?installed.delete(s.id):installed.add(s.id);save();openSkill(s.id)};$('#markF').onclick=()=>{favs.has(s.id)?favs.delete(s.id):favs.add(s.id);save();openSkill(s.id)};$('#copyCmd').onclick=()=>copy(`npx skills add https://github.com/${s.source}`)}function save(){localStorage.setItem('sr-installed',JSON.stringify([...installed]));localStorage.setItem('sr-favs',JSON.stringify([...favs]))}function copy(t){navigator.clipboard?.writeText(t);toast('Copied')}function toast(t){$('#toast').textContent=t;$('#toast').classList.add('on');setTimeout(()=>$('#toast').classList.remove('on'),1500)}function bindSkills(){$$('[data-s]').forEach(x=>x.onclick=()=>openSkill(x.dataset.s))}function bindCats(){$$('[data-cat]').forEach(x=>x.onclick=()=>{filterCat=x.dataset.cat;q='';listMode='trending';show('trending')})}
+'use strict';
 
-let designSkills=[],designDomains=[],radarData={discoveries:[],domainRadar:{},status:'seed'},activeDesignDomain='ui-design';
-const fmtN=n=>n==null?'—':n>=1000000?(n/1000000).toFixed(1)+'M':n>=1000?(n/1000).toFixed(n>=10000?0:1)+'K':String(n);
-function normalizeDesignSkill(s){return {id:s.id,name:s.name,source:s.source,category:'Design',tags:s.tags||[],summary:s.summary,security:s.security||'B',score:s.signalScore||70,growth:Math.min(99,Math.round((s.signalScore||70)*.92)),maintenance:s.repoStars>1000?94:82,verified:false,uses:(s.tags||[]).slice(0,4),rising:Math.min(99,s.signalScore||70),official:false,installs:s.installs,skillsUrl:s.skillsUrl,installUrl:s.installUrl}}
-async function loadDesignData(){try{const [core,mi,b,c]=await Promise.all([fetch('data/skills.json'),fetch('data/design-skill-index.json'),fetch('data/design-domains.json'),fetch('data/radar-latest.json')]);skills=await core.json();const manifest=await mi.json();const chunks=await Promise.all(manifest.chunks.map(f=>fetch('data/'+f).then(r=>r.json())));designSkills=chunks.flat();designDomains=await b.json();radarData=await c.json();const existing=new Set(skills.map(s=>s.id));designSkills.map(normalizeDesignSkill).forEach(s=>{if(!existing.has(s.id))skills.push(s)});cats=[...new Set(skills.map(s=>s.category))];renderHome();renderCats();renderDesignHome();renderDesignRadar()}catch(e){console.warn('Design Radar data unavailable',e);$('#designHomeDomains').innerHTML='<div class="empty">Design Radar data unavailable.</div>'}}
-function renderDesignHome(){if(!designDomains.length)return;$('#designHomeDomains').innerHTML=designDomains.slice(0,6).map(d=>`<button class='homeDomain' data-dd='${d.id}'><span class='domainIcon'>${d.icon}</span><b>${d.name}</b><small>${d.en}</small></button>`).join('');$$('[data-dd]').forEach(b=>b.onclick=()=>{activeDesignDomain=b.dataset.dd;show('designRadar');renderDesignRadar()})}
-function renderDesignRadar(){if(!designDomains.length)return;const d=designDomains.find(x=>x.id===activeDesignDomain)||designDomains[0];activeDesignDomain=d.id;$('#designSkillCount').textContent=designSkills.length;$('#designDomainCount').textContent=designDomains.length;$('#radarNewCount').textContent=radarData.discoveryCount??(radarData.discoveries||[]).length;$('#radarTime').textContent=radarData.generatedAt?'Updated '+new Date(radarData.generatedAt).toLocaleString():'Seed snapshot';$('#domainGrid').innerHTML=designDomains.map(x=>`<button class='domainCard ${x.id===d.id?'active':''}' data-domain='${x.id}'><span class='domainIcon'>${x.icon}</span><b>${x.name}</b><small>${x.en}<br>${x.seedTop20?.length||0} seed skills</small></button>`).join('');$('#domainSide').innerHTML=designDomains.map(x=>`<button class='${x.id===d.id?'active':''}' data-domain='${x.id}'><span>${x.name}</span><small>${x.seedTop20?.length||0}</small></button>`).join('');$('#domainIntro').innerHTML=`<div><div class='kicker'>${d.en.toUpperCase()}</div><h2>${d.name}</h2><p>${d.description}</p></div><span class='method'>Seed Rank · relevance + usage + safety</span>`;const byId=new Map(designSkills.map(s=>[s.id,s]));const rows=(d.seedTop20||[]).map((r,i)=>({rank:i+1,skillId:Array.isArray(r)?r[0]:r.skillId,seedScore:Array.isArray(r)?r[1]:r.seedScore})).map(r=>({...r,s:byId.get(r.skillId)})).filter(x=>x.s);$('#designTop20').innerHTML=rows.map(({rank,seedScore,s})=>`<div class='designRankRow' data-s='${s.id}'><div class='rankNo ${rank<=3?'top':''}'>${String(rank).padStart(2,'0')}</div><div class='rankMeta'><b>${esc(s.name)}</b><small>${esc(s.source)}</small></div><div class='rankTags'>${(s.tags||[]).slice(0,3).map(t=>`<span class='badge'>${esc(t)}</span>`).join('')}</div><div class='installs'>${fmtN(s.installs)}<small style='display:block;color:#8a9188'>installs</small></div><div class='score'>${seedScore}</div></div>`).join('');const cands=(radarData.domainRadar?.[d.id]||[]).slice(0,8);$('#radarCandidates').innerHTML=cands.length?cands.map(c=>`<div class='candidate'><div><a href='${c.githubUrl}' target='_blank'><b>${esc(c.name)}</b></a><small>${esc(c.source)} · ${esc(c.skillPath)}</small></div><span>${fmtN(c.repoStars)} ★</span><span class='rise'>match ${c.matchScore}</span></div>`).join(''):`<div class='empty' style='color:#788273;padding:24px'>尚无当天新候选；Seed Top 20 继续作为稳定基线。</div>`;$$('[data-domain]').forEach(b=>b.onclick=()=>{activeDesignDomain=b.dataset.domain;renderDesignRadar()});bindSkills()}
-function search(text){q=text.trim();filterCat='All';listMode='trending';show('trending');$('#listTitle').textContent=q?`Results for “${q}”`:'All skills';$('#listQ').value=q;renderList()}function route(){const text=$('#task').value.trim();if(!text)return toast('Describe a task first');const syn={database:['database','postgres','supabase','rls','sql','query'],frontend:['frontend','ui','react','nextjs','web','page'],testing:['test','testing','playwright','e2e','tdd'],security:['security','auth','oauth','rls','permission'],deploy:['deploy','vercel','cloudflare','ci','production'],ai:['ai','agent','llm','rag','mcp','tool'],design:['design','figma','ux','ui'],debug:['bug','debug','error','broken','regression'],github:['github','pr','issue','repository']};const lo=text.toLowerCase();let toks=new Set(lo.split(/[^a-z0-9+#.-]+/).filter(x=>x.length>1));Object.values(syn).forEach(ws=>{if(ws.some(w=>lo.includes(w)))ws.forEach(w=>toks.add(w))});const arr=skills.map(s=>{const hay=(s.name+' '+s.category+' '+s.tags.join(' ')+' '+s.summary).toLowerCase();let hit=0;[...toks].forEach(t=>{if(hay.includes(t))hit+=t.length>5?2:1});return {...s,match:Math.min(99,Math.round(hit*10+s.score*.35))}}).sort((a,b)=>b.match-a.match).slice(0,3);$('#routeResults').innerHTML=arr.map((s,i)=>`<div class='match' data-s='${s.id}'><div class='mnum'>${s.match}</div><div><h3>${i+1}. ${s.name}</h3><p>${s.summary}</p><p class='reason'>Match: ${s.tags.filter(t=>[...toks].some(q=>t.includes(q)||q.includes(t))).slice(0,4).join(', ')||s.category} · Security ${s.security}</p></div><div class='score'>${s.score}</div></div>`).join('');bindSkills()}
-function renderCats(){$('#catCatalog').innerHTML=cats.map(c=>`<button class='cat' data-cat='${c}'><span>◫</span><b>${c}</b><small>${skills.filter(s=>s.category===c).slice(0,3).map(s=>s.name).join(' · ')}</small></button>`).join('');bindCats()}function renderMine(){const a=skills.filter(s=>installed.has(s.id)||favs.has(s.id));$('#mineList').innerHTML=a.length?a.map(s=>`<div class='row' data-s='${s.id}'><div class='identity'><div class='ico'>${initials(s.name)}</div><div><b>${s.name}</b><small>${installed.has(s.id)?'Installed':'Favorite'}</small></div></div><div class='desc'>${s.summary}</div><b>${s.security}</b><div class='score'>${s.score}</div></div>`).join(''):`<div class='empty'>No local skills yet.</div>`;bindSkills()}const packs=[['Modern Web',['nextjs','react-best-practices','shadcn','web-perf']],['Supabase Safe Stack',['supabase-postgres-best-practices','auth','nextjs','systematic-debugging']],['Quality Gate',['test-driven-development','systematic-debugging','code-review','playwright-testing']],['AI Product',['ai-sdk','find-skills','nextjs','frontend-design']]];function renderPacks(){$('#packGrid').innerHTML=packs.map(p=>`<div class='pack'><h3>${p[0]}</h3><p>Compact skill stack for one workflow.</p><div class='packskills'>${p[1].map(id=>skills.find(s=>s.id===id)).filter(Boolean).map(s=>`<div class='packskill'><span>${s.name}</span><b>${s.score}</b></div>`).join('')}</div></div>`).join('')}
-$$('[data-v]').forEach(b=>b.onclick=()=>show(b.dataset.v));$('#openRouter').onclick=()=>show('router');$('#heroGo').onclick=()=>search($('#heroQ').value);$('#heroQ').onkeydown=e=>{if(e.key==='Enter')search(e.target.value)};$('#globalSearch').onkeydown=e=>{if(e.key==='Enter')search(e.target.value)};$('#listQ').oninput=e=>{q=e.target.value;renderList()};$('#sort').onchange=e=>{sort=e.target.value;renderList()};$('#routeBtn').onclick=route;$('#task').onkeydown=e=>{if((e.metaKey||e.ctrlKey)&&e.key==='Enter')route()};$('#close').onclick=()=>$('#modalbg').classList.remove('on');$('#modalbg').onclick=e=>{if(e.target.id==='modalbg')$('#modalbg').classList.remove('on')};$('#clearMine').onclick=()=>{installed.clear();favs.clear();save();renderMine()};loadDesignData().then(()=>renderPacks());
+const safe = globalThis.SkillRadarSafe;
+const webRouter = globalThis.SkillRadarWebRouter;
+if (!safe || !webRouter) throw new Error('SkillRadar web safety/router helpers failed to load.');
+
+const { escapeHtml: esc, escapeAttr: attr, safeGithubUrl, repoSlug, safeNumber } = safe;
+const $ = (selector) => document.querySelector(selector);
+const $$ = (selector) => [...document.querySelectorAll(selector)];
+
+function readStoredSet(key) {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(key) || '[]');
+    return new Set(Array.isArray(parsed) ? parsed.map(String) : []);
+  } catch {
+    localStorage.removeItem(key);
+    return new Set();
+  }
+}
+
+let skills = [];
+let registrySnapshot = null;
+let cats = [];
+let listMode = 'trending';
+let filterCat = 'All';
+let q = '';
+let sort = 'score';
+let installed = readStoredSet('sr-installed');
+let favs = readStoredSet('sr-favs');
+let designSkills = [];
+let designDomains = [];
+let radarData = { discoveries: [], domainRadar: {}, status: 'seed' };
+let activeDesignDomain = 'ui-design';
+
+function text(value) { return String(value ?? ''); }
+function numeric(value, fallback = 0) { return safeNumber(value, fallback); }
+function securityGrade(value) { return ['A', 'B', 'C'].includes(value) ? value : 'C'; }
+function initials(name) {
+  return text(name).split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0] || '').join('').toUpperCase();
+}
+function fmtN(value) {
+  if (value == null) return '—';
+  const number = numeric(value, 0);
+  if (number >= 1000000) return `${(number / 1000000).toFixed(1)}M`;
+  if (number >= 1000) return `${(number / 1000).toFixed(number >= 10000 ? 0 : 1)}K`;
+  return String(number);
+}
+function normalizeDisplaySkill(skill) {
+  const score = numeric(skill.score ?? skill.signalScore, 70);
+  const maintenance = numeric(skill.maintenance ?? skill.maintenanceScore, 70);
+  const rising = numeric(skill.rising, Math.min(99, score));
+  const growth = numeric(skill.growth, Math.min(99, Math.round(score * 0.92)));
+  return {
+    ...skill,
+    id: text(skill.id),
+    name: text(skill.name || skill.id || 'Unnamed Skill'),
+    source: text(skill.source),
+    category: text(skill.category || 'General'),
+    tags: Array.isArray(skill.tags) ? skill.tags.map(text) : [],
+    domains: Array.isArray(skill.domains) ? skill.domains.map(text) : [],
+    summary: text(skill.summary),
+    security: securityGrade(skill.security),
+    score,
+    growth,
+    maintenance,
+    verified: Boolean(skill.verified),
+    uses: Array.isArray(skill.uses) ? skill.uses.map(text) : [],
+    rising,
+    official: Boolean(skill.official),
+    installs: skill.installs == null ? null : numeric(skill.installs, 0),
+  };
+}
+function save() {
+  localStorage.setItem('sr-installed', JSON.stringify([...installed]));
+  localStorage.setItem('sr-favs', JSON.stringify([...favs]));
+}
+function toast(message) {
+  $('#toast').textContent = text(message);
+  $('#toast').classList.add('on');
+  setTimeout(() => $('#toast').classList.remove('on'), 1500);
+}
+async function copy(value) {
+  try {
+    if (!navigator.clipboard?.writeText) throw new Error('Clipboard API unavailable');
+    await navigator.clipboard.writeText(value);
+    toast('Copied');
+  } catch {
+    toast('Copy failed');
+  }
+}
+function badge(skill) {
+  const grade = securityGrade(skill.security);
+  return `${skill.official ? '<span class="badge off">Official</span>' : ''}<span class="badge ${grade}">Security ${grade}</span>`;
+}
+function card(skill) {
+  return `<article class="card" data-s="${attr(skill.id)}"><div class="ctop"><div class="ico">${esc(initials(skill.name))}</div><div><h3>${esc(skill.name)}</h3><div class="src">${esc(skill.source)}</div></div></div><div class="badges">${badge(skill)}${skill.tags.slice(0, 2).map((tag) => `<span class="badge">${esc(tag)}</span>`).join('')}</div><p>${esc(skill.summary)}</p><div class="bottom"><div class="score">${numeric(skill.score)}<small>SkillRadar</small></div><span class="rise">↑ ${numeric(skill.rising)}</span></div></article>`;
+}
+function bindSkills() {
+  $$('[data-s]').forEach((element) => { element.onclick = () => openSkill(element.dataset.s); });
+}
+function bindCats() {
+  $$('[data-cat]').forEach((element) => {
+    element.onclick = () => {
+      filterCat = element.dataset.cat;
+      q = '';
+      listMode = 'trending';
+      show('trending');
+    };
+  });
+}
+function renderHome() {
+  $('#countAll').textContent = `${skills.length}+`;
+  $('#countVerified').textContent = skills.filter((skill) => skill.verified).length;
+  $('#featured').innerHTML = skills.slice().sort((a, b) => b.score - a.score).slice(0, 6).map(card).join('');
+  $('#rank').innerHTML = skills.slice().sort((a, b) => b.rising - a.rising).slice(0, 6).map((skill, index) => `<div class="rankrow" data-s="${attr(skill.id)}"><span>${String(index + 1).padStart(2, '0')}</span><div><b>${esc(skill.name)}</b><small>${esc(skill.source)}</small></div><span class="rise">↑ ${numeric(skill.rising)}</span><b>${numeric(skill.score)}</b></div>`).join('');
+  $('#catsHome').innerHTML = cats.slice(0, 8).map((category) => `<button class="cat" data-cat="${attr(category)}"><span>${category === 'AI Agents' ? '✦' : '◫'}</span><b>${esc(category)}</b><small>${skills.filter((skill) => skill.category === category).length} indexed skills</small></button>`).join('');
+  bindSkills();
+  bindCats();
+}
+function show(view) {
+  $$('.view').forEach((element) => element.classList.remove('on'));
+  $$('.nav button').forEach((element) => element.classList.toggle('active', element.dataset.v === view));
+  if (['trending', 'rising', 'official'].includes(view)) {
+    listMode = view;
+    $('#listView').classList.add('on');
+    $('#listK').textContent = view.toUpperCase();
+    $('#listTitle').textContent = view === 'official' ? 'Official skills' : `${view[0].toUpperCase()}${view.slice(1)} skills`;
+    $('#listSub').textContent = view === 'official' ? 'Verified sources and official OpenAI plugins.' : 'Ranked by relevance, quality, safety and momentum.';
+    renderList();
+  } else {
+    const target = $(`#${view}`);
+    if (!target) return;
+    target.classList.add('on');
+    if (view === 'mine') renderMine();
+    if (view === 'designRadar') renderDesignRadar();
+  }
+  scrollTo(0, 0);
+}
+function renderList() {
+  let rows = skills.slice();
+  if (listMode === 'official') rows = rows.filter((skill) => skill.official || skill.verified);
+  if (filterCat !== 'All') rows = rows.filter((skill) => skill.category === filterCat);
+  if (q) {
+    const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+    rows = rows.filter((skill) => {
+      const haystack = `${skill.name} ${skill.summary} ${skill.tags.join(' ')} ${skill.category}`.toLowerCase();
+      return terms.every((term) => haystack.includes(term));
+    });
+  }
+  rows.sort((a, b) => sort === 'name' ? a.name.localeCompare(b.name) : sort === 'rising' ? b.rising - a.rising : b.score - a.score);
+  $('#listCount').textContent = `${rows.length} results`;
+  $('#chips').innerHTML = ['All', ...cats].map((category) => `<button class="${filterCat === category ? 'active' : ''}" data-fc="${attr(category)}">${esc(category)}</button>`).join('');
+  $('#list').innerHTML = rows.length ? rows.map((skill) => `<div class="row" data-s="${attr(skill.id)}"><div class="identity"><div class="ico">${esc(initials(skill.name))}</div><div><b>${esc(skill.name)}</b><small>${esc(skill.source)} · ${esc(skill.category)}</small></div></div><div class="desc">${esc(skill.summary)}</div><b>${esc(skill.security)}</b><div class="score">${numeric(skill.score)}</div></div>`).join('') : '<div class="empty">No matching skills.</div>';
+  $$('[data-fc]').forEach((button) => { button.onclick = () => { filterCat = button.dataset.fc; renderList(); }; });
+  bindSkills();
+}
+function openSkill(id) {
+  const skill = skills.find((candidate) => candidate.id === id);
+  if (!skill) return;
+  const slug = repoSlug(skill.source);
+  $('#modal').innerHTML = `<div class="ctop"><div class="ico">${esc(initials(skill.name))}</div><div><h2 style="margin:0">${esc(skill.name)}</h2><div class="src">${esc(skill.source)}</div></div></div><div class="badges">${badge(skill)}${skill.tags.map((tag) => `<span class="badge">${esc(tag)}</span>`).join('')}</div><p style="font-size:17px;color:#565d53">${esc(skill.summary)}</p><div class="metrics"><div><b>${numeric(skill.score)}</b><small>SKILLRADAR</small></div><div><b>${numeric(skill.growth)}</b><small>GROWTH</small></div><div><b>${numeric(skill.maintenance)}</b><small>MAINTENANCE</small></div><div><b>${esc(skill.security)}</b><small>SECURITY</small></div></div><h4>BEST FOR</h4><div class="use">${skill.uses.map((use) => `<div>✓ ${esc(use)}</div>`).join('')}</div><div class="actions"><button class="btn" id="markI">${installed.has(skill.id) ? 'Installed ✓' : 'Mark installed'}</button><button class="ghost" id="markF">${favs.has(skill.id) ? 'Favorited ★' : 'Favorite ☆'}</button><button class="ghost" id="copyCmd">${slug ? 'Copy install hint' : 'Install hint unavailable'}</button></div>`;
+  $('#modalbg').classList.add('on');
+  $('#markI').onclick = () => { installed.has(skill.id) ? installed.delete(skill.id) : installed.add(skill.id); save(); openSkill(skill.id); };
+  $('#markF').onclick = () => { favs.has(skill.id) ? favs.delete(skill.id) : favs.add(skill.id); save(); openSkill(skill.id); };
+  $('#copyCmd').onclick = () => slug ? copy(`npx skills add https://github.com/${slug}`) : toast('No canonical repository install hint');
+}
+function normalizeDesignSkill(skill) {
+  const score = numeric(skill.signalScore, 70);
+  return normalizeDisplaySkill({
+    ...skill,
+    category: 'Design',
+    score,
+    growth: Math.min(99, Math.round(score * 0.92)),
+    maintenance: numeric(skill.repoStars, 0) > 1000 ? 94 : 82,
+    verified: false,
+    uses: Array.isArray(skill.tags) ? skill.tags.slice(0, 4) : [],
+    rising: Math.min(99, score),
+    official: false,
+  });
+}
+function renderDesignHome() {
+  if (!designDomains.length) return;
+  $('#designHomeDomains').innerHTML = designDomains.slice(0, 6).map((domain) => `<button class="homeDomain" data-dd="${attr(domain.id)}"><span class="domainIcon">${esc(domain.icon)}</span><b>${esc(domain.name)}</b><small>${esc(domain.en)}</small></button>`).join('');
+  $$('[data-dd]').forEach((button) => { button.onclick = () => { activeDesignDomain = button.dataset.dd; show('designRadar'); renderDesignRadar(); }; });
+}
+function renderDesignRadar() {
+  if (!designDomains.length) return;
+  const domain = designDomains.find((candidate) => candidate.id === activeDesignDomain) || designDomains[0];
+  activeDesignDomain = domain.id;
+  $('#designSkillCount').textContent = designSkills.length;
+  $('#designDomainCount').textContent = designDomains.length;
+  $('#radarNewCount').textContent = radarData.discoveryCount ?? (radarData.discoveries || []).length;
+  $('#radarTime').textContent = radarData.generatedAt ? `Updated ${new Date(radarData.generatedAt).toLocaleString()}` : 'Seed snapshot';
+  $('#domainGrid').innerHTML = designDomains.map((item) => `<button class="domainCard ${item.id === domain.id ? 'active' : ''}" data-domain="${attr(item.id)}"><span class="domainIcon">${esc(item.icon)}</span><b>${esc(item.name)}</b><small>${esc(item.en)}<br>${Array.isArray(item.seedTop20) ? item.seedTop20.length : 0} seed skills</small></button>`).join('');
+  $('#domainSide').innerHTML = designDomains.map((item) => `<button class="${item.id === domain.id ? 'active' : ''}" data-domain="${attr(item.id)}"><span>${esc(item.name)}</span><small>${Array.isArray(item.seedTop20) ? item.seedTop20.length : 0}</small></button>`).join('');
+  $('#domainIntro').innerHTML = `<div><div class="kicker">${esc(text(domain.en).toUpperCase())}</div><h2>${esc(domain.name)}</h2><p>${esc(domain.description)}</p></div><span class="method">Seed Rank · relevance + usage + safety</span>`;
+  const byId = new Map(designSkills.map((skill) => [skill.id, skill]));
+  const topRows = (domain.seedTop20 || []).map((row, index) => ({ rank: index + 1, skillId: Array.isArray(row) ? row[0] : row.skillId, seedScore: Array.isArray(row) ? row[1] : row.seedScore })).map((row) => ({ ...row, skill: byId.get(row.skillId) })).filter((row) => row.skill);
+  $('#designTop20').innerHTML = topRows.map(({ rank, seedScore, skill }) => `<div class="designRankRow" data-s="${attr(skill.id)}"><div class="rankNo ${rank <= 3 ? 'top' : ''}">${String(rank).padStart(2, '0')}</div><div class="rankMeta"><b>${esc(skill.name)}</b><small>${esc(skill.source)}</small></div><div class="rankTags">${skill.tags.slice(0, 3).map((tag) => `<span class="badge">${esc(tag)}</span>`).join('')}</div><div class="installs">${fmtN(skill.installs)}<small style="display:block;color:#8a9188">installs</small></div><div class="score">${numeric(seedScore)}</div></div>`).join('');
+  const candidates = (radarData.domainRadar?.[domain.id] || []).slice(0, 8);
+  $('#radarCandidates').innerHTML = candidates.length ? candidates.map((candidate) => `<div class="candidate"><div><a href="${attr(safeGithubUrl(candidate.githubUrl))}" target="_blank" rel="noopener noreferrer"><b>${esc(candidate.name)}</b></a><small>${esc(candidate.source)} · ${esc(candidate.skillPath)}</small></div><span>${fmtN(candidate.repoStars)} ★</span><span class="rise">match ${numeric(candidate.matchScore)}</span></div>`).join('') : '<div class="empty" style="color:#788273;padding:24px">No new candidates for this field today; the Seed Top 20 remains the stable baseline.</div>';
+  $$('[data-domain]').forEach((button) => { button.onclick = () => { activeDesignDomain = button.dataset.domain; renderDesignRadar(); }; });
+  bindSkills();
+}
+function search(textValue) {
+  q = text(textValue).trim();
+  filterCat = 'All';
+  listMode = 'trending';
+  show('trending');
+  $('#listTitle').textContent = q ? `Results for “${q}”` : 'All skills';
+  $('#listQ').value = q;
+  renderList();
+}
+function renderCapabilityGap(result) {
+  if (!result.capability_gap?.detected) return '';
+  return `<div class="empty" style="margin-top:12px">${esc(result.capability_gap.reason)}</div>`;
+}
+function route() {
+  const query = $('#task').value.trim();
+  if (!query) return toast('Describe a task first');
+  if (!registrySnapshot) return toast('Registry is still loading');
+  const result = webRouter.match(registrySnapshot, query, 3);
+  const matches = result.matches || [];
+  const specificity = result.specificity?.enforced ? `<div class="sourceNote">Specificity gate: ${esc((result.specificity.required_signals || []).join(', '))}</div>` : '';
+  const advisory = result.advisory?.message ? `<div class="sourceNote">Security review: ${esc(result.advisory.message)}</div>` : '';
+  $('#routeResults').innerHTML = `${specificity}${matches.map((skill, index) => `<div class="match" data-s="${attr(skill.id)}"><div class="mnum">${numeric(skill.match_score)}</div><div><h3>${index + 1}. ${esc(skill.name)}</h3><p>${esc(skill.summary)}</p><p class="reason">${esc(skill.reason)} · Security ${esc(skill.security)}</p></div><div class="score">${numeric(skill.skillradar_score)}</div></div>`).join('')}${renderCapabilityGap(result)}${advisory}` || '<div class="empty">No safe, specific match found.</div>';
+  bindSkills();
+}
+function renderCats() {
+  $('#catCatalog').innerHTML = cats.map((category) => `<button class="cat" data-cat="${attr(category)}"><span>◫</span><b>${esc(category)}</b><small>${esc(skills.filter((skill) => skill.category === category).slice(0, 3).map((skill) => skill.name).join(' · '))}</small></button>`).join('');
+  bindCats();
+}
+function renderMine() {
+  const rows = skills.filter((skill) => installed.has(skill.id) || favs.has(skill.id));
+  $('#mineList').innerHTML = rows.length ? rows.map((skill) => `<div class="row" data-s="${attr(skill.id)}"><div class="identity"><div class="ico">${esc(initials(skill.name))}</div><div><b>${esc(skill.name)}</b><small>${installed.has(skill.id) ? 'Installed' : 'Favorite'}</small></div></div><div class="desc">${esc(skill.summary)}</div><b>${esc(skill.security)}</b><div class="score">${numeric(skill.score)}</div></div>`).join('') : '<div class="empty">No local skills yet.</div>';
+  bindSkills();
+}
+const packs = [
+  ['Modern Web', ['nextjs', 'react-best-practices', 'shadcn', 'web-perf']],
+  ['Supabase Safe Stack', ['supabase-postgres-best-practices', 'auth', 'nextjs', 'systematic-debugging']],
+  ['Quality Gate', ['test-driven-development', 'systematic-debugging', 'code-review', 'playwright-testing']],
+  ['AI Product', ['ai-sdk', 'find-skills', 'nextjs', 'frontend-design']],
+];
+function renderPacks() {
+  $('#packGrid').innerHTML = packs.map(([name, ids]) => `<div class="pack"><h3>${esc(name)}</h3><p>Compact skill stack for one workflow.</p><div class="packskills">${ids.map((id) => skills.find((skill) => skill.id === id)).filter(Boolean).map((skill) => `<div class="packskill"><span>${esc(skill.name)}</span><b>${numeric(skill.score)}</b></div>`).join('')}</div></div>`).join('');
+}
+async function fetchJson(url) {
+  const response = await fetch(url, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
+  return response.json();
+}
+async function loadData() {
+  try {
+    const [snapshot, manifest, domains, radar] = await Promise.all([
+      fetchJson('packages/codex-plugin/data/registry.json'),
+      fetchJson('data/design-skill-index.json'),
+      fetchJson('data/design-domains.json'),
+      fetchJson('data/radar-latest.json'),
+    ]);
+    if (!snapshot || ![1, 2].includes(snapshot.schemaVersion)) throw new Error('Unsupported bundled registry schema');
+    registrySnapshot = snapshot;
+    skills = webRouter.registrySkills(snapshot).map(normalizeDisplaySkill);
+    const chunks = await Promise.all((manifest.chunks || []).map((file) => fetchJson(`data/${file}`)));
+    designSkills = chunks.flat().map(normalizeDesignSkill);
+    designDomains = Array.isArray(domains) ? domains : [];
+    radarData = radar || radarData;
+    cats = [...new Set(skills.map((skill) => skill.category).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+    renderHome();
+    renderCats();
+    renderDesignHome();
+    renderDesignRadar();
+    renderPacks();
+  } catch (error) {
+    console.error('SkillRadar data unavailable', error);
+    $('#featured').innerHTML = '<div class="empty">Registry data unavailable.</div>';
+    $('#designHomeDomains').innerHTML = '<div class="empty">Design Radar data unavailable.</div>';
+    $('#routeResults').innerHTML = '<div class="empty">Router registry unavailable.</div>';
+  }
+}
+
+$$('[data-v]').forEach((button) => { button.onclick = () => show(button.dataset.v); });
+$('#openRouter').onclick = () => show('router');
+$('#heroGo').onclick = () => search($('#heroQ').value);
+$('#heroQ').onkeydown = (event) => { if (event.key === 'Enter') search(event.target.value); };
+$('#globalSearch').onkeydown = (event) => { if (event.key === 'Enter') search(event.target.value); };
+$('#listQ').oninput = (event) => { q = event.target.value; renderList(); };
+$('#sort').onchange = (event) => { sort = event.target.value; renderList(); };
+$('#routeBtn').onclick = route;
+$('#task').onkeydown = (event) => { if ((event.metaKey || event.ctrlKey) && event.key === 'Enter') route(); };
+$('#close').onclick = () => $('#modalbg').classList.remove('on');
+$('#modalbg').onclick = (event) => { if (event.target.id === 'modalbg') $('#modalbg').classList.remove('on'); };
+$('#clearMine').onclick = () => { installed.clear(); favs.clear(); save(); renderMine(); };
+
+loadData();
