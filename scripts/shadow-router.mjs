@@ -87,8 +87,17 @@ function summary(rows){
 }
 
 const productionRows=[],candidateRows=[],comparisons=[]
+let registrySnapshot=null
 for(const test of spec.cases){
   const prod=run('match',test.task)
+  if(!registrySnapshot){
+    registrySnapshot={
+      contentHash:prod.registry?.contentHash||null,
+      generatedAt:prod.registry?.generatedAt||null,
+      totalCount:Number(prod.registry?.totalCount||0),
+      mode:prod.registry?.mode||null
+    }
+  }
   const search=run('search',test.task)
   const candidateMatches=candidateRerank(search.skills||[],3)
   const production=evaluate(test,prod.matches||[],{source:prod.source,registryMode:prod.registry?.mode,capabilityGap:prod.capability_gap})
@@ -102,18 +111,19 @@ const contractNonRegression=candidate.contractPassed>=production.contractPassed
 const coverageNonRegression=candidate.coveragePassed>=production.coveragePassed
 const evidenceDelta=(candidate.expectedHitsTotal-production.expectedHitsTotal)+(candidate.signalHitsTotal-production.signalHitsTotal)
 const clearWin=candidate.passed>production.passed||(candidate.passed===production.passed&&evidenceDelta>0)
-const decision=!safetyPass||!contractNonRegression||!coverageNonRegression?'reject':clearWin?'promotion-eligible':'hold'
+const decision=!safetyPass||!contractNonRegression||!coverageNonRegression?'reject':clearWin?'snapshot-win':'hold'
 const output={
   generatedAt:new Date().toISOString(),
   evalVersion:spec.schemaVersion,
+  registrySnapshot,
   production:{profile:'ranking-v2.1',...production},
   candidate:{profile:'facet-heavy-rerank-v0.6-shadow',...candidate},
   gates:{safetyPass,contractNonRegression,coverageNonRegression,evidenceDelta},
   decision,
-  note:'Shadow output is evidence only. It never changes production weights or routing automatically.',
+  note:'This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.',
   comparisons
 }
 console.log(JSON.stringify(output,null,2))
 if(process.env.SKILLRADAR_SHADOW_WRITE==='1')fs.writeFileSync(path.join(root,'data/router-shadow-latest.json'),JSON.stringify(output,null,2)+'\n')
-if(!safetyPass||!contractNonRegression)process.exitCode=1
-if(process.env.SKILLRADAR_SHADOW_STRICT==='1'&&decision!=='promotion-eligible')process.exitCode=1
+if(!safetyPass||!contractNonRegression||!coverageNonRegression)process.exitCode=1
+if(process.env.SKILLRADAR_SHADOW_STRICT==='1'&&decision!=='snapshot-win')process.exitCode=1
