@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T06:55:36.957Z",
+  "generatedAt": "2026-08-26T07:56:21.360Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
@@ -169,9 +169,9 @@
       "id": "zh-spatial-rendering",
       "pass": true,
       "top3": [
-        "ammar-hasan/narova/narova-3d-production",
-        "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering"
+        "weshopai/weshop-skill-package/fpv-tour-video-generator",
+        "roble3/cc-blender-skill/blender-rendering",
+        "curiositech/some_claude_skills/interior-design-expert"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -180,9 +180,9 @@
       "signal_hits": 4,
       "signals": [
         "-architecture",
-        "-rendering",
+        "-interior",
         "-spatial",
-        "-interior"
+        "-rendering"
       ],
       "context": {
         "mode": "task-only",
