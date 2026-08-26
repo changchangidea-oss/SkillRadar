@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { anchorSignalMatches } from './lib/router-eval-policy.mjs'
+import { anchorSignalMatches, evaluateRoutingCase } from './lib/router-eval-policy.mjs'
 
 function assert(condition,message){
   if(!condition)throw new Error(message)
@@ -26,4 +26,37 @@ assert(!anchorSignalMatches('storage','rag'),'short anchors must not match insid
 assert(anchorSignalMatches('poster-design','poster'),'poster must match as an exact design-medium anchor')
 assert(!anchorSignalMatches('apply-photo-filter','poster'),'generic photo editing must not prove poster capability')
 
-console.log('Router Eval specificity validation passed: named technology and service anchors require exact canonical word/phrase boundaries; generic API, native, research, and partial words cannot satisfy them.')
+function match(id,name,signals){
+  return {id,name,security:'B',match_score:70,match_details:{matched_signals:signals,coverage:0.7}}
+}
+function gapMeta(returned){
+  return {source:'skillradar-registry',registryMode:'local-bundled',capabilityGap:returned<3?{detected:true,returned,missing:3-returned}:{detected:false,returned,missing:0}}
+}
+
+const flutterPolicy={
+  id:'fixture-flutter',domain:'Mobile',tier:'coverage',expectedAnyIds:[],minExpectedHits:0,
+  requiredSignalTerms:['flutter','mobile'],minSignalHits:1,
+  anchorSignalTerms:['flutter'],minAnchorSignalHits:1,minAnchorCandidates:1,maxLowEvidenceTop3:0,
+  candidateIdentityAnchorTerms:['flutter'],minCandidateIdentityAnchorHits:1,minCandidateRequiredHits:2
+}
+const sourcePolluted=evaluateRoutingCase(flutterPolicy,[match('flutter/agent-plugins/dart-write-documentation','Dart Write Documentation',['flutter','mobile'])],gapMeta(1))
+assert(!sourcePolluted.pass,'a Flutter repository/source prefix must not make an unrelated Dart documentation sub-skill relevant')
+assert(sourcePolluted.low_evidence_top3===1,'repository-context false positive must be counted as low-evidence')
+assert(sourcePolluted.candidates[0].identity_anchor_hits===0,'candidate identity evidence must come from the candidate name, not its repository id/source')
+
+const namedFlutter=evaluateRoutingCase(flutterPolicy,[match('flutter/agent-plugins/flutter-build-responsive-layout','Flutter Build Responsive Layout',['flutter','mobile'])],gapMeta(1))
+assert(namedFlutter.pass,'a candidate whose own name and task signals prove Flutter mobile capability should pass')
+assert(namedFlutter.low_evidence_top3===0,'qualified candidate must not be counted as low-evidence')
+
+const mcpPolicy={
+  id:'fixture-mcp',domain:'AI Agents',tier:'coverage',expectedAnyIds:[],minExpectedHits:0,
+  requiredSignalTerms:['mcp','agent','tools'],minSignalHits:2,
+  anchorSignalTerms:['mcp'],minAnchorSignalHits:1,minAnchorCandidates:1,maxLowEvidenceTop3:0,
+  candidateIdentityAnchorTerms:['mcp'],minCandidateIdentityAnchorHits:1,minCandidateRequiredHits:2
+}
+const comfyFalsePositive=evaluateRoutingCase(mcpPolicy,[match('artokun/comfyui-mcp/color-correction','Color Correction',['mcp','agent','tools'])],gapMeta(1))
+assert(!comfyFalsePositive.pass,'ComfyUI color correction must not become an MCP agent recommendation solely through ecosystem/repository evidence')
+const dedicatedMcp=evaluateRoutingCase(mcpPolicy,[match('example/mcp-agent-builder','MCP Agent Builder',['mcp','agent','tools'])],gapMeta(1))
+assert(dedicatedMcp.pass,'a dedicated MCP agent candidate with direct task evidence should pass')
+
+console.log('Router Eval specificity validation passed: exact anchors remain strict, and policy v5 rejects repository/ecosystem-context false positives unless each candidate carries its own identity plus task evidence.')
