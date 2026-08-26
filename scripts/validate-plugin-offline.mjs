@@ -96,6 +96,9 @@ if(!fastapiSpecific.capability_gap?.detected||fastapiSpecific.capability_gap?.mi
 const reactNativeGap=runMatch('Build a React Native mobile application',{SKILLRADAR_REGISTRY_PATH:technologyFixturePath,SKILLRADAR_PROJECT_CONTEXT:'0'})
 if(reactNativeGap.matches?.length!==0) throw new Error(`generic native proved React Native: ${JSON.stringify(reactNativeGap.matches?.map(x=>x.id))}`)
 if(!reactNativeGap.capability_gap?.detected||reactNativeGap.capability_gap?.missing!==3) throw new Error('React Native capability gap was not explicit')
+const notionGap=runMatch('Organize research and planning in Notion',{SKILLRADAR_REGISTRY_PATH:technologyFixturePath,SKILLRADAR_PROJECT_CONTEXT:'0'})
+if(notionGap.matches?.length!==0) throw new Error(`generic research proved Notion: ${JSON.stringify(notionGap.matches?.map(x=>x.id))}`)
+if(!notionGap.capability_gap?.detected||notionGap.capability_gap?.missing!==3) throw new Error('Notion capability gap was not explicit')
 
 const fixture = {
   schemaVersion: 1,

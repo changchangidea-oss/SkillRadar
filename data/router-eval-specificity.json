@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "qualityPolicyVersion": 2,
-  "description": "Specificity gates for open-domain routing cases. Anchors use exact canonical word/phrase boundaries so generic workflow/integration/data matches, API for FastAPI, and native for React Native cannot count as named-technology evidence.",
+  "qualityPolicyVersion": 3,
+  "description": "Specificity gates for open-domain routing cases. Anchors use exact canonical word/phrase boundaries so generic workflow/integration/data/research matches, API for FastAPI, and native for React Native cannot count as named-technology or named-service evidence.",
   "cases": {
+    "playwright-e2e": {"anchorSignalTerms":["playwright"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "mcp-agent-tools": {"anchorSignalTerms":["mcp"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "rag-embeddings": {"anchorSignalTerms":["rag","embeddings"],"minAnchorSignalHits":2,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "llm-agent-workflow": {"anchorSignalTerms":["orchestration"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "fastapi-rest": {"anchorSignalTerms":["fastapi"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "node-api": {"anchorSignalTerms":["node"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
@@ -21,6 +23,10 @@
     "slack-workflow": {"anchorSignalTerms":["slack"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "gmail-calendar": {"anchorSignalTerms":["gmail","calendar"],"minAnchorSignalHits":2,"minAnchorCandidates":2,"maxLowEvidenceTop3":0},
     "webhook-automation": {"anchorSignalTerms":["webhook"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
-    "technical-docs": {"anchorSignalTerms":["documentation"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0}
+    "technical-docs": {"anchorSignalTerms":["documentation"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "github-ci": {"anchorSignalTerms":["github"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "github-pr-triage": {"anchorSignalTerms":["github"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "notion-research": {"anchorSignalTerms":["notion"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "figma-design-system": {"anchorSignalTerms":["figma"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0}
   }
 }
