@@ -238,10 +238,12 @@
   }
 
   function candidateEvidencePass(skill, required = []) {
-    const applicable = required.map((signal) => ({ signal, rule: CANDIDATE_EVIDENCE_RULES[signal] })).filter(({ rule }) => rule);
-    if (!applicable.length) return true;
     const matched = new Set((skill.match_details?.matched_signals || []).map(canon));
     const identity = new Set(String(skill.name || '').toLowerCase().split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean));
+    const matchedRequired = required.filter((signal) => matched.has(signal));
+    if (matchedRequired.some((signal) => !CANDIDATE_EVIDENCE_RULES[signal])) return true;
+    const applicable = matchedRequired.map((signal) => ({ signal, rule: CANDIDATE_EVIDENCE_RULES[signal] })).filter(({ rule }) => rule);
+    if (!applicable.length) return true;
     return applicable.some(({ signal, rule }) => matched.has(signal)
       && matched.size >= rule.minSignals
       && rule.identity.some((term) => identity.has(canon(term))));
