@@ -1,14 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs'
 import path from 'node:path'
-
-const root=path.resolve('.')
-const historyPath=process.env.SKILLRADAR_SHADOW_HISTORY_PATH||path.join(root,'data/router-shadow-history.json')
-const latestPath=process.env.SKILLRADAR_SHADOW_LATEST_PATH||path.join(root,'data/router-shadow-latest.json')
-const statusPath=process.env.SKILLRADAR_SHADOW_HISTORY_STATUS_PATH||path.join(root,'data/router-shadow-history-latest.json')
-const write=process.env.SKILLRADAR_SHADOW_HISTORY_WRITE==='1'
-const requiredSnapshots=Number(process.env.SKILLRADAR_SHADOW_REQUIRED_SNAPSHOTS||3)
-const maxSnapshots=Number(process.env.SKILLRADAR_SHADOW_HISTORY_LIMIT||20)
+import { pathToFileURL } from 'node:url'
 
 function readJson(file,fallback){try{return JSON.parse(fs.readFileSync(file,'utf8'))}catch{return fallback}}
 function fingerprint(snapshot){
@@ -69,12 +62,25 @@ export function evaluateHistory(existing,current,{required=3,limit=20}={}){
   }
 }
 
-const latest=readJson(latestPath,null)
-if(!latest)throw new Error(`missing latest shadow snapshot: ${latestPath}`)
-const existing=readJson(historyPath,{schemaVersion:1,snapshots:[]})
-const result=evaluateHistory(existing,latest,{required:requiredSnapshots,limit:maxSnapshots})
-console.log(JSON.stringify(result.status,null,2))
-if(write){
-  fs.writeFileSync(historyPath,JSON.stringify(result.history,null,2)+'\n')
-  fs.writeFileSync(statusPath,JSON.stringify(result.status,null,2)+'\n')
+export function runCli(){
+  const root=path.resolve('.')
+  const historyPath=process.env.SKILLRADAR_SHADOW_HISTORY_PATH||path.join(root,'data/router-shadow-history.json')
+  const latestPath=process.env.SKILLRADAR_SHADOW_LATEST_PATH||path.join(root,'data/router-shadow-latest.json')
+  const statusPath=process.env.SKILLRADAR_SHADOW_HISTORY_STATUS_PATH||path.join(root,'data/router-shadow-history-latest.json')
+  const write=process.env.SKILLRADAR_SHADOW_HISTORY_WRITE==='1'
+  const requiredSnapshots=Number(process.env.SKILLRADAR_SHADOW_REQUIRED_SNAPSHOTS||3)
+  const maxSnapshots=Number(process.env.SKILLRADAR_SHADOW_HISTORY_LIMIT||20)
+  const latest=readJson(latestPath,null)
+  if(!latest)throw new Error(`missing latest shadow snapshot: ${latestPath}`)
+  const existing=readJson(historyPath,{schemaVersion:1,snapshots:[]})
+  const result=evaluateHistory(existing,latest,{required:requiredSnapshots,limit:maxSnapshots})
+  console.log(JSON.stringify(result.status,null,2))
+  if(write){
+    fs.writeFileSync(historyPath,JSON.stringify(result.history,null,2)+'\n')
+    fs.writeFileSync(statusPath,JSON.stringify(result.status,null,2)+'\n')
+  }
+  return result
 }
+
+const direct=process.argv[1]&&import.meta.url===pathToFileURL(path.resolve(process.argv[1])).href
+if(direct)runCli()
