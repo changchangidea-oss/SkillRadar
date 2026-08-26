@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T05:00:13.528Z",
+  "generatedAt": "2026-08-26T05:18:45.299Z",
   "evalVersion": 2,
   "rankingVersion": "2.1",
   "cases": 54,
@@ -18,9 +18,9 @@
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "capabilityGapCases": 21,
-  "averageRecommendationCount": 2.31,
-  "averageRelevantTop3": 2.31,
-  "averageTop1Score": 79.5,
+  "averageRecommendationCount": 2.35,
+  "averageRelevantTop3": 2.35,
+  "averageTop1Score": 79.7,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -36,7 +36,7 @@
       "lowEvidenceTop3": 0,
       "capabilityGapCases": 6,
       "passRate": 1,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 2
     },
     "Design & Media": {
       "cases": 5,
@@ -219,14 +219,15 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "nextjs"
+        "nextjs",
+        "RevealUIStudio/revskills/next-best-practices"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 100,
       "expected_hits": 1,
       "signal_hits": 3,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -244,6 +245,19 @@
             "route",
             "handlers"
           ]
+        },
+        {
+          "id": "RevealUIStudio/revskills/next-best-practices",
+          "score": 80,
+          "coverage": 0.79,
+          "expected": false,
+          "signals": [
+            "nextjs",
+            "app-router",
+            "server-components",
+            "react",
+            "route"
+          ]
         }
       ],
       "signals": [
@@ -253,7 +267,9 @@
         "architect",
         "react",
         "route",
-        "handlers"
+        "handlers",
+        "revealuistudio-revskills-next-best-practices",
+        "next-best-practices"
       ]
     },
     {
@@ -428,13 +444,13 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "curiositech/some_claude_skills/interior-design-expert",
+        "weshopai/weshop-skill-package/fpv-tour-video-generator",
         "roble3/cc-blender-skill/blender-rendering",
-        "calesthio/generative-media-skills/neural-reality-capture"
+        "curiositech/some_claude_skills/interior-design-expert"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 80,
+      "top1_score": 83,
       "expected_hits": 0,
       "signal_hits": 4,
       "relevant_top3": 3,
@@ -442,8 +458,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "curiositech/some_claude_skills/interior-design-expert",
-          "score": 80,
+          "id": "weshopai/weshop-skill-package/fpv-tour-video-generator",
+          "score": 83,
           "coverage": 0.75,
           "expected": false,
           "signals": [
@@ -464,8 +480,8 @@
           ]
         },
         {
-          "id": "calesthio/generative-media-skills/neural-reality-capture",
-          "score": 77,
+          "id": "curiositech/some_claude_skills/interior-design-expert",
+          "score": 80,
           "coverage": 0.75,
           "expected": false,
           "signals": [
@@ -479,13 +495,13 @@
         "-architecture",
         "-interior",
         "-spatial",
-        "curiositech-some-claude-skills-interior-design-expert",
-        "interior-design-expert",
+        "weshopai-weshop-skill-package-fpv-tour-video-generator",
+        "fpv-tour-video-generator",
         "-rendering",
         "roble3-cc-blender-skill-blender-rendering",
         "blender-rendering",
-        "calesthio-generative-media-skills-neural-reality-capture",
-        "neural-reality-capture"
+        "curiositech-some-claude-skills-interior-design-expert",
+        "interior-design-expert"
       ]
     },
     {
@@ -707,8 +723,8 @@
       "pass": true,
       "top3": [
         "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
-        "shalintripathi/saas-marketing-agents/catalyst-orchestrator",
-        "ModelEngine-Group/nexent/prompts-writing-6544cb"
+        "ModelEngine-Group/nexent/prompts-writing-6544cb",
+        "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -731,16 +747,6 @@
           ]
         },
         {
-          "id": "shalintripathi/saas-marketing-agents/catalyst-orchestrator",
-          "score": 49,
-          "coverage": 0.3,
-          "expected": false,
-          "signals": [
-            "agent",
-            "coordinate"
-          ]
-        },
-        {
           "id": "ModelEngine-Group/nexent/prompts-writing-6544cb",
           "score": 49,
           "coverage": 0.3,
@@ -748,6 +754,17 @@
           "signals": [
             "agent",
             "assistants"
+          ]
+        },
+        {
+          "id": "OpenDigitalProductFactory/opendigitalproductfactory/dpf-record-decision-outcome-3a235e",
+          "score": 55,
+          "coverage": 0.39,
+          "expected": false,
+          "signals": [
+            "mcp",
+            "agent",
+            "tools"
           ]
         }
       ],
@@ -757,12 +774,11 @@
         "tools",
         "sickn33-agentic-awesome-skills-activecampaign-automation-d2e395",
         "activecampaign-automation",
-        "coordinate",
-        "shalintripathi-saas-marketing-agents-catalyst-orchestrator",
-        "catalyst-orchestrator",
         "assistants",
         "modelengine-group-nexent-prompts-writing-6544cb",
-        "prompt-writing"
+        "prompt-writing",
+        "opendigitalproductfactory-opendigitalproductfactory-dpf-record-decision-outcome-3a235e",
+        "dpf-record-decision-outcome"
       ]
     },
     {
@@ -811,7 +827,7 @@
       "top3": [
         "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
         "ai-sdk",
-        "shalintripathi/saas-marketing-agents/email-marketing-ops"
+        "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -844,8 +860,8 @@
           ]
         },
         {
-          "id": "shalintripathi/saas-marketing-agents/email-marketing-ops",
-          "score": 54,
+          "id": "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8",
+          "score": 55,
           "coverage": 0.41,
           "expected": false,
           "signals": [
@@ -862,8 +878,8 @@
         "kubernetes-deployment",
         "tools",
         "ai-sdk",
-        "shalintripathi-saas-marketing-agents-email-marketing-ops",
-        "email-marketing-ops"
+        "agentskillexchange-skills-acf-extended-advanced-custom-fields-workflows-24efd8",
+        "acf-extended-for-advanced-custom-fields-workflows"
       ]
     },
     {
@@ -919,14 +935,15 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "shadcn"
+        "shadcn",
+        "RevealUIStudio/revskills/tailwind-v4"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 85,
       "expected_hits": 1,
       "signal_hits": 3,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -941,6 +958,17 @@
             "radix",
             "ui"
           ]
+        },
+        {
+          "id": "RevealUIStudio/revskills/tailwind-v4",
+          "score": 67,
+          "coverage": 0.61,
+          "expected": false,
+          "signals": [
+            "tailwind",
+            "ui",
+            "components"
+          ]
         }
       ],
       "signals": [
@@ -948,7 +976,10 @@
         "tailwind",
         "radix",
         "ui",
-        "shadcn"
+        "shadcn",
+        "components",
+        "revealuistudio-revskills-tailwind-v4",
+        "tailwind-v4"
       ]
     },
     {
@@ -1015,8 +1046,8 @@
       "pass": true,
       "top3": [
         "nextjs",
-        "affaan-m/ECC/backend-patterns-ac648c",
-        "HIDORAKAI002/ai-workspace-archive/vercel-react-best-practices-854b75"
+        "RevealUIStudio/revskills/next-best-practices",
+        "affaan-m/ECC/backend-patterns-ac648c"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -1041,6 +1072,20 @@
           ]
         },
         {
+          "id": "RevealUIStudio/revskills/next-best-practices",
+          "score": 86,
+          "coverage": 0.88,
+          "expected": false,
+          "signals": [
+            "nextjs",
+            "app-router",
+            "implement",
+            "data",
+            "fetching",
+            "route"
+          ]
+        },
+        {
           "id": "affaan-m/ECC/backend-patterns-ac648c",
           "score": 66,
           "coverage": 0.53,
@@ -1051,17 +1096,6 @@
             "route",
             "architecture"
           ]
-        },
-        {
-          "id": "HIDORAKAI002/ai-workspace-archive/vercel-react-best-practices-854b75",
-          "score": 63,
-          "coverage": 0.44,
-          "expected": false,
-          "signals": [
-            "nextjs",
-            "data",
-            "fetching"
-          ]
         }
       ],
       "signals": [
@@ -1070,11 +1104,12 @@
         "fetching",
         "route",
         "architecture",
+        "implement",
         "data",
+        "revealuistudio-revskills-next-best-practices",
+        "next-best-practices",
         "affaan-m-ecc-backend-patterns-ac648c",
-        "backend-patterns",
-        "hidorakai002-ai-workspace-archive-vercel-react-best-practices-854b75",
-        "vercel-react-best-practices"
+        "backend-patterns"
       ]
     },
     {
@@ -1362,8 +1397,8 @@
       "pass": true,
       "top3": [
         "supabase-postgres-best-practices",
-        "sickn33/agentic-awesome-skills/address-github-comments-7e99d1",
-        "TalissonVitorino/kmp-ios-skills/room-patterns-b1ea2c"
+        "RevealUIStudio/revskills/drizzle-db",
+        "sickn33/agentic-awesome-skills/address-github-comments-7e99d1"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -1385,6 +1420,17 @@
           ]
         },
         {
+          "id": "RevealUIStudio/revskills/drizzle-db",
+          "score": 51,
+          "coverage": 0.5,
+          "expected": false,
+          "signals": [
+            "postgres",
+            "queries",
+            "indexes"
+          ]
+        },
+        {
           "id": "sickn33/agentic-awesome-skills/address-github-comments-7e99d1",
           "score": 49,
           "coverage": 0.35,
@@ -1393,28 +1439,19 @@
             "review",
             "database"
           ]
-        },
-        {
-          "id": "TalissonVitorino/kmp-ios-skills/room-patterns-b1ea2c",
-          "score": 49,
-          "coverage": 0.35,
-          "expected": false,
-          "signals": [
-            "queries",
-            "database"
-          ]
         }
       ],
       "signals": [
         "postgres",
         "database",
         "supabase-postgres-best-practices",
+        "queries",
+        "indexes",
+        "revealuistudio-revskills-drizzle-db",
+        "drizzle-db",
         "review",
         "sickn33-agentic-awesome-skills-address-github-comments-7e99d1",
-        "address-github-comments",
-        "queries",
-        "talissonvitorino-kmp-ios-skills-room-patterns-b1ea2c",
-        "room-patterns"
+        "address-github-comments"
       ]
     },
     {
@@ -1424,8 +1461,8 @@
       "pass": true,
       "top3": [
         "affaan-m/ECC/backend-patterns-ac648c",
-        "sickn33/agentic-awesome-skills/accesslint-diff-3ee889",
-        "sickn33/agentic-awesome-skills/accesslint-scan-252327"
+        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+        "sickn33/agentic-awesome-skills/accesslint-diff-3ee889"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -1449,18 +1486,18 @@
           ]
         },
         {
-          "id": "sickn33/agentic-awesome-skills/accesslint-diff-3ee889",
-          "score": 60,
+          "id": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+          "score": 59,
           "coverage": 0.5,
           "expected": false,
           "signals": [
-            "backend",
+            "design",
             "data",
             "access"
           ]
         },
         {
-          "id": "sickn33/agentic-awesome-skills/accesslint-scan-252327",
+          "id": "sickn33/agentic-awesome-skills/accesslint-diff-3ee889",
           "score": 60,
           "coverage": 0.5,
           "expected": false,
@@ -1478,10 +1515,10 @@
         "access",
         "affaan-m-ecc-backend-patterns-ac648c",
         "backend-patterns",
+        "awesome-dsh-plugin-awesome-dsh-plugin-ui-ux-pro-max",
+        "ui-ux-pro-max",
         "sickn33-agentic-awesome-skills-accesslint-diff-3ee889",
-        "accesslint-diff",
-        "sickn33-agentic-awesome-skills-accesslint-scan-252327",
-        "accesslint-scan"
+        "accesslint-diff"
       ]
     },
     {
@@ -1492,7 +1529,7 @@
       "top3": [
         "artokun/comfyui-mcp/ltx-director-0ea0ef",
         "artokun/comfyui-mcp/comfyui-core-c840f7",
-        "shalintripathi/saas-marketing-agents/marketing-analytics"
+        "TalissonVitorino/kmp-ios-skills/analytics-patterns-d35922"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -1524,8 +1561,8 @@
           ]
         },
         {
-          "id": "shalintripathi/saas-marketing-agents/marketing-analytics",
-          "score": 41,
+          "id": "TalissonVitorino/kmp-ios-skills/analytics-patterns-d35922",
+          "score": 40,
           "coverage": 0.22,
           "expected": false,
           "signals": [
@@ -1542,8 +1579,8 @@
         "artokun-comfyui-mcp-comfyui-core-c840f7",
         "comfyui-core",
         "analytics",
-        "shalintripathi-saas-marketing-agents-marketing-analytics",
-        "marketing-analytics"
+        "talissonvitorino-kmp-ios-skills-analytics-patterns-d35922",
+        "analytics-patterns"
       ]
     },
     {
@@ -2069,13 +2106,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "icdev-ai/icdev/icdev-secure",
+        "RevealUIStudio/revskills/security-hardening",
         "code-review",
         "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 59,
+      "top1_score": 60,
       "expected_hits": 0,
       "signal_hits": 2,
       "relevant_top3": 3,
@@ -2083,14 +2120,14 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "icdev-ai/icdev/icdev-secure",
-          "score": 59,
+          "id": "RevealUIStudio/revskills/security-hardening",
+          "score": 60,
           "coverage": 0.55,
           "expected": false,
           "signals": [
+            "review",
             "security",
-            "vulnerabilities",
-            "secure"
+            "vulnerabilities"
           ]
         },
         {
@@ -2115,12 +2152,11 @@
         }
       ],
       "signals": [
+        "review",
         "security",
         "vulnerabilities",
-        "secure",
-        "icdev-ai-icdev-icdev-secure",
-        "icdev-secure",
-        "review",
+        "revealuistudio-revskills-security-hardening",
+        "security-hardening",
         "coding",
         "code-review",
         "mukul975-anthropic-cybersecurity-skills-building-vulnerability-exception-tracking-system-29c77d",
@@ -2134,14 +2170,14 @@
       "pass": true,
       "top3": [
         "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
-        "auth",
+        "RevealUIStudio/revskills/security-hardening",
         "langgenius/dify/how-to-write-component-43f895"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
       "top1_score": 48,
       "expected_hits": 0,
-      "signal_hits": 2,
+      "signal_hits": 3,
       "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
@@ -2157,11 +2193,12 @@
           ]
         },
         {
-          "id": "auth",
-          "score": 40,
-          "coverage": 0.22,
+          "id": "RevealUIStudio/revskills/security-hardening",
+          "score": 42,
+          "coverage": 0.39,
           "expected": false,
           "signals": [
+            "secrets",
             "authentication"
           ]
         },
@@ -2180,8 +2217,10 @@
         "permissions",
         "denissergeevitch-agents-best-practices-agents-best-practices-0e95f5",
         "agents-best-practices",
+        "secrets",
         "authentication",
-        "auth",
+        "revealuistudio-revskills-security-hardening",
+        "security-hardening",
         "boundaries",
         "langgenius-dify-how-to-write-component-43f895",
         "how-to-write-component"
@@ -2257,7 +2296,7 @@
       "top3": [
         "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
         "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70",
-        "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58"
+        "eddremonts86/ai-os/antfu-design-patterns"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2291,12 +2330,12 @@
           ]
         },
         {
-          "id": "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58",
-          "score": 69,
-          "coverage": 0.59,
+          "id": "eddremonts86/ai-os/antfu-design-patterns",
+          "score": 70,
+          "coverage": 0.64,
           "expected": false,
           "signals": [
-            "ios",
+            "interface",
             "mobile",
             "patterns"
           ]
@@ -2311,8 +2350,8 @@
         "ios",
         "talissonvitorino-kmp-ios-skills-accessibility-patterns-14fe70",
         "accessibility-patterns",
-        "talissonvitorino-kmp-ios-skills-coroutines-patterns-ed3a58",
-        "coroutines-patterns"
+        "eddremonts86-ai-os-antfu-design-patterns",
+        "antfu-design-patterns"
       ]
     },
     {
@@ -2387,7 +2426,7 @@
       "top3": [
         "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
         "plugin87/full-stack-design-skills/responsive-universal-design-105379",
-        "frontend-design"
+        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2419,11 +2458,12 @@
           ]
         },
         {
-          "id": "frontend-design",
-          "score": 48,
-          "coverage": 0.39,
+          "id": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+          "score": 65,
+          "coverage": 0.7,
           "expected": false,
           "signals": [
+            "mobile",
             "interface"
           ]
         }
@@ -2435,7 +2475,8 @@
         "sleek-design-mobile-apps",
         "plugin87-full-stack-design-skills-responsive-universal-design-105379",
         "responsive-universal-design",
-        "frontend-design"
+        "awesome-dsh-plugin-awesome-dsh-plugin-ui-ux-pro-max",
+        "ui-ux-pro-max"
       ]
     },
     {
@@ -2514,13 +2555,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "artokun/comfyui-mcp/ltx-director-0ea0ef",
+        "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8",
         "sickn33/agentic-awesome-skills/activecampaign-automation-d2e395",
-        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d"
+        "artokun/comfyui-mcp/ltx-director-0ea0ef"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 59,
+      "top1_score": 61,
       "expected_hits": 0,
       "signal_hits": 2,
       "relevant_top3": 3,
@@ -2528,8 +2569,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "artokun/comfyui-mcp/ltx-director-0ea0ef",
-          "score": 59,
+          "id": "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8",
+          "score": 61,
           "coverage": 0.53,
           "expected": false,
           "signals": [
@@ -2548,8 +2589,8 @@
           ]
         },
         {
-          "id": "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
-          "score": 54,
+          "id": "artokun/comfyui-mcp/ltx-director-0ea0ef",
+          "score": 59,
           "coverage": 0.53,
           "expected": false,
           "signals": [
@@ -2561,13 +2602,13 @@
       "signals": [
         "workflow",
         "integration",
-        "artokun-comfyui-mcp-ltx-director-0ea0ef",
-        "ltx-director",
+        "agentskillexchange-skills-acf-extended-advanced-custom-fields-workflows-24efd8",
+        "acf-extended-for-advanced-custom-fields-workflows",
         "automate",
         "sickn33-agentic-awesome-skills-activecampaign-automation-d2e395",
         "activecampaign-automation",
-        "mukul975-anthropic-cybersecurity-skills-building-vulnerability-exception-tracking-system-29c77d",
-        "building-vulnerability-exception-tracking-system"
+        "artokun-comfyui-mcp-ltx-director-0ea0ef",
+        "ltx-director"
       ]
     },
     {
@@ -2577,12 +2618,12 @@
       "pass": true,
       "top3": [
         "googleworkspace/cli/gws-calendar-agenda-c125ff",
-        "artokun/comfyui-mcp/flux-txt2img-a6c76e",
+        "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8",
         "googleworkspace/cli/gws-gmail-read-e6b4b1"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 59,
+      "top1_score": 58,
       "expected_hits": 0,
       "signal_hits": 3,
       "relevant_top3": 3,
@@ -2591,7 +2632,7 @@
       "candidates": [
         {
           "id": "googleworkspace/cli/gws-calendar-agenda-c125ff",
-          "score": 59,
+          "score": 58,
           "coverage": 0.42,
           "expected": false,
           "signals": [
@@ -2600,8 +2641,8 @@
           ]
         },
         {
-          "id": "artokun/comfyui-mcp/flux-txt2img-a6c76e",
-          "score": 52,
+          "id": "agentskillexchange/skills/acf-extended-advanced-custom-fields-workflows-24efd8",
+          "score": 55,
           "coverage": 0.42,
           "expected": false,
           "signals": [
@@ -2611,7 +2652,7 @@
         },
         {
           "id": "googleworkspace/cli/gws-gmail-read-e6b4b1",
-          "score": 54,
+          "score": 53,
           "coverage": 0.37,
           "expected": false,
           "signals": [
@@ -2626,8 +2667,8 @@
         "googleworkspace-cli-gws-calendar-agenda-c125ff",
         "gws-calendar-agenda",
         "workflows",
-        "artokun-comfyui-mcp-flux-txt2img-a6c76e",
-        "flux-txt2img",
+        "agentskillexchange-skills-acf-extended-advanced-custom-fields-workflows-24efd8",
+        "acf-extended-for-advanced-custom-fields-workflows",
         "gmail",
         "googleworkspace-cli-gws-gmail-read-e6b4b1",
         "gws-gmail-read"
@@ -2778,7 +2819,7 @@
         },
         {
           "id": "this-rs/project-orchestrator/project-orchestrator-0e95f5",
-          "score": 60,
+          "score": 59,
           "coverage": 0.44,
           "expected": false,
           "signals": [
@@ -2806,7 +2847,7 @@
       "pass": true,
       "top3": [
         "OpenDigitalProductFactory/opendigitalproductfactory/dpf-sysml-architecture-substrate-c8b895",
-        "shalintripathi/saas-marketing-agents/developer-marketing-ops",
+        "angular/angular/adev-writing-guide-0332ed",
         "OpenDigitalProductFactory/opendigitalproductfactory/dpf-architecture-review-5072cc"
       ],
       "recommendation_count": 3,
@@ -2830,8 +2871,8 @@
           ]
         },
         {
-          "id": "shalintripathi/saas-marketing-agents/developer-marketing-ops",
-          "score": 48,
+          "id": "angular/angular/adev-writing-guide-0332ed",
+          "score": 47,
           "coverage": 0.36,
           "expected": false,
           "signals": [
@@ -2858,8 +2899,8 @@
         "dpf-sysml-architecture-substrate",
         "technical",
         "documentation",
-        "shalintripathi-saas-marketing-agents-developer-marketing-ops",
-        "developer-marketing-ops",
+        "angular-angular-adev-writing-guide-0332ed",
+        "adev-writing-guide",
         "opendigitalproductfactory-opendigitalproductfactory-dpf-architecture-review-5072cc",
         "dpf-architecture-review"
       ]
@@ -2872,7 +2913,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2908,13 +2949,13 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/figma-generate-design",
+          "id": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
           "score": 64,
-          "coverage": 0.46,
+          "coverage": 0.49,
           "expected": false,
           "signals": [
             "design-system",
-            "figma"
+            "implementation"
           ]
         }
       ],
@@ -2927,8 +2968,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "figma-mcp-server-guide-figma-generate-design",
-        "figma-generate-design"
+        "awesome-dsh-plugin-awesome-dsh-plugin-ui-ux-pro-max",
+        "ui-ux-pro-max"
       ]
     },
     {
@@ -3000,33 +3041,19 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "shalintripathi/saas-marketing-agents/design-ops",
         "weshopai/weshop-skill-package/poster-design",
-        "weshopai/weshop-skill-package/brand-promo-video-generator"
+        "weshopai/weshop-skill-package/apply-photo-filter",
+        "pbakaus/impeccable/bolder"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 83,
+      "top1_score": 82,
       "expected_hits": 0,
       "signal_hits": 3,
       "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "shalintripathi/saas-marketing-agents/design-ops",
-          "score": 83,
-          "coverage": 0.86,
-          "expected": false,
-          "signals": [
-            "-visual",
-            "-graphic",
-            "-typography",
-            "-layout",
-            "-brand",
-            "-campaign"
-          ]
-        },
         {
           "id": "weshopai/weshop-skill-package/poster-design",
           "score": 82,
@@ -3041,33 +3068,44 @@
           ]
         },
         {
-          "id": "weshopai/weshop-skill-package/brand-promo-video-generator",
-          "score": 81,
-          "coverage": 0.71,
+          "id": "weshopai/weshop-skill-package/apply-photo-filter",
+          "score": 71,
+          "coverage": 0.57,
+          "expected": false,
+          "signals": [
+            "-visual",
+            "-graphic",
+            "-layout",
+            "-campaign"
+          ]
+        },
+        {
+          "id": "pbakaus/impeccable/bolder",
+          "score": 74,
+          "coverage": 0.57,
           "expected": false,
           "signals": [
             "-visual",
             "-typography",
             "-layout",
-            "-brand",
-            "-campaign"
+            "-brand"
           ]
         }
       ],
       "signals": [
         "-visual",
-        "-graphic",
         "-typography",
-        "-layout",
+        "-poster",
         "-brand",
         "-campaign",
-        "shalintripathi-saas-marketing-agents-design-ops",
-        "design-ops",
-        "-poster",
         "weshopai-weshop-skill-package-poster-design",
         "poster-design",
-        "weshopai-weshop-skill-package-brand-promo-video-generator",
-        "brand-promo-video-generator"
+        "-graphic",
+        "-layout",
+        "weshopai-weshop-skill-package-apply-photo-filter",
+        "apply-photo-filter",
+        "pbakaus-impeccable-bolder",
+        "bolder"
       ]
     },
     {
@@ -3076,19 +3114,31 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "weshopai/weshop-skill-package/make-talking-video",
         "remotion-dev/skills/remotion-best-practices",
-        "weshopai/weshop-skill-package/make-product-commercial",
-        "remotion-dev/skills/remotion-multimedia"
+        "weshopai/weshop-skill-package/make-product-commercial"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 85,
+      "top1_score": 95,
       "expected_hits": 0,
       "signal_hits": 3,
       "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "weshopai/weshop-skill-package/make-talking-video",
+          "score": 95,
+          "coverage": 1,
+          "expected": false,
+          "signals": [
+            "-video",
+            "-motion",
+            "-editing",
+            "-animation"
+          ]
+        },
         {
           "id": "remotion-dev/skills/remotion-best-practices",
           "score": 85,
@@ -3110,29 +3160,19 @@
             "-motion",
             "-editing"
           ]
-        },
-        {
-          "id": "remotion-dev/skills/remotion-multimedia",
-          "score": 83,
-          "coverage": 0.75,
-          "expected": false,
-          "signals": [
-            "-video",
-            "-motion",
-            "-editing"
-          ]
         }
       ],
       "signals": [
         "-video",
         "-motion",
         "-editing",
+        "-animation",
+        "weshopai-weshop-skill-package-make-talking-video",
+        "make-talking-video",
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "weshopai-weshop-skill-package-make-product-commercial",
-        "make-product-commercial",
-        "remotion-dev-skills-remotion-multimedia",
-        "remotion-multimedia"
+        "make-product-commercial"
       ]
     },
     {
@@ -3141,13 +3181,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "shalintripathi/saas-marketing-agents/marketing-project-mgmt",
-        "amagine-ai/Amagine3D/text-a3d",
-        "shalintripathi/saas-marketing-agents/client-operations"
+        "SpiralCloudOmega/DevTeam6/loudness-metering",
+        "code-yeongyu/oh-my-openagent/ulw-research",
+        "weshopai/weshop-skill-package/create-white-background-product-mockup"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 96,
+      "top1_score": 94,
       "expected_hits": 0,
       "signal_hits": 3,
       "relevant_top3": 3,
@@ -3155,8 +3195,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "shalintripathi/saas-marketing-agents/marketing-project-mgmt",
-          "score": 96,
+          "id": "SpiralCloudOmega/DevTeam6/loudness-metering",
+          "score": 94,
           "coverage": 1,
           "expected": false,
           "signals": [
@@ -3168,29 +3208,25 @@
           ]
         },
         {
-          "id": "amagine-ai/Amagine3D/text-a3d",
-          "score": 96,
-          "coverage": 1,
+          "id": "code-yeongyu/oh-my-openagent/ulw-research",
+          "score": 78,
+          "coverage": 0.67,
           "expected": false,
           "signals": [
-            "cad",
             "-industrial-design",
             "-industrial",
-            "-product",
-            "-cad"
+            "-product"
           ]
         },
         {
-          "id": "shalintripathi/saas-marketing-agents/client-operations",
-          "score": 96,
-          "coverage": 1,
+          "id": "weshopai/weshop-skill-package/create-white-background-product-mockup",
+          "score": 77,
+          "coverage": 0.67,
           "expected": false,
           "signals": [
-            "cad",
             "-industrial-design",
             "-industrial",
-            "-product",
-            "-cad"
+            "-product"
           ]
         }
       ],
@@ -3200,12 +3236,12 @@
         "-industrial",
         "-product",
         "-cad",
-        "shalintripathi-saas-marketing-agents-marketing-project-mgmt",
-        "marketing-project-mgmt",
-        "amagine-ai-amagine3d-text-a3d",
-        "text-a3d",
-        "shalintripathi-saas-marketing-agents-client-operations",
-        "client-operations"
+        "spiralcloudomega-devteam6-loudness-metering",
+        "loudness-metering",
+        "code-yeongyu-oh-my-openagent-ulw-research",
+        "ulw-research",
+        "weshopai-weshop-skill-package-create-white-background-product-mockup",
+        "create-white-background-product-mockup"
       ]
     }
   ]

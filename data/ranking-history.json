@@ -2462,7 +2462,7 @@
     },
     {
       "date": "2026-08-26",
-      "generatedAt": "2026-08-26T03:23:52.369Z",
+      "generatedAt": "2026-08-26T05:15:30.227Z",
       "domains": {
         "ui-design": [
           {
@@ -2531,6 +2531,11 @@
             "source": "seed"
           },
           {
+            "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+            "score": 66,
+            "source": "radar"
+          },
+          {
             "skillId": "figma/mcp-server-guide/figma-design-to-code",
             "score": 65,
             "source": "seed"
@@ -2558,11 +2563,6 @@
           {
             "skillId": "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
             "score": 61,
-            "source": "seed"
-          },
-          {
-            "skillId": "mblode/agent-skills/ui-animation",
-            "score": 59,
             "source": "seed"
           }
         ],
@@ -2680,11 +2680,6 @@
             "source": "seed"
           },
           {
-            "skillId": "shalintripathi/saas-marketing-agents/content-marketing",
-            "score": 76,
-            "source": "radar"
-          },
-          {
             "skillId": "weshopai/weshop-skill-package/make-product-commercial",
             "score": 76,
             "source": "radar"
@@ -2715,31 +2710,6 @@
             "source": "radar"
           },
           {
-            "skillId": "shalintripathi/saas-marketing-agents/catalyst-orchestrator",
-            "score": 71,
-            "source": "radar"
-          },
-          {
-            "skillId": "shalintripathi/saas-marketing-agents/paid-media-ops",
-            "score": 70,
-            "source": "radar"
-          },
-          {
-            "skillId": "shalintripathi/saas-marketing-agents/saas-marketing-suite",
-            "score": 69,
-            "source": "radar"
-          },
-          {
-            "skillId": "shalintripathi/saas-marketing-agents/marketing-analytics",
-            "score": 67,
-            "source": "radar"
-          },
-          {
-            "skillId": "shalintripathi/saas-marketing-agents/marketing-project-mgmt",
-            "score": 67,
-            "source": "radar"
-          },
-          {
             "skillId": "mblode/agent-skills/ui-design",
             "score": 66,
             "source": "seed"
@@ -2750,16 +2720,6 @@
             "source": "seed"
           },
           {
-            "skillId": "shalintripathi/saas-marketing-agents/events-ops",
-            "score": 66,
-            "source": "radar"
-          },
-          {
-            "skillId": "shalintripathi/saas-marketing-agents/partnerships-ops",
-            "score": 66,
-            "source": "radar"
-          },
-          {
             "skillId": "anthropics/skills/frontend-design",
             "score": 65,
             "source": "seed"
@@ -2768,6 +2728,46 @@
             "skillId": "weshopai/weshop-skill-package/ai-banner-design",
             "score": 65,
             "source": "radar"
+          },
+          {
+            "skillId": "weshopai/weshop-skill-package/brand-promo-video-generator",
+            "score": 65,
+            "source": "radar"
+          },
+          {
+            "skillId": "weshopai/weshop-skill-package/outfit-design",
+            "score": 65,
+            "source": "radar"
+          },
+          {
+            "skillId": "weshopai/weshop-skill-package/product-detail-page",
+            "score": 65,
+            "source": "radar"
+          },
+          {
+            "skillId": "weshopai/weshop-skill-package/minimalist-product-ad-generator",
+            "score": 64,
+            "source": "radar"
+          },
+          {
+            "skillId": "pbakaus/impeccable/colorize",
+            "score": 63,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/bolder",
+            "score": 63,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/typeset",
+            "score": 63,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/visual-style-direction",
+            "score": 63,
+            "source": "seed"
           }
         ],
         "video-design": [
@@ -2782,8 +2782,13 @@
             "source": "seed"
           },
           {
-            "skillId": "AutoByteus/autobyteus-agents/slide-video-producer",
-            "score": 65,
+            "skillId": "weshopai/weshop-skill-package/poster-design",
+            "score": 66,
+            "source": "radar"
+          },
+          {
+            "skillId": "weshopai/weshop-skill-package/fpv-tour-video-generator",
+            "score": 64,
             "source": "radar"
           },
           {
@@ -2822,6 +2827,11 @@
             "source": "seed"
           },
           {
+            "skillId": "weshopai/weshop-skill-package/brand-promo-video-generator",
+            "score": 63,
+            "source": "radar"
+          },
+          {
             "skillId": "pbakaus/impeccable/impeccable",
             "score": 62,
             "source": "seed"
@@ -2842,6 +2852,11 @@
             "source": "seed"
           },
           {
+            "skillId": "weshopai/weshop-skill-package/make-explainer-video",
+            "score": 62,
+            "source": "radar"
+          },
+          {
             "skillId": "ibelick/ui-skills/baseline-ui",
             "score": 61,
             "source": "seed"
@@ -2852,23 +2867,8 @@
             "source": "radar"
           },
           {
-            "skillId": "AutoByteus/autobyteus-agents/visual-director",
-            "score": 61,
-            "source": "radar"
-          },
-          {
-            "skillId": "AutoByteus/autobyteus-agents/software-tutorial-video-maker",
-            "score": 61,
-            "source": "radar"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/brand-promo-video-generator",
-            "score": 58,
-            "source": "radar"
-          },
-          {
-            "skillId": "AutoByteus/autobyteus-agents/manga-illustrator",
-            "score": 58,
+            "skillId": "weshopai/weshop-skill-package/make-music-video",
+            "score": 60,
             "source": "radar"
           }
         ],
@@ -2909,16 +2909,6 @@
             "source": "seed"
           },
           {
-            "skillId": "amagine-ai/Amagine3D/text-a3d-color",
-            "score": 59,
-            "source": "radar"
-          },
-          {
-            "skillId": "amagine-ai/Amagine3D/text-a3d",
-            "score": 54,
-            "source": "radar"
-          },
-          {
             "skillId": "calesthio/generative-media-skills/ecommerce-product-imagery",
             "score": 52,
             "source": "seed"
@@ -2949,6 +2939,11 @@
             "source": "seed"
           },
           {
+            "skillId": "SpiralCloudOmega/DevTeam6/routing-grid",
+            "score": 47,
+            "source": "radar"
+          },
+          {
             "skillId": "figma/mcp-server-guide/implement-design",
             "score": 46,
             "source": "seed"
@@ -2959,7 +2954,7 @@
             "source": "seed"
           },
           {
-            "skillId": "AutoByteus/autobyteus-agents/resume-designer",
+            "skillId": "SpiralCloudOmega/DevTeam6/mixing-techniques",
             "score": 45,
             "source": "radar"
           },
@@ -2970,6 +2965,11 @@
           },
           {
             "skillId": "mblode/agent-skills/ui-design",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/mobile-ux-optimizer",
             "score": 44,
             "source": "seed"
           }
@@ -2991,6 +2991,11 @@
             "source": "seed"
           },
           {
+            "skillId": "weshopai/weshop-skill-package/fpv-tour-video-generator",
+            "score": 67,
+            "source": "radar"
+          },
+          {
             "skillId": "curiositech/some_claude_skills/large-scale-map-visualization",
             "score": 65,
             "source": "seed"
@@ -3004,11 +3009,6 @@
             "skillId": "calesthio/generative-media-skills/lighting-direction",
             "score": 62,
             "source": "seed"
-          },
-          {
-            "skillId": "amagine-ai/Amagine3D/text-a3d-color",
-            "score": 61,
-            "source": "radar"
           },
           {
             "skillId": "weshopai/weshop-skill-package/product-detail-page",
@@ -3026,23 +3026,8 @@
             "source": "radar"
           },
           {
-            "skillId": "amagine-ai/Amagine3D/text-a3d",
-            "score": 54,
-            "source": "radar"
-          },
-          {
             "skillId": "weshopai/weshop-skill-package/create-white-background-product-mockup",
             "score": 51,
-            "source": "radar"
-          },
-          {
-            "skillId": "AutoByteus/autobyteus-agents/prototype-bootstrapper",
-            "score": 50,
-            "source": "radar"
-          },
-          {
-            "skillId": "shalintripathi/saas-marketing-agents/product-marketing-ops",
-            "score": 49,
             "source": "radar"
           },
           {
@@ -3073,6 +3058,21 @@
           {
             "skillId": "calesthio/generative-media-skills/production-design-direction",
             "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/threejs-scene-composition",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/arrange",
+            "score": 43,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/layout",
+            "score": 43,
             "source": "seed"
           }
         ],
@@ -3148,11 +3148,6 @@
             "source": "radar"
           },
           {
-            "skillId": "shalintripathi/saas-marketing-agents/content-marketing",
-            "score": 61,
-            "source": "radar"
-          },
-          {
             "skillId": "weshopai/weshop-skill-package/ai-banner-design",
             "score": 61,
             "source": "radar"
@@ -3168,13 +3163,18 @@
             "source": "radar"
           },
           {
-            "skillId": "shalintripathi/saas-marketing-agents/catalyst-orchestrator",
+            "skillId": "weshopai/weshop-skill-package/fashion-model-replacement",
             "score": 59,
             "source": "radar"
           },
           {
-            "skillId": "weshopai/weshop-skill-package/fashion-model-replacement",
-            "score": 59,
+            "skillId": "anthropics/skills/frontend-design",
+            "score": 57,
+            "source": "seed"
+          },
+          {
+            "skillId": "weshopai/weshop-skill-package/ai-product",
+            "score": 57,
             "source": "radar"
           }
         ],
@@ -3210,6 +3210,11 @@
             "source": "seed"
           },
           {
+            "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+            "score": 69,
+            "source": "radar"
+          },
+          {
             "skillId": "curiositech/some_claude_skills/native-app-designer",
             "score": 65,
             "source": "seed"
@@ -3225,18 +3230,8 @@
             "source": "seed"
           },
           {
-            "skillId": "AutoByteus/autobyteus-agents/solution-designer",
-            "score": 58,
-            "source": "radar"
-          },
-          {
-            "skillId": "shalintripathi/saas-marketing-agents/marketing-analytics",
-            "score": 57,
-            "source": "radar"
-          },
-          {
-            "skillId": "AutoByteus/autobyteus-agents/prototype-bootstrapper",
-            "score": 57,
+            "skillId": "code-yeongyu/oh-my-openagent/ulw-research",
+            "score": 59,
             "source": "radar"
           },
           {
@@ -3255,29 +3250,34 @@
             "source": "radar"
           },
           {
-            "skillId": "shalintripathi/saas-marketing-agents/developer-marketing-ops",
-            "score": 54,
-            "source": "radar"
-          },
-          {
             "skillId": "ibelick/ui-skills/baseline-ui",
             "score": 53,
             "source": "seed"
           },
           {
-            "skillId": "AutoByteus/autobyteus-agents/narration-script-reviewer",
-            "score": 52,
+            "skillId": "code-yeongyu/oh-my-openagent/security-research",
+            "score": 53,
             "source": "radar"
           },
           {
-            "skillId": "AutoByteus/autobyteus-agents/requirements-prototyper",
-            "score": 52,
+            "skillId": "eddremonts86/ai-os/antfu-design-patterns",
+            "score": 53,
             "source": "radar"
           },
           {
-            "skillId": "icdev-ai/icdev/icdev-monitor",
+            "skillId": "eddremonts86/ai-os/antfu-web-design",
+            "score": 48,
+            "source": "radar"
+          },
+          {
+            "skillId": "SpiralCloudOmega/DevTeam6/mixing-techniques",
             "score": 47,
             "source": "radar"
+          },
+          {
+            "skillId": "figma/mcp-server-guide/implement-design",
+            "score": 46,
+            "source": "seed"
           }
         ],
         "digital-media-film": [
@@ -3434,11 +3434,6 @@
             "source": "seed"
           },
           {
-            "skillId": "AutoByteus/autobyteus-agents/manga-showrunner",
-            "score": 52,
-            "source": "radar"
-          },
-          {
             "skillId": "calesthio/generative-media-skills/meshy-3d",
             "score": 51,
             "source": "seed"
@@ -3482,6 +3477,11 @@
             "skillId": "pbakaus/impeccable/quieter",
             "score": 44,
             "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/typeset",
+            "score": 44,
+            "source": "seed"
           }
         ],
         "folk-art": [
@@ -3499,11 +3499,6 @@
             "skillId": "tryopendata/skills/svg-design",
             "score": 64,
             "source": "seed"
-          },
-          {
-            "skillId": "weshopai/weshop-skill-package/poster-design",
-            "score": 62,
-            "source": "radar"
           },
           {
             "skillId": "pbakaus/impeccable/polish",
@@ -3531,19 +3526,34 @@
             "source": "seed"
           },
           {
+            "skillId": "weshopai/weshop-skill-package/make-explainer-video",
+            "score": 54,
+            "source": "radar"
+          },
+          {
             "skillId": "weshopai/weshop-skill-package/product-packaging",
             "score": 54,
             "source": "radar"
           },
           {
-            "skillId": "AutoByteus/autobyteus-agents/manga-showrunner",
-            "score": 52,
+            "skillId": "weshopai/weshop-skill-package/make-beat-synced-video",
+            "score": 50,
+            "source": "radar"
+          },
+          {
+            "skillId": "weshopai/weshop-skill-package/papercraft-stop-motion-explainer",
+            "score": 49,
             "source": "radar"
           },
           {
             "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
             "score": 47,
             "source": "seed"
+          },
+          {
+            "skillId": "weshopai/weshop-skill-package/plan-comic-storyboard",
+            "score": 47,
+            "source": "radar"
           },
           {
             "skillId": "anthropics/skills/frontend-design",
@@ -3574,16 +3584,6 @@
             "skillId": "pbakaus/impeccable/distill",
             "score": 44,
             "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/quieter",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/typeset",
-            "score": 44,
-            "source": "seed"
           }
         ],
         "architecture-design": [
@@ -3603,11 +3603,6 @@
             "source": "seed"
           },
           {
-            "skillId": "amagine-ai/Amagine3D/text-a3d-color",
-            "score": 67,
-            "source": "radar"
-          },
-          {
             "skillId": "curiositech/some_claude_skills/fancy-yard-landscaper",
             "score": 65,
             "source": "seed"
@@ -3618,6 +3613,11 @@
             "source": "seed"
           },
           {
+            "skillId": "weshopai/weshop-skill-package/fpv-tour-video-generator",
+            "score": 65,
+            "source": "radar"
+          },
+          {
             "skillId": "calesthio/generative-media-skills/neural-reality-capture",
             "score": 63,
             "source": "seed"
@@ -3626,11 +3626,6 @@
             "skillId": "calesthio/generative-media-skills/lighting-direction",
             "score": 62,
             "source": "seed"
-          },
-          {
-            "skillId": "amagine-ai/Amagine3D/text-a3d",
-            "score": 59,
-            "source": "radar"
           },
           {
             "skillId": "weshopai/weshop-skill-package/outfit-design",
@@ -3658,11 +3653,6 @@
             "source": "seed"
           },
           {
-            "skillId": "AutoByteus/autobyteus-agents/solution-designer",
-            "score": 52,
-            "source": "radar"
-          },
-          {
             "skillId": "pbakaus/impeccable/arrange",
             "score": 51,
             "source": "seed"
@@ -3683,9 +3673,19 @@
             "source": "seed"
           },
           {
-            "skillId": "AutoByteus/autobyteus-agents/prototype-bootstrapper",
+            "skillId": "weshopai/weshop-skill-package/create-white-background-product-mockup",
             "score": 51,
             "source": "radar"
+          },
+          {
+            "skillId": "monumentalsystems/atlas-agent-teams/blender",
+            "score": 50,
+            "source": "seed"
+          },
+          {
+            "skillId": "remotion-dev/skills/remotion-render",
+            "score": 44,
+            "source": "seed"
           }
         ]
       }
