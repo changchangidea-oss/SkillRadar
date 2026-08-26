@@ -10,6 +10,7 @@
     "benchmark:router": "node scripts/benchmark-router.mjs",
     "eval:router": "node scripts/eval-router.mjs",
     "shadow:router": "node scripts/shadow-router.mjs",
+    "normalize:general-tags": "node scripts/normalize-general-tags.mjs",
     "sync:plugin-registry": "node scripts/sync-codex-plugin-registry.mjs",
     "serve": "python3 -m http.server 4173",
     "radar": "node scripts/update-design-radar.mjs",
