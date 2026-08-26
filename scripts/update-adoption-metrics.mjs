@@ -10,7 +10,8 @@ const maintainers = new Set(
     .filter(Boolean),
 );
 const token = process.env.GITHUB_TOKEN || '';
-const outputPath = path.resolve(process.cwd(), 'data/adoption-latest.json');
+const fixturePath = process.env.SKILLRADAR_ADOPTION_FIXTURE || '';
+const outputPath = path.resolve(process.cwd(), process.env.SKILLRADAR_ADOPTION_OUTPUT || 'data/adoption-latest.json');
 
 const headers = {
   Accept: 'application/vnd.github+json',
@@ -52,9 +53,21 @@ function stablePayload(snapshot) {
   return JSON.stringify(clone);
 }
 
-const repo = await github('');
-const issuesAndPrs = await paginate('/issues?state=all');
-const releases = await paginate('/releases');
+let repo;
+let issuesAndPrs;
+let releases;
+let source = 'github-api';
+if (fixturePath) {
+  const fixture = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), fixturePath), 'utf8'));
+  repo = fixture.repo;
+  issuesAndPrs = fixture.issuesAndPrs || [];
+  releases = fixture.releases || [];
+  source = 'fixture';
+} else {
+  repo = await github('');
+  issuesAndPrs = await paginate('/issues?state=all');
+  releases = await paginate('/releases');
+}
 
 const externalIssueAuthors = new Set();
 const externalPrAuthors = new Set();
@@ -81,7 +94,7 @@ const snapshot = {
   schemaVersion: 1,
   generatedAt: new Date().toISOString(),
   repository,
-  source: 'github-api',
+  source,
   github: {
     stars: Number(repo.stargazers_count || 0),
     forks: Number(repo.forks_count || 0),
@@ -118,6 +131,7 @@ if (previous && stablePayload(previous) === stablePayload(snapshot)) {
   process.exit(0);
 }
 
+fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 fs.writeFileSync(outputPath, `${JSON.stringify(snapshot, null, 2)}\n`);
 console.log(`Updated ${path.relative(process.cwd(), outputPath)}`);
 console.log(JSON.stringify(snapshot.github));
