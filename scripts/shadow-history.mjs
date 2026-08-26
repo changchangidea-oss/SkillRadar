@@ -4,9 +4,10 @@ import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 
 function readJson(file,fallback){try{return JSON.parse(fs.readFileSync(file,'utf8'))}catch{return fallback}}
+function hashVersion(snapshot){return Number(snapshot.registrySnapshot?.contentHashVersion||1)}
 function fingerprint(snapshot){
   const hash=snapshot.registrySnapshot?.contentHash||''
-  return [hash,snapshot.evalVersion||'',snapshot.production?.profile||'',snapshot.candidate?.profile||''].join('::')
+  return [hashVersion(snapshot),hash,snapshot.evalVersion||'',snapshot.production?.profile||'',snapshot.candidate?.profile||''].join('::')
 }
 function compact(snapshot){
   return {
@@ -23,15 +24,17 @@ export function evaluateHistory(existing,current,{required=3,limit=20}={}){
   const history=Array.isArray(existing?.snapshots)?existing.snapshots.slice():[]
   const candidate=compact(current)
   const key=fingerprint(candidate)
+  const currentHashVersion=hashVersion(candidate)
   if(!candidate.registrySnapshot?.contentHash)throw new Error('shadow snapshot missing registrySnapshot.contentHash')
   if(!['snapshot-win','hold','reject'].includes(candidate.decision))throw new Error(`invalid single-snapshot decision: ${candidate.decision}`)
   const idx=history.findIndex(x=>fingerprint(x)===key)
   if(idx>=0)history[idx]=candidate
   else history.push(candidate)
   history.sort((a,b)=>String(a.generatedAt||'').localeCompare(String(b.generatedAt||'')))
-  const snapshots=history.slice(-Math.max(required,limit))
-  const uniqueCount=snapshots.length
-  const window=snapshots.slice(-required)
+  const activeHistory=history.filter(x=>hashVersion(x)===currentHashVersion)
+  const legacyCount=history.length-activeHistory.length
+  const uniqueCount=activeHistory.length
+  const window=activeHistory.slice(-required)
   const windowComplete=window.length===required
   const safetyPass=window.every(x=>x.gates?.safetyPass===true)
   const contractPass=window.every(x=>x.gates?.contractNonRegression===true)
@@ -46,11 +49,13 @@ export function evaluateHistory(existing,current,{required=3,limit=20}={}){
     else decision='hold'
   }
   return {
-    history:{schemaVersion:1,updatedAt:current.generatedAt,requiredSnapshots:required,snapshots:snapshots.slice(-limit)},
+    history:{schemaVersion:2,updatedAt:current.generatedAt,requiredSnapshots:required,currentContentHashVersion:currentHashVersion,snapshots:history.slice(-limit)},
     status:{
       generatedAt:current.generatedAt,
+      contentHashVersion:currentHashVersion,
       requiredSnapshots:required,
       uniqueRegistrySnapshots:uniqueCount,
+      legacyRegistrySnapshots:legacyCount,
       evaluatedWindow:window.length,
       windowComplete,
       safetyPass,
@@ -59,7 +64,7 @@ export function evaluateHistory(existing,current,{required=3,limit=20}={}){
       consecutiveWins,
       aggregateEvidenceDelta,
       decision,
-      note:'Promotion eligibility requires the latest 3 distinct Registry snapshots to all be snapshot-win with safety, contract and coverage non-regression. Re-running the same Registry contentHash does not add evidence. An incomplete window is reported separately from gate failure. This gate never changes production automatically.'
+      note:'Promotion eligibility uses only snapshots with the current Registry contentHashVersion and requires the latest 3 distinct routing-content snapshots to all be snapshot-win with safety, contract and coverage non-regression. Re-running the same routing contentHash does not add evidence. Legacy hash versions remain auditable but never count toward the current promotion window. This gate never changes production automatically.'
     }
   }
 }
@@ -74,7 +79,7 @@ export function runCli(){
   const maxSnapshots=Number(process.env.SKILLRADAR_SHADOW_HISTORY_LIMIT||20)
   const latest=readJson(latestPath,null)
   if(!latest)throw new Error(`missing latest shadow snapshot: ${latestPath}`)
-  const existing=readJson(historyPath,{schemaVersion:1,snapshots:[]})
+  const existing=readJson(historyPath,{schemaVersion:2,snapshots:[]})
   const result=evaluateHistory(existing,latest,{required:requiredSnapshots,limit:maxSnapshots})
   console.log(JSON.stringify(result.status,null,2))
   if(write){
