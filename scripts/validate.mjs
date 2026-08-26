@@ -90,16 +90,18 @@ if(!bundled){
 const routeCases=['设计UI界面和design system','制作Remotion视频动效','工业设计3D打印产品建模','建筑可视化和室内空间渲染','Next.js React shadcn/ui AI dashboard streaming tool calling App Router']
 for(const task of routeCases){
   try{
-    const raw=execFileSync(process.execPath,['packages/codex-plugin/scripts/skillradar.mjs','match',task],{encoding:'utf8',stdio:['ignore','pipe','pipe'],env:{...process.env,SKILLRADAR_OFFLINE:'1'}})
+    const raw=execFileSync(process.execPath,['packages/codex-plugin/scripts/skillradar.mjs','match',task],{encoding:'utf8',stdio:['ignore','pipe','pipe'],env:{...process.env,SKILLRADAR_OFFLINE:'1',SKILLRADAR_PROJECT_CONTEXT:'0'}})
     const result=JSON.parse(raw),matches=result.matches||[]
     if(result.source!=='skillradar-registry') errors.push(`router: wrong source for ${task}`)
     if(result.registry?.mode!=='local-bundled') errors.push(`router: expected local-bundled mode for ${task}`)
-    if(result.ranking?.version!=='2.0') errors.push(`router: expected ranking v2 for ${task}`)
+    if(result.ranking?.version!=='2.1') errors.push(`router: expected ranking v2.1 for ${task}`)
+    if(result.context?.mode!=='task-only') errors.push(`router: task-only validation unexpectedly used project context for ${task}`)
     if(matches.length<1) errors.push(`router: no matches for ${task}`)
     if(matches.some(x=>['D','Blocked'].includes(x.security))) errors.push(`router: unsafe result for ${task}`)
     for(const x of matches){
       for(const key of ['match_score','skillradar_score','security','source','reason','match_details']) if(x[key]===undefined||x[key]===null||x[key]==='') errors.push(`router: ${x.id} missing ${key}`)
-      if(x.match_details?.ranking_version!=='2.0') errors.push(`router: ${x.id} missing ranking v2 details`)
+      if(x.match_details?.ranking_version!=='2.1') errors.push(`router: ${x.id} missing ranking v2.1 details`)
+      if(x.match_details?.project_context_bonus===undefined) errors.push(`router: ${x.id} missing project context evidence`)
     }
     const top=matches[0],closeSafe=matches.slice(1).find(x=>['A','B'].includes(x.security)&&top&&top.match_score-x.match_score<=5)
     if(top?.security==='C'&&closeSafe&&!result.advisory) errors.push(`router: C-grade Top1 missing safer alternative advisory for ${task}`)
@@ -107,4 +109,4 @@ for(const task of routeCases){
 }
 
 if(errors.length){console.error(errors.join('\n'));process.exit(1)}
-console.log(`SkillRadar validation passed: ${skills.length} core, ${designSkills.length} design, ${generalSkills.length} general, ${registry.candidates.length} design Radar candidates, plugin ${manifest.version}, ranking v2, ${routeCases.length} offline routes.`)
+console.log(`SkillRadar validation passed: ${skills.length} core, ${designSkills.length} design, ${generalSkills.length} general, ${registry.candidates.length} design Radar candidates, plugin ${manifest.version}, ranking v2.1, ${routeCases.length} offline routes.`)
