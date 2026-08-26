@@ -54,7 +54,14 @@ export function evaluateCase(test,matches,meta={}){
   }))
   const relevantTop3=candidates.filter(x=>x.expected||x.coverage>=0.2).length
   const lowEvidenceTop3=candidates.length-relevantTop3
-  const structural=meta.source==='skillradar-registry'&&meta.registryMode==='local-bundled'&&(matches||[]).length===3
+  const gap=meta.capabilityGap||null
+  const gapConsistent=matches.length===3
+    ? !gap?.detected
+    : Boolean(gap?.detected)&&Number(gap?.returned)===matches.length&&Number(gap?.missing)===3-matches.length
+  const structural=meta.source==='skillradar-registry'
+    && meta.registryMode==='local-bundled'
+    && matches.length<=3
+    && gapConsistent
   const pass=structural&&unsafe===0&&expectedHits>=Number(test.minExpectedHits||0)&&signalHits>=Number(test.minSignalHits||0)
   return {
     id:test.id,
@@ -62,6 +69,8 @@ export function evaluateCase(test,matches,meta={}){
     tier:test.tier,
     pass,
     top3:(matches||[]).map(x=>x.id),
+    recommendation_count:matches.length,
+    capability_gap:Boolean(gap?.detected),
     top1_score:Number(matches?.[0]?.match_score||0),
     expected_hits:expectedHits,
     signal_hits:signalHits,
@@ -78,15 +87,21 @@ export function summarize(results){
   const coverage=results.filter(x=>x.tier!=='contract')
   const unsafeTop3=results.reduce((n,x)=>n+x.unsafe_top3,0)
   const lowEvidenceTop3=results.reduce((n,x)=>n+x.low_evidence_top3,0)
+  const capabilityGapCases=results.filter(x=>x.capability_gap).length
   const avgTop1=results.length?results.reduce((n,x)=>n+x.top1_score,0)/results.length:0
   const avgRelevant=results.length?results.reduce((n,x)=>n+x.relevant_top3,0)/results.length:0
+  const avgRecommendations=results.length?results.reduce((n,x)=>n+x.recommendation_count,0)/results.length:0
   const byDomain={}
   for(const row of results){
-    const bucket=byDomain[row.domain]||{cases:0,passed:0,lowEvidenceTop3:0}
-    bucket.cases++;if(row.pass)bucket.passed++;bucket.lowEvidenceTop3+=row.low_evidence_top3
+    const bucket=byDomain[row.domain]||{cases:0,passed:0,lowEvidenceTop3:0,capabilityGapCases:0,recommendations:0}
+    bucket.cases++;if(row.pass)bucket.passed++;bucket.lowEvidenceTop3+=row.low_evidence_top3;if(row.capability_gap)bucket.capabilityGapCases++;bucket.recommendations+=row.recommendation_count
     byDomain[row.domain]=bucket
   }
-  for(const bucket of Object.values(byDomain))bucket.passRate=Number((bucket.passed/Math.max(1,bucket.cases)).toFixed(3))
+  for(const bucket of Object.values(byDomain)){
+    bucket.passRate=Number((bucket.passed/Math.max(1,bucket.cases)).toFixed(3))
+    bucket.averageRecommendationCount=Number((bucket.recommendations/Math.max(1,bucket.cases)).toFixed(2))
+    delete bucket.recommendations
+  }
   return {
     cases:results.length,
     passed:results.filter(x=>x.pass).length,
@@ -95,6 +110,8 @@ export function summarize(results){
     coverage:{cases:coverage.length,passed:coverage.filter(x=>x.pass).length,passRate:Number((coverage.filter(x=>x.pass).length/Math.max(1,coverage.length)).toFixed(3))},
     unsafeTop3,
     lowEvidenceTop3,
+    capabilityGapCases,
+    averageRecommendationCount:Number(avgRecommendations.toFixed(2)),
     averageRelevantTop3:Number(avgRelevant.toFixed(2)),
     averageTop1Score:Number(avgTop1.toFixed(1)),
     byDomain
@@ -104,7 +121,7 @@ export function summarize(results){
 const results=[]
 for(const test of spec.cases){
   const result=runRouter('match',test.task)
-  results.push(evaluateCase(test,result.matches||[],{source:result.source,registryMode:result.registry?.mode}))
+  results.push(evaluateCase(test,result.matches||[],{source:result.source,registryMode:result.registry?.mode,capabilityGap:result.capability_gap}))
 }
 const metrics=summarize(results)
 const output={generatedAt:new Date().toISOString(),evalVersion:spec.schemaVersion,rankingVersion:'2.1',...metrics,results}
