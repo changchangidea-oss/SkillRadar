@@ -33,6 +33,7 @@
     vitest: { identity: ['vitest'], minSignals: 2 },
     flutter: { identity: ['flutter'], minSignals: 2 },
     webhook: { identity: ['webhook', 'automation'], minSignals: 2 },
+    poster: { evidence: ['poster'], minSignals: 2 },
   };
 
   function canon(value) {
@@ -99,6 +100,7 @@
       discovery: skill.discovery || 'radar',
       domains: skill.domains || [],
       uses: skill.uses || [],
+      routingEvidence: skill.routingEvidence || [],
       verified: Boolean(skill.verified),
       official: Boolean(skill.official),
       growth: skill.growth,
@@ -241,13 +243,15 @@
   function candidateEvidencePass(skill, required = []) {
     const matched = new Set((skill.match_details?.matched_signals || []).map(canon));
     const identity = new Set(String(skill.name || '').toLowerCase().split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean));
+    const taskEvidence = new Set([...(skill.tags || []), ...(skill.uses || []), ...(skill.routingEvidence || [])].map(canon).filter(Boolean));
     const matchedRequired = required.filter((signal) => matched.has(signal));
     if (matchedRequired.some((signal) => !CANDIDATE_EVIDENCE_RULES[signal])) return true;
     const applicable = matchedRequired.map((signal) => ({ signal, rule: CANDIDATE_EVIDENCE_RULES[signal] })).filter(({ rule }) => rule);
     if (!applicable.length) return true;
     return applicable.some(({ signal, rule }) => matched.has(signal)
       && matched.size >= rule.minSignals
-      && rule.identity.some((term) => identity.has(canon(term))));
+      && (!rule.identity?.length || rule.identity.some((term) => identity.has(canon(term))))
+      && (!rule.evidence?.length || rule.evidence.some((term) => taskEvidence.has(canon(term)))));
   }
 
   function enforceSpecificity(ranked, required = []) {
