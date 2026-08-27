@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
@@ -91,7 +92,7 @@ const routerPos = html.indexOf("assets/web-router.js");
 const appPos = html.indexOf("assets/app.js");
 assert.ok(safePos >= 0 && routerPos > safePos && appPos > routerPos, 'safe-render and web-router helpers must load before app.js');
 
-function pluginMatch(query) {
+function pluginMatch(query, registryPath = snapshotPath) {
   const result = spawnSync(process.execPath, ['packages/codex-plugin/scripts/skillradar.mjs', 'match', query], {
     cwd: root,
     encoding: 'utf8',
@@ -104,6 +105,28 @@ function pluginMatch(query) {
   });
   assert.equal(result.status, 0, `plugin router failed for ${query}:\n${result.stdout}\n${result.stderr}`);
   return JSON.parse(result.stdout);
+}
+
+const boundaryQuery = 'Create an accessible shadcn/ui design system for a responsive dashboard';
+const dedicatedShadcn = snapshot.core.find((skill) => skill.id === 'shadcn');
+const genericDesign = snapshot.design.find((skill) => skill.id === 'awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max');
+assert.ok(dedicatedShadcn && genericDesign, 'diversification boundary fixtures must exist in the bundled Registry');
+const boundaryCandidate = { ...genericDesign, signalScore: 82 };
+const boundaryOnly = { ...snapshot, core: [], design: [boundaryCandidate], general: [] };
+const boundaryOnlyMatch = webRouter.match(boundaryOnly, boundaryQuery, 3);
+assert.equal(boundaryOnlyMatch.matches[0]?.match_score, 61, 'generic fixture must remain pinned to the exact top1 - 28 boundary');
+const boundarySnapshot = { ...snapshot, core: [dedicatedShadcn], design: [boundaryCandidate], general: [] };
+const boundaryBrowser = webRouter.match(boundarySnapshot, boundaryQuery, 3);
+assert.equal(boundaryBrowser.matches[0]?.match_score, 89, 'dedicated shadcn fixture score changed; review the boundary regression');
+assert.deepEqual(boundaryBrowser.matches.map((skill) => skill.id), ['shadcn'], 'candidate exactly at top1 - 28 must not weak-backfill the browser Top 3');
+const boundaryDir = fs.mkdtempSync(path.join(os.tmpdir(), 'skillradar-boundary-'));
+const boundaryPath = path.join(boundaryDir, 'registry.json');
+try {
+  fs.writeFileSync(boundaryPath, JSON.stringify(boundarySnapshot));
+  const boundaryPlugin = pluginMatch(boundaryQuery, boundaryPath);
+  assert.deepEqual(boundaryPlugin.matches.map((skill) => skill.id), ['shadcn'], 'candidate exactly at top1 - 28 must not weak-backfill the Plugin Top 3');
+} finally {
+  fs.rmSync(boundaryDir, { recursive: true, force: true });
 }
 
 const parityQueries = [
@@ -123,6 +146,7 @@ const parityQueries = [
   'Kubernetes deployment',
   'Playwright end to end tests',
   'Figma design system handoff',
+  'Create an accessible shadcn/ui design system for a responsive dashboard',
   '为新消费品牌设计一张中文活动海报',
   'Next.js AI dashboard with tool calling and shadcn/ui',
 ];
