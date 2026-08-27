@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T06:52:32.607Z",
+  "generatedAt": "2026-08-27T12:54:43.755Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
@@ -2537,8 +2537,8 @@
       "pass": true,
       "top3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/react-native-testing-6ef74d",
-        "callstackincubator/agent-skills/create-react-native-library-5131b0"
+        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
+        "callstackincubator/agent-skills/upgrading-react-native-5bab40"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2570,32 +2570,34 @@
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/react-native-testing-6ef74d",
-          "score": 83,
-          "coverage": 0.78,
+          "id": "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
+          "score": 91,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
+          "required_hits": 3,
+          "anchor_hits": 2,
           "identity_anchor_hits": 0,
           "signals": [
             "react-native",
+            "expo",
             "mobile"
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/create-react-native-library-5131b0",
-          "score": 84,
-          "coverage": 0.78,
+          "id": "callstackincubator/agent-skills/upgrading-react-native-5bab40",
+          "score": 91,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
+          "required_hits": 3,
+          "anchor_hits": 2,
           "identity_anchor_hits": 0,
           "signals": [
             "react-native",
+            "expo",
             "mobile"
           ]
         }
@@ -2606,10 +2608,10 @@
         "mobile",
         "callstackincubator-agent-skills-react-native-brownfield-migration-d1e8d7",
         "react-native-brownfield-migration",
-        "callstackincubator-agent-skills-react-native-testing-6ef74d",
-        "react-native-testing",
-        "callstackincubator-agent-skills-create-react-native-library-5131b0",
-        "create-react-native-library"
+        "callstackincubator-agent-skills-react-native-tv-best-practices-a5fe43",
+        "react-native-tv-best-practices",
+        "callstackincubator-agent-skills-upgrading-react-native-5bab40",
+        "upgrading-react-native"
       ]
     },
     {
@@ -2812,7 +2814,7 @@
         },
         {
           "id": "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
-          "score": 63,
+          "score": 64,
           "coverage": 0.61,
           "expected": false,
           "relevant": true,

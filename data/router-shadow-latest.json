@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-27T06:52:47.290Z",
+  "generatedAt": "2026-08-27T12:55:03.536Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "b80f2da7eb4845115ff5c4e3e95b8b44669afda2532f180b8112b502679b3181",
+    "contentHash": "67c05fba359db04e543c9572e4c614be1b6a47ca199f7aaf3b78e93c66a1d7bb",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-27T06:52:23.037Z",
+    "generatedAt": "2026-08-27T12:54:30.931Z",
     "totalCount": 448,
     "mode": "local-bundled"
   },
@@ -842,13 +842,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/react-native-testing-6ef74d",
-        "callstackincubator/agent-skills/create-react-native-library-5131b0"
+        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
+        "callstackincubator/agent-skills/upgrading-react-native-5bab40"
       ],
       "candidateTop3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/react-native-testing-6ef74d",
-        "callstackincubator/agent-skills/create-react-native-library-5131b0"
+        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
+        "callstackincubator/agent-skills/upgrading-react-native-5bab40"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
