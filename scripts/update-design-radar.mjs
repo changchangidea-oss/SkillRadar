@@ -6,6 +6,13 @@ import { parseSkillFrontmatter } from './lib/skill-frontmatter.mjs'
 const root = path.resolve(new URL('..', import.meta.url).pathname, '..')
 const p = (...parts) => path.join(root, ...parts)
 const token = process.env.GITHUB_TOKEN || ''
+
+if (process.env.SKILLRADAR_DESIGN_RUNTIME_SELFTEST === '1') {
+  const parsed=parseSkillFrontmatter('---\nname: runtime-test\ndescription: |\n  Runtime parser dependency is present.\n---\n')
+  if(parsed.name!=='runtime-test'||parsed.description!=='Runtime parser dependency is present.')throw new Error('Design Radar runtime parser bundle self-test failed')
+  console.log('Design Radar runtime bundle self-test passed: isolated updater resolves and executes the shared frontmatter parser.')
+  process.exit(0)
+}
 const headers = {
   Accept: 'application/vnd.github+json',
   'User-Agent': 'SkillRadar/0.3 (+https://github.com/changchangidea-oss/SkillRadar)',

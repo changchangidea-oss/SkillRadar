@@ -21,6 +21,13 @@ jobs:
         run: npm run validate:canonical-seeds
       - name: Skill frontmatter parsing policy
         run: npm run validate:skill-frontmatter
+      - name: Design Radar runtime bundle policy
+        run: |
+          mkdir -p scripts/runtime/lib
+          cp scripts/update-design-radar.mjs scripts/runtime/update-design-radar.mjs
+          cp scripts/lib/skill-frontmatter.mjs scripts/runtime/lib/skill-frontmatter.mjs
+          SKILLRADAR_DESIGN_RUNTIME_SELFTEST=1 node scripts/runtime/update-design-radar.mjs
+          rm -rf scripts/runtime
       - name: Adoption metrics fixture policy
         run: npm run validate:adoption-metrics
       - name: Public discoverability contract
