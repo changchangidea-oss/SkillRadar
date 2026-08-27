@@ -2462,7 +2462,7 @@
     },
     {
       "date": "2026-08-26",
-      "generatedAt": "2026-08-26T23:40:28.416Z",
+      "generatedAt": "2026-08-26T23:59:50.917Z",
       "domains": {
         "ui-design": [
           {
@@ -2516,6 +2516,11 @@
             "source": "seed"
           },
           {
+            "skillId": "cassielxyz/millieskills/millie-ui",
+            "score": 69,
+            "source": "radar"
+          },
+          {
             "skillId": "figma/mcp-server-guide/implement-design",
             "score": 68,
             "source": "seed"
@@ -2558,11 +2563,6 @@
           {
             "skillId": "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
             "score": 61,
-            "source": "seed"
-          },
-          {
-            "skillId": "mblode/agent-skills/ui-animation",
-            "score": 59,
             "source": "seed"
           }
         ],
@@ -2658,13 +2658,13 @@
             "source": "seed"
           },
           {
-            "skillId": "vercel-labs/agent-skills/web-design-guidelines",
-            "score": 64,
-            "source": "seed"
+            "skillId": "magnus919/agent-skills/nous-branding",
+            "score": 65,
+            "source": "radar"
           },
           {
-            "skillId": "pbakaus/impeccable/quieter",
-            "score": 63,
+            "skillId": "vercel-labs/agent-skills/web-design-guidelines",
+            "score": 64,
             "source": "seed"
           }
         ],
@@ -2735,18 +2735,8 @@
             "source": "seed"
           },
           {
-            "skillId": "heygen-com/hyperframes/embedded-captions",
-            "score": 61,
-            "source": "radar"
-          },
-          {
-            "skillId": "heygen-com/hyperframes/hyperframes-creative",
-            "score": 59,
-            "source": "radar"
-          },
-          {
-            "skillId": "heygen-com/hyperframes/hyperframes-keyframes",
-            "score": 59,
+            "skillId": "Starryboyjosh/Trend-AI/banner-design",
+            "score": 60,
             "source": "radar"
           },
           {
@@ -2755,19 +2745,29 @@
             "source": "seed"
           },
           {
-            "skillId": "heygen-com/hyperframes/oversized-cursor",
-            "score": 56,
-            "source": "radar"
+            "skillId": "remotion-dev/skills/remotion-create",
+            "score": 55,
+            "source": "seed"
           },
           {
-            "skillId": "heygen-com/hyperframes/general-video",
-            "score": 56,
-            "source": "radar"
+            "skillId": "remotion-dev/skills/remotion-render",
+            "score": 55,
+            "source": "seed"
           },
           {
-            "skillId": "heygen-com/hyperframes/changelog-video",
-            "score": 56,
-            "source": "radar"
+            "skillId": "remotion-dev/skills/remotion-markup",
+            "score": 55,
+            "source": "seed"
+          },
+          {
+            "skillId": "remotion-dev/skills/remotion-interactivity",
+            "score": 55,
+            "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
+            "score": 55,
+            "source": "seed"
           }
         ],
         "video-design": [
@@ -2780,26 +2780,6 @@
             "skillId": "remotion-dev/skills/remotion-multimedia",
             "score": 73,
             "source": "seed"
-          },
-          {
-            "skillId": "heygen-com/hyperframes/embedded-captions",
-            "score": 73,
-            "source": "radar"
-          },
-          {
-            "skillId": "heygen-com/hyperframes/hyperframes-creative",
-            "score": 68,
-            "source": "radar"
-          },
-          {
-            "skillId": "heygen-com/hyperframes/hyperframes-keyframes",
-            "score": 64,
-            "source": "radar"
-          },
-          {
-            "skillId": "heygen-com/hyperframes/general-video",
-            "score": 64,
-            "source": "radar"
           },
           {
             "skillId": "remotion-dev/skills/remotion-create",
@@ -2857,18 +2837,38 @@
             "source": "seed"
           },
           {
-            "skillId": "heygen-com/hyperframes/hyperframes-core",
-            "score": 62,
-            "source": "radar"
-          },
-          {
-            "skillId": "heygen-com/hyperframes/motion-graphics",
-            "score": 62,
-            "source": "radar"
-          },
-          {
             "skillId": "ibelick/ui-skills/baseline-ui",
             "score": 61,
+            "source": "seed"
+          },
+          {
+            "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/seedance-2-5-skill",
+            "score": 56,
+            "source": "radar"
+          },
+          {
+            "skillId": "Sigovs/design_dna/scroll-site",
+            "score": 55,
+            "source": "radar"
+          },
+          {
+            "skillId": "leonxlnx/taste-skill/high-end-visual-design",
+            "score": 54,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/animate",
+            "score": 52,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/delight",
+            "score": 52,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/cinematic-shot-direction",
+            "score": 52,
             "source": "seed"
           }
         ],
@@ -2909,6 +2909,16 @@
             "source": "seed"
           },
           {
+            "skillId": "Sigovs/design_dna/content-provenance",
+            "score": 54,
+            "source": "radar"
+          },
+          {
+            "skillId": "Sigovs/design_dna/scroll-site",
+            "score": 53,
+            "source": "radar"
+          },
+          {
             "skillId": "calesthio/generative-media-skills/ecommerce-product-imagery",
             "score": 52,
             "source": "seed"
@@ -2929,6 +2939,11 @@
             "source": "seed"
           },
           {
+            "skillId": "Sigovs/design_dna/dimensionality",
+            "score": 48,
+            "source": "radar"
+          },
+          {
             "skillId": "borghei/claude-skills/product-designer",
             "score": 47,
             "source": "seed"
@@ -2944,33 +2959,18 @@
             "source": "seed"
           },
           {
+            "skillId": "Sigovs/design_dna/motion-judgment",
+            "score": 45,
+            "source": "radar"
+          },
+          {
+            "skillId": "Sigovs/design_dna/scrollcraft",
+            "score": 45,
+            "source": "radar"
+          },
+          {
             "skillId": "remotion-dev/skills/remotion-render",
             "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "mblode/agent-skills/ui-design",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/mobile-ux-optimizer",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "figma/mcp-server-guide/figma-design-to-code",
-            "score": 43,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/ux-friction-analyzer",
-            "score": 43,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/native-app-designer",
-            "score": 43,
             "source": "seed"
           }
         ],
@@ -3001,23 +3001,33 @@
             "source": "seed"
           },
           {
+            "skillId": "cassielxyz/millieskills/millie-ui",
+            "score": 63,
+            "source": "radar"
+          },
+          {
             "skillId": "calesthio/generative-media-skills/lighting-direction",
             "score": 62,
             "source": "seed"
           },
           {
-            "skillId": "nirholas/three.ws/ai-game-world-design",
-            "score": 57,
+            "skillId": "Abildtoft/kramme-cc-workflow/kramme:visual:onboarding",
+            "score": 56,
             "source": "radar"
           },
           {
-            "skillId": "heygen-com/hyperframes/talking-head-recut",
-            "score": 52,
+            "skillId": "Abildtoft/kramme-cc-workflow/kramme:visual:diagram",
+            "score": 50,
             "source": "radar"
           },
           {
-            "skillId": "nirholas/three.ws/decentralized-proxy-guide",
+            "skillId": "magnus919/agent-skills/brand-designer",
             "score": 49,
+            "source": "radar"
+          },
+          {
+            "skillId": "Abildtoft/kramme-cc-workflow/kramme:visual:project-recap",
+            "score": 48,
             "source": "radar"
           },
           {
@@ -3029,6 +3039,11 @@
             "skillId": "curiositech/some_claude_skills/diagramming-expert",
             "score": 46,
             "source": "seed"
+          },
+          {
+            "skillId": "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer",
+            "score": 45,
+            "source": "radar"
           },
           {
             "skillId": "remotion-dev/skills/remotion-render",
@@ -3056,24 +3071,9 @@
             "source": "seed"
           },
           {
-            "skillId": "pbakaus/impeccable/arrange",
-            "score": 43,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/layout",
-            "score": 43,
-            "source": "seed"
-          },
-          {
-            "skillId": "monumentalsystems/atlas-agent-teams/blender",
-            "score": 43,
-            "source": "seed"
-          },
-          {
-            "skillId": "mitsuhiko/agent-stuff/openscad",
-            "score": 35,
-            "source": "seed"
+            "skillId": "Free-Templates-cc/free-react-templates/touchdesigner-mcp",
+            "score": 44,
+            "source": "radar"
           }
         ],
         "fashion-design": [
@@ -3133,14 +3133,24 @@
             "source": "seed"
           },
           {
+            "skillId": "magnus919/agent-skills/nous-branding",
+            "score": 60,
+            "source": "radar"
+          },
+          {
+            "skillId": "cassielxyz/millieskills/millie-ui",
+            "score": 60,
+            "source": "radar"
+          },
+          {
+            "skillId": "Starryboyjosh/Trend-AI/banner-design",
+            "score": 60,
+            "source": "radar"
+          },
+          {
             "skillId": "anthropics/skills/frontend-design",
             "score": 57,
             "source": "seed"
-          },
-          {
-            "skillId": "heygen-com/hyperframes/hyperframes-keyframes",
-            "score": 56,
-            "source": "radar"
           },
           {
             "skillId": "pbakaus/impeccable/typeset",
@@ -3148,34 +3158,24 @@
             "source": "seed"
           },
           {
+            "skillId": "Sigovs/design_dna/academic-composition",
+            "score": 55,
+            "source": "radar"
+          },
+          {
             "skillId": "curiositech/some_claude_skills/design-critic",
             "score": 54,
             "source": "seed"
           },
           {
-            "skillId": "calesthio/generative-media-skills/lighting-direction",
-            "score": 51,
-            "source": "seed"
+            "skillId": "Free-Templates-cc/free-react-templates/design-md",
+            "score": 54,
+            "source": "radar"
           },
           {
-            "skillId": "mblode/agent-skills/ui-design",
-            "score": 48,
-            "source": "seed"
-          },
-          {
-            "skillId": "narumiruna/skills/svg-illustration",
-            "score": 48,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/typography-expert",
-            "score": 47,
-            "source": "seed"
-          },
-          {
-            "skillId": "heroygt/skills/svg-icon-maker",
-            "score": 47,
-            "source": "seed"
+            "skillId": "Free-Templates-cc/free-react-templates/colorlib-template-replication",
+            "score": 54,
+            "source": "radar"
           }
         ],
         "experience-design": [
@@ -3210,6 +3210,11 @@
             "source": "seed"
           },
           {
+            "skillId": "cassielxyz/millieskills/millie-ui",
+            "score": 71,
+            "source": "radar"
+          },
+          {
             "skillId": "curiositech/some_claude_skills/native-app-designer",
             "score": 65,
             "source": "seed"
@@ -3223,6 +3228,11 @@
             "skillId": "abhsin/designskills/ux-specification",
             "score": 64,
             "source": "seed"
+          },
+          {
+            "skillId": "Starryboyjosh/Trend-AI/banner-design",
+            "score": 57,
+            "source": "radar"
           },
           {
             "skillId": "vercel-labs/agent-skills/web-design-guidelines",
@@ -3240,44 +3250,34 @@
             "source": "seed"
           },
           {
-            "skillId": "nirholas/three.ws/research-assistant",
-            "score": 50,
+            "skillId": "Sigovs/design_dna/scroll-site",
+            "score": 53,
+            "source": "radar"
+          },
+          {
+            "skillId": "Free-Templates-cc/free-react-templates/design-md",
+            "score": 53,
+            "source": "radar"
+          },
+          {
+            "skillId": "Starryboyjosh/Trend-AI/prototype",
+            "score": 53,
+            "source": "radar"
+          },
+          {
+            "skillId": "Starryboyjosh/Trend-AI/emil-design-eng",
+            "score": 52,
+            "source": "radar"
+          },
+          {
+            "skillId": "Free-Templates-cc/free-react-templates/colorlib-template-replication",
+            "score": 52,
             "source": "radar"
           },
           {
             "skillId": "rome-os/rome/ux-semantics-audit",
             "score": 50,
             "source": "radar"
-          },
-          {
-            "skillId": "nirholas/three.ws/vc-research-intelligence",
-            "score": 49,
-            "source": "radar"
-          },
-          {
-            "skillId": "nirholas/three.ws/recommendation-algorithm-design",
-            "score": 48,
-            "source": "radar"
-          },
-          {
-            "skillId": "nirholas/three.ws/token-research",
-            "score": 47,
-            "source": "radar"
-          },
-          {
-            "skillId": "figma/mcp-server-guide/implement-design",
-            "score": 46,
-            "source": "seed"
-          },
-          {
-            "skillId": "figma/mcp-server-guide/figma-generate-design",
-            "score": 45,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/critique",
-            "score": 44,
-            "source": "seed"
           }
         ],
         "digital-media-film": [
@@ -3342,16 +3342,6 @@
             "source": "seed"
           },
           {
-            "skillId": "heygen-com/hyperframes/oversized-cursor",
-            "score": 53,
-            "source": "radar"
-          },
-          {
-            "skillId": "heygen-com/hyperframes/slideshow",
-            "score": 53,
-            "source": "radar"
-          },
-          {
             "skillId": "calesthio/generative-media-skills/editing-montage",
             "score": 52,
             "source": "seed"
@@ -3378,6 +3368,16 @@
           },
           {
             "skillId": "calesthio/generative-media-skills/title-kinetic-typography",
+            "score": 52,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/3d-asset-production",
+            "score": 52,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/neural-reality-capture",
             "score": 52,
             "source": "seed"
           }
@@ -3439,12 +3439,12 @@
             "source": "seed"
           },
           {
-            "skillId": "heygen-com/hyperframes/hyperframes-animation",
-            "score": 49,
+            "skillId": "Abildtoft/kramme-cc-workflow/kramme:visual:plan-review",
+            "score": 48,
             "source": "radar"
           },
           {
-            "skillId": "nirholas/three.ws/repo-intelligence-guide",
+            "skillId": "Sigovs/design_dna/academic-composition",
             "score": 48,
             "source": "radar"
           },
@@ -3469,17 +3469,17 @@
             "source": "seed"
           },
           {
+            "skillId": "Sigovs/design_dna/design-dna",
+            "score": 45,
+            "source": "radar"
+          },
+          {
             "skillId": "pbakaus/impeccable/critique",
             "score": 44,
             "source": "seed"
           },
           {
             "skillId": "pbakaus/impeccable/bolder",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/distill",
             "score": 44,
             "source": "seed"
           }
@@ -3499,6 +3499,11 @@
             "skillId": "tryopendata/skills/svg-design",
             "score": 64,
             "source": "seed"
+          },
+          {
+            "skillId": "magnus919/agent-skills/nous-branding",
+            "score": 56,
+            "source": "radar"
           },
           {
             "skillId": "pbakaus/impeccable/polish",
@@ -3526,13 +3531,13 @@
             "source": "seed"
           },
           {
-            "skillId": "heygen-com/hyperframes/changelog-video",
+            "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/universal-video-prompt-skill",
             "score": 51,
             "source": "radar"
           },
           {
-            "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/universal-video-prompt-skill",
-            "score": 51,
+            "skillId": "Abildtoft/kramme-cc-workflow/kramme:visual:diagram",
+            "score": 50,
             "source": "radar"
           },
           {
@@ -3541,19 +3546,14 @@
             "source": "radar"
           },
           {
-            "skillId": "heygen-com/hyperframes/hyperframes-animation",
-            "score": 49,
+            "skillId": "Abildtoft/kramme-cc-workflow/kramme:visual:plan-review",
+            "score": 48,
             "source": "radar"
           },
           {
             "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
             "score": 47,
             "source": "seed"
-          },
-          {
-            "skillId": "nirholas/three.ws/repo-intelligence-guide",
-            "score": 47,
-            "source": "radar"
           },
           {
             "skillId": "anthropics/skills/frontend-design",
@@ -3566,22 +3566,22 @@
             "source": "seed"
           },
           {
+            "skillId": "Sigovs/design_dna/design-dna",
+            "score": 46,
+            "source": "radar"
+          },
+          {
             "skillId": "lovstudio/skills/lovstudio-png2svg",
             "score": 45,
             "source": "seed"
           },
           {
+            "skillId": "Free-Templates-cc/free-react-templates/popular-web-designs",
+            "score": 45,
+            "source": "radar"
+          },
+          {
             "skillId": "pbakaus/impeccable/critique",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/bolder",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/distill",
             "score": 44,
             "source": "seed"
           }
@@ -3613,11 +3613,6 @@
             "source": "seed"
           },
           {
-            "skillId": "nirholas/three.ws/ai-game-world-design",
-            "score": 65,
-            "source": "radar"
-          },
-          {
             "skillId": "calesthio/generative-media-skills/neural-reality-capture",
             "score": 63,
             "source": "seed"
@@ -3628,29 +3623,29 @@
             "source": "seed"
           },
           {
+            "skillId": "Abildtoft/kramme-cc-workflow/kramme:visual:onboarding",
+            "score": 60,
+            "source": "radar"
+          },
+          {
+            "skillId": "magnus919/agent-skills/nous-branding",
+            "score": 56,
+            "source": "radar"
+          },
+          {
             "skillId": "roble3/cc-blender-skill/blender-export",
             "score": 54,
             "source": "seed"
           },
           {
-            "skillId": "nirholas/three.ws/decentralized-proxy-guide",
+            "skillId": "Abildtoft/kramme-cc-workflow/kramme:visual:diagram",
             "score": 54,
-            "source": "radar"
-          },
-          {
-            "skillId": "nirholas/three.ws/repo-intelligence-guide",
-            "score": 53,
             "source": "radar"
           },
           {
             "skillId": "calesthio/generative-media-skills/3d-asset-production",
             "score": 52,
             "source": "seed"
-          },
-          {
-            "skillId": "heygen-com/hyperframes/talking-head-recut",
-            "score": 52,
-            "source": "radar"
           },
           {
             "skillId": "pbakaus/impeccable/arrange",
@@ -3673,18 +3668,23 @@
             "source": "seed"
           },
           {
-            "skillId": "nirholas/three.ws/okx-agent-task",
-            "score": 51,
+            "skillId": "monumentalsystems/atlas-agent-teams/blender",
+            "score": 50,
+            "source": "seed"
+          },
+          {
+            "skillId": "Abildtoft/kramme-cc-workflow/kramme:visual:plan-review",
+            "score": 50,
             "source": "radar"
           },
           {
-            "skillId": "nirholas/three.ws/okx-how-to-play",
-            "score": 51,
+            "skillId": "Abildtoft/kramme-cc-workflow/kramme:visual:project-recap",
+            "score": 50,
             "source": "radar"
           },
           {
-            "skillId": "nirholas/three.ws/subgraph-development-guide",
-            "score": 51,
+            "skillId": "kibertoad/cat-factory/framework-gap-request",
+            "score": 47,
             "source": "radar"
           }
         ]

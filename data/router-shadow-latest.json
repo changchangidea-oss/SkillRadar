@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-08-26T23:44:19.619Z",
+  "generatedAt": "2026-08-27T00:03:11.278Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "19fad1a35cd431da8fb0414dc053d1cdf46d4e1825c8ce7813e3542c4b07dc2d",
+    "contentHash": "ce9123406d78d2fba15bae2498bcec90c763273f6f2ee67388d4c2f5dcc7d334",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-26T23:43:48.528Z",
-    "totalCount": 428,
+    "generatedAt": "2026-08-27T00:02:42.908Z",
+    "totalCount": 402,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 50,
+    "passed": 54,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 40,
+    "coveragePassed": 44,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 0,
-    "specificityFailures": 3,
-    "capabilityGapCases": 32,
-    "averageRecommendationCount": 1.94,
+    "lowEvidenceTop3": 1,
+    "specificityFailures": 0,
+    "capabilityGapCases": 33,
+    "averageRecommendationCount": 1.96,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 130,
-    "anchorSignalHitsTotal": 29,
-    "averageTop1Score": 75
+    "signalHitsTotal": 137,
+    "anchorSignalHitsTotal": 32,
+    "averageTop1Score": 79.9
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 50,
+    "passed": 54,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 40,
+    "coveragePassed": 44,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 0,
-    "specificityFailures": 3,
-    "capabilityGapCases": 32,
-    "averageRecommendationCount": 1.94,
+    "lowEvidenceTop3": 1,
+    "specificityFailures": 0,
+    "capabilityGapCases": 33,
+    "averageRecommendationCount": 1.96,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 130,
-    "anchorSignalHitsTotal": 29,
-    "averageTop1Score": 75
+    "signalHitsTotal": 137,
+    "anchorSignalHitsTotal": 32,
+    "averageTop1Score": 79.9
   },
   "gates": {
     "safetyPass": true,
@@ -165,16 +165,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
-        "nirholas/three.ws/crypto-market-dashboard-guide"
+        "stephonGAO/milu/frontend-design-25832f"
       ],
       "candidateTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
-        "nirholas/three.ws/crypto-market-dashboard-guide"
+        "stephonGAO/milu/frontend-design-25832f"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -272,14 +270,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "ai-sdk",
-        "ruvnet/ruflo/vector-search-f41cc6"
+        "ruvnet/ruflo/vector-search-f41cc6",
+        "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer"
       ],
       "candidateTop3": [
         "ai-sdk",
-        "ruvnet/ruflo/vector-search-f41cc6"
+        "ruvnet/ruflo/vector-search-f41cc6",
+        "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -292,17 +292,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
-        "nirholas/three.ws/agenti-mcp-guide",
-        "nirholas/three.ws/mcp-servers-guide"
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d"
       ],
       "candidateTop3": [
-        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
-        "nirholas/three.ws/agenti-mcp-guide",
-        "nirholas/three.ws/mcp-servers-guide"
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -329,14 +325,18 @@
     },
     {
       "id": "llm-agent-workflow",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
+      "productionTop3": [
+        "FuZhiyu/superRA/agent-orchestration-1f0ab9"
+      ],
+      "candidateTop3": [
+        "FuZhiyu/superRA/agent-orchestration-1f0ab9"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -470,16 +470,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
-        "nirholas/three.ws/github-to-mcp-guide",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
       "candidateTop3": [
         "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
-        "nirholas/three.ws/github-to-mcp-guide",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -511,13 +509,15 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "supabase-postgres-best-practices"
+        "supabase-postgres-best-practices",
+        "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer"
       ],
       "candidateTop3": [
-        "supabase-postgres-best-practices"
+        "supabase-postgres-best-practices",
+        "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -576,15 +576,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "fastrepl/anarlog/migrate-to-sqlite-1e3a5a",
         "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5"
       ],
       "candidateTop3": [
-        "fastrepl/anarlog/migrate-to-sqlite-1e3a5a",
         "SecureSkills-io/sqlite-skill/sqlite-skill-0e95f5"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -634,14 +632,18 @@
     },
     {
       "id": "vitest-unit",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
+      "productionTop3": [
+        "antfu/skills/vitest-8d8886"
+      ],
+      "candidateTop3": [
+        "antfu/skills/vitest-8d8886"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -883,14 +885,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
+        "callstackincubator/agent-skills/agent-device-f62531",
         "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58",
-        "callstackincubator/agent-skills/agent-device-f62531"
+        "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70"
       ],
       "candidateTop3": [
-        "TalissonVitorino/kmp-ios-skills/mobile-testing-70813f",
+        "callstackincubator/agent-skills/agent-device-f62531",
         "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58",
-        "callstackincubator/agent-skills/agent-device-f62531"
+        "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -989,14 +991,18 @@
     },
     {
       "id": "webhook-automation",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
+      "productionTop3": [
+        "hookdeck/webhook-skills/webhook-handler-patterns-60609e"
+      ],
+      "candidateTop3": [
+        "hookdeck/webhook-skills/webhook-handler-patterns-60609e"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1072,12 +1078,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "Free-Templates-cc/free-react-templates/popular-web-designs"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "Free-Templates-cc/free-react-templates/popular-web-designs"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1111,20 +1117,22 @@
     },
     {
       "id": "zh-poster-brand",
-      "productionPass": false,
-      "candidatePass": false,
+      "productionPass": true,
+      "candidatePass": true,
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
+        "WaterTian/visual-director-skill/visual-director",
         "stephonGAO/milu/frontend-design-25832f",
         "artokun/comfyui-mcp/ernie-image-1a1575"
       ],
       "candidateTop3": [
+        "WaterTian/visual-director-skill/visual-director",
         "stephonGAO/milu/frontend-design-25832f",
         "artokun/comfyui-mcp/ernie-image-1a1575"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1138,13 +1146,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "nirholas/three.ws/create-3d-avatar",
-        "heygen-com/hyperframes/hyperframes-keyframes"
+        "Starryboyjosh/Trend-AI/apple-design",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "candidateTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "nirholas/three.ws/create-3d-avatar",
-        "heygen-com/hyperframes/hyperframes-keyframes"
+        "Starryboyjosh/Trend-AI/apple-design",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1160,14 +1168,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nirholas/three.ws/vc-research-intelligence",
-        "nirholas/three.ws/pay-for-service",
-        "nirholas/three.ws/okx-growth-competition"
+        "Sigovs/design_dna/scroll-site",
+        "Sigovs/design_dna/content-provenance",
+        "Sigovs/design_dna/generated-imagery"
       ],
       "candidateTop3": [
-        "nirholas/three.ws/vc-research-intelligence",
-        "nirholas/three.ws/pay-for-service",
-        "nirholas/three.ws/okx-growth-competition"
+        "Sigovs/design_dna/scroll-site",
+        "Sigovs/design_dna/content-provenance",
+        "Sigovs/design_dna/generated-imagery"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
