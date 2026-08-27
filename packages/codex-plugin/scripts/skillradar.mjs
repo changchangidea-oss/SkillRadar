@@ -14,7 +14,7 @@ if(!cmd||!value||!['search','match','inspect'].includes(cmd)){console.error('Usa
 
 function readJson(paths){for(const p of paths){try{if(fs.existsSync(p))return JSON.parse(fs.readFileSync(p,'utf8'))}catch{}}return null}
 function normalizeCore(s){return {...s,tags:s.tags||[],domains:s.domains||[],uses:s.uses||[],security:s.security||'B',score:s.score??s.signalScore??70,maintenance:s.maintenance??s.maintenanceScore??70}}
-function normalizeDiscovered(s,fallbackCategory){return {id:s.id,name:s.name,source:s.source,category:s.category||fallbackCategory,tags:s.tags||[],summary:s.summary,security:s.security||'B',score:s.signalScore??s.score??70,maintenance:s.maintenanceScore??s.maintenance??70,installs:s.installs||0,installUrl:s.installUrl,skillsUrl:s.skillsUrl,discovery:s.discovery||'radar',domains:s.domains||[],uses:s.uses||[]}}
+function normalizeDiscovered(s,fallbackCategory){return {id:s.id,name:s.name,source:s.source,category:s.category||fallbackCategory,tags:s.tags||[],summary:s.summary,security:s.security||'B',score:s.signalScore??s.score??70,maintenance:s.maintenanceScore??s.maintenance??70,installs:s.installs||0,installUrl:s.installUrl,skillsUrl:s.skillsUrl,discovery:s.discovery||'radar',domains:s.domains||[],uses:s.uses||[],routingEvidence:s.routingEvidence||[]}}
 function dedupeAndGate(skills){const seen=new Set();return skills.filter(s=>!['D','Blocked'].includes(s.security)).filter(s=>{const key=`${String(s.source||'').toLowerCase()}::${String(s.name||s.id||'').toLowerCase().replace(/[^a-z0-9]+/g,'')}`;if(seen.has(key))return false;seen.add(key);return true})}
 function loadBundledRegistry(){
   const snapshot=readJson([explicitRegistry,path.resolve(here,'../data/registry.json')].filter(Boolean))
@@ -132,18 +132,19 @@ const CANDIDATE_EVIDENCE_RULES={
   mcp:{identity:['mcp'],minSignals:2},orchestration:{identity:['agent','orchestration'],minSignals:1},
   postgres:{identity:['postgres','postgresql'],minSignals:2},
   sqlite:{identity:['sqlite'],minSignals:2},vitest:{identity:['vitest'],minSignals:2},
-  flutter:{identity:['flutter'],minSignals:2},webhook:{identity:['webhook','automation'],minSignals:2}
+  flutter:{identity:['flutter'],minSignals:2},webhook:{identity:['webhook','automation'],minSignals:2},
+  poster:{evidence:['poster'],minSignals:2}
 }
 function requestedSpecificitySignals(query){
   return [...new Set(querySignals(query).map(x=>canon(x.label)).filter(x=>SPECIFICITY_SIGNALS.has(x)))]
 }
 function candidateEvidencePass(skill,required=[]){
-  const matched=new Set((skill.match_details?.matched_signals||[]).map(canon)),identity=new Set(String(skill.name||'').toLowerCase().split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean))
+  const matched=new Set((skill.match_details?.matched_signals||[]).map(canon)),identity=new Set(String(skill.name||'').toLowerCase().split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean)),taskEvidence=new Set([...(skill.tags||[]),...(skill.uses||[]),...(skill.routingEvidence||[])].map(canon).filter(Boolean))
   const matchedRequired=required.filter(signal=>matched.has(signal))
   if(matchedRequired.some(signal=>!CANDIDATE_EVIDENCE_RULES[signal]))return true
   const applicable=matchedRequired.map(signal=>({signal,rule:CANDIDATE_EVIDENCE_RULES[signal]})).filter(x=>x.rule)
   if(!applicable.length)return true
-  return applicable.some(({signal,rule})=>matched.has(signal)&&matched.size>=rule.minSignals&&rule.identity.some(term=>identity.has(canon(term))))
+  return applicable.some(({signal,rule})=>matched.has(signal)&&matched.size>=rule.minSignals&&(!rule.identity?.length||rule.identity.some(term=>identity.has(canon(term))))&&(!rule.evidence?.length||rule.evidence.some(term=>taskEvidence.has(canon(term)))))
 }
 function enforceSpecificity(ranked,required=[]){
   if(!required.length)return ranked
