@@ -152,7 +152,7 @@ function enforceSpecificity(ranked,required=[]){
 }
 function diversify(ranked,limit=3){
   if(!ranked.length)return[]
-  const selected=[ranked[0]],pool=ranked.slice(1).filter(x=>x.match_score>=Math.max(20,ranked[0].match_score-28)),covered=new Set(Object.keys(taskSignalWeights(ranked[0])))
+  const selected=[ranked[0]],pool=ranked.slice(1).filter(x=>x.match_score>Math.max(20,ranked[0].match_score-28)),covered=new Set(Object.keys(taskSignalWeights(ranked[0])))
   while(selected.length<limit&&pool.length){
     let bestIndex=0,bestScore=-Infinity
     for(let i=0;i<pool.length;i++){

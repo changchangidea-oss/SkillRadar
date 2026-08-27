@@ -7,7 +7,7 @@ const file=path.join(root,'data/general-skills-radar.json')
 const skills=JSON.parse(fs.readFileSync(file,'utf8'))
 const GENERIC=new Set(['agent','agents','skill','skills','use','using','workflow','workflows','integration','integrations','general','technical','production','quality'])
 function canon(value=''){return String(value).toLowerCase().replace(/next\.js/g,'nextjs').replace(/[^a-z0-9+#.-]+/g,'-').replace(/^-+|-+$/g,'')}
-function hay(skill){return canon(`${skill.name||''} ${skill.slug||''} ${skill.summary||''}`)}
+function hay(skill){return canon(`${skill.name||''} ${skill.slug||''} ${skill.summary||''} ${(skill.routingEvidence||[]).join(' ')}`)}
 function appears(text,term){const t=canon(term);if(!t||GENERIC.has(t))return false;const tokens=new Set(text.split(/[^a-z0-9+#.-]+/).filter(Boolean));return tokens.has(t)||(t.length>=5&&text.includes(t))}
 function narrow(skill){
   const text=hay(skill),classes=Array.isArray(skill.classifications)?skill.classifications:[]
@@ -17,6 +17,14 @@ function narrow(skill){
   const explicit=(skill.tags||[]).filter(t=>appears(text,t))
   const tags=[...new Set([...explicit,...classTerms.filter(t=>appears(text,t))].map(canon).filter(Boolean))].slice(0,12)
   return {...skill,tags}
+}
+if(process.env.SKILLRADAR_TAG_NORMALIZE_SELFTEST==='1'){
+  const owned=narrow({name:'marketing-design',slug:'marketing-design',summary:'Marketing brand asset generation.',routingEvidence:['visual','poster','brand'],tags:['visual','poster','brand'],classifications:[{relevance:90,matched:['visual','poster','brand']}]})
+  if(!['visual','poster','brand'].every(tag=>owned.tags.includes(tag)))throw new Error('candidate-owned frontmatter evidence must survive tag normalization')
+  const polluted=narrow({name:'generic-tool',slug:'generic-tool',summary:'Generic helper.',routingEvidence:[],tags:['poster','brand'],classifications:[{relevance:90,matched:['poster','brand']}]})
+  if(polluted.tags.length)throw new Error('repository, hint, or classification context must not substitute for candidate-owned routing evidence')
+  console.log('General tag normalization self-test passed: full candidate frontmatter evidence survives while repository-context tags remain excluded.')
+  process.exit(0)
 }
 const out=skills.map(narrow)
 let changed=0,removed=0

@@ -260,7 +260,7 @@
   function diversify(ranked, limit = 3) {
     if (!ranked.length) return [];
     const selected = [ranked[0]];
-    const pool = ranked.slice(1).filter((skill) => skill.match_score >= Math.max(20, ranked[0].match_score - 28));
+    const pool = ranked.slice(1).filter((skill) => skill.match_score > Math.max(20, ranked[0].match_score - 28));
     const covered = new Set(Object.keys(taskSignalWeights(ranked[0])));
     while (selected.length < limit && pool.length) {
       let bestIndex = 0;
