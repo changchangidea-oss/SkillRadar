@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-08-27T00:03:11.278Z",
+  "generatedAt": "2026-08-27T05:44:37.869Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "ce9123406d78d2fba15bae2498bcec90c763273f6f2ee67388d4c2f5dcc7d334",
+    "contentHash": "6349aefe014c01a09287db1d8f486042b48a3090544a931e9743fb7d332a8dc2",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-27T00:02:42.908Z",
-    "totalCount": 402,
+    "generatedAt": "2026-08-27T05:44:05.933Z",
+    "totalCount": 461,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 54,
+    "passed": 53,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 44,
+    "coveragePassed": 43,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 1,
+    "lowEvidenceTop3": 0,
     "specificityFailures": 0,
-    "capabilityGapCases": 33,
+    "capabilityGapCases": 32,
     "averageRecommendationCount": 1.96,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 137,
-    "anchorSignalHitsTotal": 32,
-    "averageTop1Score": 79.9
+    "signalHitsTotal": 136,
+    "anchorSignalHitsTotal": 34,
+    "averageTop1Score": 79.2
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 54,
+    "passed": 53,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 44,
+    "coveragePassed": 43,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 1,
+    "lowEvidenceTop3": 0,
     "specificityFailures": 0,
-    "capabilityGapCases": 33,
+    "capabilityGapCases": 32,
     "averageRecommendationCount": 1.96,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 137,
-    "anchorSignalHitsTotal": 32,
-    "averageTop1Score": 79.9
+    "signalHitsTotal": 135,
+    "anchorSignalHitsTotal": 34,
+    "averageTop1Score": 79.2
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": 0
+    "evidenceDelta": -1
   },
   "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
@@ -165,14 +165,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f"
+        "stephonGAO/milu/frontend-design-25832f",
+        "nirholas/three.ws/crypto-market-dashboard-guide"
       ],
       "candidateTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f"
+        "stephonGAO/milu/frontend-design-25832f",
+        "nirholas/three.ws/crypto-market-dashboard-guide"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -270,16 +272,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "ai-sdk",
-        "ruvnet/ruflo/vector-search-f41cc6",
-        "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer"
+        "ruvnet/ruflo/vector-search-f41cc6"
       ],
       "candidateTop3": [
         "ai-sdk",
-        "ruvnet/ruflo/vector-search-f41cc6",
-        "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer"
+        "ruvnet/ruflo/vector-search-f41cc6"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -292,13 +292,17 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d"
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
+        "nirholas/three.ws/agenti-mcp-guide",
+        "nirholas/three.ws/mcp-servers-guide"
       ],
       "candidateTop3": [
-        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d"
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
+        "nirholas/three.ws/agenti-mcp-guide",
+        "nirholas/three.ws/mcp-servers-guide"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -470,14 +474,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
+        "nirholas/three.ws/github-to-mcp-guide",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
       "candidateTop3": [
         "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
+        "nirholas/three.ws/github-to-mcp-guide",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -509,15 +515,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "supabase-postgres-best-practices",
-        "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer"
+        "supabase-postgres-best-practices"
       ],
       "candidateTop3": [
-        "supabase-postgres-best-practices",
-        "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer"
+        "supabase-postgres-best-practices"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -530,17 +534,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "supabase-postgres-best-practices",
-        "sickn33/agentic-awesome-skills/architect-review-7586e7",
-        "affaan-m/ECC/backend-patterns-ac648c"
+        "supabase-postgres-best-practices"
       ],
       "candidateTop3": [
-        "supabase-postgres-best-practices",
-        "sickn33/agentic-awesome-skills/architect-review-7586e7",
-        "affaan-m/ECC/backend-patterns-ac648c"
+        "supabase-postgres-best-practices"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1078,12 +1078,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "Free-Templates-cc/free-react-templates/popular-web-designs"
+        "figma/mcp-server-guide/figma-generate-design"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "Free-Templates-cc/free-react-templates/popular-web-designs"
+        "figma/mcp-server-guide/figma-generate-design"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1117,19 +1117,19 @@
     },
     {
       "id": "zh-poster-brand",
-      "productionPass": true,
-      "candidatePass": true,
+      "productionPass": false,
+      "candidatePass": false,
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "WaterTian/visual-director-skill/visual-director",
         "stephonGAO/milu/frontend-design-25832f",
-        "artokun/comfyui-mcp/ernie-image-1a1575"
+        "artokun/comfyui-mcp/ernie-image-1a1575",
+        "nexu-io/open-design/image-poster-4aed42"
       ],
       "candidateTop3": [
-        "WaterTian/visual-director-skill/visual-director",
         "stephonGAO/milu/frontend-design-25832f",
-        "artokun/comfyui-mcp/ernie-image-1a1575"
+        "artokun/comfyui-mcp/ernie-image-1a1575",
+        "nexu-io/open-design/image-poster-4aed42"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1146,12 +1146,12 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "Starryboyjosh/Trend-AI/apple-design",
+        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "candidateTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "Starryboyjosh/Trend-AI/apple-design",
+        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "productionRecommendationCount": 3,
@@ -1168,19 +1168,19 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "Sigovs/design_dna/scroll-site",
-        "Sigovs/design_dna/content-provenance",
-        "Sigovs/design_dna/generated-imagery"
+        "nirholas/three.ws/okx-ai-guide",
+        "mitsuhiko/agent-stuff/openscad",
+        "nirholas/three.ws/okx-growth-competition"
       ],
       "candidateTop3": [
-        "Sigovs/design_dna/scroll-site",
-        "Sigovs/design_dna/content-provenance",
-        "Sigovs/design_dna/generated-imagery"
+        "nirholas/three.ws/okx-ai-guide",
+        "nirholas/three.ws/okx-growth-competition",
+        "nirholas/three.ws/pay-for-service"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0,
+      "signalHitDelta": -1,
       "anchorSignalHitDelta": 0,
       "lowEvidenceDelta": 0
     }
