@@ -61,9 +61,9 @@ assert.ok(!webRouter.registrySkills(poisoned).some((skill) => skill.id === 'evil
 
 const posterCapability = structuredClone(snapshot);
 posterCapability.general = [...(posterCapability.general || []), {
-  id: 'vanducng/skills/marketing-design-fixture',
+  id: 'fixture/marketing-design',
   name: 'marketing-design',
-  source: 'vanducng/skills',
+  source: 'fixture/marketing-design',
   category: 'Design & Media',
   tags: ['poster', 'brand', 'visual', 'identity', 'campaign'],
   summary: 'Marketing brand-asset generation: corporate identity and brand visual identity assets, plus poster design for event, editorial, and marketing campaigns.',
@@ -72,7 +72,7 @@ posterCapability.general = [...(posterCapability.general || []), {
   maintenanceScore: 95,
 }];
 const posterMatch = webRouter.match(posterCapability, '设计品牌海报和视觉传播系统', 3);
-const marketingDesign = posterMatch.matches.find((skill) => skill.id === 'vanducng/skills/marketing-design-fixture');
+const marketingDesign = posterMatch.matches.find((skill) => skill.id === 'fixture/marketing-design');
 assert.ok(marketingDesign, 'an eligible dedicated marketing-design Skill must route for the Chinese poster/brand task');
 const marketingSignals = new Set((marketingDesign.match_details?.matched_signals || []).map(webRouter.canon));
 for (const signal of ['poster', 'brand', 'visual']) assert.ok(marketingSignals.has(signal), `marketing-design lost explicit ${signal} evidence`);
@@ -109,9 +109,18 @@ function pluginMatch(query, registryPath = snapshotPath) {
 
 const boundaryQuery = 'Create an accessible shadcn/ui design system for a responsive dashboard';
 const dedicatedShadcn = snapshot.core.find((skill) => skill.id === 'shadcn');
-const genericDesign = snapshot.design.find((skill) => skill.id === 'awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max');
-assert.ok(dedicatedShadcn && genericDesign, 'diversification boundary fixtures must exist in the bundled Registry');
-const boundaryCandidate = { ...genericDesign, signalScore: 82 };
+assert.ok(dedicatedShadcn, 'dedicated shadcn boundary fixture must exist in the bundled Registry');
+const boundaryCandidate = {
+  id: 'fixture/generic-design',
+  name: 'ui-ux-pro-max',
+  source: 'fixture/generic-design',
+  category: 'Design',
+  tags: ['experience', 'design', 'ux', 'product', 'interaction', 'usability', 'mobile', 'accessibility', 'ui', 'design-system', 'layout', 'typography'],
+  summary: 'UI/UX design intelligence for web, mobile, and desktop interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, and charts.',
+  security: 'C',
+  signalScore: 82,
+  maintenanceScore: 100,
+};
 const boundaryOnly = { ...snapshot, core: [], design: [boundaryCandidate], general: [] };
 const boundaryOnlyMatch = webRouter.match(boundaryOnly, boundaryQuery, 3);
 assert.equal(boundaryOnlyMatch.matches[0]?.match_score, 61, 'generic fixture must remain pinned to the exact top1 - 28 boundary');
@@ -156,6 +165,7 @@ const candidateEvidenceQueries = new Set([
   'Vitest test suite',
   'Flutter mobile app',
   'MCP server tool integration',
+  '为新消费品牌设计一张中文活动海报',
 ]);
 
 for (const query of parityQueries) {
@@ -180,6 +190,18 @@ for (const query of parityQueries) {
     }
   }
 }
+
+const posterQuery = '为新消费品牌设计一张中文活动海报';
+const posterResult = webRouter.match(snapshot, posterQuery, 3);
+const posterPlugin = pluginMatch(posterQuery);
+assert.deepEqual(posterResult.matches.map((skill) => skill.id), posterPlugin.matches.map((skill) => skill.id), 'poster candidate contract must remain identical in the browser and Plugin');
+assert.ok(posterResult.matches.some((skill) => skill.source === 'vanducng/skills' && skill.name === 'marketing-design'), 'the real marketing-design upstream must route for a poster/brand task');
+const posterDeckFalsePositives = new Set([
+  'nexu-io/open-design/html-ppt-zhangzara-bold-poster',
+  'nexu-io/open-design/html-ppt-zhangzara-raw-grid',
+  'nexu-io/open-design/gamified-app',
+]);
+assert.ok(posterResult.matches.every((skill) => !posterDeckFalsePositives.has(skill.id)), 'presentation/deck templates must not substitute for a poster-production Skill');
 
 const repositoryContextFalsePositives = new Set([
   'artokun/comfyui-mcp/color-correction-674ba1',
