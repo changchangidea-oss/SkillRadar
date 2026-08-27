@@ -4,6 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
+import { evaluateRoutingCase } from './lib/router-eval-policy.mjs';
 
 const root = process.cwd();
 const files = ['assets/safe-render.js', 'assets/web-router.js', 'assets/app.js'];
@@ -100,7 +101,7 @@ function pluginMatch(query, registryPath = snapshotPath) {
       ...process.env,
       SKILLRADAR_OFFLINE: '1',
       SKILLRADAR_PROJECT_CONTEXT: '0',
-      SKILLRADAR_REGISTRY_PATH: snapshotPath,
+      SKILLRADAR_REGISTRY_PATH: registryPath,
     },
   });
   assert.equal(result.status, 0, `plugin router failed for ${query}:\n${result.stdout}\n${result.stderr}`);
@@ -136,6 +137,43 @@ try {
   assert.deepEqual(boundaryPlugin.matches.map((skill) => skill.id), ['shadcn'], 'candidate exactly at top1 - 28 must not weak-backfill the Plugin Top 3');
 } finally {
   fs.rmSync(boundaryDir, { recursive: true, force: true });
+}
+
+const nextBodyQuery = 'Implement Next.js App Router data fetching and route architecture';
+const nextBodyCandidate = {
+  id: 'fixture/telemedx-frontend-patterns',
+  name: 'telemedx-frontend-patterns',
+  source: 'fixture/telemedx',
+  category: 'Frontend',
+  tags: ['frontend'],
+  routingEvidence: ['nextjs', 'app-router', 'server-components'],
+  summary: 'Frontend patterns for a Next.js application covering Server Components and data fetching.',
+  security: 'B',
+  signalScore: 74,
+  maintenanceScore: 95,
+};
+const nextBodySnapshot = { ...snapshot, core: [], design: [], general: [nextBodyCandidate] };
+const nextBodyBrowser = webRouter.match(nextBodySnapshot, nextBodyQuery, 3);
+assert.deepEqual(nextBodyBrowser.matches.map((skill) => skill.id), [nextBodyCandidate.id], 'candidate-owned full-SKILL routing evidence must produce a focused browser result');
+const nextBodySignals = new Set((nextBodyBrowser.matches[0]?.match_details?.matched_signals || []).map(webRouter.canon));
+for (const signal of ['nextjs', 'app-router']) assert.ok(nextBodySignals.has(signal), `full candidate SKILL evidence lost ${signal}`);
+const nextBodyEval = evaluateRoutingCase({
+  id: 'fixture-next-body', domain: 'Frontend', tier: 'coverage', expectedAnyIds: [], minExpectedHits: 0,
+  requiredSignalTerms: ['nextjs', 'app-router'], minSignalHits: 2, maxLowEvidenceTop3: 0,
+}, nextBodyBrowser.matches, {
+  source: nextBodyBrowser.source,
+  registryMode: 'local-bundled',
+  capabilityGap: nextBodyBrowser.capability_gap,
+});
+assert.ok(nextBodyEval.pass && nextBodyEval.candidate_evidence_failures === 0, 'full candidate SKILL evidence must satisfy the strict Eval contract');
+const nextBodyDir = fs.mkdtempSync(path.join(os.tmpdir(), 'skillradar-next-body-'));
+const nextBodyPath = path.join(nextBodyDir, 'registry.json');
+try {
+  fs.writeFileSync(nextBodyPath, JSON.stringify(nextBodySnapshot));
+  const nextBodyPlugin = pluginMatch(nextBodyQuery, nextBodyPath);
+  assert.deepEqual(nextBodyPlugin.matches.map((skill) => skill.id), [nextBodyCandidate.id], 'full candidate SKILL evidence must route identically in the Plugin');
+} finally {
+  fs.rmSync(nextBodyDir, { recursive: true, force: true });
 }
 
 const parityQueries = [
