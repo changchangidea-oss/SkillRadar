@@ -45,4 +45,6 @@ const t=spec.thresholds||{}
 if(metrics.contract.passRate<Number(t.contractPassRate??1))process.exitCode=1
 if(metrics.coverage.passRate<Number(t.coveragePassRate??0))process.exitCode=1
 if(metrics.unsafeTop3>Number(t.unsafeTop3??0))process.exitCode=1
+if(metrics.lowEvidenceTop3>Number(t.lowEvidenceTop3??0))process.exitCode=1
+if(metrics.candidateEvidenceFailures>Number(t.candidateEvidenceFailures??0))process.exitCode=1
 if(metrics.averageTop1Score<Number(t.minAverageTop1Score??0))process.exitCode=1
