@@ -24,10 +24,11 @@
     ['服装', ['fashion', 'campaign']], ['时尚', ['fashion', 'brand']], ['交互', ['interaction', 'ux', 'ui']], ['数媒', ['digital-media', 'creative-coding']], ['影视', ['film', 'video', 'editing', 'vfx']],
     ['工艺', ['craft', 'fabrication']], ['民间艺术', ['illustration', 'hand-drawn', 'collage', 'pattern', 'craft']], ['纹样', ['pattern', 'illustration', 'vector']],
   ];
-  const SPECIFICITY_SIGNALS = new Set(['playwright', 'mcp', 'rag', 'embeddings', 'orchestration', 'fastapi', 'node', 'graphql', 'redis', 'sqlite', 'vitest', 'docker', 'kubernetes', 'vulnerability', 'secrets', 'permissions', 'reactnative', 'expo', 'swiftui', 'android', 'kotlin', 'flutter', 'slack', 'gmail', 'calendar', 'webhook', 'documentation', 'github', 'notion', 'figma', 'poster']);
+  const SPECIFICITY_SIGNALS = new Set(['playwright', 'mcp', 'rag', 'embeddings', 'orchestration', 'fastapi', 'node', 'graphql', 'postgres', 'redis', 'sqlite', 'vitest', 'docker', 'kubernetes', 'vulnerability', 'secrets', 'permissions', 'reactnative', 'expo', 'swiftui', 'android', 'kotlin', 'flutter', 'slack', 'gmail', 'calendar', 'webhook', 'documentation', 'github', 'notion', 'figma', 'poster']);
   const CANDIDATE_EVIDENCE_RULES = {
     mcp: { identity: ['mcp'], minSignals: 2 },
     orchestration: { identity: ['agent', 'orchestration'], minSignals: 1 },
+    postgres: { identity: ['postgres', 'postgresql'], minSignals: 2 },
     sqlite: { identity: ['sqlite'], minSignals: 2 },
     vitest: { identity: ['vitest'], minSignals: 2 },
     flutter: { identity: ['flutter'], minSignals: 2 },
