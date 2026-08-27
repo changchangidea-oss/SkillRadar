@@ -35,6 +35,11 @@ async function ghText(repo,filePath,ref){
 function hash(text){return crypto.createHash('sha256').update(text||'').digest('hex').slice(0,20)}
 function words(text){return [...new Set(String(text||'').toLowerCase().replace(/next\.js/g,'nextjs').split(/[^a-z0-9+#.-]+/).filter(x=>x.length>2))]}
 function titleCase(s=''){return s.replace(/[-_]+/g,' ').replace(/\b\w/g,m=>m.toUpperCase())}
+function routingEvidence(contract='',classes=[]){
+  const text=String(contract).toLowerCase().replace(/next\.js/g,'nextjs'),tokens=new Set(text.split(/[^a-z0-9+#.-]+/).filter(Boolean))
+  const appears=term=>{const t=String(term||'').toLowerCase().replace(/next\.js/g,'nextjs').replace(/[^a-z0-9+#.-]+/g,'-').replace(/^-+|-+$/g,'');return t&&(tokens.has(t)||(t.length>=5&&text.includes(t)))}
+  return [...new Set(classes.slice(0,3).flatMap(c=>c.matched||[]).filter(appears))].slice(0,24)
+}
 function summary(md='',fm={}){
   if(fm.description)return String(fm.description).replace(/\s+/g,' ').trim().slice(0,320)
   const body=md.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/,'').replace(/```[\s\S]*?```/g,' ').replace(/^#+\s*/gm,'').replace(/\[(.*?)\]\(.*?\)/g,'$1')
@@ -133,10 +138,11 @@ for(const item of coarseList){
     const sec=securityScan([md,...scriptTexts].join('\n\n'),executablePaths.length,scriptScanComplete),name=fm.name||titleCase(item.slug),sum=summary(md,fm)
     const classes=classify(`${name} ${sum} ${fm.description||''} ${item.skillPath} ${item.repoDescription} ${md.slice(0,8000)}`,domains,item.hints),best=classes[0]||{relevance:0,domainName:'General'}
     const q=quality(md,fm,item.treePaths,baseDir),maint=recency(item.pushedAt),pop=popularity(item.repoStars),discoveryScore=round(Math.min(100,item.channels.length*24+item.hints.length*8+(item.repoStars>20?12:0)))
+    const contractEvidence=routingEvidence(`${name} ${item.slug} ${fm.description||''}`,classes)
     const prior=prevMap.get(item.key),firstSeenAt=prior?.firstSeenAt||iso(),seenDays=Math.max(1,Math.floor((Date.now()-new Date(firstSeenAt).getTime())/86400000)+1)
     const signalScore=round(best.relevance*.30+q*.19+sec.score*.19+maint*.14+pop*.07+discoveryScore*.07+Math.min(100,seenDays*12)*.04)
     const status=sec.grade==='Blocked'?'blocked':sec.grade==='D'?'review':best.relevance<18?'low-relevance':'active'
-    analyzed.push({id:`${item.source}/${item.slug}-${hash(item.skillPath).slice(0,6)}`,name,slug:item.slug,source:item.source,skillPath:item.skillPath,githubUrl:item.githubUrl,installUrl:item.installUrl,summary:sum,category:best.domainName,tags:[...new Set(classes.slice(0,3).flatMap(c=>c.matched))].slice(0,14),domains:classes.filter(c=>c.relevance>=18).slice(0,4).map(c=>c.domainId),repoStars:item.repoStars,pushedAt:item.pushedAt,contentHash:hash(md),discovery:'github-general-radar',discoveryChannels:item.channels,discoveryScore,firstSeenAt,lastSeenAt:iso(),seenDays,qualityScore:q,maintenanceScore:maint,popularityScore:pop,security:sec.grade,securityScore:sec.score,securityFindings:sec.findings,scriptScan:{total:executablePaths.length,scanned:scriptTexts.length,complete:scriptScanComplete},capabilities:sec.capabilities,classifications:classes.slice(0,4),signalScore,status})
+    analyzed.push({id:`${item.source}/${item.slug}-${hash(item.skillPath).slice(0,6)}`,name,slug:item.slug,source:item.source,skillPath:item.skillPath,githubUrl:item.githubUrl,installUrl:item.installUrl,summary:sum,routingEvidence:contractEvidence,category:best.domainName,tags:[...new Set(classes.slice(0,3).flatMap(c=>c.matched))].slice(0,14),domains:classes.filter(c=>c.relevance>=18).slice(0,4).map(c=>c.domainId),repoStars:item.repoStars,pushedAt:item.pushedAt,contentHash:hash(md),discovery:'github-general-radar',discoveryChannels:item.channels,discoveryScore,firstSeenAt,lastSeenAt:iso(),seenDays,qualityScore:q,maintenanceScore:maint,popularityScore:pop,security:sec.grade,securityScore:sec.score,securityFindings:sec.findings,scriptScan:{total:executablePaths.length,scanned:scriptTexts.length,complete:scriptScanComplete},capabilities:sec.capabilities,classifications:classes.slice(0,4),signalScore,status})
   }catch(e){errors.push({stage:'analyze',repo:item.source,path:item.skillPath,error:String(e.message||e)})}
   await sleep(35)
 }
