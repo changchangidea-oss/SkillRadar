@@ -133,7 +133,7 @@
   function fieldText(skill) {
     return {
       identity: `${skill.id || ''} ${skill.name || ''}`.toLowerCase(),
-      tags: `${(skill.tags || []).join(' ')} ${(skill.uses || []).join(' ')}`.toLowerCase(),
+      tags: `${(skill.tags || []).join(' ')} ${(skill.uses || []).join(' ')} ${(skill.routingEvidence || []).join(' ')}`.toLowerCase(),
       domains: `${(skill.domains || []).join(' ')} ${skill.category || ''}`.toLowerCase(),
       summary: String(skill.summary || '').toLowerCase(),
       source: String(skill.source || '').toLowerCase(),
