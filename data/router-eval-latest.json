@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T06:26:25.945Z",
+  "generatedAt": "2026-08-27T06:52:32.607Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
@@ -20,12 +20,12 @@
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
   "specificityFailures": 0,
-  "capabilityGapCases": 33,
+  "capabilityGapCases": 32,
   "averageRecommendationCount": 1.96,
   "averageRelevantTop3": 1.96,
-  "averageTop1Score": 79.8,
+  "averageTop1Score": 79,
   "expectedHitsTotal": 32,
-  "signalHitsTotal": 137,
+  "signalHitsTotal": 136,
   "anchorSignalHitsTotal": 34,
   "byDomain": {
     "AI Agents": {
@@ -34,9 +34,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 5,
+      "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 1.5
+      "averageRecommendationCount": 1.83
     },
     "Frontend": {
       "cases": 8,
@@ -44,9 +44,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 6,
+      "capabilityGapCases": 5,
       "passRate": 1,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 1.88
     },
     "Design & Media": {
       "cases": 5,
@@ -54,9 +54,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 0,
+      "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 3
+      "averageRecommendationCount": 2.6
     },
     "Data & Database": {
       "cases": 5,
@@ -96,7 +96,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 1.5
     },
     "Security": {
       "cases": 4,
@@ -723,8 +723,8 @@
       "pass": true,
       "top3": [
         "playwright-testing",
-        "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "voidmatcha/e2e-skills/skill-material-b6c108"
+        "langgenius/dify/frontend-testing-c86f15",
+        "langgenius/dify/e2e-cucumber-playwright-1de203"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -758,6 +758,23 @@
           ]
         },
         {
+          "id": "langgenius/dify/frontend-testing-c86f15",
+          "score": 81,
+          "coverage": 0.72,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "end-to-end",
+            "playwright",
+            "tests",
+            "web"
+          ]
+        },
+        {
           "id": "langgenius/dify/e2e-cucumber-playwright-1de203",
           "score": 81,
           "coverage": 0.72,
@@ -773,22 +790,6 @@
             "browser",
             "tests"
           ]
-        },
-        {
-          "id": "voidmatcha/e2e-skills/skill-material-b6c108",
-          "score": 70,
-          "coverage": 0.6,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "end-to-end",
-            "playwright",
-            "tests"
-          ]
         }
       ],
       "signals": [
@@ -798,10 +799,11 @@
         "browser",
         "tests",
         "playwright-testing",
+        "web",
+        "langgenius-dify-frontend-testing-c86f15",
+        "frontend-testing",
         "langgenius-dify-e2e-cucumber-playwright-1de203",
-        "e2e-cucumber-playwright",
-        "voidmatcha-e2e-skills-skill-material-b6c108",
-        "playwright-test-generator"
+        "e2e-cucumber-playwright"
       ]
     },
     {
@@ -811,18 +813,19 @@
       "pass": true,
       "top3": [
         "ai-sdk",
-        "ruvnet/ruflo/vector-search-f41cc6"
+        "ruvnet/ruflo/vector-search-f41cc6",
+        "digoal/blog/digoal-read-think-writer-8f09ad"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 57,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 2,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -854,6 +857,20 @@
           "signals": [
             "embeddings"
           ]
+        },
+        {
+          "id": "digoal/blog/digoal-read-think-writer-8f09ad",
+          "score": 36,
+          "coverage": 0.2,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "rag"
+          ]
         }
       ],
       "signals": [
@@ -861,7 +878,9 @@
         "embeddings",
         "ai-sdk",
         "ruvnet-ruflo-vector-search-f41cc6",
-        "vector-search"
+        "vector-search",
+        "digoal-blog-digoal-read-think-writer-8f09ad",
+        "digoal-read-think-writer"
       ]
     },
     {
@@ -870,18 +889,19 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d"
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
+        "microsoft/mcp/mcp-code-reviewer-efe3d0"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 58,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -900,6 +920,21 @@
             "agent",
             "tools"
           ]
+        },
+        {
+          "id": "microsoft/mcp/mcp-code-reviewer-efe3d0",
+          "score": 45,
+          "coverage": 0.26,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "mcp",
+            "agent"
+          ]
         }
       ],
       "signals": [
@@ -907,7 +942,9 @@
         "agent",
         "tools",
         "nicobailon-pi-mcp-adapter-mcp-scripting-c25b1d",
-        "mcp-scripting"
+        "mcp-scripting",
+        "microsoft-mcp-mcp-code-reviewer-efe3d0",
+        "mcp-code-reviewer"
       ]
     },
     {
@@ -1205,10 +1242,11 @@
       "pass": true,
       "top3": [
         "nextjs",
+        "hookdeck/webhook-skills/webhook-handler-patterns-60609e",
         "affaan-m/ECC/backend-patterns-ac648c"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 93,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -1216,7 +1254,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1237,6 +1275,23 @@
             "fetching",
             "route",
             "architecture"
+          ]
+        },
+        {
+          "id": "hookdeck/webhook-skills/webhook-handler-patterns-60609e",
+          "score": 75,
+          "coverage": 0.68,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "nextjs",
+            "app-router",
+            "implement",
+            "route"
           ]
         },
         {
@@ -1264,6 +1319,9 @@
         "fetching",
         "route",
         "architecture",
+        "implement",
+        "hookdeck-webhook-skills-webhook-handler-patterns-60609e",
+        "webhook-handler-patterns",
         "affaan-m-ecc-backend-patterns-ac648c",
         "backend-patterns"
       ]
@@ -1407,39 +1465,21 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 80,
+      "top1_score": 66,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
-          "score": 80,
-          "coverage": 0.8,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "design",
-            "graphql",
-            "api",
-            "backend"
-          ]
-        },
         {
           "id": "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
           "score": 66,
@@ -1458,12 +1498,9 @@
         }
       ],
       "signals": [
-        "design",
         "graphql",
         "api",
         "backend",
-        "sickn33-agentic-awesome-skills-api-patterns-4d18ab",
-        "api-patterns",
         "sickn33-agentic-awesome-skills-api-fuzzing-bug-bounty-3b1229",
         "api-fuzzing-bug-bounty"
       ]
@@ -1664,7 +1701,7 @@
         },
         {
           "id": "redis/agent-skills/redis-core-29e2a4",
-          "score": 59,
+          "score": 60,
           "coverage": 0.5,
           "expected": false,
           "relevant": true,
@@ -1888,7 +1925,7 @@
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 90,
+      "top1_score": 91,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -1901,7 +1938,7 @@
       "candidates": [
         {
           "id": "antfu/skills/vitest-8d8886",
-          "score": 90,
+          "score": 91,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -2176,7 +2213,7 @@
         },
         {
           "id": "callstackincubator/agent-skills/github-actions-53c661",
-          "score": 57,
+          "score": 60,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3458,90 +3495,42 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
-        "nexu-io/open-design/html-ppt-zhangzara-raw-grid",
-        "nexu-io/open-design/gamified-app"
+        "vanducng/skills/marketing-design-678c70"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
-      "top1_score": 79,
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 51,
       "expected_hits": 0,
-      "signal_hits": 3,
+      "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
-          "score": 79,
-          "coverage": 0.71,
+          "id": "vanducng/skills/marketing-design-678c70",
+          "score": 51,
+          "coverage": 0.29,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 3,
+          "required_hits": 2,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "visual",
-            "typography",
             "poster",
-            "layout",
-            "brand"
-          ]
-        },
-        {
-          "id": "nexu-io/open-design/html-ppt-zhangzara-raw-grid",
-          "score": 78,
-          "coverage": 0.71,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "visual",
-            "typography",
-            "poster",
-            "layout",
-            "brand"
-          ]
-        },
-        {
-          "id": "nexu-io/open-design/gamified-app",
-          "score": 75,
-          "coverage": 0.71,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "visual",
-            "typography",
-            "poster",
-            "layout",
             "brand"
           ]
         }
       ],
       "signals": [
-        "visual",
-        "typography",
         "poster",
-        "layout",
         "brand",
-        "nexu-io-open-design-html-ppt-zhangzara-bold-poster",
-        "html-ppt-zhangzara-bold-poster",
-        "nexu-io-open-design-html-ppt-zhangzara-raw-grid",
-        "html-ppt-zhangzara-raw-grid",
-        "nexu-io-open-design-gamified-app",
-        "gamified-app"
+        "vanducng-skills-marketing-design-678c70",
+        "marketing-design"
       ]
     },
     {

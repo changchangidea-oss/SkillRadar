@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-27T06:26:45.033Z",
+  "generatedAt": "2026-08-27T06:52:47.290Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "b7d2693823d2d1b2ba56a5c82e2e95e6eff5876a14ccbec85d51c19f5e2ea087",
+    "contentHash": "b80f2da7eb4845115ff5c4e3e95b8b44669afda2532f180b8112b502679b3181",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-27T06:26:13.493Z",
-    "totalCount": 447,
+    "generatedAt": "2026-08-27T06:52:23.037Z",
+    "totalCount": 448,
     "mode": "local-bundled"
   },
   "production": {
@@ -20,12 +20,12 @@
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 0,
-    "capabilityGapCases": 33,
+    "capabilityGapCases": 32,
     "averageRecommendationCount": 1.96,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 137,
+    "signalHitsTotal": 136,
     "anchorSignalHitsTotal": 34,
-    "averageTop1Score": 79.8
+    "averageTop1Score": 79
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
@@ -38,12 +38,12 @@
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 0,
-    "capabilityGapCases": 33,
+    "capabilityGapCases": 32,
     "averageRecommendationCount": 1.96,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 137,
+    "signalHitsTotal": 136,
     "anchorSignalHitsTotal": 34,
-    "averageTop1Score": 79.8
+    "averageTop1Score": 79
   },
   "gates": {
     "safetyPass": true,
@@ -247,13 +247,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "playwright-testing",
-        "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "voidmatcha/e2e-skills/skill-material-b6c108"
+        "langgenius/dify/frontend-testing-c86f15",
+        "langgenius/dify/e2e-cucumber-playwright-1de203"
       ],
       "candidateTop3": [
         "playwright-testing",
-        "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "voidmatcha/e2e-skills/skill-material-b6c108"
+        "langgenius/dify/frontend-testing-c86f15",
+        "langgenius/dify/e2e-cucumber-playwright-1de203"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -270,14 +270,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "ai-sdk",
-        "ruvnet/ruflo/vector-search-f41cc6"
+        "ruvnet/ruflo/vector-search-f41cc6",
+        "digoal/blog/digoal-read-think-writer-8f09ad"
       ],
       "candidateTop3": [
         "ai-sdk",
-        "ruvnet/ruflo/vector-search-f41cc6"
+        "ruvnet/ruflo/vector-search-f41cc6",
+        "digoal/blog/digoal-read-think-writer-8f09ad"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -290,13 +292,15 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d"
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
+        "microsoft/mcp/mcp-code-reviewer-efe3d0"
       ],
       "candidateTop3": [
-        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d"
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
+        "microsoft/mcp/mcp-code-reviewer-efe3d0"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -409,14 +413,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "nextjs",
+        "hookdeck/webhook-skills/webhook-handler-patterns-60609e",
         "affaan-m/ECC/backend-patterns-ac648c"
       ],
       "candidateTop3": [
         "nextjs",
+        "hookdeck/webhook-skills/webhook-handler-patterns-60609e",
         "affaan-m/ECC/backend-patterns-ac648c"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -471,15 +477,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
       "candidateTop3": [
-        "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1122,17 +1126,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
-        "nexu-io/open-design/html-ppt-zhangzara-raw-grid",
-        "nexu-io/open-design/gamified-app"
+        "vanducng/skills/marketing-design-678c70"
       ],
       "candidateTop3": [
-        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
-        "nexu-io/open-design/html-ppt-zhangzara-raw-grid",
-        "nexu-io/open-design/gamified-app"
+        "vanducng/skills/marketing-design-678c70"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
