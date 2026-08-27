@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import crypto from 'node:crypto'
+import { parseSkillFrontmatter } from './lib/skill-frontmatter.mjs'
 
 const root = path.resolve(new URL('..', import.meta.url).pathname, '..')
 const p = (...parts) => path.join(root, ...parts)
@@ -50,21 +51,8 @@ function words(text) {
 function titleCase(s='') {
   return s.replace(/[-_]+/g,' ').replace(/\b\w/g,m=>m.toUpperCase())
 }
-function parseFrontmatter(md='') {
-  const out = {}
-  const m = md.match(/^---\s*\n([\s\S]*?)\n---\s*\n?/)
-  if (!m) return out
-  for (const line of m[1].split('\n')) {
-    const x=line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/)
-    if (!x) continue
-    let v=x[2].trim()
-    if ((v.startsWith('"')&&v.endsWith('"'))||(v.startsWith("'")&&v.endsWith("'"))) v=v.slice(1,-1)
-    out[x[1]]=v
-  }
-  return out
-}
 function plainSummary(md='', fm={}) {
-  if (fm.description) return String(fm.description).slice(0,320)
+  if (fm.description) return String(fm.description).replace(/\s+/g,' ').trim().slice(0,320)
   let body=md.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/,'')
   body=body.replace(/```[\s\S]*?```/g,' ').replace(/^#+\s*/gm,'').replace(/\[(.*?)\]\(.*?\)/g,'$1')
   const para=body.split(/\n\s*\n/).map(x=>x.replace(/\s+/g,' ').trim()).find(x=>x.length>35)
@@ -190,7 +178,7 @@ const coarseList=[...coarse.values()].sort((a,b)=>b.repoStars-a.repoStars).slice
 for (const item of coarseList) {
   try {
     const md=await ghText(item.source,item.skillPath,item.defaultBranch); if (!md || md.length<40) continue
-    const fm=parseFrontmatter(md); const baseDir=item.skillPath.replace(/SKILL\.md$/i,'')
+    const fm=parseSkillFrontmatter(md); const baseDir=item.skillPath.replace(/SKILL\.md$/i,'')
     const scriptPaths=item.treePaths.filter(x=>x.startsWith(baseDir)&&/(^|\/)scripts\/.*\.(?:sh|bash|zsh|js|mjs|cjs|ts|py|ps1)$/i.test(x)).slice(0,4)
     const scriptTexts=[]
     for (const file of scriptPaths) { try { scriptTexts.push(await ghText(item.source,file,item.defaultBranch)) } catch(e) { errors.push({stage:'script-fetch',repo:item.source,path:file,error:String(e.message||e)}) }; await sleep(35) }

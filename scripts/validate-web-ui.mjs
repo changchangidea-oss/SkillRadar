@@ -58,6 +58,24 @@ poisoned.general = [...(poisoned.general || []), {
 }];
 assert.ok(!webRouter.registrySkills(poisoned).some((skill) => skill.id === 'evil-fixture'), 'D-grade malicious fixture must be excluded before rendering/routing');
 
+const posterCapability = structuredClone(snapshot);
+posterCapability.general = [...(posterCapability.general || []), {
+  id: 'vanducng/skills/marketing-design-fixture',
+  name: 'marketing-design',
+  source: 'vanducng/skills',
+  category: 'Design & Media',
+  tags: ['poster', 'brand', 'visual', 'identity', 'campaign'],
+  summary: 'Marketing brand-asset generation: corporate identity and brand visual identity assets, plus poster design for event, editorial, and marketing campaigns.',
+  security: 'C',
+  signalScore: 80,
+  maintenanceScore: 95,
+}];
+const posterMatch = webRouter.match(posterCapability, '设计品牌海报和视觉传播系统', 3);
+const marketingDesign = posterMatch.matches.find((skill) => skill.id === 'vanducng/skills/marketing-design-fixture');
+assert.ok(marketingDesign, 'an eligible dedicated marketing-design Skill must route for the Chinese poster/brand task');
+const marketingSignals = new Set((marketingDesign.match_details?.matched_signals || []).map(webRouter.canon));
+for (const signal of ['poster', 'brand', 'visual']) assert.ok(marketingSignals.has(signal), `marketing-design lost explicit ${signal} evidence`);
+
 const appSource = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
 assert.match(appSource, /packages\/codex-plugin\/data\/registry\.json/, 'web app must load the complete bundled safety-gated registry');
 assert.match(appSource, /webRouter\.match\(registrySnapshot, query, 3\)/, 'web app must use the shared Matching v2.1 browser router');

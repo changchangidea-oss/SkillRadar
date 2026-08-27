@@ -3,6 +3,7 @@ import path from 'node:path'
 import crypto from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 import { canonicalCandidateKeys, prioritizeAnalysisCandidates, prioritizeCanonicalCandidates } from './lib/canonical-seeds.mjs'
+import { parseSkillFrontmatter } from './lib/skill-frontmatter.mjs'
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..')
 const p=(...parts)=>path.join(root,...parts)
@@ -34,13 +35,8 @@ async function ghText(repo,filePath,ref){
 function hash(text){return crypto.createHash('sha256').update(text||'').digest('hex').slice(0,20)}
 function words(text){return [...new Set(String(text||'').toLowerCase().replace(/next\.js/g,'nextjs').split(/[^a-z0-9+#.-]+/).filter(x=>x.length>2))]}
 function titleCase(s=''){return s.replace(/[-_]+/g,' ').replace(/\b\w/g,m=>m.toUpperCase())}
-function parseFrontmatter(md=''){
-  const out={};const m=md.match(/^---\s*\n([\s\S]*?)\n---\s*\n?/);if(!m)return out
-  for(const line of m[1].split('\n')){const x=line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);if(!x)continue;let v=x[2].trim();if((v.startsWith('"')&&v.endsWith('"'))||(v.startsWith("'")&&v.endsWith("'")))v=v.slice(1,-1);out[x[1]]=v}
-  return out
-}
 function summary(md='',fm={}){
-  if(fm.description)return String(fm.description).slice(0,320)
+  if(fm.description)return String(fm.description).replace(/\s+/g,' ').trim().slice(0,320)
   const body=md.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/,'').replace(/```[\s\S]*?```/g,' ').replace(/^#+\s*/gm,'').replace(/\[(.*?)\]\(.*?\)/g,'$1')
   return (body.split(/\n\s*\n/).map(x=>x.replace(/\s+/g,' ').trim()).find(x=>x.length>35)||'Open-source agent skill discovered by SkillRadar.').slice(0,320)
 }
@@ -129,7 +125,7 @@ const analyzed=[]
 for(const item of coarseList){
   try{
     const md=await ghText(item.source,item.skillPath,item.defaultBranch);if(!md||md.length<40)continue
-    const fm=parseFrontmatter(md),baseDir=item.skillPath.replace(/SKILL\.md$/i,'')
+    const fm=parseSkillFrontmatter(md),baseDir=item.skillPath.replace(/SKILL\.md$/i,'')
     const executablePaths=item.treePaths.filter(x=>x.startsWith(baseDir)&&/(^|\/)scripts\/.*\.(?:sh|bash|zsh|js|mjs|cjs|ts|py|ps1)$/i.test(x))
     const scriptPaths=executablePaths.slice(0,MAX_SCRIPT_SCAN),scriptTexts=[];let scriptScanComplete=scriptPaths.length===executablePaths.length
     for(const file of scriptPaths){try{scriptTexts.push(await ghText(item.source,file,item.defaultBranch))}catch(e){scriptScanComplete=false;errors.push({stage:'script-fetch',repo:item.source,path:file,error:String(e.message||e)})};await sleep(25)}

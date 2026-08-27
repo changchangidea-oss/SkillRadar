@@ -110,10 +110,21 @@
     "hint": "design-media",
     "searchTerms": ["poster"],
     "paths": [
-      "design-templates/html-ppt-zhangzara-bold-poster/SKILL.md",
       "design-templates/image-poster/SKILL.md",
       "design-templates/magazine-poster/SKILL.md"
     ],
-    "reason": "Apache-2.0 poster-design Skills that previously passed live SkillRadar discovery. Canonical paths prevent transient design-search volatility from erasing the capability, without bypassing any downstream safety or relevance gate."
+    "reason": "Apache-2.0 poster-design Skills that previously passed live SkillRadar discovery. The misleadingly named html-ppt poster path is intentionally not canonical because its actual task is a fundraising pitch deck. Canonical paths prevent transient design-search volatility from erasing real poster capability, without bypassing any downstream safety or relevance gate."
+  },
+  {
+    "repo": "vanducng/skills",
+    "hint": "design-media",
+    "searchTerms": [
+      "poster",
+      "brand"
+    ],
+    "paths": [
+      "skills/marketing-design/SKILL.md"
+    ],
+    "reason": "The MIT-licensed marketing-design Skill explicitly covers poster design, corporate/brand visual identity, banners, and campaign assets. The exact path is guaranteed analysis only for related poster or brand searches and must still pass the full content, 14-script, relevance, and D/Blocked security scans before publication."
   }
 ]

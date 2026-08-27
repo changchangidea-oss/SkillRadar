@@ -10,6 +10,7 @@
     "validate:router-eval-policy": "node scripts/validate-router-eval-policy.mjs",
     "validate:shadow-history": "node scripts/validate-shadow-history.mjs",
     "validate:canonical-seeds": "node scripts/validate-canonical-seeds.mjs",
+    "validate:skill-frontmatter": "node scripts/validate-skill-frontmatter.mjs",
     "validate:registry-hash": "node scripts/validate-registry-content-hash.mjs",
     "validate:adoption-metrics": "node scripts/validate-adoption-metrics.mjs",
     "benchmark:router": "node scripts/benchmark-router.mjs",
