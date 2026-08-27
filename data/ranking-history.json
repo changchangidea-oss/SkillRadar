@@ -3692,7 +3692,7 @@
     },
     {
       "date": "2026-08-27",
-      "generatedAt": "2026-08-27T05:40:15.866Z",
+      "generatedAt": "2026-08-27T06:22:40.078Z",
       "domains": {
         "ui-design": [
           {
@@ -3761,11 +3761,6 @@
             "source": "seed"
           },
           {
-            "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
-            "score": 66,
-            "source": "radar"
-          },
-          {
             "skillId": "figma/mcp-server-guide/figma-design-to-code",
             "score": 65,
             "source": "seed"
@@ -3794,6 +3789,11 @@
             "skillId": "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
             "score": 61,
             "source": "seed"
+          },
+          {
+            "skillId": "nexu-io/open-design/mobile-onboarding",
+            "score": 60,
+            "source": "radar"
           }
         ],
         "visual-communication": [
@@ -3965,39 +3965,39 @@
             "source": "seed"
           },
           {
-            "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
-            "score": 62,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+            "score": 61,
             "source": "radar"
           },
           {
-            "skillId": "remotion-dev/skills/remotion-best-practices",
-            "score": 57,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-broadside",
+            "score": 61,
+            "source": "radar"
           },
           {
-            "skillId": "remotion-dev/skills/remotion-create",
-            "score": 55,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/guizang-ppt",
+            "score": 61,
+            "source": "radar"
           },
           {
-            "skillId": "remotion-dev/skills/remotion-render",
-            "score": 55,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-capsule",
+            "score": 60,
+            "source": "radar"
           },
           {
-            "skillId": "remotion-dev/skills/remotion-markup",
-            "score": 55,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/hyperframes",
+            "score": 59,
+            "source": "radar"
           },
           {
-            "skillId": "remotion-dev/skills/remotion-interactivity",
-            "score": 55,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/codex-interactive-capability-map",
+            "score": 59,
+            "source": "radar"
           },
           {
-            "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
-            "score": 55,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-sakura-chroma",
+            "score": 59,
+            "source": "radar"
           }
         ],
         "video-design": [
@@ -4010,6 +4010,11 @@
             "skillId": "remotion-dev/skills/remotion-multimedia",
             "score": 73,
             "source": "seed"
+          },
+          {
+            "skillId": "nexu-io/open-design/hyperframes",
+            "score": 66,
+            "source": "radar"
           },
           {
             "skillId": "remotion-dev/skills/remotion-create",
@@ -4067,39 +4072,34 @@
             "source": "seed"
           },
           {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-capsule",
+            "score": 62,
+            "source": "radar"
+          },
+          {
             "skillId": "ibelick/ui-skills/baseline-ui",
             "score": 61,
             "source": "seed"
           },
           {
-            "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/seedance-2-5-skill",
-            "score": 56,
+            "skillId": "nexu-io/open-design/mobile-onboarding",
+            "score": 61,
             "source": "radar"
           },
           {
-            "skillId": "leonxlnx/taste-skill/high-end-visual-design",
-            "score": 54,
-            "source": "seed"
-          },
-          {
-            "skillId": "nirholas/three.ws/ai-game-world-design",
-            "score": 53,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
+            "score": 61,
             "source": "radar"
           },
           {
-            "skillId": "pbakaus/impeccable/animate",
-            "score": 52,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-monochrome",
+            "score": 61,
+            "source": "radar"
           },
           {
-            "skillId": "pbakaus/impeccable/delight",
-            "score": 52,
-            "source": "seed"
-          },
-          {
-            "skillId": "calesthio/generative-media-skills/cinematic-shot-direction",
-            "score": 52,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-neo-grid-bold",
+            "score": 61,
+            "source": "radar"
           }
         ],
         "industrial-design": [
@@ -4236,16 +4236,6 @@
             "source": "seed"
           },
           {
-            "skillId": "nirholas/three.ws/ai-game-world-design",
-            "score": 57,
-            "source": "radar"
-          },
-          {
-            "skillId": "nirholas/three.ws/decentralized-proxy-guide",
-            "score": 49,
-            "source": "radar"
-          },
-          {
             "skillId": "roble3/cc-blender-skill/blender-export",
             "score": 47,
             "source": "seed"
@@ -4304,6 +4294,16 @@
             "skillId": "curiositech/some_claude_skills/design-critic",
             "score": 35,
             "source": "seed"
+          },
+          {
+            "skillId": "meshy-dev/meshy-3d-agent/meshy-3d-printing",
+            "score": 34,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/meshy-3d",
+            "score": 33,
+            "source": "seed"
           }
         ],
         "fashion-design": [
@@ -4353,6 +4353,11 @@
             "source": "seed"
           },
           {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-studio",
+            "score": 64,
+            "source": "radar"
+          },
+          {
             "skillId": "pbakaus/impeccable/polish",
             "score": 63,
             "source": "seed"
@@ -4363,49 +4368,44 @@
             "source": "seed"
           },
           {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+            "score": 61,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-coral",
+            "score": 60,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-pin-and-paper",
+            "score": 58,
+            "source": "radar"
+          },
+          {
             "skillId": "anthropics/skills/frontend-design",
             "score": 57,
             "source": "seed"
           },
           {
-            "skillId": "pbakaus/impeccable/typeset",
-            "score": 55,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-editorial-tri-tone",
+            "score": 57,
+            "source": "radar"
           },
           {
-            "skillId": "curiositech/some_claude_skills/design-critic",
-            "score": 54,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-creative-mode",
+            "score": 57,
+            "source": "radar"
           },
           {
-            "skillId": "calesthio/generative-media-skills/lighting-direction",
-            "score": 51,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/replit-deck",
+            "score": 57,
+            "source": "radar"
           },
           {
-            "skillId": "mblode/agent-skills/ui-design",
-            "score": 48,
-            "source": "seed"
-          },
-          {
-            "skillId": "narumiruna/skills/svg-illustration",
-            "score": 48,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/typography-expert",
-            "score": 47,
-            "source": "seed"
-          },
-          {
-            "skillId": "heroygt/skills/svg-icon-maker",
-            "score": 47,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/hand-drawn-infographic-creator",
-            "score": 46,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/image-poster",
+            "score": 56,
+            "source": "radar"
           }
         ],
         "experience-design": [
@@ -4440,14 +4440,19 @@
             "source": "seed"
           },
           {
-            "skillId": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
-            "score": 69,
-            "source": "radar"
-          },
-          {
             "skillId": "curiositech/some_claude_skills/native-app-designer",
             "score": 65,
             "source": "seed"
+          },
+          {
+            "skillId": "nexu-io/open-design/mobile-onboarding",
+            "score": 65,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+            "score": 65,
+            "source": "radar"
           },
           {
             "skillId": "curiositech/some_claude_skills/design-accessibility-auditor",
@@ -4460,54 +4465,49 @@
             "source": "seed"
           },
           {
-            "skillId": "pbakaus/impeccable/impeccable",
+            "skillId": "nexu-io/open-design/codex-interactive-capability-map",
+            "score": 63,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/waitlist-page",
+            "score": 63,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/hr-onboarding",
             "score": 62,
             "source": "radar"
           },
           {
-            "skillId": "vercel-labs/agent-skills/web-design-guidelines",
-            "score": 56,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/audit",
-            "score": 55,
-            "source": "seed"
-          },
-          {
-            "skillId": "ibelick/ui-skills/baseline-ui",
-            "score": 53,
-            "source": "seed"
-          },
-          {
-            "skillId": "nirholas/three.ws/research-assistant",
-            "score": 50,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-broadside",
+            "score": 62,
             "source": "radar"
           },
           {
-            "skillId": "nirholas/three.ws/vc-research-intelligence",
-            "score": 49,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-capsule",
+            "score": 62,
             "source": "radar"
           },
           {
-            "skillId": "nirholas/three.ws/recommendation-algorithm-design",
-            "score": 48,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-grove",
+            "score": 62,
             "source": "radar"
           },
           {
-            "skillId": "nirholas/three.ws/token-research",
-            "score": 47,
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-playful",
+            "score": 62,
             "source": "radar"
           },
           {
-            "skillId": "figma/mcp-server-guide/implement-design",
-            "score": 46,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-studio",
+            "score": 61,
+            "source": "radar"
           },
           {
-            "skillId": "figma/mcp-server-guide/figma-generate-design",
-            "score": 45,
-            "source": "seed"
+            "skillId": "nexu-io/open-design/x-research",
+            "score": 61,
+            "source": "radar"
           }
         ],
         "digital-media-film": [
@@ -4669,11 +4669,6 @@
             "source": "seed"
           },
           {
-            "skillId": "nirholas/three.ws/repo-intelligence-guide",
-            "score": 48,
-            "source": "radar"
-          },
-          {
             "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
             "score": 47,
             "source": "seed"
@@ -4712,6 +4707,11 @@
             "skillId": "pbakaus/impeccable/quieter",
             "score": 44,
             "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/typeset",
+            "score": 44,
+            "source": "seed"
           }
         ],
         "folk-art": [
@@ -4729,6 +4729,11 @@
             "skillId": "tryopendata/skills/svg-design",
             "score": 64,
             "source": "seed"
+          },
+          {
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-daisy-days",
+            "score": 60,
+            "source": "radar"
           },
           {
             "skillId": "pbakaus/impeccable/polish",
@@ -4756,12 +4761,17 @@
             "source": "seed"
           },
           {
-            "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/universal-video-prompt-skill",
-            "score": 51,
+            "skillId": "nexu-io/open-design/live-dashboard",
+            "score": 53,
             "source": "radar"
           },
           {
-            "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/seedance-2-5-skill",
+            "skillId": "nexu-io/open-design/pricing-page",
+            "score": 49,
+            "source": "radar"
+          },
+          {
+            "skillId": "nexu-io/open-design/saas-landing",
             "score": 49,
             "source": "radar"
           },
@@ -4769,11 +4779,6 @@
             "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
             "score": 47,
             "source": "seed"
-          },
-          {
-            "skillId": "nirholas/three.ws/repo-intelligence-guide",
-            "score": 47,
-            "source": "radar"
           },
           {
             "skillId": "anthropics/skills/frontend-design",
@@ -4809,11 +4814,6 @@
             "skillId": "pbakaus/impeccable/quieter",
             "score": 44,
             "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/typeset",
-            "score": 44,
-            "source": "seed"
           }
         ],
         "architecture-design": [
@@ -4843,11 +4843,6 @@
             "source": "seed"
           },
           {
-            "skillId": "nirholas/three.ws/ai-game-world-design",
-            "score": 65,
-            "source": "radar"
-          },
-          {
             "skillId": "calesthio/generative-media-skills/neural-reality-capture",
             "score": 63,
             "source": "seed"
@@ -4858,18 +4853,18 @@
             "source": "seed"
           },
           {
+            "skillId": "nexu-io/open-design/video-shortform",
+            "score": 56,
+            "source": "radar"
+          },
+          {
             "skillId": "roble3/cc-blender-skill/blender-export",
             "score": 54,
             "source": "seed"
           },
           {
-            "skillId": "nirholas/three.ws/decentralized-proxy-guide",
+            "skillId": "nexu-io/open-design/html-ppt-zhangzara-mat",
             "score": 54,
-            "source": "radar"
-          },
-          {
-            "skillId": "nirholas/three.ws/repo-intelligence-guide",
-            "score": 53,
             "source": "radar"
           },
           {
@@ -4898,23 +4893,28 @@
             "source": "seed"
           },
           {
-            "skillId": "nirholas/three.ws/okx-agent-task",
-            "score": 51,
-            "source": "radar"
-          },
-          {
-            "skillId": "nirholas/three.ws/okx-how-to-play",
-            "score": 51,
-            "source": "radar"
-          },
-          {
-            "skillId": "nirholas/three.ws/subgraph-development-guide",
-            "score": 51,
-            "source": "radar"
-          },
-          {
             "skillId": "monumentalsystems/atlas-agent-teams/blender",
             "score": 50,
+            "source": "seed"
+          },
+          {
+            "skillId": "remotion-dev/skills/remotion-render",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "mitsuhiko/agent-stuff/openscad",
+            "score": 43,
+            "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/design-critic",
+            "score": 43,
+            "source": "seed"
+          },
+          {
+            "skillId": "yizhiyanhua-ai/fireworks-tech-graph/fireworks-tech-graph",
+            "score": 42,
             "source": "seed"
           }
         ]

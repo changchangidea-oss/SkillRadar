@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-08-27T05:44:37.869Z",
+  "generatedAt": "2026-08-27T06:26:45.033Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "6349aefe014c01a09287db1d8f486042b48a3090544a931e9743fb7d332a8dc2",
+    "contentHash": "b7d2693823d2d1b2ba56a5c82e2e95e6eff5876a14ccbec85d51c19f5e2ea087",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-27T05:44:05.933Z",
-    "totalCount": 461,
+    "generatedAt": "2026-08-27T06:26:13.493Z",
+    "totalCount": 447,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 53,
+    "passed": 54,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 43,
+    "coveragePassed": 44,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 0,
-    "capabilityGapCases": 32,
+    "capabilityGapCases": 33,
     "averageRecommendationCount": 1.96,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 136,
+    "signalHitsTotal": 137,
     "anchorSignalHitsTotal": 34,
-    "averageTop1Score": 79.2
+    "averageTop1Score": 79.8
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 53,
+    "passed": 54,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 43,
+    "coveragePassed": 44,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 0,
-    "capabilityGapCases": 32,
+    "capabilityGapCases": 33,
     "averageRecommendationCount": 1.96,
     "expectedHitsTotal": 32,
-    "signalHitsTotal": 135,
+    "signalHitsTotal": 137,
     "anchorSignalHitsTotal": 34,
-    "averageTop1Score": 79.2
+    "averageTop1Score": 79.8
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": -1
+    "evidenceDelta": 0
   },
   "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
@@ -165,16 +165,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
-        "nirholas/three.ws/crypto-market-dashboard-guide"
+        "stephonGAO/milu/frontend-design-25832f"
       ],
       "candidateTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
-        "nirholas/three.ws/crypto-market-dashboard-guide"
+        "stephonGAO/milu/frontend-design-25832f"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -292,17 +290,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
-        "nirholas/three.ws/agenti-mcp-guide",
-        "nirholas/three.ws/mcp-servers-guide"
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d"
       ],
       "candidateTop3": [
-        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
-        "nirholas/three.ws/agenti-mcp-guide",
-        "nirholas/three.ws/mcp-servers-guide"
+        "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -392,14 +386,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f"
+        "stephonGAO/milu/frontend-design-25832f",
+        "nexu-io/open-design/web-prototype"
       ],
       "candidateTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f"
+        "stephonGAO/milu/frontend-design-25832f",
+        "nexu-io/open-design/web-prototype"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -433,13 +429,15 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "fastapi/fastapi/fastapi-5a4493"
+        "fastapi/fastapi/fastapi-5a4493",
+        "hookdeck/webhook-skills/webhook-handler-patterns-60609e"
       ],
       "candidateTop3": [
-        "fastapi/fastapi/fastapi-5a4493"
+        "fastapi/fastapi/fastapi-5a4493",
+        "hookdeck/webhook-skills/webhook-handler-patterns-60609e"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -474,16 +472,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
-        "nirholas/three.ws/github-to-mcp-guide",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
       "candidateTop3": [
         "sickn33/agentic-awesome-skills/api-patterns-4d18ab",
-        "nirholas/three.ws/github-to-mcp-guide",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -842,12 +838,12 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
+        "callstackincubator/agent-skills/react-native-testing-6ef74d",
         "callstackincubator/agent-skills/create-react-native-library-5131b0"
       ],
       "candidateTop3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
+        "callstackincubator/agent-skills/react-native-testing-6ef74d",
         "callstackincubator/agent-skills/create-react-native-library-5131b0"
       ],
       "productionRecommendationCount": 3,
@@ -931,13 +927,17 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "github"
+        "github",
+        "nexu-io/open-design/github-dashboard",
+        "nexu-io/open-design/orbit-github"
       ],
       "candidateTop3": [
-        "github"
+        "github",
+        "nexu-io/open-design/github-dashboard",
+        "nexu-io/open-design/orbit-github"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1078,12 +1078,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "nexu-io/open-design/token-map"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "nexu-io/open-design/token-map"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1117,19 +1117,19 @@
     },
     {
       "id": "zh-poster-brand",
-      "productionPass": false,
-      "candidatePass": false,
+      "productionPass": true,
+      "candidatePass": true,
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "stephonGAO/milu/frontend-design-25832f",
-        "artokun/comfyui-mcp/ernie-image-1a1575",
-        "nexu-io/open-design/image-poster-4aed42"
+        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
+        "nexu-io/open-design/html-ppt-zhangzara-raw-grid",
+        "nexu-io/open-design/gamified-app"
       ],
       "candidateTop3": [
-        "stephonGAO/milu/frontend-design-25832f",
-        "artokun/comfyui-mcp/ernie-image-1a1575",
-        "nexu-io/open-design/image-poster-4aed42"
+        "nexu-io/open-design/html-ppt-zhangzara-bold-poster",
+        "nexu-io/open-design/html-ppt-zhangzara-raw-grid",
+        "nexu-io/open-design/gamified-app"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1168,19 +1168,19 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nirholas/three.ws/okx-ai-guide",
+        "nexu-io/open-design/x-research",
         "mitsuhiko/agent-stuff/openscad",
-        "nirholas/three.ws/okx-growth-competition"
+        "nexu-io/open-design/rewrite-plan"
       ],
       "candidateTop3": [
-        "nirholas/three.ws/okx-ai-guide",
-        "nirholas/three.ws/okx-growth-competition",
-        "nirholas/three.ws/pay-for-service"
+        "nexu-io/open-design/x-research",
+        "mitsuhiko/agent-stuff/openscad",
+        "nexu-io/open-design/rewrite-plan"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": -1,
+      "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
       "lowEvidenceDelta": 0
     }
