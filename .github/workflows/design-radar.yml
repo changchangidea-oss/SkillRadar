@@ -65,8 +65,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p scripts/runtime
+          mkdir -p scripts/runtime/lib
           cp scripts/update-design-radar.mjs scripts/runtime/update-design-radar.mjs
+          cp scripts/lib/skill-frontmatter.mjs scripts/runtime/lib/skill-frontmatter.mjs
           node scripts/runtime/update-design-radar.mjs
           rm -rf scripts/runtime
       - name: Normalize generated design Registry ids
