@@ -36,6 +36,8 @@ jobs:
         run: node scripts/validate-web-ui.mjs
       - name: Candidate-owned routing evidence policy
         run: SKILLRADAR_TAG_NORMALIZE_SELFTEST=1 node scripts/normalize-general-tags.mjs
+      - name: Full candidate Skill routing evidence policy
+        run: SKILLRADAR_ROUTING_EVIDENCE_SELFTEST=1 node scripts/update-general-radar.mjs
       - name: Normalize generated general routing tags
         run: npm run normalize:general-tags
       - name: Build bundled plugin registry
