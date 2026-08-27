@@ -5,6 +5,8 @@
     "contractPassRate": 1.0,
     "coveragePassRate": 0.85,
     "unsafeTop3": 0,
+    "lowEvidenceTop3": 0,
+    "candidateEvidenceFailures": 0,
     "minAverageTop1Score": 55
   },
   "cases": [

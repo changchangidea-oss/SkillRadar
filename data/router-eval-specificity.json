@@ -10,6 +10,8 @@
     "fastapi-rest": {"anchorSignalTerms":["fastapi"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "node-api": {"anchorSignalTerms":["node"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "graphql-server": {"anchorSignalTerms":["graphql"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
+    "postgres-schema": {"anchorSignalTerms":["postgres"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"candidateIdentityAnchorTerms":["postgres","postgresql"],"minCandidateIdentityAnchorHits":1,"minCandidateRequiredHits":2,"maxLowEvidenceTop3":0},
+    "postgres-query": {"anchorSignalTerms":["postgres"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"candidateIdentityAnchorTerms":["postgres","postgresql"],"minCandidateIdentityAnchorHits":1,"minCandidateRequiredHits":2,"maxLowEvidenceTop3":0},
     "redis-cache": {"anchorSignalTerms":["redis"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"maxLowEvidenceTop3":0},
     "sqlite-pipeline": {"anchorSignalTerms":["sqlite"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"candidateIdentityAnchorTerms":["sqlite"],"minCandidateIdentityAnchorHits":1,"minCandidateRequiredHits":2,"maxLowEvidenceTop3":0},
     "vitest-unit": {"anchorSignalTerms":["vitest"],"minAnchorSignalHits":1,"minAnchorCandidates":1,"candidateIdentityAnchorTerms":["vitest"],"minCandidateIdentityAnchorHits":1,"minCandidateRequiredHits":2,"maxLowEvidenceTop3":0},

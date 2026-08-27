@@ -127,9 +127,10 @@ function scoreSkill(s,query,context){
 function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.category||''].map(canon).filter(Boolean))}
 function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
 function taskSignalWeights(s){return s.match_details?.matched_signal_weights||{}}
-const SPECIFICITY_SIGNALS=new Set(['playwright','mcp','rag','embeddings','orchestration','fastapi','node','graphql','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation','github','notion','figma','poster'])
+const SPECIFICITY_SIGNALS=new Set(['playwright','mcp','rag','embeddings','orchestration','fastapi','node','graphql','postgres','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation','github','notion','figma','poster'])
 const CANDIDATE_EVIDENCE_RULES={
   mcp:{identity:['mcp'],minSignals:2},orchestration:{identity:['agent','orchestration'],minSignals:1},
+  postgres:{identity:['postgres','postgresql'],minSignals:2},
   sqlite:{identity:['sqlite'],minSignals:2},vitest:{identity:['vitest'],minSignals:2},
   flutter:{identity:['flutter'],minSignals:2},webhook:{identity:['webhook','automation'],minSignals:2}
 }
