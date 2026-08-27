@@ -35,10 +35,21 @@ async function ghText(repo,filePath,ref){
 function hash(text){return crypto.createHash('sha256').update(text||'').digest('hex').slice(0,20)}
 function words(text){return [...new Set(String(text||'').toLowerCase().replace(/next\.js/g,'nextjs').split(/[^a-z0-9+#.-]+/).filter(x=>x.length>2))]}
 function titleCase(s=''){return s.replace(/[-_]+/g,' ').replace(/\b\w/g,m=>m.toUpperCase())}
-function routingEvidence(contract='',classes=[]){
+const ROUTING_PHRASES=[
+  ['app-router',/\bapp[ -]router\b/i],
+  ['server-components',/\bserver[ -]components?\b/i],
+  ['tool-calling',/\btool[ -]calling\b/i],
+  ['function-calling',/\bfunction[ -]calling\b/i],
+  ['design-system',/\bdesign[ -]systems?\b/i],
+  ['react-native',/\breact[ -]native\b/i],
+  ['ci-cd',/\bci\s*\/\s*cd\b/i],
+  ['e2e',/\bend[ -]to[ -]end\b|\be2e\b/i]
+]
+function routingEvidence(contract='',classes=[],skillBody=''){
   const text=String(contract).toLowerCase().replace(/next\.js/g,'nextjs'),tokens=new Set(text.split(/[^a-z0-9+#.-]+/).filter(Boolean))
   const appears=term=>{const t=String(term||'').toLowerCase().replace(/next\.js/g,'nextjs').replace(/[^a-z0-9+#.-]+/g,'-').replace(/^-+|-+$/g,'');return t&&(tokens.has(t)||(t.length>=5&&text.includes(t)))}
-  return [...new Set(classes.slice(0,3).flatMap(c=>c.matched||[]).filter(appears))].slice(0,24)
+  const phrases=ROUTING_PHRASES.filter(([,pattern])=>pattern.test(skillBody)).map(([term])=>term)
+  return [...new Set([...classes.slice(0,3).flatMap(c=>c.matched||[]).filter(appears),...phrases])].slice(0,24)
 }
 function summary(md='',fm={}){
   if(fm.description)return String(fm.description).replace(/\s+/g,' ').trim().slice(0,320)
@@ -73,6 +84,13 @@ if(process.env.SKILLRADAR_SECURITY_SELFTEST==='1'){
   if(legacy.security!=='D'||legacy.status!=='review'||legacy.scriptScan?.complete!==false)throw new Error('retained candidate without scan provenance must fail closed as D/review')
   if(verified.security!=='A'||verified.status!=='active')throw new Error('verified retained candidate must preserve routing status')
   console.log('General Radar security self-test passed: incomplete and unverified retained scans fail closed; destructive commands block routing.')
+  process.exit(0)
+}
+if(process.env.SKILLRADAR_ROUTING_EVIDENCE_SELFTEST==='1'){
+  const evidence=routingEvidence('TelemedX frontend patterns for a Next.js application',[{matched:['nextjs','frontend']}],'Use App Router data fetching with React Server Components.')
+  if(!['nextjs','app-router','server-components'].every(term=>evidence.includes(term)))throw new Error('full candidate SKILL body must retain exact compound routing evidence beyond the public summary')
+  if(evidence.includes('poster'))throw new Error('routing evidence must never be borrowed from repository or unrelated classification context')
+  console.log('General Radar routing evidence self-test passed: exact candidate-owned compound phrases survive summary truncation without repository-context pollution.')
   process.exit(0)
 }
 function classify(text,domains,hints=[]){
@@ -138,7 +156,7 @@ for(const item of coarseList){
     const sec=securityScan([md,...scriptTexts].join('\n\n'),executablePaths.length,scriptScanComplete),name=fm.name||titleCase(item.slug),sum=summary(md,fm)
     const classes=classify(`${name} ${sum} ${fm.description||''} ${item.skillPath} ${item.repoDescription} ${md.slice(0,8000)}`,domains,item.hints),best=classes[0]||{relevance:0,domainName:'General'}
     const q=quality(md,fm,item.treePaths,baseDir),maint=recency(item.pushedAt),pop=popularity(item.repoStars),discoveryScore=round(Math.min(100,item.channels.length*24+item.hints.length*8+(item.repoStars>20?12:0)))
-    const contractEvidence=routingEvidence(`${name} ${item.slug} ${fm.description||''}`,classes)
+    const contractEvidence=routingEvidence(`${name} ${item.slug} ${fm.description||''}`,classes,md)
     const prior=prevMap.get(item.key),firstSeenAt=prior?.firstSeenAt||iso(),seenDays=Math.max(1,Math.floor((Date.now()-new Date(firstSeenAt).getTime())/86400000)+1)
     const signalScore=round(best.relevance*.30+q*.19+sec.score*.19+maint*.14+pop*.07+discoveryScore*.07+Math.min(100,seenDays*12)*.04)
     const status=sec.grade==='Blocked'?'blocked':sec.grade==='D'?'review':best.relevance<18?'low-relevance':'active'
