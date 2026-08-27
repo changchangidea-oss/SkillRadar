@@ -91,6 +91,7 @@ function pluginMatch(query) {
 const parityQueries = [
   'Slack webhook notifications',
   'Redis caching for a Node API',
+  'Optimize a Postgres schema and database performance',
   'SQLite migration and query design',
   'GraphQL Node API',
   'Vitest test suite',
@@ -99,6 +100,7 @@ const parityQueries = [
   'Gmail automation workflow',
   'Google Calendar integration',
   'MCP server tool integration',
+  'Optimize a Postgres schema and database performance',
   'FastAPI backend service',
   'Kubernetes deployment',
   'Playwright end to end tests',
@@ -148,9 +150,10 @@ const repositoryContextFalsePositives = new Set([
   'flutter/agent-plugins/dart-write-documentation-4c8bb5',
   'flutter/agent-plugins/dart-add-unit-test-98a461',
   'sickn33/agentic-awesome-skills/hugging-face-trackio-2d1b18',
+  'hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer',
 ]);
 
-for (const query of ['Create an MCP agent that can call tools and coordinate assistants', 'Build an LLM agent workflow with tools and orchestration', 'Build a SQLite data pipeline and analytics workflow', 'Create Vitest unit and integration tests', 'Build a Flutter mobile interface', 'Build webhook API automation and integrations']) {
+for (const query of ['Create an MCP agent that can call tools and coordinate assistants', 'Build an LLM agent workflow with tools and orchestration', 'Optimize a Postgres schema and database performance', 'Build a SQLite data pipeline and analytics workflow', 'Create Vitest unit and integration tests', 'Build a Flutter mobile interface', 'Build webhook API automation and integrations']) {
   const browser = webRouter.match(snapshot, query, 3);
   const plugin = pluginMatch(query);
   assert.deepEqual(browser.matches.map((skill) => skill.id), plugin.matches.map((skill) => skill.id), `candidate-level browser/plugin mismatch for ${query}`);
@@ -158,7 +161,7 @@ for (const query of ['Create an MCP agent that can call tools and coordinate ass
   assert.ok(browser.matches.every((skill) => !repositoryContextFalsePositives.has(skill.id)), `known repository-context false positive leaked for ${query}`);
 }
 
-for (const [query, preservedSignal] of [['SQLite and Redis caching', 'redis'], ['Flutter and SwiftUI mobile apps', 'swiftui']]) {
+for (const [query, preservedSignal] of [['Postgres and Redis caching', 'redis'], ['SQLite and Redis caching', 'redis'], ['Flutter and SwiftUI mobile apps', 'swiftui']]) {
   const browser = webRouter.match(snapshot, query, 3);
   const plugin = pluginMatch(query);
   assert.deepEqual(browser.matches.map((skill) => skill.id), plugin.matches.map((skill) => skill.id), `mixed-specificity browser/plugin mismatch for ${query}`);
