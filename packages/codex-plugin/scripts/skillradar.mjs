@@ -14,7 +14,7 @@ if(!cmd||!value||!['search','match','inspect'].includes(cmd)){console.error('Usa
 
 function readJson(paths){for(const p of paths){try{if(fs.existsSync(p))return JSON.parse(fs.readFileSync(p,'utf8'))}catch{}}return null}
 function normalizeCore(s){return {...s,tags:s.tags||[],domains:s.domains||[],uses:s.uses||[],security:s.security||'B',score:s.score??s.signalScore??70,maintenance:s.maintenance??s.maintenanceScore??70}}
-function normalizeDiscovered(s,fallbackCategory){return {id:s.id,name:s.name,source:s.source,category:s.category||fallbackCategory,tags:s.tags||[],summary:s.summary,security:s.security||'B',score:s.signalScore??s.score??70,maintenance:s.maintenanceScore??s.maintenance??70,installs:s.installs||0,installUrl:s.installUrl,skillsUrl:s.skillsUrl,discovery:s.discovery||'radar',domains:s.domains||[],uses:s.uses||[],routingEvidence:s.routingEvidence||[]}}
+function normalizeDiscovered(s,fallbackCategory){return {id:s.id,name:s.name,source:s.source,category:s.category||fallbackCategory,tags:s.tags||[],summary:s.summary,security:s.security||'B',score:s.signalScore??s.score??70,maintenance:s.maintenanceScore??s.maintenance??70,installs:s.installs||0,slug:s.slug,skillPath:s.skillPath,githubUrl:s.githubUrl,installUrl:s.installUrl,skillsUrl:s.skillsUrl,discovery:s.discovery||'radar',domains:s.domains||[],uses:s.uses||[],routingEvidence:s.routingEvidence||[]}}
 function dedupeAndGate(skills){const seen=new Set();return skills.filter(s=>!['D','Blocked'].includes(s.security)).filter(s=>{const key=`${String(s.source||'').toLowerCase()}::${String(s.name||s.id||'').toLowerCase().replace(/[^a-z0-9]+/g,'')}`;if(seen.has(key))return false;seen.add(key);return true})}
 function loadBundledRegistry(){
   const snapshot=readJson([explicitRegistry,path.resolve(here,'../data/registry.json')].filter(Boolean))
@@ -38,7 +38,7 @@ const STOP=new Set('the a an and or for to of in on with from by is are be as th
 const PHRASES={
   'next.js':['nextjs'],'app router':['app-router'],'server components':['server-components','rsc'],
   'shadcn/ui':['shadcn'],'ai sdk':['ai-sdk'],'tool calling':['tool-calling','function-calling'],'function calling':['function-calling','tool-calling'],
-  'design system':['design-system'],'cloudflare workers':['cloudflare-workers','workers'],'react native':['react-native'],
+  'design system':['design-system'],'information architecture':['information-architecture'],'cloudflare workers':['cloudflare-workers','workers'],'react native':['react-native'],
   'ci/cd':['ci-cd'],'end to end':['e2e']
 }
 const ZH_FACETS=[
@@ -49,7 +49,7 @@ const ZH_FACETS=[
   ['服装',['fashion','campaign']],['时尚',['fashion','brand']],['交互',['interaction','ux','ui']],['数媒',['digital-media','creative-coding']],['影视',['film','video','editing','vfx']],
   ['工艺',['craft','fabrication']],['民间艺术',['illustration','hand-drawn','collage','pattern','craft']],['纹样',['pattern','illustration','vector']]
 ]
-function canon(t){return String(t).toLowerCase().replace(/next\.js/g,'nextjs').replace(/node\.?js/g,'node').replace(/shadcn\/ui/g,'shadcn').replace(/tool[- ]calling/g,'tool-calling').replace(/function[- ]calling/g,'function-calling').replace(/server[- ]components/g,'server-components').replace(/app[- ]router/g,'app-router').replace(/design[- ]system/g,'design-system').replace(/vulnerabilities/g,'vulnerability').replace(/[^a-z0-9+#.-]+/g,'').trim()}
+function canon(t){return String(t).toLowerCase().replace(/next\.js/g,'nextjs').replace(/node\.?js/g,'node').replace(/shadcn\/ui/g,'shadcn').replace(/tool[- ]calling/g,'tool-calling').replace(/function[- ]calling/g,'function-calling').replace(/server[- ]components/g,'server-components').replace(/app[- ]router/g,'app-router').replace(/design[- ]system/g,'design-system').replace(/information[- ]architecture/g,'information-architecture').replace(/vulnerabilities/g,'vulnerability').replace(/[^a-z0-9+#.-]+/g,'').trim()}
 function querySignals(text){
   const raw=String(text).toLowerCase(),concepts=[],consumed=new Set()
   for(const [phrase,aliases] of Object.entries(PHRASES)){
@@ -97,7 +97,7 @@ function projectContext(){
 }
 
 function fieldText(s){return {identity:`${s.id||''} ${s.name||''}`.toLowerCase(),tags:`${(s.tags||[]).join(' ')} ${(s.uses||[]).join(' ')} ${(s.routingEvidence||[]).join(' ')}`.toLowerCase(),domains:`${(s.domains||[]).join(' ')} ${s.category||''}`.toLowerCase(),summary:String(s.summary||'').toLowerCase(),source:String(s.source||'').toLowerCase()}}
-function fieldContains(text,term){const normalized=String(text).toLowerCase().replace(/next\.js/g,'nextjs').replace(/node\.?js/g,'node').replace(/shadcn\/ui/g,'shadcn').replace(/tool[ -]calling/g,'tool-calling').replace(/function[ -]calling/g,'function-calling').replace(/app[ -]router/g,'app-router').replace(/design[ -]system/g,'design-system').replace(/vulnerabilities/g,'vulnerability');const set=new Set(normalized.split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean));return set.has(term)||(term.length>=5&&normalized.includes(term))}
+function fieldContains(text,term){const normalized=String(text).toLowerCase().replace(/next\.js/g,'nextjs').replace(/node\.?js/g,'node').replace(/shadcn\/ui/g,'shadcn').replace(/tool[ -]calling/g,'tool-calling').replace(/function[ -]calling/g,'function-calling').replace(/app[ -]router/g,'app-router').replace(/design[ -]system/g,'design-system').replace(/information[ -]architecture/g,'information-architecture').replace(/vulnerabilities/g,'vulnerability');const set=new Set(normalized.split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean));return set.has(term)||(term.length>=5&&normalized.includes(term))}
 function projectEvidence(fields,context){
   if(context.mode!=='project-aware'||!context.signals.length)return {matched:[],coverage:0,bonus:0}
   const matched=[]
@@ -127,7 +127,7 @@ function scoreSkill(s,query,context){
 function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.category||''].map(canon).filter(Boolean))}
 function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
 function taskSignalWeights(s){return s.match_details?.matched_signal_weights||{}}
-const SPECIFICITY_SIGNALS=new Set(['playwright','mcp','rag','embeddings','orchestration','fastapi','node','graphql','postgres','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation','github','notion','figma','poster'])
+const SPECIFICITY_SIGNALS=new Set(['playwright','mcp','rag','embeddings','orchestration','fastapi','node','graphql','postgres','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation','github','notion','figma','poster','information-architecture'])
 const CANDIDATE_EVIDENCE_RULES={
   mcp:{identity:['mcp'],minSignals:2},orchestration:{identity:['agent','orchestration'],minSignals:1},
   postgres:{identity:['postgres','postgresql'],minSignals:2},

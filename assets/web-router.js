@@ -11,6 +11,7 @@
     'tool calling': ['tool-calling', 'function-calling'],
     'function calling': ['function-calling', 'tool-calling'],
     'design system': ['design-system'],
+    'information architecture': ['information-architecture'],
     'cloudflare workers': ['cloudflare-workers', 'workers'],
     'react native': ['react-native'],
     'ci/cd': ['ci-cd'],
@@ -24,7 +25,7 @@
     ['服装', ['fashion', 'campaign']], ['时尚', ['fashion', 'brand']], ['交互', ['interaction', 'ux', 'ui']], ['数媒', ['digital-media', 'creative-coding']], ['影视', ['film', 'video', 'editing', 'vfx']],
     ['工艺', ['craft', 'fabrication']], ['民间艺术', ['illustration', 'hand-drawn', 'collage', 'pattern', 'craft']], ['纹样', ['pattern', 'illustration', 'vector']],
   ];
-  const SPECIFICITY_SIGNALS = new Set(['playwright', 'mcp', 'rag', 'embeddings', 'orchestration', 'fastapi', 'node', 'graphql', 'postgres', 'redis', 'sqlite', 'vitest', 'docker', 'kubernetes', 'vulnerability', 'secrets', 'permissions', 'reactnative', 'expo', 'swiftui', 'android', 'kotlin', 'flutter', 'slack', 'gmail', 'calendar', 'webhook', 'documentation', 'github', 'notion', 'figma', 'poster']);
+  const SPECIFICITY_SIGNALS = new Set(['playwright', 'mcp', 'rag', 'embeddings', 'orchestration', 'fastapi', 'node', 'graphql', 'postgres', 'redis', 'sqlite', 'vitest', 'docker', 'kubernetes', 'vulnerability', 'secrets', 'permissions', 'reactnative', 'expo', 'swiftui', 'android', 'kotlin', 'flutter', 'slack', 'gmail', 'calendar', 'webhook', 'documentation', 'github', 'notion', 'figma', 'poster', 'information-architecture']);
   const CANDIDATE_EVIDENCE_RULES = {
     mcp: { identity: ['mcp'], minSignals: 2 },
     orchestration: { identity: ['agent', 'orchestration'], minSignals: 1 },
@@ -53,6 +54,7 @@
       .replace(/server[- ]components/g, 'server-components')
       .replace(/app[- ]router/g, 'app-router')
       .replace(/design[- ]system/g, 'design-system')
+      .replace(/information[- ]architecture/g, 'information-architecture')
       .replace(/vulnerabilities/g, 'vulnerability')
       .replace(/[^a-z0-9+#.-]+/g, '')
       .trim();
@@ -102,6 +104,9 @@
       score: skill.signalScore ?? skill.score ?? 70,
       maintenance: skill.maintenanceScore ?? skill.maintenance ?? 70,
       installs: skill.installs || 0,
+      slug: skill.slug,
+      skillPath: skill.skillPath,
+      githubUrl: skill.githubUrl,
       installUrl: skill.installUrl,
       skillsUrl: skill.skillsUrl,
       discovery: skill.discovery || 'radar',
@@ -156,6 +161,7 @@
       .replace(/function[ -]calling/g, 'function-calling')
       .replace(/app[ -]router/g, 'app-router')
       .replace(/design[ -]system/g, 'design-system')
+      .replace(/information[ -]architecture/g, 'information-architecture')
       .replace(/vulnerabilities/g, 'vulnerability');
     const set = new Set(normalized.split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean));
     return set.has(term) || (term.length >= 5 && normalized.includes(term));

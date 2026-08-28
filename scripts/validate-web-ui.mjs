@@ -36,6 +36,10 @@ assert.equal(safe.safeGithubUrl('http://github.com/owner/repo'), '#');
 assert.equal(safe.safeGithubUrl('https://github.com/owner/repo'), 'https://github.com/owner/repo');
 assert.equal(safe.repoSlug("owner/repo' onclick='alert(1)"), '');
 assert.equal(safe.repoSlug('owner/repo'), 'owner/repo');
+assert.equal(safe.skillInstallCommand({ source: 'fastapi/fastapi', slug: 'fastapi' }), 'npx skills add fastapi/fastapi --skill fastapi');
+assert.equal(safe.skillInstallCommand({ source: 'vercel-labs/agent-skills', id: 'nextjs' }), '', 'a curated id must not be guessed as an upstream install slug');
+assert.equal(safe.skillInstallCommand({ source: "owner/repo'", slug: 'safe-skill' }), '', 'invalid repository must not enter an install command');
+assert.equal(safe.skillInstallCommand({ source: 'owner/repo', slug: 'skill;rm' }), '', 'shell metacharacters must not enter an install command');
 
 const snapshotPath = path.join(root, 'packages/codex-plugin/data/registry.json');
 const snapshot = JSON.parse(fs.readFileSync(snapshotPath, 'utf8'));
@@ -45,6 +49,15 @@ assert.ok(Array.isArray(snapshot.general) && snapshot.general.length > 0, 'gener
 const browserRegistry = webRouter.registrySkills(snapshot);
 assert.ok(browserRegistry.length >= 400, `browser registry unexpectedly small: ${browserRegistry.length}`);
 assert.ok(browserRegistry.every((skill) => !['D', 'Blocked'].includes(skill.security)), 'D/Blocked Skill leaked into browser registry');
+const exactInstallable = browserRegistry.filter((skill) => safe.skillInstallCommand(skill));
+const auditableSources = browserRegistry.filter((skill) => [skill.githubUrl, skill.installUrl].some((url) => safe.safeGithubUrl(url || '') !== '#'));
+assert.ok(snapshot.general.every((skill) => safe.skillInstallCommand(skill)), 'a scanned General Skill lost its exact upstream install coordinates');
+assert.ok(snapshot.general.every((skill) => safe.safeGithubUrl(skill.githubUrl || '') !== '#'), 'a scanned General Skill lost its exact SKILL.md source URL');
+assert.ok(snapshot.design.every((skill) => safe.safeGithubUrl(skill.installUrl || '') !== '#'), 'a Design Skill lost its auditable upstream repository URL');
+assert.ok(exactInstallable.length >= 200, `browser Registry unexpectedly lost verified per-Skill install coordinates: ${exactInstallable.length}`);
+assert.ok(auditableSources.length >= 400, `browser Registry unexpectedly lost auditable upstream source coordinates: ${auditableSources.length}`);
+const unverifiedCoordinateGaps = browserRegistry.filter((skill) => !safe.skillInstallCommand(skill) && ![skill.githubUrl, skill.installUrl].some((url) => safe.safeGithubUrl(url || '') !== '#')).map((skill) => skill.id).sort();
+assert.deepEqual(unverifiedCoordinateGaps, [], 'active browser recommendations must not contain unresolved curated placeholders');
 
 const poisoned = structuredClone(snapshot);
 poisoned.general = [...(poisoned.general || []), {
@@ -81,6 +94,14 @@ for (const signal of ['poster', 'brand', 'visual']) assert.ok(marketingSignals.h
 const appSource = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
 assert.match(appSource, /packages\/codex-plugin\/data\/registry\.json/, 'web app must load the complete bundled safety-gated registry');
 assert.match(appSource, /webRouter\.match\(registrySnapshot, query, 3\)/, 'web app must use the shared Matching v2.1 browser router');
+assert.match(appSource, /#heroGo'\)\.onclick = \(\) => routeTask/, 'homepage task input must use the real router rather than catalog substring filtering');
+assert.match(appSource, /skillInstallCommand\(skill\)/, 'per-Skill actions must use the validated exact install-command helper');
+assert.match(appSource, /Install coordinates (?:are )?not verified/, 'curated entries without verified upstream coordinates must show an explicit gap');
+assert.doesNotMatch(appSource, /https:\/\/github\.com\/\$\{repository\}/, 'source links must not be synthesized from unverified repository labels');
+assert.doesNotMatch(appSource, /npx skills add https:\/\/github\.com\/\$\{slug\}/, 'whole-repository install hint must not return');
+assert.match(appSource, /data-copy-install/, 'router results must expose an actionable exact install command');
+assert.match(appSource, /Inspect source/, 'router results must expose the auditable upstream source');
+assert.match(appSource, /document\.execCommand\('copy'\)/, 'install-command copy must retain a fallback for browsers without the Clipboard API');
 assert.doesNotMatch(appSource, /const\s+syn\s*=\s*\{/, 'legacy substring synonym router must not return');
 assert.doesNotMatch(appSource, /hit\s*\*\s*10\s*\+\s*s\.score\s*\*\s*\.35/, 'legacy substring score formula must not return');
 assert.doesNotMatch(appSource, />\s*\$\{skill\.(?:name|source|summary|category|security|id)\}\s*</, 'raw Skill fields must not be inserted into HTML text contexts');
@@ -88,6 +109,11 @@ assert.doesNotMatch(appSource, /(?:data-s|href|title|class)=["']\$\{skill\.(?:na
 assert.doesNotMatch(appSource, /href=["']?\$\{candidate\.githubUrl\}/, 'raw candidate URLs must not enter href');
 
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+assert.match(html, /codex plugin marketplace add changchangidea-oss\/SkillRadar --ref v0\.5\.0 &amp;&amp; codex plugin add skillradar@skillradar/, 'public page must show the complete two-step Codex plugin install');
+assert.match(html, /id='mobileNav'/, 'mobile navigation trigger must remain available');
+assert.match(html, /id='mobileClose'/, 'mobile navigation must have an explicit close control');
+const css = fs.readFileSync(path.join(root, 'assets/styles.css'), 'utf8');
+assert.match(css, /\.nav-open \.side\{transform:translateX\(0\)\}/, 'mobile navigation drawer must become visible when opened');
 const safePos = html.indexOf("assets/safe-render.js");
 const routerPos = html.indexOf("assets/web-router.js");
 const appPos = html.indexOf("assets/app.js");

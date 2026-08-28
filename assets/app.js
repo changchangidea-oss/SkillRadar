@@ -4,7 +4,7 @@ const safe = globalThis.SkillRadarSafe;
 const webRouter = globalThis.SkillRadarWebRouter;
 if (!safe || !webRouter) throw new Error('SkillRadar web safety/router helpers failed to load.');
 
-const { escapeHtml: esc, escapeAttr: attr, safeGithubUrl, repoSlug, safeNumber } = safe;
+const { escapeHtml: esc, escapeAttr: attr, safeGithubUrl, repoSlug, safeNumber, skillInstallCommand } = safe;
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 
@@ -32,6 +32,9 @@ let designDomains = [];
 let radarData = { discoveries: [], domainRadar: {}, status: 'seed' };
 let activeDesignDomain = 'ui-design';
 
+const AGENT_INSTALL_COMMAND = 'npx skills add changchangidea-oss/SkillRadar --skill skillradar';
+const CODEX_INSTALL_COMMAND = 'codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.5.0 && codex plugin add skillradar@skillradar';
+
 function text(value) { return String(value ?? ''); }
 function numeric(value, fallback = 0) { return safeNumber(value, fallback); }
 function securityGrade(value) { return ['A', 'B', 'C'].includes(value) ? value : 'C'; }
@@ -44,6 +47,13 @@ function fmtN(value) {
   if (number >= 1000000) return `${(number / 1000000).toFixed(1)}M`;
   if (number >= 1000) return `${(number / 1000).toFixed(number >= 10000 ? 0 : 1)}K`;
   return String(number);
+}
+function sourceUrl(skill) {
+  for (const candidate of [skill.githubUrl, skill.installUrl]) {
+    const url = safeGithubUrl(candidate || '');
+    if (url !== '#') return url;
+  }
+  return '';
 }
 function normalizeDisplaySkill(skill) {
   const score = numeric(skill.score ?? skill.signalScore, 70);
@@ -80,9 +90,24 @@ function toast(message) {
   setTimeout(() => $('#toast').classList.remove('on'), 1500);
 }
 async function copy(value) {
+  const copyValue = text(value);
   try {
-    if (!navigator.clipboard?.writeText) throw new Error('Clipboard API unavailable');
-    await navigator.clipboard.writeText(value);
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(copyValue);
+    } else {
+      const input = document.createElement('textarea');
+      input.value = copyValue;
+      input.setAttribute('readonly', '');
+      input.style.position = 'fixed';
+      input.style.opacity = '0';
+      document.body.appendChild(input);
+      try {
+        input.select();
+        if (!document.execCommand('copy')) throw new Error('Clipboard fallback failed');
+      } finally {
+        input.remove();
+      }
+    }
     toast('Copied');
   } catch {
     toast('Copy failed');
@@ -97,6 +122,14 @@ function card(skill) {
 }
 function bindSkills() {
   $$('[data-s]').forEach((element) => { element.onclick = () => openSkill(element.dataset.s); });
+}
+function bindSkillActions() {
+  $$('[data-detail-skill]').forEach((button) => {
+    button.onclick = () => openSkill(button.dataset.detailSkill);
+  });
+  $$('[data-copy-install]').forEach((button) => {
+    button.onclick = () => copy(button.dataset.copyInstall);
+  });
 }
 function bindCats() {
   $$('[data-cat]').forEach((element) => {
@@ -157,12 +190,14 @@ function renderList() {
 function openSkill(id) {
   const skill = skills.find((candidate) => candidate.id === id);
   if (!skill) return;
-  const slug = repoSlug(skill.source);
-  $('#modal').innerHTML = `<div class="ctop"><div class="ico">${esc(initials(skill.name))}</div><div><h2 style="margin:0">${esc(skill.name)}</h2><div class="src">${esc(skill.source)}</div></div></div><div class="badges">${badge(skill)}${skill.tags.map((tag) => `<span class="badge">${esc(tag)}</span>`).join('')}</div><p style="font-size:17px;color:#565d53">${esc(skill.summary)}</p><div class="metrics"><div><b>${numeric(skill.score)}</b><small>SKILLRADAR</small></div><div><b>${numeric(skill.growth)}</b><small>GROWTH</small></div><div><b>${numeric(skill.maintenance)}</b><small>MAINTENANCE</small></div><div><b>${esc(skill.security)}</b><small>SECURITY</small></div></div><h4>BEST FOR</h4><div class="use">${skill.uses.map((use) => `<div>✓ ${esc(use)}</div>`).join('')}</div><div class="actions"><button class="btn" id="markI">${installed.has(skill.id) ? 'Installed ✓' : 'Mark installed'}</button><button class="ghost" id="markF">${favs.has(skill.id) ? 'Favorited ★' : 'Favorite ☆'}</button><button class="ghost" id="copyCmd">${slug ? 'Copy install hint' : 'Install hint unavailable'}</button></div>`;
+  const command = skillInstallCommand(skill);
+  const url = sourceUrl(skill);
+  const coordinatesGap = !command && !url ? '<div class="actionGap">Install coordinates are not verified for this curated entry yet.</div>' : '';
+  $('#modal').innerHTML = `<div class="ctop"><div class="ico">${esc(initials(skill.name))}</div><div><h2 style="margin:0">${esc(skill.name)}</h2><div class="src">${esc(skill.source)}</div></div></div><div class="badges">${badge(skill)}${skill.tags.map((tag) => `<span class="badge">${esc(tag)}</span>`).join('')}</div><p style="font-size:17px;color:#565d53">${esc(skill.summary)}</p><div class="metrics"><div><b>${numeric(skill.score)}</b><small>SKILLRADAR</small></div><div><b>${numeric(skill.growth)}</b><small>GROWTH</small></div><div><b>${numeric(skill.maintenance)}</b><small>MAINTENANCE</small></div><div><b>${esc(skill.security)}</b><small>SECURITY</small></div></div><h4>BEST FOR</h4><div class="use">${skill.uses.map((use) => `<div>✓ ${esc(use)}</div>`).join('')}</div>${coordinatesGap}<div class="actions"><button class="btn" id="markI">${installed.has(skill.id) ? 'Installed ✓' : 'Mark installed'}</button><button class="ghost" id="markF">${favs.has(skill.id) ? 'Favorited ★' : 'Favorite ☆'}</button>${command ? '<button class="ghost" id="copyCmd">Copy exact install command</button>' : ''}${url ? `<a class="ghost actionLink" href="${attr(url)}" target="_blank" rel="noopener noreferrer">Inspect source ↗</a>` : ''}</div>`;
   $('#modalbg').classList.add('on');
   $('#markI').onclick = () => { installed.has(skill.id) ? installed.delete(skill.id) : installed.add(skill.id); save(); openSkill(skill.id); };
   $('#markF').onclick = () => { favs.has(skill.id) ? favs.delete(skill.id) : favs.add(skill.id); save(); openSkill(skill.id); };
-  $('#copyCmd').onclick = () => slug ? copy(`npx skills add https://github.com/${slug}`) : toast('No canonical repository install hint');
+  if (command) $('#copyCmd').onclick = () => copy(command);
 }
 function normalizeDesignSkill(skill) {
   const score = numeric(skill.signalScore, 70);
@@ -223,8 +258,20 @@ function route() {
   const matches = result.matches || [];
   const specificity = result.specificity?.enforced ? `<div class="sourceNote">Specificity gate: ${esc((result.specificity.required_signals || []).join(', '))}</div>` : '';
   const advisory = result.advisory?.message ? `<div class="sourceNote">Security review: ${esc(result.advisory.message)}</div>` : '';
-  $('#routeResults').innerHTML = `${specificity}${matches.map((skill, index) => `<div class="match" data-s="${attr(skill.id)}"><div class="mnum">${numeric(skill.match_score)}</div><div><h3>${index + 1}. ${esc(skill.name)}</h3><p>${esc(skill.summary)}</p><p class="reason">${esc(skill.reason)} · Security ${esc(skill.security)}</p></div><div class="score">${numeric(skill.skillradar_score)}</div></div>`).join('')}${renderCapabilityGap(result)}${advisory}` || '<div class="empty">No safe, specific match found.</div>';
-  bindSkills();
+  $('#routeResults').innerHTML = `${specificity}${matches.map((skill, index) => {
+    const command = skillInstallCommand(skill);
+    const url = sourceUrl(skill);
+    const coordinatesGap = !command && !url ? '<span class="actionGap">Install coordinates not verified</span>' : '';
+    return `<div class="match"><div class="mnum">${numeric(skill.match_score)}</div><div class="matchBody"><h3>${index + 1}. ${esc(skill.name)}</h3><p>${esc(skill.summary)}</p><p class="reason">${esc(skill.reason)} · Security ${esc(skill.security)}</p><div class="routeActions"><button class="ghost" data-detail-skill="${attr(skill.id)}">View details</button>${command ? `<button class="ghost" data-copy-install="${attr(command)}">Copy install command</button>` : ''}${url ? `<a class="ghost actionLink" href="${attr(url)}" target="_blank" rel="noopener noreferrer">Inspect source ↗</a>` : ''}${coordinatesGap}</div></div><div class="score">${numeric(skill.skillradar_score)}</div></div>`;
+  }).join('')}${renderCapabilityGap(result)}${advisory}` || '<div class="empty">No safe, specific match found.</div>';
+  bindSkillActions();
+}
+function routeTask(query) {
+  const task = text(query).trim();
+  if (!task) return toast('Describe a task first');
+  show('router');
+  $('#task').value = task;
+  route();
 }
 function renderCats() {
   $('#catCatalog').innerHTML = cats.map((category) => `<button class="cat" data-cat="${attr(category)}"><span>◫</span><b>${esc(category)}</b><small>${esc(skills.filter((skill) => skill.category === category).slice(0, 3).map((skill) => skill.name).join(' · '))}</small></button>`).join('');
@@ -278,10 +325,18 @@ async function loadData() {
   }
 }
 
-$$('[data-v]').forEach((button) => { button.onclick = () => show(button.dataset.v); });
+function closeNavigation() {
+  document.body.classList.remove('nav-open');
+  $('#mobileNav').setAttribute('aria-expanded', 'false');
+}
+function openNavigation() {
+  document.body.classList.add('nav-open');
+  $('#mobileNav').setAttribute('aria-expanded', 'true');
+}
+$$('[data-v]').forEach((button) => { button.onclick = () => { show(button.dataset.v); closeNavigation(); }; });
 $('#openRouter').onclick = () => show('router');
-$('#heroGo').onclick = () => search($('#heroQ').value);
-$('#heroQ').onkeydown = (event) => { if (event.key === 'Enter') search(event.target.value); };
+$('#heroGo').onclick = () => routeTask($('#heroQ').value);
+$('#heroQ').onkeydown = (event) => { if (event.key === 'Enter') routeTask(event.target.value); };
 $('#globalSearch').onkeydown = (event) => { if (event.key === 'Enter') search(event.target.value); };
 $('#listQ').oninput = (event) => { q = event.target.value; renderList(); };
 $('#sort').onchange = (event) => { sort = event.target.value; renderList(); };
@@ -290,5 +345,15 @@ $('#task').onkeydown = (event) => { if ((event.metaKey || event.ctrlKey) && even
 $('#close').onclick = () => $('#modalbg').classList.remove('on');
 $('#modalbg').onclick = (event) => { if (event.target.id === 'modalbg') $('#modalbg').classList.remove('on'); };
 $('#clearMine').onclick = () => { installed.clear(); favs.clear(); save(); renderMine(); };
+$('#copyAgentInstall').onclick = () => copy(AGENT_INSTALL_COMMAND);
+$('#copyCodexInstall').onclick = () => copy(CODEX_INSTALL_COMMAND);
+$('#mobileNav').onclick = openNavigation;
+$('#mobileClose').onclick = closeNavigation;
+$('#navBackdrop').onclick = closeNavigation;
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  closeNavigation();
+  $('#modalbg').classList.remove('on');
+});
 
 loadData();

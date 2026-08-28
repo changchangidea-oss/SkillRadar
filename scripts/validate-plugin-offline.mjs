@@ -66,6 +66,11 @@ for (const item of result.matches) {
   if (['D', 'Blocked'].includes(item.security)) throw new Error(`unsafe offline result: ${item.id}`)
 }
 
+const installable = runMatch('Build a Python FastAPI REST backend API', { SKILLRADAR_PROJECT_CONTEXT: '0' })
+const fastapiInstall = installable.matches?.find((item) => item.slug === 'fastapi')
+if (!fastapiInstall) throw new Error('offline Router lost the verified FastAPI Skill slug')
+if (fastapiInstall.source !== 'fastapi/fastapi' || !String(fastapiInstall.githubUrl).startsWith('https://github.com/fastapi/fastapi/')) throw new Error('offline Router lost verified FastAPI upstream coordinates')
+
 const weakBackfillFixture={
   schemaVersion:2,generatedAt:'test',source:'weak-backfill-fixture',coreCount:3,designCount:0,generalCount:0,totalCount:3,contentHash:'weak-backfill',
   core:[

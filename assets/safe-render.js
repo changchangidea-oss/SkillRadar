@@ -35,11 +35,19 @@
     return Number.isFinite(number) ? number : fallback;
   }
 
+  function skillInstallCommand(skill = {}) {
+    const repository = repoSlug(skill.source);
+    const skillName = String(skill.slug || '').trim();
+    if (!repository || !/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(skillName)) return '';
+    return `npx skills add ${repository} --skill ${skillName}`;
+  }
+
   global.SkillRadarSafe = Object.freeze({
     escapeHtml,
     escapeAttr,
     safeGithubUrl,
     repoSlug,
     safeNumber,
+    skillInstallCommand,
   });
 })(globalThis);
