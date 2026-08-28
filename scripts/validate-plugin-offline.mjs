@@ -105,6 +105,20 @@ const notionGap=runMatch('Organize research and planning in Notion',{SKILLRADAR_
 if(notionGap.matches?.length!==0) throw new Error(`generic research proved Notion: ${JSON.stringify(notionGap.matches?.map(x=>x.id))}`)
 if(!notionGap.capability_gap?.detected||notionGap.capability_gap?.missing!==3) throw new Error('Notion capability gap was not explicit')
 
+const reactCandidateFixture={
+  schemaVersion:2,generatedAt:'test',source:'react-candidate-evidence-fixture',coreCount:2,designCount:0,generalCount:0,totalCount:2,contentHash:'react-candidate-evidence',
+  core:[
+    {id:'react-dashboard',name:'React Dashboard',source:'fixture/react-dashboard',category:'Frontend',tags:['react','dashboard','visual','production','polish','interface'],summary:'Improve production React dashboard interfaces.',security:'A',score:80},
+    {id:'generic-ui',name:'Frontend UI Engineering',source:'fixture/generic-ui',category:'Frontend',tags:['visual','quality','production','interface'],summary:'Improve visual quality and production interface polish.',security:'A',score:100}
+  ],design:[],general:[]
+}
+const reactCandidateFixturePath=path.join(tmp,'react-candidate-evidence.json')
+fs.writeFileSync(reactCandidateFixturePath,JSON.stringify(reactCandidateFixture))
+const reactCandidate=runMatch('Improve the visual quality and production polish of a React dashboard interface',{SKILLRADAR_REGISTRY_PATH:reactCandidateFixturePath,SKILLRADAR_PROJECT_CONTEXT:'0'})
+if(!reactCandidate.specificity?.required_signals?.includes('react')) throw new Error('React task did not activate per-candidate technology evidence')
+if(reactCandidate.matches?.length!==1||reactCandidate.matches[0].id!=='react-dashboard') throw new Error(`generic UI candidate bypassed React evidence: ${JSON.stringify(reactCandidate.matches?.map(x=>x.id))}`)
+if(!reactCandidate.capability_gap?.detected||reactCandidate.capability_gap?.missing!==2) throw new Error('filtered React candidates did not produce an explicit capability gap')
+
 const fixture = {
   schemaVersion: 1,
   generatedAt: 'test',
