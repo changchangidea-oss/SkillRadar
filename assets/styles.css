@@ -10,6 +10,20 @@
 .routeActions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
 .routeActions .ghost{font-size:11px;padding:7px 10px}
 .actionGap{display:inline-flex;align-items:center;font-size:10px;color:#7d8479;background:#f3f5f0;border-radius:999px;padding:7px 9px}
+.zhGuideLink{white-space:nowrap}
+/* Chinese guide: a focused, static help page that remains useful even when registry data is unavailable. */
+.guidePage{background:#f5f6f2;color:var(--ink)}
+.guideTop{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1160px;margin:auto;padding:0 24px}
+.guideBrand{display:flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none;font-size:19px;font-weight:850}
+.guideTop nav{display:flex;align-items:center;gap:20px}.guideTop nav>a:not(.btn){color:#596056;text-decoration:none}
+.guideMain{max-width:1160px;margin:auto;padding:24px 24px 90px}
+.guideHero{background:linear-gradient(135deg,#151813,#22291d);color:#fff;border-radius:28px;padding:64px;overflow:hidden;position:relative}
+.guideHero:after{content:'';position:absolute;width:380px;height:380px;border:1px solid #3c4835;border-radius:50%;right:-80px;top:-180px;box-shadow:0 0 0 60px rgba(186,249,75,.035),0 0 0 120px rgba(186,249,75,.02)}
+.guideHero .kicker{color:var(--lime)}.guideHero h1{font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.055em;margin:18px 0 24px;position:relative;z-index:1}.guideHero h1 span{color:#a4ad9d}.guideHero p{font-size:17px;color:#c1c8bc;max-width:780px;position:relative;z-index:1}.guideHeroActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px;position:relative;z-index:1}.guideHeroActions .ghost{background:transparent;color:#fff;border-color:#46503f}
+.guideSection{margin-top:64px;scroll-margin-top:24px}.guideSection>h2{font-size:34px;letter-spacing:-.035em;margin:6px 0 22px}
+.guideSteps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.guideSteps article,.guideInstall,.gradeGrid article,.guideUsage{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.guideSteps article>span{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:11px;background:#171a15;color:var(--lime);font-weight:850}.guideSteps h3,.guideInstall h3,.gradeGrid h3,.guideUsage h3{font-size:18px;margin:18px 0 7px}.guideSteps p,.guideInstall p,.gradeGrid p,.guideUsage li{color:#666d63}.guideSteps code{display:block;margin-top:16px;background:#f1f4ed;border-radius:9px;padding:10px;font-size:12px;overflow-wrap:anywhere}.guideExamples{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:14px}.guideExamples a{color:#43572c;background:#eaf5da;text-decoration:none;border-radius:999px;padding:7px 10px;font-size:12px}
+.guideInstallGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.guideInstall{display:flex;flex-direction:column;gap:18px}.guideInstall h3{margin-top:10px}.guidePill{display:inline-block;background:#eaf5da;color:#466421;border-radius:999px;padding:5px 8px;font-size:10px;font-weight:800;letter-spacing:.08em}.guideInstall pre{background:#151813;color:#fff;border-radius:12px;padding:16px;white-space:pre-wrap;overflow-wrap:anywhere;margin:auto 0 0}.guideInstall pre code{font-size:12px}.guideCopy{align-self:flex-start}.guideUsage{margin-top:12px}.guideUsage h3{margin-top:0}.guideUsage li{margin:8px 0}.guideUsage code{overflow-wrap:anywhere}
+.gradeGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.gradeGrid article{display:flex;gap:15px}.gradeGrid h3{margin:0 0 5px}.gradeGrid p{margin:0}.grade{display:grid;place-items:center;flex:0 0 54px;width:54px;height:54px;border-radius:14px;font-size:17px}.gradeA,.gradeB{background:#eaf7df;color:#486d27}.gradeC{background:#fff0d3;color:#8b6110}.gradeD{width:92px;flex-basis:92px;background:#f9e4e0;color:#943c2f;font-size:12px}.guideBoundary{margin-top:12px;background:#171a15;color:#fff;border-radius:18px;padding:22px}.guideBoundary strong{font-size:18px;color:var(--lime)}.guideBoundary p{color:#afb7aa;margin:8px 0 0}.guideFaq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px 18px;margin-top:9px}.guideFaq summary{font-weight:750;cursor:pointer}.guideFaq p{color:#666d63;margin-bottom:0}
 @media(max-width:720px){
   body.nav-open{overflow:hidden}
   .side{display:flex;transform:translateX(-105%);transition:transform .2s ease;box-shadow:18px 0 40px rgba(0,0,0,.2);z-index:60}
@@ -21,4 +35,6 @@
   .top .btn{padding:10px;font-size:12px}
   .taskbox{align-items:stretch}
   .taskbox .btn{white-space:nowrap}
+  .zhGuideLink{padding:9px;font-size:12px}
+  .guideTop{height:auto;padding:18px 16px}.guideTop nav>a:not(.btn){display:none}.guideMain{padding:8px 14px 60px}.guideHero{padding:36px 24px}.guideHero h1{font-size:42px}.guideSteps,.guideInstallGrid,.gradeGrid{grid-template-columns:1fr}.guideSection{margin-top:48px}.guideSection>h2{font-size:29px}.guideExamples{align-items:flex-start;flex-direction:column}.gradeGrid article{padding:18px}
 }
