@@ -35,6 +35,13 @@
     webhook: { identity: ['webhook', 'automation'], minSignals: 2 },
     poster: { evidence: ['poster'], minSignals: 2 },
   };
+  // Compound platform requests must be proved by the same candidate. A result
+  // that merely mentions Next.js must not satisfy an explicit App Router task,
+  // and an App Router mention from an unrelated webhook skill must not satisfy
+  // a Next.js application request.
+  const JOINT_CANDIDATE_EVIDENCE_GROUPS = [
+    ['nextjs', 'app-router'],
+  ];
 
   function canon(value) {
     return String(value).toLowerCase()
@@ -240,10 +247,17 @@
     return [...new Set(querySignals(query).map((signal) => canon(signal.label)).filter((signal) => SPECIFICITY_SIGNALS.has(signal)))];
   }
 
-  function candidateEvidencePass(skill, required = []) {
+  function requestedJointEvidenceGroups(query) {
+    const requested = new Set(querySignals(query).flatMap((signal) => [signal.label, ...(signal.terms || [])]).map(canon));
+    return JOINT_CANDIDATE_EVIDENCE_GROUPS.filter((group) => group.every((signal) => requested.has(signal)));
+  }
+
+  function candidateEvidencePass(skill, required = [], requiredGroups = []) {
     const matched = new Set((skill.match_details?.matched_signals || []).map(canon));
     const identity = new Set(String(skill.name || '').toLowerCase().split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean));
     const taskEvidence = new Set([...(skill.tags || []), ...(skill.uses || []), ...(skill.routingEvidence || [])].map(canon).filter(Boolean));
+    if (requiredGroups.some((group) => group.some((signal) => matched.has(signal))
+      && !group.every((signal) => matched.has(signal) && taskEvidence.has(signal)))) return false;
     const matchedRequired = required.filter((signal) => matched.has(signal));
     if (matchedRequired.some((signal) => !CANDIDATE_EVIDENCE_RULES[signal])) return true;
     const applicable = matchedRequired.map((signal) => ({ signal, rule: CANDIDATE_EVIDENCE_RULES[signal] })).filter(({ rule }) => rule);
@@ -254,11 +268,11 @@
       && (!rule.evidence?.length || rule.evidence.some((term) => taskEvidence.has(canon(term)))));
   }
 
-  function enforceSpecificity(ranked, required = []) {
-    if (!required.length) return ranked;
+  function enforceSpecificity(ranked, required = [], requiredGroups = []) {
+    if (!required.length && !requiredGroups.length) return ranked;
     const wanted = new Set(required);
-    return ranked.filter((skill) => (skill.match_details?.matched_signals || []).some((signal) => wanted.has(canon(signal)))
-      && candidateEvidencePass(skill, required));
+    return ranked.filter((skill) => (!required.length || (skill.match_details?.matched_signals || []).some((signal) => wanted.has(canon(signal))))
+      && candidateEvidencePass(skill, required, requiredGroups));
   }
 
   function diversify(ranked, limit = 3) {
@@ -318,7 +332,8 @@
       .map((skill) => scoreSkill(skill, query))
       .sort((a, b) => b.match_score - a.match_score || b.specialty_hits - a.specialty_hits || b.skillradar_score - a.skillradar_score);
     const required = requestedSpecificitySignals(query);
-    const relevant = enforceSpecificity(ranked, required);
+    const requiredGroups = requestedJointEvidenceGroups(query);
+    const relevant = enforceSpecificity(ranked, required, requiredGroups);
     const matches = diversify(relevant, limit);
     return {
       source: 'skillradar-registry',
@@ -338,12 +353,12 @@
         version: '2.1',
         strategy: 'task-first field-weighted evidence + coverage + quality/security/freshness prior + complementary task-facet coverage rerank; named technologies/services require explicit per-candidate evidence; weak candidates are not backfilled',
       },
-      specificity: { enforced: required.length > 0, required_signals: required, eligible_candidates: relevant.length, filtered_candidates: ranked.length - relevant.length },
+      specificity: { enforced: required.length > 0 || requiredGroups.length > 0, required_signals: required, required_signal_groups: requiredGroups, eligible_candidates: relevant.length, filtered_candidates: ranked.length - relevant.length },
       matches,
-      capability_gap: capabilityGap(matches, limit, required),
+      capability_gap: capabilityGap(matches, limit, [...new Set([...required, ...requiredGroups.flat()])]),
       advisory: safetyAdvisory(matches),
     };
   }
 
-  global.SkillRadarWebRouter = Object.freeze({ canon, querySignals, registrySkills, scoreSkill, requestedSpecificitySignals, candidateEvidencePass, match });
+  global.SkillRadarWebRouter = Object.freeze({ canon, querySignals, registrySkills, scoreSkill, requestedSpecificitySignals, requestedJointEvidenceGroups, candidateEvidencePass, match });
 })(globalThis);

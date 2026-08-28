@@ -29,7 +29,7 @@
     {"id":"core-web-vitals","domain":"Frontend","tier":"coverage","task":"Audit LCP CLS network and Core Web Vitals performance","expectedAnyIds":["web-perf"],"minExpectedHits":1,"requiredSignalTerms":["lcp","cls","performance"],"minSignalHits":2},
     {"id":"tailwind-radix-components","domain":"Frontend","tier":"coverage","task":"Build accessible Tailwind Radix UI components","expectedAnyIds":["shadcn"],"minExpectedHits":1,"requiredSignalTerms":["tailwind","radix","ui"],"minSignalHits":2},
     {"id":"react-landing-polish","domain":"Frontend","tier":"coverage","task":"Design a polished production React web landing page","expectedAnyIds":["frontend-design"],"minExpectedHits":1,"requiredSignalTerms":["react","web"],"minSignalHits":1},
-    {"id":"next-data-fetching","domain":"Frontend","tier":"coverage","task":"Implement Next.js App Router data fetching and route architecture","expectedAnyIds":["nextjs"],"minExpectedHits":1,"requiredSignalTerms":["nextjs","app-router"],"minSignalHits":2},
+    {"id":"next-data-fetching","domain":"Frontend","tier":"coverage","task":"Implement Next.js App Router data fetching and route architecture","expectedAnyIds":["nextjs"],"minExpectedHits":1,"requiredSignalTerms":["nextjs","app-router"],"minSignalHits":2,"minCandidateRequiredHits":2,"maxLowEvidenceTop3":0},
 
     {"id":"fastapi-rest","domain":"Backend & API","tier":"coverage","task":"Build a Python FastAPI REST backend API","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["python","fastapi","api"],"minSignalHits":2},
     {"id":"node-api","domain":"Backend & API","tier":"coverage","task":"Build a Node server API with backend architecture","expectedAnyIds":[],"minExpectedHits":0,"requiredSignalTerms":["node","api","backend"],"minSignalHits":2},
