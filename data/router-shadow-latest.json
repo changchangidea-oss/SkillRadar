@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-27T12:55:03.536Z",
+  "generatedAt": "2026-08-28T02:05:31.449Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "67c05fba359db04e543c9572e4c614be1b6a47ca199f7aaf3b78e93c66a1d7bb",
+    "contentHash": "b7fef4cf4aeb9c1b70c19672884f0b04023c138a4e4fb867c8b3582a84717482",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-27T12:54:30.931Z",
+    "generatedAt": "2026-08-28T02:05:10.146Z",
     "totalCount": 448,
     "mode": "local-bundled"
   },
@@ -20,8 +20,8 @@
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 0,
-    "capabilityGapCases": 32,
-    "averageRecommendationCount": 1.96,
+    "capabilityGapCases": 33,
+    "averageRecommendationCount": 1.93,
     "expectedHitsTotal": 32,
     "signalHitsTotal": 136,
     "anchorSignalHitsTotal": 34,
@@ -38,8 +38,8 @@
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 0,
-    "capabilityGapCases": 32,
-    "averageRecommendationCount": 1.96,
+    "capabilityGapCases": 33,
+    "averageRecommendationCount": 1.93,
     "expectedHitsTotal": 32,
     "signalHitsTotal": 136,
     "anchorSignalHitsTotal": 34,
@@ -412,17 +412,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nextjs",
-        "hookdeck/webhook-skills/webhook-handler-patterns-60609e",
-        "affaan-m/ECC/backend-patterns-ac648c"
+        "nextjs"
       ],
       "candidateTop3": [
-        "nextjs",
-        "hookdeck/webhook-skills/webhook-handler-patterns-60609e",
-        "affaan-m/ECC/backend-patterns-ac648c"
+        "nextjs"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -910,12 +906,12 @@
       "productionTop3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
         "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
-        "flutter/agent-plugins/flutter-add-integration-test-91cc8c"
+        "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd"
       ],
       "candidateTop3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
         "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
-        "flutter/agent-plugins/flutter-add-integration-test-91cc8c"
+        "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,

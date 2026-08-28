@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T12:54:43.755Z",
+  "generatedAt": "2026-08-28T02:05:18.572Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
@@ -20,9 +20,9 @@
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
   "specificityFailures": 0,
-  "capabilityGapCases": 32,
-  "averageRecommendationCount": 1.96,
-  "averageRelevantTop3": 1.96,
+  "capabilityGapCases": 33,
+  "averageRecommendationCount": 1.93,
+  "averageRelevantTop3": 1.93,
   "averageTop1Score": 79,
   "expectedHitsTotal": 32,
   "signalHitsTotal": 136,
@@ -44,9 +44,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 5,
+      "capabilityGapCases": 6,
       "passRate": 1,
-      "averageRecommendationCount": 1.88
+      "averageRecommendationCount": 1.63
     },
     "Design & Media": {
       "cases": 5,
@@ -1241,12 +1241,10 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nextjs",
-        "hookdeck/webhook-skills/webhook-handler-patterns-60609e",
-        "affaan-m/ECC/backend-patterns-ac648c"
+        "nextjs"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 1,
+      "capability_gap": true,
       "top1_score": 93,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -1254,7 +1252,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1276,40 +1274,6 @@
             "route",
             "architecture"
           ]
-        },
-        {
-          "id": "hookdeck/webhook-skills/webhook-handler-patterns-60609e",
-          "score": 75,
-          "coverage": 0.68,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "nextjs",
-            "app-router",
-            "implement",
-            "route"
-          ]
-        },
-        {
-          "id": "affaan-m/ECC/backend-patterns-ac648c",
-          "score": 66,
-          "coverage": 0.53,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "nextjs",
-            "data",
-            "route",
-            "architecture"
-          ]
         }
       ],
       "signals": [
@@ -1318,12 +1282,7 @@
         "data",
         "fetching",
         "route",
-        "architecture",
-        "implement",
-        "hookdeck-webhook-skills-webhook-handler-patterns-60609e",
-        "webhook-handler-patterns",
-        "affaan-m-ecc-backend-patterns-ac648c",
-        "backend-patterns"
+        "architecture"
       ]
     },
     {
@@ -2767,7 +2726,7 @@
       "top3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
         "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
-        "flutter/agent-plugins/flutter-add-integration-test-91cc8c"
+        "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2813,7 +2772,7 @@
           ]
         },
         {
-          "id": "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
+          "id": "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd",
           "score": 64,
           "coverage": 0.61,
           "expected": false,
@@ -2835,8 +2794,8 @@
         "flutter-build-responsive-layout",
         "flutter-agent-plugins-flutter-add-widget-preview-8e7a10",
         "flutter-add-widget-preview",
-        "flutter-agent-plugins-flutter-add-integration-test-91cc8c",
-        "flutter-add-integration-test"
+        "flutter-agent-plugins-flutter-apply-architecture-best-practices-c5e4dd",
+        "flutter-apply-architecture-best-practices"
       ]
     },
     {
