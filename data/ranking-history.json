@@ -4922,7 +4922,7 @@
     },
     {
       "date": "2026-08-28",
-      "generatedAt": "2026-08-28T08:52:23.733Z",
+      "generatedAt": "2026-08-28T14:24:20.821Z",
       "domains": {
         "ui-design": [
           {
@@ -4976,53 +4976,53 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/design-thinking",
-            "score": 72,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/high-end-visual-design",
-            "score": 72,
-            "source": "radar"
-          },
-          {
             "skillId": "figma/mcp-server-guide/implement-design",
             "score": 68,
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/anti-ui-slop",
-            "score": 68,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/ckw-design",
-            "score": 68,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/design-taste-frontend",
-            "score": 68,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/frontend-ui-engineering",
-            "score": 68,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/mobile-design",
-            "score": 68,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/product-design",
+            "skillId": "ashwin-growtharc/DeliveryOS/ui-ux-pro-max",
             "score": 67,
             "source": "radar"
           },
           {
             "skillId": "figma/mcp-server-guide/create-design-system-rules",
             "score": 66,
+            "source": "seed"
+          },
+          {
+            "skillId": "mblode/agent-skills/ui-design",
+            "score": 66,
+            "source": "seed"
+          },
+          {
+            "skillId": "concept2cure/ClinicalSageAI-2-replit/frontend-design",
+            "score": 66,
+            "source": "radar"
+          },
+          {
+            "skillId": "figma/mcp-server-guide/figma-design-to-code",
+            "score": 65,
+            "source": "seed"
+          },
+          {
+            "skillId": "concept2cure/ClinicalSageAI-2-replit/design-brief",
+            "score": 65,
+            "source": "radar"
+          },
+          {
+            "skillId": "pbakaus/impeccable/animate",
+            "score": 63,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/adapt",
+            "score": 63,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/bolder",
+            "score": 63,
             "source": "seed"
           }
         ],
@@ -5093,11 +5093,6 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/minimalist-ui",
-            "score": 67,
-            "source": "radar"
-          },
-          {
             "skillId": "narumiruna/skills/svg-illustration",
             "score": 66,
             "source": "seed"
@@ -5106,11 +5101,6 @@
             "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
             "score": 66,
             "source": "seed"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/industrial-brutalist-ui",
-            "score": 66,
-            "source": "radar"
           },
           {
             "skillId": "heroygt/skills/svg-icon-maker",
@@ -5125,6 +5115,16 @@
           {
             "skillId": "curiositech/some_claude_skills/collage-layout-expert",
             "score": 65,
+            "source": "seed"
+          },
+          {
+            "skillId": "vercel-labs/agent-skills/web-design-guidelines",
+            "score": 64,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/quieter",
+            "score": 63,
             "source": "seed"
           }
         ],
@@ -5160,26 +5160,6 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/design-thinking",
-            "score": 73,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/high-end-visual-design",
-            "score": 68,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/design-spells",
-            "score": 67,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/ckw-design",
-            "score": 67,
-            "source": "radar"
-          },
-          {
             "skillId": "mblode/agent-skills/ui-design",
             "score": 66,
             "source": "seed"
@@ -5193,21 +5173,6 @@
             "skillId": "anthropics/skills/frontend-design",
             "score": 65,
             "source": "seed"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/emotional-arc-designer",
-            "score": 64,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/frontend-design",
-            "score": 64,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/design-taste-frontend",
-            "score": 64,
-            "source": "radar"
           },
           {
             "skillId": "pbakaus/impeccable/colorize",
@@ -5228,6 +5193,41 @@
             "skillId": "calesthio/generative-media-skills/visual-style-direction",
             "score": 63,
             "source": "seed"
+          },
+          {
+            "skillId": "remotion-dev/skills/remotion-best-practices",
+            "score": 57,
+            "source": "seed"
+          },
+          {
+            "skillId": "remotion-dev/skills/remotion-create",
+            "score": 55,
+            "source": "seed"
+          },
+          {
+            "skillId": "remotion-dev/skills/remotion-render",
+            "score": 55,
+            "source": "seed"
+          },
+          {
+            "skillId": "remotion-dev/skills/remotion-markup",
+            "score": 55,
+            "source": "seed"
+          },
+          {
+            "skillId": "remotion-dev/skills/remotion-interactivity",
+            "score": 55,
+            "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
+            "score": 55,
+            "source": "seed"
+          },
+          {
+            "skillId": "curiositech/some_claude_skills/typography-expert",
+            "score": 55,
+            "source": "seed"
           }
         ],
         "video-design": [
@@ -5240,11 +5240,6 @@
             "skillId": "remotion-dev/skills/remotion-multimedia",
             "score": 73,
             "source": "seed"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/design-thinking",
-            "score": 66,
-            "source": "radar"
           },
           {
             "skillId": "remotion-dev/skills/remotion-create",
@@ -5307,28 +5302,33 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/frontend-design",
-            "score": 61,
+            "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/seedance-2-5-skill",
+            "score": 57,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/ckw-design",
-            "score": 60,
+            "skillId": "Vincentwei1021/video-shotcraft/video-shotcraft",
+            "score": 56,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/design-taste-frontend",
-            "score": 60,
+            "skillId": "joecastelino/jay-skill-pack/manim-video",
+            "score": 56,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/monochromatic-ui",
-            "score": 59,
+            "skillId": "leonxlnx/taste-skill/high-end-visual-design",
+            "score": 54,
+            "source": "seed"
+          },
+          {
+            "skillId": "eigent-ai/eigent/pptx",
+            "score": 54,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/spatial-design",
-            "score": 59,
+            "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/universal-video-prompt-skill",
+            "score": 53,
             "source": "radar"
           }
         ],
@@ -5369,6 +5369,26 @@
             "source": "seed"
           },
           {
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad",
+            "score": 59,
+            "source": "radar"
+          },
+          {
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-slicing-pipeline-and-processes",
+            "score": 54,
+            "source": "radar"
+          },
+          {
+            "skillId": "joecastelino/jay-skill-pack/manim-video",
+            "score": 54,
+            "source": "radar"
+          },
+          {
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-reference",
+            "score": 53,
+            "source": "radar"
+          },
+          {
             "skillId": "calesthio/generative-media-skills/ecommerce-product-imagery",
             "score": 52,
             "source": "seed"
@@ -5379,9 +5399,19 @@
             "source": "seed"
           },
           {
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-design-tolerances-and-materials",
+            "score": 52,
+            "source": "radar"
+          },
+          {
             "skillId": "nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max",
             "score": 51,
             "source": "seed"
+          },
+          {
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-generative-automation-and-scanning",
+            "score": 51,
+            "source": "radar"
           },
           {
             "skillId": "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
@@ -5401,36 +5431,6 @@
           {
             "skillId": "figma/mcp-server-guide/figma-generate-design",
             "score": 45,
-            "source": "seed"
-          },
-          {
-            "skillId": "remotion-dev/skills/remotion-render",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "mblode/agent-skills/ui-design",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/mobile-ux-optimizer",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "figma/mcp-server-guide/figma-design-to-code",
-            "score": 43,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/ux-friction-analyzer",
-            "score": 43,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/native-app-designer",
-            "score": 43,
             "source": "seed"
           }
         ],
@@ -5461,53 +5461,28 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/industrial-brutalist-ui",
-            "score": 63,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/spatial-design",
-            "score": 63,
-            "source": "radar"
-          },
-          {
             "skillId": "calesthio/generative-media-skills/lighting-direction",
             "score": 62,
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/antigravity-design-expert",
-            "score": 61,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/hig-components-layout",
-            "score": 60,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/spatial-computing-ui",
-            "score": 58,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/liuguang-banlan-ui",
-            "score": 57,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/api-and-interface-design",
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad",
             "score": 54,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/macos-menubar-tuist-app",
-            "score": 51,
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-design-tolerances-and-materials",
+            "score": 54,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/comfyui-gateway",
-            "score": 48,
+            "skillId": "ibuilder/massing/master-builder",
+            "score": 52,
+            "source": "radar"
+          },
+          {
+            "skillId": "mizzlelover/portrait-prompt-atlas/gpt-image-2-portrait-library",
+            "score": 51,
             "source": "radar"
           },
           {
@@ -5516,14 +5491,14 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/mcp-builder",
-            "score": 47,
-            "source": "radar"
-          },
-          {
             "skillId": "curiositech/some_claude_skills/diagramming-expert",
             "score": 46,
             "source": "seed"
+          },
+          {
+            "skillId": "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer",
+            "score": 45,
+            "source": "radar"
           },
           {
             "skillId": "remotion-dev/skills/remotion-render",
@@ -5533,6 +5508,31 @@
           {
             "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
             "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/3d-asset-production",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/production-design-direction",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/threejs-scene-composition",
+            "score": 44,
+            "source": "seed"
+          },
+          {
+            "skillId": "Free-Templates-cc/free-react-templates/touchdesigner-mcp",
+            "score": 44,
+            "source": "radar"
+          },
+          {
+            "skillId": "pbakaus/impeccable/arrange",
+            "score": 43,
             "source": "seed"
           }
         ],
@@ -5593,18 +5593,8 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/minimalist-ui",
-            "score": 63,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/design-philosophy",
-            "score": 59,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/swiss-design",
-            "score": 58,
+            "skillId": "xrestha/crest-suite/impeccable",
+            "score": 60,
             "source": "radar"
           },
           {
@@ -5613,14 +5603,14 @@
             "source": "seed"
           },
           {
+            "skillId": "mizzlelover/portrait-prompt-atlas/gpt-image-2-portrait-library",
+            "score": 57,
+            "source": "radar"
+          },
+          {
             "skillId": "pbakaus/impeccable/typeset",
             "score": 55,
             "source": "seed"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/tile-design",
-            "score": 55,
-            "source": "radar"
           },
           {
             "skillId": "curiositech/some_claude_skills/design-critic",
@@ -5628,13 +5618,23 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/duotone-design",
+            "skillId": "Free-Templates-cc/free-react-templates/design-md",
             "score": 54,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/brand-guidelines-anthropic",
-            "score": 53,
+            "skillId": "xrestha/crest-suite/taste-skill",
+            "score": 54,
+            "source": "radar"
+          },
+          {
+            "skillId": "Free-Templates-cc/free-react-templates/colorlib-template-replication",
+            "score": 54,
+            "source": "radar"
+          },
+          {
+            "skillId": "joecastelino/jay-skill-pack/popular-web-designs",
+            "score": 52,
             "source": "radar"
           }
         ],
@@ -5670,16 +5670,6 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/high-end-visual-design",
-            "score": 72,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/design-spells",
-            "score": 67,
-            "source": "radar"
-          },
-          {
             "skillId": "curiositech/some_claude_skills/native-app-designer",
             "score": 65,
             "source": "seed"
@@ -5695,49 +5685,59 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/anti-ui-slop",
-            "score": 63,
+            "skillId": "ashwin-growtharc/DeliveryOS/ui-ux-pro-max",
+            "score": 64,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/design-ux",
-            "score": 61,
+            "skillId": "concept2cure/ClinicalSageAI-2-replit/design-brief",
+            "score": 58,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/design-taste-frontend",
-            "score": 60,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/emil-design-eng",
-            "score": 60,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/frontend-ui-engineering",
-            "score": 59,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/mobile-design",
-            "score": 59,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/deterministic-design",
-            "score": 59,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/liuguang-banlan-ui",
-            "score": 57,
+            "skillId": "xrestha/crest-suite/impeccable",
+            "score": 58,
             "source": "radar"
           },
           {
             "skillId": "vercel-labs/agent-skills/web-design-guidelines",
             "score": 56,
             "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/audit",
+            "score": 55,
+            "source": "seed"
+          },
+          {
+            "skillId": "ibelick/ui-skills/baseline-ui",
+            "score": 53,
+            "source": "seed"
+          },
+          {
+            "skillId": "concept2cure/ClinicalSageAI-2-replit/frontend-design",
+            "score": 53,
+            "source": "radar"
+          },
+          {
+            "skillId": "Free-Templates-cc/free-react-templates/design-md",
+            "score": 53,
+            "source": "radar"
+          },
+          {
+            "skillId": "Free-Templates-cc/free-react-templates/colorlib-template-replication",
+            "score": 52,
+            "source": "radar"
+          },
+          {
+            "skillId": "concept2cure/ClinicalSageAI-2-replit/design-system",
+            "score": 49,
+            "source": "radar"
+          },
+          {
+            "skillId": "Free-Templates-cc/free-react-templates/claude-design",
+            "score": 49,
+            "source": "radar"
           }
         ],
         "digital-media-film": [
@@ -5869,8 +5869,18 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/canvas-design",
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad",
             "score": 63,
+            "source": "radar"
+          },
+          {
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-slicing-pipeline-and-processes",
+            "score": 59,
+            "source": "radar"
+          },
+          {
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-reference",
+            "score": 58,
             "source": "radar"
           },
           {
@@ -5884,7 +5894,7 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/design-philosophy",
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-design-tolerances-and-materials",
             "score": 55,
             "source": "radar"
           },
@@ -5899,6 +5909,16 @@
             "source": "seed"
           },
           {
+            "skillId": "joecastelino/jay-skill-pack/manim-video",
+            "score": 54,
+            "source": "radar"
+          },
+          {
+            "skillId": "adammatthewsteinberger/vibey-skills/cad-generative-automation-and-scanning",
+            "score": 54,
+            "source": "radar"
+          },
+          {
             "skillId": "lovstudio/skills/lovstudio-png2svg",
             "score": 53,
             "source": "seed"
@@ -5909,8 +5929,8 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/building-native-ui",
-            "score": 51,
+            "skillId": "adammatthewsteinberger/vibey-skills/nano-fabrication-and-semiconductor-process",
+            "score": 48,
             "source": "radar"
           },
           {
@@ -5921,26 +5941,6 @@
           {
             "skillId": "anthropics/skills/frontend-design",
             "score": 46,
-            "source": "seed"
-          },
-          {
-            "skillId": "leonxlnx/taste-skill/high-end-visual-design",
-            "score": 46,
-            "source": "seed"
-          },
-          {
-            "skillId": "curiositech/some_claude_skills/hand-drawn-infographic-creator",
-            "score": 46,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/critique",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/bolder",
-            "score": 44,
             "source": "seed"
           }
         ],
@@ -5986,14 +5986,34 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/building-native-ui",
-            "score": 51,
+            "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/universal-video-prompt-skill",
+            "score": 53,
+            "source": "radar"
+          },
+          {
+            "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/seedance-2-5-skill",
+            "score": 50,
+            "source": "radar"
+          },
+          {
+            "skillId": "joecastelino/jay-skill-pack/ascii-video",
+            "score": 50,
+            "source": "radar"
+          },
+          {
+            "skillId": "eigent-ai/eigent/xlsx",
+            "score": 48,
             "source": "radar"
           },
           {
             "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
             "score": 47,
             "source": "seed"
+          },
+          {
+            "skillId": "concept2cure/ClinicalSageAI-2-replit/design-system",
+            "score": 47,
+            "source": "radar"
           },
           {
             "skillId": "anthropics/skills/frontend-design",
@@ -6011,6 +6031,11 @@
             "source": "seed"
           },
           {
+            "skillId": "Free-Templates-cc/free-react-templates/popular-web-designs",
+            "score": 45,
+            "source": "radar"
+          },
+          {
             "skillId": "pbakaus/impeccable/critique",
             "score": 44,
             "source": "seed"
@@ -6018,31 +6043,6 @@
           {
             "skillId": "pbakaus/impeccable/bolder",
             "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/distill",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/quieter",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/typeset",
-            "score": 44,
-            "source": "seed"
-          },
-          {
-            "skillId": "pbakaus/impeccable/arrange",
-            "score": 43,
-            "source": "seed"
-          },
-          {
-            "skillId": "leonxlnx/taste-skill/design-taste-frontend",
-            "score": 43,
             "source": "seed"
           }
         ],
@@ -6063,16 +6063,6 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/high-end-visual-design",
-            "score": 69,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/antigravity-design-expert",
-            "score": 66,
-            "source": "radar"
-          },
-          {
             "skillId": "curiositech/some_claude_skills/fancy-yard-landscaper",
             "score": 65,
             "source": "seed"
@@ -6083,34 +6073,9 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/design-thinking",
-            "score": 65,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/spatial-design",
-            "score": 65,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/canvas-design",
-            "score": 64,
-            "source": "radar"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/industrial-brutalist-ui",
-            "score": 64,
-            "source": "radar"
-          },
-          {
             "skillId": "calesthio/generative-media-skills/neural-reality-capture",
             "score": 63,
             "source": "seed"
-          },
-          {
-            "skillId": "sickn33/agentic-awesome-skills/design-it",
-            "score": 63,
-            "source": "radar"
           },
           {
             "skillId": "calesthio/generative-media-skills/lighting-direction",
@@ -6118,33 +6083,68 @@
             "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/api-and-interface-design",
-            "score": 61,
+            "skillId": "joecastelino/jay-skill-pack/manim-video",
+            "score": 55,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/emotional-arc-designer",
-            "score": 60,
+            "skillId": "ibuilder/massing/master-builder",
+            "score": 55,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/ckw-design",
-            "score": 60,
+            "skillId": "roble3/cc-blender-skill/blender-export",
+            "score": 54,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/3d-asset-production",
+            "score": 52,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/arrange",
+            "score": 51,
+            "source": "seed"
+          },
+          {
+            "skillId": "pbakaus/impeccable/layout",
+            "score": 51,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/production-design-direction",
+            "score": 51,
+            "source": "seed"
+          },
+          {
+            "skillId": "calesthio/generative-media-skills/threejs-scene-composition",
+            "score": 51,
+            "source": "seed"
+          },
+          {
+            "skillId": "mizzlelover/portrait-prompt-atlas/gpt-image-2-portrait-library",
+            "score": 51,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/spatial-computing-ui",
-            "score": 60,
+            "skillId": "monumentalsystems/atlas-agent-teams/blender",
+            "score": 50,
+            "source": "seed"
+          },
+          {
+            "skillId": "hybridlabor-api/bdb-dev-optimized-agent-skills/vector-database-engineer",
+            "score": 45,
             "source": "radar"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/design-spells",
-            "score": 59,
-            "source": "radar"
+            "skillId": "remotion-dev/skills/remotion-render",
+            "score": 44,
+            "source": "seed"
           },
           {
-            "skillId": "sickn33/agentic-awesome-skills/design-ux",
-            "score": 58,
+            "skillId": "adammatthewsteinberger/vibey-skills/reporting-dashboard-design-charts-and-alerting",
+            "score": 44,
             "source": "radar"
           }
         ]
