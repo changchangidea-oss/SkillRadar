@@ -135,21 +135,27 @@ const CANDIDATE_EVIDENCE_RULES={
   flutter:{identity:['flutter'],minSignals:2},webhook:{identity:['webhook','automation'],minSignals:2},
   poster:{evidence:['poster'],minSignals:2}
 }
+const JOINT_CANDIDATE_EVIDENCE_GROUPS=[['nextjs','app-router']]
 function requestedSpecificitySignals(query){
   return [...new Set(querySignals(query).map(x=>canon(x.label)).filter(x=>SPECIFICITY_SIGNALS.has(x)))]
 }
-function candidateEvidencePass(skill,required=[]){
+function requestedJointEvidenceGroups(query){
+  const requested=new Set(querySignals(query).flatMap(signal=>[signal.label,...(signal.terms||[])]).map(canon))
+  return JOINT_CANDIDATE_EVIDENCE_GROUPS.filter(group=>group.every(signal=>requested.has(signal)))
+}
+function candidateEvidencePass(skill,required=[],requiredGroups=[]){
   const matched=new Set((skill.match_details?.matched_signals||[]).map(canon)),identity=new Set(String(skill.name||'').toLowerCase().split(/[^a-z0-9+#.]+/).map(canon).filter(Boolean)),taskEvidence=new Set([...(skill.tags||[]),...(skill.uses||[]),...(skill.routingEvidence||[])].map(canon).filter(Boolean))
+  if(requiredGroups.some(group=>group.some(signal=>matched.has(signal))&&!group.every(signal=>matched.has(signal)&&taskEvidence.has(signal))))return false
   const matchedRequired=required.filter(signal=>matched.has(signal))
   if(matchedRequired.some(signal=>!CANDIDATE_EVIDENCE_RULES[signal]))return true
   const applicable=matchedRequired.map(signal=>({signal,rule:CANDIDATE_EVIDENCE_RULES[signal]})).filter(x=>x.rule)
   if(!applicable.length)return true
   return applicable.some(({signal,rule})=>matched.has(signal)&&matched.size>=rule.minSignals&&(!rule.identity?.length||rule.identity.some(term=>identity.has(canon(term))))&&(!rule.evidence?.length||rule.evidence.some(term=>taskEvidence.has(canon(term)))))
 }
-function enforceSpecificity(ranked,required=[]){
-  if(!required.length)return ranked
+function enforceSpecificity(ranked,required=[],requiredGroups=[]){
+  if(!required.length&&!requiredGroups.length)return ranked
   const wanted=new Set(required)
-  return ranked.filter(skill=>(skill.match_details?.matched_signals||[]).some(signal=>wanted.has(canon(signal)))&&candidateEvidencePass(skill,required))
+  return ranked.filter(skill=>(!required.length||(skill.match_details?.matched_signals||[]).some(signal=>wanted.has(canon(signal))))&&candidateEvidencePass(skill,required,requiredGroups))
 }
 function diversify(ranked,limit=3){
   if(!ranked.length)return[]
@@ -181,9 +187,10 @@ async function registryResult(){
   if(cmd==='inspect'){const id=value.toLowerCase();const skill=registry.find(s=>String(s.id).toLowerCase()===id||String(s.name).toLowerCase()===id);if(!skill)throw new Error(`Skill not found or blocked by safety gate: ${value}`);return {source:'skillradar-registry',registry:loaded.meta,context,skill:{...skill,skillradar_score:skill.score||70}}}
   const ranked=registry.map(s=>scoreSkill(s,value,context)).filter(s=>cmd==='match'||s.match_score>24).sort((a,b)=>b.match_score-a.match_score||b.specialty_hits-a.specialty_hits||b.skillradar_score-a.skillradar_score)
   const requiredSpecificitySignals=requestedSpecificitySignals(value)
-  const relevantRanked=enforceSpecificity(ranked,requiredSpecificitySignals)
-  const specificity={enforced:requiredSpecificitySignals.length>0,required_signals:requiredSpecificitySignals,eligible_candidates:relevantRanked.length,filtered_candidates:ranked.length-relevantRanked.length}
-  if(cmd==='match'){const matches=diversify(relevantRanked,3);return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1',strategy:'task-first field-weighted evidence + coverage + quality/security/freshness prior + bounded project-context bonus + complementary task-facet coverage rerank; named technologies/services require explicit per-candidate evidence; weak candidates are not backfilled'},specificity,matches,capability_gap:capabilityGap(matches,3,requiredSpecificitySignals),advisory:safetyAdvisory(matches)}}
+  const requiredSignalGroups=requestedJointEvidenceGroups(value)
+  const relevantRanked=enforceSpecificity(ranked,requiredSpecificitySignals,requiredSignalGroups)
+  const specificity={enforced:requiredSpecificitySignals.length>0||requiredSignalGroups.length>0,required_signals:requiredSpecificitySignals,required_signal_groups:requiredSignalGroups,eligible_candidates:relevantRanked.length,filtered_candidates:ranked.length-relevantRanked.length}
+  if(cmd==='match'){const matches=diversify(relevantRanked,3),gapSignals=[...new Set([...requiredSpecificitySignals,...requiredSignalGroups.flat()])];return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1',strategy:'task-first field-weighted evidence + coverage + quality/security/freshness prior + bounded project-context bonus + complementary task-facet coverage rerank; named technologies/services require explicit per-candidate evidence; weak candidates are not backfilled'},specificity,matches,capability_gap:capabilityGap(matches,3,gapSignals),advisory:safetyAdvisory(matches)}}
   return {source:'skillradar-registry',registry:loaded.meta,context,ranking:{version:'2.1'},specificity,skills:relevantRanked.slice(0,8)}
 }
 async function remote(){if(!base||offline)return null;if(cmd==='match'){const r=await fetch(`${base}/api/router`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({task:value,agent:'codex',limit:3})});if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}const endpoint=cmd==='inspect'?`/api/skill?id=${encodeURIComponent(value)}`:`/api/skills?q=${encodeURIComponent(value)}&limit=8`;const r=await fetch(base+endpoint);if(!r.ok)throw new Error(`remote ${r.status}`);return r.json()}

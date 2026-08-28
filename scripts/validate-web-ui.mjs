@@ -152,14 +152,41 @@ const nextBodyCandidate = {
   signalScore: 74,
   maintenanceScore: 95,
 };
-const nextBodySnapshot = { ...snapshot, core: [], design: [], general: [nextBodyCandidate] };
+const nextBodyPartialCandidates = [
+  {
+    id: 'fixture/webhook-next-mention',
+    name: 'webhook-handler-patterns',
+    source: 'fixture/webhook',
+    category: 'Automation & Integrations',
+    tags: ['fastapi'],
+    routingEvidence: ['app-router'],
+    summary: 'Webhook handler patterns with framework notes for Next.js and App Router route handlers.',
+    security: 'B',
+    signalScore: 80,
+    maintenanceScore: 95,
+  },
+  {
+    id: 'fixture/next-api-partial',
+    name: 'backend-patterns',
+    source: 'fixture/backend',
+    category: 'Backend & API',
+    tags: ['backend', 'nextjs'],
+    routingEvidence: ['nextjs'],
+    summary: 'Backend data-access patterns that mention Next.js App Router API routes.',
+    security: 'B',
+    signalScore: 80,
+    maintenanceScore: 95,
+  },
+];
+const nextBodySnapshot = { ...snapshot, core: [], design: [], general: [nextBodyCandidate, ...nextBodyPartialCandidates] };
 const nextBodyBrowser = webRouter.match(nextBodySnapshot, nextBodyQuery, 3);
-assert.deepEqual(nextBodyBrowser.matches.map((skill) => skill.id), [nextBodyCandidate.id], 'candidate-owned full-SKILL routing evidence must produce a focused browser result');
+assert.deepEqual(nextBodyBrowser.specificity.required_signal_groups, [['nextjs', 'app-router']], 'compound Next.js App Router task must activate joint candidate evidence');
+assert.deepEqual(nextBodyBrowser.matches.map((skill) => skill.id), [nextBodyCandidate.id], 'split Next.js/App Router evidence from unrelated candidates must not enter the browser result');
 const nextBodySignals = new Set((nextBodyBrowser.matches[0]?.match_details?.matched_signals || []).map(webRouter.canon));
 for (const signal of ['nextjs', 'app-router']) assert.ok(nextBodySignals.has(signal), `full candidate SKILL evidence lost ${signal}`);
 const nextBodyEval = evaluateRoutingCase({
   id: 'fixture-next-body', domain: 'Frontend', tier: 'coverage', expectedAnyIds: [], minExpectedHits: 0,
-  requiredSignalTerms: ['nextjs', 'app-router'], minSignalHits: 2, maxLowEvidenceTop3: 0,
+  requiredSignalTerms: ['nextjs', 'app-router'], minSignalHits: 2, minCandidateRequiredHits: 2, maxLowEvidenceTop3: 0,
 }, nextBodyBrowser.matches, {
   source: nextBodyBrowser.source,
   registryMode: 'local-bundled',
@@ -171,7 +198,8 @@ const nextBodyPath = path.join(nextBodyDir, 'registry.json');
 try {
   fs.writeFileSync(nextBodyPath, JSON.stringify(nextBodySnapshot));
   const nextBodyPlugin = pluginMatch(nextBodyQuery, nextBodyPath);
-  assert.deepEqual(nextBodyPlugin.matches.map((skill) => skill.id), [nextBodyCandidate.id], 'full candidate SKILL evidence must route identically in the Plugin');
+  assert.deepEqual(nextBodyPlugin.specificity.required_signal_groups, [['nextjs', 'app-router']], 'Plugin must activate the same joint candidate evidence group');
+  assert.deepEqual(nextBodyPlugin.matches.map((skill) => skill.id), [nextBodyCandidate.id], 'split Next.js/App Router evidence from unrelated candidates must not enter the Plugin result');
 } finally {
   fs.rmSync(nextBodyDir, { recursive: true, force: true });
 }
