@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T02:05:18.572Z",
+  "generatedAt": "2026-08-28T08:56:33.030Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
@@ -20,10 +20,10 @@
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
   "specificityFailures": 0,
-  "capabilityGapCases": 33,
-  "averageRecommendationCount": 1.93,
-  "averageRelevantTop3": 1.93,
-  "averageTop1Score": 79,
+  "capabilityGapCases": 31,
+  "averageRecommendationCount": 2.04,
+  "averageRelevantTop3": 2.04,
+  "averageTop1Score": 78.2,
   "expectedHitsTotal": 32,
   "signalHitsTotal": 136,
   "anchorSignalHitsTotal": 34,
@@ -34,9 +34,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 4,
+      "capabilityGapCases": 3,
       "passRate": 1,
-      "averageRecommendationCount": 1.83
+      "averageRecommendationCount": 2.33
     },
     "Frontend": {
       "cases": 8,
@@ -56,7 +56,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 2.6
+      "averageRecommendationCount": 2.8
     },
     "Data & Database": {
       "cases": 5,
@@ -94,9 +94,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 4,
+      "capabilityGapCases": 2,
       "passRate": 1,
-      "averageRecommendationCount": 1.5
+      "averageRecommendationCount": 2.25
     },
     "Security": {
       "cases": 4,
@@ -124,9 +124,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 1,
+      "capabilityGapCases": 2,
       "passRate": 1,
-      "averageRecommendationCount": 2.5
+      "averageRecommendationCount": 2.25
     },
     "Docs & Research": {
       "cases": 4,
@@ -233,7 +233,7 @@
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 90,
+      "top1_score": 83,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 0,
@@ -246,8 +246,8 @@
       "candidates": [
         {
           "id": "ai-sdk",
-          "score": 90,
-          "coverage": 0.85,
+          "score": 83,
+          "coverage": 0.74,
           "expected": true,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -257,16 +257,14 @@
           "signals": [
             "ai-sdk",
             "tool-calling",
-            "streaming",
-            "vercel"
+            "streaming"
           ]
         }
       ],
       "signals": [
         "ai-sdk",
         "tool-calling",
-        "streaming",
-        "vercel"
+        "streaming"
       ]
     },
     {
@@ -464,10 +462,11 @@
       "pass": true,
       "top3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f"
+        "stephonGAO/milu/frontend-design-25832f",
+        "sickn33/agentic-awesome-skills/ckw-design"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 87,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -475,7 +474,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -515,6 +514,23 @@
             "dashboard",
             "interface"
           ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/ckw-design",
+          "score": 60,
+          "coverage": 0.48,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "visual",
+            "polish",
+            "react",
+            "dashboard"
+          ]
         }
       ],
       "signals": [
@@ -526,7 +542,9 @@
         "interface",
         "frontend-design",
         "quality",
-        "stephongao-milu-frontend-design-25832f"
+        "stephongao-milu-frontend-design-25832f",
+        "sickn33-agentic-awesome-skills-ckw-design",
+        "ckw-design"
       ]
     },
     {
@@ -535,13 +553,13 @@
       "tier": "contract",
       "pass": true,
       "top3": [
+        "sickn33/agentic-awesome-skills/antigravity-design-expert",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering",
-        "calesthio/generative-media-skills/neural-reality-capture"
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 80,
+      "top1_score": 83,
       "expected_hits": 0,
       "signal_hits": 4,
       "anchor_signal_hits": 0,
@@ -552,6 +570,22 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/antigravity-design-expert",
+          "score": 83,
+          "coverage": 0.75,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "architecture",
+            "rendering",
+            "spatial"
+          ]
+        },
         {
           "id": "curiositech/some_claude_skills/interior-design-expert",
           "score": 80,
@@ -583,35 +617,19 @@
             "rendering",
             "interior"
           ]
-        },
-        {
-          "id": "calesthio/generative-media-skills/neural-reality-capture",
-          "score": 77,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "architecture",
-            "interior",
-            "spatial"
-          ]
         }
       ],
       "signals": [
         "architecture",
-        "interior",
+        "rendering",
         "spatial",
+        "sickn33-agentic-awesome-skills-antigravity-design-expert",
+        "antigravity-design-expert",
+        "interior",
         "curiositech-some-claude-skills-interior-design-expert",
         "interior-design-expert",
-        "rendering",
         "roble3-cc-blender-skill-blender-rendering",
-        "blender-rendering",
-        "calesthio-generative-media-skills-neural-reality-capture",
-        "neural-reality-capture"
+        "blender-rendering"
       ]
     },
     {
@@ -722,13 +740,13 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "playwright-testing",
         "langgenius/dify/frontend-testing-c86f15",
-        "langgenius/dify/e2e-cucumber-playwright-1de203"
+        "langgenius/dify/e2e-cucumber-playwright-1de203",
+        "voidmatcha/e2e-skills/e2e-reviewer-50810f"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 90,
+      "top1_score": 81,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -739,24 +757,6 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "playwright-testing",
-          "score": 90,
-          "coverage": 0.88,
-          "expected": true,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "end-to-end",
-            "resilient",
-            "playwright",
-            "browser",
-            "tests"
-          ]
-        },
         {
           "id": "langgenius/dify/frontend-testing-c86f15",
           "score": 81,
@@ -778,7 +778,7 @@
           "id": "langgenius/dify/e2e-cucumber-playwright-1de203",
           "score": 81,
           "coverage": 0.72,
-          "expected": false,
+          "expected": true,
           "relevant": true,
           "candidate_evidence_pass": true,
           "required_hits": 2,
@@ -790,20 +790,36 @@
             "browser",
             "tests"
           ]
+        },
+        {
+          "id": "voidmatcha/e2e-skills/e2e-reviewer-50810f",
+          "score": 70,
+          "coverage": 0.6,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "end-to-end",
+            "playwright",
+            "tests"
+          ]
         }
       ],
       "signals": [
         "end-to-end",
-        "resilient",
         "playwright",
-        "browser",
         "tests",
-        "playwright-testing",
         "web",
         "langgenius-dify-frontend-testing-c86f15",
         "frontend-testing",
+        "browser",
         "langgenius-dify-e2e-cucumber-playwright-1de203",
-        "e2e-cucumber-playwright"
+        "e2e-cucumber-playwright",
+        "voidmatcha-e2e-skills-e2e-reviewer-50810f",
+        "e2e-reviewer"
       ]
     },
     {
@@ -890,24 +906,41 @@
       "pass": true,
       "top3": [
         "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
+        "sickn33/agentic-awesome-skills/mcp-builder",
         "microsoft/mcp/mcp-code-reviewer-efe3d0"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 58,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
         {
           "id": "nicobailon/pi-mcp-adapter/mcp-scripting-c25b1d",
           "score": 58,
+          "coverage": 0.39,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "mcp",
+            "agent",
+            "tools"
+          ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/mcp-builder",
+          "score": 54,
           "coverage": 0.39,
           "expected": false,
           "relevant": true,
@@ -943,6 +976,8 @@
         "tools",
         "nicobailon-pi-mcp-adapter-mcp-scripting-c25b1d",
         "mcp-scripting",
+        "sickn33-agentic-awesome-skills-mcp-builder",
+        "mcp-builder",
         "microsoft-mcp-mcp-code-reviewer-efe3d0",
         "mcp-code-reviewer"
       ]
@@ -953,9 +988,10 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "ai-sdk"
+        "ai-sdk",
+        "sickn33/agentic-awesome-skills/gemini-interactions-api"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 74,
       "expected_hits": 1,
@@ -964,7 +1000,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -984,6 +1020,22 @@
             "outputs",
             "streaming"
           ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/gemini-interactions-api",
+          "score": 54,
+          "coverage": 0.48,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "generate",
+            "structured",
+            "streaming"
+          ]
         }
       ],
       "signals": [
@@ -991,7 +1043,10 @@
         "ai",
         "outputs",
         "streaming",
-        "ai-sdk"
+        "ai-sdk",
+        "generate",
+        "sickn33-agentic-awesome-skills-gemini-interactions-api",
+        "gemini-interactions-api"
       ]
     },
     {
@@ -1000,21 +1055,38 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "sickn33/agentic-awesome-skills/design-orchestration",
         "FuZhiyu/superRA/agent-orchestration-1f0ab9"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
-      "top1_score": 70,
+      "top1_score": 76,
       "expected_hits": 0,
       "signal_hits": 1,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/design-orchestration",
+          "score": 76,
+          "coverage": 0.64,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "agent",
+            "workflow",
+            "orchestration"
+          ]
+        },
         {
           "id": "FuZhiyu/superRA/agent-orchestration-1f0ab9",
           "score": 70,
@@ -1036,6 +1108,8 @@
         "agent",
         "workflow",
         "orchestration",
+        "sickn33-agentic-awesome-skills-design-orchestration",
+        "design-orchestration",
         "fuzhiyu-superra-agent-orchestration-1f0ab9",
         "agent-orchestration"
       ]
@@ -1150,11 +1224,10 @@
       "pass": true,
       "top3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
-        "nexu-io/open-design/web-prototype"
+        "stephonGAO/milu/frontend-design-25832f"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 92,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -1162,7 +1235,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1202,23 +1275,6 @@
             "web",
             "landing"
           ]
-        },
-        {
-          "id": "nexu-io/open-design/web-prototype",
-          "score": 65,
-          "coverage": 0.53,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "design",
-            "web",
-            "landing",
-            "page"
-          ]
         }
       ],
       "signals": [
@@ -1229,10 +1285,7 @@
         "web",
         "landing",
         "frontend-design",
-        "stephongao-milu-frontend-design-25832f",
-        "page",
-        "nexu-io-open-design-web-prototype",
-        "web-prototype"
+        "stephongao-milu-frontend-design-25832f"
       ]
     },
     {
@@ -1356,18 +1409,19 @@
       "pass": true,
       "top3": [
         "affaan-m/ECC/backend-patterns-ac648c",
-        "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
+        "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8",
+        "sickn33/agentic-awesome-skills/mcp-builder-ms"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 92,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1404,6 +1458,22 @@
             "api",
             "backend"
           ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/mcp-builder-ms",
+          "score": 65,
+          "coverage": 0.62,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "node",
+            "server",
+            "architecture"
+          ]
         }
       ],
       "signals": [
@@ -1415,7 +1485,9 @@
         "affaan-m-ecc-backend-patterns-ac648c",
         "backend-patterns",
         "sickn33-agentic-awesome-skills-nodejs-backend-patterns-05e8c8",
-        "nodejs-backend-patterns"
+        "nodejs-backend-patterns",
+        "sickn33-agentic-awesome-skills-mcp-builder-ms",
+        "mcp-builder-ms"
       ]
     },
     {
@@ -1424,21 +1496,56 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "sickn33/agentic-awesome-skills/api-and-interface-design",
+        "sickn33/agentic-awesome-skills/api-design-principles",
         "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
-      "top1_score": 66,
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 83,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/api-and-interface-design",
+          "score": 83,
+          "coverage": 0.8,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "design",
+            "graphql",
+            "api",
+            "backend"
+          ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/api-design-principles",
+          "score": 70,
+          "coverage": 0.6,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "design",
+            "graphql",
+            "api"
+          ]
+        },
         {
           "id": "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
           "score": 66,
@@ -1457,9 +1564,14 @@
         }
       ],
       "signals": [
+        "design",
         "graphql",
         "api",
         "backend",
+        "sickn33-agentic-awesome-skills-api-and-interface-design",
+        "api-and-interface-design",
+        "sickn33-agentic-awesome-skills-api-design-principles",
+        "api-design-principles",
         "sickn33-agentic-awesome-skills-api-fuzzing-bug-bounty-3b1229",
         "api-fuzzing-bug-bounty"
       ]
@@ -1791,13 +1903,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "code-review",
         "react-best-practices",
-        "flutter/agent-plugins/code-review-e26d76"
+        "flutter/agent-plugins/code-review-e26d76",
+        "HIDORAKAI002/ai-workspace-archive/vercel-react-best-practices-854b75"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 91,
+      "top1_score": 76,
       "expected_hits": 1,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -1808,25 +1920,6 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "code-review",
-          "score": 91,
-          "coverage": 0.87,
-          "expected": true,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "perform",
-            "code",
-            "review",
-            "quality",
-            "maintainability",
-            "refactor"
-          ]
-        },
         {
           "id": "react-best-practices",
           "score": 76,
@@ -1848,7 +1941,7 @@
           "id": "flutter/agent-plugins/code-review-e26d76",
           "score": 67,
           "coverage": 0.53,
-          "expected": false,
+          "expected": true,
           "relevant": true,
           "candidate_evidence_pass": true,
           "required_hits": 2,
@@ -1860,18 +1953,36 @@
             "review",
             "quality"
           ]
+        },
+        {
+          "id": "HIDORAKAI002/ai-workspace-archive/vercel-react-best-practices-854b75",
+          "score": 63,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "perform",
+            "code",
+            "review",
+            "refactor"
+          ]
         }
       ],
       "signals": [
         "perform",
         "code",
         "review",
-        "quality",
-        "maintainability",
         "refactor",
-        "code-review",
         "react-best-practices",
-        "flutter-agent-plugins-code-review-e26d76"
+        "quality",
+        "flutter-agent-plugins-code-review-e26d76",
+        "code-review",
+        "hidorakai002-ai-workspace-archive-vercel-react-best-practices-854b75",
+        "vercel-react-best-practices"
       ]
     },
     {
@@ -2496,8 +2607,8 @@
       "pass": true,
       "top3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
-        "callstackincubator/agent-skills/upgrading-react-native-5bab40"
+        "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
+        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2529,8 +2640,8 @@
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
-          "score": 91,
+          "id": "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
+          "score": 94,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -2545,7 +2656,7 @@
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/upgrading-react-native-5bab40",
+          "id": "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
           "score": 91,
           "coverage": 1,
           "expected": false,
@@ -2567,10 +2678,10 @@
         "mobile",
         "callstackincubator-agent-skills-react-native-brownfield-migration-d1e8d7",
         "react-native-brownfield-migration",
+        "sickn33-agentic-awesome-skills-add-app-clip-43a9ab",
+        "add-app-clip",
         "callstackincubator-agent-skills-react-native-tv-best-practices-a5fe43",
-        "react-native-tv-best-practices",
-        "callstackincubator-agent-skills-upgrading-react-native-5bab40",
-        "upgrading-react-native"
+        "react-native-tv-best-practices"
       ]
     },
     {
@@ -2726,7 +2837,7 @@
       "top3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
         "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
-        "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd"
+        "flutter/agent-plugins/flutter-add-integration-test-91cc8c"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2772,7 +2883,7 @@
           ]
         },
         {
-          "id": "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd",
+          "id": "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
           "score": 64,
           "coverage": 0.61,
           "expected": false,
@@ -2794,8 +2905,8 @@
         "flutter-build-responsive-layout",
         "flutter-agent-plugins-flutter-add-widget-preview-8e7a10",
         "flutter-add-widget-preview",
-        "flutter-agent-plugins-flutter-apply-architecture-best-practices-c5e4dd",
-        "flutter-apply-architecture-best-practices"
+        "flutter-agent-plugins-flutter-add-integration-test-91cc8c",
+        "flutter-add-integration-test"
       ]
     },
     {
@@ -2805,19 +2916,18 @@
       "pass": true,
       "top3": [
         "github",
-        "nexu-io/open-design/github-dashboard",
-        "nexu-io/open-design/orbit-github"
+        "nexu-io/open-design/github-dashboard-a45aef"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 88,
       "expected_hits": 1,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2841,9 +2951,9 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/github-dashboard",
-          "score": 64,
-          "coverage": 0.57,
+          "id": "nexu-io/open-design/github-dashboard-a45aef",
+          "score": 77,
+          "coverage": 0.74,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -2854,24 +2964,8 @@
             "github",
             "pull",
             "requests",
-            "issues"
-          ]
-        },
-        {
-          "id": "nexu-io/open-design/orbit-github",
-          "score": 64,
-          "coverage": 0.57,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "github",
-            "requests",
             "issues",
-            "ci"
+            "automation"
           ]
         }
       ],
@@ -2883,10 +2977,8 @@
         "ci",
         "automation",
         "requests",
-        "nexu-io-open-design-github-dashboard",
-        "github-dashboard",
-        "nexu-io-open-design-orbit-github",
-        "orbit-github"
+        "nexu-io-open-design-github-dashboard-a45aef",
+        "github-dashboard"
       ]
     },
     {
@@ -3104,11 +3196,11 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "reverse-engineer"
+        "OpenDigitalProductFactory/opendigitalproductfactory/portal-navigation-audit-0d02af"
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 99,
+      "top1_score": 59,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 0,
@@ -3120,9 +3212,9 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "reverse-engineer",
-          "score": 99,
-          "coverage": 1,
+          "id": "OpenDigitalProductFactory/opendigitalproductfactory/portal-navigation-audit-0d02af",
+          "score": 59,
+          "coverage": 0.44,
           "expected": true,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3130,25 +3222,16 @@
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "reverse",
-            "engineer",
-            "product",
-            "information",
-            "architecture",
-            "ux",
-            "patterns"
+            "information-architecture",
+            "product"
           ]
         }
       ],
       "signals": [
-        "reverse",
-        "engineer",
+        "information-architecture",
         "product",
-        "information",
-        "architecture",
-        "ux",
-        "patterns",
-        "reverse-engineer"
+        "opendigitalproductfactory-opendigitalproductfactory-portal-navigation-audit-0d02af",
+        "portal-navigation-audit"
       ]
     },
     {
@@ -3290,7 +3373,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "nexu-io/open-design/token-map"
+        "sickn33/agentic-awesome-skills/product-design"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3340,8 +3423,8 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/token-map",
-          "score": 61,
+          "id": "sickn33/agentic-awesome-skills/product-design",
+          "score": 62,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3364,8 +3447,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "nexu-io-open-design-token-map",
-        "token-map"
+        "sickn33-agentic-awesome-skills-product-design",
+        "product-design"
       ]
     },
     {
@@ -3374,9 +3457,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "sickn33/agentic-awesome-skills/design-spells",
         "borghei/claude-skills/product-designer",
-        "curiositech/some_claude_skills/ux-friction-analyzer",
-        "reverse-engineer"
+        "curiositech/some_claude_skills/ux-friction-analyzer"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3391,6 +3474,22 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/design-spells",
+          "score": 95,
+          "coverage": 1,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "ux",
+            "research",
+            "usability"
+          ]
+        },
         {
           "id": "borghei/claude-skills/product-designer",
           "score": 95,
@@ -3422,32 +3521,18 @@
             "research",
             "usability"
           ]
-        },
-        {
-          "id": "reverse-engineer",
-          "score": 80,
-          "coverage": 0.67,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "ux",
-            "research"
-          ]
         }
       ],
       "signals": [
         "ux",
         "research",
         "usability",
+        "sickn33-agentic-awesome-skills-design-spells",
+        "design-spells",
         "borghei-claude-skills-product-designer",
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
-        "ux-friction-analyzer",
-        "reverse-engineer"
+        "ux-friction-analyzer"
       ]
     },
     {
@@ -3456,21 +3541,37 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "nexu-io/open-design/magazine-poster-f52efe",
         "vanducng/skills/marketing-design-678c70"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
-      "top1_score": 51,
+      "top1_score": 52,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "nexu-io/open-design/magazine-poster-f52efe",
+          "score": 52,
+          "coverage": 0.29,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "poster",
+            "layout"
+          ]
+        },
         {
           "id": "vanducng/skills/marketing-design-678c70",
           "score": 51,
@@ -3489,6 +3590,9 @@
       ],
       "signals": [
         "poster",
+        "layout",
+        "nexu-io-open-design-magazine-poster-f52efe",
+        "magazine-poster",
         "brand",
         "vanducng-skills-marketing-design-678c70",
         "marketing-design"
@@ -3501,7 +3605,7 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "sickn33/agentic-awesome-skills/emil-design-eng",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
@@ -3534,8 +3638,8 @@
           ]
         },
         {
-          "id": "heygen-com/hyperframes/hyperframes-creative-f1b96c",
-          "score": 80,
+          "id": "sickn33/agentic-awesome-skills/emil-design-eng",
+          "score": 81,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3573,8 +3677,8 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "heygen-com-hyperframes-hyperframes-creative-f1b96c",
-        "hyperframes-creative",
+        "sickn33-agentic-awesome-skills-emil-design-eng",
+        "emil-design-eng",
         "remotion-dev-skills-remotion-multimedia",
         "remotion-multimedia"
       ]
@@ -3585,13 +3689,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nexu-io/open-design/x-research",
+        "sickn33/agentic-awesome-skills/frontend-dev-guidelines",
         "mitsuhiko/agent-stuff/openscad",
-        "nexu-io/open-design/rewrite-plan"
+        "sickn33/agentic-awesome-skills/before-you-build"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 76,
+      "top1_score": 75,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3603,8 +3707,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "nexu-io/open-design/x-research",
-          "score": 76,
+          "id": "sickn33/agentic-awesome-skills/frontend-dev-guidelines",
+          "score": 75,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3635,8 +3739,8 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/rewrite-plan",
-          "score": 72,
+          "id": "sickn33/agentic-awesome-skills/before-you-build",
+          "score": 75,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3655,13 +3759,13 @@
         "industrial-design",
         "industrial",
         "product",
-        "nexu-io-open-design-x-research",
-        "x-research",
+        "sickn33-agentic-awesome-skills-frontend-dev-guidelines",
+        "frontend-dev-guidelines",
         "cad",
         "mitsuhiko-agent-stuff-openscad",
         "openscad",
-        "nexu-io-open-design-rewrite-plan",
-        "rewrite-plan"
+        "sickn33-agentic-awesome-skills-before-you-build",
+        "before-you-build"
       ]
     }
   ]
