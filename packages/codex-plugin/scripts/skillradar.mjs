@@ -127,7 +127,7 @@ function scoreSkill(s,query,context){
 function featureSet(s){return new Set([...(s.tags||[]),...(s.domains||[]),s.category||''].map(canon).filter(Boolean))}
 function similarity(a,b){const x=featureSet(a),y=featureSet(b);if(!x.size||!y.size)return 0;let hit=0;for(const t of x)if(y.has(t))hit++;return hit/(x.size+y.size-hit)}
 function taskSignalWeights(s){return s.match_details?.matched_signal_weights||{}}
-const SPECIFICITY_SIGNALS=new Set(['playwright','mcp','rag','embeddings','orchestration','fastapi','node','graphql','postgres','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation','github','notion','figma','poster','information-architecture'])
+const SPECIFICITY_SIGNALS=new Set(['playwright','mcp','rag','embeddings','orchestration','fastapi','node','graphql','postgres','redis','sqlite','vitest','docker','kubernetes','vulnerability','secrets','permissions','react','reactnative','expo','swiftui','android','kotlin','flutter','slack','gmail','calendar','webhook','documentation','github','notion','figma','poster','information-architecture'])
 const CANDIDATE_EVIDENCE_RULES={
   mcp:{identity:['mcp'],minSignals:2},orchestration:{identity:['agent','orchestration'],minSignals:1},
   postgres:{identity:['postgres','postgresql'],minSignals:2},
@@ -137,7 +137,11 @@ const CANDIDATE_EVIDENCE_RULES={
 }
 const JOINT_CANDIDATE_EVIDENCE_GROUPS=[['nextjs','app-router']]
 function requestedSpecificitySignals(query){
-  return [...new Set(querySignals(query).map(x=>canon(x.label)).filter(x=>SPECIFICITY_SIGNALS.has(x)))]
+  const requested=[...new Set(querySignals(query).map(x=>canon(x.label)).filter(x=>SPECIFICITY_SIGNALS.has(x)))]
+  // Next.js App Router is a compound capability. Treating its incidental React
+  // token as a separate mandatory lane would discard complementary AI SDK and
+  // shadcn candidates that correctly satisfy the rest of the task.
+  return requestedJointEvidenceGroups(query).length?requested.filter(x=>x!=='react'):requested
 }
 function requestedJointEvidenceGroups(query){
   const requested=new Set(querySignals(query).flatMap(signal=>[signal.label,...(signal.terms||[])]).map(canon))

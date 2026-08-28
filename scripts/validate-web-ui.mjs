@@ -73,6 +73,28 @@ poisoned.general = [...(poisoned.general || []), {
 }];
 assert.ok(!webRouter.registrySkills(poisoned).some((skill) => skill.id === 'evil-fixture'), 'D-grade malicious fixture must be excluded before rendering/routing');
 
+const reactCandidateFixture = {
+  schemaVersion: 2,
+  generatedAt: 'test',
+  source: 'react-candidate-evidence-fixture',
+  coreCount: 2,
+  designCount: 0,
+  generalCount: 0,
+  totalCount: 2,
+  contentHash: 'react-candidate-evidence',
+  core: [
+    { id: 'react-dashboard', name: 'React Dashboard', source: 'fixture/react-dashboard', category: 'Frontend', tags: ['react', 'dashboard', 'visual', 'production', 'polish', 'interface'], summary: 'Improve production React dashboard interfaces.', security: 'A', score: 80 },
+    { id: 'generic-ui', name: 'Frontend UI Engineering', source: 'fixture/generic-ui', category: 'Frontend', tags: ['visual', 'quality', 'production', 'interface'], summary: 'Improve visual quality and production interface polish.', security: 'A', score: 100 },
+  ],
+  design: [],
+  general: [],
+};
+const reactCandidateQuery = 'Improve the visual quality and production polish of a React dashboard interface';
+const reactCandidateMatch = webRouter.match(reactCandidateFixture, reactCandidateQuery, 3);
+assert.ok(reactCandidateMatch.specificity.required_signals.includes('react'), 'browser Router did not activate per-candidate React evidence');
+assert.deepEqual(reactCandidateMatch.matches.map((skill) => skill.id), ['react-dashboard'], 'generic UI candidate bypassed browser React evidence');
+assert.ok(reactCandidateMatch.capability_gap.detected && reactCandidateMatch.capability_gap.missing === 2, 'browser Router did not expose the filtered React capability gap');
+
 const posterCapability = structuredClone(snapshot);
 posterCapability.general = [...(posterCapability.general || []), {
   id: 'fixture/marketing-design',
