@@ -20,9 +20,20 @@ SkillRadar discovers public `SKILL.md` files, parses their real contents, perfor
 
 ### Codex Plugin
 
+Install or verify the Codex CLI first:
+
+```bash
+command -v codex >/dev/null 2>&1 || npm install -g @openai/codex
+codex --version
+```
+
+Then add the marketplace **and** install the plugin:
+
 ```bash
 codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.5.0 && codex plugin add skillradar@skillradar
 ```
+
+If your shell still says `codex: command not found`, restart the terminal and make sure your global npm binary directory is on `PATH` before retrying the plugin command.
 
 Start a fresh Codex thread and run:
 

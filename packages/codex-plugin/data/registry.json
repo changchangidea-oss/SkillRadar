@@ -3,17 +3,18 @@
   "routingContentHashVersion": 2,
   "generatedAt": "2026-08-28T02:05:10.146Z",
   "source": "skillradar-safety-gated-registry",
-  "coreCount": 20,
+  "coreCount": 17,
   "designCount": 215,
   "generalCount": 213,
-  "totalCount": 448,
-  "contentHash": "da21658eee72136bf908dc0465ee2b40323be0fa671292b55d01daadec14c069",
-  "routingContentHash": "b7fef4cf4aeb9c1b70c19672884f0b04023c138a4e4fb867c8b3582a84717482",
+  "totalCount": 445,
+  "contentHash": "a00530a081d38795f9a92e7d1793f45b9d13c7ecf3f3b240b576840c0f625d7c",
+  "routingContentHash": "2363ad2083f578df270d23739f77750ce1c0d9fb22a4295050ab2fe086999c86",
   "core": [
     {
       "id": "nextjs",
       "name": "Next.js",
-      "source": "vercel-labs/agent-skills",
+      "source": "openai/plugins",
+      "githubUrl": "https://github.com/openai/plugins/blob/main/plugins/vercel/skills/nextjs/SKILL.md",
       "category": "Frontend",
       "tags": [
         "nextjs",
@@ -39,6 +40,10 @@
       "id": "react-best-practices",
       "name": "React Best Practices",
       "source": "vercel-labs/agent-skills",
+      "slug": "react-best-practices",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "githubUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md",
+      "installUrl": "https://github.com/vercel-labs/agent-skills",
       "category": "Frontend",
       "tags": [
         "react",
@@ -63,6 +68,10 @@
       "id": "frontend-design",
       "name": "Frontend Design",
       "source": "anthropics/skills",
+      "slug": "frontend-design",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "githubUrl": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+      "installUrl": "https://github.com/anthropics/skills",
       "category": "Frontend",
       "tags": [
         "ui",
@@ -87,7 +96,8 @@
     {
       "id": "shadcn",
       "name": "shadcn/ui",
-      "source": "vercel-labs/agent-skills",
+      "source": "openai/plugins",
+      "githubUrl": "https://github.com/openai/plugins/blob/main/plugins/vercel/skills/shadcn/SKILL.md",
       "category": "Frontend",
       "tags": [
         "shadcn",
@@ -112,7 +122,11 @@
     {
       "id": "web-perf",
       "name": "Web Performance",
-      "source": "vercel-labs/agent-skills",
+      "source": "cloudflare/skills",
+      "slug": "web-perf",
+      "skillPath": "skills/web-perf/SKILL.md",
+      "githubUrl": "https://github.com/cloudflare/skills/blob/main/skills/web-perf/SKILL.md",
+      "installUrl": "https://github.com/cloudflare/skills",
       "category": "Frontend",
       "tags": [
         "performance",
@@ -138,6 +152,10 @@
       "id": "supabase-postgres-best-practices",
       "name": "Supabase Postgres Best Practices",
       "source": "supabase/agent-skills",
+      "slug": "supabase-postgres-best-practices",
+      "skillPath": "skills/supabase-postgres-best-practices/SKILL.md",
+      "githubUrl": "https://github.com/supabase/agent-skills/blob/main/skills/supabase-postgres-best-practices/SKILL.md",
+      "installUrl": "https://github.com/supabase/agent-skills",
       "category": "Database",
       "tags": [
         "supabase",
@@ -164,6 +182,10 @@
       "id": "systematic-debugging",
       "name": "Systematic Debugging",
       "source": "obra/superpowers",
+      "slug": "systematic-debugging",
+      "skillPath": "skills/systematic-debugging/SKILL.md",
+      "githubUrl": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
+      "installUrl": "https://github.com/obra/superpowers",
       "category": "Debugging",
       "tags": [
         "debugging",
@@ -188,6 +210,10 @@
       "id": "test-driven-development",
       "name": "Test-Driven Development",
       "source": "obra/superpowers",
+      "slug": "test-driven-development",
+      "skillPath": "skills/test-driven-development/SKILL.md",
+      "githubUrl": "https://github.com/obra/superpowers/blob/main/skills/test-driven-development/SKILL.md",
+      "installUrl": "https://github.com/obra/superpowers",
       "category": "Testing",
       "tags": [
         "tdd",
@@ -209,34 +235,10 @@
       "official": false
     },
     {
-      "id": "playwright-testing",
-      "name": "Playwright Testing",
-      "source": "community/playwright",
-      "category": "Testing",
-      "tags": [
-        "playwright",
-        "browser",
-        "e2e",
-        "automation"
-      ],
-      "summary": "Builds browser-level E2E test plans and resilient Playwright automation.",
-      "security": "B",
-      "score": 92,
-      "growth": 89,
-      "maintenance": 91,
-      "verified": false,
-      "uses": [
-        "E2E tests",
-        "UI regression",
-        "Browser automation"
-      ],
-      "rising": 90,
-      "official": false
-    },
-    {
       "id": "github",
       "name": "GitHub",
       "source": "openai/plugins",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/github",
       "category": "Automation",
       "tags": [
         "github",
@@ -262,6 +264,7 @@
       "id": "build-web-apps",
       "name": "Build Web Apps",
       "source": "openai/plugins",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/build-web-apps",
       "category": "Coding",
       "tags": [
         "web",
@@ -287,6 +290,7 @@
       "id": "figma",
       "name": "Figma",
       "source": "openai/plugins",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/figma",
       "category": "Product",
       "tags": [
         "figma",
@@ -311,6 +315,7 @@
       "id": "notion",
       "name": "Notion",
       "source": "openai/plugins",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/notion",
       "category": "Documentation",
       "tags": [
         "notion",
@@ -336,6 +341,10 @@
       "id": "workers-best-practices",
       "name": "Workers Best Practices",
       "source": "cloudflare/skills",
+      "slug": "workers-best-practices",
+      "skillPath": "skills/workers-best-practices/SKILL.md",
+      "githubUrl": "https://github.com/cloudflare/skills/blob/main/skills/workers-best-practices/SKILL.md",
+      "installUrl": "https://github.com/cloudflare/skills",
       "category": "Cloud & DevOps",
       "tags": [
         "cloudflare",
@@ -360,7 +369,8 @@
     {
       "id": "deployments-cicd",
       "name": "Deployments & CI/CD",
-      "source": "vercel-labs/agent-skills",
+      "source": "openai/plugins",
+      "githubUrl": "https://github.com/openai/plugins/blob/main/plugins/vercel/skills/deployments-cicd/SKILL.md",
       "category": "Cloud & DevOps",
       "tags": [
         "vercel",
@@ -385,7 +395,8 @@
     {
       "id": "auth",
       "name": "Authentication",
-      "source": "vercel-labs/agent-skills",
+      "source": "openai/plugins",
+      "githubUrl": "https://github.com/openai/plugins/blob/main/plugins/vercel/skills/auth/SKILL.md",
       "category": "Security",
       "tags": [
         "auth",
@@ -410,7 +421,8 @@
     {
       "id": "ai-sdk",
       "name": "AI SDK",
-      "source": "vercel-labs/agent-skills",
+      "source": "openai/plugins",
+      "githubUrl": "https://github.com/openai/plugins/blob/main/plugins/vercel/skills/ai-sdk/SKILL.md",
       "category": "AI Agents",
       "tags": [
         "ai",
@@ -436,6 +448,10 @@
       "id": "find-skills",
       "name": "Find Skills",
       "source": "vercel-labs/skills",
+      "slug": "find-skills",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "githubUrl": "https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md",
+      "installUrl": "https://github.com/vercel-labs/skills",
       "category": "AI Agents",
       "tags": [
         "discovery",
@@ -454,55 +470,6 @@
         "Bootstrap a toolkit"
       ],
       "rising": 95,
-      "official": false
-    },
-    {
-      "id": "code-review",
-      "name": "Code Review",
-      "source": "community/agents",
-      "category": "Coding",
-      "tags": [
-        "code-review",
-        "quality",
-        "refactor"
-      ],
-      "summary": "Performs structured code review across correctness, maintainability and risk.",
-      "security": "A",
-      "score": 91,
-      "growth": 88,
-      "maintenance": 90,
-      "verified": false,
-      "uses": [
-        "PR review",
-        "Refactor review",
-        "Quality audits"
-      ],
-      "rising": 89,
-      "official": false
-    },
-    {
-      "id": "reverse-engineer",
-      "name": "Reverse Engineer",
-      "source": "community-curated",
-      "category": "Research",
-      "tags": [
-        "research",
-        "ia",
-        "ux",
-        "reverse-engineering"
-      ],
-      "summary": "Deconstructs products and sites to identify structure, patterns, decisions and transferable principles.",
-      "security": "A",
-      "score": 93,
-      "growth": 87,
-      "maintenance": 89,
-      "verified": false,
-      "uses": [
-        "Competitive analysis",
-        "Information architecture",
-        "Product teardown"
-      ],
-      "rising": 88,
       "official": false
     }
   ],
