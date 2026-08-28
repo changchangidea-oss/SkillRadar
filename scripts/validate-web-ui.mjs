@@ -47,7 +47,10 @@ assert.equal(snapshot.schemaVersion, 2, 'web router must consume the current bun
 assert.ok(Array.isArray(snapshot.general) && snapshot.general.length > 0, 'general registry shard must be present');
 
 const browserRegistry = webRouter.registrySkills(snapshot);
-assert.ok(browserRegistry.length >= 400, `browser registry unexpectedly small: ${browserRegistry.length}`);
+assert.ok(snapshot.core.length >= 15, `browser core shard unexpectedly small: ${snapshot.core.length}`);
+assert.ok(snapshot.design.length >= 100, `browser design shard unexpectedly small: ${snapshot.design.length}`);
+assert.ok(snapshot.general.length >= 200, `browser general shard unexpectedly small: ${snapshot.general.length}`);
+assert.equal(browserRegistry.length, snapshot.totalCount, 'browser registry must contain every safety-gated bundled Skill exactly once');
 assert.ok(browserRegistry.every((skill) => !['D', 'Blocked'].includes(skill.security)), 'D/Blocked Skill leaked into browser registry');
 const exactInstallable = browserRegistry.filter((skill) => safe.skillInstallCommand(skill));
 const auditableSources = browserRegistry.filter((skill) => [skill.githubUrl, skill.installUrl].some((url) => safe.safeGithubUrl(url || '') !== '#'));
@@ -55,7 +58,7 @@ assert.ok(snapshot.general.every((skill) => safe.skillInstallCommand(skill)), 'a
 assert.ok(snapshot.general.every((skill) => safe.safeGithubUrl(skill.githubUrl || '') !== '#'), 'a scanned General Skill lost its exact SKILL.md source URL');
 assert.ok(snapshot.design.every((skill) => safe.safeGithubUrl(skill.installUrl || '') !== '#'), 'a Design Skill lost its auditable upstream repository URL');
 assert.ok(exactInstallable.length >= 200, `browser Registry unexpectedly lost verified per-Skill install coordinates: ${exactInstallable.length}`);
-assert.ok(auditableSources.length >= 400, `browser Registry unexpectedly lost auditable upstream source coordinates: ${auditableSources.length}`);
+assert.equal(auditableSources.length, browserRegistry.length, 'every active browser recommendation must retain an auditable upstream source');
 const unverifiedCoordinateGaps = browserRegistry.filter((skill) => !safe.skillInstallCommand(skill) && ![skill.githubUrl, skill.installUrl].some((url) => safe.safeGithubUrl(url || '') !== '#')).map((skill) => skill.id).sort();
 assert.deepEqual(unverifiedCoordinateGaps, [], 'active browser recommendations must not contain unresolved curated placeholders');
 
@@ -129,6 +132,9 @@ assert.doesNotMatch(appSource, /hit\s*\*\s*10\s*\+\s*s\.score\s*\*\s*\.35/, 'leg
 assert.doesNotMatch(appSource, />\s*\$\{skill\.(?:name|source|summary|category|security|id)\}\s*</, 'raw Skill fields must not be inserted into HTML text contexts');
 assert.doesNotMatch(appSource, /(?:data-s|href|title|class)=["']\$\{skill\.(?:name|source|summary|category|security|id)\}/, 'raw Skill fields must not be inserted into HTML attribute contexts');
 assert.doesNotMatch(appSource, /href=["']?\$\{candidate\.githubUrl\}/, 'raw candidate URLs must not enter href');
+assert.match(appSource, /guide\.zh-CN\.html/, 'the online experience must expose the Chinese guide');
+assert.match(appSource, /textContent = '中文说明'/, 'the Chinese guide entry must have a visible Chinese label');
+assert.match(appSource, /new URLSearchParams\(window\.location\.search\)\.get\('task'\)/, 'Chinese guide examples must deep-link into the real router');
 
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 assert.match(html, /codex plugin marketplace add changchangidea-oss\/SkillRadar --ref v0\.5\.0 &amp;&amp; codex plugin add skillradar@skillradar/, 'public page must show the complete two-step Codex plugin install');
@@ -136,6 +142,17 @@ assert.match(html, /id='mobileNav'/, 'mobile navigation trigger must remain avai
 assert.match(html, /id='mobileClose'/, 'mobile navigation must have an explicit close control');
 const css = fs.readFileSync(path.join(root, 'assets/styles.css'), 'utf8');
 assert.match(css, /\.nav-open \.side\{transform:translateX\(0\)\}/, 'mobile navigation drawer must become visible when opened');
+const zhGuide = fs.readFileSync(path.join(root, 'guide.zh-CN.html'), 'utf8');
+assert.match(zhGuide, /<html lang="zh-CN">/, 'Chinese guide must declare its document language');
+assert.match(zhGuide, /三步得到可审查的匹配结果/, 'Chinese guide must explain the online workflow');
+assert.match(zhGuide, /D \/ Blocked/, 'Chinese guide must explain the D/Blocked routing boundary');
+assert.match(zhGuide, /发现 ≠ 执行/, 'Chinese guide must state that discovery is not execution');
+assert.match(zhGuide, /id="copyCodexGuide"/, 'Chinese guide must expose an actionable Codex install copy control');
+assert.match(zhGuide, /id="copyAgentGuide"/, 'Chinese guide must expose an actionable standard Skill install copy control');
+const zhGuideScript = fs.readFileSync(path.join(root, 'assets/guide-zh.js'), 'utf8');
+assert.match(zhGuideScript, /codex plugin marketplace add changchangidea-oss\/SkillRadar --ref v0\.5\.0 && codex plugin add skillradar@skillradar/, 'Chinese guide must copy the complete Codex install command');
+assert.match(zhGuideScript, /npx skills add changchangidea-oss\/SkillRadar --skill skillradar/, 'Chinese guide must copy the exact standard Skill command');
+assert.match(zhGuideScript, /document\.execCommand\('copy'\)/, 'Chinese guide install copy must retain a fallback for browsers without the Clipboard API');
 const safePos = html.indexOf("assets/safe-render.js");
 const routerPos = html.indexOf("assets/web-router.js");
 const appPos = html.indexOf("assets/app.js");

@@ -317,6 +317,8 @@ async function loadData() {
     renderDesignHome();
     renderDesignRadar();
     renderPacks();
+    const initialTask = new URLSearchParams(window.location.search).get('task');
+    if (initialTask) routeTask(initialTask);
   } catch (error) {
     console.error('SkillRadar data unavailable', error);
     $('#featured').innerHTML = '<div class="empty">Registry data unavailable.</div>';
@@ -333,6 +335,23 @@ function openNavigation() {
   document.body.classList.add('nav-open');
   $('#mobileNav').setAttribute('aria-expanded', 'true');
 }
+function addChineseGuideLinks() {
+  const topLink = document.createElement('a');
+  topLink.id = 'zhGuide';
+  topLink.className = 'ghost actionLink zhGuideLink';
+  topLink.href = 'guide.zh-CN.html';
+  topLink.lang = 'zh-CN';
+  topLink.textContent = '中文说明';
+  $('.top').insertBefore(topLink, $('#openRouter'));
+
+  const navLink = document.createElement('a');
+  navLink.id = 'zhGuideNav';
+  navLink.href = 'guide.zh-CN.html';
+  navLink.lang = 'zh-CN';
+  navLink.textContent = '↗ 中文说明';
+  $('.sideFoot').insertBefore(navLink, $('.sideFoot').firstChild);
+}
+addChineseGuideLinks();
 $$('[data-v]').forEach((button) => { button.onclick = () => { show(button.dataset.v); closeNavigation(); }; });
 $('#openRouter').onclick = () => show('router');
 $('#heroGo').onclick = () => routeTask($('#heroQ').value);

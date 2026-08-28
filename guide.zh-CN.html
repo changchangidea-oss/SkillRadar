@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SkillRadar 中文说明 — 在线体验与使用指南</title>
+  <meta name="description" content="SkillRadar 中文使用说明：在线匹配 Agent Skills，理解安全等级、能力缺口，并安装 Codex 插件。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://changchangidea-oss.github.io/SkillRadar/guide.zh-CN.html">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="guidePage">
+  <header class="guideTop">
+    <a class="guideBrand" href="./" aria-label="返回 SkillRadar 首页"><span class="logo"></span>SkillRadar</a>
+    <nav aria-label="中文指南导航">
+      <a href="#quick-start">快速上手</a>
+      <a href="#install">安装</a>
+      <a href="#safety">安全说明</a>
+      <a class="btn actionLink" href="./">开始体验 →</a>
+    </nav>
+  </header>
+
+  <main class="guideMain">
+    <section class="guideHero">
+      <div class="kicker">SKILLRADAR 中文说明</div>
+      <h1>先找到真正匹配的 Skill，<br><span>再让 Codex 开始工作。</span></h1>
+      <p>SkillRadar 是一个开源的 Agent Skills 发现、审查与任务路由工具。你可以直接用中文描述开发任务，它会从经过安全门过滤的离线 Registry 中返回最多 3 个有明确证据的候选，而不是用无关 Skill 凑数。</p>
+      <div class="guideHeroActions">
+        <a class="btn actionLink" href="./">打开在线路由器</a>
+        <a class="ghost actionLink" href="https://github.com/changchangidea-oss/SkillRadar" target="_blank" rel="noopener noreferrer">查看 GitHub ↗</a>
+      </div>
+    </section>
+
+    <section class="guideSection" id="quick-start">
+      <div class="kicker">在线体验</div>
+      <h2>三步得到可审查的匹配结果</h2>
+      <div class="guideSteps">
+        <article><span>01</span><h3>描述具体任务</h3><p>在 Skill Router 输入中文或英文任务。技术栈、工具和目标越明确，匹配越可靠。</p><code>检查 Supabase RLS 权限并优化查询性能</code></article>
+        <article><span>02</span><h3>查看 Top 3 与证据</h3><p>结果综合任务相关性、候选自身证据、安全、质量和维护情况。找不到足够专用的能力时，会明确显示能力缺口。</p></article>
+        <article><span>03</span><h3>审查后再安装</h3><p>查看上游 <code>SKILL.md</code>、安全等级和来源，再复制精确安装命令。发现结果不会自动执行第三方代码。</p></article>
+      </div>
+      <div class="guideExamples" aria-label="可尝试的任务示例">
+        <strong>可以直接试：</strong>
+        <a href="./?task=为%20Node%20API%20增加%20Redis%20缓存">为 Node API 增加 Redis 缓存</a>
+        <a href="./?task=构建%20Next.js%20App%20Router%20AI%20仪表盘">构建 Next.js App Router AI 仪表盘</a>
+        <a href="./?task=为品牌设计中文活动海报">为品牌设计中文活动海报</a>
+      </div>
+    </section>
+
+    <section class="guideSection" id="install">
+      <div class="kicker">安装方式</div>
+      <h2>同一仓库，两种使用路径</h2>
+      <div class="guideInstallGrid">
+        <article class="guideInstall">
+          <div><span class="guidePill">推荐 · CODEX PLUGIN</span><h3>在 Codex 中直接路由</h3><p>使用随插件打包的离线 Registry，以及 <code>$skill-router</code>、<code>$find-skill</code>、<code>$inspect-skill</code> 和 <code>$manage-skills</code>。</p></div>
+          <pre><code>codex plugin marketplace add changchangidea-oss/SkillRadar --ref v0.5.0
+codex plugin add skillradar@skillradar</code></pre>
+          <button class="ghost guideCopy" id="copyCodexGuide">复制 Codex 安装命令</button>
+        </article>
+        <article class="guideInstall">
+          <div><span class="guidePill">STANDARD AGENT SKILL</span><h3>安装标准 Agent Skill</h3><p>适合兼容开放 Skills 生态的 Agent。它提供先阅读、再发现的工作流，不会自动授权候选 Skill 执行。</p></div>
+          <pre><code>npx skills add changchangidea-oss/SkillRadar --skill skillradar</code></pre>
+          <button class="ghost guideCopy" id="copyAgentGuide">复制 Agent Skill 安装命令</button>
+        </article>
+      </div>
+      <div class="guideUsage">
+        <h3>安装后怎么问</h3>
+        <ul>
+          <li><code>$skill-router 为 FastAPI 服务设计 webhook 处理流程</code></li>
+          <li><code>$find-skill 找一个适合 Flutter 移动端开发的 Skill</code></li>
+          <li><code>$inspect-skill 检查这个候选的来源和安全风险</code></li>
+          <li><code>$manage-skills 检查当前 Skill 是否过多或重复</code></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="guideSection" id="safety">
+      <div class="kicker">如何看结果</div>
+      <h2>安全等级是筛选信号，不是执行许可</h2>
+      <div class="gradeGrid">
+        <article><b class="grade gradeA">A</b><div><h3>低风险静态特征</h3><p>仍应在实际使用前阅读 Skill 内容。</p></div></article>
+        <article><b class="grade gradeB">B</b><div><h3>有限副作用或包含脚本</h3><p>执行前确认脚本行为和所需权限。</p></div></article>
+        <article><b class="grade gradeC">C</b><div><h3>需要明确人工审查</h3><p>重点检查 shell、网络、文件写入、依赖安装等能力。</p></div></article>
+        <article><b class="grade gradeD">D / Blocked</b><div><h3>不进入自动路由</h3><p>只保留审计证据，不能作为自动推荐结果。</p></div></article>
+      </div>
+      <aside class="guideBoundary">
+        <strong>重要边界：发现 ≠ 执行。</strong>
+        <p>安装 SkillRadar 不代表允许第三方 Skill 访问密钥、运行 shell、修改数据库、部署服务或访问外部网络。此类操作仍需单独审查和明确授权。</p>
+      </aside>
+    </section>
+
+    <section class="guideSection guideFaq">
+      <div class="kicker">常见问题</div>
+      <h2>在线页面会做什么？</h2>
+      <details open><summary>在线体验会运行候选 Skill 吗？</summary><p>不会。浏览器只读取经过安全门过滤的静态 Registry，并进行本地匹配和展示。</p></details>
+      <details><summary>为什么有时不到 3 个结果？</summary><p>这表示没有足够多且具有明确任务证据的安全候选。SkillRadar 会诚实显示能力缺口，不用泛化 Skill 补满 Top 3。</p></details>
+      <details><summary>排名只看 GitHub Stars 吗？</summary><p>不只看 Stars。匹配会综合具体任务证据、质量、安全、兼容性与维护信号；流行度不能替代相关性。</p></details>
+    </section>
+  </main>
+
+  <div class="toast" id="guideToast" role="status" aria-live="polite"></div>
+  <script src="assets/guide-zh.js"></script>
+</body>
+</html>
