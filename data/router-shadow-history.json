@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-28T14:28:38.454Z",
+  "updatedAt": "2026-08-30T08:26:27.053Z",
   "requiredSnapshots": 3,
   "currentContentHashVersion": 2,
   "snapshots": [
@@ -969,6 +969,61 @@
         "contractNonRegression": true,
         "coverageNonRegression": true,
         "evidenceDelta": -1
+      },
+      "decision": "hold"
+    },
+    {
+      "generatedAt": "2026-08-30T08:26:27.053Z",
+      "registrySnapshot": {
+        "contentHash": "da0047052bc16d9cbc71b730b813a24b5b8811d1048e6923dd0559fcd79e7191",
+        "contentHashVersion": 2,
+        "generatedAt": "2026-08-30T08:25:56.134Z",
+        "totalCount": 366,
+        "mode": "local-bundled"
+      },
+      "evalVersion": 2,
+      "specificityPolicyVersion": 5,
+      "production": {
+        "profile": "ranking-v2.1",
+        "cases": 54,
+        "passed": 51,
+        "contractPassed": 10,
+        "contractCases": 10,
+        "coveragePassed": 41,
+        "coverageCases": 44,
+        "unsafeTop3": 0,
+        "lowEvidenceTop3": 0,
+        "specificityFailures": 2,
+        "capabilityGapCases": 28,
+        "averageRecommendationCount": 2.02,
+        "expectedHitsTotal": 31,
+        "signalHitsTotal": 134,
+        "anchorSignalHitsTotal": 32,
+        "averageTop1Score": 76.8
+      },
+      "candidate": {
+        "profile": "facet-heavy-rerank-v0.6-shadow",
+        "cases": 54,
+        "passed": 51,
+        "contractPassed": 10,
+        "contractCases": 10,
+        "coveragePassed": 41,
+        "coverageCases": 44,
+        "unsafeTop3": 0,
+        "lowEvidenceTop3": 2,
+        "specificityFailures": 2,
+        "capabilityGapCases": 27,
+        "averageRecommendationCount": 2.07,
+        "expectedHitsTotal": 31,
+        "signalHitsTotal": 134,
+        "anchorSignalHitsTotal": 32,
+        "averageTop1Score": 76.8
+      },
+      "gates": {
+        "safetyPass": true,
+        "contractNonRegression": true,
+        "coverageNonRegression": true,
+        "evidenceDelta": -2
       },
       "decision": "hold"
     }

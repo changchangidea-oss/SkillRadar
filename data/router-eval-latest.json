@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-28T14:28:18.684Z",
+  "generatedAt": "2026-08-30T08:26:08.491Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 54,
-  "passRate": 1,
+  "passed": 51,
+  "passRate": 0.944,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 44,
-    "passRate": 1
+    "passed": 41,
+    "passRate": 0.932
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 0,
-  "capabilityGapCases": 31,
-  "averageRecommendationCount": 1.98,
-  "averageRelevantTop3": 1.98,
-  "averageTop1Score": 77.9,
-  "expectedHitsTotal": 32,
-  "signalHitsTotal": 136,
-  "anchorSignalHitsTotal": 34,
+  "specificityFailures": 2,
+  "capabilityGapCases": 28,
+  "averageRecommendationCount": 2.02,
+  "averageRelevantTop3": 2.02,
+  "averageTop1Score": 76.8,
+  "expectedHitsTotal": 31,
+  "signalHitsTotal": 134,
+  "anchorSignalHitsTotal": 32,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -34,9 +34,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 3,
+      "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 2
+      "averageRecommendationCount": 1.83
     },
     "Frontend": {
       "cases": 8,
@@ -46,7 +46,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 5,
       "passRate": 1,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 1.88
     },
     "Design & Media": {
       "cases": 5,
@@ -74,28 +74,28 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 4,
+      "capabilityGapCases": 2,
       "passRate": 1,
-      "averageRecommendationCount": 1.8
+      "averageRecommendationCount": 2.2
     },
     "Testing & Quality": {
       "cases": 5,
-      "passed": 5,
-      "lowEvidenceTop3": 0,
-      "candidateEvidenceFailures": 0,
-      "specificityFailures": 0,
-      "capabilityGapCases": 3,
-      "passRate": 1,
-      "averageRecommendationCount": 1.8
-    },
-    "Backend & API": {
-      "cases": 4,
       "passed": 4,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 4,
-      "passRate": 1,
+      "capabilityGapCases": 3,
+      "passRate": 0.8,
+      "averageRecommendationCount": 1.8
+    },
+    "Backend & API": {
+      "cases": 4,
+      "passed": 3,
+      "lowEvidenceTop3": 0,
+      "candidateEvidenceFailures": 0,
+      "specificityFailures": 1,
+      "capabilityGapCases": 3,
+      "passRate": 0.75,
       "averageRecommendationCount": 1.5
     },
     "Security": {
@@ -106,16 +106,16 @@
       "specificityFailures": 0,
       "capabilityGapCases": 3,
       "passRate": 1,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 1.5
     },
     "Mobile": {
       "cases": 4,
-      "passed": 4,
+      "passed": 3,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 0,
+      "specificityFailures": 1,
       "capabilityGapCases": 1,
-      "passRate": 1,
+      "passRate": 0.75,
       "averageRecommendationCount": 2.75
     },
     "Automation & Integrations": {
@@ -124,9 +124,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 2,
+      "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 2.25
+      "averageRecommendationCount": 2.5
     },
     "Docs & Research": {
       "cases": 4,
@@ -373,7 +373,7 @@
       "top3": [
         "react-best-practices",
         "alirezarezvani/claude-skills/senior-frontend-a7068f",
-        "langgenius/dify/how-to-write-component-43f895"
+        "grafana/grafana/frontend-testing-strategy-68570e"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -425,7 +425,7 @@
           ]
         },
         {
-          "id": "langgenius/dify/how-to-write-component-43f895",
+          "id": "grafana/grafana/frontend-testing-strategy-68570e",
           "score": 71,
           "coverage": 0.54,
           "expected": false,
@@ -451,8 +451,8 @@
         "react-best-practices",
         "alirezarezvani-claude-skills-senior-frontend-a7068f",
         "senior-frontend",
-        "langgenius-dify-how-to-write-component-43f895",
-        "how-to-write-component"
+        "grafana-grafana-frontend-testing-strategy-68570e",
+        "frontend-testing-strategy"
       ]
     },
     {
@@ -554,8 +554,8 @@
       "pass": true,
       "top3": [
         "curiositech/some_claude_skills/interior-design-expert",
-        "joecastelino/jay-skill-pack/manim-video",
-        "roble3/cc-blender-skill/blender-rendering"
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -587,22 +587,6 @@
           ]
         },
         {
-          "id": "joecastelino/jay-skill-pack/manim-video",
-          "score": 79,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "architecture",
-            "rendering",
-            "spatial"
-          ]
-        },
-        {
           "id": "roble3/cc-blender-skill/blender-rendering",
           "score": 79,
           "coverage": 0.75,
@@ -617,6 +601,22 @@
             "rendering",
             "interior"
           ]
+        },
+        {
+          "id": "calesthio/generative-media-skills/neural-reality-capture",
+          "score": 77,
+          "coverage": 0.75,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "architecture",
+            "interior",
+            "spatial"
+          ]
         }
       ],
       "signals": [
@@ -626,10 +626,10 @@
         "curiositech-some-claude-skills-interior-design-expert",
         "interior-design-expert",
         "rendering",
-        "joecastelino-jay-skill-pack-manim-video",
-        "manim-video",
         "roble3-cc-blender-skill-blender-rendering",
-        "blender-rendering"
+        "blender-rendering",
+        "calesthio-generative-media-skills-neural-reality-capture",
+        "neural-reality-capture"
       ]
     },
     {
@@ -742,7 +742,7 @@
       "top3": [
         "langgenius/dify/frontend-testing-c86f15",
         "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "voidmatcha/e2e-skills/e2e-reviewer-50810f"
+        "langflow-ai/langflow/e2e-testing-2b8834"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -792,8 +792,8 @@
           ]
         },
         {
-          "id": "voidmatcha/e2e-skills/e2e-reviewer-50810f",
-          "score": 70,
+          "id": "langflow-ai/langflow/e2e-testing-2b8834",
+          "score": 71,
           "coverage": 0.6,
           "expected": false,
           "relevant": true,
@@ -818,8 +818,8 @@
         "browser",
         "langgenius-dify-e2e-cucumber-playwright-1de203",
         "e2e-cucumber-playwright",
-        "voidmatcha-e2e-skills-e2e-reviewer-50810f",
-        "e2e-reviewer"
+        "langflow-ai-langflow-e2e-testing-2b8834",
+        "e2e-testing"
       ]
     },
     {
@@ -829,8 +829,8 @@
       "pass": true,
       "top3": [
         "ai-sdk",
-        "ruvnet/ruflo/vector-search-f41cc6",
-        "digoal/blog/digoal-read-think-writer-8f09ad"
+        "leeex1/Quillan-Ronin/memory",
+        "ruvnet/ruflo/vector-search-f41cc6"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -861,6 +861,21 @@
           ]
         },
         {
+          "id": "leeex1/Quillan-Ronin/memory",
+          "score": 51,
+          "coverage": 0.47,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "rag",
+            "retrieval"
+          ]
+        },
+        {
           "id": "ruvnet/ruflo/vector-search-f41cc6",
           "score": 41,
           "coverage": 0.27,
@@ -873,30 +888,17 @@
           "signals": [
             "embeddings"
           ]
-        },
-        {
-          "id": "digoal/blog/digoal-read-think-writer-8f09ad",
-          "score": 36,
-          "coverage": 0.2,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "rag"
-          ]
         }
       ],
       "signals": [
         "rag",
         "embeddings",
         "ai-sdk",
+        "retrieval",
+        "leeex1-quillan-ronin-memory",
+        "memory",
         "ruvnet-ruflo-vector-search-f41cc6",
-        "vector-search",
-        "digoal-blog-digoal-read-think-writer-8f09ad",
-        "digoal-read-think-writer"
+        "vector-search"
       ]
     },
     {
@@ -949,12 +951,10 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "ai-sdk",
-        "bytedance/deer-flow/data-analysis-d7f631",
-        "bytedance/deer-flow/image-generation-d5cfcb"
+        "ai-sdk"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 1,
+      "capability_gap": true,
       "top1_score": 74,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -962,7 +962,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -982,38 +982,6 @@
             "outputs",
             "streaming"
           ]
-        },
-        {
-          "id": "bytedance/deer-flow/data-analysis-d7f631",
-          "score": 54,
-          "coverage": 0.44,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "generate",
-            "structured",
-            "ai"
-          ]
-        },
-        {
-          "id": "bytedance/deer-flow/image-generation-d5cfcb",
-          "score": 52,
-          "coverage": 0.44,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "generate",
-            "structured",
-            "ai"
-          ]
         }
       ],
       "signals": [
@@ -1021,12 +989,7 @@
         "ai",
         "outputs",
         "streaming",
-        "ai-sdk",
-        "generate",
-        "bytedance-deer-flow-data-analysis-d7f631",
-        "data-analysis",
-        "bytedance-deer-flow-image-generation-d5cfcb",
-        "image-generation"
+        "ai-sdk"
       ]
     },
     {
@@ -1035,18 +998,19 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "FuZhiyu/superRA/agent-orchestration-1f0ab9"
+        "FuZhiyu/superRA/agent-orchestration-1f0ab9",
+        "leeex1/Quillan-Ronin/swarm-inter-agent-orchestration"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 70,
       "expected_hits": 0,
       "signal_hits": 1,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1065,6 +1029,21 @@
             "workflow",
             "orchestration"
           ]
+        },
+        {
+          "id": "leeex1/Quillan-Ronin/swarm-inter-agent-orchestration",
+          "score": 57,
+          "coverage": 0.41,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 2,
+          "signals": [
+            "agent",
+            "orchestration"
+          ]
         }
       ],
       "signals": [
@@ -1072,7 +1051,9 @@
         "workflow",
         "orchestration",
         "fuzhiyu-superra-agent-orchestration-1f0ab9",
-        "agent-orchestration"
+        "agent-orchestration",
+        "leeex1-quillan-ronin-swarm-inter-agent-orchestration",
+        "swarm-inter-agent-orchestration"
       ]
     },
     {
@@ -1275,9 +1256,10 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nextjs"
+        "nextjs",
+        "CopilotKit/CopilotKit/react-core-507281"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 93,
       "expected_hits": 1,
@@ -1286,7 +1268,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1308,6 +1290,22 @@
             "route",
             "architecture"
           ]
+        },
+        {
+          "id": "CopilotKit/CopilotKit/react-core-507281",
+          "score": 68,
+          "coverage": 0.56,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "nextjs",
+            "app-router",
+            "route"
+          ]
         }
       ],
       "signals": [
@@ -1316,7 +1314,9 @@
         "data",
         "fetching",
         "route",
-        "architecture"
+        "architecture",
+        "copilotkit-copilotkit-react-core-507281",
+        "react-core"
       ]
     },
     {
@@ -1325,22 +1325,39 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "sickn33/agentic-awesome-skills/fastapi-templates-ad6d22",
         "fastapi/fastapi/fastapi-5a4493",
         "hookdeck/webhook-skills/webhook-handler-patterns-60609e"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
-      "top1_score": 67,
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 72,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/fastapi-templates-ad6d22",
+          "score": 72,
+          "coverage": 0.6,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "fastapi",
+            "backend",
+            "api"
+          ]
+        },
         {
           "id": "fastapi/fastapi/fastapi-5a4493",
           "score": 67,
@@ -1378,6 +1395,8 @@
         "fastapi",
         "backend",
         "api",
+        "sickn33-agentic-awesome-skills-fastapi-templates-ad6d22",
+        "fastapi-templates",
         "fastapi-fastapi-fastapi-5a4493",
         "hookdeck-webhook-skills-webhook-handler-patterns-60609e",
         "webhook-handler-patterns"
@@ -1389,7 +1408,7 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "affaan-m/ECC/backend-patterns-ac648c",
+        "affaan-m/ECC/backend-patterns-6d97c5",
         "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
       ],
       "recommendation_count": 2,
@@ -1406,7 +1425,7 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "affaan-m/ECC/backend-patterns-ac648c",
+          "id": "affaan-m/ECC/backend-patterns-6d97c5",
           "score": 92,
           "coverage": 1,
           "expected": false,
@@ -1446,7 +1465,7 @@
         "api",
         "backend",
         "architecture",
-        "affaan-m-ecc-backend-patterns-ac648c",
+        "affaan-m-ecc-backend-patterns-6d97c5",
         "backend-patterns",
         "sickn33-agentic-awesome-skills-nodejs-backend-patterns-05e8c8",
         "nodejs-backend-patterns"
@@ -1456,47 +1475,22 @@
       "id": "graphql-server",
       "domain": "Backend & API",
       "tier": "coverage",
-      "pass": true,
-      "top3": [
-        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
-      ],
-      "recommendation_count": 1,
+      "pass": false,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 66,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 2,
-      "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "signal_hits": 0,
+      "anchor_signal_hits": 0,
+      "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
-      "specificity_pass": true,
-      "relevant_top3": 1,
+      "specificity_pass": false,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
-          "score": 66,
-          "coverage": 0.6,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "graphql",
-            "api",
-            "backend"
-          ]
-        }
-      ],
-      "signals": [
-        "graphql",
-        "api",
-        "backend",
-        "sickn33-agentic-awesome-skills-api-fuzzing-bug-bounty-3b1229",
-        "api-fuzzing-bug-bounty"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "root-cause-api-debug",
@@ -1823,16 +1817,16 @@
       "id": "code-review-refactor",
       "domain": "Testing & Quality",
       "tier": "coverage",
-      "pass": true,
+      "pass": false,
       "top3": [
+        "github/awesome-copilot/sql-code-review-15c076",
         "react-best-practices",
-        "flutter/agent-plugins/code-review-e26d76",
-        "alirezarezvani/claude-skills/senior-frontend-a7068f"
+        "langflow-ai/langflow/frontend-code-review-62e503"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 76,
-      "expected_hits": 1,
+      "top1_score": 80,
+      "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
       "anchor_candidate_count": 0,
@@ -1842,6 +1836,24 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "github/awesome-copilot/sql-code-review-15c076",
+          "score": 80,
+          "coverage": 0.7,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "perform",
+            "code",
+            "review",
+            "quality",
+            "maintainability"
+          ]
+        },
         {
           "id": "react-best-practices",
           "score": 76,
@@ -1860,25 +1872,8 @@
           ]
         },
         {
-          "id": "flutter/agent-plugins/code-review-e26d76",
-          "score": 67,
-          "coverage": 0.53,
-          "expected": true,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "perform",
-            "code",
-            "review",
-            "quality"
-          ]
-        },
-        {
-          "id": "alirezarezvani/claude-skills/senior-frontend-a7068f",
-          "score": 62,
+          "id": "langflow-ai/langflow/frontend-code-review-62e503",
+          "score": 66,
           "coverage": 0.53,
           "expected": false,
           "relevant": true,
@@ -1898,13 +1893,14 @@
         "perform",
         "code",
         "review",
+        "quality",
+        "maintainability",
+        "github-awesome-copilot-sql-code-review-15c076",
+        "sql-code-review",
         "refactor",
         "react-best-practices",
-        "quality",
-        "flutter-agent-plugins-code-review-e26d76",
-        "code-review",
-        "alirezarezvani-claude-skills-senior-frontend-a7068f",
-        "senior-frontend"
+        "langflow-ai-langflow-frontend-code-review-62e503",
+        "frontend-code-review"
       ]
     },
     {
@@ -2012,10 +2008,11 @@
       "pass": true,
       "top3": [
         "deployments-cicd",
-        "RaheesAhmed/SajiCode/devops-da514f"
+        "alirezarezvani/claude-skills/senior-devops-c3128d",
+        "davila7/claude-code-templates/github-automation-1fe5ef"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 81,
       "expected_hits": 1,
       "signal_hits": 3,
@@ -2023,7 +2020,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2046,19 +2043,35 @@
           ]
         },
         {
-          "id": "RaheesAhmed/SajiCode/devops-da514f",
-          "score": 56,
+          "id": "alirezarezvani/claude-skills/senior-devops-c3128d",
+          "score": 57,
           "coverage": 0.42,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 3,
+          "required_hits": 2,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "vercel",
+            "up",
             "deployment",
             "ci"
+          ]
+        },
+        {
+          "id": "davila7/claude-code-templates/github-automation-1fe5ef",
+          "score": 61,
+          "coverage": 0.46,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "deployment",
+            "ci",
+            "workflows"
           ]
         }
       ],
@@ -2070,8 +2083,11 @@
         "workflows",
         "deployments-cicd",
         "deployments-ci-cd",
-        "raheesahmed-sajicode-devops-da514f",
-        "devops"
+        "up",
+        "alirezarezvani-claude-skills-senior-devops-c3128d",
+        "senior-devops",
+        "davila7-claude-code-templates-github-automation-1fe5ef",
+        "github-automation"
       ]
     },
     {
@@ -2082,7 +2098,7 @@
       "top3": [
         "RaheesAhmed/SajiCode/devops-da514f",
         "sickn33/agentic-awesome-skills/kubernetes-deployment-7095fa",
-        "diegosouzapw/awesome-omni-skills/cloud-devops-7245f4"
+        "davila7/claude-code-templates/cloud-devops-b6bd4e"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2133,8 +2149,8 @@
           ]
         },
         {
-          "id": "diegosouzapw/awesome-omni-skills/cloud-devops-7245f4",
-          "score": 66,
+          "id": "davila7/claude-code-templates/cloud-devops-b6bd4e",
+          "score": 68,
           "coverage": 0.55,
           "expected": false,
           "relevant": true,
@@ -2160,7 +2176,7 @@
         "service",
         "sickn33-agentic-awesome-skills-kubernetes-deployment-7095fa",
         "kubernetes-deployment",
-        "diegosouzapw-awesome-omni-skills-cloud-devops-7245f4",
+        "davila7-claude-code-templates-cloud-devops-b6bd4e",
         "cloud-devops"
       ]
     },
@@ -2171,18 +2187,19 @@
       "pass": true,
       "top3": [
         "github",
-        "callstackincubator/agent-skills/github-actions-53c661"
+        "ruvnet/ruflo/github-automation-48be15",
+        "ruvnet/ruflo/github-workflow-automation-4ada72"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 78,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2204,9 +2221,9 @@
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/github-actions-53c661",
-          "score": 60,
-          "coverage": 0.46,
+          "id": "ruvnet/ruflo/github-automation-48be15",
+          "score": 76,
+          "coverage": 0.64,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -2216,7 +2233,25 @@
           "signals": [
             "github",
             "ci",
-            "workflow"
+            "workflow",
+            "repository"
+          ]
+        },
+        {
+          "id": "ruvnet/ruflo/github-workflow-automation-4ada72",
+          "score": 72,
+          "coverage": 0.64,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "github",
+            "ci",
+            "workflow",
+            "repository"
           ]
         }
       ],
@@ -2225,8 +2260,10 @@
         "ci",
         "workflow",
         "repository",
-        "callstackincubator-agent-skills-github-actions-53c661",
-        "github-actions"
+        "ruvnet-ruflo-github-automation-48be15",
+        "github-automation",
+        "ruvnet-ruflo-github-workflow-automation-4ada72",
+        "github-workflow-automation"
       ]
     },
     {
@@ -2382,20 +2419,18 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
-        "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 1,
+      "capability_gap": true,
       "top1_score": 65,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2414,36 +2449,6 @@
             "security",
             "vulnerability"
           ]
-        },
-        {
-          "id": "mukul975/Anthropic-Cybersecurity-Skills/building-vulnerability-exception-tracking-system-29c77d",
-          "score": 56,
-          "coverage": 0.39,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "security",
-            "vulnerability"
-          ]
-        },
-        {
-          "id": "sickn33/agentic-awesome-skills/api-fuzzing-bug-bounty-3b1229",
-          "score": 50,
-          "coverage": 0.39,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "security",
-            "vulnerability"
-          ]
         }
       ],
       "signals": [
@@ -2451,11 +2456,7 @@
         "security",
         "vulnerability",
         "revealuistudio-revskills-security-hardening-f5fe4e",
-        "security-hardening",
-        "mukul975-anthropic-cybersecurity-skills-building-vulnerability-exception-tracking-system-29c77d",
-        "building-vulnerability-exception-tracking-system",
-        "sickn33-agentic-awesome-skills-api-fuzzing-bug-bounty-3b1229",
-        "api-fuzzing-bug-bounty"
+        "security-hardening"
       ]
     },
     {
@@ -2465,18 +2466,19 @@
       "pass": true,
       "top3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5"
+        "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
+        "sickn33/agentic-awesome-skills/github-automation-a88f77"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 50,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 2,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2509,6 +2511,20 @@
             "audit",
             "permissions"
           ]
+        },
+        {
+          "id": "sickn33/agentic-awesome-skills/github-automation-a88f77",
+          "score": 40,
+          "coverage": 0.22,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "permissions"
+          ]
         }
       ],
       "signals": [
@@ -2519,7 +2535,9 @@
         "audit",
         "permissions",
         "denissergeevitch-agents-best-practices-agents-best-practices-0e95f5",
-        "agents-best-practices"
+        "agents-best-practices",
+        "sickn33-agentic-awesome-skills-github-automation-a88f77",
+        "github-automation"
       ]
     },
     {
@@ -2530,7 +2548,7 @@
       "top3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
         "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
-        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43"
+        "sickn33/agentic-awesome-skills/mobile-developer-5a23e8"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2578,18 +2596,17 @@
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
-          "score": 91,
-          "coverage": 1,
+          "id": "sickn33/agentic-awesome-skills/mobile-developer-5a23e8",
+          "score": 86,
+          "coverage": 0.78,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 2,
+          "required_hits": 2,
+          "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
             "react-native",
-            "expo",
             "mobile"
           ]
         }
@@ -2602,8 +2619,8 @@
         "react-native-brownfield-migration",
         "sickn33-agentic-awesome-skills-add-app-clip-43a9ab",
         "add-app-clip",
-        "callstackincubator-agent-skills-react-native-tv-best-practices-a5fe43",
-        "react-native-tv-best-practices"
+        "sickn33-agentic-awesome-skills-mobile-developer-5a23e8",
+        "mobile-developer"
       ]
     },
     {
@@ -2674,25 +2691,40 @@
       "id": "android-kotlin",
       "domain": "Mobile",
       "tier": "coverage",
-      "pass": true,
+      "pass": false,
       "top3": [
+        "TriliumNext/Trilium/developing-capacitor-mobile-dab7e0",
         "callstackincubator/agent-skills/agent-device-f62531",
-        "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58",
-        "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70"
+        "gmh5225/awesome-game-security/mobile-security-9abeca"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
       "top1_score": 68,
       "expected_hits": 0,
-      "signal_hits": 3,
-      "anchor_signal_hits": 2,
+      "signal_hits": 2,
+      "anchor_signal_hits": 1,
       "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
-      "specificity_pass": true,
+      "specificity_pass": false,
       "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "TriliumNext/Trilium/developing-capacitor-mobile-dab7e0",
+          "score": 68,
+          "coverage": 0.67,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "android",
+            "mobile"
+          ]
+        },
         {
           "id": "callstackincubator/agent-skills/agent-device-f62531",
           "score": 68,
@@ -2709,23 +2741,8 @@
           ]
         },
         {
-          "id": "TalissonVitorino/kmp-ios-skills/coroutines-patterns-ed3a58",
-          "score": 66,
-          "coverage": 0.67,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "kotlin",
-            "mobile"
-          ]
-        },
-        {
-          "id": "TalissonVitorino/kmp-ios-skills/accessibility-patterns-14fe70",
-          "score": 68,
+          "id": "gmh5225/awesome-game-security/mobile-security-9abeca",
+          "score": 67,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -2742,13 +2759,12 @@
       "signals": [
         "android",
         "mobile",
+        "triliumnext-trilium-developing-capacitor-mobile-dab7e0",
+        "developing-capacitor-mobile",
         "callstackincubator-agent-skills-agent-device-f62531",
         "agent-device",
-        "kotlin",
-        "talissonvitorino-kmp-ios-skills-coroutines-patterns-ed3a58",
-        "coroutines-patterns",
-        "talissonvitorino-kmp-ios-skills-accessibility-patterns-14fe70",
-        "accessibility-patterns"
+        "gmh5225-awesome-game-security-mobile-security-9abeca",
+        "mobile-security"
       ]
     },
     {
@@ -2758,12 +2774,12 @@
       "pass": true,
       "top3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
-        "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
-        "flutter/agent-plugins/flutter-add-integration-test-91cc8c"
+        "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
+        "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 65,
+      "top1_score": 66,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -2776,22 +2792,7 @@
       "candidates": [
         {
           "id": "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
-          "score": 65,
-          "coverage": 0.61,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 1,
-          "signals": [
-            "flutter",
-            "mobile"
-          ]
-        },
-        {
-          "id": "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
-          "score": 64,
+          "score": 66,
           "coverage": 0.61,
           "expected": false,
           "relevant": true,
@@ -2818,6 +2819,21 @@
             "flutter",
             "mobile"
           ]
+        },
+        {
+          "id": "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd",
+          "score": 64,
+          "coverage": 0.61,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "flutter",
+            "mobile"
+          ]
         }
       ],
       "signals": [
@@ -2825,10 +2841,10 @@
         "mobile",
         "flutter-agent-plugins-flutter-build-responsive-layout-ea3d50",
         "flutter-build-responsive-layout",
-        "flutter-agent-plugins-flutter-add-widget-preview-8e7a10",
-        "flutter-add-widget-preview",
         "flutter-agent-plugins-flutter-add-integration-test-91cc8c",
-        "flutter-add-integration-test"
+        "flutter-add-integration-test",
+        "flutter-agent-plugins-flutter-apply-architecture-best-practices-c5e4dd",
+        "flutter-apply-architecture-best-practices"
       ]
     },
     {
@@ -2837,22 +2853,42 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "ruvnet/ruflo/github-automation-48be15",
         "github",
-        "nexu-io/open-design/github-dashboard-a45aef"
+        "davila7/claude-code-templates/github-automation-1fe5ef"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
-      "top1_score": 88,
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 89,
       "expected_hits": 1,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "ruvnet/ruflo/github-automation-48be15",
+          "score": 89,
+          "coverage": 0.87,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "github",
+            "pull",
+            "requests",
+            "issues",
+            "ci",
+            "automation"
+          ]
+        },
         {
           "id": "github",
           "score": 88,
@@ -2873,13 +2909,13 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/github-dashboard-a45aef",
-          "score": 77,
-          "coverage": 0.74,
+          "id": "davila7/claude-code-templates/github-automation-1fe5ef",
+          "score": 87,
+          "coverage": 0.87,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
@@ -2887,20 +2923,22 @@
             "pull",
             "requests",
             "issues",
+            "ci",
             "automation"
           ]
         }
       ],
       "signals": [
-        "triage",
         "github",
         "pull",
+        "requests",
         "issues",
         "ci",
         "automation",
-        "requests",
-        "nexu-io-open-design-github-dashboard-a45aef",
-        "github-dashboard"
+        "ruvnet-ruflo-github-automation-48be15",
+        "github-automation",
+        "triage",
+        "davila7-claude-code-templates-github-automation-1fe5ef"
       ]
     },
     {
@@ -3214,7 +3252,7 @@
       "top3": [
         "bytedance/deer-flow/code-documentation-cbf1c4",
         "notion",
-        "figma/mcp-server-guide/create-design-system-rules"
+        "metabase/metabase/docs-write-1753b7"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3260,8 +3298,8 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/create-design-system-rules",
-          "score": 49,
+          "id": "metabase/metabase/docs-write-1753b7",
+          "score": 52,
           "coverage": 0.32,
           "expected": false,
           "relevant": true,
@@ -3270,8 +3308,8 @@
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "documentation",
-            "system"
+            "write",
+            "documentation"
           ]
         }
       ],
@@ -3282,9 +3320,9 @@
         "code-documentation",
         "planning",
         "notion",
-        "system",
-        "figma-mcp-server-guide-create-design-system-rules",
-        "create-design-system-rules"
+        "write",
+        "metabase-metabase-docs-write-1753b7",
+        "docs-write"
       ]
     },
     {
@@ -3295,7 +3333,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "concept2cure/ClinicalSageAI-2-replit/frontend-design"
+        "figma/mcp-server-guide/figma-generate-design"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3345,8 +3383,8 @@
           ]
         },
         {
-          "id": "concept2cure/ClinicalSageAI-2-replit/frontend-design",
-          "score": 62,
+          "id": "figma/mcp-server-guide/figma-generate-design",
+          "score": 64,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3369,8 +3407,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "concept2cure-clinicalsageai-2-replit-frontend-design",
-        "frontend-design"
+        "figma-mcp-server-guide-figma-generate-design",
+        "figma-generate-design"
       ]
     },
     {
@@ -3381,7 +3419,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "ashwin-growtharc/DeliveryOS/ui-ux-pro-max"
+        "curiositech/some_claude_skills/human-centered-design-fundamentals"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3429,7 +3467,7 @@
           ]
         },
         {
-          "id": "ashwin-growtharc/DeliveryOS/ui-ux-pro-max",
+          "id": "curiositech/some_claude_skills/human-centered-design-fundamentals",
           "score": 73,
           "coverage": 0.67,
           "expected": false,
@@ -3440,7 +3478,7 @@
           "identity_anchor_hits": 0,
           "signals": [
             "ux",
-            "usability"
+            "research"
           ]
         }
       ],
@@ -3452,8 +3490,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "ashwin-growtharc-deliveryos-ui-ux-pro-max",
-        "ui-ux-pro-max"
+        "curiositech-some-claude-skills-human-centered-design-fundamentals",
+        "human-centered-design-fundamentals"
       ]
     },
     {
@@ -3462,15 +3500,15 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "bytedance/deer-flow/frontend-design-17b9c3",
+        "asgeirtj/system_prompts_leaks/design-2dc0df",
         "vanducng/skills/marketing-design-678c70",
-        "nexu-io/open-design/magazine-poster-f52efe"
+        "bytedance/deer-flow/frontend-design-17b9c3"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 56,
+      "top1_score": 68,
       "expected_hits": 0,
-      "signal_hits": 2,
+      "signal_hits": 3,
       "anchor_signal_hits": 1,
       "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
@@ -3480,16 +3518,18 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "bytedance/deer-flow/frontend-design-17b9c3",
-          "score": 56,
-          "coverage": 0.29,
+          "id": "asgeirtj/system_prompts_leaks/design-2dc0df",
+          "score": 68,
+          "coverage": 0.57,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 1,
+          "required_hits": 2,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
+            "visual",
+            "graphic",
             "poster",
             "layout"
           ]
@@ -3510,8 +3550,8 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/magazine-poster-f52efe",
-          "score": 52,
+          "id": "bytedance/deer-flow/frontend-design-17b9c3",
+          "score": 56,
           "coverage": 0.29,
           "expected": false,
           "relevant": true,
@@ -3526,15 +3566,17 @@
         }
       ],
       "signals": [
+        "visual",
+        "graphic",
         "poster",
         "layout",
-        "bytedance-deer-flow-frontend-design-17b9c3",
-        "frontend-design",
+        "asgeirtj-system-prompts-leaks-design-2dc0df",
+        "design",
         "brand",
         "vanducng-skills-marketing-design-678c70",
         "marketing-design",
-        "nexu-io-open-design-magazine-poster-f52efe",
-        "magazine-poster"
+        "bytedance-deer-flow-frontend-design-17b9c3",
+        "frontend-design"
       ]
     },
     {
@@ -3544,7 +3586,7 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "shimano-arg/app-vendedores/apple-design",
+        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
@@ -3577,8 +3619,8 @@
           ]
         },
         {
-          "id": "shimano-arg/app-vendedores/apple-design",
-          "score": 81,
+          "id": "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+          "score": 80,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3616,8 +3658,8 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "shimano-arg-app-vendedores-apple-design",
-        "apple-design",
+        "heygen-com-hyperframes-hyperframes-creative-f1b96c",
+        "hyperframes-creative",
         "remotion-dev-skills-remotion-multimedia",
         "remotion-multimedia"
       ]
@@ -3628,13 +3670,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "joecastelino/jay-skill-pack/manim-video",
-        "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad",
-        "adammatthewsteinberger/vibey-skills/cad-generative-automation-and-scanning"
+        "leeex1/Quillan-Ronin/music-audio",
+        "mitsuhiko/agent-stuff/openscad",
+        "calesthio/generative-media-skills/ecommerce-product-imagery"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 93,
+      "top1_score": 76,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3646,27 +3688,25 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "joecastelino/jay-skill-pack/manim-video",
-          "score": 93,
-          "coverage": 1,
+          "id": "leeex1/Quillan-Ronin/music-audio",
+          "score": 76,
+          "coverage": 0.67,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 3,
+          "required_hits": 2,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "cad",
             "industrial-design",
             "industrial",
-            "product",
-            "cad"
+            "product"
           ]
         },
         {
-          "id": "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad",
-          "score": 84,
-          "coverage": 0.78,
+          "id": "mitsuhiko/agent-stuff/openscad",
+          "score": 68,
+          "coverage": 0.56,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3675,15 +3715,14 @@
           "identity_anchor_hits": 0,
           "signals": [
             "cad",
-            "industrial-design",
             "industrial",
             "cad"
           ]
         },
         {
-          "id": "adammatthewsteinberger/vibey-skills/cad-generative-automation-and-scanning",
-          "score": 83,
-          "coverage": 0.78,
+          "id": "calesthio/generative-media-skills/ecommerce-product-imagery",
+          "score": 60,
+          "coverage": 0.44,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3691,24 +3730,22 @@
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "cad",
-            "industrial-design",
             "industrial",
-            "cad"
+            "product"
           ]
         }
       ],
       "signals": [
-        "cad",
         "industrial-design",
         "industrial",
         "product",
-        "joecastelino-jay-skill-pack-manim-video",
-        "manim-video",
-        "adammatthewsteinberger-vibey-skills-cad-geometry-kernels-formats-and-code-cad",
-        "cad-geometry-kernels-formats-and-code-cad",
-        "adammatthewsteinberger-vibey-skills-cad-generative-automation-and-scanning",
-        "cad-generative-automation-and-scanning"
+        "leeex1-quillan-ronin-music-audio",
+        "music-audio",
+        "cad",
+        "mitsuhiko-agent-stuff-openscad",
+        "openscad",
+        "calesthio-generative-media-skills-ecommerce-product-imagery",
+        "e-commerce-product-imagery"
       ]
     }
   ]
