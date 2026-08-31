@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-30T08:26:08.491Z",
+  "generatedAt": "2026-08-31T08:46:13.713Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 51,
-  "passRate": 0.944,
+  "passed": 50,
+  "passRate": 0.926,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,19 +13,19 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 41,
-    "passRate": 0.932
+    "passed": 40,
+    "passRate": 0.909
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
   "specificityFailures": 2,
-  "capabilityGapCases": 28,
-  "averageRecommendationCount": 2.02,
-  "averageRelevantTop3": 2.02,
-  "averageTop1Score": 76.8,
-  "expectedHitsTotal": 31,
-  "signalHitsTotal": 134,
+  "capabilityGapCases": 30,
+  "averageRecommendationCount": 1.94,
+  "averageRelevantTop3": 1.94,
+  "averageTop1Score": 75.9,
+  "expectedHitsTotal": 30,
+  "signalHitsTotal": 132,
   "anchorSignalHitsTotal": 32,
   "byDomain": {
     "AI Agents": {
@@ -34,9 +34,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 4,
+      "capabilityGapCases": 5,
       "passRate": 1,
-      "averageRecommendationCount": 1.83
+      "averageRecommendationCount": 1.5
     },
     "Frontend": {
       "cases": 8,
@@ -44,9 +44,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 5,
+      "capabilityGapCases": 6,
       "passRate": 1,
-      "averageRecommendationCount": 1.88
+      "averageRecommendationCount": 1.75
     },
     "Design & Media": {
       "cases": 5,
@@ -130,13 +130,13 @@
     },
     "Docs & Research": {
       "cases": 4,
-      "passed": 4,
+      "passed": 3,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
       "capabilityGapCases": 2,
-      "passRate": 1,
-      "averageRecommendationCount": 2
+      "passRate": 0.75,
+      "averageRecommendationCount": 1.75
     }
   },
   "results": [
@@ -426,7 +426,7 @@
         },
         {
           "id": "grafana/grafana/frontend-testing-strategy-68570e",
-          "score": 71,
+          "score": 72,
           "coverage": 0.54,
           "expected": false,
           "relevant": true,
@@ -462,11 +462,10 @@
       "pass": true,
       "top3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
         "bytedance/deer-flow/frontend-design-17b9c3"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 87,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -474,7 +473,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -492,24 +491,6 @@
             "visual",
             "production",
             "polish",
-            "react",
-            "dashboard",
-            "interface"
-          ]
-        },
-        {
-          "id": "stephonGAO/milu/frontend-design-25832f",
-          "score": 77,
-          "coverage": 0.66,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "quality",
-            "production",
             "react",
             "dashboard",
             "interface"
@@ -543,7 +524,6 @@
         "interface",
         "frontend-design",
         "quality",
-        "stephongao-milu-frontend-design-25832f",
         "bytedance-deer-flow-frontend-design-17b9c3"
       ]
     },
@@ -793,7 +773,7 @@
         },
         {
           "id": "langflow-ai/langflow/e2e-testing-2b8834",
-          "score": 71,
+          "score": 72,
           "coverage": 0.6,
           "expected": false,
           "relevant": true,
@@ -829,19 +809,18 @@
       "pass": true,
       "top3": [
         "ai-sdk",
-        "leeex1/Quillan-Ronin/memory",
-        "ruvnet/ruflo/vector-search-f41cc6"
+        "redis/agent-skills/redis-semantic-cache-9c2b67"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 57,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 2,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -861,9 +840,9 @@
           ]
         },
         {
-          "id": "leeex1/Quillan-Ronin/memory",
-          "score": 51,
-          "coverage": 0.47,
+          "id": "redis/agent-skills/redis-semantic-cache-9c2b67",
+          "score": 31,
+          "coverage": 0.2,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -871,22 +850,7 @@
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "rag",
-            "retrieval"
-          ]
-        },
-        {
-          "id": "ruvnet/ruflo/vector-search-f41cc6",
-          "score": 41,
-          "coverage": 0.27,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "embeddings"
+            "rag"
           ]
         }
       ],
@@ -894,11 +858,8 @@
         "rag",
         "embeddings",
         "ai-sdk",
-        "retrieval",
-        "leeex1-quillan-ronin-memory",
-        "memory",
-        "ruvnet-ruflo-vector-search-f41cc6",
-        "vector-search"
+        "redis-agent-skills-redis-semantic-cache-9c2b67",
+        "redis-semantic-cache"
       ]
     },
     {
@@ -998,19 +959,18 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "FuZhiyu/superRA/agent-orchestration-1f0ab9",
-        "leeex1/Quillan-Ronin/swarm-inter-agent-orchestration"
+        "FuZhiyu/superRA/agent-orchestration-1f0ab9"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 70,
       "expected_hits": 0,
       "signal_hits": 1,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1029,21 +989,6 @@
             "workflow",
             "orchestration"
           ]
-        },
-        {
-          "id": "leeex1/Quillan-Ronin/swarm-inter-agent-orchestration",
-          "score": 57,
-          "coverage": 0.41,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 2,
-          "signals": [
-            "agent",
-            "orchestration"
-          ]
         }
       ],
       "signals": [
@@ -1051,9 +996,7 @@
         "workflow",
         "orchestration",
         "fuzhiyu-superra-agent-orchestration-1f0ab9",
-        "agent-orchestration",
-        "leeex1-quillan-ronin-swarm-inter-agent-orchestration",
-        "swarm-inter-agent-orchestration"
+        "agent-orchestration"
       ]
     },
     {
@@ -1166,11 +1109,10 @@
       "pass": true,
       "top3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
         "bytedance/deer-flow/frontend-design-17b9c3"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 92,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -1178,7 +1120,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1195,24 +1137,6 @@
           "signals": [
             "design",
             "polished",
-            "production",
-            "react",
-            "web",
-            "landing"
-          ]
-        },
-        {
-          "id": "stephonGAO/milu/frontend-design-25832f",
-          "score": 79,
-          "coverage": 0.7,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "design",
             "production",
             "react",
             "web",
@@ -1246,7 +1170,6 @@
         "web",
         "landing",
         "frontend-design",
-        "stephongao-milu-frontend-design-25832f",
         "bytedance-deer-flow-frontend-design-17b9c3"
       ]
     },
@@ -1257,10 +1180,11 @@
       "pass": true,
       "top3": [
         "nextjs",
+        "vercel/next.js/update-docs-65ee8c",
         "CopilotKit/CopilotKit/react-core-507281"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 93,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -1268,7 +1192,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1289,6 +1213,22 @@
             "fetching",
             "route",
             "architecture"
+          ]
+        },
+        {
+          "id": "vercel/next.js/update-docs-65ee8c",
+          "score": 71,
+          "coverage": 0.56,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "nextjs",
+            "app-router",
+            "route"
           ]
         },
         {
@@ -1315,6 +1255,8 @@
         "fetching",
         "route",
         "architecture",
+        "vercel-nextjs-update-docs-65ee8c",
+        "update-docs",
         "copilotkit-copilotkit-react-core-507281",
         "react-core"
       ]
@@ -1408,7 +1350,7 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "affaan-m/ECC/backend-patterns-6d97c5",
+        "affaan-m/ECC/backend-patterns-ac648c",
         "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
       ],
       "recommendation_count": 2,
@@ -1425,7 +1367,7 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "affaan-m/ECC/backend-patterns-6d97c5",
+          "id": "affaan-m/ECC/backend-patterns-ac648c",
           "score": 92,
           "coverage": 1,
           "expected": false,
@@ -1465,7 +1407,7 @@
         "api",
         "backend",
         "architecture",
-        "affaan-m-ecc-backend-patterns-6d97c5",
+        "affaan-m-ecc-backend-patterns-ac648c",
         "backend-patterns",
         "sickn33-agentic-awesome-skills-nodejs-backend-patterns-05e8c8",
         "nodejs-backend-patterns"
@@ -2222,7 +2164,7 @@
         },
         {
           "id": "ruvnet/ruflo/github-automation-48be15",
-          "score": 76,
+          "score": 77,
           "coverage": 0.64,
           "expected": false,
           "relevant": true,
@@ -2423,7 +2365,7 @@
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 65,
+      "top1_score": 66,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -2436,7 +2378,7 @@
       "candidates": [
         {
           "id": "RevealUIStudio/revskills/security-hardening-f5fe4e",
-          "score": 65,
+          "score": 66,
           "coverage": 0.55,
           "expected": false,
           "relevant": true,
@@ -2467,11 +2409,11 @@
       "top3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
         "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
-        "sickn33/agentic-awesome-skills/github-automation-a88f77"
+        "affaan-m/ECC/quarkus-security-9511c2"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 50,
+      "top1_score": 51,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 2,
@@ -2484,7 +2426,7 @@
       "candidates": [
         {
           "id": "RevealUIStudio/revskills/security-hardening-f5fe4e",
-          "score": 50,
+          "score": 51,
           "coverage": 0.39,
           "expected": false,
           "relevant": true,
@@ -2513,9 +2455,9 @@
           ]
         },
         {
-          "id": "sickn33/agentic-awesome-skills/github-automation-a88f77",
-          "score": 40,
-          "coverage": 0.22,
+          "id": "affaan-m/ECC/quarkus-security-9511c2",
+          "score": 50,
+          "coverage": 0.39,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -2523,7 +2465,8 @@
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "permissions"
+            "secrets",
+            "authentication"
           ]
         }
       ],
@@ -2536,8 +2479,8 @@
         "permissions",
         "denissergeevitch-agents-best-practices-agents-best-practices-0e95f5",
         "agents-best-practices",
-        "sickn33-agentic-awesome-skills-github-automation-a88f77",
-        "github-automation"
+        "affaan-m-ecc-quarkus-security-9511c2",
+        "quarkus-security"
       ]
     },
     {
@@ -3154,45 +3097,22 @@
       "id": "reverse-engineer-product",
       "domain": "Docs & Research",
       "tier": "coverage",
-      "pass": true,
-      "top3": [
-        "OpenDigitalProductFactory/opendigitalproductfactory/portal-navigation-audit-0d02af"
-      ],
-      "recommendation_count": 1,
+      "pass": false,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 59,
-      "expected_hits": 1,
-      "signal_hits": 2,
+      "top1_score": 0,
+      "expected_hits": 0,
+      "signal_hits": 0,
       "anchor_signal_hits": 0,
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "OpenDigitalProductFactory/opendigitalproductfactory/portal-navigation-audit-0d02af",
-          "score": 59,
-          "coverage": 0.44,
-          "expected": true,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "information-architecture",
-            "product"
-          ]
-        }
-      ],
-      "signals": [
-        "information-architecture",
-        "product",
-        "opendigitalproductfactory-opendigitalproductfactory-portal-navigation-audit-0d02af",
-        "portal-navigation-audit"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "notion-research",
@@ -3250,13 +3170,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "sickn33/agentic-awesome-skills/docs-generator-70a767",
         "bytedance/deer-flow/code-documentation-cbf1c4",
-        "notion",
-        "metabase/metabase/docs-write-1753b7"
+        "notion"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 56,
+      "top1_score": 63,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
@@ -3267,6 +3187,22 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "sickn33/agentic-awesome-skills/docs-generator-70a767",
+          "score": 63,
+          "coverage": 0.5,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "write",
+            "technical",
+            "documentation"
+          ]
+        },
         {
           "id": "bytedance/deer-flow/code-documentation-cbf1c4",
           "score": 56,
@@ -3296,33 +3232,19 @@
             "documentation",
             "planning"
           ]
-        },
-        {
-          "id": "metabase/metabase/docs-write-1753b7",
-          "score": 52,
-          "coverage": 0.32,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "write",
-            "documentation"
-          ]
         }
       ],
       "signals": [
+        "write",
+        "technical",
         "documentation",
+        "sickn33-agentic-awesome-skills-docs-generator-70a767",
+        "docs-generator",
         "architecture",
         "bytedance-deer-flow-code-documentation-cbf1c4",
         "code-documentation",
         "planning",
-        "notion",
-        "write",
-        "metabase-metabase-docs-write-1753b7",
-        "docs-write"
+        "notion"
       ]
     },
     {
@@ -3333,7 +3255,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "nexu-io/open-design/token-map"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3383,8 +3305,8 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/figma-generate-design",
-          "score": 64,
+          "id": "nexu-io/open-design/token-map",
+          "score": 61,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3407,8 +3329,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "figma-mcp-server-guide-figma-generate-design",
-        "figma-generate-design"
+        "nexu-io-open-design-token-map",
+        "token-map"
       ]
     },
     {
@@ -3419,7 +3341,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "curiositech/some_claude_skills/human-centered-design-fundamentals"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3467,8 +3389,8 @@
           ]
         },
         {
-          "id": "curiositech/some_claude_skills/human-centered-design-fundamentals",
-          "score": 73,
+          "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+          "score": 76,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3490,8 +3412,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "curiositech-some-claude-skills-human-centered-design-fundamentals",
-        "human-centered-design-fundamentals"
+        "nexu-io-open-design-html-ppt-zhangzara-pink-script",
+        "html-ppt-zhangzara-pink-script"
       ]
     },
     {
@@ -3670,9 +3592,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "leeex1/Quillan-Ronin/music-audio",
+        "nexu-io/open-design/x-research",
         "mitsuhiko/agent-stuff/openscad",
-        "calesthio/generative-media-skills/ecommerce-product-imagery"
+        "nexu-io/open-design/rewrite-plan"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3688,7 +3610,7 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "leeex1/Quillan-Ronin/music-audio",
+          "id": "nexu-io/open-design/x-research",
           "score": 76,
           "coverage": 0.67,
           "expected": false,
@@ -3720,9 +3642,9 @@
           ]
         },
         {
-          "id": "calesthio/generative-media-skills/ecommerce-product-imagery",
-          "score": 60,
-          "coverage": 0.44,
+          "id": "nexu-io/open-design/rewrite-plan",
+          "score": 72,
+          "coverage": 0.67,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3730,6 +3652,7 @@
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
+            "industrial-design",
             "industrial",
             "product"
           ]
@@ -3739,13 +3662,13 @@
         "industrial-design",
         "industrial",
         "product",
-        "leeex1-quillan-ronin-music-audio",
-        "music-audio",
+        "nexu-io-open-design-x-research",
+        "x-research",
         "cad",
         "mitsuhiko-agent-stuff-openscad",
         "openscad",
-        "calesthio-generative-media-skills-ecommerce-product-imagery",
-        "e-commerce-product-imagery"
+        "nexu-io-open-design-rewrite-plan",
+        "rewrite-plan"
       ]
     }
   ]

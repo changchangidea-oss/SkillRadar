@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-08-30T08:26:27.053Z",
+  "generatedAt": "2026-08-31T08:46:34.893Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "da0047052bc16d9cbc71b730b813a24b5b8811d1048e6923dd0559fcd79e7191",
+    "contentHash": "50b927aa00294456788bf7b8da0c5335a54dc33e3b72cdf6ceaff227f517d8d7",
     "contentHashVersion": 2,
-    "generatedAt": "2026-08-30T08:25:56.134Z",
-    "totalCount": 366,
+    "generatedAt": "2026-08-31T08:45:59.664Z",
+    "totalCount": 440,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 51,
+    "passed": 50,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 41,
+    "coveragePassed": 40,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 2,
-    "capabilityGapCases": 28,
-    "averageRecommendationCount": 2.02,
-    "expectedHitsTotal": 31,
-    "signalHitsTotal": 134,
+    "capabilityGapCases": 30,
+    "averageRecommendationCount": 1.94,
+    "expectedHitsTotal": 30,
+    "signalHitsTotal": 132,
     "anchorSignalHitsTotal": 32,
-    "averageTop1Score": 76.8
+    "averageTop1Score": 75.9
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 51,
+    "passed": 50,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 41,
+    "coveragePassed": 40,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 2,
+    "lowEvidenceTop3": 1,
     "specificityFailures": 2,
-    "capabilityGapCases": 27,
-    "averageRecommendationCount": 2.07,
-    "expectedHitsTotal": 31,
-    "signalHitsTotal": 134,
+    "capabilityGapCases": 29,
+    "averageRecommendationCount": 1.98,
+    "expectedHitsTotal": 30,
+    "signalHitsTotal": 132,
     "anchorSignalHitsTotal": 32,
-    "averageTop1Score": 76.8
+    "averageTop1Score": 75.9
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": -2
+    "evidenceDelta": -1
   },
   "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
@@ -125,15 +125,14 @@
         "shadcn"
       ],
       "candidateTop3": [
-        "shadcn",
-        "nexu-io/open-design/github-dashboard-a45aef"
+        "shadcn"
       ],
       "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 2,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
-      "lowEvidenceDelta": 1
+      "lowEvidenceDelta": 0
     },
     {
       "id": "react-performance",
@@ -166,16 +165,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
         "bytedance/deer-flow/frontend-design-17b9c3"
       ],
       "candidateTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
         "bytedance/deer-flow/frontend-design-17b9c3"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -273,15 +270,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "ai-sdk",
-        "leeex1/Quillan-Ronin/memory",
-        "ruvnet/ruflo/vector-search-f41cc6"
+        "redis/agent-skills/redis-semantic-cache-9c2b67"
       ],
       "candidateTop3": [
         "ai-sdk",
-        "leeex1/Quillan-Ronin/memory",
-        "ruvnet/ruflo/vector-search-f41cc6"
+        "redis/agent-skills/redis-semantic-cache-9c2b67",
+        "digoal/blog/digoal-acf5ef"
       ],
-      "productionRecommendationCount": 3,
+      "productionRecommendationCount": 2,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
@@ -318,11 +314,10 @@
       ],
       "candidateTop3": [
         "ai-sdk",
-        "nexu-io/open-design/clinical-case-report-638ff1",
         "affaan-m/ECC/ai-first-engineering-d5c86d"
       ],
       "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 3,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -335,15 +330,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "FuZhiyu/superRA/agent-orchestration-1f0ab9",
-        "leeex1/Quillan-Ronin/swarm-inter-agent-orchestration"
+        "FuZhiyu/superRA/agent-orchestration-1f0ab9"
       ],
       "candidateTop3": [
-        "FuZhiyu/superRA/agent-orchestration-1f0ab9",
-        "leeex1/Quillan-Ronin/swarm-inter-agent-orchestration"
+        "FuZhiyu/superRA/agent-orchestration-1f0ab9"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -395,16 +388,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
         "bytedance/deer-flow/frontend-design-17b9c3"
       ],
       "candidateTop3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
         "bytedance/deer-flow/frontend-design-17b9c3"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -418,14 +409,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "nextjs",
+        "vercel/next.js/update-docs-65ee8c",
         "CopilotKit/CopilotKit/react-core-507281"
       ],
       "candidateTop3": [
         "nextjs",
+        "vercel/next.js/update-docs-65ee8c",
         "CopilotKit/CopilotKit/react-core-507281"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -461,11 +454,11 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "affaan-m/ECC/backend-patterns-6d97c5",
+        "affaan-m/ECC/backend-patterns-ac648c",
         "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
       ],
       "candidateTop3": [
-        "affaan-m/ECC/backend-patterns-6d97c5",
+        "affaan-m/ECC/backend-patterns-ac648c",
         "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
       ],
       "productionRecommendationCount": 2,
@@ -823,12 +816,12 @@
       "productionTop3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
         "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
-        "sickn33/agentic-awesome-skills/github-automation-a88f77"
+        "affaan-m/ECC/quarkus-security-9511c2"
       ],
       "candidateTop3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
         "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
-        "sickn33/agentic-awesome-skills/github-automation-a88f77"
+        "affaan-m/ECC/quarkus-security-9511c2"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1017,18 +1010,14 @@
     },
     {
       "id": "reverse-engineer-product",
-      "productionPass": true,
-      "candidatePass": true,
+      "productionPass": false,
+      "candidatePass": false,
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
-      "productionTop3": [
-        "OpenDigitalProductFactory/opendigitalproductfactory/portal-navigation-audit-0d02af"
-      ],
-      "candidateTop3": [
-        "OpenDigitalProductFactory/opendigitalproductfactory/portal-navigation-audit-0d02af"
-      ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1060,14 +1049,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
+        "sickn33/agentic-awesome-skills/docs-generator-70a767",
         "bytedance/deer-flow/code-documentation-cbf1c4",
-        "notion",
-        "metabase/metabase/docs-write-1753b7"
+        "notion"
       ],
       "candidateTop3": [
+        "sickn33/agentic-awesome-skills/docs-generator-70a767",
         "bytedance/deer-flow/code-documentation-cbf1c4",
-        "notion",
-        "metabase/metabase/docs-write-1753b7"
+        "notion"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1085,12 +1074,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "nexu-io/open-design/token-map"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "nexu-io/open-design/token-map"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1108,12 +1097,12 @@
       "productionTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "curiositech/some_claude_skills/human-centered-design-fundamentals"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "candidateTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "curiositech/some_claude_skills/human-centered-design-fundamentals"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1175,14 +1164,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "leeex1/Quillan-Ronin/music-audio",
+        "nexu-io/open-design/x-research",
         "mitsuhiko/agent-stuff/openscad",
-        "calesthio/generative-media-skills/ecommerce-product-imagery"
+        "nexu-io/open-design/rewrite-plan"
       ],
       "candidateTop3": [
-        "leeex1/Quillan-Ronin/music-audio",
+        "nexu-io/open-design/x-research",
         "mitsuhiko/agent-stuff/openscad",
-        "calesthio/generative-media-skills/ecommerce-product-imagery"
+        "nexu-io/open-design/rewrite-plan"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
