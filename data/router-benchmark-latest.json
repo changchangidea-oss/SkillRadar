@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-30T09:26:56.143Z",
+  "generatedAt": "2026-08-31T10:03:33.140Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
   "passed": 7,
   "passRate": 1,
   "unsafeTop3": 0,
-  "capabilityGapCases": 3,
-  "averageRecommendationCount": 2.14,
+  "capabilityGapCases": 4,
+  "averageRecommendationCount": 2,
   "averageTop1Score": 84.1,
   "projectContextFixture": "passed",
   "results": [
@@ -142,11 +142,10 @@
       "pass": true,
       "top3": [
         "frontend-design",
-        "stephonGAO/milu/frontend-design-25832f",
         "bytedance/deer-flow/frontend-design-17b9c3"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 87,
       "expected_hits": 1,
       "signal_hits": 2,
