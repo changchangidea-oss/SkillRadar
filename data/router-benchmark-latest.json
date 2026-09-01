@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T10:03:33.140Z",
+  "generatedAt": "2026-09-01T08:53:21.857Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
@@ -8,7 +8,7 @@
   "unsafeTop3": 0,
   "capabilityGapCases": 4,
   "averageRecommendationCount": 2,
-  "averageTop1Score": 84.1,
+  "averageTop1Score": 84.3,
   "projectContextFixture": "passed",
   "results": [
     {
@@ -168,20 +168,20 @@
       "id": "zh-spatial-rendering",
       "pass": true,
       "top3": [
+        "alivirgo/Major-AI-Skills/godot",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering",
-        "calesthio/generative-media-skills/neural-reality-capture"
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 80,
+      "top1_score": 81,
       "expected_hits": 0,
       "signal_hits": 4,
       "signals": [
         "-architecture",
-        "-interior",
+        "-rendering",
         "-spatial",
-        "-rendering"
+        "-interior"
       ],
       "context": {
         "mode": "task-only",
