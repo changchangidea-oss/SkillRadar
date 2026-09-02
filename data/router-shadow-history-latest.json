@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-01T07:55:59.265Z",
+  "generatedAt": "2026-09-02T07:13:14.607Z",
   "contentHashVersion": 2,
   "requiredSnapshots": 3,
-  "uniqueRegistrySnapshots": 20,
-  "legacyRegistrySnapshots": 1,
+  "uniqueRegistrySnapshots": 21,
+  "legacyRegistrySnapshots": 0,
   "evaluatedWindow": 3,
   "windowComplete": true,
   "safetyPass": true,
   "contractNonRegression": true,
   "coverageNonRegression": true,
   "consecutiveWins": false,
-  "aggregateEvidenceDelta": -4,
+  "aggregateEvidenceDelta": -2,
   "decision": "hold",
   "note": "Promotion eligibility is keyed only by routing Registry contentHashVersion + contentHash. Re-evaluating the same Registry under a different Eval, specificity policy, or ranking profile replaces that Registry snapshot and never adds evidence. Only the latest 3 distinct current-version Registry states can qualify, and all must be snapshot-win with safety, contract and coverage non-regression. Legacy hash versions remain auditable but never count toward the current promotion window. This gate never changes production automatically."
 }

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-01T07:55:43.031Z",
+  "generatedAt": "2026-09-02T07:12:58.417Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 51,
-  "passRate": 0.944,
+  "passed": 50,
+  "passRate": 0.926,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 41,
-    "passRate": 0.932
+    "passed": 40,
+    "passRate": 0.909
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 2,
-  "capabilityGapCases": 28,
-  "averageRecommendationCount": 2.02,
-  "averageRelevantTop3": 2.02,
-  "averageTop1Score": 77.8,
+  "specificityFailures": 3,
+  "capabilityGapCases": 30,
+  "averageRecommendationCount": 1.94,
+  "averageRelevantTop3": 1.94,
+  "averageTop1Score": 75.1,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 135,
-  "anchorSignalHitsTotal": 32,
+  "signalHitsTotal": 130,
+  "anchorSignalHitsTotal": 31,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -44,9 +44,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 6,
+      "capabilityGapCases": 7,
       "passRate": 1,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 1.63
     },
     "Design & Media": {
       "cases": 5,
@@ -90,13 +90,13 @@
     },
     "Backend & API": {
       "cases": 4,
-      "passed": 4,
+      "passed": 3,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 0,
-      "capabilityGapCases": 2,
-      "passRate": 1,
-      "averageRecommendationCount": 2
+      "specificityFailures": 1,
+      "capabilityGapCases": 3,
+      "passRate": 0.75,
+      "averageRecommendationCount": 1.5
     },
     "Security": {
       "cases": 4,
@@ -136,7 +136,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 2,
       "passRate": 0.75,
-      "averageRecommendationCount": 2
+      "averageRecommendationCount": 1.75
     }
   },
   "results": [
@@ -533,13 +533,13 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "alivirgo/Major-AI-Skills/godot",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering"
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 81,
+      "top1_score": 80,
       "expected_hits": 0,
       "signal_hits": 4,
       "anchor_signal_hits": 0,
@@ -550,22 +550,6 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "alivirgo/Major-AI-Skills/godot",
-          "score": 81,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "architecture",
-            "rendering",
-            "spatial"
-          ]
-        },
         {
           "id": "curiositech/some_claude_skills/interior-design-expert",
           "score": 80,
@@ -597,19 +581,35 @@
             "rendering",
             "interior"
           ]
+        },
+        {
+          "id": "calesthio/generative-media-skills/neural-reality-capture",
+          "score": 77,
+          "coverage": 0.75,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "architecture",
+            "interior",
+            "spatial"
+          ]
         }
       ],
       "signals": [
         "architecture",
-        "rendering",
-        "spatial",
-        "alivirgo-major-ai-skills-godot",
-        "godot",
         "interior",
+        "spatial",
         "curiositech-some-claude-skills-interior-design-expert",
         "interior-design-expert",
+        "rendering",
         "roble3-cc-blender-skill-blender-rendering",
-        "blender-rendering"
+        "blender-rendering",
+        "calesthio-generative-media-skills-neural-reality-capture",
+        "neural-reality-capture"
       ]
     },
     {
@@ -841,7 +841,7 @@
         },
         {
           "id": "redis/agent-skills/redis-semantic-cache-9c2b67",
-          "score": 31,
+          "score": 32,
           "coverage": 0.2,
           "expected": false,
           "relevant": true,
@@ -1196,11 +1196,10 @@
       "pass": true,
       "top3": [
         "nextjs",
-        "vercel/next.js/update-docs-65ee8c",
         "CopilotKit/CopilotKit/react-core-507281"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 93,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -1208,7 +1207,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1229,22 +1228,6 @@
             "fetching",
             "route",
             "architecture"
-          ]
-        },
-        {
-          "id": "vercel/next.js/update-docs-65ee8c",
-          "score": 71,
-          "coverage": 0.56,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "nextjs",
-            "app-router",
-            "route"
           ]
         },
         {
@@ -1271,8 +1254,6 @@
         "fetching",
         "route",
         "architecture",
-        "vercel-nextjs-update-docs-65ee8c",
-        "update-docs",
         "copilotkit-copilotkit-react-core-507281",
         "react-core"
       ]
@@ -1367,19 +1348,18 @@
       "pass": true,
       "top3": [
         "affaan-m/ECC/backend-patterns-ac648c",
-        "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8",
-        "alivirgo/Major-AI-Skills/godot"
+        "sickn33/agentic-awesome-skills/nodejs-backend-patterns-05e8c8"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 92,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1416,22 +1396,6 @@
             "api",
             "backend"
           ]
-        },
-        {
-          "id": "alivirgo/Major-AI-Skills/godot",
-          "score": 67,
-          "coverage": 0.62,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "node",
-            "server",
-            "architecture"
-          ]
         }
       ],
       "signals": [
@@ -1443,56 +1407,29 @@
         "affaan-m-ecc-backend-patterns-ac648c",
         "backend-patterns",
         "sickn33-agentic-awesome-skills-nodejs-backend-patterns-05e8c8",
-        "nodejs-backend-patterns",
-        "alivirgo-major-ai-skills-godot",
-        "godot"
+        "nodejs-backend-patterns"
       ]
     },
     {
       "id": "graphql-server",
       "domain": "Backend & API",
       "tier": "coverage",
-      "pass": true,
-      "top3": [
-        "alivirgo/Major-AI-Skills/linear"
-      ],
-      "recommendation_count": 1,
+      "pass": false,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 58,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 2,
-      "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "signal_hits": 0,
+      "anchor_signal_hits": 0,
+      "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
-      "specificity_pass": true,
-      "relevant_top3": 1,
+      "specificity_pass": false,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "alivirgo/Major-AI-Skills/linear",
-          "score": 58,
-          "coverage": 0.6,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "design",
-            "graphql",
-            "api"
-          ]
-        }
-      ],
-      "signals": [
-        "design",
-        "graphql",
-        "api",
-        "alivirgo-major-ai-skills-linear",
-        "linear"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "root-cause-api-debug",
@@ -1673,7 +1610,7 @@
         },
         {
           "id": "redis/agent-skills/redis-security-5fdcbb",
-          "score": 70,
+          "score": 71,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -1690,7 +1627,7 @@
         },
         {
           "id": "redis/agent-skills/redis-core-29e2a4",
-          "score": 60,
+          "score": 61,
           "coverage": 0.5,
           "expected": false,
           "relevant": true,
@@ -2425,7 +2362,7 @@
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 65,
+      "top1_score": 66,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -2438,7 +2375,7 @@
       "candidates": [
         {
           "id": "RevealUIStudio/revskills/security-hardening-f5fe4e",
-          "score": 65,
+          "score": 66,
           "coverage": 0.55,
           "expected": false,
           "relevant": true,
@@ -2469,7 +2406,7 @@
       "top3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
         "DenisSergeevitch/agents-best-practices/agents-best-practices-0e95f5",
-        "affaan-m/ECC/quarkus-security-9511c2"
+        "sickn33/agentic-awesome-skills/github-automation-a88f77"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2515,9 +2452,9 @@
           ]
         },
         {
-          "id": "affaan-m/ECC/quarkus-security-9511c2",
-          "score": 50,
-          "coverage": 0.39,
+          "id": "sickn33/agentic-awesome-skills/github-automation-a88f77",
+          "score": 40,
+          "coverage": 0.22,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -2525,8 +2462,7 @@
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "secrets",
-            "authentication"
+            "permissions"
           ]
         }
       ],
@@ -2539,8 +2475,8 @@
         "permissions",
         "denissergeevitch-agents-best-practices-agents-best-practices-0e95f5",
         "agents-best-practices",
-        "affaan-m-ecc-quarkus-security-9511c2",
-        "quarkus-security"
+        "sickn33-agentic-awesome-skills-github-automation-a88f77",
+        "github-automation"
       ]
     },
     {
@@ -2696,8 +2632,8 @@
       "tier": "coverage",
       "pass": false,
       "top3": [
-        "TriliumNext/Trilium/developing-capacitor-mobile-dab7e0",
         "callstackincubator/agent-skills/agent-device-f62531",
+        "TriliumNext/Trilium/developing-capacitor-mobile-dab7e0",
         "gmh5225/awesome-game-security/mobile-security-9abeca"
       ],
       "recommendation_count": 3,
@@ -2714,7 +2650,7 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "TriliumNext/Trilium/developing-capacitor-mobile-dab7e0",
+          "id": "callstackincubator/agent-skills/agent-device-f62531",
           "score": 68,
           "coverage": 0.67,
           "expected": false,
@@ -2729,7 +2665,7 @@
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/agent-device-f62531",
+          "id": "TriliumNext/Trilium/developing-capacitor-mobile-dab7e0",
           "score": 68,
           "coverage": 0.67,
           "expected": false,
@@ -2762,10 +2698,10 @@
       "signals": [
         "android",
         "mobile",
-        "triliumnext-trilium-developing-capacitor-mobile-dab7e0",
-        "developing-capacitor-mobile",
         "callstackincubator-agent-skills-agent-device-f62531",
         "agent-device",
+        "triliumnext-trilium-developing-capacitor-mobile-dab7e0",
+        "developing-capacitor-mobile",
         "gmh5225-awesome-game-security-mobile-security-9abeca",
         "mobile-security"
       ]
@@ -2777,8 +2713,8 @@
       "pass": true,
       "top3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
-        "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
-        "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd"
+        "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
+        "flutter/agent-plugins/flutter-add-integration-test-91cc8c"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2809,7 +2745,7 @@
           ]
         },
         {
-          "id": "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
+          "id": "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
           "score": 64,
           "coverage": 0.61,
           "expected": false,
@@ -2824,7 +2760,7 @@
           ]
         },
         {
-          "id": "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd",
+          "id": "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
           "score": 64,
           "coverage": 0.61,
           "expected": false,
@@ -2844,10 +2780,10 @@
         "mobile",
         "flutter-agent-plugins-flutter-build-responsive-layout-ea3d50",
         "flutter-build-responsive-layout",
+        "flutter-agent-plugins-flutter-add-widget-preview-8e7a10",
+        "flutter-add-widget-preview",
         "flutter-agent-plugins-flutter-add-integration-test-91cc8c",
-        "flutter-add-integration-test",
-        "flutter-agent-plugins-flutter-apply-architecture-best-practices-c5e4dd",
-        "flutter-apply-architecture-best-practices"
+        "flutter-add-integration-test"
       ]
     },
     {
@@ -3158,46 +3094,21 @@
       "domain": "Docs & Research",
       "tier": "coverage",
       "pass": false,
-      "top3": [
-        "62656456/ai-film-skills/web-design-director"
-      ],
-      "recommendation_count": 1,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 64,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 3,
+      "signal_hits": 0,
       "anchor_signal_hits": 0,
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "62656456/ai-film-skills/web-design-director",
-          "score": 64,
-          "coverage": 0.56,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "information-architecture",
-            "product",
-            "ux"
-          ]
-        }
-      ],
-      "signals": [
-        "information-architecture",
-        "product",
-        "ux",
-        "62656456-ai-film-skills-web-design-director",
-        "web-design-director"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "notion-research",
@@ -3340,7 +3251,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "joecastelino/jay-skill-pack/popular-web-designs"
+        "nexu-io/open-design/token-map"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3390,7 +3301,7 @@
           ]
         },
         {
-          "id": "joecastelino/jay-skill-pack/popular-web-designs",
+          "id": "nexu-io/open-design/token-map",
           "score": 61,
           "coverage": 0.46,
           "expected": false,
@@ -3414,8 +3325,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "joecastelino-jay-skill-pack-popular-web-designs",
-        "popular-web-designs"
+        "nexu-io-open-design-token-map",
+        "token-map"
       ]
     },
     {
@@ -3426,7 +3337,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "event4u-app/agent-config/dashboard-design"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3474,8 +3385,8 @@
           ]
         },
         {
-          "id": "event4u-app/agent-config/dashboard-design",
-          "score": 74,
+          "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+          "score": 76,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3485,7 +3396,7 @@
           "identity_anchor_hits": 0,
           "signals": [
             "ux",
-            "usability"
+            "research"
           ]
         }
       ],
@@ -3497,8 +3408,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "event4u-app-agent-config-dashboard-design",
-        "dashboard-design"
+        "nexu-io-open-design-html-ppt-zhangzara-pink-script",
+        "html-ppt-zhangzara-pink-script"
       ]
     },
     {
@@ -3543,7 +3454,7 @@
         },
         {
           "id": "vanducng/skills/marketing-design-678c70",
-          "score": 51,
+          "score": 52,
           "coverage": 0.29,
           "expected": false,
           "relevant": true,
@@ -3593,8 +3504,8 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "joecastelino/jay-skill-pack/ascii-video",
-        "62656456/ai-film-skills/produce-ai-video"
+        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3626,8 +3537,8 @@
           ]
         },
         {
-          "id": "joecastelino/jay-skill-pack/ascii-video",
-          "score": 81,
+          "id": "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+          "score": 80,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3642,7 +3553,7 @@
           ]
         },
         {
-          "id": "62656456/ai-film-skills/produce-ai-video",
+          "id": "remotion-dev/skills/remotion-multimedia",
           "score": 83,
           "coverage": 0.75,
           "expected": false,
@@ -3665,10 +3576,10 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "joecastelino-jay-skill-pack-ascii-video",
-        "ascii-video",
-        "62656456-ai-film-skills-produce-ai-video",
-        "produce-ai-video"
+        "heygen-com-hyperframes-hyperframes-creative-f1b96c",
+        "hyperframes-creative",
+        "remotion-dev-skills-remotion-multimedia",
+        "remotion-multimedia"
       ]
     },
     {
@@ -3677,13 +3588,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "alivirgo/Major-AI-Skills/rhino",
-        "event4u-app/agent-config/activation-design",
-        "alivirgo/Major-AI-Skills/blender"
+        "nexu-io/open-design/x-research",
+        "mitsuhiko/agent-stuff/openscad",
+        "nexu-io/open-design/rewrite-plan"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 96,
+      "top1_score": 76,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3695,71 +3606,65 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "alivirgo/Major-AI-Skills/rhino",
-          "score": 96,
-          "coverage": 1,
+          "id": "nexu-io/open-design/x-research",
+          "score": 76,
+          "coverage": 0.67,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 3,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "industrial-design",
+            "industrial",
+            "product"
+          ]
+        },
+        {
+          "id": "mitsuhiko/agent-stuff/openscad",
+          "score": 68,
+          "coverage": 0.56,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "cad",
-            "industrial-design",
             "industrial",
-            "product",
             "cad"
           ]
         },
         {
-          "id": "event4u-app/agent-config/activation-design",
-          "score": 94,
-          "coverage": 1,
+          "id": "nexu-io/open-design/rewrite-plan",
+          "score": 72,
+          "coverage": 0.67,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 3,
+          "required_hits": 2,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "cad",
             "industrial-design",
             "industrial",
-            "product",
-            "cad"
-          ]
-        },
-        {
-          "id": "alivirgo/Major-AI-Skills/blender",
-          "score": 95,
-          "coverage": 1,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "cad",
-            "industrial-design",
-            "industrial",
-            "product",
-            "cad"
+            "product"
           ]
         }
       ],
       "signals": [
-        "cad",
         "industrial-design",
         "industrial",
         "product",
-        "alivirgo-major-ai-skills-rhino",
-        "rhino",
-        "event4u-app-agent-config-activation-design",
-        "activation-design",
-        "alivirgo-major-ai-skills-blender",
-        "blender"
+        "nexu-io-open-design-x-research",
+        "x-research",
+        "cad",
+        "mitsuhiko-agent-stuff-openscad",
+        "openscad",
+        "nexu-io-open-design-rewrite-plan",
+        "rewrite-plan"
       ]
     }
   ]
