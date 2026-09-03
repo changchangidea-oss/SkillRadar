@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-02T07:13:14.607Z",
+  "generatedAt": "2026-09-03T07:17:02.549Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "5c419ae0ff7b5525c6ed2b17390fa3c681f4c436d19d2b41ebadacbfea7a37ed",
+    "contentHash": "f67a1c02f2214ac34419d9db61605b26d653bc0ae03fe2c1a17fd98ee870d132",
     "contentHashVersion": 2,
-    "generatedAt": "2026-09-02T07:12:47.719Z",
-    "totalCount": 439,
+    "generatedAt": "2026-09-03T07:16:30.190Z",
+    "totalCount": 432,
     "mode": "local-bundled"
   },
   "production": {
@@ -20,12 +20,12 @@
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 3,
-    "capabilityGapCases": 30,
-    "averageRecommendationCount": 1.94,
+    "capabilityGapCases": 31,
+    "averageRecommendationCount": 1.91,
     "expectedHitsTotal": 31,
     "signalHitsTotal": 130,
     "anchorSignalHitsTotal": 31,
-    "averageTop1Score": 75.1
+    "averageTop1Score": 75.4
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
@@ -36,20 +36,20 @@
     "coveragePassed": 40,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 0,
+    "lowEvidenceTop3": 3,
     "specificityFailures": 3,
-    "capabilityGapCases": 30,
-    "averageRecommendationCount": 1.94,
+    "capabilityGapCases": 29,
+    "averageRecommendationCount": 1.98,
     "expectedHitsTotal": 31,
     "signalHitsTotal": 130,
     "anchorSignalHitsTotal": 31,
-    "averageTop1Score": 75.1
+    "averageTop1Score": 75.4
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": 0
+    "evidenceDelta": -3
   },
   "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
@@ -125,14 +125,16 @@
         "shadcn"
       ],
       "candidateTop3": [
-        "shadcn"
+        "shadcn",
+        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+        "nexu-io/open-design/github-dashboard-a45aef"
       ],
       "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
-      "lowEvidenceDelta": 0
+      "lowEvidenceDelta": 2
     },
     {
       "id": "react-performance",
@@ -305,21 +307,19 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "ai-sdk",
-        "bytedance/deer-flow/data-analysis-d7f631",
-        "bytedance/deer-flow/image-generation-d5cfcb"
+        "ai-sdk"
       ],
       "candidateTop3": [
         "ai-sdk",
-        "bytedance/deer-flow/data-analysis-d7f631",
-        "bytedance/deer-flow/image-generation-d5cfcb"
+        "nexu-io/open-design/clinical-case-report-638ff1",
+        "bytedance/deer-flow/bootstrap-6bb753"
       ],
-      "productionRecommendationCount": 3,
+      "productionRecommendationCount": 1,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
-      "lowEvidenceDelta": 0
+      "lowEvidenceDelta": 1
     },
     {
       "id": "llm-agent-workflow",
@@ -835,12 +835,12 @@
       "productionTop3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
         "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
-        "sickn33/agentic-awesome-skills/mobile-developer-5a23e8"
+        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43"
       ],
       "candidateTop3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
         "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
-        "sickn33/agentic-awesome-skills/mobile-developer-5a23e8"
+        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1070,12 +1070,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "nexu-io/open-design/token-map"
+        "richmosko/project_template/generate-designdoc"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "richmosko/project_template/generate-designdoc"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1093,12 +1093,12 @@
       "productionTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
+        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max"
       ],
       "candidateTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
+        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1138,12 +1138,12 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "moseschisunka/VIDEO-MAKER/lottie-bodymovin",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "candidateTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "moseschisunka/VIDEO-MAKER/lottie-bodymovin",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "productionRecommendationCount": 3,
@@ -1160,14 +1160,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nexu-io/open-design/x-research",
-        "mitsuhiko/agent-stuff/openscad",
-        "nexu-io/open-design/rewrite-plan"
+        "growerp/growerp/convert-website",
+        "katopz/katgpt-rs/boundary-guard",
+        "moseschisunka/VIDEO-MAKER/hyperframes"
       ],
       "candidateTop3": [
-        "nexu-io/open-design/x-research",
-        "mitsuhiko/agent-stuff/openscad",
-        "nexu-io/open-design/rewrite-plan"
+        "growerp/growerp/convert-website",
+        "katopz/katgpt-rs/boundary-guard",
+        "moseschisunka/VIDEO-MAKER/hyperframes"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T07:12:58.417Z",
+  "generatedAt": "2026-09-03T07:16:43.091Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
@@ -20,10 +20,10 @@
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
   "specificityFailures": 3,
-  "capabilityGapCases": 30,
-  "averageRecommendationCount": 1.94,
-  "averageRelevantTop3": 1.94,
-  "averageTop1Score": 75.1,
+  "capabilityGapCases": 31,
+  "averageRecommendationCount": 1.91,
+  "averageRelevantTop3": 1.91,
+  "averageTop1Score": 75.4,
   "expectedHitsTotal": 31,
   "signalHitsTotal": 130,
   "anchorSignalHitsTotal": 31,
@@ -34,9 +34,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 1,
-      "capabilityGapCases": 4,
+      "capabilityGapCases": 5,
       "passRate": 0.833,
-      "averageRecommendationCount": 1.67
+      "averageRecommendationCount": 1.33
     },
     "Frontend": {
       "cases": 8,
@@ -889,12 +889,10 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "ai-sdk",
-        "bytedance/deer-flow/data-analysis-d7f631",
-        "bytedance/deer-flow/image-generation-d5cfcb"
+        "ai-sdk"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 1,
+      "capability_gap": true,
       "top1_score": 74,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -902,7 +900,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -922,38 +920,6 @@
             "outputs",
             "streaming"
           ]
-        },
-        {
-          "id": "bytedance/deer-flow/data-analysis-d7f631",
-          "score": 55,
-          "coverage": 0.44,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "generate",
-            "structured",
-            "ai"
-          ]
-        },
-        {
-          "id": "bytedance/deer-flow/image-generation-d5cfcb",
-          "score": 53,
-          "coverage": 0.44,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "generate",
-            "structured",
-            "ai"
-          ]
         }
       ],
       "signals": [
@@ -961,12 +927,7 @@
         "ai",
         "outputs",
         "streaming",
-        "ai-sdk",
-        "generate",
-        "bytedance-deer-flow-data-analysis-d7f631",
-        "data-analysis",
-        "bytedance-deer-flow-image-generation-d5cfcb",
-        "image-generation"
+        "ai-sdk"
       ]
     },
     {
@@ -1852,7 +1813,7 @@
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 92,
+      "top1_score": 91,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -1865,7 +1826,7 @@
       "candidates": [
         {
           "id": "antfu/skills/vitest-8d8886",
-          "score": 92,
+          "score": 91,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -2487,7 +2448,7 @@
       "top3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
         "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
-        "sickn33/agentic-awesome-skills/mobile-developer-5a23e8"
+        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2535,17 +2496,18 @@
           ]
         },
         {
-          "id": "sickn33/agentic-awesome-skills/mobile-developer-5a23e8",
-          "score": 86,
-          "coverage": 0.78,
+          "id": "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
+          "score": 91,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
+          "required_hits": 3,
+          "anchor_hits": 2,
           "identity_anchor_hits": 0,
           "signals": [
             "react-native",
+            "expo",
             "mobile"
           ]
         }
@@ -2558,8 +2520,8 @@
         "react-native-brownfield-migration",
         "sickn33-agentic-awesome-skills-add-app-clip-43a9ab",
         "add-app-clip",
-        "sickn33-agentic-awesome-skills-mobile-developer-5a23e8",
-        "mobile-developer"
+        "callstackincubator-agent-skills-react-native-tv-best-practices-a5fe43",
+        "react-native-tv-best-practices"
       ]
     },
     {
@@ -3251,7 +3213,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "nexu-io/open-design/token-map"
+        "richmosko/project_template/generate-designdoc"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3301,8 +3263,8 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/token-map",
-          "score": 61,
+          "id": "richmosko/project_template/generate-designdoc",
+          "score": 62,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3325,8 +3287,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "nexu-io-open-design-token-map",
-        "token-map"
+        "richmosko-project-template-generate-designdoc",
+        "generate-designdoc"
       ]
     },
     {
@@ -3337,7 +3299,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
+        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3385,8 +3347,8 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
-          "score": 76,
+          "id": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
+          "score": 75,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3396,7 +3358,7 @@
           "identity_anchor_hits": 0,
           "signals": [
             "ux",
-            "research"
+            "usability"
           ]
         }
       ],
@@ -3408,8 +3370,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "nexu-io-open-design-html-ppt-zhangzara-pink-script",
-        "html-ppt-zhangzara-pink-script"
+        "awesome-dsh-plugin-awesome-dsh-plugin-ui-ux-pro-max",
+        "ui-ux-pro-max"
       ]
     },
     {
@@ -3504,7 +3466,7 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "moseschisunka/VIDEO-MAKER/lottie-bodymovin",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
@@ -3537,8 +3499,8 @@
           ]
         },
         {
-          "id": "heygen-com/hyperframes/hyperframes-creative-f1b96c",
-          "score": 80,
+          "id": "moseschisunka/VIDEO-MAKER/lottie-bodymovin",
+          "score": 81,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3576,8 +3538,8 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "heygen-com-hyperframes-hyperframes-creative-f1b96c",
-        "hyperframes-creative",
+        "moseschisunka-video-maker-lottie-bodymovin",
+        "lottie-bodymovin",
         "remotion-dev-skills-remotion-multimedia",
         "remotion-multimedia"
       ]
@@ -3588,13 +3550,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nexu-io/open-design/x-research",
-        "mitsuhiko/agent-stuff/openscad",
-        "nexu-io/open-design/rewrite-plan"
+        "growerp/growerp/convert-website",
+        "katopz/katgpt-rs/boundary-guard",
+        "moseschisunka/VIDEO-MAKER/hyperframes"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 76,
+      "top1_score": 90,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3606,39 +3568,43 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "nexu-io/open-design/x-research",
-          "score": 76,
-          "coverage": 0.67,
+          "id": "growerp/growerp/convert-website",
+          "score": 90,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "industrial-design",
-            "industrial",
-            "product"
-          ]
-        },
-        {
-          "id": "mitsuhiko/agent-stuff/openscad",
-          "score": 68,
-          "coverage": 0.56,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "cad",
+            "industrial-design",
             "industrial",
+            "product",
             "cad"
           ]
         },
         {
-          "id": "nexu-io/open-design/rewrite-plan",
+          "id": "katopz/katgpt-rs/boundary-guard",
+          "score": 90,
+          "coverage": 1,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "cad",
+            "industrial-design",
+            "industrial",
+            "product",
+            "cad"
+          ]
+        },
+        {
+          "id": "moseschisunka/VIDEO-MAKER/hyperframes",
           "score": 72,
           "coverage": 0.67,
           "expected": false,
@@ -3655,16 +3621,16 @@
         }
       ],
       "signals": [
+        "cad",
         "industrial-design",
         "industrial",
         "product",
-        "nexu-io-open-design-x-research",
-        "x-research",
-        "cad",
-        "mitsuhiko-agent-stuff-openscad",
-        "openscad",
-        "nexu-io-open-design-rewrite-plan",
-        "rewrite-plan"
+        "growerp-growerp-convert-website",
+        "convert-website",
+        "katopz-katgpt-rs-boundary-guard",
+        "boundary-guard",
+        "moseschisunka-video-maker-hyperframes",
+        "hyperframes"
       ]
     }
   ]
