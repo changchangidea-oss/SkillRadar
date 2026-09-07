@@ -1,64 +1,9 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-06T07:13:19.677Z",
+  "updatedAt": "2026-09-07T07:26:06.603Z",
   "requiredSnapshots": 3,
   "currentContentHashVersion": 2,
   "snapshots": [
-    {
-      "generatedAt": "2026-08-26T07:11:31.473Z",
-      "registrySnapshot": {
-        "contentHash": "728dad3bc21febf04e47f5822b13990f48d72bd22e1ecdbc83568ccc6f39ad3a",
-        "contentHashVersion": 2,
-        "generatedAt": "2026-08-26T07:10:57.799Z",
-        "totalCount": 482,
-        "mode": "local-bundled"
-      },
-      "evalVersion": 2,
-      "specificityPolicyVersion": 3,
-      "production": {
-        "profile": "ranking-v2.1",
-        "cases": 54,
-        "passed": 53,
-        "contractPassed": 10,
-        "contractCases": 10,
-        "coveragePassed": 43,
-        "coverageCases": 44,
-        "unsafeTop3": 0,
-        "lowEvidenceTop3": 1,
-        "specificityFailures": 1,
-        "capabilityGapCases": 33,
-        "averageRecommendationCount": 2,
-        "expectedHitsTotal": 32,
-        "signalHitsTotal": 135,
-        "anchorSignalHitsTotal": 30,
-        "averageTop1Score": 79.5
-      },
-      "candidate": {
-        "profile": "facet-heavy-rerank-v0.6-shadow",
-        "cases": 54,
-        "passed": 53,
-        "contractPassed": 10,
-        "contractCases": 10,
-        "coveragePassed": 43,
-        "coverageCases": 44,
-        "unsafeTop3": 0,
-        "lowEvidenceTop3": 1,
-        "specificityFailures": 1,
-        "capabilityGapCases": 33,
-        "averageRecommendationCount": 2,
-        "expectedHitsTotal": 32,
-        "signalHitsTotal": 135,
-        "anchorSignalHitsTotal": 30,
-        "averageTop1Score": 79.5
-      },
-      "gates": {
-        "safetyPass": true,
-        "contractNonRegression": true,
-        "coverageNonRegression": true,
-        "evidenceDelta": 0
-      },
-      "decision": "hold"
-    },
     {
       "generatedAt": "2026-08-26T08:00:53.652Z",
       "registrySnapshot": {
@@ -1101,6 +1046,61 @@
         "contractNonRegression": true,
         "coverageNonRegression": true,
         "evidenceDelta": -2
+      },
+      "decision": "hold"
+    },
+    {
+      "generatedAt": "2026-09-07T07:26:06.603Z",
+      "registrySnapshot": {
+        "contentHash": "8e8d95ff897c165c926d20606e0c0bcb4fa471a7045b6dee2796cb64b7950deb",
+        "contentHashVersion": 2,
+        "generatedAt": "2026-09-07T07:25:32.079Z",
+        "totalCount": 438,
+        "mode": "local-bundled"
+      },
+      "evalVersion": 2,
+      "specificityPolicyVersion": 5,
+      "production": {
+        "profile": "ranking-v2.1",
+        "cases": 54,
+        "passed": 51,
+        "contractPassed": 10,
+        "contractCases": 10,
+        "coveragePassed": 41,
+        "coverageCases": 44,
+        "unsafeTop3": 0,
+        "lowEvidenceTop3": 0,
+        "specificityFailures": 2,
+        "capabilityGapCases": 31,
+        "averageRecommendationCount": 1.94,
+        "expectedHitsTotal": 31,
+        "signalHitsTotal": 131,
+        "anchorSignalHitsTotal": 32,
+        "averageTop1Score": 76.1
+      },
+      "candidate": {
+        "profile": "facet-heavy-rerank-v0.6-shadow",
+        "cases": 54,
+        "passed": 51,
+        "contractPassed": 10,
+        "contractCases": 10,
+        "coveragePassed": 41,
+        "coverageCases": 44,
+        "unsafeTop3": 0,
+        "lowEvidenceTop3": 3,
+        "specificityFailures": 2,
+        "capabilityGapCases": 30,
+        "averageRecommendationCount": 2,
+        "expectedHitsTotal": 31,
+        "signalHitsTotal": 131,
+        "anchorSignalHitsTotal": 32,
+        "averageTop1Score": 76.1
+      },
+      "gates": {
+        "safetyPass": true,
+        "contractNonRegression": true,
+        "coverageNonRegression": true,
+        "evidenceDelta": -3
       },
       "decision": "hold"
     }

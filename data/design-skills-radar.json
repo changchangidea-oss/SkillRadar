@@ -1,391 +1,400 @@
 [
   {
-    "id": "V4TIME/V4SKILL/design-tokens-spec",
-    "name": "design-tokens-spec",
-    "source": "V4TIME/V4SKILL",
-    "summary": "Author/validate/export Google's DESIGN.md token spec files.",
-    "security": "C",
-    "signalScore": 73,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui",
-      "design-system",
-      "layout",
-      "typography",
-      "interaction",
-      "accessibility",
-      "ux",
-      "prototype",
-      "visual",
-      "brand",
-      "color"
-    ],
-    "installUrl": "https://github.com/V4TIME/V4SKILL",
-    "skillsUrl": "https://github.com/V4TIME/V4SKILL/blob/main/creative/design-tokens-spec/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "experience-design",
-      "visual-communication",
-      "video-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:10.714Z",
-    "lastSeenAt": "2026-09-06T07:10:10.714Z"
-  },
-  {
-    "id": "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad",
-    "name": "cad-geometry-kernels-formats-and-code-cad",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when modelling, converting, or scripting geometry: the representations (B-rep, meshes, implicit and voxel) and when each is right, the geometry kernels and their behaviour, file formats and precisely what each one loses in translation, and code-CAD and scripting — the landscape, the OpenSCAD versus OCCT-based trade",
+    "id": "Mr-Salticidae/knowledge-base/remotion-skill",
+    "name": "remotion-explainer-workflow",
+    "source": "Mr-Salticidae/knowledge-base",
+    "summary": "Data-driven Remotion explainer video workflow for in-a-nutshell-inspired flat-vector science/knowledge videos. Use when Codex needs to turn notes, outlines, scripts, or sceneSpecs into a reusable Remotion video production plan, design sceneSpecs/sceneAssets, coordinate other AIGC skills through a dry-run protocol, or p",
     "security": "A",
-    "signalScore": 72,
+    "signalScore": 75,
     "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "arts",
-      "vector",
-      "3d-printing",
-      "parametric",
-      "pattern",
-      "3d",
-      "design",
-      "cad",
-      "rendering",
-      "landscape"
-    ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/cad-3d-printing/skills/cad-geometry-kernels-formats-and-code-cad/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "arts-crafts",
-      "industrial-design",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:12.526Z",
-    "lastSeenAt": "2026-09-06T07:10:12.526Z"
-  },
-  {
-    "id": "nagisanzenin/MathTuber/mathtuber",
-    "name": "mathtuber",
-    "source": "nagisanzenin/MathTuber",
-    "summary": "Create, revise, review, resume, and optionally publish narrated mathematical animation videos with local Manim and speech tools. Use for math explainers, visual proofs, educational Shorts, and existing MathTuber projects.",
-    "security": "B",
-    "signalScore": 71,
-    "installs": 0,
-    "repoStars": 0,
+    "repoStars": 24,
     "tags": [
       "video",
+      "design",
       "motion",
       "editing",
       "film",
-      "storyboard",
       "audio",
-      "operations",
-      "product",
       "visual",
-      "experience",
-      "research",
-      "prototype"
+      "layout",
+      "editorial",
+      "vector",
+      "illustration",
+      "color"
     ],
-    "installUrl": "https://github.com/nagisanzenin/MathTuber",
-    "skillsUrl": "https://github.com/nagisanzenin/MathTuber/blob/main/plugins/mathtuber/skills/mathtuber/SKILL.md",
+    "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+    "skillsUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/remotion-skill/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "video-design",
-      "operations-design",
-      "experience-design",
-      "digital-media-film"
+      "visual-communication",
+      "fashion-design",
+      "operations-design"
     ],
-    "qualityScore": 80,
+    "qualityScore": 82,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:16.637Z",
-    "lastSeenAt": "2026-09-06T07:10:16.637Z"
+    "firstSeenAt": "2026-09-07T07:22:26.160Z",
+    "lastSeenAt": "2026-09-07T07:22:26.160Z"
   },
   {
-    "id": "adammatthewsteinberger/vibey-skills/cad-slicing-pipeline-and-processes",
-    "name": "cad-slicing-pipeline-and-processes",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when turning a model into a physical part: the slicing pipeline including the slicing step itself, the 2D operations that follow, the decisions that actually matter, and G-code; and the processes — FDM physics and what really determines part quality, plus SLA and powder-bed specifics.",
+    "id": "ch4570/lutriva/ux-flow-refine",
+    "name": "ux-flow-refine",
+    "source": "ch4570/lutriva",
+    "summary": "Improve product interaction behavior, immediate feedback, state transitions, error recovery, and purposeful motion. Use when saves feel unreliable, flows are confusing, input or animation races occur, loading obscures progress, or keyboard and touch access fail; preserve the existing data and navigation architecture.",
     "security": "A",
-    "signalScore": 70,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "arts",
-      "3d-printing",
-      "parametric",
-      "pattern",
-      "3d",
-      "design",
-      "cad",
-      "operations",
-      "photo",
-      "motion"
-    ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/cad-3d-printing/skills/cad-slicing-pipeline-and-processes/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "arts-crafts",
-      "industrial-design",
-      "operations-design",
-      "environmental-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:12.864Z",
-    "lastSeenAt": "2026-09-06T07:10:12.864Z"
-  },
-  {
-    "id": "lukaskourilcz/quorum/titty-tuesdays-brandbook",
-    "name": "titty-tuesdays-brandbook",
-    "source": "lukaskourilcz/quorum",
-    "summary": "Create or review Titty Tuesdays brand, campaign, product-concept, social, visual, and marketing-plan artifacts. Use whenever work names the Titty Tuesdays venture, its crop tops, seasons, campaign copy, Instagram or Threads drafts, FRAME assets, audience plans, guerrilla concepts, or platform-risk review.",
-    "security": "A",
-    "signalScore": 70,
+    "signalScore": 75,
     "installs": 0,
     "repoStars": 0,
     "tags": [
-      "brand",
-      "campaign",
+      "design",
+      "ux",
       "product",
+      "interaction",
+      "prototype",
+      "accessibility",
+      "operations",
       "visual",
-      "fashion",
-      "color",
-      "typography"
+      "motion",
+      "ui"
     ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/titty-tuesdays-brandbook/SKILL.md",
+    "installUrl": "https://github.com/ch4570/lutriva",
+    "skillsUrl": "https://github.com/ch4570/lutriva/blob/main/skills/ux-flow-refine/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "experience-design",
       "operations-design",
-      "fashion-design",
-      "visual-communication",
-      "arts-crafts"
+      "ui-design",
+      "digital-media-film"
     ],
-    "qualityScore": 88,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:15.574Z",
-    "lastSeenAt": "2026-09-06T07:10:15.574Z"
+    "firstSeenAt": "2026-09-07T07:22:49.714Z",
+    "lastSeenAt": "2026-09-07T07:22:49.714Z"
   },
   {
-    "id": "lemma-work/lemma-platform/lemma-app-design",
-    "name": "lemma-app-design",
-    "source": "lemma-work/lemma-platform",
-    "summary": "Design, redesign, and visually refine Lemma pod apps into distinctive, production-quality interfaces grounded in the pod's real users, domain, data, files, agents, workflows, and assets. Use when defining information architecture or DESIGN.md, choosing interaction and visual direction, improving interface copy, specify",
-    "security": "C",
-    "signalScore": 69,
+    "id": "MosaicXR-AI/mosaic-bridge/mosaic-scene",
+    "name": "mosaic-scene",
+    "source": "MosaicXR-AI/mosaic-bridge",
+    "summary": "Max — Mosaic Bridge scene builder. Use for complete scene construction workflows — objects, materials, lighting, particles, physics, audio, and UI. Use when the user says \"build a scene\", \"create a level\", \"add rain\", \"set up physics\", or describes building any environment.",
+    "security": "A",
+    "signalScore": 73,
     "installs": 0,
-    "repoStars": 387,
+    "repoStars": 10,
     "tags": [
+      "spatial",
+      "3d",
+      "rendering",
+      "environment",
+      "lighting",
+      "communication",
+      "color"
+    ],
+    "installUrl": "https://github.com/MosaicXR-AI/mosaic-bridge",
+    "skillsUrl": "https://github.com/MosaicXR-AI/mosaic-bridge/blob/main/packages/create-bridge/plugin/skills/mosaic-scene/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "visual-communication",
+      "industrial-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:32.428Z",
+    "lastSeenAt": "2026-09-07T07:22:32.428Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/growth",
+    "name": "Growth",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Load when working on user acquisition, retention strategy, D30 retention benchmarks, push notification design (carrot/stick), TikTok/social media distribution, multi-account content farming, VSC content evaluation (viral/scalable/convertible), AI content playbooks, pre-launch preparation (waitlist, ASO, email drip sequ",
+    "security": "A",
+    "signalScore": 71,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "operations",
       "design",
-      "brand",
       "product",
       "visual",
       "motion",
-      "experience",
-      "ux",
-      "interaction",
-      "accessibility",
-      "ui",
-      "layout"
+      "mobile",
+      "architecture",
+      "map"
     ],
-    "installUrl": "https://github.com/lemma-work/lemma-platform",
-    "skillsUrl": "https://github.com/lemma-work/lemma-platform/blob/main/lemma-skills/lemma-app-design/SKILL.md",
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/growth/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "operations-design",
       "experience-design",
-      "ui-design",
-      "visual-communication"
+      "architecture-design",
+      "environmental-design"
     ],
-    "qualityScore": 88,
+    "qualityScore": 71,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:08.819Z",
-    "lastSeenAt": "2026-09-06T07:10:08.819Z"
+    "firstSeenAt": "2026-09-07T07:22:30.752Z",
+    "lastSeenAt": "2026-09-07T07:22:30.752Z"
   },
   {
-    "id": "V4TIME/V4SKILL/human-first-ui",
-    "name": "human-first-ui",
-    "source": "V4TIME/V4SKILL",
-    "summary": "Make web UIs look human-built, not like AI output.",
-    "security": "C",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui",
-      "design-system",
-      "layout",
-      "typography",
-      "figma",
-      "visual",
-      "color",
-      "product",
-      "motion"
-    ],
-    "installUrl": "https://github.com/V4TIME/V4SKILL",
-    "skillsUrl": "https://github.com/V4TIME/V4SKILL/blob/main/human-first-ui/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "visual-communication",
-      "operations-design",
-      "experience-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:11.054Z",
-    "lastSeenAt": "2026-09-06T07:10:11.054Z"
-  },
-  {
-    "id": "V4TIME/V4SKILL/popular-web-designs",
-    "name": "popular-web-designs",
-    "source": "V4TIME/V4SKILL",
-    "summary": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
-    "security": "C",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui",
-      "design-system",
-      "layout",
-      "typography",
-      "figma",
-      "visual",
-      "brand",
-      "editorial",
-      "illustration",
-      "color",
-      "audio"
-    ],
-    "installUrl": "https://github.com/V4TIME/V4SKILL",
-    "skillsUrl": "https://github.com/V4TIME/V4SKILL/blob/main/creative/popular-web-designs/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "visual-communication",
-      "video-design",
-      "fashion-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:10.865Z",
-    "lastSeenAt": "2026-09-06T07:10:10.865Z"
-  },
-  {
-    "id": "V4TIME/V4SKILL/manim-video",
-    "name": "manim-video",
-    "source": "V4TIME/V4SKILL",
-    "summary": "Manim CE animations: 3Blue1Brown math/algo videos.",
+    "id": "NoaCG/NoaCG-Studio/noacg-graphic",
+    "name": "noacg-graphic",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Make a broadcast graphic for NoaCG Studio (lower third, scoreboard, bug, ticker, countdown, full-screen, any on-air graphic) and put it in the user's NoaCG library. Use when the user says \"for NoaCG\", names NoaCG, SPX, CasparCG or OGraf playout, or wants a graphic operated live (editable fields, Take/Update/Out). Teach",
     "security": "B",
-    "signalScore": 68,
+    "signalScore": 71,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 5,
     "tags": [
       "video",
       "design",
+      "motion",
+      "editing",
       "typography",
-      "audio",
-      "architecture",
-      "spatial",
-      "3d",
-      "rendering",
-      "diagram",
-      "product",
-      "cad",
-      "parametric"
+      "ui",
+      "layout",
+      "product"
     ],
-    "installUrl": "https://github.com/V4TIME/V4SKILL",
-    "skillsUrl": "https://github.com/V4TIME/V4SKILL/blob/main/creative/manim-video/SKILL.md",
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/cli/plugin/skills/noacg-graphic/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "video-design",
-      "architecture-design",
-      "industrial-design",
-      "arts-crafts"
+      "ui-design",
+      "operations-design",
+      "experience-design"
     ],
-    "qualityScore": 92,
+    "qualityScore": 88,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:11.494Z",
-    "lastSeenAt": "2026-09-06T07:10:11.494Z"
+    "firstSeenAt": "2026-09-07T07:22:35.789Z",
+    "lastSeenAt": "2026-09-07T07:22:35.789Z"
   },
   {
-    "id": "adammatthewsteinberger/vibey-skills/cad-reference",
-    "name": "cad-reference",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when checking a CAD or printing anti-pattern, looking up a tolerance, temperature or dimensional value, asking what actually moved (OpenSCAD's Manifold backend, the slicer landscape, code-CAD and the LLM angle, verified August 2026), finding the books and tools, or needing a picker and a pre-print checklist. Compan",
+    "id": "shifatmasud/Shade-DS/postprocessing-render-pipeline",
+    "name": "postprocessing-render-pipeline",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Architecture, setup, and optimization rules for EffectComposer, offscreen WebGL render targets, multi-pass rendering pipelines, and screen-wide post-processing effects (such as fluid simulations layered on 3D scenes).",
+    "security": "A",
+    "signalScore": 71,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "architecture",
+      "design",
+      "3d",
+      "rendering",
+      "map",
+      "ui",
+      "interaction"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/postprocessing-render-pipeline/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "environmental-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:39.171Z",
+    "lastSeenAt": "2026-09-07T07:22:39.171Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/r3f-3d-optimization",
+    "name": "r3f-3d-optimization",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Guidelines and production-ready patterns for maximizing performance and avoiding UI freezes in React Three Fiber (R3F) and Three.js scenes.",
+    "security": "A",
+    "signalScore": 71,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "3d",
+      "rendering",
+      "map",
+      "environment",
+      "product"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/r3f-3d-optimization/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:39.476Z",
+    "lastSeenAt": "2026-09-07T07:22:39.476Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/parasitic-splittext-mask-slide",
+    "name": "parasitic-splittext-mask-slide",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Architecture and implementation pattern for parasitic SplitText double-masking text animations (TextMaskSlide). Combines GSAP SplitText two-tier DOM splitting with Framer Motion spring orchestration, zero-duration cache synchronization, and scroll scrubbing for CMS/RichText without breaking DOM hierarchy.",
+    "security": "A",
+    "signalScore": 70,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "typography",
+      "interaction",
+      "architecture",
+      "3d",
+      "motion"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/framer-motion-gsap-bridge/parasitic-splittext-mask-slide/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "video-design",
+      "environmental-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:38.130Z",
+    "lastSeenAt": "2026-09-07T07:22:38.130Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/3d-light-design",
+    "name": "3d Light Design",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Core Rule Never place lights randomly. Every light must serve a clear purpose and improve visibility, shape, depth, focus, mood, realism, or composition. If it improves none, remove it.",
+    "security": "A",
+    "signalScore": 69,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "3d",
+      "map",
+      "environment",
+      "lighting",
+      "interior",
+      "ui"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/3d-light-design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "ui-design",
+      "operations-design"
+    ],
+    "qualityScore": 49,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:36.115Z",
+    "lastSeenAt": "2026-09-07T07:22:36.115Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/business-idea-discovery",
+    "name": "Business Idea Discovery",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Load when discovering business ideas, validating market demand, mining pain points from Reddit/forums, researching competitors on Flippa/Acquire/Sensor Tower, checking Google Trends, evaluating marketability, or scoping an MVP. Covers the full pre-build discovery pipeline: market selection → trend validation → competit",
     "security": "A",
     "signalScore": 68,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 12,
     "tags": [
-      "arts",
-      "3d-printing",
-      "parametric",
-      "pattern",
-      "3d",
       "design",
-      "cad",
-      "landscape"
+      "brand",
+      "product",
+      "motion",
+      "experience",
+      "research",
+      "mobile"
     ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/cad-3d-printing/skills/cad-reference/SKILL.md",
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/business-idea-discovery/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "arts-crafts",
-      "industrial-design",
+      "operations-design",
+      "experience-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:28.703Z",
+    "lastSeenAt": "2026-09-07T07:22:28.703Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/shader_dsl",
+    "name": "shader-dsl",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Bidirectional translator between Shader Thinking and GPGPU/GLSL/WGSL execution systems. Optimized for parallel state updates, general simulation pipelines, and stage-isolated computation using a strict Node-Based Shader Graph Model.",
+    "security": "A",
+    "signalScore": 68,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "architecture",
+      "design",
+      "spatial",
+      "map",
+      "ui"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/shader_dsl/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
       "environmental-design",
       "operations-design"
     ],
-    "qualityScore": 75,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:12.681Z",
-    "lastSeenAt": "2026-09-06T07:10:12.681Z"
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:39.826Z",
+    "lastSeenAt": "2026-09-07T07:22:39.826Z"
   },
   {
-    "id": "adammatthewsteinberger/vibey-skills/cad-design-tolerances-and-materials",
-    "name": "cad-design-tolerances-and-materials",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when designing a part that has to work rather than just print: design for additive manufacturing including overhangs, supports, orientation and anisotropy, tolerances and fits and how to achieve them on a printer that does not hold them natively, and materials and their mechanical, thermal and environmental behavio",
-    "security": "A",
-    "signalScore": 67,
+    "id": "ch4570/lutriva/ai-slop-remover",
+    "name": "ai-slop-remover",
+    "source": "ch4570/lutriva",
+    "summary": "Remove generic AI-generated UI and make product experiences clear, calm, and easy to use. Use when asked to remove AI slop, make UI/UX smoother or more user-friendly, or improve a screen across visual design, interaction, and copy. Coordinate only the relevant specialist skills; exclude backend cleanup, prose detection",
+    "security": "C",
+    "signalScore": 68,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 0,
     "tags": [
-      "arts",
-      "3d-printing",
-      "parametric",
-      "3d",
-      "environmental",
+      "experience",
       "design",
-      "environment",
-      "landscape",
-      "cad"
+      "ux",
+      "product",
+      "interaction",
+      "prototype",
+      "visual",
+      "brand",
+      "typography",
+      "layout",
+      "illustration",
+      "ui"
     ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/cad-3d-printing/skills/cad-design-tolerances-and-materials/SKILL.md",
+    "installUrl": "https://github.com/ch4570/lutriva",
+    "skillsUrl": "https://github.com/ch4570/lutriva/blob/main/skills/ai-slop-remover/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "arts-crafts",
-      "environmental-design",
-      "industrial-design",
-      "architecture-design"
+      "experience-design",
+      "visual-communication",
+      "ui-design",
+      "operations-design"
     ],
     "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:12.188Z",
-    "lastSeenAt": "2026-09-06T07:10:12.189Z"
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:48.937Z",
+    "lastSeenAt": "2026-09-07T07:22:48.937Z"
   },
   {
     "id": "ComponentDock/free-react-templates/design-md",
@@ -422,167 +431,137 @@
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:16.960Z",
-    "lastSeenAt": "2026-09-06T07:10:16.960Z"
+    "lastSeenAt": "2026-09-07T07:22:42.994Z"
   },
   {
-    "id": "V4TIME/V4SKILL/claude-design",
-    "name": "claude-design",
-    "source": "V4TIME/V4SKILL",
-    "summary": "Design one-off HTML artifacts (landing, deck, prototype).",
+    "id": "shifatmasud/Shade-DS/decoupled-kinetic-scrub",
+    "name": "decoupled-kinetic-scrub",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Decouple onScroll input from rigid 1:1 scrubbing using virtual target anchors, spring dynamics, and kinetic momentum carry-over for organic scroll-triggered animations.",
+    "security": "A",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "3d",
+      "rendering",
+      "map",
+      "ui",
+      "typography",
+      "cad"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/decoupled-kinetic-scrub/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "industrial-design",
+      "video-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:36.910Z",
+    "lastSeenAt": "2026-09-07T07:22:36.910Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/framer-motion-animateview-clip-origin",
+    "name": "framer-motion-animateview-clip-origin",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Debug and fix Framer Motion animateView clip-path transition origin offsets. Handles viewport coordinate systems, DOM measurements, pointer events, and fallback overlay strategies.",
+    "security": "A",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "layout",
+      "interaction",
+      "architecture",
+      "mobile"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/framer-motion-animateview-clip-origin/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "experience-design",
+      "operations-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:37.762Z",
+    "lastSeenAt": "2026-09-07T07:22:37.762Z"
+  },
+  {
+    "id": "zyvoai/ZYVO-AI/web2video",
+    "name": "web2video",
+    "source": "zyvoai/ZYVO-AI",
+    "summary": "Turn any idea into a motion graphic VIDEO (MP4) — zyvo builds a beautiful animated web page (design-standards quality: art direction, palette, motion craft), then GitHub Actions captures it frame-perfectly into a smooth video with configurable FPS (30/60/120). The user's phone does nothing. Use when the user asks for a",
     "security": "C",
     "signalScore": 66,
     "installs": 0,
     "repoStars": 1,
     "tags": [
+      "video",
       "design",
-      "ui",
-      "design-system",
+      "motion",
+      "film",
       "typography",
-      "interaction",
-      "ux",
-      "product",
-      "prototype",
-      "mobile",
-      "motion"
+      "audio",
+      "brand",
+      "media"
     ],
-    "installUrl": "https://github.com/V4TIME/V4SKILL",
-    "skillsUrl": "https://github.com/V4TIME/V4SKILL/blob/main/creative/claude-design/SKILL.md",
+    "installUrl": "https://github.com/zyvoai/ZYVO-AI",
+    "skillsUrl": "https://github.com/zyvoai/ZYVO-AI/blob/main/config/skills/web2video/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "ui-design",
-      "experience-design",
       "video-design",
-      "operations-design"
+      "operations-design",
+      "digital-media-film",
+      "visual-communication"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:10.563Z",
-    "lastSeenAt": "2026-09-06T07:10:10.563Z"
+    "firstSeenAt": "2026-09-07T07:22:42.208Z",
+    "lastSeenAt": "2026-09-07T07:22:42.208Z"
   },
   {
-    "id": "V4TIME/V4SKILL/ascii-video",
-    "name": "ascii-video",
-    "source": "V4TIME/V4SKILL",
-    "summary": "ASCII video: convert video/audio to colored ASCII MP4/GIF.",
-    "security": "A",
+    "id": "ch4570/lutriva/ui-craft-bundle",
+    "name": "ui-craft-bundle",
+    "source": "ch4570/lutriva",
+    "summary": "Preserve the original UI Craft Bundle workflow and provide shared web/native design, interaction, motion, and verification references. Use when the user explicitly requests ui-craft-bundle or an existing workflow depends on its references. For a new broad AI-slop-removal request, prefer ai-slop-remover when installed; ",
+    "security": "C",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 0,
     "tags": [
-      "video",
-      "motion",
-      "audio",
-      "art",
-      "color",
-      "vector",
-      "pattern",
+      "design",
+      "ux",
+      "product",
+      "interaction",
+      "prototype",
+      "ui",
+      "layout",
+      "figma",
       "visual",
-      "product"
+      "motion"
     ],
-    "installUrl": "https://github.com/V4TIME/V4SKILL",
-    "skillsUrl": "https://github.com/V4TIME/V4SKILL/blob/main/creative/ascii-video/SKILL.md",
+    "installUrl": "https://github.com/ch4570/lutriva",
+    "skillsUrl": "https://github.com/ch4570/lutriva/blob/main/skills/ui-craft-bundle/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "folk-art",
+      "experience-design",
+      "ui-design",
       "operations-design",
-      "arts-crafts"
+      "folk-art"
     ],
     "qualityScore": 88,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:11.204Z",
-    "lastSeenAt": "2026-09-06T07:10:11.204Z"
-  },
-  {
-    "id": "adammatthewsteinberger/vibey-skills/cad-generative-automation-and-scanning",
-    "name": "cad-generative-automation-and-scanning",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when going beyond hand modelling: generative design and lattice structures and what they are actually good for, automation pipelines for batch generation, headless CAD and build integration, and scanning and reverse engineering including point clouds, registration and getting from a scan back to editable geometry.",
-    "security": "A",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "arts",
-      "3d-printing",
-      "parametric",
-      "3d",
-      "design",
-      "cad",
-      "operations",
-      "photo"
-    ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/cad-3d-printing/skills/cad-generative-automation-and-scanning/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "arts-crafts",
-      "industrial-design",
-      "operations-design",
-      "environmental-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:12.342Z",
-    "lastSeenAt": "2026-09-06T07:10:12.342Z"
-  },
-  {
-    "id": "lukaskourilcz/quorum/product-marketing",
-    "name": "product-marketing",
-    "source": "lukaskourilcz/quorum",
-    "summary": "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' 'ideal customer profile,' or wants to avoid repeating foundational informa",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "brand",
-      "product",
-      "motion",
-      "communication",
-      "landscape"
-    ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/product-marketing/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "visual-communication",
-      "environmental-design",
-      "video-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:15.263Z",
-    "lastSeenAt": "2026-09-06T07:10:15.263Z"
-  },
-  {
-    "id": "lukaskourilcz/quorum/financial-operations",
-    "name": "financial-operations",
-    "source": "lukaskourilcz/quorum",
-    "summary": "Use when LEDGER reconciles operating cost, reports daily/MTD finance, evaluates spend, or plans the approved $30 monthly all-in operating limit.",
-    "security": "A",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "operations",
-      "campaign",
-      "media"
-    ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/financial-operations/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "fashion-design",
-      "digital-media-film",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:14.955Z",
-    "lastSeenAt": "2026-09-06T07:10:14.955Z"
+    "firstSeenAt": "2026-09-07T07:22:49.074Z",
+    "lastSeenAt": "2026-09-07T07:22:49.074Z"
   },
   {
     "id": "ComponentDock/free-react-templates/colorlib-template-replication",
@@ -590,7 +569,7 @@
     "source": "ComponentDock/free-react-templates",
     "summary": "Recreate ColorLib templates faithfully from preview and CSS.",
     "security": "C",
-    "signalScore": 64,
+    "signalScore": 65,
     "installs": 0,
     "repoStars": 0,
     "tags": [
@@ -617,70 +596,169 @@
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:22.629Z",
-    "lastSeenAt": "2026-09-06T07:10:22.629Z"
+    "lastSeenAt": "2026-09-07T07:22:48.781Z"
   },
   {
-    "id": "katopz/katgpt-rs/feature-gate-audit",
-    "name": "feature-gate-audit",
-    "source": "katopz/katgpt-rs",
-    "summary": "Audit feature-gate status claims across the multi-repo stack. Use when a doc/plan/issue/commit-message claims a \"promotion discrepancy\", \"not yet wired\", or \"Default-off until...\" state, when fixing stale feature-gate comments, before promoting or demoting any feature flag, or quarterly as a feature-gate-hygiene gate. ",
-    "security": "A",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 98,
-    "tags": [
-      "design",
-      "product",
-      "motion",
-      "art",
-      "vector",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/katopz/katgpt-rs",
-    "skillsUrl": "https://github.com/katopz/katgpt-rs/blob/develop/.agents/skills/feature-gate-audit/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "operations-design",
-      "folk-art",
-      "video-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:09.278Z",
-    "lastSeenAt": "2026-09-06T07:10:09.278Z"
-  },
-  {
-    "id": "renchris/claude-infrastructure/video-understanding",
-    "name": "video-understanding",
-    "source": "renchris/claude-infrastructure",
-    "summary": "Ingest and genuinely understand a video — including MOTION, which frame sampling structurally cannot see. Use when asked to watch/analyse/summarise a video or a YouTube link, to critique motion design or an animation's easing/timing, to extract on-screen text or code from a screen recording, or to reverse-engineer how ",
+    "id": "ch4570/lutriva/ui-quality-gate",
+    "name": "ui-quality-gate",
+    "source": "ch4570/lutriva",
+    "summary": "Verify a completed UI change through a read-only review of scoped visual and behavioral evidence. Use for final UI/UX QA, completion checks, or release-readiness assessment after implementation; identify concrete task, accessibility, layout, state, and evidence gaps without changing product code or relying on beauty sc",
     "security": "C",
-    "signalScore": 63,
+    "signalScore": 65,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 0,
     "tags": [
-      "video",
       "design",
-      "motion",
-      "film",
-      "audio",
+      "ux",
+      "product",
+      "interaction",
+      "accessibility",
+      "ui",
+      "design-system",
+      "layout",
+      "brand",
       "visual",
-      "media"
+      "motion"
     ],
-    "installUrl": "https://github.com/renchris/claude-infrastructure",
-    "skillsUrl": "https://github.com/renchris/claude-infrastructure/blob/main/skills/video-understanding/SKILL.md",
+    "installUrl": "https://github.com/ch4570/lutriva",
+    "skillsUrl": "https://github.com/ch4570/lutriva/blob/main/skills/ui-quality-gate/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
+      "experience-design",
+      "ui-design",
       "operations-design",
-      "digital-media-film",
       "architecture-design"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:11.826Z",
-    "lastSeenAt": "2026-09-06T07:10:11.826Z"
+    "firstSeenAt": "2026-09-07T07:22:49.247Z",
+    "lastSeenAt": "2026-09-07T07:22:49.247Z"
+  },
+  {
+    "id": "ch4570/lutriva/ux-writing",
+    "name": "ux-writing",
+    "source": "ch4570/lutriva",
+    "summary": "Write or refine truthful product microcopy for action labels, field help, errors, empty states, loading, and confirmations, including natural Korean. Use when interface wording is vague, stiff, misleading, too long, or hard to recover from; preserve behavior, localization contracts, and product terminology.",
+    "security": "C",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ux",
+      "product",
+      "interaction",
+      "accessibility",
+      "ui",
+      "layout",
+      "brand",
+      "visual",
+      "art-direction"
+    ],
+    "installUrl": "https://github.com/ch4570/lutriva",
+    "skillsUrl": "https://github.com/ch4570/lutriva/blob/main/skills/ux-writing/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "fashion-design",
+      "operations-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:49.884Z",
+    "lastSeenAt": "2026-09-07T07:22:49.884Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/firebase-firestore",
+    "name": "firebase-firestore-basics",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Comprehensive Firestore skill covering provisioning, security rules, SDK usage, query mechanics, aggregation, and indexing. Use when writing Firestore queries, security rules, or setting up Firestore.",
+    "security": "B",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "operations",
+      "product",
+      "map",
+      "environment"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/engineering/firebase-firestore/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "architecture-design",
+      "environmental-design",
+      "industrial-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:29.675Z",
+    "lastSeenAt": "2026-09-07T07:22:29.675Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/video-watching",
+    "name": "video-watching",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Watch a video the way a human would — turn it into a time-mapped transcript with the on-screen visuals (slides, UI, diagrams, text) described inline, then reason about it. Triggers: \"watch this video\", \"şu videoyu izle\", \"videoyu analiz et\", \"transkript çıkar\", \"video transcript\", \"bu videoda ne var\", or any time the u",
+    "security": "C",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "product",
+      "visual",
+      "video",
+      "motion",
+      "audio",
+      "media"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/video-watching/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "video-design",
+      "digital-media-film",
+      "industrial-design"
+    ],
+    "qualityScore": 89,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:31.666Z",
+    "lastSeenAt": "2026-09-07T07:22:31.666Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/framer-code-components-overrides",
+    "name": "framer-code-components-overrides",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Create Framer Code Components and Code Overrides. Use when building custom React components for Framer, writing Code Overrides (HOCs) to modify canvas elements, implementing property controls, working with Framer Motion animations, handling WebGL/shaders in Framer, or debugging Framer-specific issues like hydration err",
+    "security": "B",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "rendering",
+      "motion",
+      "editing"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/framer-code-components-overrides/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:37.616Z",
+    "lastSeenAt": "2026-09-07T07:22:37.616Z"
   },
   {
     "id": "ComponentDock/free-react-templates/popular-web-designs",
@@ -688,7 +766,7 @@
     "source": "ComponentDock/free-react-templates",
     "summary": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
     "security": "C",
-    "signalScore": 63,
+    "signalScore": 64,
     "installs": 0,
     "repoStars": 0,
     "tags": [
@@ -715,67 +793,171 @@
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:17.114Z",
-    "lastSeenAt": "2026-09-06T07:10:17.114Z"
+    "lastSeenAt": "2026-09-07T07:22:43.181Z"
   },
   {
-    "id": "katopz/katgpt-rs/boundary-guard",
-    "name": "boundary-guard",
-    "source": "katopz/katgpt-rs",
-    "summary": "Audit + enforce game-stack boundary rules across the multi-repo workspace. Use when adding a System impl, game logic, vocabulary type, FFI surface, or view-layer code; when reviewing PRs touching game systems or view/FFI boundaries; when a violation is suspected; or quarterly as a boundary-hygiene gate. Reads each repo",
+    "id": "meanllbrl/dreamcontext/design",
+    "name": "Design",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Universal design system — 4px grid spacing, typography scales, HSL/OKLCH colors, visual hierarchy, Gestalt laws, depth system, layout patterns, WCAG accessibility, emotional design (interaction quality hierarchy), mascot workflow. Sub-skills: frontend-principles (zero hardcoded values, token architecture, i18n, a11y), ",
     "security": "C",
-    "signalScore": 62,
+    "signalScore": 63,
     "installs": 0,
-    "repoStars": 98,
+    "repoStars": 12,
     "tags": [
       "design",
+      "brand",
+      "product",
+      "visual",
+      "motion",
+      "ui",
+      "layout",
+      "typography",
+      "interaction",
+      "accessibility",
+      "ux",
+      "mobile"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "ui-design",
+      "experience-design",
+      "visual-communication"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:29.169Z",
+    "lastSeenAt": "2026-09-07T07:22:29.169Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/skill-patterns",
+    "name": "patterns",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Browse and load this project's reusable engineering/design patterns from _dream_context/knowledge/patterns/ — \"/patterns\" lists them, \"/patterns <slug or keywords>\" loads the matching one. Use when the user asks \"which patterns do we have\", \"load the X pattern\", \"bir pattern var mıydı\", or before building something a d",
+    "security": "A",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "design",
+      "product"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-patterns/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "industrial-design",
+      "experience-design",
+      "ui-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:31.806Z",
+    "lastSeenAt": "2026-09-07T07:22:31.806Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/figma-mcp",
+    "name": "figma-mcp",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Inspect, extract, and convert Figma design files, components, tokens, styles, and nodes using the Figma Model Context Protocol (MCP) server integration. Use this skill in the following scenarios: * Figma Design Extraction: Inspecting layout hierarchies, design tokens, typography, colors, and components from a Figma URL",
+    "security": "C",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "typography",
+      "figma",
       "rendering",
       "map",
-      "product",
-      "cad",
-      "motion"
+      "environment",
+      "vector",
+      "illustration",
+      "color"
     ],
-    "installUrl": "https://github.com/katopz/katgpt-rs",
-    "skillsUrl": "https://github.com/katopz/katgpt-rs/blob/develop/.agents/skills/boundary-guard/SKILL.md",
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/figma-mcp/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "visual-communication",
+      "environmental-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:37.105Z",
+    "lastSeenAt": "2026-09-07T07:22:37.105Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/framer-agent-cli",
+    "name": "Framer-agent",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Interacting with the Framer Agent workspace (@framer/agent), inspecting canvas status, applying design and page hierarchy modifications using Framer DSL commands, and deploying/publishing page layouts safely.",
+    "security": "C",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "architecture",
+      "design",
+      "map",
+      "environment",
+      "ui",
+      "layout",
+      "typography",
+      "visual",
+      "brand",
+      "color"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/framer-agent-cli/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "architecture-design",
-      "industrial-design",
-      "operations-design",
-      "environmental-design"
+      "ui-design",
+      "visual-communication",
+      "operations-design"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:08.992Z",
-    "lastSeenAt": "2026-09-06T07:10:08.992Z"
+    "firstSeenAt": "2026-09-07T07:22:37.448Z",
+    "lastSeenAt": "2026-09-07T07:22:37.448Z"
   },
   {
-    "id": "adammatthewsteinberger/vibey-skills/nano-fabrication-and-semiconductor-process",
-    "name": "nano-fabrication-and-semiconductor-process",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when making nanoscale structures: top-down fabrication including photolithography, EUV, etching and deposition and their resolution limits, bottom-up synthesis and self-assembly, and the semiconductor process — what a node name such as 2nm actually means, the transistor evolution from planar through FinFET to gate-",
+    "id": "shifatmasud/Shade-DS/modern-web-guidance",
+    "name": "Modern Web Guidance",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Comprehensive guidance on modern browser APIs, layouts, and performance.",
     "security": "A",
-    "signalScore": 62,
+    "signalScore": 63,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 2,
     "tags": [
-      "fabrication",
-      "pattern",
-      "industrial",
-      "art"
+      "design",
+      "ui",
+      "layout",
+      "accessibility"
     ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/nanotechnology/skills/nano-fabrication-and-semiconductor-process/SKILL.md",
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/modern-web-guidance/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "arts-crafts",
-      "industrial-design",
-      "folk-art",
-      "operations-design"
+      "ui-design",
+      "architecture-design",
+      "experience-design",
+      "visual-communication"
     ],
-    "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:13.157Z",
-    "lastSeenAt": "2026-09-06T07:10:13.157Z"
+    "qualityScore": 51,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:38.698Z",
+    "lastSeenAt": "2026-09-07T07:22:38.698Z"
   },
   {
     "id": "ComponentDock/free-react-templates/claude-design",
@@ -783,7 +965,7 @@
     "source": "ComponentDock/free-react-templates",
     "summary": "Design one-off HTML artifacts (landing, deck, prototype).",
     "security": "C",
-    "signalScore": 62,
+    "signalScore": 63,
     "installs": 0,
     "repoStars": 0,
     "tags": [
@@ -809,158 +991,282 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:16.791Z",
-    "lastSeenAt": "2026-09-06T07:10:16.791Z"
+    "lastSeenAt": "2026-09-07T07:22:42.839Z"
   },
   {
-    "id": "katopz/katgpt-rs/rust-optimize",
-    "name": "rust-optimize",
-    "source": "katopz/katgpt-rs",
-    "summary": "Optimize Rust code until nothing left to improve. Loops automatically. Use when the user says \"optimize\" or \"/optimize\".",
-    "security": "C",
-    "signalScore": 61,
+    "id": "meanllbrl/dreamcontext/brand-voice",
+    "name": "Brand Voice",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Load when writing emails, proposals, presentations, LinkedIn posts, sales content, pitch decks, Slack messages, or any brand-aligned content. Also triggers on 'brand voice', 'on-brand', 'enforce voice', 'write in our voice', 'make this sound like us', 'rewrite in our tone', 'discover brand materials', 'generate brand g",
+    "security": "A",
+    "signalScore": 62,
     "installs": 0,
-    "repoStars": 98,
+    "repoStars": 12,
     "tags": [
-      "3d",
-      "map",
-      "interior",
-      "vector",
-      "pattern",
-      "layout"
+      "brand",
+      "product"
     ],
-    "installUrl": "https://github.com/katopz/katgpt-rs",
-    "skillsUrl": "https://github.com/katopz/katgpt-rs/blob/develop/.agents/skills/rust-optimize/SKILL.md",
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/brand-voice/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "visual-communication",
+      "industrial-design",
+      "fashion-design"
+    ],
+    "qualityScore": 72,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:27.782Z",
+    "lastSeenAt": "2026-09-07T07:22:27.782Z"
+  },
+  {
+    "id": "MosaicXR-AI/mosaic-bridge/mosaic-guide",
+    "name": "mosaic-guide",
+    "source": "MosaicXR-AI/mosaic-bridge",
+    "summary": "Zara — Mosaic Bridge project guide. Use for Unity scene setup, render pipeline questions, tool selection, session handoff, and general Mosaic Bridge onboarding. Use when the user says \"start session\", \"preflight\", \"my materials are magenta\", or asks which tools to use.",
+    "security": "A",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 10,
+    "tags": [
+      "rendering",
+      "communication",
+      "color",
+      "art"
+    ],
+    "installUrl": "https://github.com/MosaicXR-AI/mosaic-bridge",
+    "skillsUrl": "https://github.com/MosaicXR-AI/mosaic-bridge/blob/main/packages/create-bridge/plugin/skills/mosaic-guide/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "visual-communication",
+      "folk-art",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:32.273Z",
+    "lastSeenAt": "2026-09-07T07:22:32.273Z"
+  },
+  {
+    "id": "MosaicXR-AI/mosaic-bridge/mosaic-shader",
+    "name": "mosaic-shader",
+    "source": "MosaicXR-AI/mosaic-bridge",
+    "summary": "Ray — Mosaic Bridge shader expert. Use for ShaderGraph creation, node wiring, HLSL shader writing, shader debugging, and render pipeline shader issues. Use when the user says \"create a shader\", \"ShaderGraph\", \"Voronoi\", \"water shader\", or \"shader is not compiling\".",
+    "security": "A",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 10,
+    "tags": [
+      "rendering",
+      "crafts",
+      "craft",
+      "color",
+      "communication"
+    ],
+    "installUrl": "https://github.com/MosaicXR-AI/mosaic-bridge",
+    "skillsUrl": "https://github.com/MosaicXR-AI/mosaic-bridge/blob/main/packages/create-bridge/plugin/skills/mosaic-shader/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "architecture-design",
       "arts-crafts",
       "visual-communication",
+      "folk-art"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:32.569Z",
+    "lastSeenAt": "2026-09-07T07:22:32.569Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/cli-installer",
+    "name": "cli-installer",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Guidelines for installing Linux-compatible CLI tools and binaries into the workspace.",
+    "security": "B",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "environment",
+      "ui",
+      "operations"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/cli-installer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "operations-design",
       "environmental-design"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:09.910Z",
-    "lastSeenAt": "2026-09-06T07:10:09.910Z"
+    "firstSeenAt": "2026-09-07T07:22:36.441Z",
+    "lastSeenAt": "2026-09-07T07:22:36.441Z"
   },
   {
-    "id": "renchris/claude-infrastructure/frontend-design-vue",
-    "name": "frontend-design-vue",
-    "source": "renchris/claude-infrastructure",
-    "summary": "Redesign Vue 3 applications into modern SaaS-style interfaces — vertical sidebar navigation, design-token CSS architecture, Signal-aesthetic defaults. Use when user asks to \"redesign UI\", \"modernize Vue app\", \"apply SaaS design\", or invokes /frontend-design.",
+    "id": "shifatmasud/Shade-DS/framer-motion-gsap-bridge",
+    "name": "framer-motion-gsap-bridge",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Architecture and coding patterns for combining Framer Motion's physics/spring transitions (including Framer Property Controls ControlType.Transition) with GSAP's specialized plugins (MorphSVG, DrawSVG, SplitText, MotionPath) via reactive MotionValue timeline scrubbing.",
+    "security": "A",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "architecture",
+      "design",
+      "ui",
+      "art",
+      "color",
+      "vector",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/framer-motion-gsap-bridge/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "folk-art",
+      "operations-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:37.936Z",
+    "lastSeenAt": "2026-09-07T07:22:37.936Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/mcp-cli",
+    "name": "mcp-cli",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Connect to, discover, and execute tools on any Model Context Protocol (MCP) server. Supports Stdio, HTTP, SSE, and custom MCP server transports. Use this skill in the following scenarios: * MCP Integration: Connecting AI Studio as an MCP client to external or local MCP servers (e.g., Figma, GitHub, Postgres, Custom API",
     "security": "C",
-    "signalScore": 61,
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "architecture",
+      "design",
+      "map",
+      "environment",
+      "ui",
+      "figma"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/mcp-cli/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:38.561Z",
+    "lastSeenAt": "2026-09-07T07:22:38.561Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/procedural-rigging",
+    "name": "procedural-rigging",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Bidirectional translator between biomechanical models and procedural animation state engines. Governs constrained point chains, body shaping, kinematics solvers (FK, FABRIK), and foot step triggers for zero-rerender organic rigging.",
+    "security": "A",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "3d",
+      "map",
+      "vector",
+      "parametric",
+      "color",
+      "ui"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/procedural-rigging/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "arts-crafts",
+      "ui-design",
+      "industrial-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:39.334Z",
+    "lastSeenAt": "2026-09-07T07:22:39.334Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/shade_dsl",
+    "name": "shade-dsl",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Bidirectional translator between React ecosystems and Shade DSL. Optimized for architecture extraction, modular code generation, and minimalist design systems.",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "architecture",
+      "design",
+      "spatial",
+      "3d",
+      "map",
+      "ui",
+      "layout",
+      "interaction",
+      "digital",
+      "media",
+      "motion"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/shade_dsl/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "digital-media-film",
+      "operations-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:39.674Z",
+    "lastSeenAt": "2026-09-07T07:22:39.674Z"
+  },
+  {
+    "id": "mauricekleine/fluncle/web-design-guidelines",
+    "name": "web-design-guidelines",
+    "source": "mauricekleine/fluncle",
+    "summary": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+    "security": "B",
+    "signalScore": 62,
     "installs": 0,
     "repoStars": 1,
     "tags": [
       "design",
-      "motion",
-      "typography",
       "ui",
-      "layout",
       "accessibility",
-      "visual",
-      "brand",
-      "color"
+      "ux"
     ],
-    "installUrl": "https://github.com/renchris/claude-infrastructure",
-    "skillsUrl": "https://github.com/renchris/claude-infrastructure/blob/main/skills/frontend-design-vue/SKILL.md",
+    "installUrl": "https://github.com/mauricekleine/fluncle",
+    "skillsUrl": "https://github.com/mauricekleine/fluncle/blob/main/.agents/skills/web-design-guidelines/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:11.653Z",
-    "lastSeenAt": "2026-09-06T07:10:11.653Z"
-  },
-  {
-    "id": "adammatthewsteinberger/vibey-skills/legal-brief-writing",
-    "name": "legal-brief-writing",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when writing legal briefs, motions, or any court filing; when analyzing judicial cognition and persuasion; when applying elite brief-writing techniques from Roberts, Clement, Kagan, Garner; or when structuring legal arguments for maximum persuasion. Also use for autistic/neurodivergent advocates who need to underst",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "craft",
-      "pattern",
-      "art",
-      "communication"
-    ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/writing-craft/skills/legal-brief-writing/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "arts-crafts",
-      "folk-art",
-      "visual-communication",
-      "experience-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:13.486Z",
-    "lastSeenAt": "2026-09-06T07:10:13.487Z"
-  },
-  {
-    "id": "lukaskourilcz/quorum/organization-operations",
-    "name": "organization-operations",
-    "source": "lukaskourilcz/quorum",
-    "summary": "Use when PEOPLE reviews agent effectiveness or proposes/tests a role, description, routing, prompt, skill, model, or status change.",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "operations"
-    ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/organization-operations/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
+      "experience-design",
       "operations-design",
-      "ui-design",
-      "visual-communication",
       "video-design"
     ],
-    "qualityScore": 81,
+    "qualityScore": 79,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:15.098Z",
-    "lastSeenAt": "2026-09-06T07:10:15.098Z"
-  },
-  {
-    "id": "lukaskourilcz/quorum/social-operations",
-    "name": "social-operations",
-    "source": "lukaskourilcz/quorum",
-    "summary": "Use for social strategy, calendars, channel drafts, media assets, queue review, publishing, insights, channel proposals and social incidents.",
-    "security": "C",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "operations",
-      "brand",
-      "product",
-      "motion",
-      "accessibility",
-      "ui"
-    ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/social-operations/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "ui-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:15.434Z",
-    "lastSeenAt": "2026-09-06T07:10:15.434Z"
+    "firstSeenAt": "2026-09-07T07:22:40.731Z",
+    "lastSeenAt": "2026-09-07T07:22:40.731Z"
   },
   {
     "id": "ComponentDock/free-react-templates/touchdesigner-mcp",
@@ -968,7 +1274,7 @@
     "source": "ComponentDock/free-react-templates",
     "summary": "Control TouchDesigner via twozero MCP.",
     "security": "C",
-    "signalScore": 61,
+    "signalScore": 62,
     "installs": 0,
     "repoStars": 0,
     "tags": [
@@ -993,163 +1299,123 @@
     "qualityScore": 96,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:17.435Z",
-    "lastSeenAt": "2026-09-06T07:10:17.435Z"
+    "lastSeenAt": "2026-09-07T07:22:43.532Z"
   },
   {
-    "id": "katopz/katgpt-rs/doc-sync",
-    "name": "doc-sync",
-    "source": "katopz/katgpt-rs",
-    "summary": "Synchronize each repo's `.docs/` and `README.md` with recently succeeded plans/issues/benchmarks by diffing git history against the last documented entry. Use after landing a GOAT-passing plan, closing a batch of issues, or quarterly as a doc-hygiene gate. Covers every workspace repo and knows each repo's doc layout + ",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 98,
-    "tags": [
-      "design",
-      "spatial",
-      "map",
-      "product",
-      "research",
-      "ui",
-      "layout"
-    ],
-    "installUrl": "https://github.com/katopz/katgpt-rs",
-    "skillsUrl": "https://github.com/katopz/katgpt-rs/blob/develop/.agents/skills/doc-sync/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "experience-design",
-      "ui-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:09.139Z",
-    "lastSeenAt": "2026-09-06T07:10:09.140Z"
-  },
-  {
-    "id": "adammatthewsteinberger/vibey-skills/reporting-dashboard-design-charts-and-alerting",
-    "name": "reporting-dashboard-design-charts-and-alerting",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when designing what people actually look at: dashboard design including audience, hierarchy, defaults and the failure modes of the everything-dashboard, chart selection matched to the question being asked, and alerting including threshold design, noise, and why most alerting gets ignored.",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "architecture",
-      "design",
-      "3d",
-      "map",
-      "arts"
-    ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/reporting-and-dashboards/skills/reporting-dashboard-design-charts-and-alerting/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "arts-crafts",
-      "environmental-design",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:13.335Z",
-    "lastSeenAt": "2026-09-06T07:10:13.335Z"
-  },
-  {
-    "id": "adammatthewsteinberger/vibey-skills/white-paper-writing",
-    "name": "white-paper-writing",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when writing white papers, technical reports, policy documents, thought leadership pieces, or any long-form authoritative document. Triggers on requests to write, structure, outline, or review white papers, technical reports, position papers, policy briefs, or evidence-driven arguments. Also use for B2B content mar",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "experience",
-      "design",
-      "research",
-      "architecture",
-      "diagram",
-      "craft"
-    ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/writing-craft/skills/white-paper-writing/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "architecture-design",
-      "arts-crafts",
-      "environmental-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:14.155Z",
-    "lastSeenAt": "2026-09-06T07:10:14.155Z"
-  },
-  {
-    "id": "OzTamir/posts/creating-blog-posts",
-    "name": "creating-blog-posts",
-    "source": "OzTamir/posts",
-    "summary": "Use when creating, adding, scaffolding, or publishing a new blog post in this repo (oz-blog / posts.oztamir.com, \"0xZ\") — even if the user only says \"add a post\", \"write up X as a post\", \"draft a new article\", or \"put this on the blog\". Covers the exact on-disk mechanics: the folder-per-post layout, the frontmatter sch",
+    "id": "Mr-Salticidae/knowledge-base/blind-editing-workflow",
+    "name": "blind-editing-workflow",
+    "source": "Mr-Salticidae/knowledge-base",
+    "summary": "蒙眼剪辑法——一套让不会专业剪辑软件的创作者，用 Python + ffmpeg 完成精确视频剪辑的工作流。适用于 AIGC 图片/视频素材合成 MV、角色 PV、内容短片等场景。当用户说\"帮我把这些图做成视频\"、\"按卡点剪辑\"、\"生成剪辑方案\"、\"出剪辑代码\"时触发。本 Skill 涉及 ffmpeg 和 Python 本地执行，适合在 Codex 本地环境中运行。",
     "security": "B",
-    "signalScore": 60,
+    "signalScore": 61,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 24,
     "tags": [
-      "ui",
-      "layout",
-      "architecture",
-      "diagram",
-      "media",
-      "video"
+      "motion",
+      "editing"
     ],
-    "installUrl": "https://github.com/OzTamir/posts",
-    "skillsUrl": "https://github.com/OzTamir/posts/blob/main/.claude/skills/creating-blog-posts/SKILL.md",
+    "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+    "skillsUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/blind-editing-workflow/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "ui-design",
-      "architecture-design",
+      "video-design",
+      "operations-design",
       "digital-media-film",
-      "environmental-design"
+      "folk-art"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:25.990Z",
+    "lastSeenAt": "2026-09-07T07:22:25.990Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/skill-announcements",
+    "name": "announcements",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Author the dreamcontext \"What's New\" page for a RELEASE — a screenshot-driven landing page (a git-tracked JSON story plus its manifest entry), one per version — so it renders in the dashboard Announcements page and the on-load popup. Every announcement SHOWS what the version shipped: real screenshots of the app, captur",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "product",
+      "photo",
+      "motion"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-announcements/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "video-design",
+      "industrial-design",
+      "fashion-design"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:14.640Z",
-    "lastSeenAt": "2026-09-06T07:10:14.640Z"
+    "firstSeenAt": "2026-09-07T07:22:27.983Z",
+    "lastSeenAt": "2026-09-07T07:22:27.983Z"
   },
   {
-    "id": "lukaskourilcz/quorum/brand-identity",
-    "name": "brand-identity",
-    "source": "lukaskourilcz/quorum",
-    "summary": "Create or apply the BoardlessAI Refero/Awesomic zinc-and-Ember editorial system, tokens.css, typography, SVG logo and BRAND.md voice. Use when founding the brand, building UI, or fixing visual drift.",
+    "id": "meanllbrl/dreamcontext/excalidraw",
+    "name": "excalidraw",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Generate or extend Obsidian Excalidraw (.excalidraw.md) boards in this vault — visual-first diagrams, charts (line/bar/comparison/stacked/gantt/quadrant/donut/heatmap/table/timeline/KPI/sparkline), funnels, device mockups (iPhone/iPad/Mac) and wireframes/prototypes, flowcharts, image/screenshot layouts, shapes, arrows,",
     "security": "C",
-    "signalScore": 60,
+    "signalScore": 61,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 12,
     "tags": [
+      "design",
+      "product",
       "visual",
-      "brand",
-      "typography",
-      "editorial",
-      "color",
+      "prototype",
       "ui",
-      "accessibility"
+      "layout"
     ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/brand-identity/SKILL.md",
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/excalidraw/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "visual-communication",
       "operations-design",
+      "experience-design",
       "ui-design",
-      "fashion-design"
+      "architecture-design"
     ],
-    "qualityScore": 81,
+    "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:14.789Z",
-    "lastSeenAt": "2026-09-06T07:10:14.789Z"
+    "firstSeenAt": "2026-09-07T07:22:30.408Z",
+    "lastSeenAt": "2026-09-07T07:22:30.408Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/vercel-cli",
+    "name": "vercel-cli",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Deploy, configure, and orchestrate serverless applications, Edge networks, and environments using the Vercel CLI (vercel). Guides token-based authentication on headless platforms, automatic linking protocols, and non-interactive deployments. Use this skill in the following scenarios: * Static & SSR Deployments: When pr",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "rendering",
+      "map",
+      "environment",
+      "ui"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/vercel-cli/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "environmental-design",
+      "industrial-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:40.440Z",
+    "lastSeenAt": "2026-09-07T07:22:40.440Z"
   },
   {
     "id": "ComponentDock/free-react-templates/powerpoint",
@@ -1157,7 +1423,7 @@
     "source": "ComponentDock/free-react-templates",
     "summary": "Create, read, edit .pptx decks, slides, notes, templates.",
     "security": "C",
-    "signalScore": 60,
+    "signalScore": 61,
     "installs": 0,
     "repoStars": 0,
     "tags": [
@@ -1180,156 +1446,1050 @@
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:21.725Z",
-    "lastSeenAt": "2026-09-06T07:10:21.725Z"
+    "lastSeenAt": "2026-09-07T07:22:47.845Z"
   },
   {
-    "id": "adammatthewsteinberger/vibey-skills/prose-mechanics",
-    "name": "prose-mechanics",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when writing, editing, or analyzing prose style; when trying to avoid generic AI-sounding writing; when applying specific prose styles such as journalistic, academic, narrative, KJV biblical, Hemingway plain, Latinate/Jamesian, Orwellian, Augustan, Victorian, Early Modern (Bacon, Browne, Milton), or free indirect d",
+    "id": "Mr-Salticidae/knowledge-base/aigc-video-cover-gpt",
+    "name": "aigc-video-cover-gpt",
+    "source": "Mr-Salticidae/knowledge-base",
+    "summary": "用 GPT Image 2 一步生成「商单/科普视频」高质量横版封面的工作流。输入一张人物参考图 + 一份视频脚本，自动发散标题钩子、套用商单封面公式（构图不固定·暗 / 亮双影调随机）、写出含锁脸与中文大字策略的 GPT Image 2 提示词（中间产物），并一次出若干张可发布的 16:9 封面。当用户说\"给这个视频做封面\"\"根据脚本出封面\"\"用 GPT Image 2 做视频封面\"\"把人物参考图做成封面\"时触发。",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 60,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 24,
     "tags": [
-      "craft",
-      "motion",
-      "editing",
-      "media"
-    ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/writing-craft/skills/prose-mechanics/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "arts-crafts",
-      "video-design",
-      "digital-media-film",
-      "folk-art"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:13.789Z",
-    "lastSeenAt": "2026-09-06T07:10:13.789Z"
-  },
-  {
-    "id": "katopz/katgpt-rs/research",
-    "name": "research",
-    "source": "katopz/katgpt-rs",
-    "summary": "Research workflow for distilling ML/AI papers into modelless inference primitives, freeze/thaw runtime patterns, latent-space operations, AND model-based training plans across the multi-repo stack. Use when reading arxiv papers, deciding which repo a paper belongs in, creating .research/ notes or .plans/ files, impleme",
-    "security": "C",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 98,
-    "tags": [
-      "design",
-      "map",
-      "operations",
-      "product",
-      "research"
-    ],
-    "installUrl": "https://github.com/katopz/katgpt-rs",
-    "skillsUrl": "https://github.com/katopz/katgpt-rs/blob/develop/.agents/skills/research/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "operations-design",
-      "experience-design",
-      "industrial-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:09.765Z",
-    "lastSeenAt": "2026-09-06T07:10:09.765Z"
-  },
-  {
-    "id": "katopz/katgpt-rs/proposal",
-    "name": "proposal",
-    "source": "katopz/katgpt-rs",
-    "summary": "Write a reasoned architectural proposal (.proposals/NNN_*.md) grounded in focused codebase grep + prior-art paper search. Use when arguing for a design change, new primitive, or architectural decision — the question is \"should we do X?\" not \"how do we do X?\" (that's a plan) or \"what does paper Y distill to?\" (that's re",
-    "security": "C",
-    "signalScore": 57,
-    "installs": 0,
-    "repoStars": 98,
-    "tags": [
-      "design",
-      "product",
-      "research",
-      "ui",
+      "video",
+      "photo",
       "layout"
     ],
-    "installUrl": "https://github.com/katopz/katgpt-rs",
-    "skillsUrl": "https://github.com/katopz/katgpt-rs/blob/develop/.agents/skills/proposal/SKILL.md",
+    "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+    "skillsUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/aigc-video-cover-gpt/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "experience-design",
-      "architecture-design",
+      "video-design",
+      "operations-design",
       "ui-design",
+      "visual-communication"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:25.815Z",
+    "lastSeenAt": "2026-09-07T07:22:25.815Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/skill-curator",
+    "name": "curator",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Load when a dreamcontext brain has grown additively and needs a periodic refactor pass that re-orders content into the right shape — or the user invokes `/curator`. Triggers: \"curate the brain\", \"re-organize my context\", \"the knowledge base has gotten messy\", \"clean up / refactor the brain\", \"conform everything to curr",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "product",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-curator/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "architecture-design",
+      "environmental-design",
       "industrial-design"
     ],
-    "qualityScore": 85,
+    "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:09.578Z",
-    "lastSeenAt": "2026-09-06T07:10:09.578Z"
+    "firstSeenAt": "2026-09-07T07:22:28.142Z",
+    "lastSeenAt": "2026-09-07T07:22:28.142Z"
   },
   {
-    "id": "adammatthewsteinberger/vibey-skills/arm-vectors-atomics-numerics-and-security-architecture",
-    "name": "arm-vectors-atomics-numerics-and-security-architecture",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use for the extensions and the security architecture: the vector extensions NEON, SVE, SVE2 and SME and the vector-length-agnostic model, atomics and synchronization including the large system extensions, floating point and numerics, TrustZone and secure world separation, pointer authentication, branch target identific",
-    "security": "B",
-    "signalScore": 57,
+    "id": "meanllbrl/dreamcontext/meta-marketing",
+    "name": "Meta Marketing",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Load when planning, launching, optimizing, or analyzing Meta (Facebook/Instagram) ad campaigns. Covers campaign structure, audience, creative strategy, post-launch optimization, and common failure modes. Sub-domains: account-setup, campaign-topology, creative-strategy, post-launch-ops. Triggers: Meta ads, Facebook ads,",
+    "security": "C",
+    "signalScore": 60,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 12,
     "tags": [
-      "operations",
-      "design",
+      "campaign",
       "product",
-      "vector",
-      "mobile"
+      "video",
+      "art",
+      "pattern"
     ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/arm-architecture-deep-dive/skills/arm-vectors-atomics-numerics-and-security-architecture/SKILL.md",
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/meta-marketing/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "arts-crafts",
-      "experience-design",
-      "environmental-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:11.981Z",
-    "lastSeenAt": "2026-09-06T07:10:11.981Z"
-  },
-  {
-    "id": "adammatthewsteinberger/vibey-skills/math-calculus-and-vector-calculus",
-    "name": "math-calculus-and-vector-calculus",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when doing calculus rather than reading it: limits and continuity and what the derivative actually is as a linear approximation, integration and its several distinct meanings, series and Taylor approximation with convergence and truncation error, multivariable calculus including gradients, Jacobians and Hessians, a",
-    "security": "B",
-    "signalScore": 57,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "arts",
-      "vector",
-      "operations",
-      "product",
-      "art"
-    ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/calculus-geometry-algebra/skills/math-calculus-and-vector-calculus/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "arts-crafts",
       "operations-design",
       "folk-art",
+      "fashion-design",
+      "video-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:30.919Z",
+    "lastSeenAt": "2026-09-07T07:22:30.919Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/agent-debugging",
+    "name": "Agent Debugging",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "- Never guess. - Never patch first. - Evidence > assumptions. - Small test > big fix. - Root cause > symptom. - Minimal fix. - Verify after fix.",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "environment",
+      "product",
+      "visual",
+      "motion"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/agent-debugging/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "operations-design",
+      "environmental-design"
+    ],
+    "qualityScore": 57,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:36.274Z",
+    "lastSeenAt": "2026-09-07T07:22:36.274Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/cloudinary-cli",
+    "name": "cloudinary-cli",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Guidelines for using the Cloudinary CLI (cld) to manage media assets.",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "environment",
+      "ui"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/cloudinary-cli/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 59,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:36.768Z",
+    "lastSeenAt": "2026-09-07T07:22:36.768Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/git",
+    "name": "git",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Manage version control and coordinate with remote repositories using the pre-installed Git binary. This skill covers repository initialization, remote management, branching strategies, and handling authentication in a headless environment. Use this skill in the following scenarios: * Repository Setup: When initializing",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "architecture",
+      "design",
+      "environment",
+      "ui",
+      "interaction"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/git/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:38.278Z",
+    "lastSeenAt": "2026-09-07T07:22:38.278Z"
+  },
+  {
+    "id": "davner/danavner.github.io/ui-review",
+    "name": "ui-review",
+    "source": "davner/danavner.github.io",
+    "summary": "Standards for checking the site in a browser. Use when end-to-end testing, verifying a visual change, reviewing layout or styling, taking screenshots, or checking responsive and accessible behaviour.",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "ui",
+      "layout",
+      "product",
+      "visual",
+      "motion",
+      "rendering"
+    ],
+    "installUrl": "https://github.com/davner/danavner.github.io",
+    "skillsUrl": "https://github.com/davner/danavner.github.io/blob/main/.claude/skills/ui-review/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "industrial-design",
       "visual-communication"
     ],
     "qualityScore": 75,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:13.014Z",
-    "lastSeenAt": "2026-09-06T07:10:13.015Z"
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:41.378Z",
+    "lastSeenAt": "2026-09-07T07:22:41.378Z"
+  },
+  {
+    "id": "ch4570/lutriva/ui-slop-audit",
+    "name": "ui-slop-audit",
+    "source": "ch4570/lutriva",
+    "summary": "Diagnose generic, cluttered, or AI-looking product UI through read-only evidence and prioritized findings. Use when asked to audit or critique a screen before editing; identify task friction, hierarchy problems, and misleading states without redesigning or changing code.",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ux",
+      "product",
+      "interaction",
+      "color",
+      "brand",
+      "visual",
+      "art-direction",
+      "art",
+      "pattern",
+      "craft"
+    ],
+    "installUrl": "https://github.com/ch4570/lutriva",
+    "skillsUrl": "https://github.com/ch4570/lutriva/blob/main/skills/ui-slop-audit/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "fashion-design",
+      "folk-art",
+      "operations-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:49.403Z",
+    "lastSeenAt": "2026-09-07T07:22:49.403Z"
+  },
+  {
+    "id": "Mr-Salticidae/knowledge-base/remotion",
+    "name": "remotion-card-video",
+    "source": "Mr-Salticidae/knowledge-base",
+    "summary": "用 Remotion + React 生成「极简知识卡片流」风格的视频。当用户说「帮我做成视频」「生成 Remotion 脚本」「把这篇文章做成卡片视频」「出 TSX 代码」时触发。内置设计系统、动效规则和场景模板，适配「克制而不僵硬，活泼而不轻浮」的视觉风格。",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 24,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "color"
+    ],
+    "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+    "skillsUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/remotion/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "fashion-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:26.927Z",
+    "lastSeenAt": "2026-09-07T07:22:26.927Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/engineering",
+    "name": "Engineering",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Universal coding standards, security (OWASP, secrets, input validation), testing, naming conventions, error handling, SOLID/KISS/DRY/YAGNI. Sub-skills: backend-principles (APIs, serverless, rate limiting, CORS), web-app-frontend (React, Vue, GSAP, ShadCN, Tailwind, TypeScript), firebase-cloud-functions (2nd gen, idempo",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "architecture",
+      "design",
+      "rendering",
+      "map",
+      "environment",
+      "product"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/engineering/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:29.315Z",
+    "lastSeenAt": "2026-09-07T07:22:29.315Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/system-prompts",
+    "name": "System Prompts",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Load when writing or reviewing system prompts, configuring AI agents, designing instruction hierarchies, building cognitive architectures, writing meta-prompts, optimizing prompts for Claude/GPT/Gemini/DeepSeek, implementing prompt injection defense, designing multi-stage agent flows (ReAct, AlphaCodium, LATS), context",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "operations",
+      "design",
+      "product",
+      "environmental",
+      "environment",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/system-prompts/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "environmental-design",
+      "architecture-design",
+      "industrial-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:31.248Z",
+    "lastSeenAt": "2026-09-07T07:22:31.248Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/ograf-expert",
+    "name": "ograf-expert",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Authoritative reference for the EBU OGraf (Open Graphics) v1 specification: the .ograf.json manifest schema (id/name/main/supportsRealTime/supportsNonRealTime, schema, stepCount, customActions, actionDurations, renderRequirements, thumbnails), the Graphic Web Component interface (load, dispose, playAction, stopAction, ",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing",
+      "ui"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/ograf-expert/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:33.826Z",
+    "lastSeenAt": "2026-09-07T07:22:33.826Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/spx-html-template-expert",
+    "name": "spx-html-template-expert",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Authoritative reference for the SPX Graphics \"Basic HTML template structure\" docs page: the SPXGCTemplateDefinition object, all playout/display settings, every DataField type (ftype), the spxData data-access object, the spxRenderer lifecycle events, folder/path conventions, and best practices. Use when writing, editing",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing",
+      "layout",
+      "color"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/spx-html-template-expert/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "visual-communication",
+      "ui-design",
+      "fashion-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:34.776Z",
+    "lastSeenAt": "2026-09-07T07:22:34.776Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/parasitic-dom-binding",
+    "name": "Parasitic Dom Binding",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "This skill defines the architectural pattern for \"Parasitic Self-Aware\" components that bind directly to DOM elements (parent or sibling) to augment behavior or rendering without explicit prop-drilling or complex state orchestration from the host.",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "arts",
+      "vector",
+      "color",
+      "pattern",
+      "visual",
+      "art"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/parasitic-dom-binding/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "arts-crafts",
+      "folk-art",
+      "architecture-design"
+    ],
+    "qualityScore": 49,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:38.987Z",
+    "lastSeenAt": "2026-09-07T07:22:38.987Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/spawn-agents",
+    "name": "spawn-agents",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Advanced multi-agent orchestrator system featuring separated Planner, Lead Coordinator, Task Dependency Graph, Worker Contracts, Authoritative Reviewer, and Rejection Feedback Loop. Triggers on `/spawnAgents`.",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "architecture",
+      "design",
+      "3d",
+      "ui"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/spawn-agents/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "environmental-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:39.966Z",
+    "lastSeenAt": "2026-09-07T07:22:39.967Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/supabase-cli",
+    "name": "supabase-cli",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Deploy, configure, and orchestrate Supabase backends (PostgreSQL, Authentication, Realtime, Edge Functions, and Storage) using the Supabase CLI (supabase). Explains headless access tokens, migrations workflows, local docker-based development, and automatic TypeScript type generation. Use this skill in the following sce",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "map",
+      "environment",
+      "ui",
+      "operations",
+      "product"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/supabase-cli/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "operations-design",
+      "environmental-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:40.105Z",
+    "lastSeenAt": "2026-09-07T07:22:40.105Z"
+  },
+  {
+    "id": "ch4570/lutriva/ui-visual-refine",
+    "name": "ui-visual-refine",
+    "source": "ch4570/lutriva",
+    "summary": "Refine a product screen's visual hierarchy, grouping, spacing, typography, density, and responsive structure while preserving its brand and behavior. Use for visual cleanup, inconsistent layouts, cramped content, generic repeated cards, or narrow styling fixes; leave workflow logic and copy rewrites to their specific s",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "visual",
+      "brand",
+      "typography",
+      "layout",
+      "color",
+      "design",
+      "art-direction",
+      "product",
+      "motion"
+    ],
+    "installUrl": "https://github.com/ch4570/lutriva",
+    "skillsUrl": "https://github.com/ch4570/lutriva/blob/main/skills/ui-visual-refine/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "fashion-design",
+      "operations-design",
+      "experience-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:49.566Z",
+    "lastSeenAt": "2026-09-07T07:22:49.566Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/check",
+    "name": "check",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Run the pre-merge quality chain on this branch - code review, then simplify, then verify",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/check/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:32.724Z",
+    "lastSeenAt": "2026-09-07T07:22:32.724Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/cleanup-worktrees",
+    "name": "cleanup-worktrees",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Bulk-clean stale worktrees, their merged local and GitHub branches, stale worktree metadata, and empty leftover folders - safely, from the primary main checkout",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/cleanup-worktrees/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:32.872Z",
+    "lastSeenAt": "2026-09-07T07:22:32.872Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/handoff",
+    "name": "handoff",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "End-of-session handoff for NoaCG Studio - what should be done next, and whether this chat is safe to archive",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/handoff/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:33.020Z",
+    "lastSeenAt": "2026-09-07T07:22:33.020Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/n",
+    "name": "n",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Alias for next - plan what to do next in this session (options to choose from, or an honest \"nothing left\")",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/n/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:33.182Z",
+    "lastSeenAt": "2026-09-07T07:22:33.182Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/next",
+    "name": "next",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Plan what to do next in this session - concrete options to choose from, or an honest \"nothing left\"",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/next/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:33.344Z",
+    "lastSeenAt": "2026-09-07T07:22:33.344Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/noacg-graphic-local",
+    "name": "noacg-graphic-local",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Run the NoaCG graphic-making loop INSIDE this repository, against this checkout's own dev server and locally built CLI, to dogfood the product skill. Use when a session in the NoaCG Studio repo is making or fixing a graphic to test the skill, the CLI or the contract itself. For making a graphic against noacg.studio, th",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing",
+      "product"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/noacg-graphic-local/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "industrial-design",
+      "experience-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:33.486Z",
+    "lastSeenAt": "2026-09-07T07:22:33.486Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/o",
+    "name": "o",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Alias for orchestrator - turn finished sessions' handoffs and build feedback into ordered, pasteable prompts",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing",
+      "ui"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/o/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:33.648Z",
+    "lastSeenAt": "2026-09-07T07:22:33.648Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/orchestrator-week",
+    "name": "orchestrator-week",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "The weekly loop over the orchestration system - spend per harness and model, decisions taken against asks made, what the skill changed about itself, and what other orchestrators do now",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/orchestrator-week/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:33.965Z",
+    "lastSeenAt": "2026-09-07T07:22:33.965Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/orchestrator",
+    "name": "orchestrator",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Orchestrate the day's work - turn finished sessions' handoffs and build feedback into ordered, pasteable prompts",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing",
+      "ui"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/orchestrator/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:34.113Z",
+    "lastSeenAt": "2026-09-07T07:22:34.114Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/queue-merge",
+    "name": "queue-merge",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Declare this work finished and queue the branch for landing - the queue merges it when its turn comes",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/queue-merge/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:34.318Z",
+    "lastSeenAt": "2026-09-07T07:22:34.319Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/safe-merge",
+    "name": "safe-merge",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Break-glass manual landing, for when the queue cannot do it - preflight checks, verified gate, then push. Normal landings go through queue-merge.",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/safe-merge/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:34.496Z",
+    "lastSeenAt": "2026-09-07T07:22:34.496Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/so",
+    "name": "so",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Independent second opinion on another session's plan, implementation, benchmark, or decision - read-only, run from a fresh session",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/so/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:34.633Z",
+    "lastSeenAt": "2026-09-07T07:22:34.633Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/start",
+    "name": "start",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Warm a fresh session - read the root AGENTS.md and nothing else, then say \"Ready.\"",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing",
+      "art"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/start/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "folk-art",
+      "ui-design",
+      "visual-communication"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:34.920Z",
+    "lastSeenAt": "2026-09-07T07:22:34.920Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/walk",
+    "name": "walk",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Walk what is built and not yet confirmed by a human - the owner queue, one item at a time",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "editing",
+      "ui"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/walk/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:35.064Z",
+    "lastSeenAt": "2026-09-07T07:22:35.064Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/cloudflare-cli",
+    "name": "cloudflare-integration",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Deploy, configure, and scale serverless workers, static applications, and integrations on Cloudflare. Specializes in Wrangler-based automation, Accountless/Temporary deployments (using wrangler deploy --temporary), and Binding resources. Use this skill in the following scenarios: * Serverless Deployment: When designing",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "environment",
+      "operations",
+      "product"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/cloudflare-cli/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "operations-design",
+      "experience-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:36.620Z",
+    "lastSeenAt": "2026-09-07T07:22:36.620Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/firecrawl-cli",
+    "name": "firecrawl-cli",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Firecrawl CLI gives AI agents and apps fast, reliable web context with strong search, scraping, and interaction tools. One install command sets up three skill segments: live CLI tools, app-integration build skills, and outcome-focused workflow skills. Route the reader to the right usage path after install.",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "ui",
+      "interaction",
+      "product",
+      "research",
+      "environment"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/firecrawl-cli/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "architecture-design",
+      "environmental-design"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:37.295Z",
+    "lastSeenAt": "2026-09-07T07:22:37.295Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/github-cli",
+    "name": "github-cli",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Interact with and orchestrate GitHub resources (Repositories, Pull Requests, Issues, Releases, Secrets, and Actions) using the official GitHub CLI (gh). This skill explains how to use the pre-installed binary located in the workspace, bypassing the incorrect 'gh' npm package, and covers headless token-based authenticat",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "environment",
+      "ui",
+      "operations",
+      "product"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/github-cli/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "operations-design",
+      "environmental-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:38.426Z",
+    "lastSeenAt": "2026-09-07T07:22:38.426Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/notion-cli",
+    "name": "notion-cli",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Interact with and orchestrate Notion resources (Pages, Files, Data Sources, Workers, and API configurations) using the Notion CLI (ntn). Explains authentication workflows in headless environments, environment controls, and troubleshooting OS keyring constraints. Use this skill in the following scenarios: * Notion CLI I",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "environment",
+      "ui",
+      "operations",
+      "product"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/notion-cli/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "operations-design",
+      "experience-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:38.847Z",
+    "lastSeenAt": "2026-09-07T07:22:38.847Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/technical-interviewer",
+    "name": "Technical Interviewer",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "This skill governs the agent's behavior when the user requests an interview or issues the `/interview` command. It guides the agent to act as a rigorous, empathetic, and razor-sharp Technical Interviewer. Instead of making assumptions or jumping straight into coding, the agent must systematically probe the user's inten",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "architecture",
+      "design",
+      "map",
+      "environment",
+      "ui",
+      "layout",
+      "accessibility",
+      "product",
+      "mobile"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/technical-interviewer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "experience-design",
+      "operations-design"
+    ],
+    "qualityScore": 57,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:40.271Z",
+    "lastSeenAt": "2026-09-07T07:22:40.271Z"
   },
   {
     "id": "ComponentDock/free-react-templates/docx",
@@ -1337,7 +2497,7 @@
     "source": "ComponentDock/free-react-templates",
     "summary": "Create, read, edit Word .docx documents and templates.",
     "security": "C",
-    "signalScore": 57,
+    "signalScore": 58,
     "installs": 0,
     "repoStars": 0,
     "tags": [
@@ -1359,7 +2519,96 @@
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:18.300Z",
-    "lastSeenAt": "2026-09-06T07:10:18.300Z"
+    "lastSeenAt": "2026-09-07T07:22:44.537Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/skill-initializer",
+    "name": "initializer",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Load when a project's dreamcontext brain is missing or sparse and needs to be bootstrapped from real material — or the user invokes `/initializer`. Triggers: \"initialize my brain\", \"set up dreamcontext from my docs\", \"ingest my notes / wiki / Obsidian / Notion export\", \"there's no _dream_context yet\", \"bootstrap the co",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "design",
+      "product",
+      "research"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-initializer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "experience-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:28.561Z",
+    "lastSeenAt": "2026-09-07T07:22:28.561Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/council",
+    "name": "council",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Structured multi-agent debate for non-trivial decisions. Load when the user asks to \"debate this\", \"get second opinions\", \"help me decide\", \"run this by council\", or invokes `/council`. Orchestrates 3-10 persona CLI sessions across N rounds with structured verdicts, a live chamber board, and interactive interludes, the",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "design",
+      "product",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/council/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "architecture-design",
+      "environmental-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:29.009Z",
+    "lastSeenAt": "2026-09-07T07:22:29.009Z"
+  },
+  {
+    "id": "zyvoai/ZYVO-AI/lets-scroll",
+    "name": "lets-scroll",
+    "source": "zyvoai/ZYVO-AI",
+    "summary": "Build an immersive scroll-scrubbed \"fly through the world\" landing page for any industry or brand using Higgsfield. As the visitor scrolls, a pre-rendered camera flies from outside each scene into its interior, then flows on to the next scene with NO cuts — one continuous connected flight (Emons-style isometric diorama",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "brand",
+      "product",
+      "visual",
+      "video",
+      "interior",
+      "3d",
+      "rendering"
+    ],
+    "installUrl": "https://github.com/zyvoai/ZYVO-AI",
+    "skillsUrl": "https://github.com/zyvoai/ZYVO-AI/blob/main/config/skills/lets-scroll/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "environmental-design",
+      "architecture-design",
+      "video-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:41.864Z",
+    "lastSeenAt": "2026-09-07T07:22:41.864Z"
   },
   {
     "id": "ComponentDock/free-react-templates/maps",
@@ -1386,64 +2635,152 @@
     "qualityScore": 79,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:19.396Z",
-    "lastSeenAt": "2026-09-06T07:10:19.396Z"
+    "lastSeenAt": "2026-09-07T07:22:45.629Z"
   },
   {
-    "id": "blamouche/Engineering-Forward/skill",
-    "name": "playwright-cli",
-    "source": "blamouche/Engineering-Forward",
-    "summary": "Automate browser interactions, test web pages and work with Playwright tests.",
+    "id": "Mr-Salticidae/knowledge-base/ai-short-film-breakdown",
+    "name": "ai-short-film-breakdown",
+    "source": "Mr-Salticidae/knowledge-base",
+    "summary": "AI 短片类型判断与创作策略工作流。帮助创作者识别短片类型、选择叙事路径、规避 AI 技术短板。当用户说\"我想做一部 AI 短片\"、\"帮我拉片\"、\"分析这部 AI 视频的结构\"、\"怎么讲剧情\"时触发。",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 24,
+    "tags": [
+      "editing",
+      "film"
+    ],
+    "installUrl": "https://github.com/Mr-Salticidae/knowledge-base",
+    "skillsUrl": "https://github.com/Mr-Salticidae/knowledge-base/blob/main/07_skill存档/ai-short-film-breakdown/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "digital-media-film",
+      "ui-design",
+      "visual-communication"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:25.482Z",
+    "lastSeenAt": "2026-09-07T07:22:25.482Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/firebase-cloud-functions",
+    "name": "firebase-cloud-functions",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Complete Cloud Functions for Firebase skill — 2nd gen (Cloud Run) mandatory, idempotency, infinite loop prevention, scaling, secrets, and deployment. Use when writing or reviewing any Cloud Function.",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "product",
+      "map",
+      "environment"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/engineering/firebase-cloud-functions/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "architecture-design",
+      "environmental-design",
+      "industrial-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:29.497Z",
+    "lastSeenAt": "2026-09-07T07:22:29.497Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/multi-review",
+    "name": "multi-review",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Multi-agent code review with a router and niche specialists. Load when the user invokes `/multi-review`, says \"multi-reviewer\", \"review with a team\", \"review this PR with specialists\", \"team review\", \"thorough review\", or otherwise asks for a multi-aspect code review (security + cloud-functions + frontend + edge-cases)",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "design",
+      "product",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/multi-review/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "architecture-design",
+      "environmental-design",
+      "video-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:31.077Z",
+    "lastSeenAt": "2026-09-07T07:22:31.078Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/skill",
+    "name": "dreamcontext",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "AI agent persistent context management system. Activate when working on any project that has an _dream_context/ directory, when managing tasks, features, knowledge, insights (Lab analytics metrics), roadmap objectives/OKRs, automations (scheduled, unattended recurring jobs), triggers, session continuity, or when the us",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "product",
+      "cad",
+      "rendering",
+      "diagram",
+      "map"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "industrial-design",
+      "architecture-design",
+      "folk-art"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:32.115Z",
+    "lastSeenAt": "2026-09-07T07:22:32.115Z"
+  },
+  {
+    "id": "zyvoai/ZYVO-AI/cloudflare",
+    "name": "cloudflare",
+    "source": "zyvoai/ZYVO-AI",
+    "summary": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task.",
     "security": "C",
     "signalScore": 56,
     "installs": 0,
     "repoStars": 1,
     "tags": [
-      "design",
-      "map",
-      "ui",
-      "interaction"
+      "video",
+      "audio",
+      "communication",
+      "vector",
+      "product",
+      "rendering"
     ],
-    "installUrl": "https://github.com/blamouche/Engineering-Forward",
-    "skillsUrl": "https://github.com/blamouche/Engineering-Forward/blob/main/substack/node_modules/playwright-core/lib/tools/cli-client/skill/SKILL.md",
+    "installUrl": "https://github.com/zyvoai/ZYVO-AI",
+    "skillsUrl": "https://github.com/zyvoai/ZYVO-AI/blob/main/packages/opencode/test/fixture/skills/cloudflare/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "architecture-design",
-      "ui-design",
-      "experience-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:14.336Z",
-    "lastSeenAt": "2026-09-06T07:10:14.336Z"
-  },
-  {
-    "id": "aganesy/QFAI/web-research",
-    "name": "web-research",
-    "source": "aganesy/QFAI",
-    "summary": "8-stage web research pipeline with MCP integration, caching, and citation generation.",
-    "security": "C",
-    "signalScore": 55,
-    "installs": 0,
-    "repoStars": 4,
-    "tags": [
-      "research",
-      "media",
-      "ui"
-    ],
-    "installUrl": "https://github.com/aganesy/QFAI",
-    "skillsUrl": "https://github.com/aganesy/QFAI/blob/main/.qfai/assistant/skills/web-research/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "digital-media-film",
-      "ui-design",
-      "folk-art"
+      "video-design",
+      "visual-communication",
+      "industrial-design",
+      "operations-design"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:10.263Z",
-    "lastSeenAt": "2026-09-06T07:10:10.263Z"
+    "firstSeenAt": "2026-09-07T07:22:42.673Z",
+    "lastSeenAt": "2026-09-07T07:22:42.673Z"
   },
   {
     "id": "ComponentDock/free-react-templates/google-workspace",
@@ -1451,7 +2788,7 @@
     "source": "ComponentDock/free-react-templates",
     "summary": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
     "security": "C",
-    "signalScore": 55,
+    "signalScore": 56,
     "installs": 0,
     "repoStars": 0,
     "tags": [
@@ -1472,7 +2809,146 @@
     "qualityScore": 96,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:19.037Z",
-    "lastSeenAt": "2026-09-06T07:10:19.037Z"
+    "lastSeenAt": "2026-09-07T07:22:45.310Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/skill-deep-research",
+    "name": "dreamcontext-deep-research",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Load when a question needs synthesis across a LARGE or MULTI-PROJECT dreamcontext corpus — more than `dreamcontext-explore` can answer in a single fast pass — or the user invokes `/dreamcontext-deep-research`. Triggers: \"deep research the brain\", \"research this across my projects\", \"synthesize what we know about X acro",
+    "security": "C",
+    "signalScore": 54,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "product",
+      "research",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-deep-research/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "experience-design",
+      "architecture-design",
+      "environmental-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:28.320Z",
+    "lastSeenAt": "2026-09-07T07:22:28.320Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/goal-skill",
+    "name": "goal-skill",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Load when the user wants to drive a non-trivial goal to completion under rigorous sub-agent orchestration, or invokes `/goal-skill`. Triggers: \"drive this goal to completion\", \"subagent-driven development\", \"SDD\", \"orchestrate this build\", \"run this end-to-end with reviewers\", \"build this properly with planning and val",
+    "security": "C",
+    "signalScore": 54,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/goal-skill/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "industrial-design",
+      "experience-design",
+      "ui-design"
+    ],
+    "qualityScore": 77,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:30.571Z",
+    "lastSeenAt": "2026-09-07T07:22:30.571Z"
+  },
+  {
+    "id": "meanllbrl/dreamcontext/skill-sync",
+    "name": "dream-sync",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Load when the user asks to sync/reconcile the dreamcontext brain repo with a team (a shared `_dream_context/` git remote), or when `dreamcontext brain sync` (or the SessionStart snapshot) reports a team merge awaiting resolution. Triggers: \"/dream-sync\", \"sync the brain\", \"reconcile with the team\", \"resolve the brain m",
+    "security": "C",
+    "signalScore": 54,
+    "installs": 0,
+    "repoStars": 12,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-sync/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "industrial-design",
+      "experience-design",
+      "ui-design"
+    ],
+    "qualityScore": 80,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:31.955Z",
+    "lastSeenAt": "2026-09-07T07:22:31.955Z"
+  },
+  {
+    "id": "shifatmasud/Shade-DS/vite-dependency-repair",
+    "name": "vite-dependency-repair",
+    "source": "shifatmasud/Shade-DS",
+    "summary": "Debugging and repairing Vite import-analysis errors, missing package entrypoints, and corrupted node_modules installations.",
+    "security": "C",
+    "signalScore": 54,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "ui",
+      "motion"
+    ],
+    "installUrl": "https://github.com/shifatmasud/Shade-DS",
+    "skillsUrl": "https://github.com/shifatmasud/Shade-DS/blob/main/skills/vite-dependency-repair/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "operations-design",
+      "video-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:40.587Z",
+    "lastSeenAt": "2026-09-07T07:22:40.587Z"
+  },
+  {
+    "id": "ComponentDock/free-react-templates/ocr-and-documents",
+    "name": "ocr-and-documents",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+    "security": "C",
+    "signalScore": 54,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "product",
+      "ux",
+      "research",
+      "ui",
+      "layout"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/productivity/ocr-and-documents/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "experience-design",
+      "ui-design",
+      "visual-communication"
+    ],
+    "qualityScore": 83,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-06T07:10:20.217Z",
+    "lastSeenAt": "2026-09-07T07:22:46.379Z"
   },
   {
     "id": "ComponentDock/free-react-templates/teams-meeting-pipeline",
@@ -1500,96 +2976,34 @@
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:22.011Z",
-    "lastSeenAt": "2026-09-06T07:10:22.011Z"
+    "lastSeenAt": "2026-09-07T07:22:48.139Z"
   },
   {
-    "id": "ComponentDock/free-react-templates/ocr-and-documents",
-    "name": "ocr-and-documents",
-    "source": "ComponentDock/free-react-templates",
-    "summary": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+    "id": "meanllbrl/dreamcontext/business-idea-validation",
+    "name": "business-idea-validation",
+    "source": "meanllbrl/dreamcontext",
+    "summary": "Sequential stage-gate pipeline for deep business idea validation. 9 stages, 6 specialist sub-agents, kill gates between every stage. Takes an idea from raw concept through problem validation, customer analysis, market sizing, competitive intel, customer simulation, synthesis, GTM strategy, financial viability, to a sco",
     "security": "C",
     "signalScore": 53,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 12,
     "tags": [
       "product",
-      "ux",
-      "research",
-      "ui",
-      "layout"
+      "research"
     ],
-    "installUrl": "https://github.com/ComponentDock/free-react-templates",
-    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/productivity/ocr-and-documents/SKILL.md",
+    "installUrl": "https://github.com/meanllbrl/dreamcontext",
+    "skillsUrl": "https://github.com/meanllbrl/dreamcontext/blob/main/skill-packs/business-idea-validation/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "industrial-design",
-      "experience-design",
-      "ui-design",
-      "visual-communication"
-    ],
-    "qualityScore": 83,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-06T07:10:20.217Z",
-    "lastSeenAt": "2026-09-06T07:10:20.217Z"
-  },
-  {
-    "id": "adammatthewsteinberger/vibey-skills/narrative-structure",
-    "name": "narrative-structure",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when structuring stories, pitches, presentations, white papers, or any persuasive narrative; analyzing the hero's journey in fiction or non-fiction; applying StoryBrand for business communication; designing narrative arcs for thought leadership; or understanding Vogler, Snyder, Propp, or Campbell frameworks. Trigge",
-    "security": "C",
-    "signalScore": 52,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "craft",
-      "design",
-      "brand",
-      "product",
-      "communication"
-    ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/writing-craft/skills/narrative-structure/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "arts-crafts",
       "operations-design",
-      "visual-communication",
-      "industrial-design"
+      "experience-design",
+      "industrial-design",
+      "ui-design"
     ],
-    "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:13.639Z",
-    "lastSeenAt": "2026-09-06T07:10:13.639Z"
-  },
-  {
-    "id": "adammatthewsteinberger/vibey-skills/prose-technical-mechanics",
-    "name": "prose-technical-mechanics",
-    "source": "adammatthewsteinberger/vibey-skills",
-    "summary": "Use when editing or writing prose at a technical/mechanical level: choosing between Anglo-Saxon and Latinate diction, placing information in topic vs stress positions, writing periodic vs cumulative sentences, handling sentence rhythm, punctuation as logic, transitions, paragraph structure, or phonesthetics. Use when s",
-    "security": "C",
-    "signalScore": 52,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "craft",
-      "motion",
-      "editing",
-      "media"
-    ],
-    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
-    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/writing-craft/skills/prose-technical-mechanics/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "arts-crafts",
-      "video-design",
-      "digital-media-film",
-      "folk-art"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 94,
-    "firstSeenAt": "2026-09-06T07:10:13.975Z",
-    "lastSeenAt": "2026-09-06T07:10:13.975Z"
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-07T07:22:28.865Z",
+    "lastSeenAt": "2026-09-07T07:22:28.865Z"
   },
   {
     "id": "ComponentDock/free-react-templates/nano-pdf",
@@ -1597,7 +3011,7 @@
     "source": "ComponentDock/free-react-templates",
     "summary": "Edit text in existing PDFs via natural-language prompts.",
     "security": "C",
-    "signalScore": 52,
+    "signalScore": 53,
     "installs": 0,
     "repoStars": 0,
     "tags": [
@@ -1618,7 +3032,7 @@
     "qualityScore": 79,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:19.556Z",
-    "lastSeenAt": "2026-09-06T07:10:19.556Z"
+    "lastSeenAt": "2026-09-07T07:22:45.784Z"
   },
   {
     "id": "ComponentDock/free-react-templates/surge-per-template-deploy",
@@ -1626,7 +3040,7 @@
     "source": "ComponentDock/free-react-templates",
     "summary": "Deploy static sites per-project to Surge.sh subdomains.",
     "security": "C",
-    "signalScore": 52,
+    "signalScore": 53,
     "installs": 0,
     "repoStars": 0,
     "tags": [
@@ -1647,6 +3061,6 @@
     "qualityScore": 79,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-06T07:10:21.872Z",
-    "lastSeenAt": "2026-09-06T07:10:21.873Z"
+    "lastSeenAt": "2026-09-07T07:22:47.987Z"
   }
 ]

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-06T07:13:00.708Z",
+  "generatedAt": "2026-09-07T07:25:45.911Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 50,
-  "passRate": 0.926,
+  "passed": 51,
+  "passRate": 0.944,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,30 +13,30 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 40,
-    "passRate": 0.909
+    "passed": 41,
+    "passRate": 0.932
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 3,
+  "specificityFailures": 2,
   "capabilityGapCases": 31,
-  "averageRecommendationCount": 1.91,
-  "averageRelevantTop3": 1.91,
-  "averageTop1Score": 76.7,
+  "averageRecommendationCount": 1.94,
+  "averageRelevantTop3": 1.94,
+  "averageTop1Score": 76.1,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 132,
-  "anchorSignalHitsTotal": 31,
+  "signalHitsTotal": 131,
+  "anchorSignalHitsTotal": 32,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
-      "passed": 5,
+      "passed": 6,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 1,
+      "specificityFailures": 0,
       "capabilityGapCases": 5,
-      "passRate": 0.833,
-      "averageRecommendationCount": 1.33
+      "passRate": 1,
+      "averageRecommendationCount": 1.5
     },
     "Frontend": {
       "cases": 8,
@@ -46,7 +46,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 7,
       "passRate": 1,
-      "averageRecommendationCount": 1.63
+      "averageRecommendationCount": 1.5
     },
     "Design & Media": {
       "cases": 5,
@@ -76,7 +76,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 2,
       "passRate": 1,
-      "averageRecommendationCount": 2.2
+      "averageRecommendationCount": 2.4
     },
     "Testing & Quality": {
       "cases": 5,
@@ -86,7 +86,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 3,
       "passRate": 1,
-      "averageRecommendationCount": 1.8
+      "averageRecommendationCount": 2
     },
     "Backend & API": {
       "cases": 4,
@@ -533,13 +533,13 @@
       "tier": "contract",
       "pass": true,
       "top3": [
+        "MosaicXR-AI/mosaic-bridge/mosaic-scene",
         "curiositech/some_claude_skills/interior-design-expert",
-        "V4TIME/V4SKILL/manim-video",
         "roble3/cc-blender-skill/blender-rendering"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 80,
+      "top1_score": 82,
       "expected_hits": 0,
       "signal_hits": 4,
       "anchor_signal_hits": 0,
@@ -550,6 +550,22 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "MosaicXR-AI/mosaic-bridge/mosaic-scene",
+          "score": 82,
+          "coverage": 0.75,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "architecture",
+            "rendering",
+            "spatial"
+          ]
+        },
         {
           "id": "curiositech/some_claude_skills/interior-design-expert",
           "score": 80,
@@ -563,22 +579,6 @@
           "signals": [
             "architecture",
             "interior",
-            "spatial"
-          ]
-        },
-        {
-          "id": "V4TIME/V4SKILL/manim-video",
-          "score": 79,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "architecture",
-            "rendering",
             "spatial"
           ]
         },
@@ -601,13 +601,13 @@
       ],
       "signals": [
         "architecture",
-        "interior",
+        "rendering",
         "spatial",
+        "mosaicxr-ai-mosaic-bridge-mosaic-scene",
+        "mosaic-scene",
+        "interior",
         "curiositech-some-claude-skills-interior-design-expert",
         "interior-design-expert",
-        "rendering",
-        "v4time-v4skill-manim-video",
-        "manim-video",
         "roble3-cc-blender-skill-blender-rendering",
         "blender-rendering"
       ]
@@ -866,22 +866,45 @@
       "id": "mcp-agent-tools",
       "domain": "AI Agents",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "shifatmasud/Shade-DS/mcp-cli"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 39,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 2,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "shifatmasud/Shade-DS/mcp-cli",
+          "score": 39,
+          "coverage": 0.26,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "mcp",
+            "tools"
+          ]
+        }
+      ],
+      "signals": [
+        "mcp",
+        "tools",
+        "shifatmasud-shade-ds-mcp-cli",
+        "mcp-cli"
+      ]
     },
     {
       "id": "structured-output",
@@ -1156,10 +1179,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nextjs",
-        "CopilotKit/CopilotKit/react-core-507281"
+        "nextjs"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 93,
       "expected_hits": 1,
@@ -1168,7 +1190,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1190,22 +1212,6 @@
             "route",
             "architecture"
           ]
-        },
-        {
-          "id": "CopilotKit/CopilotKit/react-core-507281",
-          "score": 68,
-          "coverage": 0.56,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "nextjs",
-            "app-router",
-            "route"
-          ]
         }
       ],
       "signals": [
@@ -1214,9 +1220,7 @@
         "data",
         "fetching",
         "route",
-        "architecture",
-        "copilotkit-copilotkit-react-core-507281",
-        "react-core"
+        "architecture"
       ]
     },
     {
@@ -1857,9 +1861,10 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "systematic-debugging"
+        "systematic-debugging",
+        "shifatmasud/Shade-DS/agent-debugging"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 85,
       "expected_hits": 1,
@@ -1868,7 +1873,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1890,6 +1895,23 @@
             "before",
             "patching"
           ]
+        },
+        {
+          "id": "shifatmasud/Shade-DS/agent-debugging",
+          "score": 60,
+          "coverage": 0.45,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "debug",
+            "verify",
+            "root",
+            "cause"
+          ]
         }
       ],
       "signals": [
@@ -1899,7 +1921,10 @@
         "cause",
         "before",
         "patching",
-        "systematic-debugging"
+        "systematic-debugging",
+        "verify",
+        "shifatmasud-shade-ds-agent-debugging",
+        "agent-debugging"
       ]
     },
     {
@@ -2089,7 +2114,7 @@
       "top3": [
         "github",
         "ruvnet/ruflo/github-automation-48be15",
-        "ruvnet/ruflo/github-workflow-automation-4ada72"
+        "sickn33/agentic-awesome-skills/github-automation-a88f77"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2139,18 +2164,17 @@
           ]
         },
         {
-          "id": "ruvnet/ruflo/github-workflow-automation-4ada72",
-          "score": 72,
-          "coverage": 0.64,
+          "id": "sickn33/agentic-awesome-skills/github-automation-a88f77",
+          "score": 67,
+          "coverage": 0.5,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 1,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
             "github",
-            "ci",
             "workflow",
             "repository"
           ]
@@ -2163,8 +2187,7 @@
         "repository",
         "ruvnet-ruflo-github-automation-48be15",
         "github-automation",
-        "ruvnet-ruflo-github-workflow-automation-4ada72",
-        "github-workflow-automation"
+        "sickn33-agentic-awesome-skills-github-automation-a88f77"
       ]
     },
     {
@@ -2173,9 +2196,10 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "workers-best-practices"
+        "workers-best-practices",
+        "shifatmasud/Shade-DS/cloudflare-cli"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 88,
       "expected_hits": 1,
@@ -2184,7 +2208,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2204,6 +2228,22 @@
             "edge",
             "deployment"
           ]
+        },
+        {
+          "id": "shifatmasud/Shade-DS/cloudflare-cli",
+          "score": 72,
+          "coverage": 0.72,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "cloudflare-workers",
+            "deployment",
+            "architecture"
+          ]
         }
       ],
       "signals": [
@@ -2211,7 +2251,10 @@
         "review",
         "edge",
         "deployment",
-        "workers-best-practices"
+        "workers-best-practices",
+        "architecture",
+        "shifatmasud-shade-ds-cloudflare-cli",
+        "cloudflare-integration"
       ]
     },
     {
@@ -2447,8 +2490,8 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
         "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
+        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
         "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43"
       ],
       "recommendation_count": 3,
@@ -2465,7 +2508,7 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
+          "id": "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
           "score": 94,
           "coverage": 1,
           "expected": false,
@@ -2481,8 +2524,8 @@
           ]
         },
         {
-          "id": "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
-          "score": 94,
+          "id": "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
+          "score": 93,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -2517,10 +2560,10 @@
         "react-native",
         "expo",
         "mobile",
-        "callstackincubator-agent-skills-react-native-brownfield-migration-d1e8d7",
-        "react-native-brownfield-migration",
         "sickn33-agentic-awesome-skills-add-app-clip-43a9ab",
         "add-app-clip",
+        "callstackincubator-agent-skills-react-native-brownfield-migration-d1e8d7",
+        "react-native-brownfield-migration",
         "callstackincubator-agent-skills-react-native-tv-best-practices-a5fe43",
         "react-native-tv-best-practices"
       ]
@@ -2830,8 +2873,8 @@
       "pass": true,
       "top3": [
         "slackapi/slack-skills-plugin/slack-messaging-fa1468",
-        "screenpipe/screenpipe/screenpipe-cli-613d28",
-        "slackapi/slack-skills-plugin/slack-api-fc39b8"
+        "slackapi/slack-skills-plugin/slack-api-fc39b8",
+        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2862,7 +2905,7 @@
           ]
         },
         {
-          "id": "screenpipe/screenpipe/screenpipe-cli-613d28",
+          "id": "slackapi/slack-skills-plugin/slack-api-fc39b8",
           "score": 53,
           "coverage": 0.47,
           "expected": false,
@@ -2877,7 +2920,7 @@
           ]
         },
         {
-          "id": "slackapi/slack-skills-plugin/slack-api-fc39b8",
+          "id": "slackapi/slack-skills-plugin/create-slack-app-9a524c",
           "score": 53,
           "coverage": 0.47,
           "expected": false,
@@ -2897,10 +2940,10 @@
         "integration",
         "slackapi-slack-skills-plugin-slack-messaging-fa1468",
         "slack-messaging",
-        "screenpipe-screenpipe-screenpipe-cli-613d28",
-        "screenpipe-cli",
         "slackapi-slack-skills-plugin-slack-api-fc39b8",
-        "slack-api"
+        "slack-api",
+        "slackapi-slack-skills-plugin-create-slack-app-9a524c",
+        "create-slack-app"
       ]
     },
     {
@@ -2958,7 +3001,7 @@
         },
         {
           "id": "googleworkspace/cli/gws-calendar-03339c",
-          "score": 59,
+          "score": 58,
           "coverage": 0.42,
           "expected": false,
           "relevant": true,
@@ -3037,46 +3080,21 @@
       "domain": "Docs & Research",
       "tier": "coverage",
       "pass": false,
-      "top3": [
-        "lemma-work/lemma-platform/lemma-app-design"
-      ],
-      "recommendation_count": 1,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 67,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 3,
+      "signal_hits": 0,
       "anchor_signal_hits": 0,
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "lemma-work/lemma-platform/lemma-app-design",
-          "score": 67,
-          "coverage": 0.56,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "information-architecture",
-            "product",
-            "ux"
-          ]
-        }
-      ],
-      "signals": [
-        "information-architecture",
-        "product",
-        "ux",
-        "lemma-work-lemma-platform-lemma-app-design",
-        "lemma-app-design"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "notion-research",
@@ -3084,18 +3102,19 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "notion"
+        "notion",
+        "meanllbrl/dreamcontext/skill-initializer"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 86,
       "expected_hits": 1,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -3117,6 +3136,23 @@
             "knowledge",
             "notion"
           ]
+        },
+        {
+          "id": "meanllbrl/dreamcontext/skill-initializer",
+          "score": 60,
+          "coverage": 0.52,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "research",
+            "notes",
+            "project",
+            "notion"
+          ]
         }
       ],
       "signals": [
@@ -3125,7 +3161,9 @@
         "project",
         "planning",
         "knowledge",
-        "notion"
+        "notion",
+        "meanllbrl-dreamcontext-skill-initializer",
+        "initializer"
       ]
     },
     {
@@ -3220,7 +3258,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "V4TIME/V4SKILL/popular-web-designs"
+        "ComponentDock/free-react-templates/popular-web-designs"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3270,7 +3308,7 @@
           ]
         },
         {
-          "id": "V4TIME/V4SKILL/popular-web-designs",
+          "id": "ComponentDock/free-react-templates/popular-web-designs",
           "score": 61,
           "coverage": 0.46,
           "expected": false,
@@ -3294,7 +3332,7 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "v4time-v4skill-popular-web-designs",
+        "componentdock-free-react-templates-popular-web-designs",
         "popular-web-designs"
       ]
     },
@@ -3423,7 +3461,7 @@
         },
         {
           "id": "vanducng/skills/marketing-design-678c70",
-          "score": 52,
+          "score": 51,
           "coverage": 0.29,
           "expected": false,
           "relevant": true,
@@ -3472,13 +3510,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nagisanzenin/MathTuber/mathtuber",
+        "shifatmasud/Shade-DS/framer-code-components-overrides",
         "remotion-dev/skills/remotion-best-practices",
-        "EKKOLearnAI/hermes-studio/hyperframes-27241c"
+        "Mr-Salticidae/knowledge-base/remotion-skill"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 94,
+      "top1_score": 93,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3490,8 +3528,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "nagisanzenin/MathTuber/mathtuber",
-          "score": 94,
+          "id": "shifatmasud/Shade-DS/framer-code-components-overrides",
+          "score": 93,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -3523,19 +3561,19 @@
           ]
         },
         {
-          "id": "EKKOLearnAI/hermes-studio/hyperframes-27241c",
-          "score": 82,
+          "id": "Mr-Salticidae/knowledge-base/remotion-skill",
+          "score": 83,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "video",
             "motion",
-            "animation"
+            "editing"
           ]
         }
       ],
@@ -3544,12 +3582,12 @@
         "motion",
         "editing",
         "animation",
-        "nagisanzenin-mathtuber-mathtuber",
-        "mathtuber",
+        "shifatmasud-shade-ds-framer-code-components-overrides",
+        "framer-code-components-overrides",
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
-        "ekkolearnai-hermes-studio-hyperframes-27241c",
-        "hyperframes"
+        "mr-salticidae-knowledge-base-remotion-skill",
+        "remotion-explainer-workflow"
       ]
     },
     {
@@ -3558,13 +3596,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "V4TIME/V4SKILL/manim-video",
-        "katopz/katgpt-rs/boundary-guard",
-        "adammatthewsteinberger/vibey-skills/cad-reference"
+        "meanllbrl/dreamcontext/skill",
+        "shifatmasud/Shade-DS/decoupled-kinetic-scrub",
+        "meanllbrl/dreamcontext/business-idea-discovery"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 93,
+      "top1_score": 89,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3576,8 +3614,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "V4TIME/V4SKILL/manim-video",
-          "score": 93,
+          "id": "meanllbrl/dreamcontext/skill",
+          "score": 89,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -3594,25 +3632,7 @@
           ]
         },
         {
-          "id": "katopz/katgpt-rs/boundary-guard",
-          "score": 90,
-          "coverage": 1,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "cad",
-            "industrial-design",
-            "industrial",
-            "product",
-            "cad"
-          ]
-        },
-        {
-          "id": "adammatthewsteinberger/vibey-skills/cad-reference",
+          "id": "shifatmasud/Shade-DS/decoupled-kinetic-scrub",
           "score": 83,
           "coverage": 0.78,
           "expected": false,
@@ -3627,6 +3647,22 @@
             "industrial",
             "cad"
           ]
+        },
+        {
+          "id": "meanllbrl/dreamcontext/business-idea-discovery",
+          "score": 77,
+          "coverage": 0.67,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "industrial-design",
+            "industrial",
+            "product"
+          ]
         }
       ],
       "signals": [
@@ -3634,12 +3670,12 @@
         "industrial-design",
         "industrial",
         "product",
-        "v4time-v4skill-manim-video",
-        "manim-video",
-        "katopz-katgpt-rs-boundary-guard",
-        "boundary-guard",
-        "adammatthewsteinberger-vibey-skills-cad-reference",
-        "cad-reference"
+        "meanllbrl-dreamcontext-skill",
+        "dreamcontext",
+        "shifatmasud-shade-ds-decoupled-kinetic-scrub",
+        "decoupled-kinetic-scrub",
+        "meanllbrl-dreamcontext-business-idea-discovery",
+        "business-idea-discovery"
       ]
     }
   ]
