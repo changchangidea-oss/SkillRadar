@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-09-07T07:26:06.603Z",
+  "generatedAt": "2026-09-08T07:20:41.490Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "8e8d95ff897c165c926d20606e0c0bcb4fa471a7045b6dee2796cb64b7950deb",
+    "contentHash": "b1ee983c13a4c7e0d9e16997e0fc087f6eb4dbc463879d929a9b8c11164a6429",
     "contentHashVersion": 2,
-    "generatedAt": "2026-09-07T07:25:32.079Z",
+    "generatedAt": "2026-09-08T07:20:07.259Z",
     "totalCount": 438,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 51,
+    "passed": 49,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 41,
+    "coveragePassed": 39,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
-    "specificityFailures": 2,
+    "specificityFailures": 3,
     "capabilityGapCases": 31,
-    "averageRecommendationCount": 1.94,
-    "expectedHitsTotal": 31,
-    "signalHitsTotal": 131,
-    "anchorSignalHitsTotal": 32,
-    "averageTop1Score": 76.1
+    "averageRecommendationCount": 1.87,
+    "expectedHitsTotal": 30,
+    "signalHitsTotal": 129,
+    "anchorSignalHitsTotal": 31,
+    "averageTop1Score": 75
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 51,
+    "passed": 49,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 41,
+    "coveragePassed": 39,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 3,
-    "specificityFailures": 2,
-    "capabilityGapCases": 30,
-    "averageRecommendationCount": 2,
-    "expectedHitsTotal": 31,
-    "signalHitsTotal": 131,
-    "anchorSignalHitsTotal": 32,
-    "averageTop1Score": 76.1
+    "lowEvidenceTop3": 1,
+    "specificityFailures": 3,
+    "capabilityGapCases": 31,
+    "averageRecommendationCount": 1.89,
+    "expectedHitsTotal": 30,
+    "signalHitsTotal": 129,
+    "anchorSignalHitsTotal": 31,
+    "averageTop1Score": 75
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": -3
+    "evidenceDelta": -1
   },
   "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
@@ -125,15 +125,14 @@
         "shadcn"
       ],
       "candidateTop3": [
-        "shadcn",
-        "nexu-io/open-design/github-dashboard-a45aef"
+        "shadcn"
       ],
       "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 2,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
-      "lowEvidenceDelta": 1
+      "lowEvidenceDelta": 0
     },
     {
       "id": "react-performance",
@@ -186,14 +185,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "MosaicXR-AI/mosaic-bridge/mosaic-scene",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering"
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "candidateTop3": [
-        "MosaicXR-AI/mosaic-bridge/mosaic-scene",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering"
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -286,18 +285,14 @@
     },
     {
       "id": "mcp-agent-tools",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
-      "productionTop3": [
-        "shifatmasud/Shade-DS/mcp-cli"
-      ],
-      "candidateTop3": [
-        "shifatmasud/Shade-DS/mcp-cli"
-      ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -314,11 +309,10 @@
       ],
       "candidateTop3": [
         "ai-sdk",
-        "nexu-io/open-design/clinical-case-report-638ff1",
         "bytedance/deer-flow/bootstrap-6bb753"
       ],
       "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 3,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -600,19 +594,19 @@
     },
     {
       "id": "code-review-refactor",
-      "productionPass": true,
-      "candidatePass": true,
+      "productionPass": false,
+      "candidatePass": false,
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
         "github/awesome-copilot/sql-code-review-15c076",
         "react-best-practices",
-        "flutter/agent-plugins/code-review-e26d76"
+        "langflow-ai/langflow/frontend-code-review-62e503"
       ],
       "candidateTop3": [
         "github/awesome-copilot/sql-code-review-15c076",
         "react-best-practices",
-        "flutter/agent-plugins/code-review-e26d76"
+        "langflow-ai/langflow/frontend-code-review-62e503"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -647,15 +641,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "systematic-debugging",
-        "shifatmasud/Shade-DS/agent-debugging"
+        "systematic-debugging"
       ],
       "candidateTop3": [
-        "systematic-debugging",
-        "shifatmasud/Shade-DS/agent-debugging"
+        "systematic-debugging"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -674,7 +666,7 @@
       ],
       "candidateTop3": [
         "deployments-cicd",
-        "MosaicXR-AI/mosaic-bridge/mosaic-scene",
+        "alirezarezvani/claude-skills/senior-devops-c3128d",
         "davila7/claude-code-templates/github-automation-1fe5ef"
       ],
       "productionRecommendationCount": 3,
@@ -682,7 +674,7 @@
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
-      "lowEvidenceDelta": 1
+      "lowEvidenceDelta": 0
     },
     {
       "id": "docker-kubernetes",
@@ -737,15 +729,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "workers-best-practices",
-        "shifatmasud/Shade-DS/cloudflare-cli"
+        "workers-best-practices"
       ],
       "candidateTop3": [
-        "workers-best-practices",
-        "shifatmasud/Shade-DS/cloudflare-cli"
+        "workers-best-practices"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -840,12 +830,12 @@
       "productionTop3": [
         "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43"
+        "sickn33/agentic-awesome-skills/mobile-developer-5a23e8"
       ],
       "candidateTop3": [
         "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43"
+        "sickn33/agentic-awesome-skills/mobile-developer-5a23e8"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1029,15 +1019,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "notion",
-        "meanllbrl/dreamcontext/skill-initializer"
+        "notion"
       ],
       "candidateTop3": [
-        "notion",
-        "meanllbrl/dreamcontext/skill-initializer"
+        "notion"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1075,12 +1063,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "ComponentDock/free-react-templates/popular-web-designs"
+        "nexu-io/open-design/token-map"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "ComponentDock/free-react-templates/popular-web-designs"
+        "figma/mcp-server-guide/figma-generate-design"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1098,12 +1086,12 @@
       "productionTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "ComponentDock/free-react-templates/colorlib-template-replication"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "candidateTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "ComponentDock/free-react-templates/colorlib-template-replication"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1142,14 +1130,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "shifatmasud/Shade-DS/framer-code-components-overrides",
         "remotion-dev/skills/remotion-best-practices",
-        "Mr-Salticidae/knowledge-base/remotion-skill"
+        "EKKOLearnAI/hermes-studio/hyperframes-27241c",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "candidateTop3": [
-        "shifatmasud/Shade-DS/framer-code-components-overrides",
         "remotion-dev/skills/remotion-best-practices",
-        "Mr-Salticidae/knowledge-base/remotion-skill"
+        "EKKOLearnAI/hermes-studio/hyperframes-27241c",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1165,14 +1153,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "meanllbrl/dreamcontext/skill",
-        "shifatmasud/Shade-DS/decoupled-kinetic-scrub",
-        "meanllbrl/dreamcontext/business-idea-discovery"
+        "nexu-io/open-design/x-research",
+        "mitsuhiko/agent-stuff/openscad",
+        "nexu-io/open-design/rewrite-plan"
       ],
       "candidateTop3": [
-        "meanllbrl/dreamcontext/skill",
-        "shifatmasud/Shade-DS/decoupled-kinetic-scrub",
-        "meanllbrl/dreamcontext/business-idea-discovery"
+        "nexu-io/open-design/x-research",
+        "mitsuhiko/agent-stuff/openscad",
+        "nexu-io/open-design/rewrite-plan"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
