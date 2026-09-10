@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-09T08:22:06.165Z",
+  "generatedAt": "2026-09-10T08:22:40.444Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
   "passed": 7,
   "passRate": 1,
   "unsafeTop3": 0,
-  "capabilityGapCases": 4,
-  "averageRecommendationCount": 2,
+  "capabilityGapCases": 3,
+  "averageRecommendationCount": 2.14,
   "averageTop1Score": 84.1,
   "projectContextFixture": "passed",
   "results": [
@@ -142,10 +142,11 @@
       "pass": true,
       "top3": [
         "frontend-design",
+        "Dicklesworthstone/pi_agent_rust/frontend-design",
         "bytedance/deer-flow/frontend-design-17b9c3"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 87,
       "expected_hits": 1,
       "signal_hits": 2,
