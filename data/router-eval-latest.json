@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-09T07:29:10.967Z",
+  "generatedAt": "2026-09-10T07:25:30.739Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 49,
-  "passRate": 0.907,
+  "passed": 52,
+  "passRate": 0.963,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,30 +13,30 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 39,
-    "passRate": 0.886
+    "passed": 42,
+    "passRate": 0.955
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 4,
-  "capabilityGapCases": 31,
-  "averageRecommendationCount": 1.85,
-  "averageRelevantTop3": 1.85,
-  "averageTop1Score": 73.6,
+  "specificityFailures": 1,
+  "capabilityGapCases": 28,
+  "averageRecommendationCount": 2,
+  "averageRelevantTop3": 2,
+  "averageTop1Score": 77.6,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 127,
-  "anchorSignalHitsTotal": 30,
+  "signalHitsTotal": 133,
+  "anchorSignalHitsTotal": 33,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
-      "passed": 5,
+      "passed": 6,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 1,
-      "capabilityGapCases": 5,
-      "passRate": 0.833,
-      "averageRecommendationCount": 1.33
+      "specificityFailures": 0,
+      "capabilityGapCases": 4,
+      "passRate": 1,
+      "averageRecommendationCount": 1.67
     },
     "Frontend": {
       "cases": 8,
@@ -44,9 +44,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 7,
+      "capabilityGapCases": 5,
       "passRate": 1,
-      "averageRecommendationCount": 1.63
+      "averageRecommendationCount": 1.88
     },
     "Design & Media": {
       "cases": 5,
@@ -66,7 +66,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 1.4
+      "averageRecommendationCount": 1.6
     },
     "DevOps & Cloud": {
       "cases": 5,
@@ -90,13 +90,13 @@
     },
     "Backend & API": {
       "cases": 4,
-      "passed": 3,
+      "passed": 4,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 1,
+      "specificityFailures": 0,
       "capabilityGapCases": 3,
-      "passRate": 0.75,
-      "averageRecommendationCount": 1.25
+      "passRate": 1,
+      "averageRecommendationCount": 1.5
     },
     "Security": {
       "cases": 4,
@@ -106,17 +106,17 @@
       "specificityFailures": 0,
       "capabilityGapCases": 3,
       "passRate": 1,
-      "averageRecommendationCount": 1.5
+      "averageRecommendationCount": 1.75
     },
     "Mobile": {
       "cases": 4,
-      "passed": 2,
+      "passed": 3,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 2,
+      "specificityFailures": 1,
       "capabilityGapCases": 1,
-      "passRate": 0.5,
-      "averageRecommendationCount": 2.25
+      "passRate": 0.75,
+      "averageRecommendationCount": 2.5
     },
     "Automation & Integrations": {
       "cases": 4,
@@ -461,10 +461,11 @@
       "pass": true,
       "top3": [
         "frontend-design",
+        "Dicklesworthstone/pi_agent_rust/frontend-design",
         "bytedance/deer-flow/frontend-design-17b9c3"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 87,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -472,7 +473,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -490,6 +491,25 @@
             "visual",
             "production",
             "polish",
+            "react",
+            "dashboard",
+            "interface"
+          ]
+        },
+        {
+          "id": "Dicklesworthstone/pi_agent_rust/frontend-design",
+          "score": 84,
+          "coverage": 0.78,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "visual",
+            "quality",
+            "production",
             "react",
             "dashboard",
             "interface"
@@ -523,6 +543,7 @@
         "interface",
         "frontend-design",
         "quality",
+        "dicklesworthstone-pi-agent-rust-frontend-design",
         "bytedance-deer-flow-frontend-design-17b9c3"
       ]
     },
@@ -808,18 +829,19 @@
       "pass": true,
       "top3": [
         "ai-sdk",
+        "Dicklesworthstone/pi_agent_rust/agents-llamaindex",
         "redis/agent-skills/redis-semantic-cache-9c2b67"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 57,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 2,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -836,6 +858,21 @@
           "signals": [
             "rag",
             "embeddings"
+          ]
+        },
+        {
+          "id": "Dicklesworthstone/pi_agent_rust/agents-llamaindex",
+          "score": 47,
+          "coverage": 0.47,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "rag",
+            "retrieval"
           ]
         },
         {
@@ -857,6 +894,9 @@
         "rag",
         "embeddings",
         "ai-sdk",
+        "retrieval",
+        "dicklesworthstone-pi-agent-rust-agents-llamaindex",
+        "llamaindex",
         "redis-agent-skills-redis-semantic-cache-9c2b67",
         "redis-semantic-cache"
       ]
@@ -865,22 +905,45 @@
       "id": "mcp-agent-tools",
       "domain": "AI Agents",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "Dicklesworthstone/pi_agent_rust/agent-memory-mcp"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 43,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 2,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "Dicklesworthstone/pi_agent_rust/agent-memory-mcp",
+          "score": 43,
+          "coverage": 0.26,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "mcp",
+            "agent"
+          ]
+        }
+      ],
+      "signals": [
+        "mcp",
+        "agent",
+        "dicklesworthstone-pi-agent-rust-agent-memory-mcp",
+        "agent-memory-mcp"
+      ]
     },
     {
       "id": "structured-output",
@@ -1085,10 +1148,11 @@
       "pass": true,
       "top3": [
         "frontend-design",
+        "Dicklesworthstone/pi_agent_rust/frontend-design",
         "bytedance/deer-flow/frontend-design-17b9c3"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 92,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -1096,7 +1160,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1113,6 +1177,24 @@
           "signals": [
             "design",
             "polished",
+            "production",
+            "react",
+            "web",
+            "landing"
+          ]
+        },
+        {
+          "id": "Dicklesworthstone/pi_agent_rust/frontend-design",
+          "score": 80,
+          "coverage": 0.7,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "design",
             "production",
             "react",
             "web",
@@ -1146,6 +1228,7 @@
         "web",
         "landing",
         "frontend-design",
+        "dicklesworthstone-pi-agent-rust-frontend-design",
         "bytedance-deer-flow-frontend-design-17b9c3"
       ]
     },
@@ -1355,22 +1438,47 @@
       "id": "graphql-server",
       "domain": "Backend & API",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "Dicklesworthstone/pi_agent_rust/api-design-principles"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 66,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 2,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "Dicklesworthstone/pi_agent_rust/api-design-principles",
+          "score": 66,
+          "coverage": 0.6,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "design",
+            "graphql",
+            "api"
+          ]
+        }
+      ],
+      "signals": [
+        "design",
+        "graphql",
+        "api",
+        "dicklesworthstone-pi-agent-rust-api-design-principles",
+        "api-design-principles"
+      ]
     },
     {
       "id": "root-cause-api-debug",
@@ -1425,18 +1533,19 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "supabase-postgres-best-practices"
+        "supabase-postgres-best-practices",
+        "Dicklesworthstone/pi_agent_rust/postgresql"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 86,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1456,6 +1565,22 @@
             "database",
             "performance"
           ]
+        },
+        {
+          "id": "Dicklesworthstone/pi_agent_rust/postgresql",
+          "score": 62,
+          "coverage": 0.58,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "postgres",
+            "schema",
+            "performance"
+          ]
         }
       ],
       "signals": [
@@ -1463,7 +1588,9 @@
         "schema",
         "database",
         "performance",
-        "supabase-postgres-best-practices"
+        "supabase-postgres-best-practices",
+        "dicklesworthstone-pi-agent-rust-postgresql",
+        "postgresql-table-design"
       ]
     },
     {
@@ -2295,24 +2422,41 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e",
+        "code-yeongyu/oh-my-openagent/security-research"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 66,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
         {
           "id": "RevealUIStudio/revskills/security-hardening-f5fe4e",
           "score": 66,
+          "coverage": 0.55,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "review",
+            "security",
+            "vulnerability"
+          ]
+        },
+        {
+          "id": "code-yeongyu/oh-my-openagent/security-research",
+          "score": 62,
           "coverage": 0.55,
           "expected": false,
           "relevant": true,
@@ -2332,7 +2476,9 @@
         "security",
         "vulnerability",
         "revealuistudio-revskills-security-hardening-f5fe4e",
-        "security-hardening"
+        "security-hardening",
+        "code-yeongyu-oh-my-openagent-security-research",
+        "security-research"
       ]
     },
     {
@@ -2501,22 +2647,51 @@
       "id": "swiftui-ios",
       "domain": "Mobile",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "Dicklesworthstone/pi_agent_rust/mobile-ios-design"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 95,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 3,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "Dicklesworthstone/pi_agent_rust/mobile-ios-design",
+          "score": 95,
+          "coverage": 1,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "ios",
+            "interface",
+            "swiftui",
+            "mobile",
+            "patterns"
+          ]
+        }
+      ],
+      "signals": [
+        "ios",
+        "interface",
+        "swiftui",
+        "mobile",
+        "patterns",
+        "dicklesworthstone-pi-agent-rust-mobile-ios-design",
+        "mobile-ios-design"
+      ]
     },
     {
       "id": "android-kotlin",
@@ -2524,13 +2699,13 @@
       "tier": "coverage",
       "pass": false,
       "top3": [
-        "callstackincubator/agent-skills/agent-device-f62531",
+        "Dicklesworthstone/pi_agent_rust/mobile-android-design",
         "TriliumNext/Trilium/developing-capacitor-mobile-dab7e0",
-        "gmh5225/awesome-game-security/mobile-security-9abeca"
+        "callstackincubator/agent-skills/agent-device-f62531"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 68,
+      "top1_score": 69,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -2542,8 +2717,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "callstackincubator/agent-skills/agent-device-f62531",
-          "score": 68,
+          "id": "Dicklesworthstone/pi_agent_rust/mobile-android-design",
+          "score": 69,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -2572,7 +2747,7 @@
           ]
         },
         {
-          "id": "gmh5225/awesome-game-security/mobile-security-9abeca",
+          "id": "callstackincubator/agent-skills/agent-device-f62531",
           "score": 68,
           "coverage": 0.67,
           "expected": false,
@@ -2590,12 +2765,12 @@
       "signals": [
         "android",
         "mobile",
-        "callstackincubator-agent-skills-agent-device-f62531",
-        "agent-device",
+        "dicklesworthstone-pi-agent-rust-mobile-android-design",
+        "mobile-android-design",
         "triliumnext-trilium-developing-capacitor-mobile-dab7e0",
         "developing-capacitor-mobile",
-        "gmh5225-awesome-game-security-mobile-security-9abeca",
-        "mobile-security"
+        "callstackincubator-agent-skills-agent-device-f62531",
+        "agent-device"
       ]
     },
     {
@@ -2779,8 +2954,8 @@
       "pass": true,
       "top3": [
         "slackapi/slack-skills-plugin/slack-messaging-fa1468",
-        "screenpipe/screenpipe/screenpipe-cli-613d28",
-        "slackapi/slack-skills-plugin/slack-api-fc39b8"
+        "slackapi/slack-skills-plugin/slack-api-fc39b8",
+        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2811,7 +2986,7 @@
           ]
         },
         {
-          "id": "screenpipe/screenpipe/screenpipe-cli-613d28",
+          "id": "slackapi/slack-skills-plugin/slack-api-fc39b8",
           "score": 53,
           "coverage": 0.47,
           "expected": false,
@@ -2826,7 +3001,7 @@
           ]
         },
         {
-          "id": "slackapi/slack-skills-plugin/slack-api-fc39b8",
+          "id": "slackapi/slack-skills-plugin/create-slack-app-9a524c",
           "score": 53,
           "coverage": 0.47,
           "expected": false,
@@ -2846,10 +3021,10 @@
         "integration",
         "slackapi-slack-skills-plugin-slack-messaging-fa1468",
         "slack-messaging",
-        "screenpipe-screenpipe-screenpipe-cli-613d28",
-        "screenpipe-cli",
         "slackapi-slack-skills-plugin-slack-api-fc39b8",
-        "slack-api"
+        "slack-api",
+        "slackapi-slack-skills-plugin-create-slack-app-9a524c",
+        "create-slack-app"
       ]
     },
     {
@@ -3059,14 +3234,14 @@
       "pass": true,
       "top3": [
         "EKKOLearnAI/hermes-studio/markdown-viewer-121f72",
-        "sickn33/agentic-awesome-skills/docs-generator-70a767",
-        "notion"
+        "Dicklesworthstone/pi_agent_rust/design-doc-template",
+        "sickn33/agentic-awesome-skills/docs-generator-70a767"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
       "top1_score": 72,
       "expected_hits": 0,
-      "signal_hits": 3,
+      "signal_hits": 2,
       "anchor_signal_hits": 1,
       "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
@@ -3078,6 +3253,22 @@
         {
           "id": "EKKOLearnAI/hermes-studio/markdown-viewer-121f72",
           "score": 72,
+          "coverage": 0.54,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "technical",
+            "documentation",
+            "architecture"
+          ]
+        },
+        {
+          "id": "Dicklesworthstone/pi_agent_rust/design-doc-template",
+          "score": 65,
           "coverage": 0.54,
           "expected": false,
           "relevant": true,
@@ -3106,21 +3297,6 @@
             "technical",
             "documentation"
           ]
-        },
-        {
-          "id": "notion",
-          "score": 52,
-          "coverage": 0.36,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "documentation",
-            "planning"
-          ]
         }
       ],
       "signals": [
@@ -3129,11 +3305,11 @@
         "architecture",
         "ekkolearnai-hermes-studio-markdown-viewer-121f72",
         "markdown-viewer",
+        "dicklesworthstone-pi-agent-rust-design-doc-template",
+        "design-doc-template",
         "write",
         "sickn33-agentic-awesome-skills-docs-generator-70a767",
-        "docs-generator",
-        "planning",
-        "notion"
+        "docs-generator"
       ]
     },
     {
@@ -3144,7 +3320,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "nexu-io/open-design/token-map"
+        "Dicklesworthstone/pi_agent_rust/design-system-patterns"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3194,8 +3370,8 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/token-map",
-          "score": 62,
+          "id": "Dicklesworthstone/pi_agent_rust/design-system-patterns",
+          "score": 61,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3218,8 +3394,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "nexu-io-open-design-token-map",
-        "token-map"
+        "dicklesworthstone-pi-agent-rust-design-system-patterns",
+        "design-system-patterns"
       ]
     },
     {
@@ -3230,7 +3406,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
+        "Dicklesworthstone/pi_agent_rust/parallel-agents"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3278,8 +3454,8 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
-          "score": 76,
+          "id": "Dicklesworthstone/pi_agent_rust/parallel-agents",
+          "score": 78,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3301,8 +3477,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "nexu-io-open-design-html-ppt-zhangzara-pink-script",
-        "html-ppt-zhangzara-pink-script"
+        "dicklesworthstone-pi-agent-rust-parallel-agents",
+        "parallel-agents"
       ]
     },
     {
@@ -3481,13 +3657,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "Dicklesworthstone/pi_agent_rust/agent-evaluation",
         "mitsuhiko/agent-stuff/openscad",
-        "calesthio/generative-media-skills/ecommerce-product-imagery",
-        "calesthio/generative-media-skills/meshy-3d"
+        "Dicklesworthstone/pi_agent_rust/vertex-ai-media-master"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 68,
+      "top1_score": 77,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3498,6 +3674,22 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "Dicklesworthstone/pi_agent_rust/agent-evaluation",
+          "score": 77,
+          "coverage": 0.67,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "industrial-design",
+            "industrial",
+            "product"
+          ]
+        },
         {
           "id": "mitsuhiko/agent-stuff/openscad",
           "score": 68,
@@ -3515,9 +3707,9 @@
           ]
         },
         {
-          "id": "calesthio/generative-media-skills/ecommerce-product-imagery",
-          "score": 60,
-          "coverage": 0.44,
+          "id": "Dicklesworthstone/pi_agent_rust/vertex-ai-media-master",
+          "score": 77,
+          "coverage": 0.67,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3525,36 +3717,23 @@
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "industrial",
-            "product"
-          ]
-        },
-        {
-          "id": "calesthio/generative-media-skills/meshy-3d",
-          "score": 60,
-          "coverage": 0.44,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
+            "industrial-design",
             "industrial",
             "product"
           ]
         }
       ],
       "signals": [
-        "cad",
+        "industrial-design",
         "industrial",
+        "product",
+        "dicklesworthstone-pi-agent-rust-agent-evaluation",
+        "agent-evaluation",
+        "cad",
         "mitsuhiko-agent-stuff-openscad",
         "openscad",
-        "product",
-        "calesthio-generative-media-skills-ecommerce-product-imagery",
-        "e-commerce-product-imagery",
-        "calesthio-generative-media-skills-meshy-3d",
-        "meshy-3d"
+        "dicklesworthstone-pi-agent-rust-vertex-ai-media-master",
+        "vertex-ai-media-master"
       ]
     }
   ]
