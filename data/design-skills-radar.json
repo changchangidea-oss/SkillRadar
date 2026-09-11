@@ -1,3620 +1,1466 @@
 [
   {
-    "id": "Dicklesworthstone/pi_agent_rust/interaction-design",
-    "name": "interaction-design",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Design and implement microinteractions, motion design, transitions, and user feedback patterns. Use when adding polish to UI interactions, implementing loading states, or creating delightful user experiences.",
-    "security": "B",
-    "signalScore": 80,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "experience",
-      "design",
-      "interaction",
-      "usability",
-      "accessibility",
-      "ui",
-      "layout",
-      "media",
-      "motion"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/ui-design/skills/interaction-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "digital-media-film",
-      "folk-art"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:13.865Z",
-    "lastSeenAt": "2026-09-10T07:21:13.865Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/mobile-ios-design",
-    "name": "mobile-ios-design",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Master iOS Human Interface Guidelines and SwiftUI patterns for building native iOS apps. Use when designing iOS interfaces, implementing SwiftUI views, or ensuring apps follow Apple's design principles.",
-    "security": "B",
-    "signalScore": 79,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "experience",
-      "design",
-      "interaction",
-      "mobile",
-      "accessibility",
-      "ui",
-      "layout",
-      "typography",
-      "visual",
-      "color"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/ui-design/skills/mobile-ios-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "visual-communication",
-      "folk-art"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:14.257Z",
-    "lastSeenAt": "2026-09-10T07:21:14.258Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/frontend-design",
-    "name": "frontend-design",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Gen",
+    "id": "GML-MMGroup/AdCraft/video_agent_scene_design",
+    "name": "Video Agent Scene Design",
+    "source": "GML-MMGroup/AdCraft",
+    "summary": "Define reusable environments with stable spatial, lighting, and atmosphere rules.",
     "security": "A",
-    "signalScore": 77,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "ux",
-      "product",
-      "interaction",
-      "accessibility",
-      "ui",
-      "layout",
-      "typography",
-      "visual",
-      "editorial",
-      "color"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/npm/vaayne-agent-kit/skills/frontend-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:16.092Z",
-    "lastSeenAt": "2026-09-10T07:21:16.092Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/accessibility-compliance",
-    "name": "accessibility-compliance",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Implement WCAG 2.2 compliant interfaces with mobile accessibility, inclusive design patterns, and assistive technology support. Use when auditing accessibility, implementing ARIA patterns, building for screen readers, or ensuring inclusive user experiences.",
-    "security": "B",
     "signalScore": 75,
     "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "experience",
-      "design",
-      "mobile",
-      "accessibility",
-      "ui",
-      "motion"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/ui-design/skills/accessibility-compliance/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "operations-design",
-      "video-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:13.478Z",
-    "lastSeenAt": "2026-09-10T07:21:13.478Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/mobile-android-design",
-    "name": "mobile-android-design",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Master Material Design 3 and Jetpack Compose patterns for building native Android apps. Use when designing Android interfaces, implementing Compose UI, or following Google's Material Design guidelines.",
-    "security": "B",
-    "signalScore": 75,
-    "installs": 0,
-    "repoStars": 1725,
+    "repoStars": 238,
     "tags": [
       "design",
-      "interaction",
-      "mobile",
-      "accessibility",
-      "ui",
-      "layout",
-      "typography",
-      "color"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/ui-design/skills/mobile-android-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "visual-communication",
-      "folk-art"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:14.031Z",
-    "lastSeenAt": "2026-09-10T07:21:14.031Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/react-native-design",
-    "name": "react-native-design",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Master React Native styling, navigation, and Reanimated animations for cross-platform mobile development. Use when building React Native apps, implementing navigation patterns, or creating performant animations.",
-    "security": "B",
-    "signalScore": 75,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "experience",
-      "design",
-      "interaction",
-      "mobile",
-      "ui",
-      "layout",
-      "art",
-      "color",
-      "vector",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/ui-design/skills/react-native-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:14.433Z",
-    "lastSeenAt": "2026-09-10T07:21:14.433Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/parallel-agents",
-    "name": "parallel-agents",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Multi-agent orchestration patterns. Use when multiple independent tasks can run with different domain expertise or when comprehensive analysis requires multiple perspectives.",
-    "security": "A",
-    "signalScore": 73,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "ux",
-      "research",
-      "mobile",
-      "architecture",
-      "map"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/parallel-agents/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "architecture-design",
-      "environmental-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:39.259Z",
-    "lastSeenAt": "2026-09-10T07:21:39.259Z"
-  },
-  {
-    "id": "code-yeongyu/oh-my-openagent/ulw-research",
-    "name": "ulw-research",
-    "source": "code-yeongyu/oh-my-openagent",
-    "summary": "Runs maximum-saturation research with a cooperating team, claim-graph gating, and a cited, QA'd deliverable. Use when the user explicitly asks for research or a deep investigation, including any 'ulw' research wording.",
-    "security": "B",
-    "signalScore": 72,
-    "installs": 0,
-    "repoStars": 68871,
-    "tags": [
-      "design",
-      "product",
-      "research",
-      "visual"
-    ],
-    "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
-    "skillsUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-senpi/skills/ulw-research/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "fashion-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:11.253Z",
-    "lastSeenAt": "2026-09-10T07:21:11.253Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/crewai",
-    "name": "crewai",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Expert in CrewAI - the leading role-based multi-agent framework used by 60% of Fortune 500 companies. Covers agent design with roles and goals, task definition, crew orchestration, process types (sequential, hierarchical, parallel), memory systems, and flows for complex workflows. Essential for building collaborative A",
-    "security": "A",
-    "signalScore": 72,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "experience",
-      "design",
-      "research",
-      "ui",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/crewai/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:24.799Z",
-    "lastSeenAt": "2026-09-10T07:21:24.799Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/redux-slice-generator",
-    "name": "redux-slice-generator",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Generate redux slice generator operations. Auto-activating skill for Frontend Development. Triggers on: redux slice generator, redux slice generator Part of the Frontend Development skill category. Use when working with redux slice generator functionality. Trigger with phrases like \"redux slice generator\", \"redux gener",
-    "security": "A",
-    "signalScore": 71,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "product",
-      "accessibility",
-      "operations",
-      "ui"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/skills/05-frontend-dev/redux-slice-generator/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:20.134Z",
-    "lastSeenAt": "2026-09-10T07:21:20.134Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/agent-evaluation",
-    "name": "agent-evaluation",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Testing and benchmarking LLM agents including behavioral testing, capability assessment, reliability metrics, and production monitoring—where even top agents achieve less than 50% on real-world benchmarks Use when: agent testing, agent evaluation, benchmark agents, agent reliability, test agent.",
-    "security": "A",
-    "signalScore": 71,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "research"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/agent-evaluation/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:21.397Z",
-    "lastSeenAt": "2026-09-10T07:21:21.397Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/loki-mode",
-    "name": "loki-mode",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Multi-agent autonomous startup system for Claude Code. Triggers on \"Loki Mode\". Orchestrates 100+ specialized agents across engineering, QA, DevOps, security, data/ML, business operations, marketing, HR, and customer success. Takes PRD to fully deployed, revenue-generating product with zero human intervention. Features",
-    "security": "C",
-    "signalScore": 71,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "research",
-      "interaction",
-      "operations",
-      "visual",
-      "ui"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/loki-mode/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 96,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:32.706Z",
-    "lastSeenAt": "2026-09-10T07:21:32.706Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/neurodivergent-visual-org",
-    "name": "neurodivergent-visual-org",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Creates ADHD-friendly visual organizational tools using Mermaid diagrams optimized for neurodivergent thinking patterns. Auto-detects overwhelm, provides compassionate task breakdowns with realistic time estimates. Use when creating visual task breakdowns, decision trees, or organizational diagrams for neurodivergent u",
-    "security": "B",
-    "signalScore": 70,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "accessibility",
-      "visual",
-      "photo",
-      "color"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/plugins/productivity/neurodivergent-visual-org/skills/neurodivergent-visual-org/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "fashion-design",
-      "folk-art"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:18.620Z",
-    "lastSeenAt": "2026-09-10T07:21:18.621Z"
-  },
-  {
-    "id": "codejunkie99/agentic-stack/design-md",
-    "name": "design-md",
-    "source": "codejunkie99/agentic-stack",
-    "summary": "DESIGN.md — portable visual system contract",
-    "security": "C",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 2258,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "typography",
-      "interaction",
-      "accessibility",
-      "visual",
-      "brand",
-      "color",
-      "motion"
-    ],
-    "installUrl": "https://github.com/codejunkie99/agentic-stack",
-    "skillsUrl": "https://github.com/codejunkie99/agentic-stack/blob/master/.agent/skills/design-md/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "visual-communication",
-      "operations-design",
-      "fashion-design"
-    ],
-    "qualityScore": 53,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:11.820Z",
-    "lastSeenAt": "2026-09-10T07:21:11.820Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/api-design-principles",
-    "name": "api-design-principles",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers. Use when designing new APIs, reviewing API specifications, or establishing API design standards.",
-    "security": "C",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "usability",
-      "mobile",
-      "operations",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/backend-development/skills/api-design-principles/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:12.003Z",
-    "lastSeenAt": "2026-09-10T07:21:12.003Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/kpi-dashboard-design",
-    "name": "kpi-dashboard-design",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Design effective KPI dashboards with metrics selection, visualization best practices, and real-time monitoring patterns. Use when building business dashboards, selecting metrics, or designing data visualization layouts.",
-    "security": "B",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "operations",
-      "design",
-      "campaign",
-      "product",
-      "visual"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/business-analytics/skills/kpi-dashboard-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "fashion-design",
-      "ui-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:12.406Z",
-    "lastSeenAt": "2026-09-10T07:21:12.406Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/conversation-memory",
-    "name": "conversation-memory",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Persistent memory systems for LLM conversations including short-term, long-term, and entity-based memory Use when: conversation memory, remember, memory persistence, long-term memory, chat history.",
-    "security": "A",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "interaction",
-      "ui",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/conversation-memory/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "digital-media-film"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:24.619Z",
-    "lastSeenAt": "2026-09-10T07:21:24.619Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/designing-database-schemas",
-    "name": "designing-database-schemas",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Process use when you need to work with database schema design. This skill provides schema design and migrations with comprehensive guidance and automation. Trigger with phrases like \"design schema\", \"create migration\", or \"model database\".",
-    "security": "B",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
       "environment",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/plugins/database/database-schema-designer/skills/designing-database-schemas/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:17.199Z",
-    "lastSeenAt": "2026-09-10T07:21:17.199Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/database-schema-designer",
-    "name": "database-schema-designer",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Build database schema designer operations. Auto-activating skill for Backend Development. Triggers on: database schema designer, database schema designer Part of the Backend Development skill category. Use when working with database schema designer functionality. Trigger with phrases like \"database schema designer\", \"d",
-    "security": "A",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "environment",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/skills/06-backend-dev/database-schema-designer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:20.324Z",
-    "lastSeenAt": "2026-09-10T07:21:20.324Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/dynamodb-table-designer",
-    "name": "dynamodb-table-designer",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Build dynamodb table designer operations. Auto-activating skill for AWS Skills. Triggers on: dynamodb table designer, dynamodb table designer Part of the AWS Skills skill category. Use when working with dynamodb table designer functionality. Trigger with phrases like \"dynamodb table designer\", \"dynamodb designer\", \"dyn",
-    "security": "A",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "operations",
-      "environment"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/skills/13-aws-skills/dynamodb-table-designer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:20.499Z",
-    "lastSeenAt": "2026-09-10T07:21:20.499Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/vpc-network-designer",
-    "name": "vpc-network-designer",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Build vpc network designer operations. Auto-activating skill for AWS Skills. Triggers on: vpc network designer, vpc network designer Part of the AWS Skills skill category. Use when working with vpc network designer functionality. Trigger with phrases like \"vpc network designer\", \"vpc designer\", \"vpc\".",
-    "security": "A",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "operations",
-      "environment"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/skills/13-aws-skills/vpc-network-designer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:20.681Z",
-    "lastSeenAt": "2026-09-10T07:21:20.681Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/design-doc-template",
-    "name": "design-doc-template",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Build Doc Template - Auto-activating skill for Technical Documentation. Triggers on: design doc template, design doc template Part of the Technical Documentation skill category. Use when working with design doc template functionality. Trigger with phrases like \"design doc template\", \"design template\", \"design\".",
-    "security": "A",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "environment",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/skills/17-technical-docs/design-doc-template/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:21.040Z",
-    "lastSeenAt": "2026-09-10T07:21:21.040Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/ai-agents-architect",
-    "name": "ai-agents-architect",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Expert in designing and building autonomous AI agents. Masters tool use, memory systems, planning strategies, and multi-agent orchestration. Use when: build agent, AI agent, autonomous agent, tool use, function calling.",
-    "security": "A",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/ai-agents-architect/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:23.218Z",
-    "lastSeenAt": "2026-09-10T07:21:23.218Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/autonomous-agents",
-    "name": "autonomous-agents",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Autonomous agents are AI systems that can independently decompose goals, plan actions, execute tools, and self-correct without constant human guidance. The challenge isn't making them capable - it's making them reliable. Every extra decision multiplies failure probability. This skill covers agent loops (ReAct, Plan-Exe",
-    "security": "A",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/autonomous-agents/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:23.646Z",
-    "lastSeenAt": "2026-09-10T07:21:23.646Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/dispatching-parallel-agents",
-    "name": "dispatching-parallel-agents",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
-    "security": "A",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "art",
-      "pattern",
-      "environment"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/dispatching-parallel-agents/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:25.541Z",
-    "lastSeenAt": "2026-09-10T07:21:25.542Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/multimodal-stable-diffusion",
-    "name": "stable-diffusion-image-generation",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "State-of-the-art text-to-image generation with Stable Diffusion models via HuggingFace Diffusers. Use when generating images from text prompts, performing image-to-image translation, inpainting, or building custom diffusion pipelines.",
-    "security": "C",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "landscape",
       "spatial",
       "architecture",
       "lighting",
-      "ux",
-      "research"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/multimodal-stable-diffusion/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "environmental-design",
-      "experience-design",
-      "architecture-design",
-      "fashion-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:37.254Z",
-    "lastSeenAt": "2026-09-10T07:21:37.254Z"
-  },
-  {
-    "id": "code-yeongyu/oh-my-openagent/security-research",
-    "name": "security-research",
-    "source": "code-yeongyu/oh-my-openagent",
-    "summary": "Team Mode security research skill. Orchestrates 3 vulnerability hunters and 2 PoC engineers to audit a codebase in parallel, prove exploitability, classify root causes, and calibrate severity by actual exploitability. Use for security review, vulnerability research, exploitability audit, pre-release security check, thr",
-    "security": "C",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 68871,
-    "tags": [
-      "design",
       "product",
-      "research",
-      "map",
-      "environment"
-    ],
-    "installUrl": "https://github.com/code-yeongyu/oh-my-openagent",
-    "skillsUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/security-research/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "architecture-design",
-      "environmental-design",
-      "operations-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:11.039Z",
-    "lastSeenAt": "2026-09-10T07:21:11.040Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/tailwind-design-system",
-    "name": "tailwind-design-system",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Build scalable design systems with Tailwind CSS v4, design tokens, component libraries, and responsive patterns. Use when creating component libraries, implementing design systems, or standardizing UI patterns.",
-    "security": "C",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "mobile",
-      "accessibility",
-      "ui",
-      "design-system",
-      "brand"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/frontend-mobile-development/skills/tailwind-design-system/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "operations-design",
-      "fashion-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:13.090Z",
-    "lastSeenAt": "2026-09-10T07:21:13.090Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/000-jeremy-content-consistency-validator",
-    "name": "000-jeremy-content-consistency-validator",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Validate messaging consistency across website, GitHub repos, and local documentation generating read-only discrepancy reports. Use when checking content alignment or finding mixed messaging. Trigger with phrases like \"check consistency\", \"validate documentation\", or \"audit messaging\".",
-    "security": "A",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/plugins/productivity/000-jeremy-content-consistency-validator/skills/000-jeremy-content-consistency-validator/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:17.373Z",
-    "lastSeenAt": "2026-09-10T07:21:17.373Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/vertex-ai-media-master",
-    "name": "vertex-ai-media-master",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Execute automatic activation for all google vertex ai multimodal operations operations. Use when appropriate context detected. Trigger with relevant phrases based on skill purpose.",
-    "security": "A",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "operations"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/plugins/productivity/003-jeremy-vertex-ai-media-master/skills/vertex-ai-media-master/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:17.747Z",
-    "lastSeenAt": "2026-09-10T07:21:17.747Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/overnight-development",
-    "name": "overnight-development",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Automates software development overnight using git hooks to enforce test-driven Use when appropriate context detected. Trigger with relevant phrases based on skill purpose.",
-    "security": "A",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "operations"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/plugins/productivity/overnight-dev/skills/overnight-development/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:18.782Z",
-    "lastSeenAt": "2026-09-10T07:21:18.783Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/agents-autogpt",
-    "name": "autogpt-agents",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Autonomous AI agent platform for building and deploying continuous agents. Use when creating visual workflow agents, deploying persistent autonomous agents, or building complex multi-step AI automation systems.",
-    "security": "C",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "interaction",
-      "operations",
       "visual",
-      "environment",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/agents-autogpt/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:22.443Z",
-    "lastSeenAt": "2026-09-10T07:21:22.443Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/visual-design-foundations",
-    "name": "visual-design-foundations",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Apply typography, color theory, spacing systems, and iconography principles to create cohesive visual designs. Use when establishing design tokens, building style guides, or improving visual hierarchy and consistency.",
-    "security": "C",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "mobile",
-      "accessibility",
-      "ui",
-      "layout",
-      "typography",
-      "visual",
-      "brand",
-      "color"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/ui-design/skills/visual-design-foundations/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "visual-communication",
-      "fashion-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:14.875Z",
-    "lastSeenAt": "2026-09-10T07:21:14.875Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/yaml-master",
-    "name": "yaml-master",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Execute proactive YAML intelligence: automatically activates when working with YAML files. Use when appropriate context detected. Trigger with relevant phrases based on skill purpose.",
-    "security": "B",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/plugins/productivity/002-jeremy-yaml-master-agent/skills/yaml-master/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 96,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:17.573Z",
-    "lastSeenAt": "2026-09-10T07:21:17.573Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/creating-github-issues-from-web-research",
-    "name": "creating-github-issues-from-web-research",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Execute this skill enhances AI assistant's ability to conduct web research and translate findings into actionable github issues. it automates the process of extracting key information from web search results and formatting it into a well-structured issue, ready... Use when managing version control. Trigger with phrases",
-    "security": "B",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "media",
-      "ui"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/plugins/skill-enhancers/web-to-github-issue/skills/creating-github-issues-from-web-research/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "digital-media-film",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:19.471Z",
-    "lastSeenAt": "2026-09-10T07:21:19.471Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/rest-endpoint-designer",
-    "name": "rest-endpoint-designer",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Build rest endpoint designer operations. Auto-activating skill for API Development. Triggers on: rest endpoint designer, rest endpoint designer Part of the API Development skill category. Use when working with rest endpoint designer functionality. Trigger with phrases like \"rest endpoint designer\", \"rest designer\", \"re",
-    "security": "B",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "operations",
-      "environment"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/skills/15-api-development/rest-endpoint-designer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:20.860Z",
-    "lastSeenAt": "2026-09-10T07:21:20.860Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/fine-tuning-llama-factory",
-    "name": "llama-factory",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Expert guidance for fine-tuning LLMs with LLaMA-Factory - WebUI no-code, 100+ models, 2/3/4/5/6/8-bit QLoRA, multimodal support",
-    "security": "A",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "pattern",
-      "lighting"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/fine-tuning-llama-factory/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 82,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:28.997Z",
-    "lastSeenAt": "2026-09-10T07:21:28.997Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/fine-tuning-unsloth",
-    "name": "unsloth",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Expert guidance for fast fine-tuning with Unsloth - 2-5x faster training, 50-80% less memory, LoRA/QLoRA optimization",
-    "security": "A",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "pattern",
-      "lighting"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/fine-tuning-unsloth/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 82,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:29.388Z",
-    "lastSeenAt": "2026-09-10T07:21:29.388Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/llm-app-patterns",
-    "name": "llm-app-patterns",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Production-ready patterns for building LLM applications. Covers RAG pipelines, agent architectures, prompt IDEs, and LLMOps monitoring. Use when designing AI applications, implementing RAG, building agents, or setting up LLM observability.",
-    "security": "C",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "research",
-      "arts",
-      "vector",
-      "pattern",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/llm-app-patterns/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "arts-crafts",
-      "folk-art",
-      "environmental-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:31.863Z",
-    "lastSeenAt": "2026-09-10T07:21:31.864Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/model-architecture-nanogpt",
-    "name": "nanogpt",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Educational GPT implementation in ~300 lines. Reproduces GPT-2 (124M) on OpenWebText. Clean, hackable code for learning transformers. By Andrej Karpathy. Perfect for understanding GPT architecture from scratch. Train on Shakespeare (CPU) or OpenWebText (multi-GPU).",
-    "security": "C",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "research",
-      "video",
-      "architecture",
-      "map"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/model-architecture-nanogpt/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "architecture-design",
-      "environmental-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:34.768Z",
-    "lastSeenAt": "2026-09-10T07:21:34.768Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/design-system-patterns",
-    "name": "design-system-patterns",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Build scalable design systems with design tokens, theming infrastructure, and component architecture patterns. Use when creating design tokens, implementing theme switching, building component libraries, or establishing design system foundations.",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "ui",
-      "design-system",
-      "typography",
-      "figma",
-      "mobile",
-      "brand",
-      "color"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/ui-design/skills/design-system-patterns/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "experience-design",
-      "visual-communication",
-      "video-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:13.678Z",
-    "lastSeenAt": "2026-09-10T07:21:13.678Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/responsive-design",
-    "name": "responsive-design",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Implement modern responsive layouts using container queries, fluid typography, CSS Grid, and mobile-first breakpoint strategies. Use when building adaptive interfaces, implementing fluid layouts, or creating component-level responsive behavior.",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "mobile",
-      "ui",
-      "layout",
-      "typography",
       "video"
     ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/ui-design/skills/responsive-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "video-design",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:14.653Z",
-    "lastSeenAt": "2026-09-10T07:21:14.653Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/web-component-design",
-    "name": "web-component-design",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Master React, Vue, and Svelte component patterns including CSS-in-JS, composition strategies, and reusable component architecture. Use when building UI component libraries, designing component APIs, or implementing frontend design systems.",
-    "security": "B",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "architecture",
-      "rendering"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/ui-design/skills/web-component-design/SKILL.md",
+    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
+    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_scene_design/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "environmental-design",
       "architecture-design",
-      "experience-design",
-      "folk-art"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:15.107Z",
-    "lastSeenAt": "2026-09-10T07:21:15.107Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/genkit-production-expert",
-    "name": "genkit-production-expert",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Build production Firebase Genkit applications including RAG systems, multi-step flows, and tool calling for Node.js/Python/Go. Deploy to Firebase Functions or Cloud Run with AI monitoring. Use when asked to \"create genkit flow\" or \"implement RAG\". Trigger with relevant phrases based on skill purpose.",
-    "security": "B",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/plugins/ai-ml/jeremy-genkit-pro/skills/genkit-production-expert/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
       "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:16.473Z",
-    "lastSeenAt": "2026-09-10T07:21:16.473Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/agent-context-loader",
-    "name": "agent-context-loader",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Execute proactive auto-loading: automatically detects and loads agents.md files. Use when appropriate context detected. Trigger with relevant phrases based on skill purpose.",
-    "security": "B",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "operations"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/plugins/productivity/agent-context-manager/skills/agent-context-loader/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:18.390Z",
-    "lastSeenAt": "2026-09-10T07:21:18.390Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/linux-commands-guide",
-    "name": "linux-commands-guide",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Manage linux commands guide operations. Auto-activating skill for DevOps Basics. Triggers on: linux commands guide, linux commands guide Part of the DevOps Basics skill category. Use when working with linux commands guide functionality. Trigger with phrases like \"linux commands guide\", \"linux guide\", \"linux\".",
-    "security": "B",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "product",
-      "operations",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/skills/01-devops-basics/linux-commands-guide/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "folk-art",
-      "environmental-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:19.694Z",
-    "lastSeenAt": "2026-09-10T07:21:19.694Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/flux-gitops-setup",
-    "name": "flux-gitops-setup",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Configure flux gitops setup operations. Auto-activating skill for DevOps Advanced. Triggers on: flux gitops setup, flux gitops setup Part of the DevOps Advanced skill category. Use when working with flux gitops setup functionality. Trigger with phrases like \"flux gitops setup\", \"flux setup\", \"flux\".",
-    "security": "B",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "product",
-      "operations",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/skills/02-devops-advanced/flux-gitops-setup/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "folk-art",
-      "environmental-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:19.927Z",
-    "lastSeenAt": "2026-09-10T07:21:19.927Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/agent-manager-skill",
-    "name": "agent-manager-skill",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Manage multiple local CLI agents via tmux sessions (start/stop/monitor/assign) with cron-friendly scheduling.",
-    "security": "B",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "research",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/agent-manager-skill/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
       "visual-communication"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:21.591Z",
-    "lastSeenAt": "2026-09-10T07:21:21.591Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/distributed-training-megatron-core",
-    "name": "training-llms-megatron",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Trains large language models (2B-462B parameters) using NVIDIA Megatron-Core with advanced parallelism strategies. Use when training models >1B parameters, need maximum GPU efficiency (47% MFU on H100), or require tensor/pipeline/sequence/context/expert parallelism. Production-ready framework used for Nemotron, LLaMA, ",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "product",
-      "research",
-      "3d"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/distributed-training-megatron-core/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "industrial-design",
-      "operations-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:26.122Z",
-    "lastSeenAt": "2026-09-10T07:21:26.122Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/fine-tuning-axolotl",
-    "name": "axolotl",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Expert guidance for fine-tuning LLMs with Axolotl - YAML configs, 100+ models, LoRA/QLoRA, DPO/KTO/ORPO/GRPO, multimodal support",
-    "security": "B",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "pattern",
-      "lighting"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/fine-tuning-axolotl/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:28.822Z",
-    "lastSeenAt": "2026-09-10T07:21:28.822Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/jira",
-    "name": "jira",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Use when the user mentions Jira issues (e.g., \"PROJ-123\"), asks about tickets, wants to create/view/update issues, check sprint status, or manage their Jira workflow. Triggers on keywords like \"jira\", \"issue\", \"ticket\", \"sprint\", \"backlog\", or issue key patterns.",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "interaction",
-      "media",
-      "ui"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/jira/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "digital-media-film",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:31.259Z",
-    "lastSeenAt": "2026-09-10T07:21:31.259Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/ml-paper-writing",
-    "name": "ml-paper-writing",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Write publication-ready ML/AI papers for NeurIPS, ICML, ICLR, ACL, AAAI, COLM. Use when drafting papers from research repos, structuring arguments, verifying citations, or preparing camera-ready submissions. Includes LaTeX templates, reviewer guidelines, and citation verification workflows.",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "experience",
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/ml-paper-writing/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:33.616Z",
-    "lastSeenAt": "2026-09-10T07:21:33.616Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/model-architecture-mamba",
-    "name": "mamba-architecture",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "State-space model with O(n) complexity vs Transformers' O(n²). 5× faster inference, million-token sequences, no KV cache. Selective SSM with hardware-aware design. Mamba-1 (d_state=16) and Mamba-2 (d_state=128, multi-head). Models 130M-2.8B on HuggingFace.",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "ux",
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/model-architecture-mamba/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:34.595Z",
-    "lastSeenAt": "2026-09-10T07:21:34.595Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/model-architecture-rwkv",
-    "name": "rwkv-architecture",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "RNN+Transformer hybrid with O(n) inference. Linear time, infinite context, no KV cache. Train like GPT (parallel), infer like RNN (sequential). Linux Foundation AI project. Production at Windows, Office, NeMo. RWKV-7 (March 2025). Models up to 14B parameters.",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "product",
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/model-architecture-rwkv/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:34.940Z",
-    "lastSeenAt": "2026-09-10T07:21:34.940Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/post-training-grpo-rl-training",
-    "name": "grpo-rl-training",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Expert guidance for GRPO/RL fine-tuning with TRL for reasoning and task-specific model training",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "research"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/post-training-grpo-rl-training/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:39.627Z",
-    "lastSeenAt": "2026-09-10T07:21:39.627Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/prompt-caching",
-    "name": "prompt-caching",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Caching strategies for LLM prompts including Anthropic prompt caching, response caching, and CAG (Cache Augmented Generation) Use when: prompt caching, cache prompt, response cache, cag, cache augmented.",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/prompt-caching/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "arts-crafts",
-      "ui-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:41.135Z",
-    "lastSeenAt": "2026-09-10T07:21:41.135Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/prompt-engineer",
-    "name": "prompt-engineer",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Expert in designing effective prompts for LLM-powered applications. Masters prompt structure, context management, output formatting, and prompt evaluation. Use when: prompt engineering, system prompt, few-shot, chain of thought, prompt design.",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "product",
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/prompt-engineer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:41.340Z",
-    "lastSeenAt": "2026-09-10T07:21:41.340Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/agents-llamaindex",
-    "name": "llamaindex",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Data framework for building LLM applications with RAG. Specializes in document ingestion (300+ connectors), indexing, and querying. Features vector indices, query engines, agents, and multi-modal support. Use for document Q&A, chatbots, knowledge retrieval, or building RAG pipelines. Best for data-centric LLM applicati",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "art",
-      "vector",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/agents-llamaindex/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "arts-crafts",
-      "visual-communication"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:23.048Z",
-    "lastSeenAt": "2026-09-10T07:21:23.048Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/computer-use-agents",
-    "name": "computer-use-agents",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Build AI agents that interact with computers like humans do - viewing screens, moving cursors, clicking buttons, and typing text. Covers Anthropic's Computer Use, OpenAI's Operator/CUA, and open-source alternatives. Critical focus on sandboxing, security, and handling the unique challenges of vision-based control. Use ",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "product",
-      "research",
-      "environment",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/computer-use-agents/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:24.034Z",
-    "lastSeenAt": "2026-09-10T07:21:24.034Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/context7-auto-research",
-    "name": "context7-auto-research",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Automatically fetch latest library/framework documentation for Claude Code via Context7 API",
-    "security": "B",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "environment"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/context7-auto-research/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:24.413Z",
-    "lastSeenAt": "2026-09-10T07:21:24.413Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/mechanistic-interpretability-saelens",
-    "name": "sparse-autoencoder-training",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Provides guidance for training and analyzing Sparse Autoencoders (SAEs) using SAELens to decompose neural network activations into interpretable features. Use when discovering interpretable features, analyzing superposition, or studying monosemantic representations in language models.",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/mechanistic-interpretability-saelens/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:33.262Z",
-    "lastSeenAt": "2026-09-10T07:21:33.262Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/multimodal-blip-2",
-    "name": "blip-2-vision-language",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Vision-language pre-training framework bridging frozen image encoders and LLMs. Use when you need image captioning, visual question answering, image-text retrieval, or multimodal chat with state-of-the-art zero-shot performance.",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "visual",
-      "photo",
-      "color"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/multimodal-blip-2/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "fashion-design",
-      "folk-art"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:35.495Z",
-    "lastSeenAt": "2026-09-10T07:21:35.495Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/post-training-verl",
-    "name": "verl-rl-training",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Provides guidance for training LLMs with reinforcement learning using verl (Volcano Engine RL). Use when implementing RLHF, GRPO, PPO, or other RL algorithms for LLM post-training at scale with flexible infrastructure backends.",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/post-training-verl/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:40.921Z",
-    "lastSeenAt": "2026-09-10T07:21:40.921Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/event-store-design",
-    "name": "event-store-design",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Design and implement event stores for event-sourced systems. Use when building event sourcing infrastructure, choosing event store technologies, or implementing event persistence patterns.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/backend-development/skills/event-store-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:12.189Z",
-    "lastSeenAt": "2026-09-10T07:21:12.189Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/data-processing-ray-data",
-    "name": "ray-data",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Scalable data processing for ML workloads. Streaming execution across CPU/GPU, supports Parquet/CSV/JSON/images. Integrates with Ray Train, PyTorch, TensorFlow. Scales from single machine to 100s of nodes. Use for batch inference, data preprocessing, multi-modal data loading, or distributed ETL pipelines.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "operations",
-      "video",
-      "art",
-      "vector",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/data-processing-ray-data/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "folk-art",
-      "video-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:25.185Z",
-    "lastSeenAt": "2026-09-10T07:21:25.186Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/datadog-cli",
-    "name": "datadog-cli",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Datadog CLI for searching logs, querying metrics, tracing requests, and managing dashboards. Use this when debugging production issues or working with Datadog observability.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "color",
-      "pattern",
-      "3d",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/datadog-cli/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "arts-crafts",
-      "folk-art",
-      "environmental-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:25.368Z",
-    "lastSeenAt": "2026-09-10T07:21:25.368Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/distributed-training-pytorch-lightning",
-    "name": "pytorch-lightning",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "High-level PyTorch framework with Trainer class, automatic distributed training (DDP/FSDP/DeepSpeed), callbacks system, and minimal boilerplate. Scales from laptop to supercomputer with same code. Use when you want clean training loops with built-in best practices.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/distributed-training-pytorch-lightning/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:26.580Z",
-    "lastSeenAt": "2026-09-10T07:21:26.580Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/emerging-techniques-model-merging",
-    "name": "model-merging",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Merge multiple fine-tuned models using mergekit to combine capabilities without retraining. Use when creating specialized models by blending domain-specific expertise (math + coding + chat), improving performance beyond single models, or experimenting rapidly with model variants. Covers SLERP, TIES-Merging, DARE, Task ",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "art",
-      "vector",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/emerging-techniques-model-merging/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "arts-crafts",
-      "visual-communication"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:27.368Z",
-    "lastSeenAt": "2026-09-10T07:21:27.369Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/emerging-techniques-moe-training",
-    "name": "moe-training",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Train Mixture of Experts (MoE) models using DeepSpeed or HuggingFace. Use when training large-scale models with limited compute (5× cost reduction vs dense models), implementing sparse architectures like Mixtral 8x7B or DeepSeek-V3, or scaling model capacity without proportional compute increase. Covers MoE architectur",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/emerging-techniques-moe-training/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:27.740Z",
-    "lastSeenAt": "2026-09-10T07:21:27.740Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/emerging-techniques-speculative-decoding",
-    "name": "speculative-decoding",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Accelerate LLM inference using speculative decoding, Medusa multiple heads, and lookahead decoding techniques. Use when optimizing inference speed (1.5-3.6× speedup), reducing latency for real-time applications, or deploying models with limited compute. Covers draft models, tree-based attention, Jacobi iteration, paral",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "architecture",
-      "map"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/emerging-techniques-speculative-decoding/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "architecture-design",
-      "environmental-design",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:27.937Z",
-    "lastSeenAt": "2026-09-10T07:21:27.937Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/inference-serving-sglang",
-    "name": "sglang",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Fast structured generation and serving for LLMs with RadixAttention prefix caching. Use for JSON/regex outputs, constrained decoding, agentic workflows with tool calls, or when you need 5× faster inference than vLLM with prefix sharing. Powers 300,000+ GPUs at xAI, AMD, NVIDIA, and LinkedIn.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/inference-serving-sglang/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:30.128Z",
-    "lastSeenAt": "2026-09-10T07:21:30.129Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/inference-serving-tensorrt-llm",
-    "name": "tensorrt-llm",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Optimizes LLM inference with NVIDIA TensorRT for maximum throughput and lowest latency. Use for production deployment on NVIDIA GPUs (A100/H100), when you need 10-100x faster inference than PyTorch, or for serving models with quantization (FP8/INT4), in-flight batching, and multi-GPU scaling.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/inference-serving-tensorrt-llm/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:30.296Z",
-    "lastSeenAt": "2026-09-10T07:21:30.296Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/inference-serving-vllm",
-    "name": "serving-llms-vllm",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Serves LLMs with high throughput using vLLM's PagedAttention and continuous batching. Use when deploying production LLM APIs, optimizing inference latency/throughput, or serving models with limited GPU memory. Supports OpenAI-compatible endpoints, quantization (GPTQ/AWQ/FP8), and tensor parallelism.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/inference-serving-vllm/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:30.523Z",
-    "lastSeenAt": "2026-09-10T07:21:30.523Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/mlops-mlflow",
-    "name": "mlflow",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Track ML experiments, manage model registry with versioning, deploy models to production, and reproduce experiments with MLflow - framework-agnostic ML lifecycle platform",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/mlops-mlflow/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:33.804Z",
-    "lastSeenAt": "2026-09-10T07:21:33.804Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/model-architecture-litgpt",
-    "name": "implementing-llms-litgpt",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Implements and trains LLMs using Lightning AI's LitGPT with 20+ pretrained architectures (Llama, Gemma, Phi, Qwen, Mistral). Use when need clean model implementations, educational understanding of architectures, or production fine-tuning with LoRA/QLoRA. Single-file implementations, no abstraction layers.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/model-architecture-litgpt/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:34.386Z",
-    "lastSeenAt": "2026-09-10T07:21:34.386Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/observability-langsmith",
-    "name": "langsmith-observability",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "LLM observability platform for tracing, evaluation, and monitoring. Use when debugging LLM applications, evaluating model outputs against datasets, monitoring production systems, or building systematic testing pipelines for AI applications.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "art",
-      "vector",
-      "environment"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/observability-langsmith/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:37.638Z",
-    "lastSeenAt": "2026-09-10T07:21:37.639Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/observability-phoenix",
-    "name": "phoenix-observability",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Open-source AI observability platform for LLM tracing, evaluation, and monitoring. Use when debugging LLM applications with detailed traces, running evaluations on datasets, or monitoring production AI systems with real-time insights.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "operations"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/observability-phoenix/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:37.860Z",
-    "lastSeenAt": "2026-09-10T07:21:37.860Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/optimization-awq",
-    "name": "awq-quantization",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Activation-aware weight quantization for 4-bit LLM compression with 3x speedup and minimal accuracy loss. Use when deploying large models (7B-70B) on limited GPU memory, when you need faster inference than GPTQ with better accuracy preservation, or for instruction-tuned and multimodal models. MLSys 2024 Best Paper Awar",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/optimization-awq/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:38.050Z",
-    "lastSeenAt": "2026-09-10T07:21:38.050Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/optimization-flash-attention",
-    "name": "optimizing-attention-flash",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Optimizes transformer attention with Flash Attention for 2-4x speedup and 10-20x memory reduction. Use when training/running transformers with long sequences (>512 tokens), encountering GPU memory issues with attention, or need faster inference. Supports PyTorch native SDPA, flash-attn library, H100 FP8, and sliding wi",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/optimization-flash-attention/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:38.461Z",
-    "lastSeenAt": "2026-09-10T07:21:38.461Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/optimization-gguf",
-    "name": "gguf-quantization",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "GGUF format and llama.cpp quantization for efficient CPU/GPU inference. Use when deploying models on consumer hardware, Apple Silicon, or when needing flexible quantization from 2-8 bit without GPU requirements.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/optimization-gguf/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:38.659Z",
-    "lastSeenAt": "2026-09-10T07:21:38.659Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/optimization-hqq",
-    "name": "hqq-quantization",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Half-Quadratic Quantization for LLMs without calibration data. Use when quantizing models to 4/3/2-bit precision without needing calibration datasets, for fast quantization workflows, or when deploying with vLLM or HuggingFace Transformers.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/optimization-hqq/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:39.032Z",
-    "lastSeenAt": "2026-09-10T07:21:39.032Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/post-training-miles",
-    "name": "miles-rl-training",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Provides guidance for enterprise-grade RL training using miles, a production-ready fork of slime. Use when training large MoE models with FP8/INT4, needing train-inference alignment, or requiring speculative RL for maximum throughput.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "map",
-      "environment"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/post-training-miles/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "architecture-design",
-      "environmental-design",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:39.842Z",
-    "lastSeenAt": "2026-09-10T07:21:39.842Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/post-training-slime",
-    "name": "slime-rl-training",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Provides guidance for LLM post-training with RL using slime, a Megatron+SGLang framework. Use when training GLM models, implementing custom data generation workflows, or needing tight Megatron-LM integration for RL scaling.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "environment",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/post-training-slime/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:40.371Z",
-    "lastSeenAt": "2026-09-10T07:21:40.371Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/post-training-torchforge",
-    "name": "torchforge-rl-training",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Provides guidance for PyTorch-native agentic RL using torchforge, Meta's library separating infra from algorithms. Use when you want clean RL abstractions, easy algorithm experimentation, or scalable training with Monarch and TorchTitan.",
-    "security": "C",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "environment",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/post-training-torchforge/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:40.557Z",
-    "lastSeenAt": "2026-09-10T07:21:40.557Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/agent-memory-mcp",
-    "name": "agent-memory-mcp",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "A hybrid memory system that provides persistent, searchable knowledge management for AI agents (Architecture, Patterns, Decisions).",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "research",
-      "art",
-      "pattern",
-      "visual",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/agent-memory-mcp/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:21.802Z",
-    "lastSeenAt": "2026-09-10T07:21:21.802Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/agent-tool-builder",
-    "name": "agent-tool-builder",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Tools are how AI agents interact with the world. A well-designed tool is the difference between an agent that works and one that hallucinates, fails silently, or costs 10x more tokens than necessary. This skill covers tool design from schema to error handling. JSON Schema best practices, description writing that actual",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "design",
-      "research",
-      "ui",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/agent-tool-builder/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:22.209Z",
-    "lastSeenAt": "2026-09-10T07:21:22.209Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/behavioral-modes",
-    "name": "behavioral-modes",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "AI operational modes (brainstorm, implement, debug, review, teach, ship, orchestrate). Use to adapt behavior based on task type.",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "architecture",
-      "diagram",
-      "map",
-      "environment"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/behavioral-modes/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "architecture-design",
-      "environmental-design",
-      "folk-art"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:23.860Z",
-    "lastSeenAt": "2026-09-10T07:21:23.860Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/inference-serving-llama-cpp",
-    "name": "llama-cpp",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Runs LLM inference on CPU, Apple Silicon, and consumer GPUs without NVIDIA hardware. Use for edge deployment, M1/M2/M3 Macs, AMD/Intel GPUs, or when CUDA is unavailable. Supports GGUF quantization (1.5-8 bit) for reduced memory and 4-10× speedup vs PyTorch on CPU.",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "research",
-      "art",
-      "pattern",
-      "audio"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/inference-serving-llama-cpp/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "video-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:29.960Z",
-    "lastSeenAt": "2026-09-10T07:21:29.960Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/langfuse",
-    "name": "langfuse",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Expert in Langfuse - the open-source LLM observability platform. Covers tracing, prompt management, evaluation, datasets, and integration with LangChain, LlamaIndex, and OpenAI. Essential for debugging, monitoring, and improving LLM applications in production. Use when: langfuse, llm observability, llm tracing, prompt ",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "research",
-      "operations",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/langfuse/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "folk-art",
-      "industrial-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:31.441Z",
-    "lastSeenAt": "2026-09-10T07:21:31.442Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/multimodal-audiocraft",
-    "name": "audiocraft-audio-generation",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "PyTorch library for audio generation including text-to-music (MusicGen) and text-to-sound (AudioGen). Use when you need to generate music from text descriptions, create sound effects, or perform melody-conditioned music generation.",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "environmental",
-      "environment",
-      "architecture",
-      "research",
-      "folk",
-      "art",
-      "pattern",
-      "craft"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/multimodal-audiocraft/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "environmental-design",
-      "experience-design",
-      "folk-art",
-      "architecture-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:35.326Z",
-    "lastSeenAt": "2026-09-10T07:21:35.326Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/optimization-gptq",
-    "name": "gptq",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Post-training 4-bit quantization for LLMs with minimal accuracy loss. Use for deploying large models (70B, 405B) on consumer GPUs, when you need 4× memory reduction with <2% perplexity degradation, or for faster inference (3-4× speedup) vs FP16. Integrates with transformers and PEFT for QLoRA fine-tuning.",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "research",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/optimization-gptq/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "architecture-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:38.836Z",
-    "lastSeenAt": "2026-09-10T07:21:38.836Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/google-cloud-agent-sdk-master",
-    "name": "google-cloud-agent-sdk-master",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Execute automatic activation for all google cloud agent development kit (adk) Use when appropriate context detected. Trigger with relevant phrases based on skill purpose.",
-    "security": "C",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "product",
-      "environment",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/plugins-community/plugins/productivity/004-jeremy-google-cloud-agent-sdk/skills/google-cloud-agent-sdk-master/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 96,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:17.955Z",
-    "lastSeenAt": "2026-09-10T07:21:17.955Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/agent-memory-systems",
-    "name": "agent-memory-systems",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Memory is the cornerstone of intelligent agents. Without it, every interaction starts from zero. This skill covers the architecture of agent memory: short-term (context window), long-term (vector stores), and the cognitive architectures that organize them. Key insight: Memory isn't just storage - it's retrieval. A mill",
-    "security": "C",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "interaction",
-      "arts",
-      "vector",
-      "pattern",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/agent-memory-systems/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "arts-crafts",
-      "folk-art",
-      "ui-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:22.017Z",
-    "lastSeenAt": "2026-09-10T07:21:22.017Z"
+    "firstSeenAt": "2026-09-11T07:19:33.717Z",
+    "lastSeenAt": "2026-09-11T07:19:33.717Z"
   },
   {
-    "id": "Dicklesworthstone/pi_agent_rust/distributed-training-pytorch-fsdp",
-    "name": "pytorch-fsdp",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Expert guidance for Fully Sharded Data Parallel training with PyTorch FSDP - parameter sharding, mixed precision, CPU offloading, FSDP2",
+    "id": "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad",
+    "name": "cad-geometry-kernels-formats-and-code-cad",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when modelling, converting, or scripting geometry: the representations (B-rep, meshes, implicit and voxel) and when each is right, the geometry kernels and their behaviour, file formats and precisely what each one loses in translation, and code-CAD and scripting — the landscape, the OpenSCAD versus OCCT-based trade",
+    "security": "A",
+    "signalScore": 72,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "arts",
+      "vector",
+      "3d-printing",
+      "parametric",
+      "pattern",
+      "3d",
+      "design",
+      "cad",
+      "rendering",
+      "landscape"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/cad-3d-printing/skills/cad-geometry-kernels-formats-and-code-cad/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "arts-crafts",
+      "industrial-design",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:41.020Z",
+    "lastSeenAt": "2026-09-11T07:19:41.020Z"
+  },
+  {
+    "id": "GML-MMGroup/AdCraft/video_agent_character_design",
+    "name": "Video Agent Character Design",
+    "source": "GML-MMGroup/AdCraft",
+    "summary": "Define brand-fit characters and stable identity guidance for consistent views.",
+    "security": "A",
+    "signalScore": 70,
+    "installs": 0,
+    "repoStars": 238,
+    "tags": [
+      "environmental",
+      "design",
+      "environment",
+      "brand",
+      "campaign",
+      "product",
+      "video",
+      "typography"
+    ],
+    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
+    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_character_design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "environmental-design",
+      "operations-design",
+      "video-design",
+      "fashion-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:33.125Z",
+    "lastSeenAt": "2026-09-11T07:19:33.245Z"
+  },
+  {
+    "id": "GML-MMGroup/AdCraft/video_agent_product_design",
+    "name": "Video Agent Product Design",
+    "source": "GML-MMGroup/AdCraft",
+    "summary": "Preserve product truth while shaping clear, visually demonstrable selling points.",
+    "security": "A",
+    "signalScore": 70,
+    "installs": 0,
+    "repoStars": 238,
+    "tags": [
+      "design",
+      "brand",
+      "campaign",
+      "product",
+      "visual",
+      "video",
+      "color"
+    ],
+    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
+    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_product_design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "fashion-design",
+      "environmental-design",
+      "visual-communication"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:33.390Z",
+    "lastSeenAt": "2026-09-11T07:19:33.390Z"
+  },
+  {
+    "id": "lukaskourilcz/quorum/titty-tuesdays-brandbook",
+    "name": "titty-tuesdays-brandbook",
+    "source": "lukaskourilcz/quorum",
+    "summary": "Create or review Titty Tuesdays brand, campaign, product-concept, social, visual, and marketing-plan artifacts. Use whenever work names the Titty Tuesdays venture, its crop tops, seasons, campaign copy, Instagram or Threads drafts, FRAME assets, audience plans, guerrilla concepts, or platform-risk review.",
+    "security": "A",
+    "signalScore": 70,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "brand",
+      "campaign",
+      "product",
+      "visual",
+      "fashion",
+      "color",
+      "typography"
+    ],
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/titty-tuesdays-brandbook/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "fashion-design",
+      "visual-communication",
+      "arts-crafts"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:44.505Z",
+    "lastSeenAt": "2026-09-11T07:19:44.505Z"
+  },
+  {
+    "id": "sounny/dxskills/dx-map",
+    "name": "dx-map",
+    "source": "sounny/dxskills",
+    "summary": "Spatial concept mapper. Converts complex narrative arguments, software architectures, curricula, and workflows into visual Mermaid.js flowcharts, state charts, and relational matrices.",
+    "security": "A",
+    "signalScore": 70,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "architecture",
+      "spatial",
+      "rendering",
+      "diagram",
+      "map",
+      "arts",
+      "visual"
+    ],
+    "installUrl": "https://github.com/sounny/dxskills",
+    "skillsUrl": "https://github.com/sounny/dxskills/blob/main/skills/dx-map/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "arts-crafts",
+      "folk-art"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:48.034Z",
+    "lastSeenAt": "2026-09-11T07:19:48.034Z"
+  },
+  {
+    "id": "adammatthewsteinberger/vibey-skills/cad-slicing-pipeline-and-processes",
+    "name": "cad-slicing-pipeline-and-processes",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when turning a model into a physical part: the slicing pipeline including the slicing step itself, the 2D operations that follow, the decisions that actually matter, and G-code; and the processes — FDM physics and what really determines part quality, plus SLA and powder-bed specifics.",
+    "security": "A",
+    "signalScore": 69,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "arts",
+      "3d-printing",
+      "parametric",
+      "pattern",
+      "3d",
+      "design",
+      "cad",
+      "operations",
+      "photo",
+      "motion"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/cad-3d-printing/skills/cad-slicing-pipeline-and-processes/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "arts-crafts",
+      "industrial-design",
+      "operations-design",
+      "environmental-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:41.357Z",
+    "lastSeenAt": "2026-09-11T07:19:41.357Z"
+  },
+  {
+    "id": "m3taz-ahmed/ai-globals/flutter-design",
+    "name": "flutter-design",
+    "source": "m3taz-ahmed/ai-globals",
+    "summary": "Principal Flutter UI/UX Designer — Material 3 design systems, theming, motion, responsive/adaptive layouts, accessibility, pixel-perfect Figma-to-Flutter, design tokens, dark mode, RTL.",
+    "security": "C",
+    "signalScore": 68,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "typography",
+      "figma",
+      "accessibility",
+      "ux",
+      "prototype",
+      "mobile",
+      "brand",
+      "color"
+    ],
+    "installUrl": "https://github.com/m3taz-ahmed/ai-globals",
+    "skillsUrl": "https://github.com/m3taz-ahmed/ai-globals/blob/main/skills/flutter-design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "visual-communication",
+      "video-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:36.300Z",
+    "lastSeenAt": "2026-09-11T07:19:36.300Z"
+  },
+  {
+    "id": "adammatthewsteinberger/vibey-skills/cad-reference",
+    "name": "cad-reference",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when checking a CAD or printing anti-pattern, looking up a tolerance, temperature or dimensional value, asking what actually moved (OpenSCAD's Manifold backend, the slicer landscape, code-CAD and the LLM angle, verified August 2026), finding the books and tools, or needing a picker and a pre-print checklist. Compan",
+    "security": "A",
+    "signalScore": 68,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "arts",
+      "3d-printing",
+      "parametric",
+      "pattern",
+      "3d",
+      "design",
+      "cad",
+      "landscape"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/cad-3d-printing/skills/cad-reference/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "arts-crafts",
+      "industrial-design",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:41.210Z",
+    "lastSeenAt": "2026-09-11T07:19:41.210Z"
+  },
+  {
+    "id": "GML-MMGroup/AdCraft/video_agent_prop_design",
+    "name": "Video Agent Prop Design",
+    "source": "GML-MMGroup/AdCraft",
+    "summary": "Design coherent supporting props that serve the advertising idea.",
+    "security": "A",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 238,
+    "tags": [
+      "design",
+      "brand",
+      "product",
+      "visual",
+      "video",
+      "environment"
+    ],
+    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
+    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_prop_design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "environmental-design",
+      "fashion-design",
+      "video-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:33.568Z",
+    "lastSeenAt": "2026-09-11T07:19:33.568Z"
+  },
+  {
+    "id": "GML-MMGroup/AdCraft/video_agent_storyboard_design",
+    "name": "Video Agent Storyboard Design",
+    "source": "GML-MMGroup/AdCraft",
+    "summary": "Convert approved script beats into ordered, visually continuous storyboard directions.",
+    "security": "A",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 238,
+    "tags": [
+      "design",
+      "lighting",
+      "product",
+      "visual",
+      "video",
+      "film",
+      "storyboard"
+    ],
+    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
+    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_storyboard_design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "environmental-design",
+      "operations-design",
+      "video-design",
+      "ui-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:33.898Z",
+    "lastSeenAt": "2026-09-11T07:19:33.898Z"
+  },
+  {
+    "id": "m3taz-ahmed/ai-globals/ui-design-lord",
+    "name": "ui-design-lord",
+    "source": "m3taz-ahmed/ai-globals",
+    "summary": "Lord skill for UI/UX design mastery — HTML, CSS, Tailwind v4.3, Filament v5 UI components, responsive design, RTL/Arabic, accessibility, and design systems.",
+    "security": "C",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "typography",
+      "accessibility",
+      "ux",
+      "product",
+      "mobile",
+      "brand",
+      "color"
+    ],
+    "installUrl": "https://github.com/m3taz-ahmed/ai-globals",
+    "skillsUrl": "https://github.com/m3taz-ahmed/ai-globals/blob/main/skills/ui-design-lord/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:36.449Z",
+    "lastSeenAt": "2026-09-11T07:19:36.449Z"
+  },
+  {
+    "id": "adammatthewsteinberger/vibey-skills/cad-design-tolerances-and-materials",
+    "name": "cad-design-tolerances-and-materials",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when designing a part that has to work rather than just print: design for additive manufacturing including overhangs, supports, orientation and anisotropy, tolerances and fits and how to achieve them on a printer that does not hold them natively, and materials and their mechanical, thermal and environmental behavio",
+    "security": "A",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "arts",
+      "3d-printing",
+      "parametric",
+      "3d",
+      "environmental",
+      "design",
+      "environment",
+      "landscape",
+      "cad"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/cad-3d-printing/skills/cad-design-tolerances-and-materials/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "arts-crafts",
+      "environmental-design",
+      "industrial-design",
+      "architecture-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:40.718Z",
+    "lastSeenAt": "2026-09-11T07:19:40.718Z"
+  },
+  {
+    "id": "sounny/dxskills/dxskills",
+    "name": "dxskills",
+    "source": "sounny/dxskills",
+    "summary": "Universal cognitive scaffolding and executive tooling for non-linear, spatial, and dyslexic thinkers. Auto-syncs with https://github.com/sounny/dxskills.",
+    "security": "C",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "architecture",
+      "spatial",
+      "diagram",
+      "map",
+      "environment",
+      "visual",
+      "communication"
+    ],
+    "installUrl": "https://github.com/sounny/dxskills",
+    "skillsUrl": "https://github.com/sounny/dxskills/blob/main/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "visual-communication",
+      "arts-crafts"
+    ],
+    "qualityScore": 89,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:47.532Z",
+    "lastSeenAt": "2026-09-11T07:19:47.532Z"
+  },
+  {
+    "id": "yangzhou-chaofan/awesome-gpt6-astra-game-prompts/astra-playbook",
+    "name": "gpt6-astra-playbook",
+    "source": "yangzhou-chaofan/awesome-gpt6-astra-game-prompts",
+    "summary": "Turn a one-line idea into a runnable GPT-6 Astra creation. Use when someone wants a game, 3D scene, website, video, app or computer-use task built with GPT-6 Astra and needs the prompt actually assembled — not just a list of examples. Routes the idea to the right output form, fills the eight-block prompt frame, and att",
+    "security": "A",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "video",
+      "motion",
+      "audio",
+      "3d",
+      "interaction",
+      "arts",
+      "color",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/yangzhou-chaofan/awesome-gpt6-astra-game-prompts",
+    "skillsUrl": "https://github.com/yangzhou-chaofan/awesome-gpt6-astra-game-prompts/blob/main/skills/astra-playbook/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "digital-media-film",
+      "arts-crafts",
+      "folk-art"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:39.109Z",
+    "lastSeenAt": "2026-09-11T07:19:39.109Z"
+  },
+  {
+    "id": "adammatthewsteinberger/vibey-skills/cad-generative-automation-and-scanning",
+    "name": "cad-generative-automation-and-scanning",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when going beyond hand modelling: generative design and lattice structures and what they are actually good for, automation pipelines for batch generation, headless CAD and build integration, and scanning and reverse engineering including point clouds, registration and getting from a scan back to editable geometry.",
+    "security": "A",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "arts",
+      "3d-printing",
+      "parametric",
+      "3d",
+      "design",
+      "cad",
+      "operations",
+      "photo"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/cad-3d-printing/skills/cad-generative-automation-and-scanning/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "arts-crafts",
+      "industrial-design",
+      "operations-design",
+      "environmental-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:40.866Z",
+    "lastSeenAt": "2026-09-11T07:19:40.866Z"
+  },
+  {
+    "id": "SpiralCloudOmega/DevTeam6/spatial-audio",
+    "name": "spatial-audio",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "Spatial audio processing — stereo width, panning laws, HRTF, Ambisonics, surround formats",
+    "security": "A",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "spatial",
+      "3d",
+      "rendering"
+    ],
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/audio-dsp/spatial-audio/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:43.402Z",
+    "lastSeenAt": "2026-09-11T07:19:43.402Z"
+  },
+  {
+    "id": "lukaskourilcz/quorum/product-marketing",
+    "name": "product-marketing",
+    "source": "lukaskourilcz/quorum",
+    "summary": "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' 'ideal customer profile,' or wants to avoid repeating foundational informa",
+    "security": "A",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "brand",
+      "product",
+      "motion",
+      "communication",
+      "landscape"
+    ],
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/product-marketing/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "visual-communication",
+      "environmental-design",
+      "video-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:44.140Z",
+    "lastSeenAt": "2026-09-11T07:19:44.140Z"
+  },
+  {
+    "id": "sounny/dxskills/dx-dump",
+    "name": "dx-dump",
+    "source": "sounny/dxskills",
+    "summary": "Compiles unstructured brain dumps, rapid bullet fragments, voice transcripts, and phonetic shorthand into structured architectural outlines, decision tables, and actionable deliverables.",
+    "security": "C",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "architecture",
+      "spatial",
+      "diagram",
+      "map",
+      "environment",
+      "product",
+      "visual"
+    ],
+    "installUrl": "https://github.com/sounny/dxskills",
+    "skillsUrl": "https://github.com/sounny/dxskills/blob/main/skills/dx-dump/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "operations-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:47.678Z",
+    "lastSeenAt": "2026-09-11T07:19:47.678Z"
+  },
+  {
+    "id": "lukaskourilcz/quorum/financial-operations",
+    "name": "financial-operations",
+    "source": "lukaskourilcz/quorum",
+    "summary": "Use when LEDGER reconciles operating cost, reports daily/MTD finance, evaluates spend, or plans the approved $30 monthly all-in operating limit.",
+    "security": "A",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "operations",
+      "campaign",
+      "media"
+    ],
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/financial-operations/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "fashion-design",
+      "digital-media-film",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:43.863Z",
+    "lastSeenAt": "2026-09-11T07:19:43.863Z"
+  },
+  {
+    "id": "LearnPrompt/awesome-seedance/seedance-prompt-library",
+    "name": "seedance-prompt-library",
+    "source": "LearnPrompt/awesome-seedance",
+    "summary": "Verified prompt templates and structures for Seedance 2.5 / 2.0 video generation, distilled from the highest-performing published cases on goodcase.ai. Use when the user asks to write, revise, or review a Seedance video prompt, or asks how to prompt Seedance for a specific kind of shot (narrative short, ad/commercial, ",
+    "security": "B",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 4,
+    "tags": [
+      "product",
+      "video"
+    ],
+    "installUrl": "https://github.com/LearnPrompt/awesome-seedance",
+    "skillsUrl": "https://github.com/LearnPrompt/awesome-seedance/blob/main/agents/skills/seedance-prompt-library/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "environmental-design",
+      "fashion-design",
+      "video-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:36.664Z",
+    "lastSeenAt": "2026-09-11T07:19:36.664Z"
+  },
+  {
+    "id": "SpiralCloudOmega/DevTeam6/routing-grid",
+    "name": "routing-grid",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "AXE-FX III-style 12×4 routing grid for REVITHION STUDIO — grid topology, 36+ block types, scenes, channels, X/Y, feedback, and global blocks.",
+    "security": "A",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "product",
+      "parametric",
+      "ux",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/routing-grid/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "experience-design",
+      "arts-crafts",
+      "architecture-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:40.362Z",
+    "lastSeenAt": "2026-09-11T07:19:40.362Z"
+  },
+  {
+    "id": "adammatthewsteinberger/vibey-skills/nano-fabrication-and-semiconductor-process",
+    "name": "nano-fabrication-and-semiconductor-process",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when making nanoscale structures: top-down fabrication including photolithography, EUV, etching and deposition and their resolution limits, bottom-up synthesis and self-assembly, and the semiconductor process — what a node name such as 2nm actually means, the transistor evolution from planar through FinFET to gate-",
+    "security": "A",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "fabrication",
+      "pattern",
+      "industrial",
+      "art"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/nanotechnology/skills/nano-fabrication-and-semiconductor-process/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "arts-crafts",
+      "industrial-design",
+      "folk-art",
+      "operations-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:41.749Z",
+    "lastSeenAt": "2026-09-11T07:19:41.750Z"
+  },
+  {
+    "id": "bumi-kala-charta/design-system/design-system",
+    "name": "bumi-kala-charta-design",
+    "source": "bumi-kala-charta/design-system",
+    "summary": "Use this skill to generate well-branded interfaces and assets for Bumi Kala Charta (BKC), an Indonesian geospatial community and consultancy in geodesy and geomatics — either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for pr",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "typography",
+      "visual",
+      "brand",
+      "color",
+      "product",
+      "photo"
+    ],
+    "installUrl": "https://github.com/bumi-kala-charta/design-system",
+    "skillsUrl": "https://github.com/bumi-kala-charta/design-system/blob/main/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "visual-communication",
+      "operations-design",
+      "fashion-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:43.568Z",
+    "lastSeenAt": "2026-09-11T07:19:43.568Z"
+  },
+  {
+    "id": "GML-MMGroup/AdCraft/1.0.0",
+    "name": "潮玩角色世界广告",
+    "source": "GML-MMGroup/AdCraft",
+    "summary": "以可收藏轮廓、标志性配件、材质魅力和世界构建钩子组织具有角色识别度的商业动画。",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 238,
+    "tags": [
+      "design",
+      "product",
+      "video",
+      "film"
+    ],
+    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
+    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/video-skills/designer-toy-ip-film/1.0.0/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "environmental-design",
+      "operations-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 66,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:34.055Z",
+    "lastSeenAt": "2026-09-11T07:19:34.055Z"
+  },
+  {
+    "id": "m3taz-ahmed/ai-globals/community-builder",
+    "name": "community-builder",
+    "source": "m3taz-ahmed/ai-globals",
+    "summary": "Community builder — launch and manage Discord, Telegram, groups, and forums. RTL-aware moderation and growth.",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "ui",
+      "product",
+      "motion"
+    ],
+    "installUrl": "https://github.com/m3taz-ahmed/ai-globals",
+    "skillsUrl": "https://github.com/m3taz-ahmed/ai-globals/blob/main/skills/community-builder/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:36.150Z",
+    "lastSeenAt": "2026-09-11T07:19:36.150Z"
+  },
+  {
+    "id": "POLAX7/figma-inspector/figma-inspector",
+    "name": "figma-inspector",
+    "source": "POLAX7/figma-inspector",
+    "summary": "Use when inspecting Figma designs, expanding local component instances, extracting UI styles for frontend implementation, or avoiding unnecessary Figma API HTTP 429 rate limits and token bloat.",
     "security": "C",
     "signalScore": 61,
     "installs": 0,
-    "repoStars": 1725,
+    "repoStars": 1,
     "tags": [
-      "research",
+      "design",
+      "ui",
+      "layout",
+      "figma",
       "art",
+      "vector",
       "pattern",
-      "communication"
+      "visual"
     ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/distributed-training-pytorch-fsdp/SKILL.md",
+    "installUrl": "https://github.com/POLAX7/figma-inspector",
+    "skillsUrl": "https://github.com/POLAX7/figma-inspector/blob/main/figma-inspector/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "experience-design",
+      "ui-design",
       "folk-art",
       "visual-communication",
       "arts-crafts"
     ],
-    "qualityScore": 92,
+    "qualityScore": 89,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:26.376Z",
-    "lastSeenAt": "2026-09-10T07:21:26.376Z"
+    "firstSeenAt": "2026-09-11T07:19:38.800Z",
+    "lastSeenAt": "2026-09-11T07:19:38.801Z"
   },
   {
-    "id": "Dicklesworthstone/pi_agent_rust/emerging-techniques-knowledge-distillation",
-    "name": "knowledge-distillation",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Compress large language models using knowledge distillation from teacher to student models. Use when deploying smaller models with retained performance, transferring GPT-4 capabilities to open-source models, or reducing inference costs. Covers temperature scaling, soft targets, reverse KLD, logit distillation, and Mini",
-    "security": "C",
+    "id": "SpiralCloudOmega/DevTeam6/mixing-techniques",
+    "name": "mixing-techniques",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "Professional mixing techniques for REVITHION STUDIO — gain staging, bus routing, parallel compression, send effects, VCA grouping, automation, Scheps Rear Bus, and stem export in JUCE C++.",
+    "security": "A",
     "signalScore": 61,
     "installs": 0,
-    "repoStars": 1725,
+    "repoStars": 1,
     "tags": [
-      "research",
-      "ui",
-      "art"
+      "design",
+      "ux",
+      "product"
     ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/emerging-techniques-knowledge-distillation/SKILL.md",
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/mixing-techniques/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "ui-design",
-      "folk-art",
-      "architecture-design"
+      "industrial-design",
+      "operations-design",
+      "video-design"
     ],
-    "qualityScore": 92,
+    "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:26.971Z",
-    "lastSeenAt": "2026-09-10T07:21:26.971Z"
+    "firstSeenAt": "2026-09-11T07:19:39.991Z",
+    "lastSeenAt": "2026-09-11T07:19:39.991Z"
   },
   {
-    "id": "Dicklesworthstone/pi_agent_rust/emerging-techniques-long-context",
-    "name": "long-context",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Extend context windows of transformer models using RoPE, YaRN, ALiBi, and position interpolation techniques. Use when processing long documents (32k-128k+ tokens), extending pre-trained models beyond original context limits, or implementing efficient positional encodings. Covers rotary embeddings, attention biases, int",
+    "id": "adammatthewsteinberger/vibey-skills/legal-brief-writing",
+    "name": "legal-brief-writing",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when writing legal briefs, motions, or any court filing; when analyzing judicial cognition and persuasion; when applying elite brief-writing techniques from Roberts, Clement, Kagan, Garner; or when structuring legal arguments for maximum persuasion. Also use for autistic/neurodivergent advocates who need to underst",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "craft",
+      "pattern",
+      "art",
+      "communication"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/writing-craft/skills/legal-brief-writing/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "arts-crafts",
+      "folk-art",
+      "visual-communication",
+      "experience-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:42.159Z",
+    "lastSeenAt": "2026-09-11T07:19:42.159Z"
+  },
+  {
+    "id": "lukaskourilcz/quorum/organization-operations",
+    "name": "organization-operations",
+    "source": "lukaskourilcz/quorum",
+    "summary": "Use when PEOPLE reviews agent effectiveness or proposes/tests a role, description, routing, prompt, skill, model, or status change.",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "operations"
+    ],
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/organization-operations/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "ui-design",
+      "visual-communication",
+      "video-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:44.000Z",
+    "lastSeenAt": "2026-09-11T07:19:44.000Z"
+  },
+  {
+    "id": "lukaskourilcz/quorum/social-operations",
+    "name": "social-operations",
+    "source": "lukaskourilcz/quorum",
+    "summary": "Use for social strategy, calendars, channel drafts, media assets, queue review, publishing, insights, channel proposals and social incidents.",
     "security": "C",
     "signalScore": 61,
     "installs": 0,
-    "repoStars": 1725,
+    "repoStars": 0,
     "tags": [
-      "research",
       "operations",
+      "brand",
+      "product",
+      "motion",
+      "accessibility",
       "ui"
     ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/emerging-techniques-long-context/SKILL.md",
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/social-operations/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "experience-design",
+      "ui-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:44.317Z",
+    "lastSeenAt": "2026-09-11T07:19:44.317Z"
+  },
+  {
+    "id": "lukaskourilcz/quorum/brand-identity",
+    "name": "brand-identity",
+    "source": "lukaskourilcz/quorum",
+    "summary": "Create or apply the BoardlessAI Refero/Awesomic zinc-and-Ember editorial system, tokens.css, typography, SVG logo and BRAND.md voice. Use when founding the brand, building UI, or fixing visual drift.",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "visual",
+      "brand",
+      "typography",
+      "editorial",
+      "color",
+      "ui",
+      "accessibility"
+    ],
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/brand-identity/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "operations-design",
+      "ui-design",
+      "fashion-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:43.718Z",
+    "lastSeenAt": "2026-09-11T07:19:43.718Z"
+  },
+  {
+    "id": "SpiralCloudOmega/DevTeam6/loudness-metering",
+    "name": "loudness-metering",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "EBU R128 / ITU-R BS.1770-4 loudness metering, K-weighting, gating, true peak, LRA, and streaming targets for REVITHION STUDIO.",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "product",
+      "cad",
+      "art",
+      "vector",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/loudness-metering/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "experience-design",
+      "folk-art",
+      "visual-communication"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:39.488Z",
+    "lastSeenAt": "2026-09-11T07:19:39.488Z"
+  },
+  {
+    "id": "adammatthewsteinberger/vibey-skills/reporting-dashboard-design-charts-and-alerting",
+    "name": "reporting-dashboard-design-charts-and-alerting",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when designing what people actually look at: dashboard design including audience, hierarchy, defaults and the failure modes of the everything-dashboard, chart selection matched to the question being asked, and alerting including threshold design, noise, and why most alerting gets ignored.",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "architecture",
+      "design",
+      "3d",
+      "map",
+      "arts"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/reporting-and-dashboards/skills/reporting-dashboard-design-charts-and-alerting/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "arts-crafts",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:41.951Z",
+    "lastSeenAt": "2026-09-11T07:19:41.951Z"
+  },
+  {
+    "id": "adammatthewsteinberger/vibey-skills/white-paper-writing",
+    "name": "white-paper-writing",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when writing white papers, technical reports, policy documents, thought leadership pieces, or any long-form authoritative document. Triggers on requests to write, structure, outline, or review white papers, technical reports, position papers, policy briefs, or evidence-driven arguments. Also use for B2B content mar",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "experience",
+      "design",
+      "research",
+      "architecture",
+      "diagram",
+      "craft"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/writing-craft/skills/white-paper-writing/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
+      "architecture-design",
+      "arts-crafts",
+      "environmental-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:43.255Z",
+    "lastSeenAt": "2026-09-11T07:19:43.255Z"
+  },
+  {
+    "id": "sounny/dxskills/dx-read",
+    "name": "dx-read",
+    "source": "sounny/dxskills",
+    "summary": "Anti-Wall-of-Text reading filter. Re-renders dense academic papers, policy documents, and long emails into visual signposts, decision matrices, and executive summaries.",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "spatial",
+      "visual"
+    ],
+    "installUrl": "https://github.com/sounny/dxskills",
+    "skillsUrl": "https://github.com/sounny/dxskills/blob/main/skills/dx-read/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "visual-communication",
       "operations-design",
+      "environmental-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:48.205Z",
+    "lastSeenAt": "2026-09-11T07:19:48.205Z"
+  },
+  {
+    "id": "xianyu110/awesome-gpt-image2.5/ugc-face-lock",
+    "name": "UGC 写真锁脸",
+    "source": "xianyu110/awesome-gpt-image2.5",
+    "summary": "use this when making photoreal UGC or ad portraits with Images 2.5 face-lock",
+    "security": "B",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 4,
+    "tags": [
+      "photo"
+    ],
+    "installUrl": "https://github.com/xianyu110/awesome-gpt-image2.5",
+    "skillsUrl": "https://github.com/xianyu110/awesome-gpt-image2.5/blob/main/skills/ugc-face-lock/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "environmental-design",
+      "operations-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:37.636Z",
+    "lastSeenAt": "2026-09-11T07:19:37.636Z"
+  },
+  {
+    "id": "SpiralCloudOmega/DevTeam6/automation",
+    "name": "daw-automation-system",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "DAW automation engine for REVITHION STUDIO — modes, curves, parameter binding, thinning, and punch logic in C++/JUCE.",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "product",
+      "art",
+      "vector",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/automation/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "experience-design",
+      "folk-art",
+      "arts-crafts"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:39.280Z",
+    "lastSeenAt": "2026-09-11T07:19:39.280Z"
+  },
+  {
+    "id": "SpiralCloudOmega/DevTeam6/mastering-chain",
+    "name": "mastering-chain",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "Professional mastering chain for REVITHION STUDIO — EQ, multiband compression, M/S processing, limiting, dithering, and loudness targeting in C++/JUCE.",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "product",
+      "vector",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/mastering-chain/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "experience-design",
+      "arts-crafts",
+      "folk-art"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:39.626Z",
+    "lastSeenAt": "2026-09-11T07:19:39.626Z"
+  },
+  {
+    "id": "SpiralCloudOmega/DevTeam6/midi-system",
+    "name": "midi-system",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "MIDI engine for REVITHION STUDIO — messages, clock, sync, MPE, MIDI 2.0, recording, quantization, humanization via JUCE C++.",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "product",
+      "operations"
+    ],
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/midi-system/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "experience-design",
+      "operations-design",
+      "ui-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:39.804Z",
+    "lastSeenAt": "2026-09-11T07:19:39.804Z"
+  },
+  {
+    "id": "adammatthewsteinberger/vibey-skills/prose-mechanics",
+    "name": "prose-mechanics",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when writing, editing, or analyzing prose style; when trying to avoid generic AI-sounding writing; when applying specific prose styles such as journalistic, academic, narrative, KJV biblical, Hemingway plain, Latinate/Jamesian, Orwellian, Augustan, Victorian, Early Modern (Bacon, Browne, Milton), or free indirect d",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "craft",
+      "motion",
+      "editing",
+      "media"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/writing-craft/skills/prose-mechanics/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "arts-crafts",
+      "video-design",
+      "digital-media-film",
+      "folk-art"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:42.915Z",
+    "lastSeenAt": "2026-09-11T07:19:42.915Z"
+  },
+  {
+    "id": "SpiralCloudOmega/DevTeam6/skill-design-patterns",
+    "name": "skill-design-patterns",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "Universal guide for designing effective AI agent skills — structure, examples, cross-referencing, composition, and testing.",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "design",
+      "audio"
+    ],
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/agent-orchestration/skill-design-patterns/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "industrial-design",
+      "experience-design",
+      "architecture-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:38.954Z",
+    "lastSeenAt": "2026-09-11T07:19:38.954Z"
+  },
+  {
+    "id": "adammatthewsteinberger/vibey-skills/arm-vectors-atomics-numerics-and-security-architecture",
+    "name": "arm-vectors-atomics-numerics-and-security-architecture",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use for the extensions and the security architecture: the vector extensions NEON, SVE, SVE2 and SME and the vector-length-agnostic model, atomics and synchronization including the large system extensions, floating point and numerics, TrustZone and secure world separation, pointer authentication, branch target identific",
+    "security": "B",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "operations",
+      "design",
+      "product",
+      "vector",
+      "mobile"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/arm-architecture-deep-dive/skills/arm-vectors-atomics-numerics-and-security-architecture/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "arts-crafts",
+      "experience-design",
+      "environmental-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:40.547Z",
+    "lastSeenAt": "2026-09-11T07:19:40.547Z"
+  },
+  {
+    "id": "adammatthewsteinberger/vibey-skills/math-calculus-and-vector-calculus",
+    "name": "math-calculus-and-vector-calculus",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when doing calculus rather than reading it: limits and continuity and what the derivative actually is as a linear approximation, integration and its several distinct meanings, series and Taylor approximation with convergence and truncation error, multivariable calculus including gradients, Jacobians and Hessians, a",
+    "security": "B",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "arts",
+      "vector",
+      "operations",
+      "product",
+      "art"
+    ],
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/calculus-geometry-algebra/skills/math-calculus-and-vector-calculus/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "arts-crafts",
+      "operations-design",
+      "folk-art",
+      "visual-communication"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:41.558Z",
+    "lastSeenAt": "2026-09-11T07:19:41.558Z"
+  },
+  {
+    "id": "sounny/dxskills/dx-voice",
+    "name": "dx-voice",
+    "source": "sounny/dxskills",
+    "summary": "Speech-to-Architecture pipeline. Converts raw audio dictation, meeting recordings, and voice memos directly into structured Markdown deliverables using local Whisper transcription and cognitive compilation.",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "architecture",
+      "map",
+      "audio"
+    ],
+    "installUrl": "https://github.com/sounny/dxskills",
+    "skillsUrl": "https://github.com/sounny/dxskills/blob/main/skills/dx-voice/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "video-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-11T07:19:48.522Z",
+    "lastSeenAt": "2026-09-11T07:19:48.522Z"
+  },
+  {
+    "id": "aganesy/QFAI/web-research",
+    "name": "web-research",
+    "source": "aganesy/QFAI",
+    "summary": "8-stage web research pipeline with MCP integration, caching, and citation generation.",
+    "security": "C",
+    "signalScore": 55,
+    "installs": 0,
+    "repoStars": 4,
+    "tags": [
+      "research",
+      "media",
+      "ui"
+    ],
+    "installUrl": "https://github.com/aganesy/QFAI",
+    "skillsUrl": "https://github.com/aganesy/QFAI/blob/main/.qfai/assistant/skills/web-research/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "digital-media-film",
       "ui-design",
       "folk-art"
     ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:27.197Z",
-    "lastSeenAt": "2026-09-10T07:21:27.197Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/evaluation-nemo-evaluator",
-    "name": "nemo-evaluator-sdk",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Evaluates LLMs across 100+ benchmarks from 18+ harnesses (MMLU, HumanEval, GSM8K, safety, VLM) with multi-backend execution. Use when needing scalable evaluation on local Docker, Slurm HPC, or cloud platforms. NVIDIA's enterprise-grade platform with container-first architecture for reproducible benchmarking.",
-    "security": "C",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/evaluation-nemo-evaluator/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:28.620Z",
-    "lastSeenAt": "2026-09-10T07:21:28.620Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/gemini",
-    "name": "gemini",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Use when the user asks to run Gemini CLI for code review, plan review, or big context (>200k) processing. Ideal for comprehensive analysis requiring large context windows. Uses Gemini 3 Pro by default for state-of-the-art reasoning and coding.",
-    "security": "C",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "ux",
-      "research",
-      "architecture",
-      "map",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/gemini/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "architecture-design",
-      "folk-art",
-      "environmental-design"
-    ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:29.573Z",
-    "lastSeenAt": "2026-09-10T07:21:29.573Z"
+    "firstSeenAt": "2026-09-11T07:19:37.971Z",
+    "lastSeenAt": "2026-09-11T07:19:37.971Z"
   },
   {
-    "id": "Dicklesworthstone/pi_agent_rust/model-architecture-torchtitan",
-    "name": "distributed-llm-pretraining-torchtitan",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Provides PyTorch-native distributed LLM pretraining using torchtitan with 4D parallelism (FSDP2, TP, PP, CP). Use when pretraining Llama 3.1, DeepSeek V3, or custom models at scale from 8 to 512+ GPUs with Float8, torch.compile, and distributed checkpointing.",
+    "id": "adammatthewsteinberger/vibey-skills/narrative-structure",
+    "name": "narrative-structure",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when structuring stories, pitches, presentations, white papers, or any persuasive narrative; analyzing the hero's journey in fiction or non-fiction; applying StoryBrand for business communication; designing narrative arcs for thought leadership; or understanding Vogler, Snyder, Propp, or Campbell frameworks. Trigge",
     "security": "C",
-    "signalScore": 61,
+    "signalScore": 51,
     "installs": 0,
-    "repoStars": 1725,
+    "repoStars": 1,
     "tags": [
-      "research",
-      "environment",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/model-architecture-torchtitan/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:35.117Z",
-    "lastSeenAt": "2026-09-10T07:21:35.117Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/prompt-engineering-dspy",
-    "name": "dspy",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Build complex AI systems with declarative programming, optimize prompts automatically, create modular RAG systems and agents with DSPy - Stanford NLP's framework for systematic LM programming",
-    "security": "C",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/prompt-engineering-dspy/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:41.580Z",
-    "lastSeenAt": "2026-09-10T07:21:41.581Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/data-processing-nemo-curator",
-    "name": "nemo-curator",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "GPU-accelerated data curation for LLM training. Supports text/image/video/audio. Features fuzzy deduplication (16× faster), quality filtering (30+ heuristics), semantic deduplication, PII redaction, NSFW detection. Scales across GPUs with RAPIDS. Use for preparing high-quality training datasets, cleaning web data, or d",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "video",
-      "audio",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/data-processing-nemo-curator/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "video-design",
-      "folk-art",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:24.978Z",
-    "lastSeenAt": "2026-09-10T07:21:24.979Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/distributed-training-accelerate",
-    "name": "huggingface-accelerate",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Simplest distributed training API. 4 lines to add distributed support to any PyTorch script. Unified API for DeepSpeed/FSDP/Megatron/DDP. Automatic device placement, mixed precision (FP16/BF16/FP8). Interactive config, single launch command. HuggingFace ecosystem standard.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/distributed-training-accelerate/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:25.729Z",
-    "lastSeenAt": "2026-09-10T07:21:25.729Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/distributed-training-ray-train",
-    "name": "ray-train",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Distributed training orchestration across clusters. Scales PyTorch/TensorFlow/HuggingFace from laptop to 1000s of nodes. Built-in hyperparameter tuning with Ray Tune, fault tolerance, elastic scaling. Use when training massive models across multiple machines or running distributed hyperparameter sweeps.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/distributed-training-ray-train/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:26.755Z",
-    "lastSeenAt": "2026-09-10T07:21:26.755Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/evaluation-bigcode-evaluation-harness",
-    "name": "evaluating-code-models",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Evaluates code generation models across HumanEval, MBPP, MultiPL-E, and 15+ benchmarks with pass@k metrics. Use when benchmarking code models, comparing coding abilities, testing multi-language support, or measuring code generation quality. Industry standard from BigCode Project used by HuggingFace leaderboards.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/evaluation-bigcode-evaluation-harness/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:28.172Z",
-    "lastSeenAt": "2026-09-10T07:21:28.172Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/fine-tuning-peft",
-    "name": "peft-fine-tuning",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models (7B-70B) with limited GPU memory, when you need to train <1% of parameters with minimal accuracy loss, or for multi-adapter serving. HuggingFace's official library integrated with transformers ecosystem.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "architecture",
-      "map"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/fine-tuning-peft/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "architecture-design",
-      "environmental-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:29.222Z",
-    "lastSeenAt": "2026-09-10T07:21:29.222Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/gepetto",
-    "name": "gepetto",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Creates detailed, sectionized implementation plans through research, stakeholder interviews, and multi-LLM review. Use when planning features that need thorough pre-implementation analysis.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "pattern",
-      "editing"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/gepetto/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "video-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 82,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:29.776Z",
-    "lastSeenAt": "2026-09-10T07:21:29.776Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/infrastructure-modal",
-    "name": "modal-serverless-gpu",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access without infrastructure management, deploying ML models as APIs, or running batch jobs with automatic scaling.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "arts",
-      "pattern",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/infrastructure-modal/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "arts-crafts",
-      "folk-art",
-      "environmental-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:30.878Z",
-    "lastSeenAt": "2026-09-10T07:21:30.878Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/mechanistic-interpretability-nnsight",
-    "name": "nnsight-remote-interpretability",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Provides guidance for interpreting and manipulating neural network internals using nnsight with optional NDIF remote execution. Use when needing to run interpretability experiments on massive models (70B+) without local GPU resources, or when working with any PyTorch architecture.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "architecture",
-      "map",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/mechanistic-interpretability-nnsight/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "architecture-design",
-      "folk-art",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:32.921Z",
-    "lastSeenAt": "2026-09-10T07:21:32.921Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/mechanistic-interpretability-pyvene",
-    "name": "pyvene-interventions",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Provides guidance for performing causal interventions on PyTorch models using pyvene's declarative intervention framework. Use when conducting causal tracing, activation patching, interchange intervention training, or testing causal hypotheses about model behavior.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "vector",
-      "visual"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/mechanistic-interpretability-pyvene/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "visual-communication",
-      "arts-crafts"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:33.093Z",
-    "lastSeenAt": "2026-09-10T07:21:33.094Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/mechanistic-interpretability-transformer-lens",
-    "name": "transformer-lens-interpretability",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Provides guidance for mechanistic interpretability research using TransformerLens to inspect and manipulate transformer internals via HookPoints and activation caching. Use when reverse-engineering model algorithms, studying attention patterns, or performing activation patching experiments.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "vector",
-      "pattern",
-      "visual"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/mechanistic-interpretability-transformer-lens/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "arts-crafts",
-      "visual-communication"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:33.443Z",
-    "lastSeenAt": "2026-09-10T07:21:33.443Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/mlops-tensorboard",
-    "name": "tensorboard",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "architecture",
-      "3d",
-      "map"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/mlops-tensorboard/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "architecture-design",
-      "environmental-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:33.979Z",
-    "lastSeenAt": "2026-09-10T07:21:33.979Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/mlops-weights-and-biases",
-    "name": "weights-and-biases",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparameters with sweeps, and manage model registry with W&B - collaborative MLOps platform",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "visual",
-      "video",
-      "audio"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/mlops-weights-and-biases/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "operations-design",
-      "video-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:34.162Z",
-    "lastSeenAt": "2026-09-10T07:21:34.162Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/multimodal-clip",
-    "name": "clip",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "OpenAI's model connecting vision and language. Enables zero-shot image classification, image-text matching, and cross-modal retrieval. Trained on 400M image-text pairs. Use for image search, content moderation, or vision-language tasks without fine-tuning. Best for general-purpose image understanding.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "vector",
-      "visual"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/multimodal-clip/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:35.667Z",
-    "lastSeenAt": "2026-09-10T07:21:35.667Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/multimodal-llava",
-    "name": "llava",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Large Language and Vision Assistant. Enables visual instruction tuning and image-based conversations. Combines CLIP vision encoder with Vicuna/LLaMA language models. Supports multi-turn image chat, visual question answering, and instruction following. Use for vision-language chatbots or image understanding tasks. Best ",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "visual"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/multimodal-llava/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:36.878Z",
-    "lastSeenAt": "2026-09-10T07:21:36.878Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/multimodal-segment-anything",
-    "name": "segment-anything-model",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Foundation model for image segmentation with zero-shot transfer. Use when you need to segment any object in images using points, boxes, or masks as prompts, or automatically generate all object masks in an image.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "color",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/multimodal-segment-anything/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:37.070Z",
-    "lastSeenAt": "2026-09-10T07:21:37.070Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/multimodal-whisper",
-    "name": "whisper",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "OpenAI's general-purpose speech recognition model. Supports 99 languages, transcription, translation to English, and language identification. Six model sizes from tiny (39M params) to large (1550M params). Use for speech-to-text, podcast transcription, or multilingual audio processing. Best for robust, multilingual ASR",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "video",
-      "audio",
-      "art",
-      "vector"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/multimodal-whisper/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "video-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:37.431Z",
-    "lastSeenAt": "2026-09-10T07:21:37.431Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/optimization-bitsandbytes",
-    "name": "quantizing-models-bitsandbytes",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Quantizes LLMs to 8-bit or 4-bit for 50-75% memory reduction with minimal accuracy loss. Use when GPU memory is limited, need to fit larger models, or want faster inference. Supports INT8, NF4, FP4 formats, QLoRA training, and 8-bit optimizers. Works with HuggingFace Transformers.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/optimization-bitsandbytes/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "architecture-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:38.219Z",
-    "lastSeenAt": "2026-09-10T07:21:38.219Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/post-training-simpo",
-    "name": "simpo-training",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Simple Preference Optimization for LLM alignment. Reference-free alternative to DPO with better performance (+6.4 points on AlpacaEval 2.0). No reference model needed, more efficient than DPO. Use for preference alignment when want simpler, faster training than DPO/PPO.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "environment"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/post-training-simpo/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:40.203Z",
-    "lastSeenAt": "2026-09-10T07:21:40.203Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/post-training-trl-fine-tuning",
-    "name": "fine-tuning-with-trl",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Fine-tune LLMs using reinforcement learning with TRL - SFT for instruction tuning, DPO for preference alignment, PPO/GRPO for reward optimization, and reward model training. Use when need RLHF, align model with preferences, or train from human feedback. Works with HuggingFace Transformers.",
-    "security": "C",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/post-training-trl-fine-tuning/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:40.726Z",
-    "lastSeenAt": "2026-09-10T07:21:40.726Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/context-window-management",
-    "name": "context-window-management",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Strategies for managing LLM context windows including summarization, trimming, routing, and avoiding context rot Use when: context window, token limit, context management, context engineering, long context.",
-    "security": "C",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/context-window-management/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "folk-art",
-      "arts-crafts",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:24.237Z",
-    "lastSeenAt": "2026-09-10T07:21:24.237Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/perplexity",
-    "name": "perplexity",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Web search and research using Perplexity AI. Use when user says \"search\", \"find\", \"look up\", \"ask\", \"research\", or \"what's the latest\" for generic queries. NOT for library/framework docs (use Context7) or workspace questions.",
-    "security": "C",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
-      "research",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/templates-davila7/cli-tool/components/skills/ai-research/perplexity/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:39.451Z",
-    "lastSeenAt": "2026-09-10T07:21:39.451Z"
-  },
-  {
-    "id": "Dicklesworthstone/pi_agent_rust/postgresql",
-    "name": "postgresql-table-design",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Design a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constraints, performance patterns, and advanced features",
-    "security": "C",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 1725,
-    "tags": [
+      "craft",
       "design",
-      "art",
-      "vector",
-      "pattern",
-      "spatial"
+      "brand",
+      "product",
+      "communication"
     ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/database-design/skills/postgresql/SKILL.md",
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/writing-craft/skills/narrative-structure/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "experience-design",
-      "folk-art",
-      "environmental-design",
-      "arts-crafts"
+      "arts-crafts",
+      "operations-design",
+      "visual-communication",
+      "industrial-design"
     ],
     "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:12.849Z",
-    "lastSeenAt": "2026-09-10T07:21:12.849Z"
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:42.342Z",
+    "lastSeenAt": "2026-09-11T07:19:42.342Z"
   },
   {
-    "id": "Dicklesworthstone/pi_agent_rust/python-design-patterns",
-    "name": "python-design-patterns",
-    "source": "Dicklesworthstone/pi_agent_rust",
-    "summary": "Python design patterns including KISS, Separation of Concerns, Single Responsibility, and composition over inheritance. Use when making architecture decisions, refactoring code structure, or evaluating when abstractions are appropriate.",
+    "id": "adammatthewsteinberger/vibey-skills/prose-technical-mechanics",
+    "name": "prose-technical-mechanics",
+    "source": "adammatthewsteinberger/vibey-skills",
+    "summary": "Use when editing or writing prose at a technical/mechanical level: choosing between Anglo-Saxon and Latinate diction, placing information in topic vs stress positions, writing periodic vs cumulative sentences, handling sentence rhythm, punctuation as logic, transitions, paragraph structure, or phonesthetics. Use when s",
     "security": "C",
-    "signalScore": 58,
+    "signalScore": 51,
     "installs": 0,
-    "repoStars": 1725,
+    "repoStars": 1,
     "tags": [
-      "design",
-      "operations",
-      "architecture"
+      "craft",
+      "motion",
+      "editing",
+      "media"
     ],
-    "installUrl": "https://github.com/Dicklesworthstone/pi_agent_rust",
-    "skillsUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/blob/main/tests/ext_conformance/artifacts/agents-wshobson/python-development/skills/python-design-patterns/SKILL.md",
+    "installUrl": "https://github.com/adammatthewsteinberger/vibey-skills",
+    "skillsUrl": "https://github.com/adammatthewsteinberger/vibey-skills/blob/develop/plugins/writing-craft/skills/prose-technical-mechanics/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "experience-design",
-      "operations-design",
-      "environmental-design",
-      "architecture-design"
+      "arts-crafts",
+      "video-design",
+      "digital-media-film",
+      "folk-art"
     ],
     "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-10T07:21:13.277Z",
-    "lastSeenAt": "2026-09-10T07:21:13.277Z"
+    "maintenanceScore": 90,
+    "firstSeenAt": "2026-09-11T07:19:43.092Z",
+    "lastSeenAt": "2026-09-11T07:19:43.092Z"
   }
 ]
