@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-09-11T07:23:22.213Z",
+  "generatedAt": "2026-09-12T07:16:39.109Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "ba40e28f11a7b633a9221f16ce32e911d315fb4bca608b510e0017dfc905247b",
+    "contentHash": "bfe6d7faec0bc0e12ec18014f229067044e2d83ce00236f922416aae203c932b",
     "contentHashVersion": 2,
-    "generatedAt": "2026-09-11T07:22:50.502Z",
-    "totalCount": 382,
+    "generatedAt": "2026-09-12T07:16:17.445Z",
+    "totalCount": 430,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 48,
+    "passed": 51,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 38,
+    "coveragePassed": 41,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
-    "specificityFailures": 4,
-    "capabilityGapCases": 31,
-    "averageRecommendationCount": 1.87,
+    "specificityFailures": 1,
+    "capabilityGapCases": 30,
+    "averageRecommendationCount": 1.89,
     "expectedHitsTotal": 30,
-    "signalHitsTotal": 126,
-    "anchorSignalHitsTotal": 30,
-    "averageTop1Score": 74.1
+    "signalHitsTotal": 132,
+    "anchorSignalHitsTotal": 33,
+    "averageTop1Score": 76.6
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 48,
+    "passed": 51,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 38,
+    "coveragePassed": 41,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 2,
-    "specificityFailures": 4,
-    "capabilityGapCases": 30,
-    "averageRecommendationCount": 1.93,
+    "specificityFailures": 1,
+    "capabilityGapCases": 29,
+    "averageRecommendationCount": 1.94,
     "expectedHitsTotal": 30,
-    "signalHitsTotal": 126,
-    "anchorSignalHitsTotal": 30,
-    "averageTop1Score": 74.1
+    "signalHitsTotal": 132,
+    "anchorSignalHitsTotal": 33,
+    "averageTop1Score": 76.6
   },
   "gates": {
     "safetyPass": true,
@@ -186,14 +186,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "sounny/dxskills/dx-map",
         "curiositech/some_claude_skills/interior-design-expert",
-        "SpiralCloudOmega/DevTeam6/spatial-audio"
+        "cwoodworth89/CFR-EVO-APP/gis-pipeline-sync",
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "candidateTop3": [
-        "sounny/dxskills/dx-map",
         "curiositech/some_claude_skills/interior-design-expert",
-        "SpiralCloudOmega/DevTeam6/spatial-audio"
+        "cwoodworth89/CFR-EVO-APP/gis-pipeline-sync",
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -271,14 +271,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "ai-sdk",
-        "redis/agent-skills/redis-semantic-cache-9c2b67"
+        "redis/agent-skills/redis-semantic-cache-9c2b67",
+        "martinholovsky/SOTA-skills/sota-ml-engineering"
       ],
       "candidateTop3": [
         "ai-sdk",
-        "redis/agent-skills/redis-semantic-cache-9c2b67"
+        "redis/agent-skills/redis-semantic-cache-9c2b67",
+        "martinholovsky/SOTA-skills/sota-ml-engineering"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -365,15 +367,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "shadcn",
-        "m3taz-ahmed/ai-globals/ui-design-lord"
+        "shadcn"
       ],
       "candidateTop3": [
-        "shadcn",
-        "m3taz-ahmed/ai-globals/ui-design-lord"
+        "shadcn"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -407,15 +407,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nextjs",
-        "CopilotKit/CopilotKit/react-core-507281"
+        "nextjs"
       ],
       "candidateTop3": [
-        "nextjs",
-        "CopilotKit/CopilotKit/react-core-507281"
+        "nextjs"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -465,14 +463,18 @@
     },
     {
       "id": "graphql-server",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
+      "productionTop3": [
+        "martinholovsky/SOTA-skills/sota-api-design"
+      ],
+      "candidateTop3": [
+        "martinholovsky/SOTA-skills/sota-api-design"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -689,12 +691,12 @@
       "productionTop3": [
         "sickn33/agentic-awesome-skills/cloud-devops-7bc4e4",
         "sickn33/agentic-awesome-skills/docker-expert-cd701c",
-        "davila7/claude-code-templates/cloud-devops-b6bd4e"
+        "martinholovsky/SOTA-skills/sota-cloud-infrastructure"
       ],
       "candidateTop3": [
         "sickn33/agentic-awesome-skills/cloud-devops-7bc4e4",
         "sickn33/agentic-awesome-skills/docker-expert-cd701c",
-        "davila7/claude-code-templates/cloud-devops-b6bd4e"
+        "martinholovsky/SOTA-skills/sota-cloud-infrastructure"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -712,12 +714,12 @@
       "productionTop3": [
         "github",
         "ruvnet/ruflo/github-automation-48be15",
-        "ruvnet/ruflo/github-workflow-automation-4ada72"
+        "sickn33/agentic-awesome-skills/github-automation-a88f77"
       ],
       "candidateTop3": [
         "github",
         "ruvnet/ruflo/github-automation-48be15",
-        "ruvnet/ruflo/github-workflow-automation-4ada72"
+        "sickn33/agentic-awesome-skills/github-automation-a88f77"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -850,14 +852,18 @@
     },
     {
       "id": "swiftui-ios",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
+      "productionTop3": [
+        "martinholovsky/SOTA-skills/sota-mobile"
+      ],
+      "candidateTop3": [
+        "martinholovsky/SOTA-skills/sota-mobile"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -865,19 +871,19 @@
     },
     {
       "id": "android-kotlin",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "callstackincubator/agent-skills/agent-device-f62531",
+        "martinholovsky/SOTA-skills/sota-mobile",
         "TriliumNext/Trilium/developing-capacitor-mobile-dab7e0",
-        "gmh5225/awesome-game-security/mobile-security-9abeca"
+        "callstackincubator/agent-skills/agent-device-f62531"
       ],
       "candidateTop3": [
-        "callstackincubator/agent-skills/agent-device-f62531",
+        "martinholovsky/SOTA-skills/sota-mobile",
         "TriliumNext/Trilium/developing-capacitor-mobile-dab7e0",
-        "gmh5225/awesome-game-security/mobile-security-9abeca"
+        "callstackincubator/agent-skills/agent-device-f62531"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1063,12 +1069,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "ComponentDock/free-react-templates/popular-web-designs"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "ComponentDock/free-react-templates/popular-web-designs"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1086,12 +1092,12 @@
       "productionTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "curiositech/some_claude_skills/human-centered-design-fundamentals"
+        "martinholovsky/SOTA-skills/sota-ml-engineering"
       ],
       "candidateTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "curiositech/some_claude_skills/human-centered-design-fundamentals"
+        "martinholovsky/SOTA-skills/sota-ml-engineering"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1130,14 +1136,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
+        "Q20396/codex-long-horizon-skill/ai-video-production",
         "remotion-dev/skills/remotion-best-practices",
-        "EKKOLearnAI/hermes-studio/hyperframes-27241c",
-        "remotion-dev/skills/remotion-multimedia"
+        "EKKOLearnAI/hermes-studio/hyperframes-27241c"
       ],
       "candidateTop3": [
+        "Q20396/codex-long-horizon-skill/ai-video-production",
         "remotion-dev/skills/remotion-best-practices",
-        "EKKOLearnAI/hermes-studio/hyperframes-27241c",
-        "remotion-dev/skills/remotion-multimedia"
+        "EKKOLearnAI/hermes-studio/hyperframes-27241c"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1153,14 +1159,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "SpiralCloudOmega/DevTeam6/loudness-metering",
-        "adammatthewsteinberger/vibey-skills/cad-slicing-pipeline-and-processes",
-        "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad"
+        "martinholovsky/SOTA-skills/sota-security-compliance",
+        "martinholovsky/SOTA-skills/sota-api-design",
+        "adammatthewsteinberger/vibey-skills/cad-reference"
       ],
       "candidateTop3": [
-        "SpiralCloudOmega/DevTeam6/loudness-metering",
-        "adammatthewsteinberger/vibey-skills/cad-slicing-pipeline-and-processes",
-        "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad"
+        "martinholovsky/SOTA-skills/sota-security-compliance",
+        "martinholovsky/SOTA-skills/sota-api-design",
+        "adammatthewsteinberger/vibey-skills/cad-reference"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,

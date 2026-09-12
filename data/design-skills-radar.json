@@ -1,38 +1,5 @@
 [
   {
-    "id": "GML-MMGroup/AdCraft/video_agent_scene_design",
-    "name": "Video Agent Scene Design",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Define reusable environments with stable spatial, lighting, and atmosphere rules.",
-    "security": "A",
-    "signalScore": 75,
-    "installs": 0,
-    "repoStars": 238,
-    "tags": [
-      "design",
-      "environment",
-      "spatial",
-      "architecture",
-      "lighting",
-      "product",
-      "visual",
-      "video"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_scene_design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "environmental-design",
-      "architecture-design",
-      "operations-design",
-      "visual-communication"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:33.717Z",
-    "lastSeenAt": "2026-09-11T07:19:33.717Z"
-  },
-  {
     "id": "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad",
     "name": "cad-geometry-kernels-formats-and-code-cad",
     "source": "adammatthewsteinberger/vibey-skills",
@@ -65,72 +32,79 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:41.020Z",
-    "lastSeenAt": "2026-09-11T07:19:41.020Z"
+    "lastSeenAt": "2026-09-12T07:12:30.889Z"
   },
   {
-    "id": "GML-MMGroup/AdCraft/video_agent_character_design",
-    "name": "Video Agent Character Design",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Define brand-fit characters and stable identity guidance for consistent views.",
-    "security": "A",
+    "id": "martinholovsky/SOTA-skills/sota-frontend-design",
+    "name": "sota-frontend-design",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art web design, UI/UX, and motion engineering standards (2026). Use when building OR auditing/reviewing user interfaces: components, pages, design systems, stylesheets, themes, forms, navigation, animations, or accessibility. Covers typography, color (OKLCH, dark mode), spacing/layout (grid, container quer",
+    "security": "C",
     "signalScore": 70,
     "installs": 0,
-    "repoStars": 238,
-    "tags": [
-      "environmental",
-      "design",
-      "environment",
-      "brand",
-      "campaign",
-      "product",
-      "video",
-      "typography"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_character_design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "environmental-design",
-      "operations-design",
-      "video-design",
-      "fashion-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:33.125Z",
-    "lastSeenAt": "2026-09-11T07:19:33.245Z"
-  },
-  {
-    "id": "GML-MMGroup/AdCraft/video_agent_product_design",
-    "name": "Video Agent Product Design",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Preserve product truth while shaping clear, visually demonstrable selling points.",
-    "security": "A",
-    "signalScore": 70,
-    "installs": 0,
-    "repoStars": 238,
+    "repoStars": 19,
     "tags": [
       "design",
-      "brand",
-      "campaign",
-      "product",
+      "ui",
+      "design-system",
+      "layout",
+      "typography",
+      "accessibility",
+      "art",
+      "color",
+      "pattern",
       "visual",
-      "video",
-      "color"
+      "craft"
     ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_product_design/SKILL.md",
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-frontend-design/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "fashion-design",
-      "environmental-design",
-      "visual-communication"
+      "ui-design",
+      "folk-art",
+      "visual-communication",
+      "operations-design"
     ],
-    "qualityScore": 67,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:33.390Z",
-    "lastSeenAt": "2026-09-11T07:19:33.390Z"
+    "firstSeenAt": "2026-09-12T07:12:16.696Z",
+    "lastSeenAt": "2026-09-12T07:12:16.696Z"
+  },
+  {
+    "id": "KaelSensei/MagicAIBuilder/web-performance",
+    "name": "web-performance",
+    "source": "KaelSensei/MagicAIBuilder",
+    "summary": "Reference checklist for web performance: PageSpeed Insights score and Google Core Web Vitals. The standard is non-negotiable for production web pages: **PageSpeed >= 90/100** on mobile, **all Core Web Vitals in the green** on real-user data.",
+    "security": "B",
+    "signalScore": 70,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "ux",
+      "product",
+      "interaction",
+      "mobile",
+      "accessibility",
+      "ui",
+      "layout",
+      "media",
+      "video",
+      "motion"
+    ],
+    "installUrl": "https://github.com/KaelSensei/MagicAIBuilder",
+    "skillsUrl": "https://github.com/KaelSensei/MagicAIBuilder/blob/main/.agents/skills/web-performance/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "digital-media-film",
+      "operations-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:30.040Z",
+    "lastSeenAt": "2026-09-12T07:12:30.040Z"
   },
   {
     "id": "lukaskourilcz/quorum/titty-tuesdays-brandbook",
@@ -162,39 +136,7 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-11T07:19:44.505Z",
-    "lastSeenAt": "2026-09-11T07:19:44.505Z"
-  },
-  {
-    "id": "sounny/dxskills/dx-map",
-    "name": "dx-map",
-    "source": "sounny/dxskills",
-    "summary": "Spatial concept mapper. Converts complex narrative arguments, software architectures, curricula, and workflows into visual Mermaid.js flowcharts, state charts, and relational matrices.",
-    "security": "A",
-    "signalScore": 70,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "architecture",
-      "spatial",
-      "rendering",
-      "diagram",
-      "map",
-      "arts",
-      "visual"
-    ],
-    "installUrl": "https://github.com/sounny/dxskills",
-    "skillsUrl": "https://github.com/sounny/dxskills/blob/main/skills/dx-map/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "environmental-design",
-      "arts-crafts",
-      "folk-art"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:48.034Z",
-    "lastSeenAt": "2026-09-11T07:19:48.034Z"
+    "lastSeenAt": "2026-09-12T07:12:34.280Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/cad-slicing-pipeline-and-processes",
@@ -229,43 +171,7 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:41.357Z",
-    "lastSeenAt": "2026-09-11T07:19:41.357Z"
-  },
-  {
-    "id": "m3taz-ahmed/ai-globals/flutter-design",
-    "name": "flutter-design",
-    "source": "m3taz-ahmed/ai-globals",
-    "summary": "Principal Flutter UI/UX Designer — Material 3 design systems, theming, motion, responsive/adaptive layouts, accessibility, pixel-perfect Figma-to-Flutter, design tokens, dark mode, RTL.",
-    "security": "C",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "typography",
-      "figma",
-      "accessibility",
-      "ux",
-      "prototype",
-      "mobile",
-      "brand",
-      "color"
-    ],
-    "installUrl": "https://github.com/m3taz-ahmed/ai-globals",
-    "skillsUrl": "https://github.com/m3taz-ahmed/ai-globals/blob/main/skills/flutter-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "experience-design",
-      "visual-communication",
-      "video-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:36.300Z",
-    "lastSeenAt": "2026-09-11T07:19:36.300Z"
+    "lastSeenAt": "2026-09-12T07:12:31.223Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/cad-reference",
@@ -298,105 +204,139 @@
     "qualityScore": 75,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:41.210Z",
-    "lastSeenAt": "2026-09-11T07:19:41.210Z"
+    "lastSeenAt": "2026-09-12T07:12:31.060Z"
   },
   {
-    "id": "GML-MMGroup/AdCraft/video_agent_prop_design",
-    "name": "Video Agent Prop Design",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Design coherent supporting props that serve the advertising idea.",
-    "security": "A",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 238,
-    "tags": [
-      "design",
-      "brand",
-      "product",
-      "visual",
-      "video",
-      "environment"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_prop_design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "fashion-design",
-      "video-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:33.568Z",
-    "lastSeenAt": "2026-09-11T07:19:33.568Z"
-  },
-  {
-    "id": "GML-MMGroup/AdCraft/video_agent_storyboard_design",
-    "name": "Video Agent Storyboard Design",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Convert approved script beats into ordered, visually continuous storyboard directions.",
-    "security": "A",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 238,
-    "tags": [
-      "design",
-      "lighting",
-      "product",
-      "visual",
-      "video",
-      "film",
-      "storyboard"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_storyboard_design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "environmental-design",
-      "operations-design",
-      "video-design",
-      "ui-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:33.898Z",
-    "lastSeenAt": "2026-09-11T07:19:33.898Z"
-  },
-  {
-    "id": "m3taz-ahmed/ai-globals/ui-design-lord",
-    "name": "ui-design-lord",
-    "source": "m3taz-ahmed/ai-globals",
-    "summary": "Lord skill for UI/UX design mastery — HTML, CSS, Tailwind v4.3, Filament v5 UI components, responsive design, RTL/Arabic, accessibility, and design systems.",
+    "id": "ComponentDock/free-react-templates/design-md",
+    "name": "design-md",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Author/validate/export Google's DESIGN.md token spec files.",
     "security": "C",
+    "signalScore": 67,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ui",
+      "design-system",
+      "layout",
+      "typography",
+      "interaction",
+      "accessibility",
+      "color",
+      "brand",
+      "visual",
+      "ux",
+      "prototype"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/creative/design-md/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "fashion-design",
+      "experience-design",
+      "visual-communication"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:38.045Z",
+    "lastSeenAt": "2026-09-12T07:12:38.045Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-copywriting",
+    "name": "sota-copywriting",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art marketing copywriting and content guidance (2026) covering positioning and value propositions, headlines and landing-page copy, CTAs and social proof, SEO content (search intent, E-E-A-T, Google spam policies), and the accuracy/legal layer — claim substantiation, FTC Endorsement Guides (2023) and the C",
+    "security": "A",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 5,
+    "repoStars": 19,
     "tags": [
       "design",
       "ui",
       "layout",
-      "typography",
-      "accessibility",
-      "ux",
-      "product",
-      "mobile",
+      "folk",
+      "art",
+      "pattern",
+      "visual",
+      "craft",
       "brand",
-      "color"
+      "product"
     ],
-    "installUrl": "https://github.com/m3taz-ahmed/ai-globals",
-    "skillsUrl": "https://github.com/m3taz-ahmed/ai-globals/blob/main/skills/ui-design-lord/SKILL.md",
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-copywriting/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "folk-art",
+      "operations-design",
+      "visual-communication"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:15.479Z",
+    "lastSeenAt": "2026-09-12T07:12:15.479Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-data-engineering",
+    "name": "sota-data-engineering",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art data engineering rules (2026) for building and auditing data pipelines and analytics infrastructure. Covers architecture and modeling (ELT, lakehouse vs warehouse, dimensional models, medallion layering), pipeline and orchestration discipline (idempotency, incremental loads, backfills, dbt-style transf",
+    "security": "A",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "environment",
+      "architecture"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-data-engineering/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "environmental-design",
+      "architecture-design",
+      "folk-art"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:15.667Z",
+    "lastSeenAt": "2026-09-12T07:12:15.667Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-golang",
+    "name": "sota-golang",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art Go engineering rules (2026 baseline, Go 1.25+) that Claude applies when writing new Go code or auditing existing Go code. Covers error handling, interface/package design, goroutine and channel correctness, net/http hardening, security (SQL, exec, path traversal, CSPRNG, TLS, supply chain), performance ",
+    "security": "A",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-golang/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "ui-design",
       "experience-design",
-      "visual-communication",
-      "operations-design"
+      "operations-design",
+      "industrial-design"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:36.449Z",
-    "lastSeenAt": "2026-09-11T07:19:36.449Z"
+    "firstSeenAt": "2026-09-12T07:12:16.885Z",
+    "lastSeenAt": "2026-09-12T07:12:16.885Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/cad-design-tolerances-and-materials",
@@ -430,72 +370,7 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:40.718Z",
-    "lastSeenAt": "2026-09-11T07:19:40.718Z"
-  },
-  {
-    "id": "sounny/dxskills/dxskills",
-    "name": "dxskills",
-    "source": "sounny/dxskills",
-    "summary": "Universal cognitive scaffolding and executive tooling for non-linear, spatial, and dyslexic thinkers. Auto-syncs with https://github.com/sounny/dxskills.",
-    "security": "C",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "architecture",
-      "spatial",
-      "diagram",
-      "map",
-      "environment",
-      "visual",
-      "communication"
-    ],
-    "installUrl": "https://github.com/sounny/dxskills",
-    "skillsUrl": "https://github.com/sounny/dxskills/blob/main/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "environmental-design",
-      "visual-communication",
-      "arts-crafts"
-    ],
-    "qualityScore": 89,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:47.532Z",
-    "lastSeenAt": "2026-09-11T07:19:47.532Z"
-  },
-  {
-    "id": "yangzhou-chaofan/awesome-gpt6-astra-game-prompts/astra-playbook",
-    "name": "gpt6-astra-playbook",
-    "source": "yangzhou-chaofan/awesome-gpt6-astra-game-prompts",
-    "summary": "Turn a one-line idea into a runnable GPT-6 Astra creation. Use when someone wants a game, 3D scene, website, video, app or computer-use task built with GPT-6 Astra and needs the prompt actually assembled — not just a list of examples. Routes the idea to the right output form, fills the eight-block prompt frame, and att",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "video",
-      "motion",
-      "audio",
-      "3d",
-      "interaction",
-      "arts",
-      "color",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/yangzhou-chaofan/awesome-gpt6-astra-game-prompts",
-    "skillsUrl": "https://github.com/yangzhou-chaofan/awesome-gpt6-astra-game-prompts/blob/main/skills/astra-playbook/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "digital-media-film",
-      "arts-crafts",
-      "folk-art"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:39.109Z",
-    "lastSeenAt": "2026-09-11T07:19:39.109Z"
+    "lastSeenAt": "2026-09-12T07:12:30.515Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/cad-generative-automation-and-scanning",
@@ -528,35 +403,7 @@
     "qualityScore": 75,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:40.866Z",
-    "lastSeenAt": "2026-09-11T07:19:40.866Z"
-  },
-  {
-    "id": "SpiralCloudOmega/DevTeam6/spatial-audio",
-    "name": "spatial-audio",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "Spatial audio processing — stereo width, panning laws, HRTF, Ambisonics, surround formats",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "spatial",
-      "3d",
-      "rendering"
-    ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/audio-dsp/spatial-audio/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "environmental-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:43.402Z",
-    "lastSeenAt": "2026-09-11T07:19:43.402Z"
+    "lastSeenAt": "2026-09-12T07:12:30.722Z"
   },
   {
     "id": "lukaskourilcz/quorum/product-marketing",
@@ -586,39 +433,75 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-11T07:19:44.140Z",
-    "lastSeenAt": "2026-09-11T07:19:44.140Z"
+    "lastSeenAt": "2026-09-12T07:12:33.934Z"
   },
   {
-    "id": "sounny/dxskills/dx-dump",
-    "name": "dx-dump",
-    "source": "sounny/dxskills",
-    "summary": "Compiles unstructured brain dumps, rapid bullet fragments, voice transcripts, and phonetic shorthand into structured architectural outlines, decision tables, and actionable deliverables.",
+    "id": "Q20396/codex-long-horizon-skill/ai-video-production",
+    "name": "ai-video-production",
+    "source": "Q20396/codex-long-horizon-skill",
+    "summary": "Use for AI-assisted video or animation planning: video briefs, scripts, storyboards, shot lists, visual prompts, asset manifests, preview plans, and render handoffs. Do not use for general repository engineering or automatic rendering, uploading, publishing, or posting.",
     "security": "C",
     "signalScore": 65,
     "installs": 0,
     "repoStars": 0,
     "tags": [
-      "architecture",
-      "spatial",
-      "diagram",
-      "map",
-      "environment",
+      "video",
+      "design",
+      "motion",
+      "editing",
+      "storyboard",
+      "typography",
+      "brand",
       "product",
-      "visual"
+      "visual",
+      "rendering"
     ],
-    "installUrl": "https://github.com/sounny/dxskills",
-    "skillsUrl": "https://github.com/sounny/dxskills/blob/main/skills/dx-dump/SKILL.md",
+    "installUrl": "https://github.com/Q20396/codex-long-horizon-skill",
+    "skillsUrl": "https://github.com/Q20396/codex-long-horizon-skill/blob/main/.agents/skills/ai-video-production/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:36.790Z",
+    "lastSeenAt": "2026-09-12T07:12:36.790Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-ml-engineering",
+    "name": "sota-ml-engineering",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art ML engineering / MLOps rules (2026) for BUILDING and AUDITING production machine-learning systems — the training→serving→monitoring lifecycle of classical/predictive ML. Distinct from LLM apps (prompts/RAG/agents → sota-llm-engineering). Covers ML system architecture (feature stores, model registry, re",
+    "security": "B",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "architecture",
+      "design",
+      "diagram",
+      "environment",
+      "ux",
+      "product",
+      "research",
+      "ui"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-ml-engineering/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "architecture-design",
-      "environmental-design",
-      "operations-design",
-      "arts-crafts"
+      "experience-design",
+      "ui-design",
+      "environmental-design"
     ],
-    "qualityScore": 81,
+    "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:47.678Z",
-    "lastSeenAt": "2026-09-11T07:19:47.678Z"
+    "firstSeenAt": "2026-09-12T07:12:17.900Z",
+    "lastSeenAt": "2026-09-12T07:12:17.900Z"
   },
   {
     "id": "lukaskourilcz/quorum/financial-operations",
@@ -646,63 +529,313 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-11T07:19:43.863Z",
-    "lastSeenAt": "2026-09-11T07:19:43.863Z"
+    "lastSeenAt": "2026-09-12T07:12:33.560Z"
   },
   {
-    "id": "LearnPrompt/awesome-seedance/seedance-prompt-library",
-    "name": "seedance-prompt-library",
-    "source": "LearnPrompt/awesome-seedance",
-    "summary": "Verified prompt templates and structures for Seedance 2.5 / 2.0 video generation, distilled from the highest-performing published cases on goodcase.ai. Use when the user asks to write, revise, or review a Seedance video prompt, or asks how to prompt Seedance for a specific kind of shot (narrative short, ad/commercial, ",
+    "id": "ComponentDock/free-react-templates/colorlib-template-replication",
+    "name": "colorlib-template-replication",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Recreate ColorLib templates faithfully from preview and CSS.",
+    "security": "C",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "color",
+      "photo",
+      "brand",
+      "visual",
+      "ux",
+      "product",
+      "research",
+      "mobile",
+      "accessibility"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/research/colorlib-template-replication/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "experience-design",
+      "operations-design",
+      "ui-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:44.505Z",
+    "lastSeenAt": "2026-09-12T07:12:44.505Z"
+  },
+  {
+    "id": "cwoodworth89/CFR-EVO-APP/dispatch-pipeline-ops",
+    "name": "dispatch-pipeline-ops",
+    "source": "cwoodworth89/CFR-EVO-APP",
+    "summary": "Operational runbook and architectural guide for developing, debugging, tuning, and testing the CFR EVO two-phase real-time dispatch audio pipeline.",
+    "security": "A",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "architecture",
+      "3d",
+      "diagram",
+      "map",
+      "operations"
+    ],
+    "installUrl": "https://github.com/cwoodworth89/CFR-EVO-APP",
+    "skillsUrl": "https://github.com/cwoodworth89/CFR-EVO-APP/blob/main/.claude/skills/dispatch-pipeline-ops/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:44.706Z",
+    "lastSeenAt": "2026-09-12T07:12:44.706Z"
+  },
+  {
+    "id": "dcc-mcp/dcc-mcp-core/spatial-interchange",
+    "name": "spatial-interchange",
+    "source": "dcc-mcp/dcc-mcp-core",
+    "summary": "Plan deterministic coordinate-axis and unit conversions between DCCs, engines, and interchange formats from explicit right/up/forward axes and meters-per-unit values.",
     "security": "B",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 4,
+    "repoStars": 44,
     "tags": [
-      "product",
-      "video"
+      "spatial",
+      "3d",
+      "visual"
     ],
-    "installUrl": "https://github.com/LearnPrompt/awesome-seedance",
-    "skillsUrl": "https://github.com/LearnPrompt/awesome-seedance/blob/main/agents/skills/seedance-prompt-library/SKILL.md",
+    "installUrl": "https://github.com/dcc-mcp/dcc-mcp-core",
+    "skillsUrl": "https://github.com/dcc-mcp/dcc-mcp-core/blob/main/skills/spatial-interchange/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
+      "architecture-design",
       "environmental-design",
+      "arts-crafts",
+      "visual-communication"
+    ],
+    "qualityScore": 90,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:12.927Z",
+    "lastSeenAt": "2026-09-12T07:12:12.927Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-performance",
+    "name": "sota-performance",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art performance engineering for building fast systems and auditing existing code for bottlenecks. Use when the task involves performance, optimization, latency, profiling, slow code, memory usage, caching, or throughput — designing latency budgets, fixing N+1 and accidental-quadratic patterns, tuning alloc",
+    "security": "A",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "operations",
+      "product",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-performance/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "architecture-design",
+      "experience-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:18.738Z",
+    "lastSeenAt": "2026-09-12T07:12:18.738Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-testing",
+    "name": "sota-testing",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art software testing strategy and practice (2026) for designing test strategy, writing unit/integration/e2e tests, or auditing test suites. Covers suite shape (pyramid/trophy/honeycomb), test design quality (behavior-first, AAA, determinism, smells), test doubles (mocks/fakes/stubs), test data (builders ov",
+    "security": "A",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "product",
+      "visual",
+      "ux"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-testing/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "experience-design",
+      "environmental-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:21.042Z",
+    "lastSeenAt": "2026-09-12T07:12:21.043Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-web-frameworks",
+    "name": "sota-web-frameworks",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art engineering rules (2026) for the JavaScript SSR meta-frameworks: React 19 + Next.js (App Router, React Server Components, Server Actions) and Vue 3 + Nuxt 4 (Nitro server routes, composables) — plus the cross-cutting concerns of server rendering: hydration correctness, SSR state serialization, the serv",
+    "security": "C",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "accessibility",
+      "visual",
+      "motion",
+      "ux"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-web-frameworks/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "experience-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:21.636Z",
+    "lastSeenAt": "2026-09-12T07:12:21.636Z"
+  },
+  {
+    "id": "svenroth-ai/shipwright/compliance",
+    "name": "shipwright-compliance",
+    "source": "svenroth-ai/shipwright",
+    "summary": "On-demand detective audit for cross-artifact consistency plus auto-background compliance documentation. Scans specs, plans, configs, event log, ADRs, and compliance reports for drift that the preventive Canon gate and reactive Phase-Quality Stop hook don't catch. Still produces the traceability matrix, test evidence, c",
+    "security": "A",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 13,
+    "tags": [
+      "design",
+      "ui",
+      "campaign"
+    ],
+    "installUrl": "https://github.com/svenroth-ai/shipwright",
+    "skillsUrl": "https://github.com/svenroth-ai/shipwright/blob/main/plugins/shipwright-compliance/skills/compliance/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
       "fashion-design",
       "video-design"
     ],
-    "qualityScore": 92,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:36.664Z",
-    "lastSeenAt": "2026-09-11T07:19:36.664Z"
+    "firstSeenAt": "2026-09-12T07:12:22.630Z",
+    "lastSeenAt": "2026-09-12T07:12:22.630Z"
   },
   {
-    "id": "SpiralCloudOmega/DevTeam6/routing-grid",
-    "name": "routing-grid",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "AXE-FX III-style 12×4 routing grid for REVITHION STUDIO — grid topology, 36+ block types, scenes, channels, X/Y, feedback, and global blocks.",
+    "id": "ComponentDock/free-react-templates/popular-web-designs",
+    "name": "popular-web-designs",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
+    "security": "C",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "visual",
+      "brand",
+      "typography",
+      "layout",
+      "editorial",
+      "color",
+      "design",
+      "ui",
+      "design-system",
+      "figma"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/creative/popular-web-designs/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "ui-design",
+      "fashion-design",
+      "industrial-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:38.243Z",
+    "lastSeenAt": "2026-09-12T07:12:38.243Z"
+  },
+  {
+    "id": "icetomoyo/KodaX/code-review",
+    "name": "code-review",
+    "source": "icetomoyo/KodaX",
+    "summary": "审查代码、diff、提交或当前 git 改动，重点发现 bug、行为回归、边界条件遗漏、安全风险、性能问题和缺失测试。当用户提到 code review、review 这段代码、帮我看看改动有没有问题、审查 PR/提交时使用；不要用于单纯解释代码或直接实现需求。",
     "security": "A",
     "signalScore": 62,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 10,
     "tags": [
-      "product",
-      "parametric",
-      "ux",
-      "pattern"
+      "accessibility",
+      "ui"
     ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/routing-grid/SKILL.md",
+    "installUrl": "https://github.com/icetomoyo/KodaX",
+    "skillsUrl": "https://github.com/icetomoyo/KodaX/blob/KodaX/packages/agent/src/capabilities/skills/builtin/code-review/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "industrial-design",
       "experience-design",
-      "arts-crafts",
-      "architecture-design"
+      "ui-design",
+      "visual-communication",
+      "operations-design"
     ],
-    "qualityScore": 73,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:40.362Z",
-    "lastSeenAt": "2026-09-11T07:19:40.362Z"
+    "firstSeenAt": "2026-09-12T07:12:24.635Z",
+    "lastSeenAt": "2026-09-12T07:12:24.635Z"
+  },
+  {
+    "id": "KaelSensei/MagicAIBuilder/mtg-learn",
+    "name": "mtg-learn",
+    "source": "KaelSensei/MagicAIBuilder",
+    "summary": "Magic: The Gathering learning assistant and gameplay guide. Use this skill whenever someone asks how Magic works, wants to learn the game, needs gameplay concepts explained, or is discovering the Commander format. Trigger on: 'how does Magic work', 'explain MTG to me', 'I'm new to Magic', 'what are the phases', 'how do",
+    "security": "A",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "interaction",
+      "art",
+      "color",
+      "visual",
+      "ui"
+    ],
+    "installUrl": "https://github.com/KaelSensei/MagicAIBuilder",
+    "skillsUrl": "https://github.com/KaelSensei/MagicAIBuilder/blob/main/.agents/skills/mtg-learn/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "folk-art",
+      "ui-design",
+      "visual-communication"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:29.506Z",
+    "lastSeenAt": "2026-09-12T07:12:29.506Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/nano-fabrication-and-semiconductor-process",
@@ -731,13 +864,13 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:41.749Z",
-    "lastSeenAt": "2026-09-11T07:19:41.750Z"
+    "lastSeenAt": "2026-09-12T07:12:31.593Z"
   },
   {
-    "id": "bumi-kala-charta/design-system/design-system",
-    "name": "bumi-kala-charta-design",
-    "source": "bumi-kala-charta/design-system",
-    "summary": "Use this skill to generate well-branded interfaces and assets for Bumi Kala Charta (BKC), an Indonesian geospatial community and consultancy in geodesy and geomatics — either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for pr",
+    "id": "ComponentDock/free-react-templates/claude-design",
+    "name": "claude-design",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Design one-off HTML artifacts (landing, deck, prototype).",
     "security": "C",
     "signalScore": 62,
     "installs": 0,
@@ -745,146 +878,84 @@
     "tags": [
       "design",
       "ui",
+      "design-system",
       "layout",
       "typography",
-      "visual",
-      "brand",
+      "interaction",
       "color",
-      "product",
-      "photo"
+      "brand",
+      "visual"
     ],
-    "installUrl": "https://github.com/bumi-kala-charta/design-system",
-    "skillsUrl": "https://github.com/bumi-kala-charta/design-system/blob/main/SKILL.md",
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/creative/claude-design/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "ui-design",
+      "fashion-design",
       "visual-communication",
+      "experience-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:37.867Z",
+    "lastSeenAt": "2026-09-12T07:12:37.867Z"
+  },
+  {
+    "id": "cwoodworth89/CFR-EVO-APP/gis-pipeline-sync",
+    "name": "gis-pipeline-sync",
+    "source": "cwoodworth89/CFR-EVO-APP",
+    "summary": "Procedures for updating Coquitlam ESRI shapefiles, syncing NFPA 291 fire hydrants into public.hydrants, packaging MBTiles archives, and verifying 1..134 emergency zone spatial boundaries.",
+    "security": "B",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "spatial",
+      "rendering",
+      "map",
+      "cad"
+    ],
+    "installUrl": "https://github.com/cwoodworth89/CFR-EVO-APP",
+    "skillsUrl": "https://github.com/cwoodworth89/CFR-EVO-APP/blob/main/.claude/skills/gis-pipeline-sync/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "industrial-design",
+      "folk-art"
+    ],
+    "qualityScore": 77,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:45.050Z",
+    "lastSeenAt": "2026-09-12T07:12:45.050Z"
+  },
+  {
+    "id": "PrisacariuRobert/openbot/checked-spreadsheet-analysis",
+    "name": "checked-spreadsheet-analysis",
+    "source": "PrisacariuRobert/openbot",
+    "summary": "Reconcile CSV data, verify exact totals and produce an editable spreadsheet with source and coverage receipts.",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 3,
+    "tags": [
+      "visual",
+      "layout",
+      "ui"
+    ],
+    "installUrl": "https://github.com/PrisacariuRobert/openbot",
+    "skillsUrl": "https://github.com/PrisacariuRobert/openbot/blob/main/skills/bundled/checked-spreadsheet-analysis/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "ui-design",
       "operations-design",
       "fashion-design"
     ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:43.568Z",
-    "lastSeenAt": "2026-09-11T07:19:43.568Z"
-  },
-  {
-    "id": "GML-MMGroup/AdCraft/1.0.0",
-    "name": "潮玩角色世界广告",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "以可收藏轮廓、标志性配件、材质魅力和世界构建钩子组织具有角色识别度的商业动画。",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 238,
-    "tags": [
-      "design",
-      "product",
-      "video",
-      "film"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/video-skills/designer-toy-ip-film/1.0.0/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "environmental-design",
-      "operations-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 66,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:34.055Z",
-    "lastSeenAt": "2026-09-11T07:19:34.055Z"
-  },
-  {
-    "id": "m3taz-ahmed/ai-globals/community-builder",
-    "name": "community-builder",
-    "source": "m3taz-ahmed/ai-globals",
-    "summary": "Community builder — launch and manage Discord, Telegram, groups, and forums. RTL-aware moderation and growth.",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "ui",
-      "product",
-      "motion"
-    ],
-    "installUrl": "https://github.com/m3taz-ahmed/ai-globals",
-    "skillsUrl": "https://github.com/m3taz-ahmed/ai-globals/blob/main/skills/community-builder/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "operations-design",
-      "video-design",
-      "industrial-design"
-    ],
     "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:36.150Z",
-    "lastSeenAt": "2026-09-11T07:19:36.150Z"
-  },
-  {
-    "id": "POLAX7/figma-inspector/figma-inspector",
-    "name": "figma-inspector",
-    "source": "POLAX7/figma-inspector",
-    "summary": "Use when inspecting Figma designs, expanding local component instances, extracting UI styles for frontend implementation, or avoiding unnecessary Figma API HTTP 429 rate limits and token bloat.",
-    "security": "C",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "figma",
-      "art",
-      "vector",
-      "pattern",
-      "visual"
-    ],
-    "installUrl": "https://github.com/POLAX7/figma-inspector",
-    "skillsUrl": "https://github.com/POLAX7/figma-inspector/blob/main/figma-inspector/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "folk-art",
-      "visual-communication",
-      "arts-crafts"
-    ],
-    "qualityScore": 89,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:38.800Z",
-    "lastSeenAt": "2026-09-11T07:19:38.801Z"
-  },
-  {
-    "id": "SpiralCloudOmega/DevTeam6/mixing-techniques",
-    "name": "mixing-techniques",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "Professional mixing techniques for REVITHION STUDIO — gain staging, bus routing, parallel compression, send effects, VCA grouping, automation, Scheps Rear Bus, and stem export in JUCE C++.",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ux",
-      "product"
-    ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/mixing-techniques/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "industrial-design",
-      "operations-design",
-      "video-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:39.991Z",
-    "lastSeenAt": "2026-09-11T07:19:39.991Z"
+    "firstSeenAt": "2026-09-12T07:12:26.197Z",
+    "lastSeenAt": "2026-09-12T07:12:26.197Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/legal-brief-writing",
@@ -913,7 +984,7 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:42.159Z",
-    "lastSeenAt": "2026-09-11T07:19:42.159Z"
+    "lastSeenAt": "2026-09-12T07:12:31.930Z"
   },
   {
     "id": "lukaskourilcz/quorum/organization-operations",
@@ -939,7 +1010,7 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-11T07:19:44.000Z",
-    "lastSeenAt": "2026-09-11T07:19:44.000Z"
+    "lastSeenAt": "2026-09-12T07:12:33.743Z"
   },
   {
     "id": "lukaskourilcz/quorum/social-operations",
@@ -970,7 +1041,293 @@
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-11T07:19:44.317Z",
-    "lastSeenAt": "2026-09-11T07:19:44.317Z"
+    "lastSeenAt": "2026-09-12T07:12:34.116Z"
+  },
+  {
+    "id": "ComponentDock/free-react-templates/touchdesigner-mcp",
+    "name": "touchdesigner-mcp",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Control TouchDesigner via twozero MCP.",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "color",
+      "visual",
+      "environment",
+      "architecture",
+      "video",
+      "creative-coding",
+      "generative-art"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/creative/touchdesigner-mcp/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "environmental-design",
+      "digital-media-film",
+      "architecture-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:38.590Z",
+    "lastSeenAt": "2026-09-12T07:12:38.590Z"
+  },
+  {
+    "id": "cwoodworth89/CFR-EVO-APP/emergency-routing-engine",
+    "name": "emergency-routing-engine",
+    "source": "cwoodworth89/CFR-EVO-APP",
+    "summary": "Station origin lookups and emergency vehicle routing through the local OSRM container in CFR EVO. Apparatus tiers are staged seed data, not applied (CLAUDE.md §6.4); the Google Directions section records a path considered and not taken.",
+    "security": "B",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "architecture",
+      "map",
+      "art",
+      "craft"
+    ],
+    "installUrl": "https://github.com/cwoodworth89/CFR-EVO-APP",
+    "skillsUrl": "https://github.com/cwoodworth89/CFR-EVO-APP/blob/main/.claude/skills/emergency-routing-engine/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "folk-art",
+      "environmental-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:44.862Z",
+    "lastSeenAt": "2026-09-12T07:12:44.862Z"
+  },
+  {
+    "id": "leeex1/Quillan-Ronin/non_verbal_communication",
+    "name": "non-verbal-communication",
+    "source": "leeex1/Quillan-Ronin",
+    "summary": "A comprehensive skill for understanding, interpreting, and generating non-verbal communication cues. Covers body language, facial expressions, tone of voice, proxemics, gestures, eye contact, and cultural variations.",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 27,
+    "tags": [
+      "communication",
+      "media",
+      "motion"
+    ],
+    "installUrl": "https://github.com/leeex1/Quillan-Ronin",
+    "skillsUrl": "https://github.com/leeex1/Quillan-Ronin/blob/main/04 - Skills & Capabilities/Skills/non_verbal_communication/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "digital-media-film",
+      "operations-design",
+      "video-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:13.128Z",
+    "lastSeenAt": "2026-09-12T07:12:13.128Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-cli-ux",
+    "name": "sota-cli-ux",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art CLI and developer-tool UX guidance (2026) covering command and flag design, output and interaction (stdout/stderr, --json, TTY detection, exit codes, prompts), runtime behavior and lifecycle (signals, dry-run, idempotency, XDG paths, completions, telemetry), and distribution (packaging, checksums, docs",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "interaction",
+      "ux",
+      "usability",
+      "operations"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-cli-ux/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "operations-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:14.744Z",
+    "lastSeenAt": "2026-09-12T07:12:14.744Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-security-compliance",
+    "name": "sota-security-compliance",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art security & compliance engineering (2026) for the cybersecurity control frameworks and product-security regulations that drive architecture, code, and CI gates — not the organizational policy binder. Use when work must satisfy or be audited against NIST CSF 2.0, SP 800-53, SP 800-171 / CMMC, the Secure ",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "environmental",
+      "design",
+      "environment",
+      "architecture",
+      "map",
+      "industrial",
+      "product",
+      "cad"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-security-compliance/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "environmental-design",
+      "architecture-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:20.534Z",
+    "lastSeenAt": "2026-09-12T07:12:20.534Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-threat-modeling",
+    "name": "sota-threat-modeling",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art threat modeling for both designing new systems and auditing existing ones. Use when designing a feature, service, integration, or architecture that touches untrusted input, new trust boundaries, sensitive data, or third-party dependencies (BUILD mode), and when reviewing, auditing, or pen-test-scoping ",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "architecture",
+      "design",
+      "diagram",
+      "map",
+      "environment",
+      "ui",
+      "interaction",
+      "environmental"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-threat-modeling/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "environmental-design",
+      "experience-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:21.281Z",
+    "lastSeenAt": "2026-09-12T07:12:21.281Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-ux-writing",
+    "name": "sota-ux-writing",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art UX writing and product-copy guidance (2026) covering voice and tone systems, plain language (ISO 24495-1), microcopy (buttons, labels, empty states, onboarding, notifications), error and feedback message craft, and the accessibility and localization of interface language (WCAG 2.2 language criteria, al",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "accessibility",
+      "ux",
+      "product",
+      "mobile",
+      "art",
+      "color",
+      "pattern",
+      "craft"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-ux-writing/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "folk-art",
+      "arts-crafts"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:21.481Z",
+    "lastSeenAt": "2026-09-12T07:12:21.481Z"
+  },
+  {
+    "id": "svenroth-ai/shipwright/design",
+    "name": "shipwright-design",
+    "source": "svenroth-ai/shipwright",
+    "summary": "Generate UI mockups from IREB specs as standalone HTML. Screens + user flows, iteratable via chat.\\nTRIGGER when: user wants to create UI mockups, design screens, generate HTML wireframes, create visual designs, design a user interface, preview a layout, create user flow diagrams, iterate on a screen design, or process",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 13,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "architecture",
+      "diagram",
+      "map",
+      "visual",
+      "brand"
+    ],
+    "installUrl": "https://github.com/svenroth-ai/shipwright",
+    "skillsUrl": "https://github.com/svenroth-ai/shipwright/blob/main/plugins/shipwright-design/skills/design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:22.967Z",
+    "lastSeenAt": "2026-09-12T07:12:22.967Z"
+  },
+  {
+    "id": "KaelSensei/MagicAIBuilder/typescript-craftsmanship",
+    "name": "typescript-craftsmanship",
+    "source": "KaelSensei/MagicAIBuilder",
+    "summary": "Professional TypeScript + React + Next.js coding standards enforcer. Use this skill whenever writing, reviewing, or refactoring TypeScript code in any project — whether it's a new feature, a bug fix, a refactoring pass, or a code review. Trigger on: any TypeScript or TSX file creation/editing, \"clean up this code\", \"re",
+    "security": "B",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "product",
+      "operations",
+      "crafts",
+      "craft",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/KaelSensei/MagicAIBuilder",
+    "skillsUrl": "https://github.com/KaelSensei/MagicAIBuilder/blob/main/.agents/skills/typescript-craftsmanship/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "arts-crafts",
+      "architecture-design"
+    ],
+    "qualityScore": 80,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:29.875Z",
+    "lastSeenAt": "2026-09-12T07:12:29.875Z"
   },
   {
     "id": "lukaskourilcz/quorum/brand-identity",
@@ -1002,37 +1359,193 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-11T07:19:43.718Z",
-    "lastSeenAt": "2026-09-11T07:19:43.718Z"
+    "lastSeenAt": "2026-09-12T07:12:33.330Z"
   },
   {
-    "id": "SpiralCloudOmega/DevTeam6/loudness-metering",
-    "name": "loudness-metering",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "EBU R128 / ITU-R BS.1770-4 loudness metering, K-weighting, gating, true peak, LRA, and streaming targets for REVITHION STUDIO.",
-    "security": "A",
-    "signalScore": 59,
+    "id": "ComponentDock/free-react-templates/powerpoint",
+    "name": "powerpoint",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Create, read, edit .pptx decks, slides, notes, templates.",
+    "security": "C",
+    "signalScore": 60,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 0,
     "tags": [
+      "design",
       "product",
-      "cad",
-      "art",
-      "vector",
-      "pattern"
+      "rendering",
+      "ux",
+      "research",
+      "environment"
     ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/loudness-metering/SKILL.md",
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/productivity/powerpoint/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "industrial-design",
       "experience-design",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:43.275Z",
+    "lastSeenAt": "2026-09-12T07:12:43.275Z"
+  },
+  {
+    "id": "cwoodworth89/CFR-EVO-APP/gis-spatial-analysis",
+    "name": "gis-spatial-analysis",
+    "source": "cwoodworth89/CFR-EVO-APP",
+    "summary": "Procedures and tools for managing ESRI shapefiles, performing spatial queries, calculating parcel boundary rings, querying NFPA 291 fire hydrants, and transforming coordinate reference systems (CRS) in CFR EVO.",
+    "security": "B",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "spatial",
+      "3d",
+      "map",
+      "vector",
+      "color",
+      "pattern",
+      "art"
+    ],
+    "installUrl": "https://github.com/cwoodworth89/CFR-EVO-APP",
+    "skillsUrl": "https://github.com/cwoodworth89/CFR-EVO-APP/blob/main/.claude/skills/gis-spatial-analysis/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "arts-crafts",
       "folk-art",
       "visual-communication"
     ],
-    "qualityScore": 67,
+    "qualityScore": 77,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:39.488Z",
-    "lastSeenAt": "2026-09-11T07:19:39.488Z"
+    "firstSeenAt": "2026-09-12T07:12:45.209Z",
+    "lastSeenAt": "2026-09-12T07:12:45.209Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-jvm",
+    "name": "sota-jvm",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art JVM engineering rules (2026 baseline) for Java and Kotlin that Claude applies when writing or auditing JVM code. Baseline Java 25 LTS (virtual threads final since 21; structured concurrency still preview), Kotlin 2.x. Covers modern idioms (records, sealed types, pattern matching, Kotlin null-safety/cor",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-jvm/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:17.371Z",
+    "lastSeenAt": "2026-09-12T07:12:17.371Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-python",
+    "name": "sota-python",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art Python engineering (2026 baseline) for both writing new Python and auditing existing Python code. Covers uv-based tooling and project setup, strict typing, idioms and pitfalls, asyncio structured concurrency, security (injection, deserialization, supply chain), performance, and FastAPI/Django/pytest pr",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "architecture",
+      "map",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-python/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "experience-design",
+      "folk-art"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:19.653Z",
+    "lastSeenAt": "2026-09-12T07:12:19.653Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-rust",
+    "name": "sota-rust",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art Rust engineering (2026) for writing and auditing Rust code. Covers idiomatic ownership and API design, error handling and panic policy, unsafe discipline with Miri, async/tokio (cancellation safety, structured concurrency, graceful shutdown), security and supply chain (cargo audit/deny/vet, integer ove",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-rust/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:19.988Z",
+    "lastSeenAt": "2026-09-12T07:12:19.988Z"
+  },
+  {
+    "id": "KaelSensei/MagicAIBuilder/clean-architecture",
+    "name": "clean-architecture",
+    "source": "KaelSensei/MagicAIBuilder",
+    "summary": "Practical layering rules for this repo. Based on Robert C. Martin's _Clean Architecture_ and Alistair Cockburn's _Hexagonal Architecture_, translated to the concrete directory layout we actually use.",
+    "security": "B",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "interaction",
+      "ui",
+      "layout",
+      "architecture",
+      "rendering"
+    ],
+    "installUrl": "https://github.com/KaelSensei/MagicAIBuilder",
+    "skillsUrl": "https://github.com/KaelSensei/MagicAIBuilder/blob/main/.agents/skills/clean-architecture/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:28.733Z",
+    "lastSeenAt": "2026-09-12T07:12:28.733Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/reporting-dashboard-design-charts-and-alerting",
@@ -1062,7 +1575,7 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:41.951Z",
-    "lastSeenAt": "2026-09-11T07:19:41.951Z"
+    "lastSeenAt": "2026-09-12T07:12:31.752Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/white-paper-writing",
@@ -1093,144 +1606,160 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:43.255Z",
-    "lastSeenAt": "2026-09-11T07:19:43.255Z"
+    "lastSeenAt": "2026-09-12T07:12:32.605Z"
   },
   {
-    "id": "sounny/dxskills/dx-read",
-    "name": "dx-read",
-    "source": "sounny/dxskills",
-    "summary": "Anti-Wall-of-Text reading filter. Re-renders dense academic papers, policy documents, and long emails into visual signposts, decision matrices, and executive summaries.",
-    "security": "A",
+    "id": "fuzzyprogrammer/fuzzy-world/fuzzy-world",
+    "name": "fuzzy-world",
+    "source": "fuzzyprogrammer/fuzzy-world",
+    "summary": "Use when the user wants to generate hyper-realistic cinematic video clips (4–8 seconds) or photographic images for luxury / high-tech website pages, hero sections, landing pages, or client/lead pitches — the free alternative to scroll-world/paid video pipelines. Produces self-contained, copy-paste JSON prompts the user",
+    "security": "C",
     "signalScore": 59,
     "installs": 0,
     "repoStars": 0,
     "tags": [
-      "spatial",
-      "visual"
+      "brand",
+      "product",
+      "photo",
+      "video",
+      "motion",
+      "film",
+      "media"
     ],
-    "installUrl": "https://github.com/sounny/dxskills",
-    "skillsUrl": "https://github.com/sounny/dxskills/blob/main/skills/dx-read/SKILL.md",
+    "installUrl": "https://github.com/fuzzyprogrammer/fuzzy-world",
+    "skillsUrl": "https://github.com/fuzzyprogrammer/fuzzy-world/blob/main/skills/fuzzy-world/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "video-design",
+      "digital-media-film",
+      "fashion-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:36.449Z",
+    "lastSeenAt": "2026-09-12T07:12:36.449Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-cloud-infrastructure",
+    "name": "sota-cloud-infrastructure",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art cloud infrastructure architecture (2026). Applies when designing, building, or auditing cloud environments on AWS, GCP, or Azure — account/project structure and landing zones, IAM and workload identity, VPC/network design, DNS/TLS/CDN, compute selection (serverless vs containers vs Kubernetes vs VMs), ",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "architecture",
+      "design",
+      "map",
+      "environment",
+      "ui"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-cloud-infrastructure/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "architecture-design",
-      "visual-communication",
-      "operations-design",
-      "environmental-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:48.205Z",
-    "lastSeenAt": "2026-09-11T07:19:48.205Z"
-  },
-  {
-    "id": "xianyu110/awesome-gpt-image2.5/ugc-face-lock",
-    "name": "UGC 写真锁脸",
-    "source": "xianyu110/awesome-gpt-image2.5",
-    "summary": "use this when making photoreal UGC or ad portraits with Images 2.5 face-lock",
-    "security": "B",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 4,
-    "tags": [
-      "photo"
-    ],
-    "installUrl": "https://github.com/xianyu110/awesome-gpt-image2.5",
-    "skillsUrl": "https://github.com/xianyu110/awesome-gpt-image2.5/blob/main/skills/ugc-face-lock/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
+      "ui-design",
       "environmental-design",
-      "operations-design",
-      "arts-crafts"
+      "experience-design"
     ],
-    "qualityScore": 79,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:37.636Z",
-    "lastSeenAt": "2026-09-11T07:19:37.636Z"
+    "firstSeenAt": "2026-09-12T07:12:14.904Z",
+    "lastSeenAt": "2026-09-12T07:12:14.904Z"
   },
   {
-    "id": "SpiralCloudOmega/DevTeam6/automation",
-    "name": "daw-automation-system",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "DAW automation engine for REVITHION STUDIO — modes, curves, parameter binding, thinning, and punch logic in C++/JUCE.",
-    "security": "A",
+    "id": "martinholovsky/SOTA-skills/sota-javascript-typescript",
+    "name": "sota-javascript-typescript",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art JavaScript and TypeScript engineering (2026) for both writing and auditing code. Covers strict TypeScript configuration and type design, language idioms and pitfalls, async patterns, Node.js backends, JS/TS-specific security (XSS, prototype pollution, supply chain, injection), frontend/React and Node p",
+    "security": "C",
     "signalScore": 58,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 19,
     "tags": [
-      "product",
+      "experience",
+      "design",
+      "ux",
+      "prototype",
+      "ui",
       "art",
-      "vector",
       "pattern"
     ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/automation/SKILL.md",
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-javascript-typescript/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "industrial-design",
       "experience-design",
+      "ui-design",
       "folk-art",
-      "arts-crafts"
+      "architecture-design"
     ],
-    "qualityScore": 73,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:39.280Z",
-    "lastSeenAt": "2026-09-11T07:19:39.280Z"
+    "firstSeenAt": "2026-09-12T07:12:17.210Z",
+    "lastSeenAt": "2026-09-12T07:12:17.210Z"
   },
   {
-    "id": "SpiralCloudOmega/DevTeam6/mastering-chain",
-    "name": "mastering-chain",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "Professional mastering chain for REVITHION STUDIO — EQ, multiband compression, M/S processing, limiting, dithering, and loudness targeting in C++/JUCE.",
-    "security": "A",
+    "id": "svenroth-ai/shipwright/deploy",
+    "name": "shipwright-deploy",
+    "source": "svenroth-ai/shipwright",
+    "summary": "Deploy to Jelastic (Infomaniak) with smoke test verification, rollback support, and Supabase migrations.\\nTRIGGER when: user wants to deploy, push to production, deploy to dev, deploy to staging, publish the application, rollback a deployment, or check deployment status.\\nDO NOT TRIGGER when: user asks to write code (/",
+    "security": "C",
     "signalScore": 58,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 13,
     "tags": [
-      "product",
-      "vector",
-      "pattern"
+      "design",
+      "ui",
+      "environment"
     ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/mastering-chain/SKILL.md",
+    "installUrl": "https://github.com/svenroth-ai/shipwright",
+    "skillsUrl": "https://github.com/svenroth-ai/shipwright/blob/main/plugins/shipwright-deploy/skills/deploy/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "industrial-design",
-      "experience-design",
-      "arts-crafts",
-      "folk-art"
+      "ui-design",
+      "environmental-design",
+      "architecture-design",
+      "operations-design"
     ],
-    "qualityScore": 73,
+    "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:39.626Z",
-    "lastSeenAt": "2026-09-11T07:19:39.626Z"
+    "firstSeenAt": "2026-09-12T07:12:22.795Z",
+    "lastSeenAt": "2026-09-12T07:12:22.795Z"
   },
   {
-    "id": "SpiralCloudOmega/DevTeam6/midi-system",
-    "name": "midi-system",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "MIDI engine for REVITHION STUDIO — messages, clock, sync, MPE, MIDI 2.0, recording, quantization, humanization via JUCE C++.",
-    "security": "A",
+    "id": "svenroth-ai/shipwright/test",
+    "name": "shipwright-test",
+    "source": "svenroth-ai/shipwright",
+    "summary": "Profile-aware test runner. Runs unit tests, smoke tests, Playwright E2E, and optional security scans.\\nTRIGGER when: user wants to run tests, execute test suite, check if tests pass, run unit tests, run E2E tests, run integration tests, verify test results, check design fidelity, visual comparison, compare UI with mock",
+    "security": "C",
     "signalScore": 58,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 13,
     "tags": [
-      "product",
-      "operations"
+      "design",
+      "ui",
+      "art",
+      "pattern",
+      "visual",
+      "architecture"
     ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/midi-system/SKILL.md",
+    "installUrl": "https://github.com/svenroth-ai/shipwright",
+    "skillsUrl": "https://github.com/svenroth-ai/shipwright/blob/main/plugins/shipwright-test/skills/test/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "industrial-design",
-      "experience-design",
-      "operations-design",
-      "ui-design"
+      "ui-design",
+      "folk-art",
+      "environmental-design",
+      "architecture-design"
     ],
-    "qualityScore": 73,
+    "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:39.804Z",
-    "lastSeenAt": "2026-09-11T07:19:39.804Z"
+    "firstSeenAt": "2026-09-12T07:12:24.475Z",
+    "lastSeenAt": "2026-09-12T07:12:24.475Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/prose-mechanics",
@@ -1259,34 +1788,798 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:42.915Z",
-    "lastSeenAt": "2026-09-11T07:19:42.915Z"
+    "lastSeenAt": "2026-09-12T07:12:32.281Z"
   },
   {
-    "id": "SpiralCloudOmega/DevTeam6/skill-design-patterns",
-    "name": "skill-design-patterns",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "Universal guide for designing effective AI agent skills — structure, examples, cross-referencing, composition, and testing.",
+    "id": "martinholovsky/SOTA-skills/sota-api-design",
+    "name": "sota-api-design",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art API design and audit guidance (2026) covering REST/HTTP, GraphQL, gRPC, WebSockets/SSE/realtime, webhooks, versioning/evolution, and API security/operations. Use when designing or building any API surface (endpoints, schemas, protos, realtime channels, webhook senders/receivers) AND when auditing/revie",
     "security": "C",
-    "signalScore": 56,
+    "signalScore": 57,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 19,
     "tags": [
       "design",
-      "audio"
+      "product",
+      "cad",
+      "rendering",
+      "ui",
+      "operations"
     ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/agent-orchestration/skill-design-patterns/SKILL.md",
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-api-design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "ui-design",
+      "operations-design",
+      "experience-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:14.035Z",
+    "lastSeenAt": "2026-09-12T07:12:14.035Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-llm-engineering",
+    "name": "sota-llm-engineering",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art LLM application engineering rules (mid-2026 baseline) for BUILDING and AUDITING LLM-powered features. Claude should use this skill whenever it is building, modifying, or reviewing anything that calls a language model — chat features, RAG pipelines, agents and tool use, structured extraction, classifica",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "prototype",
+      "art",
+      "vector",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-llm-engineering/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "folk-art",
+      "arts-crafts"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:17.737Z",
+    "lastSeenAt": "2026-09-12T07:12:17.737Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-ruby",
+    "name": "sota-ruby",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art Ruby engineering rules (2026 baseline, Ruby 3.4+ / 4.0) that Claude applies when writing or auditing Ruby. Covers modern idioms (frozen string literals, pattern matching, Data/Struct, RBS/Sorbet/Steep typing), security (SQL injection via ActiveRecord/Sequel, ERB/XSS escaping, mass assignment, CSRF, Mar",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-ruby/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:19.827Z",
+    "lastSeenAt": "2026-09-12T07:12:19.827Z"
+  },
+  {
+    "id": "svenroth-ai/shipwright/build",
+    "name": "shipwright-build",
+    "source": "svenroth-ai/shipwright",
+    "summary": "Implements code from /shipwright-plan sections using TDD, code review, Conventional Commits, and feature branch workflow.\\nTRIGGER when: user wants to implement a planned section, build code from a plan, implement a feature from a section file, start coding a planned component, continue building the next section, write",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 13,
+    "tags": [
+      "design",
+      "ui",
+      "operations",
+      "environment"
+    ],
+    "installUrl": "https://github.com/svenroth-ai/shipwright",
+    "skillsUrl": "https://github.com/svenroth-ai/shipwright/blob/main/plugins/shipwright-build/skills/build/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:22.227Z",
+    "lastSeenAt": "2026-09-12T07:12:22.227Z"
+  },
+  {
+    "id": "svenroth-ai/shipwright/changelog",
+    "name": "shipwright-changelog",
+    "source": "svenroth-ai/shipwright",
+    "summary": "Parses Conventional Commits from git history, generates Keep-a-Changelog entries, creates version tags, and opens PRs.\\nTRIGGER when: user wants to create a changelog, generate release notes, tag a version, create a release, bump version number, create a PR for release, or review unreleased changes.\\nDO NOT TRIGGER whe",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 13,
+    "tags": [
+      "design",
+      "ui"
+    ],
+    "installUrl": "https://github.com/svenroth-ai/shipwright",
+    "skillsUrl": "https://github.com/svenroth-ai/shipwright/blob/main/plugins/shipwright-changelog/skills/changelog/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:22.433Z",
+    "lastSeenAt": "2026-09-12T07:12:22.433Z"
+  },
+  {
+    "id": "svenroth-ai/shipwright/iterate",
+    "name": "shipwright-iterate",
+    "source": "svenroth-ai/shipwright",
+    "summary": "Lightweight SDLC for ongoing changes in completed Shipwright projects.\\nTRIGGER when: user asks to add a feature, fix a bug, change behavior, refactor, update, modify, or improve code in a project that has shipwright_run_config.json with status complete. Also when user describes a bug report, enhancement request, or an",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 13,
+    "tags": [
+      "design",
+      "ui",
+      "campaign",
+      "visual"
+    ],
+    "installUrl": "https://github.com/svenroth-ai/shipwright",
+    "skillsUrl": "https://github.com/svenroth-ai/shipwright/blob/main/plugins/shipwright-iterate/skills/iterate/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "fashion-design",
+      "folk-art"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:23.418Z",
+    "lastSeenAt": "2026-09-12T07:12:23.418Z"
+  },
+  {
+    "id": "svenroth-ai/shipwright/run",
+    "name": "shipwright-run",
+    "source": "svenroth-ai/shipwright",
+    "summary": "Pipeline Initializer & Phase Coordinator for the Shipwright SDLC pipeline. Writes the run spec, then DRIVES every phase from this one conversation via a phase-runner subagent.\\nTRIGGER when: user wants to run the full pipeline, start the complete SDLC process, build an entire application from scratch, or resume an inte",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 13,
+    "tags": [
+      "design",
+      "ui",
+      "art",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/svenroth-ai/shipwright",
+    "skillsUrl": "https://github.com/svenroth-ai/shipwright/blob/main/plugins/shipwright-run/skills/run/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "folk-art",
+      "operations-design",
+      "video-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:24.129Z",
+    "lastSeenAt": "2026-09-12T07:12:24.129Z"
+  },
+  {
+    "id": "a2uicatalog/a2ui/a2ui-compose",
+    "name": "a2ui-compose",
+    "source": "a2uicatalog/a2ui",
+    "summary": "Compose an A2UI payload (typed atom blocks) and render it into real HTML — a chart, dashboard, status board, decision tree, or any structured UI, once the right atoms are already known (see the a2ui-catalog skill for picking them). Use when asked to SHOW something rather than describe it, and the host can display HTML ",
+    "security": "B",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 3,
+    "tags": [
+      "design",
+      "rendering"
+    ],
+    "installUrl": "https://github.com/a2uicatalog/a2ui",
+    "skillsUrl": "https://github.com/a2uicatalog/a2ui/blob/main/skills/a2ui-compose/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "video-design",
       "industrial-design",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:28.411Z",
+    "lastSeenAt": "2026-09-12T07:12:28.411Z"
+  },
+  {
+    "id": "peancharoen/lcbp3/204-speckit-quizme",
+    "name": "204-speckit-quizme",
+    "source": "peancharoen/lcbp3",
+    "summary": "Challenge the specification with Socratic questioning to identify logical gaps, unhandled edge cases, and robustness issues.",
+    "security": "B",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ui"
+    ],
+    "installUrl": "https://github.com/peancharoen/lcbp3",
+    "skillsUrl": "https://github.com/peancharoen/lcbp3/blob/main/.agents/skills/204-speckit-quizme/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:32.820Z",
+    "lastSeenAt": "2026-09-12T07:12:32.820Z"
+  },
+  {
+    "id": "ComponentDock/free-react-templates/docx",
+    "name": "docx",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Create, read, edit Word .docx documents and templates.",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "product",
+      "rendering",
+      "ux",
+      "research",
+      "landscape"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/productivity/docx/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
       "experience-design",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:39.603Z",
+    "lastSeenAt": "2026-09-12T07:12:39.603Z"
+  },
+  {
+    "id": "ComponentDock/free-react-templates/maps",
+    "name": "maps",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.",
+    "security": "B",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "product",
+      "ux"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/productivity/maps/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "experience-design",
+      "operations-design",
+      "ui-design"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:40.759Z",
+    "lastSeenAt": "2026-09-12T07:12:40.759Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-architecture",
+    "name": "sota-architecture",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art software and system architecture rules (2026) for both building and auditing. Use when designing, building, refactoring, or extending system architecture — boundaries, DDD, hexagonal/clean architecture, event-driven design, CQRS, sagas, messaging, caching, sharding, multi-tenancy, resilience, scalabili",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-architecture/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "environmental-design",
+      "experience-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:14.210Z",
+    "lastSeenAt": "2026-09-12T07:12:14.210Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-async-concurrency",
+    "name": "sota-async-concurrency",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art rules for writing and auditing asynchronous and concurrent code across runtimes (Python asyncio, JS/Node, Go, Rust, JVM). Use when building anything with async/await, threads, processes, event loops, task groups, channels, or queues — and when auditing existing code for race conditions, deadlocks, leak",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-async-concurrency/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:14.373Z",
+    "lastSeenAt": "2026-09-12T07:12:14.373Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-confidential-computing",
+    "name": "sota-confidential-computing",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art confidential computing and cryptographic PETs (2026) for BUILDING and AUDITING systems that protect workloads and data in use from the infrastructure they run on — the inverse of sandboxing. Covers TEE selection (AMD SEV-SNP, Intel TDX, ARM CCA realms, SGX enclaves, AWS Nitro Enclaves, NVIDIA confident",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "product",
+      "diagram",
+      "map"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-confidential-computing/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "architecture-design",
+      "operations-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:15.287Z",
+    "lastSeenAt": "2026-09-12T07:12:15.287Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-databases",
+    "name": "sota-databases",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art database engineering rules (2026) for designing, building, and auditing data layers. Covers engine selection, schema modeling, migrations, query and index craft, transactions and concurrency, reliability and scale, security, and vector/AI workloads. Use when designing a new data layer, writing or revie",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "art",
+      "vector",
+      "pattern",
+      "craft"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-databases/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "folk-art",
+      "arts-crafts",
+      "experience-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:15.839Z",
+    "lastSeenAt": "2026-09-12T07:12:15.839Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-detection-engineering",
+    "name": "sota-detection-engineering",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art detection engineering, SOC, threat hunting, and incident response (2026). Use when BUILDING detective controls or SOC capability — Sigma/YARA/Falco/Tetragon/Suricata rules, detection-as-code, MITRE ATT&CK coverage, SIEM detections, alert triage and SOAR, threat hunts, threat-intel, deception, IR playbo",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "map",
+      "environment",
+      "campaign"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-detection-engineering/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "operations-design",
+      "environmental-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:16.037Z",
+    "lastSeenAt": "2026-09-12T07:12:16.037Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-docs-workflow",
+    "name": "sota-docs-workflow",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art documentation and engineering-collaboration guidance (2026) covering documentation architecture (Diátaxis, docs-as-code, READMEs, runbooks, onboarding, AI-readable docs), API/reference docs and changelogs, and the team workflow around code: pull requests, code review conduct, commit discipline, branchi",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "environment",
+      "architecture"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-docs-workflow/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "environmental-design",
+      "architecture-design",
+      "experience-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:16.375Z",
+    "lastSeenAt": "2026-09-12T07:12:16.375Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-dotnet",
+    "name": "sota-dotnet",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art C# / .NET engineering rules (2026 baseline, .NET 10 LTS / C# 14) that Claude applies when writing or auditing .NET code. Covers modern idioms (records, nullable reference types, pattern matching, spans, file-scoped namespaces), API/null/immutability/`IDisposable` design, async/await & concurrency (Conf",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-dotnet/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:16.534Z",
+    "lastSeenAt": "2026-09-12T07:12:16.534Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-identity-access",
+    "name": "sota-identity-access",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art identity and access management engineering (2026) for BUILDING/configuring identity infrastructure AND AUDITING it — federation, IdPs, authorization models, the joiner-mover-leaver lifecycle, privileged/break-glass access, workload identity, MFA/passkeys, and assurance levels; audits cover orphaned acc",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "operations",
+      "architecture"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-identity-access/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "environmental-design",
       "architecture-design"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:38.954Z",
-    "lastSeenAt": "2026-09-11T07:19:38.954Z"
+    "firstSeenAt": "2026-09-12T07:12:17.043Z",
+    "lastSeenAt": "2026-09-12T07:12:17.043Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-mobile",
+    "name": "sota-mobile",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art mobile engineering for building and auditing iOS and Android applications. Use when the task involves mobile apps in any form — native (Swift, SwiftUI, Kotlin, Jetpack Compose), cross-platform (React Native, Flutter, Kotlin Multiplatform), Swift as a language — Swift 6 strict concurrency, actors, Senda",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "product",
+      "mobile",
+      "operations"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-mobile/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "operations-design",
+      "environmental-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:18.068Z",
+    "lastSeenAt": "2026-09-12T07:12:18.068Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-observability",
+    "name": "sota-observability",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art observability and reliability engineering (2026). Use when instrumenting code (structured logging, metrics, distributed tracing with OpenTelemetry, SLOs, alerting, health endpoints) or auditing an existing codebase's observability posture (can on-call answer \"why is this request slow?\" and \"what broke ",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-observability/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:18.538Z",
+    "lastSeenAt": "2026-09-12T07:12:18.538Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-privacy-compliance",
+    "name": "sota-privacy-compliance",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art privacy and compliance engineering guidance for building privacy-respecting systems and auditing existing code for privacy/compliance gaps. Use when work involves privacy, GDPR, PII, personal data, consent, data retention, deletion, DSAR (data subject access requests), SOC 2, ISO 27001, HIPAA, PCI DSS,",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "landscape",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-privacy-compliance/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "environmental-design",
+      "architecture-design",
+      "experience-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:19.411Z",
+    "lastSeenAt": "2026-09-12T07:12:19.411Z"
+  },
+  {
+    "id": "martinholovsky/SOTA-skills/sota-sandboxing",
+    "name": "sota-sandboxing",
+    "source": "martinholovsky/SOTA-skills",
+    "summary": "State-of-the-art sandboxing and isolation engineering (2026). Use when designing isolation for untrusted code, untrusted input parsing, multi-tenant workloads, or AI/agent execution — and when auditing existing systems for isolation gaps. Covers least privilege, defense in depth, isolation boundary selection (VM/microV",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 19,
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "art",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/martinholovsky/SOTA-skills",
+    "skillsUrl": "https://github.com/martinholovsky/SOTA-skills/blob/main/skills/sota-sandboxing/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "folk-art",
+      "operations-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:20.171Z",
+    "lastSeenAt": "2026-09-12T07:12:20.171Z"
+  },
+  {
+    "id": "svenroth-ai/shipwright/plan",
+    "name": "shipwright-plan",
+    "source": "svenroth-ai/shipwright",
+    "summary": "Creates detailed implementation plans from spec files via research, interview, external LLM review, and TDD approach. Generates section-based plans for /shipwright-build.\\nTRIGGER when: user wants to plan implementation, create an implementation plan, break down a spec into sections, plan how to build something, create",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 13,
+    "tags": [
+      "design",
+      "ui",
+      "landscape",
+      "architecture",
+      "ux",
+      "research"
+    ],
+    "installUrl": "https://github.com/svenroth-ai/shipwright",
+    "skillsUrl": "https://github.com/svenroth-ai/shipwright/blob/main/plugins/shipwright-plan/skills/plan/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "environmental-design",
+      "experience-design",
+      "architecture-design"
+    ],
+    "qualityScore": 80,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:23.603Z",
+    "lastSeenAt": "2026-09-12T07:12:23.603Z"
+  },
+  {
+    "id": "svenroth-ai/shipwright/project",
+    "name": "shipwright-project",
+    "source": "svenroth-ai/shipwright",
+    "summary": "Decomposes project requirements into well-scoped planning units for /shipwright-plan. Generates CLAUDE.md and .shipwright/agent_docs for the target project.\\nTRIGGER when: user wants to start a new project, define requirements, create a project spec, decompose a project into components, scaffold a new application, set ",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 13,
+    "tags": [
+      "design",
+      "ui",
+      "map"
+    ],
+    "installUrl": "https://github.com/svenroth-ai/shipwright",
+    "skillsUrl": "https://github.com/svenroth-ai/shipwright/blob/main/plugins/shipwright-project/skills/project/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "architecture-design",
+      "operations-design",
+      "video-design"
+    ],
+    "qualityScore": 80,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:23.933Z",
+    "lastSeenAt": "2026-09-12T07:12:23.933Z"
+  },
+  {
+    "id": "KaelSensei/MagicAIBuilder/clean-code",
+    "name": "clean-code",
+    "source": "KaelSensei/MagicAIBuilder",
+    "summary": "Practical reference for writing and refactoring code in this repo. The baseline is Robert C. Martin's _Clean Code_, adapted to TypeScript + React + Next.js App Router and to this project's actual code quality gates (SonarCloud).",
+    "security": "B",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "product",
+      "rendering",
+      "brand"
+    ],
+    "installUrl": "https://github.com/KaelSensei/MagicAIBuilder",
+    "skillsUrl": "https://github.com/KaelSensei/MagicAIBuilder/blob/main/.agents/skills/clean-code/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "industrial-design",
+      "operations-design",
+      "architecture-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:28.886Z",
+    "lastSeenAt": "2026-09-12T07:12:28.886Z"
+  },
+  {
+    "id": "KaelSensei/MagicAIBuilder/mtg-rules",
+    "name": "mtg-rules",
+    "source": "KaelSensei/MagicAIBuilder",
+    "summary": "Magic: The Gathering comprehensive rules reference and rules engine. Use this skill whenever the user asks about MTG rules, card interactions, game mechanics, timing, priority, layers, state-based actions, combat, stack resolution, or any rules question about Magic: The Gathering. Also trigger on: 'how does X work in M",
+    "security": "C",
+    "signalScore": 56,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "interaction",
+      "arts",
+      "color",
+      "pattern",
+      "art"
+    ],
+    "installUrl": "https://github.com/KaelSensei/MagicAIBuilder",
+    "skillsUrl": "https://github.com/KaelSensei/MagicAIBuilder/blob/main/.agents/skills/mtg-rules/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "arts-crafts",
+      "folk-art",
+      "ui-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:29.709Z",
+    "lastSeenAt": "2026-09-12T07:12:29.709Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/arm-vectors-atomics-numerics-and-security-architecture",
@@ -1316,7 +2609,7 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:40.547Z",
-    "lastSeenAt": "2026-09-11T07:19:40.547Z"
+    "lastSeenAt": "2026-09-12T07:12:30.317Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/math-calculus-and-vector-calculus",
@@ -1346,63 +2639,212 @@
     "qualityScore": 75,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:41.558Z",
-    "lastSeenAt": "2026-09-11T07:19:41.558Z"
+    "lastSeenAt": "2026-09-12T07:12:31.393Z"
   },
   {
-    "id": "sounny/dxskills/dx-voice",
-    "name": "dx-voice",
-    "source": "sounny/dxskills",
-    "summary": "Speech-to-Architecture pipeline. Converts raw audio dictation, meeting recordings, and voice memos directly into structured Markdown deliverables using local Whisper transcription and cognitive compilation.",
-    "security": "C",
-    "signalScore": 56,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "architecture",
-      "map",
-      "audio"
-    ],
-    "installUrl": "https://github.com/sounny/dxskills",
-    "skillsUrl": "https://github.com/sounny/dxskills/blob/main/skills/dx-voice/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "environmental-design",
-      "video-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:48.522Z",
-    "lastSeenAt": "2026-09-11T07:19:48.522Z"
-  },
-  {
-    "id": "aganesy/QFAI/web-research",
-    "name": "web-research",
-    "source": "aganesy/QFAI",
-    "summary": "8-stage web research pipeline with MCP integration, caching, and citation generation.",
+    "id": "PrisacariuRobert/openbot/use-mac-apps",
+    "name": "use-mac-apps",
+    "source": "PrisacariuRobert/openbot",
+    "summary": "Inspect and operate visible macOS apps through OpenBot's approved computer-use tools. Use when the user asks to open an app, read visible controls or window state, click a control, enter text, press a key, scroll, or complete a workflow across Mac apps. Do not use for websites already handled by the private browser or ",
     "security": "C",
     "signalScore": 55,
     "installs": 0,
-    "repoStars": 4,
+    "repoStars": 3,
     "tags": [
-      "research",
-      "media",
-      "ui"
+      "ui",
+      "interaction",
+      "accessibility",
+      "media"
     ],
-    "installUrl": "https://github.com/aganesy/QFAI",
-    "skillsUrl": "https://github.com/aganesy/QFAI/blob/main/.qfai/assistant/skills/web-research/SKILL.md",
+    "installUrl": "https://github.com/PrisacariuRobert/openbot",
+    "skillsUrl": "https://github.com/PrisacariuRobert/openbot/blob/main/skills/use-mac-apps/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "ui-design",
       "experience-design",
       "digital-media-film",
-      "ui-design",
-      "folk-art"
+      "visual-communication"
     ],
-    "qualityScore": 81,
+    "qualityScore": 88,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-11T07:19:37.971Z",
-    "lastSeenAt": "2026-09-11T07:19:37.971Z"
+    "firstSeenAt": "2026-09-12T07:12:27.342Z",
+    "lastSeenAt": "2026-09-12T07:12:27.342Z"
+  },
+  {
+    "id": "ComponentDock/free-react-templates/google-workspace",
+    "name": "google-workspace",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
+    "security": "C",
+    "signalScore": 55,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "product",
+      "ux",
+      "research",
+      "operations"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/productivity/google-workspace/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "experience-design",
+      "operations-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:40.436Z",
+    "lastSeenAt": "2026-09-12T07:12:40.436Z"
+  },
+  {
+    "id": "ComponentDock/free-react-templates/teams-meeting-pipeline",
+    "name": "teams-meeting-pipeline",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Teams meeting summaries, job replay, Graph subscriptions.",
+    "security": "C",
+    "signalScore": 54,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "product",
+      "operations",
+      "communication"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/productivity/teams-meeting-pipeline/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "operations-design",
+      "visual-communication",
+      "experience-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:43.618Z",
+    "lastSeenAt": "2026-09-12T07:12:43.618Z"
+  },
+  {
+    "id": "cwoodworth89/CFR-EVO-APP/google-imagery-streetview",
+    "name": "google-imagery-streetview",
+    "source": "cwoodworth89/CFR-EVO-APP",
+    "summary": "Procedures for fetching, orienting, and rendering Google Street View panoramas in CFR EVO, and for persisting the operator's preferred view as parameters (never imagery, which the Maps Platform terms forbid storing). Not the aerial basemap, which is City orthophotography served offline from ortho.mbtiles (see gis-pipel",
+    "security": "C",
+    "signalScore": 54,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "rendering",
+      "map",
+      "art",
+      "vector",
+      "pattern",
+      "layout"
+    ],
+    "installUrl": "https://github.com/cwoodworth89/CFR-EVO-APP",
+    "skillsUrl": "https://github.com/cwoodworth89/CFR-EVO-APP/blob/main/.claude/skills/google-imagery-streetview/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "folk-art",
+      "visual-communication",
+      "industrial-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:45.372Z",
+    "lastSeenAt": "2026-09-12T07:12:45.372Z"
+  },
+  {
+    "id": "ComponentDock/free-react-templates/ocr-and-documents",
+    "name": "ocr-and-documents",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+    "security": "C",
+    "signalScore": 53,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "product",
+      "ux",
+      "research",
+      "ui",
+      "layout"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/productivity/ocr-and-documents/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "experience-design",
+      "ui-design",
+      "visual-communication"
+    ],
+    "qualityScore": 83,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:41.591Z",
+    "lastSeenAt": "2026-09-12T07:12:41.592Z"
+  },
+  {
+    "id": "ComponentDock/free-react-templates/nano-pdf",
+    "name": "nano-pdf",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Edit text in existing PDFs via natural-language prompts.",
+    "security": "C",
+    "signalScore": 52,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "product",
+      "ui",
+      "layout",
+      "ux"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/productivity/nano-pdf/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "ui-design",
+      "experience-design",
+      "visual-communication"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:40.922Z",
+    "lastSeenAt": "2026-09-12T07:12:40.922Z"
+  },
+  {
+    "id": "ComponentDock/free-react-templates/surge-per-template-deploy",
+    "name": "surge-per-template-deploy",
+    "source": "ComponentDock/free-react-templates",
+    "summary": "Deploy static sites per-project to Surge.sh subdomains.",
+    "security": "C",
+    "signalScore": 52,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "product",
+      "art",
+      "color",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/ComponentDock/free-react-templates",
+    "skillsUrl": "https://github.com/ComponentDock/free-react-templates/blob/main/skills/productivity/surge-per-template-deploy/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "folk-art",
+      "arts-crafts",
+      "experience-design"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-12T07:12:43.457Z",
+    "lastSeenAt": "2026-09-12T07:12:43.457Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/narrative-structure",
@@ -1432,7 +2874,7 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:42.342Z",
-    "lastSeenAt": "2026-09-11T07:19:42.342Z"
+    "lastSeenAt": "2026-09-12T07:12:32.102Z"
   },
   {
     "id": "adammatthewsteinberger/vibey-skills/prose-technical-mechanics",
@@ -1461,6 +2903,6 @@
     "qualityScore": 81,
     "maintenanceScore": 90,
     "firstSeenAt": "2026-09-11T07:19:43.092Z",
-    "lastSeenAt": "2026-09-11T07:19:43.092Z"
+    "lastSeenAt": "2026-09-12T07:12:32.448Z"
   }
 ]

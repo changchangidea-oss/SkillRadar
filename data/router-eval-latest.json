@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-11T07:23:03.144Z",
+  "generatedAt": "2026-09-12T07:16:25.952Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 48,
-  "passRate": 0.889,
+  "passed": 51,
+  "passRate": 0.944,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 38,
-    "passRate": 0.864
+    "passed": 41,
+    "passRate": 0.932
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 4,
-  "capabilityGapCases": 31,
-  "averageRecommendationCount": 1.87,
-  "averageRelevantTop3": 1.87,
-  "averageTop1Score": 74.1,
+  "specificityFailures": 1,
+  "capabilityGapCases": 30,
+  "averageRecommendationCount": 1.89,
+  "averageRelevantTop3": 1.89,
+  "averageTop1Score": 76.6,
   "expectedHitsTotal": 30,
-  "signalHitsTotal": 126,
-  "anchorSignalHitsTotal": 30,
+  "signalHitsTotal": 132,
+  "anchorSignalHitsTotal": 33,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -34,9 +34,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 1,
-      "capabilityGapCases": 5,
+      "capabilityGapCases": 4,
       "passRate": 0.833,
-      "averageRecommendationCount": 1.33
+      "averageRecommendationCount": 1.5
     },
     "Frontend": {
       "cases": 8,
@@ -46,7 +46,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 7,
       "passRate": 1,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 1.5
     },
     "Design & Media": {
       "cases": 5,
@@ -90,13 +90,13 @@
     },
     "Backend & API": {
       "cases": 4,
-      "passed": 3,
+      "passed": 4,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 1,
+      "specificityFailures": 0,
       "capabilityGapCases": 3,
-      "passRate": 0.75,
-      "averageRecommendationCount": 1.25
+      "passRate": 1,
+      "averageRecommendationCount": 1.5
     },
     "Security": {
       "cases": 4,
@@ -110,13 +110,13 @@
     },
     "Mobile": {
       "cases": 4,
-      "passed": 2,
+      "passed": 4,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 2,
+      "specificityFailures": 0,
       "capabilityGapCases": 1,
-      "passRate": 0.5,
-      "averageRecommendationCount": 2.25
+      "passRate": 1,
+      "averageRecommendationCount": 2.5
     },
     "Automation & Integrations": {
       "cases": 4,
@@ -532,13 +532,13 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "sounny/dxskills/dx-map",
         "curiositech/some_claude_skills/interior-design-expert",
-        "SpiralCloudOmega/DevTeam6/spatial-audio"
+        "cwoodworth89/CFR-EVO-APP/gis-pipeline-sync",
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 82,
+      "top1_score": 80,
       "expected_hits": 0,
       "signal_hits": 4,
       "anchor_signal_hits": 0,
@@ -549,22 +549,6 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "sounny/dxskills/dx-map",
-          "score": 82,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "architecture",
-            "rendering",
-            "spatial"
-          ]
-        },
         {
           "id": "curiositech/some_claude_skills/interior-design-expert",
           "score": 80,
@@ -582,8 +566,8 @@
           ]
         },
         {
-          "id": "SpiralCloudOmega/DevTeam6/spatial-audio",
-          "score": 81,
+          "id": "cwoodworth89/CFR-EVO-APP/gis-pipeline-sync",
+          "score": 79,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -596,19 +580,35 @@
             "rendering",
             "spatial"
           ]
+        },
+        {
+          "id": "roble3/cc-blender-skill/blender-rendering",
+          "score": 79,
+          "coverage": 0.75,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "architecture",
+            "rendering",
+            "interior"
+          ]
         }
       ],
       "signals": [
         "architecture",
-        "rendering",
-        "spatial",
-        "sounny-dxskills-dx-map",
-        "dx-map",
         "interior",
+        "spatial",
         "curiositech-some-claude-skills-interior-design-expert",
         "interior-design-expert",
-        "spiralcloudomega-devteam6-spatial-audio",
-        "spatial-audio"
+        "rendering",
+        "cwoodworth89-cfr-evo-app-gis-pipeline-sync",
+        "gis-pipeline-sync",
+        "roble3-cc-blender-skill-blender-rendering",
+        "blender-rendering"
       ]
     },
     {
@@ -808,18 +808,19 @@
       "pass": true,
       "top3": [
         "ai-sdk",
-        "redis/agent-skills/redis-semantic-cache-9c2b67"
+        "redis/agent-skills/redis-semantic-cache-9c2b67",
+        "martinholovsky/SOTA-skills/sota-ml-engineering"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 57,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 2,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -851,6 +852,20 @@
           "signals": [
             "rag"
           ]
+        },
+        {
+          "id": "martinholovsky/SOTA-skills/sota-ml-engineering",
+          "score": 30,
+          "coverage": 0.2,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "rag"
+          ]
         }
       ],
       "signals": [
@@ -858,7 +873,9 @@
         "embeddings",
         "ai-sdk",
         "redis-agent-skills-redis-semantic-cache-9c2b67",
-        "redis-semantic-cache"
+        "redis-semantic-cache",
+        "martinholovsky-sota-skills-sota-ml-engineering",
+        "sota-ml-engineering"
       ]
     },
     {
@@ -1037,10 +1054,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "shadcn",
-        "m3taz-ahmed/ai-globals/ui-design-lord"
+        "shadcn"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 85,
       "expected_hits": 1,
@@ -1049,7 +1065,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1069,22 +1085,6 @@
             "radix",
             "ui"
           ]
-        },
-        {
-          "id": "m3taz-ahmed/ai-globals/ui-design-lord",
-          "score": 64,
-          "coverage": 0.61,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "tailwind",
-            "ui",
-            "components"
-          ]
         }
       ],
       "signals": [
@@ -1092,10 +1092,7 @@
         "tailwind",
         "radix",
         "ui",
-        "shadcn",
-        "components",
-        "m3taz-ahmed-ai-globals-ui-design-lord",
-        "ui-design-lord"
+        "shadcn"
       ]
     },
     {
@@ -1175,10 +1172,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nextjs",
-        "CopilotKit/CopilotKit/react-core-507281"
+        "nextjs"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 93,
       "expected_hits": 1,
@@ -1187,7 +1183,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1209,22 +1205,6 @@
             "route",
             "architecture"
           ]
-        },
-        {
-          "id": "CopilotKit/CopilotKit/react-core-507281",
-          "score": 68,
-          "coverage": 0.56,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "nextjs",
-            "app-router",
-            "route"
-          ]
         }
       ],
       "signals": [
@@ -1233,9 +1213,7 @@
         "data",
         "fetching",
         "route",
-        "architecture",
-        "copilotkit-copilotkit-react-core-507281",
-        "react-core"
+        "architecture"
       ]
     },
     {
@@ -1375,22 +1353,47 @@
       "id": "graphql-server",
       "domain": "Backend & API",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "martinholovsky/SOTA-skills/sota-api-design"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 64,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 2,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "martinholovsky/SOTA-skills/sota-api-design",
+          "score": 64,
+          "coverage": 0.6,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "design",
+            "graphql",
+            "api"
+          ]
+        }
+      ],
+      "signals": [
+        "design",
+        "graphql",
+        "api",
+        "martinholovsky-sota-skills-sota-api-design",
+        "sota-api-design"
+      ]
     },
     {
       "id": "root-cause-api-debug",
@@ -1588,7 +1591,7 @@
         },
         {
           "id": "redis/agent-skills/redis-security-5fdcbb",
-          "score": 71,
+          "score": 70,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -2000,7 +2003,7 @@
       "top3": [
         "sickn33/agentic-awesome-skills/cloud-devops-7bc4e4",
         "sickn33/agentic-awesome-skills/docker-expert-cd701c",
-        "davila7/claude-code-templates/cloud-devops-b6bd4e"
+        "martinholovsky/SOTA-skills/sota-cloud-infrastructure"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2048,8 +2051,8 @@
           ]
         },
         {
-          "id": "davila7/claude-code-templates/cloud-devops-b6bd4e",
-          "score": 68,
+          "id": "martinholovsky/SOTA-skills/sota-cloud-infrastructure",
+          "score": 65,
           "coverage": 0.55,
           "expected": false,
           "relevant": true,
@@ -2074,7 +2077,8 @@
         "docker",
         "sickn33-agentic-awesome-skills-docker-expert-cd701c",
         "docker-expert",
-        "davila7-claude-code-templates-cloud-devops-b6bd4e"
+        "martinholovsky-sota-skills-sota-cloud-infrastructure",
+        "sota-cloud-infrastructure"
       ]
     },
     {
@@ -2085,7 +2089,7 @@
       "top3": [
         "github",
         "ruvnet/ruflo/github-automation-48be15",
-        "ruvnet/ruflo/github-workflow-automation-4ada72"
+        "sickn33/agentic-awesome-skills/github-automation-a88f77"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2135,18 +2139,17 @@
           ]
         },
         {
-          "id": "ruvnet/ruflo/github-workflow-automation-4ada72",
-          "score": 72,
-          "coverage": 0.64,
+          "id": "sickn33/agentic-awesome-skills/github-automation-a88f77",
+          "score": 67,
+          "coverage": 0.5,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 1,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
             "github",
-            "ci",
             "workflow",
             "repository"
           ]
@@ -2159,8 +2162,7 @@
         "repository",
         "ruvnet-ruflo-github-automation-48be15",
         "github-automation",
-        "ruvnet-ruflo-github-workflow-automation-4ada72",
-        "github-workflow-automation"
+        "sickn33-agentic-awesome-skills-github-automation-a88f77"
       ]
     },
     {
@@ -2522,58 +2524,84 @@
       "id": "swiftui-ios",
       "domain": "Mobile",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "martinholovsky/SOTA-skills/sota-mobile"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 56,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 3,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "martinholovsky/SOTA-skills/sota-mobile",
+          "score": 56,
+          "coverage": 0.53,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "ios",
+            "swiftui",
+            "mobile"
+          ]
+        }
+      ],
+      "signals": [
+        "ios",
+        "swiftui",
+        "mobile",
+        "martinholovsky-sota-skills-sota-mobile",
+        "sota-mobile"
+      ]
     },
     {
       "id": "android-kotlin",
       "domain": "Mobile",
       "tier": "coverage",
-      "pass": false,
+      "pass": true,
       "top3": [
-        "callstackincubator/agent-skills/agent-device-f62531",
+        "martinholovsky/SOTA-skills/sota-mobile",
         "TriliumNext/Trilium/developing-capacitor-mobile-dab7e0",
-        "gmh5225/awesome-game-security/mobile-security-9abeca"
+        "callstackincubator/agent-skills/agent-device-f62531"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 68,
+      "top1_score": 82,
       "expected_hits": 0,
-      "signal_hits": 2,
-      "anchor_signal_hits": 1,
+      "signal_hits": 3,
+      "anchor_signal_hits": 2,
       "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
+      "specificity_pass": true,
       "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "callstackincubator/agent-skills/agent-device-f62531",
-          "score": 68,
-          "coverage": 0.67,
+          "id": "martinholovsky/SOTA-skills/sota-mobile",
+          "score": 82,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
+          "required_hits": 3,
+          "anchor_hits": 2,
           "identity_anchor_hits": 0,
           "signals": [
             "android",
+            "kotlin",
             "mobile"
           ]
         },
@@ -2593,7 +2621,7 @@
           ]
         },
         {
-          "id": "gmh5225/awesome-game-security/mobile-security-9abeca",
+          "id": "callstackincubator/agent-skills/agent-device-f62531",
           "score": 68,
           "coverage": 0.67,
           "expected": false,
@@ -2610,13 +2638,14 @@
       ],
       "signals": [
         "android",
+        "kotlin",
         "mobile",
-        "callstackincubator-agent-skills-agent-device-f62531",
-        "agent-device",
+        "martinholovsky-sota-skills-sota-mobile",
+        "sota-mobile",
         "triliumnext-trilium-developing-capacitor-mobile-dab7e0",
         "developing-capacitor-mobile",
-        "gmh5225-awesome-game-security-mobile-security-9abeca",
-        "mobile-security"
+        "callstackincubator-agent-skills-agent-device-f62531",
+        "agent-device"
       ]
     },
     {
@@ -2885,7 +2914,7 @@
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 59,
+      "top1_score": 58,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 2,
@@ -2898,7 +2927,7 @@
       "candidates": [
         {
           "id": "googleworkspace/cli/gws-calendar-agenda-c125ff",
-          "score": 59,
+          "score": 58,
           "coverage": 0.42,
           "expected": false,
           "relevant": true,
@@ -2913,7 +2942,7 @@
         },
         {
           "id": "googleworkspace/cli/gws-gmail-read-e6b4b1",
-          "score": 54,
+          "score": 53,
           "coverage": 0.37,
           "expected": false,
           "relevant": true,
@@ -3166,7 +3195,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "ComponentDock/free-react-templates/popular-web-designs"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3216,8 +3245,8 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/figma-generate-design",
-          "score": 64,
+          "id": "ComponentDock/free-react-templates/popular-web-designs",
+          "score": 61,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3240,8 +3269,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "figma-mcp-server-guide-figma-generate-design",
-        "figma-generate-design"
+        "componentdock-free-react-templates-popular-web-designs",
+        "popular-web-designs"
       ]
     },
     {
@@ -3252,7 +3281,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "curiositech/some_claude_skills/human-centered-design-fundamentals"
+        "martinholovsky/SOTA-skills/sota-ml-engineering"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3300,8 +3329,8 @@
           ]
         },
         {
-          "id": "curiositech/some_claude_skills/human-centered-design-fundamentals",
-          "score": 73,
+          "id": "martinholovsky/SOTA-skills/sota-ml-engineering",
+          "score": 74,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3323,8 +3352,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "curiositech-some-claude-skills-human-centered-design-fundamentals",
-        "human-centered-design-fundamentals"
+        "martinholovsky-sota-skills-sota-ml-engineering",
+        "sota-ml-engineering"
       ]
     },
     {
@@ -3418,13 +3447,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "Q20396/codex-long-horizon-skill/ai-video-production",
         "remotion-dev/skills/remotion-best-practices",
-        "EKKOLearnAI/hermes-studio/hyperframes-27241c",
-        "remotion-dev/skills/remotion-multimedia"
+        "EKKOLearnAI/hermes-studio/hyperframes-27241c"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 85,
+      "top1_score": 91,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3435,6 +3464,23 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "Q20396/codex-long-horizon-skill/ai-video-production",
+          "score": 91,
+          "coverage": 1,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "video",
+            "motion",
+            "editing",
+            "animation"
+          ]
+        },
         {
           "id": "remotion-dev/skills/remotion-best-practices",
           "score": 85,
@@ -3466,35 +3512,19 @@
             "motion",
             "animation"
           ]
-        },
-        {
-          "id": "remotion-dev/skills/remotion-multimedia",
-          "score": 83,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "video",
-            "motion",
-            "editing"
-          ]
         }
       ],
       "signals": [
         "video",
         "motion",
         "editing",
+        "animation",
+        "q20396-codex-long-horizon-skill-ai-video-production",
+        "ai-video-production",
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
-        "animation",
         "ekkolearnai-hermes-studio-hyperframes-27241c",
-        "hyperframes",
-        "remotion-dev-skills-remotion-multimedia",
-        "remotion-multimedia"
+        "hyperframes"
       ]
     },
     {
@@ -3503,13 +3533,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "SpiralCloudOmega/DevTeam6/loudness-metering",
-        "adammatthewsteinberger/vibey-skills/cad-slicing-pipeline-and-processes",
-        "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad"
+        "martinholovsky/SOTA-skills/sota-security-compliance",
+        "martinholovsky/SOTA-skills/sota-api-design",
+        "adammatthewsteinberger/vibey-skills/cad-reference"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 94,
+      "top1_score": 90,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3521,8 +3551,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "SpiralCloudOmega/DevTeam6/loudness-metering",
-          "score": 94,
+          "id": "martinholovsky/SOTA-skills/sota-security-compliance",
+          "score": 90,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -3539,24 +3569,25 @@
           ]
         },
         {
-          "id": "adammatthewsteinberger/vibey-skills/cad-slicing-pipeline-and-processes",
-          "score": 83,
-          "coverage": 0.78,
+          "id": "martinholovsky/SOTA-skills/sota-api-design",
+          "score": 90,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "cad",
             "industrial-design",
             "industrial",
+            "product",
             "cad"
           ]
         },
         {
-          "id": "adammatthewsteinberger/vibey-skills/cad-geometry-kernels-formats-and-code-cad",
+          "id": "adammatthewsteinberger/vibey-skills/cad-reference",
           "score": 83,
           "coverage": 0.78,
           "expected": false,
@@ -3578,12 +3609,12 @@
         "industrial-design",
         "industrial",
         "product",
-        "spiralcloudomega-devteam6-loudness-metering",
-        "loudness-metering",
-        "adammatthewsteinberger-vibey-skills-cad-slicing-pipeline-and-processes",
-        "cad-slicing-pipeline-and-processes",
-        "adammatthewsteinberger-vibey-skills-cad-geometry-kernels-formats-and-code-cad",
-        "cad-geometry-kernels-formats-and-code-cad"
+        "martinholovsky-sota-skills-sota-security-compliance",
+        "sota-security-compliance",
+        "martinholovsky-sota-skills-sota-api-design",
+        "sota-api-design",
+        "adammatthewsteinberger-vibey-skills-cad-reference",
+        "cad-reference"
       ]
     }
   ]
