@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T08:17:02.436Z",
+  "generatedAt": "2026-09-12T08:06:48.718Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
@@ -8,7 +8,7 @@
   "unsafeTop3": 0,
   "capabilityGapCases": 4,
   "averageRecommendationCount": 2,
-  "averageTop1Score": 84.4,
+  "averageTop1Score": 84.1,
   "projectContextFixture": "passed",
   "results": [
     {
@@ -168,20 +168,20 @@
       "id": "zh-spatial-rendering",
       "pass": true,
       "top3": [
-        "sounny/dxskills/dx-map",
         "curiositech/some_claude_skills/interior-design-expert",
-        "SpiralCloudOmega/DevTeam6/spatial-audio"
+        "cwoodworth89/CFR-EVO-APP/gis-pipeline-sync",
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 82,
+      "top1_score": 80,
       "expected_hits": 0,
       "signal_hits": 4,
       "signals": [
         "-architecture",
-        "-rendering",
+        "-interior",
         "-spatial",
-        "-interior"
+        "-rendering"
       ],
       "context": {
         "mode": "task-only",
