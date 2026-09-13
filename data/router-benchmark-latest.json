@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T08:06:48.718Z",
+  "generatedAt": "2026-09-13T08:31:39.753Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
@@ -7,7 +7,7 @@
   "passRate": 1,
   "unsafeTop3": 0,
   "capabilityGapCases": 4,
-  "averageRecommendationCount": 2,
+  "averageRecommendationCount": 2.14,
   "averageTop1Score": 84.1,
   "projectContextFixture": "passed",
   "results": [
@@ -92,9 +92,10 @@
       "id": "shadcn-system",
       "pass": true,
       "top3": [
-        "shadcn"
+        "shadcn",
+        "teminali/teminali-os/website-builder"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 89,
       "expected_hits": 1,
@@ -169,8 +170,8 @@
       "pass": true,
       "top3": [
         "curiositech/some_claude_skills/interior-design-expert",
-        "cwoodworth89/CFR-EVO-APP/gis-pipeline-sync",
-        "roble3/cc-blender-skill/blender-rendering"
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
