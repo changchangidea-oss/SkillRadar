@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T08:31:39.753Z",
+  "generatedAt": "2026-09-14T09:14:01.492Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
@@ -7,8 +7,8 @@
   "passRate": 1,
   "unsafeTop3": 0,
   "capabilityGapCases": 4,
-  "averageRecommendationCount": 2.14,
-  "averageTop1Score": 84.1,
+  "averageRecommendationCount": 2,
+  "averageTop1Score": 84.4,
   "projectContextFixture": "passed",
   "results": [
     {
@@ -92,10 +92,9 @@
       "id": "shadcn-system",
       "pass": true,
       "top3": [
-        "shadcn",
-        "teminali/teminali-os/website-builder"
+        "shadcn"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 89,
       "expected_hits": 1,
@@ -169,20 +168,20 @@
       "id": "zh-spatial-rendering",
       "pass": true,
       "top3": [
+        "GML-MMGroup/AdCraft/video_agent_video_direction",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering",
-        "calesthio/generative-media-skills/neural-reality-capture"
+        "wedabro/bro-skills/industrial-brutalist-ui"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 80,
+      "top1_score": 82,
       "expected_hits": 0,
       "signal_hits": 4,
       "signals": [
         "-architecture",
-        "-interior",
+        "-rendering",
         "-spatial",
-        "-rendering"
+        "-interior"
       ],
       "context": {
         "mode": "task-only",
