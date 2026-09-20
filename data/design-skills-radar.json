@@ -5,9 +5,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Add captions or subtitles to an existing single-subject talking-head video without editing the footage. Use for plain verbatim captions, cinematic captions embedded behind the subject, VFX captions, “炸/特效/酷炫字幕,” or a named identity from the 35-style catalog. Route by visual identity, not by backend engine. The quiet `a",
     "security": "C",
-    "signalScore": 82,
+    "signalScore": 85,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -33,7 +33,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:35.469Z",
-    "lastSeenAt": "2026-09-14T07:56:35.470Z"
+    "lastSeenAt": "2026-09-20T07:47:00.772Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-core",
@@ -41,9 +41,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing attributes, `class=\"clip\"`, tracks, sub-compositions, variables, framework-owned media playback, deterministic-render rules, and validation. Read before writing composition HTML.",
     "security": "A",
-    "signalScore": 80,
+    "signalScore": 83,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "motion",
@@ -65,7 +65,7 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:39.029Z",
-    "lastSeenAt": "2026-09-14T07:56:39.029Z"
+    "lastSeenAt": "2026-09-20T07:47:04.530Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-keyframes",
@@ -73,9 +73,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Use when a HyperFrames composition needs a punch-in, punch-out, zoom, reframe, Ken Burns treatment, camera move, visual match/whip handoff, or other seek-safe 2D/3D keyframes; also for GSAP, CSS keyframes, Anime.js, WAAPI, FLIP, paths, masks, SVG morph/draw, text trails, 3D depth, or `hyperframes keyframes` diagnostics",
     "security": "A",
-    "signalScore": 79,
+    "signalScore": 82,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -99,7 +99,7 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:40.142Z",
-    "lastSeenAt": "2026-09-14T07:56:40.142Z"
+    "lastSeenAt": "2026-09-20T07:47:05.609Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-creative",
@@ -107,9 +107,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / style decisions. For atomic motion patterns and scene blueprints, use `hyperframes-animation`.",
     "security": "C",
-    "signalScore": 78,
+    "signalScore": 81,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -134,7 +134,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:39.963Z",
-    "lastSeenAt": "2026-09-14T07:56:39.963Z"
+    "lastSeenAt": "2026-09-20T07:47:05.416Z"
   },
   {
     "id": "heygen-com/hyperframes/general-video",
@@ -142,9 +142,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Author or edit a custom HyperFrames composition when no specialized workflow fits, or when BRIEF.md sets flow: companion. Use for longer or multi-scene pieces, brand and sizzle reels, montages, static loops, static title cards, footage remixes, and freeform builds. Use motion-graphics instead for a short unnarrated mot",
     "security": "C",
-    "signalScore": 76,
+    "signalScore": 79,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -167,72 +167,43 @@
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:37.291Z",
-    "lastSeenAt": "2026-09-14T07:56:37.291Z"
+    "lastSeenAt": "2026-09-20T07:47:02.658Z"
   },
   {
-    "id": "GML-MMGroup/AdCraft/video_agent_product_design",
-    "name": "Video Agent Product Design",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Preserve product truth while shaping clear, visually demonstrable selling points.",
-    "security": "A",
-    "signalScore": 76,
+    "id": "daymade/claude-code-skills/interaction-design-board",
+    "name": "interaction-design-board",
+    "source": "daymade/claude-code-skills",
+    "summary": "Generate several genuinely different, runnable HTML interaction prototypes for one product surface, combine them in an interactive Design Board, collect structured selection/remix feedback, and only then hand the approved behavior to production implementation. Use when a user asks for multiple clickable UI versions, in",
+    "security": "C",
+    "signalScore": 78,
     "installs": 0,
-    "repoStars": 265,
+    "repoStars": 1410,
     "tags": [
+      "experience",
       "design",
-      "brand",
-      "campaign",
       "product",
+      "interaction",
+      "prototype",
+      "accessibility",
+      "ui",
+      "layout",
       "visual",
-      "video",
+      "brand",
       "color"
     ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_product_design/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-codex/interaction-design-board/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "fashion-design",
-      "environmental-design",
-      "visual-communication"
+      "experience-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
     ],
-    "qualityScore": 67,
+    "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:46.663Z",
-    "lastSeenAt": "2026-09-14T07:56:46.663Z"
-  },
-  {
-    "id": "GML-MMGroup/AdCraft/video_agent_scene_design",
-    "name": "Video Agent Scene Design",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Define reusable environments with stable spatial, lighting, and atmosphere rules.",
-    "security": "A",
-    "signalScore": 75,
-    "installs": 0,
-    "repoStars": 265,
-    "tags": [
-      "design",
-      "environment",
-      "spatial",
-      "architecture",
-      "lighting",
-      "product",
-      "visual",
-      "video"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_scene_design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "environmental-design",
-      "operations-design",
-      "architecture-design",
-      "visual-communication"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:47.360Z",
-    "lastSeenAt": "2026-09-14T07:56:47.360Z"
+    "firstSeenAt": "2026-09-20T07:47:30.991Z",
+    "lastSeenAt": "2026-09-20T07:47:30.991Z"
   },
   {
     "id": "heygen-com/hyperframes/motion-graphics",
@@ -240,9 +211,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "A short, design-led motion graphic where motion is the message — kinetic typography, stat count-up, chart/data-viz hit, logo sting / brand lockup, lower-third / callout / social overlay, animated map (highlight regions, connect places, zoom to a location), animated tweet / news-article / headline, webpage / UI animatio",
     "security": "C",
-    "signalScore": 74,
+    "signalScore": 77,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -267,107 +238,7 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:41.734Z",
-    "lastSeenAt": "2026-09-14T07:56:41.734Z"
-  },
-  {
-    "id": "GML-MMGroup/AdCraft/video_agent_character_design",
-    "name": "Video Agent Character Design",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Define brand-fit characters and stable identity guidance for consistent views.",
-    "security": "A",
-    "signalScore": 74,
-    "installs": 0,
-    "repoStars": 265,
-    "tags": [
-      "design",
-      "brand",
-      "campaign",
-      "product",
-      "video",
-      "environmental",
-      "environment",
-      "typography"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_character_design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "video-design",
-      "fashion-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:46.490Z",
-    "lastSeenAt": "2026-09-14T07:56:46.490Z"
-  },
-  {
-    "id": "GML-MMGroup/AdCraft/1.0.0",
-    "name": "新品视觉TVC广告",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "以广告概念、产品高级感揭示、视觉锚点和品牌弧线组织新品商业影像。",
-    "security": "A",
-    "signalScore": 74,
-    "installs": 0,
-    "repoStars": 265,
-    "tags": [
-      "brand",
-      "campaign",
-      "product",
-      "visual",
-      "video"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/video-skills/new-product-tvc-campaign/1.0.0/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "fashion-design",
-      "visual-communication",
-      "arts-crafts"
-    ],
-    "qualityScore": 74,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:52.684Z",
-    "lastSeenAt": "2026-09-14T07:56:52.684Z"
-  },
-  {
-    "id": "wedabro/bro-skills/design-taste-frontend",
-    "name": "design-taste-frontend",
-    "source": "wedabro/bro-skills",
-    "summary": "Implement premium new frontend landing pages, portfolios, editorial sites, and marketing pages without generic AI styling. Use for code-producing web UI work, including responsive layout, typography, assets, and motion. Do not use for broad redesign audits of existing products, image-only concepts, mobile-app screens, ",
-    "security": "C",
-    "signalScore": 74,
-    "installs": 0,
-    "repoStars": 2,
-    "tags": [
-      "design",
-      "ui",
-      "design-system",
-      "layout",
-      "typography",
-      "interaction",
-      "accessibility",
-      "visual",
-      "editorial",
-      "color",
-      "product",
-      "mobile"
-    ],
-    "installUrl": "https://github.com/wedabro/bro-skills",
-    "skillsUrl": "https://github.com/wedabro/bro-skills/blob/main/.agents/skills/design-taste-frontend/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "visual-communication",
-      "experience-design",
-      "operations-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:58.464Z",
-    "lastSeenAt": "2026-09-14T07:56:58.464Z"
+    "lastSeenAt": "2026-09-20T07:47:07.485Z"
   },
   {
     "id": "heygen-com/hyperframes/oversized-cursor",
@@ -375,9 +246,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "House-style oversized macOS cursor technique for HyperFrames launch videos. Load whenever a scene involves cursors or a pointer-led action, when kicking off a UI scene, when igniting a morph/transition/typing run with a click, or when a scene reads as static, dead, or stale and needs a cheap high-yield source of motion",
     "security": "A",
-    "signalScore": 73,
+    "signalScore": 76,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -399,17 +270,17 @@
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:32.487Z",
-    "lastSeenAt": "2026-09-14T07:56:32.487Z"
+    "lastSeenAt": "2026-09-20T07:46:56.593Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-cli",
     "name": "hyperframes-cli",
     "source": "heygen-com/hyperframes",
-    "summary": "Use the HyperFrames CLI development loop: init, add, catalog, capture, lint, check, snapshot, compare, grade-compare, preview, play, present, beats, keyframes, single or batch render, publish, cloud, cloudrun, feedback, lambda, doctor, browser, info, upgrade, skills, compositions, docs, benchmark, telemetry, transcribe",
+    "summary": "Use the HyperFrames CLI development loop: init, add, catalog, capture, lint, check, snapshot, compare, grade-compare, preview, play, present, beats, keyframes, single or batch render, publish, cloud, cloudrun, feedback, lambda, doctor, browser, info, upgrade, skills, compositions, timeline, docs, benchmark, telemetry, ",
     "security": "C",
-    "signalScore": 73,
+    "signalScore": 76,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "motion",
@@ -430,7 +301,7 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:38.834Z",
-    "lastSeenAt": "2026-09-14T07:56:38.834Z"
+    "lastSeenAt": "2026-09-20T07:47:04.343Z"
   },
   {
     "id": "heygen-com/hyperframes/slideshow",
@@ -438,9 +309,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Author a HyperFrames slideshow — a presentation, pitch deck, or interactive deck with discrete slides, fragment reveals, branching, hotspot navigation, and built-in presenter mode with speaker notes; also converts an existing page into a deck. Output is a navigable deck, not a rendered MP4. If the user didn't explicitl",
     "security": "C",
-    "signalScore": 73,
+    "signalScore": 76,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -464,7 +335,7 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:45.387Z",
-    "lastSeenAt": "2026-09-14T07:56:45.388Z"
+    "lastSeenAt": "2026-09-20T07:47:11.506Z"
   },
   {
     "id": "code-yeongyu/oh-my-openagent/ulw-research",
@@ -472,9 +343,9 @@
     "source": "code-yeongyu/oh-my-openagent",
     "summary": "Runs maximum-saturation research with a cooperating team, claim-graph gating, and a cited, QA'd deliverable. Use when the user explicitly asks for research or a deep investigation, including any 'ulw' research wording.",
     "security": "B",
-    "signalScore": 72,
+    "signalScore": 75,
     "installs": 0,
-    "repoStars": 69023,
+    "repoStars": 69213,
     "tags": [
       "design",
       "product",
@@ -493,7 +364,7 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:30.230Z",
-    "lastSeenAt": "2026-09-14T07:56:30.230Z"
+    "lastSeenAt": "2026-09-20T07:46:54.525Z"
   },
   {
     "id": "heygen-com/hyperframes/figma",
@@ -501,9 +372,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Import Figma content into a HyperFrames composition — rendered assets, brand tokens, components, storyboard sections → reconstructed motion (frames read as states, not slides) (REST/CLI), connector-assisted motion when available, and shaders from a connector or native export. Use when the user pastes a figma.com link o",
     "security": "C",
-    "signalScore": 72,
+    "signalScore": 75,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -525,7 +396,7 @@
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:36.740Z",
-    "lastSeenAt": "2026-09-14T07:56:36.740Z"
+    "lastSeenAt": "2026-09-20T07:47:02.101Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-registry",
@@ -533,9 +404,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Search, install, and wire registry blocks and components into HyperFrames compositions. Use BEFORE hand-building any named visual — whenever a brief, a user, or a storyboard names a look, effect, treatment, or transition such as CRT scanlines, glitch, chromatic aberration, film grain, a shimmer sweep, a chart, a code o",
     "security": "B",
-    "signalScore": 72,
+    "signalScore": 75,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "film",
@@ -557,137 +428,38 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:40.298Z",
-    "lastSeenAt": "2026-09-14T07:56:40.299Z"
+    "lastSeenAt": "2026-09-20T07:47:05.785Z"
   },
   {
-    "id": "GML-MMGroup/AdCraft/video_agent_bgm_direction",
-    "name": "Video Agent BGM Direction",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Shape instrumental music direction around the advertisement's mood and timing.",
-    "security": "A",
-    "signalScore": 72,
+    "id": "daymade/claude-code-skills/prompt-optimizer",
+    "name": "prompt-optimizer",
+    "source": "daymade/claude-code-skills",
+    "summary": "Transform vague prompts into precise, well-structured specifications using EARS (Easy Approach to Requirements Syntax) methodology. This skill should be used when users provide loose requirements, ambiguous feature descriptions, or need to enhance prompts for AI-generated code, products, or documents. Triggers include ",
+    "security": "C",
+    "signalScore": 75,
     "installs": 0,
-    "repoStars": 265,
+    "repoStars": 1410,
     "tags": [
       "design",
-      "product",
-      "visual",
-      "video",
-      "motion",
-      "storyboard",
-      "audio"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_bgm_direction/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "industrial-design",
-      "fashion-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:46.323Z",
-    "lastSeenAt": "2026-09-14T07:56:46.323Z"
-  },
-  {
-    "id": "GML-MMGroup/AdCraft/video_agent_prop_design",
-    "name": "Video Agent Prop Design",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Design coherent supporting props that serve the advertising idea.",
-    "security": "A",
-    "signalScore": 72,
-    "installs": 0,
-    "repoStars": 265,
-    "tags": [
-      "design",
-      "brand",
-      "product",
-      "visual",
-      "video",
-      "environment"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_prop_design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "fashion-design",
-      "video-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:46.847Z",
-    "lastSeenAt": "2026-09-14T07:56:46.847Z"
-  },
-  {
-    "id": "GML-MMGroup/AdCraft/video_agent_script_authoring",
-    "name": "Video Agent Script Authoring",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Shape a filmable short-ad idea into paced, audience-facing script beats.",
-    "security": "A",
-    "signalScore": 72,
-    "installs": 0,
-    "repoStars": 265,
-    "tags": [
-      "campaign",
-      "product",
-      "visual",
-      "video",
-      "film",
-      "storyboard"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_script_authoring/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "fashion-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:47.529Z",
-    "lastSeenAt": "2026-09-14T07:56:47.529Z"
-  },
-  {
-    "id": "wedabro/bro-skills/high-end-visual-design",
-    "name": "high-end-visual-design",
-    "source": "wedabro/bro-skills",
-    "summary": "Teaches the AI to design like a high-end agency. Defines the exact fonts, spacing, shadows, card structures, and animations that make a website feel expensive. Blocks all the common defaults that make AI designs look cheap or generic.",
-    "security": "A",
-    "signalScore": 72,
-    "installs": 0,
-    "repoStars": 2,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "typography",
-      "interaction",
-      "visual",
-      "editorial",
-      "color",
-      "experience",
       "ux",
+      "product",
+      "research",
+      "usability",
       "mobile"
     ],
-    "installUrl": "https://github.com/wedabro/bro-skills",
-    "skillsUrl": "https://github.com/wedabro/bro-skills/blob/main/.agents/skills/high-end-visual-design/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/prompt-optimizer/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "ui-design",
-      "visual-communication",
       "experience-design",
-      "digital-media-film"
+      "operations-design",
+      "industrial-design",
+      "ui-design"
     ],
-    "qualityScore": 81,
+    "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:58.644Z",
-    "lastSeenAt": "2026-09-14T07:56:58.644Z"
+    "firstSeenAt": "2026-09-20T07:47:58.801Z",
+    "lastSeenAt": "2026-09-20T07:47:58.801Z"
   },
   {
     "id": "heygen-com/hyperframes/captions-overlay",
@@ -695,9 +467,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Overlay doctrine for the embedded-captions workflow — the caption MODEL (drop / rail / embed) and the rule that captions are an OVERLAY composited on top of the film, never a reserved bottom band you shift content up to avoid. Load when adding captions/subtitles to a talking-head or launch video, when deciding whether ",
     "security": "A",
-    "signalScore": 71,
+    "signalScore": 74,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -719,7 +491,7 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:30.896Z",
-    "lastSeenAt": "2026-09-14T07:56:30.897Z"
+    "lastSeenAt": "2026-09-20T07:46:55.089Z"
   },
   {
     "id": "heygen-com/hyperframes/cut-the-curve",
@@ -727,9 +499,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "The technique catalog: five velocity-matched SEAMS (zoom-through, INVERSE zoom-through, cut-the-curve, waterfall cut, rack-focus blur-cut) plus the two in-scene techniques — waterfall ENTRY (staggered arrival cascades for title cards / segment openers) and the nudge curve (slow-fast-slow three-phase group slides). Cove",
     "security": "A",
-    "signalScore": 71,
+    "signalScore": 74,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "motion",
@@ -747,7 +519,100 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:31.679Z",
-    "lastSeenAt": "2026-09-14T07:56:31.679Z"
+    "lastSeenAt": "2026-09-20T07:46:55.830Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/code-slice-hero",
+    "name": "code-slice-hero",
+    "source": "heygen-com/hyperframes",
+    "summary": "A tiled headline surface flips cell by cell under a sweeping depth field to reveal the rear headline. HyperFrames block, 1920×1080, 8s, 18 variables.",
+    "security": "A",
+    "signalScore": 74,
+    "installs": 0,
+    "repoStars": 51731,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "editing",
+      "visual",
+      "color"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/code-slice-hero/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "fashion-design",
+      "folk-art"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:46:58.851Z",
+    "lastSeenAt": "2026-09-20T07:46:58.851Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/cuboid-carousel",
+    "name": "cuboid-carousel",
+    "source": "heygen-com/hyperframes",
+    "summary": "A chain of bevelled cuboids rides a travelling wave as a content carousel. HyperFrames block, 1920×1080, 6.666666666666667s, 40 variables.",
+    "security": "A",
+    "signalScore": 74,
+    "installs": 0,
+    "repoStars": 51731,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "editing",
+      "map",
+      "environment"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/cuboid-carousel/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "architecture-design",
+      "ui-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:46:59.063Z",
+    "lastSeenAt": "2026-09-20T07:46:59.063Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/orbit-card",
+    "name": "orbit-card",
+    "source": "heygen-com/hyperframes",
+    "summary": "A single feature card orbits a dot sphere on approved Blender camera motion. HyperFrames block, 1920×1080, 10s, 4 variables.",
+    "security": "A",
+    "signalScore": 74,
+    "installs": 0,
+    "repoStars": 51731,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "editing",
+      "visual",
+      "color"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/orbit-card/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "fashion-design",
+      "folk-art"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:46:59.635Z",
+    "lastSeenAt": "2026-09-20T07:46:59.635Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes",
@@ -755,9 +620,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Mandatory entry point: read this first for any request to make, create, edit, animate, or render a video, animation, or motion graphic, including a promo, explainer, captioned clip, title card, overlay, slideshow or interactive deck, Remotion port, or any HyperFrames HTML composition. Also use it to inspect, diagnose, ",
     "security": "C",
-    "signalScore": 71,
+    "signalScore": 74,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -778,7 +643,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:40.631Z",
-    "lastSeenAt": "2026-09-14T07:56:40.631Z"
+    "lastSeenAt": "2026-09-20T07:47:06.362Z"
   },
   {
     "id": "heygen-com/hyperframes/talking-head-recut",
@@ -786,9 +651,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Package an existing talking-head / interview / podcast video with timed, designed GRAPHIC OVERLAY cards — kinetic titles, lower-thirds, data callouts, quotes, side panels, picture-in-picture — synced to the transcript, on a 16:9 / 9:16 / 4:5 canvas of your choice; the clip plays untouched underneath. Trigger on \"graphi",
     "security": "C",
-    "signalScore": 71,
+    "signalScore": 74,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -809,103 +674,39 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:45.580Z",
-    "lastSeenAt": "2026-09-14T07:56:45.580Z"
+    "lastSeenAt": "2026-09-20T07:47:11.696Z"
   },
   {
-    "id": "melonjs/melonJS/melonjs-3d-assets",
-    "name": "melonjs-3d-assets",
-    "source": "melonjs/melonJS",
-    "summary": "Use this skill when loading 3D models into melonJS — glTF and GLB scenes, OBJ/MTL models, materials, imported lights, node animation, ground shadows and GPU instancing. Covers level.load options including the async flag, the rightHanded conversion, and exactly what the loader does and does not support. Triggers on: glT",
+    "id": "daymade/claude-code-skills/deep-research",
+    "name": "deep-research",
+    "source": "daymade/claude-code-skills",
+    "summary": "Generate format-controlled research reports with evidence tracking, citations, source governance, and multi-pass synthesis. This skill should be used when users request a research report, literature review, market or industry analysis, competitive landscape, policy or technical brief. Triggers: \"帮我调研一下\", \"深度研究\", \"综述报告\"",
     "security": "A",
-    "signalScore": 71,
+    "signalScore": 74,
     "installs": 0,
-    "repoStars": 6392,
+    "repoStars": 1410,
     "tags": [
-      "3d",
-      "map",
-      "lighting",
-      "media"
+      "product",
+      "research",
+      "accessibility",
+      "environment",
+      "landscape",
+      "architecture",
+      "map"
     ],
-    "installUrl": "https://github.com/melonjs/melonJS",
-    "skillsUrl": "https://github.com/melonjs/melonJS/blob/master/packages/melonjs/skills/melonjs-3d-assets/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/deep-research/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "architecture-design",
+      "experience-design",
       "environmental-design",
-      "digital-media-film",
+      "architecture-design",
       "ui-design"
     ],
-    "qualityScore": 81,
+    "qualityScore": 88,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:45.766Z",
-    "lastSeenAt": "2026-09-14T07:56:45.766Z"
-  },
-  {
-    "id": "primo737/agents/high-end-visual-design",
-    "name": "high-end-visual-design",
-    "source": "primo737/agents",
-    "summary": "Teaches the AI to design like a high-end agency. Defines the exact fonts, spacing, shadows, card structures, and animations that make a website feel expensive. Blocks all the common defaults that make AI designs look cheap or generic.",
-    "security": "A",
-    "signalScore": 71,
-    "installs": 0,
-    "repoStars": 3,
-    "tags": [
-      "experience",
-      "design",
-      "ux",
-      "interaction",
-      "mobile",
-      "visual",
-      "typography",
-      "layout",
-      "editorial",
-      "color",
-      "ui"
-    ],
-    "installUrl": "https://github.com/primo737/agents",
-    "skillsUrl": "https://github.com/primo737/agents/blob/claude/build-agents-HaVer/skills/high-end-visual-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "visual-communication",
-      "ui-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:57.045Z",
-    "lastSeenAt": "2026-09-14T07:56:57.045Z"
-  },
-  {
-    "id": "jakegeidi/ITQ---V.1/product-lifecycle-plays",
-    "name": "product-lifecycle-plays",
-    "source": "jakegeidi/ITQ---V.1",
-    "summary": "Map a product's lifecycle stage and choose between extension, replacement, and retirement plays. Use when a product is maturing or declining and the next move isn't obvious.",
-    "security": "A",
-    "signalScore": 71,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "brand",
-      "campaign",
-      "product",
-      "motion",
-      "prototype"
-    ],
-    "installUrl": "https://github.com/jakegeidi/ITQ---V.1",
-    "skillsUrl": "https://github.com/jakegeidi/ITQ---V.1/blob/main/.claude/skills/product-lifecycle-plays/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "fashion-design",
-      "experience-design",
-      "video-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:01.454Z",
-    "lastSeenAt": "2026-09-14T07:57:01.454Z"
+    "firstSeenAt": "2026-09-20T07:47:46.021Z",
+    "lastSeenAt": "2026-09-20T07:47:46.021Z"
   },
   {
     "id": "heygen-com/hyperframes/changelog-video",
@@ -913,9 +714,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Turn a weekly changelog .md into a finished branded changelog video (square 1080, ~45-60s, Annie VO, animated brand background, mock-UI visualizations, lowkey captions). Use when the user provides a changelog/digest markdown and wants the weekly video, or says \"changelog video\". Self-contained — fonts, background, lexi",
     "security": "C",
-    "signalScore": 70,
+    "signalScore": 73,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -939,69 +740,38 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:31.471Z",
-    "lastSeenAt": "2026-09-14T07:56:31.471Z"
+    "lastSeenAt": "2026-09-20T07:46:55.626Z"
   },
   {
-    "id": "GML-MMGroup/AdCraft/video_agent_storyboard_design",
-    "name": "Video Agent Storyboard Design",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Convert approved script beats into ordered, visually continuous storyboard directions.",
+    "id": "heygen-com/hyperframes/hyperframes-studio",
+    "name": "hyperframes-studio",
+    "source": "heygen-com/hyperframes",
+    "summary": "Use when building or editing a HyperFrames project that people open in Studio: how the timeline should be laid out so it reads well (one caption track, one element kind per track, every scene a sub-composition) and where captions and key content may sit (safe zones). Don't use for how to perform an individual edit (spl",
     "security": "A",
-    "signalScore": 70,
+    "signalScore": 72,
     "installs": 0,
-    "repoStars": 265,
+    "repoStars": 51731,
     "tags": [
-      "design",
-      "product",
-      "visual",
       "video",
-      "lighting",
-      "film",
-      "storyboard"
+      "editing",
+      "audio",
+      "media",
+      "ui",
+      "layout"
     ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_storyboard_design/SKILL.md",
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-studio/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "environmental-design",
       "video-design",
-      "ui-design"
+      "digital-media-film",
+      "ui-design",
+      "visual-communication"
     ],
-    "qualityScore": 73,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:47.719Z",
-    "lastSeenAt": "2026-09-14T07:56:47.719Z"
-  },
-  {
-    "id": "GML-MMGroup/AdCraft/video_agent_world_setting",
-    "name": "Video Agent World Setting",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Define bounded advertising worlds, continuity rules, and campaign relevance.",
-    "security": "A",
-    "signalScore": 70,
-    "installs": 0,
-    "repoStars": 265,
-    "tags": [
-      "campaign",
-      "product",
-      "visual",
-      "video",
-      "editing"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_world_setting/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "fashion-design",
-      "video-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:48.079Z",
-    "lastSeenAt": "2026-09-14T07:56:48.079Z"
+    "firstSeenAt": "2026-09-20T07:47:06.005Z",
+    "lastSeenAt": "2026-09-20T07:47:06.006Z"
   },
   {
     "id": "heygen-com/hyperframes/remotion-to-hyperframes",
@@ -1009,9 +779,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Port an existing Remotion (React) composition''s source to HyperFrames HTML. Use ONLY on an explicit ask to port/convert/migrate/translate a Remotion source — one-way, Remotion-only. A passing Remotion mention, reference-only code, or \"make something like my Remotion video\" is a fresh build (/general-video). Unclear → ",
     "security": "C",
-    "signalScore": 69,
+    "signalScore": 72,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "motion",
@@ -1035,107 +805,68 @@
     "qualityScore": 90,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:45.171Z",
-    "lastSeenAt": "2026-09-14T07:56:45.171Z"
+    "lastSeenAt": "2026-09-20T07:47:11.285Z"
   },
   {
-    "id": "GML-MMGroup/AdCraft/video_agent_quick_media",
-    "name": "Video Agent Quick Media",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Turn a bounded free-generation objective into one clear media prompt plan.",
-    "security": "A",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 265,
-    "tags": [
-      "brand",
-      "product",
-      "visual",
-      "video",
-      "film",
-      "audio",
-      "media"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_quick_media/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "digital-media-film",
-      "visual-communication"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:47.029Z",
-    "lastSeenAt": "2026-09-14T07:56:47.029Z"
-  },
-  {
-    "id": "GML-MMGroup/AdCraft/video_agent_video_direction",
-    "name": "Video Agent Video Direction",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Turn storyboard beats into ordered motion directions with stable visual continuity.",
-    "security": "A",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 265,
-    "tags": [
-      "product",
-      "visual",
-      "video",
-      "motion",
-      "spatial",
-      "lighting",
-      "rendering"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_video_direction/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "architecture-design",
-      "video-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:47.884Z",
-    "lastSeenAt": "2026-09-14T07:56:47.884Z"
-  },
-  {
-    "id": "wedabro/bro-skills/redesign-existing-projects",
-    "name": "redesign-existing-projects",
-    "source": "wedabro/bro-skills",
-    "summary": "Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without breaking functionality. Works with any CSS framework or vanilla CSS.",
+    "id": "heygen-com/hyperframes/canopy-part-title",
+    "name": "canopy-part-title",
+    "source": "heygen-com/hyperframes",
+    "summary": "Leaves sweep through the frame and part to reveal the headline. HyperFrames block, 1920×1080, 12s, 11 variables.",
     "security": "B",
-    "signalScore": 69,
+    "signalScore": 71,
     "installs": 0,
-    "repoStars": 2,
+    "repoStars": 51731,
     "tags": [
+      "video",
       "design",
-      "ui",
-      "layout",
-      "typography",
-      "accessibility",
+      "editing",
       "visual",
-      "editorial",
-      "vector",
-      "color",
-      "art",
-      "pattern"
+      "color"
     ],
-    "installUrl": "https://github.com/wedabro/bro-skills",
-    "skillsUrl": "https://github.com/wedabro/bro-skills/blob/main/.agents/skills/redesign-existing-projects/SKILL.md",
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/canopy-part-title/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "ui-design",
+      "video-design",
+      "operations-design",
+      "fashion-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:46:58.673Z",
+    "lastSeenAt": "2026-09-20T07:46:58.673Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/wireframe-portal-title",
+    "name": "wireframe-portal-title",
+    "source": "heygen-com/hyperframes",
+    "summary": "A wireframe portal bursts open, the title comes through, then its letters swap into a second phrase. HyperFrames block, 1920×1080, 8s, 9 variables.",
+    "security": "B",
+    "signalScore": 71,
+    "installs": 0,
+    "repoStars": 51731,
+    "tags": [
+      "video",
+      "design",
+      "editing",
+      "visual",
+      "layout",
+      "color"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/wireframe-portal-title/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
       "visual-communication",
-      "folk-art",
+      "operations-design",
       "fashion-design"
     ],
-    "qualityScore": 77,
+    "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:59.185Z",
-    "lastSeenAt": "2026-09-14T07:56:59.185Z"
+    "firstSeenAt": "2026-09-20T07:46:59.851Z",
+    "lastSeenAt": "2026-09-20T07:46:59.851Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-audio",
@@ -1143,9 +874,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Use when audio already placed in a HyperFrames composition needs to be mixed: fade-in/fade-out, crossfade, track gain or volume, volume automation, ducking, a music bed that fights a voiceover (voiceover carve), effects on a track (EQ, compressor, limiter, gate, saturation, delay, reverb, chorus, phaser, bitcrush), aut",
     "security": "C",
-    "signalScore": 68,
+    "signalScore": 71,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "editing",
@@ -1166,7 +897,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:38.669Z",
-    "lastSeenAt": "2026-09-14T07:56:38.669Z"
+    "lastSeenAt": "2026-09-20T07:47:04.125Z"
   },
   {
     "id": "heygen-com/hyperframes/media-use",
@@ -1174,9 +905,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Agent Media OS, the single skill for every media need in a HyperFrames project. Resolve BGM, SFX, image, icon, brand logo, voice, color grade, or LUT into a frozen local file or paste-ready block + ledger record (one verb, `resolve`); generate via TTS / music / image models when the catalog misses; produce voiceover, t",
     "security": "C",
-    "signalScore": 68,
+    "signalScore": 71,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "operations",
       "brand",
@@ -1199,76 +930,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:41.512Z",
-    "lastSeenAt": "2026-09-14T07:56:41.512Z"
-  },
-  {
-    "id": "wedabro/bro-skills/industrial-brutalist-ui",
-    "name": "industrial-brutalist-ui",
-    "source": "wedabro/bro-skills",
-    "summary": "Raw mechanical interfaces fusing Swiss typographic print with military terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, analog degradation effects. For data-heavy dashboards, portfolios, or editorial sites that need to feel like declassified blueprints.",
-    "security": "A",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 2,
-    "tags": [
-      "visual",
-      "typography",
-      "layout",
-      "editorial",
-      "vector",
-      "color",
-      "architecture",
-      "design",
-      "spatial",
-      "rendering",
-      "map",
-      "environment"
-    ],
-    "installUrl": "https://github.com/wedabro/bro-skills",
-    "skillsUrl": "https://github.com/wedabro/bro-skills/blob/main/.agents/skills/industrial-brutalist-ui/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "visual-communication",
-      "architecture-design",
-      "ui-design",
-      "environmental-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:58.821Z",
-    "lastSeenAt": "2026-09-14T07:56:58.821Z"
-  },
-  {
-    "id": "lssingh01996-ui/aivideo/avatar-video",
-    "name": "avatar-video",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Create AI avatar videos with precise control over avatars, voices, scripts, scenes, and backgrounds using HeyGen's v2 API. Use when: (1) Choosing a specific avatar and voice for a video, (2) Writing exact scripts for an avatar to speak, (3) Building multi-scene videos with different backgrounds per scene, (4) Creating ",
-    "security": "C",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "brand",
-      "product",
-      "visual",
-      "photo",
-      "video",
-      "motion",
-      "color"
-    ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/avatar-video/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "fashion-design",
-      "visual-communication",
-      "video-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:02.995Z",
-    "lastSeenAt": "2026-09-14T07:57:02.995Z"
+    "lastSeenAt": "2026-09-20T07:47:07.293Z"
   },
   {
     "id": "code-yeongyu/oh-my-openagent/security-research",
@@ -1276,9 +938,9 @@
     "source": "code-yeongyu/oh-my-openagent",
     "summary": "Team Mode security research skill. Orchestrates 3 vulnerability hunters and 2 PoC engineers to audit a codebase in parallel, prove exploitability, classify root causes, and calibrate severity by actual exploitability. Use for security review, vulnerability research, exploitability audit, pre-release security check, thr",
     "security": "C",
-    "signalScore": 67,
+    "signalScore": 70,
     "installs": 0,
-    "repoStars": 69023,
+    "repoStars": 69213,
     "tags": [
       "design",
       "product",
@@ -1298,7 +960,7 @@
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:30.017Z",
-    "lastSeenAt": "2026-09-14T07:56:30.018Z"
+    "lastSeenAt": "2026-09-20T07:46:54.328Z"
   },
   {
     "id": "heygen-com/hyperframes/motion-doctrine",
@@ -1306,9 +968,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "GATEWAY — load FIRST before composing any HyperFrames animation or video. The high-level motion law that makes a multi-scene video feel like ONE continuous camera move instead of a stack of independently-animated slides. Covers the vector law (how you exit determines how you enter, incl. the Z scale-sign rule), the fil",
     "security": "C",
-    "signalScore": 67,
+    "signalScore": 70,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "motion",
@@ -1330,247 +992,67 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:32.317Z",
-    "lastSeenAt": "2026-09-14T07:56:32.317Z"
+    "lastSeenAt": "2026-09-20T07:46:56.408Z"
   },
   {
-    "id": "primo737/agents/redesign-existing-projects",
-    "name": "redesign-existing-projects",
-    "source": "primo737/agents",
-    "summary": "Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without breaking functionality. Works with any CSS framework or vanilla CSS.",
-    "security": "B",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 3,
-    "tags": [
-      "visual",
-      "typography",
-      "layout",
-      "editorial",
-      "vector",
-      "color",
-      "design",
-      "mobile",
-      "accessibility",
-      "ui"
-    ],
-    "installUrl": "https://github.com/primo737/agents",
-    "skillsUrl": "https://github.com/primo737/agents/blob/claude/build-agents-HaVer/skills/redesign-existing-projects/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "visual-communication",
-      "experience-design",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 77,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:57.762Z",
-    "lastSeenAt": "2026-09-14T07:56:57.762Z"
-  },
-  {
-    "id": "primo737/agents/training-designer",
-    "name": "training-designer",
-    "source": "primo737/agents",
-    "summary": "Design complete training programs, workshops, bootcamps, seminars, masterclasses, and live learning experiences that actually transform participants. Use this skill whenever the user wants to build a workshop, training program, bootcamp, masterclass, course module, certification program, group coaching curriculum, live",
+    "id": "daymade/claude-code-skills/benchmark-due-diligence",
+    "name": "benchmark-due-diligence",
+    "source": "daymade/claude-code-skills",
+    "summary": "Runs adversarial due-diligence on a benchmark the user envies — a founder, KOL, company, or product whose claimed success looks inflated — splitting marketing bubble from real signal, then mapping the validated playbook onto the user's own resources. Use whenever the user wants to 尽调/对标/拆解 a competitor or role-model, 抄",
     "security": "A",
-    "signalScore": 67,
+    "signalScore": 70,
     "installs": 0,
-    "repoStars": 3,
+    "repoStars": 1410,
     "tags": [
-      "experience",
-      "design",
-      "product",
-      "environmental",
-      "environment",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/primo737/agents",
-    "skillsUrl": "https://github.com/primo737/agents/blob/claude/build-agents-HaVer/skills/training-designer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:58.112Z",
-    "lastSeenAt": "2026-09-14T07:56:58.112Z"
-  },
-  {
-    "id": "wedabro/bro-skills/minimalist-ui",
-    "name": "minimalist-ui",
-    "source": "wedabro/bro-skills",
-    "summary": "Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy shadows.",
-    "security": "B",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 2,
-    "tags": [
-      "visual",
-      "typography",
-      "layout",
-      "editorial",
-      "illustration",
-      "color",
-      "design",
-      "ui",
-      "photo"
-    ],
-    "installUrl": "https://github.com/wedabro/bro-skills",
-    "skillsUrl": "https://github.com/wedabro/bro-skills/blob/main/.agents/skills/minimalist-ui/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "visual-communication",
-      "ui-design",
-      "fashion-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 77,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:59.014Z",
-    "lastSeenAt": "2026-09-14T07:56:59.014Z"
-  },
-  {
-    "id": "wedabro/bro-skills/speckit.uiux",
-    "name": "speckit.uiux",
-    "source": "wedabro/bro-skills",
-    "summary": "UI/UX Architect - Definition of Design System Anti-Slop, UI Components, Spacing, Typography, Responsive Patterns.",
-    "security": "C",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 2,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "typography",
-      "interaction",
-      "accessibility",
-      "visual",
-      "brand",
-      "color",
-      "ux",
-      "mobile"
-    ],
-    "installUrl": "https://github.com/wedabro/bro-skills",
-    "skillsUrl": "https://github.com/wedabro/bro-skills/blob/main/.agents/skills/speckit.uiux/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "visual-communication",
-      "experience-design",
-      "operations-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:59.555Z",
-    "lastSeenAt": "2026-09-14T07:56:59.556Z"
-  },
-  {
-    "id": "primo737/agents/jan-mraz-design-trends",
-    "name": "jan-mraz-design-trends",
-    "source": "primo737/agents",
-    "summary": "17 web design trends across two sources — Jan Mráz 2025 (8 trends: huge typography, interactive 3D, brutalism, bento grid, AI-generated patterns, parallax scrolling, minimalism, glassmorphism) + 2026 trends (9 trends: barely-there UI, maximalism with asterisk, human touch, grade-school palette, spaceship instruction ma",
-    "security": "C",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 3,
-    "tags": [
-      "experience",
-      "design",
-      "ux",
       "product",
       "research",
-      "ui",
-      "design-system",
-      "layout",
-      "typography",
-      "figma",
       "brand",
-      "visual"
+      "cad"
     ],
-    "installUrl": "https://github.com/primo737/agents",
-    "skillsUrl": "https://github.com/primo737/agents/blob/claude/build-agents-HaVer/skills/jan-mraz-design-trends/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-financial/benchmark-due-diligence/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "ui-design",
       "operations-design",
+      "industrial-design",
       "visual-communication"
     ],
-    "qualityScore": 85,
+    "qualityScore": 88,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:57.213Z",
-    "lastSeenAt": "2026-09-14T07:56:57.213Z"
+    "firstSeenAt": "2026-09-20T07:47:37.753Z",
+    "lastSeenAt": "2026-09-20T07:47:37.753Z"
   },
   {
-    "id": "wedabro/bro-skills/stitch-design-taste",
-    "name": "stitch-design-taste",
-    "source": "wedabro/bro-skills",
-    "summary": "Semantic Design System Skill for Google Stitch. Generates agent-friendly DESIGN.md files with strict typography, calibrated color, asymmetric layouts, purposeful accessible motion, and hardware-accelerated performance.",
-    "security": "C",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 2,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "typography",
-      "interaction",
-      "visual",
-      "editorial",
-      "color",
-      "photo",
-      "motion"
-    ],
-    "installUrl": "https://github.com/wedabro/bro-skills",
-    "skillsUrl": "https://github.com/wedabro/bro-skills/blob/main/.agents/skills/stitch-design-taste/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "visual-communication",
-      "operations-design",
-      "fashion-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:59.762Z",
-    "lastSeenAt": "2026-09-14T07:56:59.762Z"
-  },
-  {
-    "id": "lssingh01996-ui/aivideo/character-animation-qa",
-    "name": "character-animation-qa",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Review local character animation with schema checks, Playwright browser previews, frame sampling, and FFmpeg/ffprobe final output checks.",
+    "id": "heygen-com/hyperframes/glass-shard-title",
+    "name": "glass-shard-title",
+    "source": "heygen-com/hyperframes",
+    "summary": "Glass shards fly in through fog and tile themselves into the headline. HyperFrames block, 1920×1080, 12.16s, 19 variables.",
     "security": "B",
-    "signalScore": 66,
+    "signalScore": 69,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 51731,
     "tags": [
-      "design",
-      "product",
-      "visual",
       "video",
-      "motion",
-      "audio",
-      "media"
+      "design",
+      "editing",
+      "visual",
+      "map",
+      "environment"
     ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/character-animation-qa/SKILL.md",
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/glass-shard-title/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
       "video-design",
-      "digital-media-film",
-      "arts-crafts"
+      "operations-design",
+      "architecture-design",
+      "environmental-design"
     ],
-    "qualityScore": 71,
+    "qualityScore": 77,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:04.483Z",
-    "lastSeenAt": "2026-09-14T07:57:04.483Z"
+    "firstSeenAt": "2026-09-20T07:46:59.453Z",
+    "lastSeenAt": "2026-09-20T07:46:59.453Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-animation",
@@ -1578,9 +1060,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "All animation knowledge for HyperFrames — atomic motion rules, multi-phase scene blueprints, scene transitions, broader motion-design techniques, AND the seven runtime adapters (GSAP default, plus Lottie, Three.js, Anime.js, CSS keyframes, Web Animations API, TypeGPU). Use for any motion or animation task: pick 2-4 rul",
     "security": "C",
-    "signalScore": 65,
+    "signalScore": 69,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "design",
@@ -1601,574 +1083,869 @@
       "arts-crafts",
       "folk-art"
     ],
-    "qualityScore": 77,
+    "qualityScore": 84,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:38.168Z",
-    "lastSeenAt": "2026-09-14T07:56:38.168Z"
+    "lastSeenAt": "2026-09-20T07:47:03.533Z"
   },
   {
-    "id": "GML-MMGroup/AdCraft/video_agent_role_prompt_authoring",
-    "name": "video_agent_role_prompt_authoring",
-    "source": "GML-MMGroup/AdCraft",
-    "summary": "Author one strict role-specific creative brief from bounded Agent Canvas authority.",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 265,
-    "tags": [
-      "product",
-      "video",
-      "environment",
-      "lighting",
-      "rendering"
-    ],
-    "installUrl": "https://github.com/GML-MMGroup/AdCraft",
-    "skillsUrl": "https://github.com/GML-MMGroup/AdCraft/blob/main/apps/api/agent/skills/video_agent_role_prompt_authoring/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "architecture-design",
-      "industrial-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:47.194Z",
-    "lastSeenAt": "2026-09-14T07:56:47.194Z"
-  },
-  {
-    "id": "Johnson-Yrq/JohnsonPPTskill/navy-glass-slides",
-    "name": "navy-glass-slides",
-    "source": "Johnson-Yrq/JohnsonPPTskill",
-    "summary": "在用户选择海蓝玻璃风格或续做该风格项目时，根据任意主题的 PPT 大纲制作可编辑、离线 HTML 演示稿，采用暖白纸底、海军蓝文字与重点面、灰青与少量香槟金、玻璃及精细微缩展陈配图。与其他风格独立，共用制作套件；未选择风格的通用请求先经 ppt-workbench 确认。明确要求 PPTX 时不能用 HTML 替代。",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "ui",
-      "design-system",
-      "product",
-      "visual",
-      "architecture",
-      "3d"
-    ],
-    "installUrl": "https://github.com/Johnson-Yrq/JohnsonPPTskill",
-    "skillsUrl": "https://github.com/Johnson-Yrq/JohnsonPPTskill/blob/main/skills/navy-glass-slides/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "operations-design",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 82,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:59.939Z",
-    "lastSeenAt": "2026-09-14T07:56:59.939Z"
-  },
-  {
-    "id": "Johnson-Yrq/JohnsonPPTskill/realistic-miniature-slides",
-    "name": "realistic-miniature-slides",
-    "source": "Johnson-Yrq/JohnsonPPTskill",
-    "summary": "在用户选择写实微缩风格或续做该风格项目时，根据 PPT 大纲制作可编辑、离线 HTML 演示稿。整稿采用暖灰、石墨、灰蓝与鼠尾草绿，配图为 35–45° 等距微缩场景、写实 PBR 材质及表情细致的人物，默认无文字。风格独立，复用演讲／阅读排版套件；未选择风格的通用请求先经 ppt-workbench 确认。明确要求 PPTX 时不能用 HTML 替代。",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "ui",
-      "design-system",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Johnson-Yrq/JohnsonPPTskill",
-    "skillsUrl": "https://github.com/Johnson-Yrq/JohnsonPPTskill/blob/main/skills/realistic-miniature-slides/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 82,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:00.309Z",
-    "lastSeenAt": "2026-09-14T07:57:00.310Z"
-  },
-  {
-    "id": "lssingh01996-ui/aivideo/d3-viz",
-    "name": "d3-viz",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Creating interactive data visualisations using d3.js. This skill should be used when creating custom charts, graphs, network diagrams, geographic visualisations, or any complex SVG-based data visualisation that requires fine-grained control over visual elements, transitions, or interactions. Use this for bespoke visual",
+    "id": "daymade/claude-code-skills/pdf-to-html",
+    "name": "pdf-to-html",
+    "source": "daymade/claude-code-skills",
+    "summary": "Converts a PDF into one self-contained, readable HTML file that preserves images, tables, charts and reading order — optionally translating it into another language while keeping every figure. Uses structured extraction (PyMuPDF), font-size-driven layout, compressed base64-inlined images (a single portable file), and m",
     "security": "B",
-    "signalScore": 65,
+    "signalScore": 68,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 1410,
     "tags": [
+      "experience",
       "product",
       "visual",
-      "video",
-      "3d",
-      "rendering",
-      "diagram",
-      "map",
-      "environment"
+      "layout",
+      "editorial"
     ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/d3-viz/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-docs/pdf-to-html/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "experience-design",
+      "visual-communication",
       "operations-design",
-      "architecture-design",
-      "environmental-design",
-      "arts-crafts"
+      "ui-design"
     ],
     "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:05.176Z",
-    "lastSeenAt": "2026-09-14T07:57:05.176Z"
+    "firstSeenAt": "2026-09-20T07:47:35.385Z",
+    "lastSeenAt": "2026-09-20T07:47:35.385Z"
   },
   {
-    "id": "melonjs/melonJS/melonjs-tilemaps",
-    "name": "melonjs-tilemaps",
-    "source": "melonjs/melonJS",
-    "summary": "Use this skill for Tiled maps in melonJS — loading TMX/TSX levels, spawning entities from Tiled objects, collision shapes authored in Tiled, isometric and hexagonal maps, and image layers. Covers the pool.register name contract, camera bounds, compressed maps needing the inflate plugin, and the level director API. Trig",
-    "security": "B",
-    "signalScore": 64,
+    "id": "daymade/claude-code-skills/devils-advocate",
+    "name": "devils-advocate",
+    "source": "daymade/claude-code-skills",
+    "summary": "结构化压力测试一个论点（devil's advocate / 魔鬼代言人）：把论点拆成显性断言与隐性假设（A1/A2 编号）， 逐条在用户给定的证据材料里检索带出处的反方论证，标 High/Medium/Low 风险等级，补基础比率外部视角， 最后给出「可监测的证伪信号」清单；输出结构化 findings + 人读叙事双层结果。找不到反证时如实声明「未找到」， 绝不编造。复刻自 LinqAlpha（对冲基金 AI 产品）公开的 Devil's Advocate 架构，叠加 CIA 结构化分析技术与 RAND 假设规划。当用户要「压力测试 / 唱反调 / 找盲点 / 拆假设 / 挑战这个论点 / bear case / 红队这个方案 ",
+    "security": "A",
+    "signalScore": 68,
     "installs": 0,
-    "repoStars": 6392,
+    "repoStars": 1410,
     "tags": [
-      "3d",
-      "map",
-      "vector",
-      "color"
+      "product",
+      "research"
     ],
-    "installUrl": "https://github.com/melonjs/melonJS",
-    "skillsUrl": "https://github.com/melonjs/melonJS/blob/master/packages/melonjs/skills/melonjs-tilemaps/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-financial/devils-advocate/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "architecture-design",
-      "arts-crafts",
-      "visual-communication",
-      "folk-art"
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "arts-crafts"
     ],
-    "qualityScore": 77,
+    "qualityScore": 74,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:46.149Z",
-    "lastSeenAt": "2026-09-14T07:56:46.149Z"
+    "firstSeenAt": "2026-09-20T07:47:39.310Z",
+    "lastSeenAt": "2026-09-20T07:47:39.310Z"
   },
   {
-    "id": "primo737/agents/design-taste-frontend",
-    "name": "design-taste-frontend",
-    "source": "primo737/agents",
-    "summary": "Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated. Real design systems when applicable, audit-first on redesigns, strict pre-flight check.",
+    "id": "daymade/claude-code-skills/macos-permissions",
+    "name": "macos-permissions",
+    "source": "daymade/claude-code-skills",
+    "summary": "Diagnose and fix macOS TCC permission dialogs and silent denials — Screen Recording, Microphone, Camera, Accessibility, Automation (Apple Events), Full Disk Access, Files & Folders, and the \"X would like to access data from other apps\" prompt. Use whenever an app or background job is blocked by a macOS privacy permissi",
     "security": "C",
-    "signalScore": 64,
+    "signalScore": 68,
     "installs": 0,
-    "repoStars": 3,
+    "repoStars": 1410,
     "tags": [
-      "visual",
-      "brand",
-      "typography",
-      "layout",
-      "editorial",
-      "color",
       "design",
       "ux",
       "product",
       "accessibility",
-      "photo",
-      "motion"
-    ],
-    "installUrl": "https://github.com/primo737/agents",
-    "skillsUrl": "https://github.com/primo737/agents/blob/claude/build-agents-HaVer/skills/design-taste-frontend/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "visual-communication",
-      "experience-design",
-      "operations-design",
-      "ui-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:56.893Z",
-    "lastSeenAt": "2026-09-14T07:56:56.893Z"
-  },
-  {
-    "id": "wedabro/bro-skills/design-taste-frontend-v1",
-    "name": "design-taste-frontend-v1",
-    "source": "wedabro/bro-skills",
-    "summary": "The original v1 taste-skill, preserved for projects depending on its exact behavior. The current default is `design-taste-frontend` (v2 experimental), which is a substantial rewrite. Use this v1 install name only if you need exact backward compatibility.",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 2,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "typography",
-      "interaction",
-      "visual",
-      "color",
-      "arts",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/wedabro/bro-skills",
-    "skillsUrl": "https://github.com/wedabro/bro-skills/blob/main/.agents/skills/design-taste-frontend-v1/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "visual-communication",
-      "arts-crafts",
-      "folk-art"
-    ],
-    "qualityScore": 77,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:58.298Z",
-    "lastSeenAt": "2026-09-14T07:56:58.298Z"
-  },
-  {
-    "id": "jakegeidi/ITQ---V.1/product-strategy-session",
-    "name": "product-strategy-session",
-    "source": "jakegeidi/ITQ---V.1",
-    "summary": "Run an end-to-end product strategy session across positioning, discovery, and roadmap planning. Use when a team needs validated direction before committing to execution.",
-    "security": "A",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "product",
-      "research",
-      "interaction",
       "ui"
     ],
-    "installUrl": "https://github.com/jakegeidi/ITQ---V.1",
-    "skillsUrl": "https://github.com/jakegeidi/ITQ---V.1/blob/main/.claude/skills/product-strategy-session/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-macos/macos-permissions/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:42.576Z",
+    "lastSeenAt": "2026-09-20T07:47:42.576Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/llm-wiki-setup",
+    "name": "llm-wiki-setup",
+    "source": "daymade/claude-code-skills",
+    "summary": "Co-create a personal investment-research LLM Wiki (Andrej Karpathy's pattern) where the user's OWN analysis framework becomes a living CLAUDE.md — by interviewing them, NOT by handing them a template. Use whenever the user wants to build a compounding research knowledge base, 投研第二大脑, 投研知识库, or 个人投研 wiki; instantiate Ka",
+    "security": "B",
+    "signalScore": 68,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "research"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/llm-wiki-setup/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
       "operations-design",
-      "ui-design",
-      "industrial-design"
+      "industrial-design",
+      "arts-crafts"
     ],
-    "qualityScore": 81,
+    "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:01.808Z",
-    "lastSeenAt": "2026-09-14T07:57:01.808Z"
+    "firstSeenAt": "2026-09-20T07:47:54.664Z",
+    "lastSeenAt": "2026-09-20T07:47:54.665Z"
   },
   {
-    "id": "lssingh01996-ui/aivideo/beautiful-mermaid",
-    "name": "beautiful-mermaid",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Render Mermaid diagrams as SVG and PNG using the Beautiful Mermaid library. Use when the user asks to render a Mermaid diagram.",
+    "id": "daymade/claude-code-skills/gangtise-copilot",
+    "name": "gangtise-copilot",
+    "source": "daymade/claude-code-skills",
+    "summary": "Gangtise (岗底斯投研) OpenAPI skill suite installer and diagnostic tool. One-click install 19 official skills (data, research, utility), configure accessKey/secretAccessKey, run health diagnostics. Trigger when user mentions Gangtise, 岗底斯, any gangtise-* skill, credential setup, or reports errors like 'token is invalid' / '",
     "security": "C",
-    "signalScore": 64,
+    "signalScore": 67,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 1410,
     "tags": [
       "design",
       "product",
-      "visual",
-      "video",
-      "art",
-      "vector",
-      "pattern",
-      "rendering"
+      "research"
     ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/beautiful-mermaid/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-financial/gangtise-copilot/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "experience-design",
       "operations-design",
-      "folk-art",
       "industrial-design",
-      "architecture-design"
+      "ui-design"
     ],
     "qualityScore": 96,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:03.947Z",
-    "lastSeenAt": "2026-09-14T07:57:03.947Z"
+    "firstSeenAt": "2026-09-20T07:47:40.772Z",
+    "lastSeenAt": "2026-09-20T07:47:40.772Z"
   },
   {
-    "id": "lssingh01996-ui/aivideo/canvas-procedural-animation",
-    "name": "canvas-procedural-animation",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Use p5.js/canvas for local procedural character effects: particles, weather, squash/stretch, walk cycles, and environmental motion.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "product",
-      "video",
-      "motion",
-      "environmental",
-      "environment",
-      "rendering"
-    ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/canvas-procedural-animation/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "architecture-design",
-      "industrial-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:04.315Z",
-    "lastSeenAt": "2026-09-14T07:57:04.315Z"
-  },
-  {
-    "id": "jakegeidi/ITQ---V.1/product-sense-interview-answer",
-    "name": "product-sense-interview-answer",
-    "source": "jakegeidi/ITQ---V.1",
-    "summary": "Structure a spoken PM product-sense answer with assumptions, segmentation, pain-point prioritization, and MVP tradeoffs. Use when practicing design, improve, or build-next interview questions.",
+    "id": "daymade/claude-code-skills/capture-screen",
+    "name": "capture-screen",
+    "source": "daymade/claude-code-skills",
+    "summary": "Programmatic screenshot capture on macOS. Find window IDs with Swift CGWindowListCopyWindowInfo, control application windows via AppleScript (zoom, scroll, select), and capture with screencapture. Use when automating screenshots, capturing application windows for documentation, or building multi-shot visual workflows.",
     "security": "A",
-    "signalScore": 62,
+    "signalScore": 67,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 1410,
     "tags": [
-      "design",
       "product",
-      "ux",
-      "mobile",
-      "landscape"
+      "rendering",
+      "visual"
     ],
-    "installUrl": "https://github.com/jakegeidi/ITQ---V.1",
-    "skillsUrl": "https://github.com/jakegeidi/ITQ---V.1/blob/main/.claude/skills/product-sense-interview-answer/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-macos/capture-screen/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
       "experience-design",
-      "environmental-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:01.632Z",
-    "lastSeenAt": "2026-09-14T07:57:01.632Z"
-  },
-  {
-    "id": "lssingh01996-ui/aivideo/atlas-cloud",
-    "name": "atlas-cloud",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Generate or edit images and videos through the Atlas Cloud gateway. Use for Atlas-hosted Seedance 2.5/2.0, Gemini Omni Flash, MiniMax H3, Seedream 5.0, GPT Image 2, Nano Banana 2, or when one ATLASCLOUD_API_KEY should access multiple media model families.",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "operations",
-      "campaign",
-      "product",
-      "video",
-      "audio",
-      "media"
-    ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/atlas-cloud/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
+      "industrial-design",
       "operations-design",
-      "video-design",
-      "digital-media-film",
-      "fashion-design"
+      "arts-crafts"
     ],
-    "qualityScore": 73,
+    "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:02.818Z",
-    "lastSeenAt": "2026-09-14T07:57:02.818Z"
+    "firstSeenAt": "2026-09-20T07:47:41.290Z",
+    "lastSeenAt": "2026-09-20T07:47:41.290Z"
   },
   {
-    "id": "lssingh01996-ui/aivideo/create-video",
-    "name": "create-video",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Create videos from a text prompt using HeyGen's Video Agent. Use when: (1) Creating a video from a description or idea, (2) Generating explainer, demo, or marketing videos from a prompt, (3) Making a video without specifying exact avatars, voices, or scenes, (4) Quick video prototyping or drafts, (5) One-shot prompt-to",
-    "security": "C",
-    "signalScore": 62,
+    "id": "daymade/claude-code-skills/i18n-expert",
+    "name": "i18n-expert",
+    "source": "daymade/claude-code-skills",
+    "summary": "This skill should be used when setting up, auditing, or enforcing internationalization/localization in UI codebases (React/TS, i18next or similar, JSON locales), including installing/configuring the i18n framework, replacing hard-coded strings, ensuring en-US/zh-CN coverage, mapping error codes to localized messages, a",
+    "security": "B",
+    "signalScore": 67,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 1410,
     "tags": [
-      "brand",
       "product",
-      "visual",
-      "video",
-      "audio"
-    ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/create-video/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "visual-communication",
-      "video-design",
-      "fashion-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:05.013Z",
-    "lastSeenAt": "2026-09-14T07:57:05.013Z"
-  },
-  {
-    "id": "primo737/agents/stitch-design-taste",
-    "name": "stitch-design-taste",
-    "source": "primo737/agents",
-    "summary": "Semantic Design System Skill for Google Stitch. Generates agent-friendly DESIGN.md files that enforce premium, anti-generic UI standards — strict typography, calibrated color, asymmetric layouts, perpetual micro-motion, and hardware-accelerated performance.",
-    "security": "C",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 3,
-    "tags": [
-      "visual",
-      "typography",
+      "accessibility",
+      "ui",
       "layout",
-      "editorial",
-      "color",
-      "design",
-      "interaction",
-      "mobile",
-      "ui"
+      "brand"
     ],
-    "installUrl": "https://github.com/primo737/agents",
-    "skillsUrl": "https://github.com/primo737/agents/blob/claude/build-agents-HaVer/skills/stitch-design-taste/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/i18n-expert/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "visual-communication",
       "experience-design",
       "ui-design",
+      "visual-communication",
       "operations-design"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:57.929Z",
-    "lastSeenAt": "2026-09-14T07:56:57.929Z"
+    "firstSeenAt": "2026-09-20T07:47:52.195Z",
+    "lastSeenAt": "2026-09-20T07:47:52.195Z"
   },
   {
-    "id": "lssingh01996-ui/aivideo/3d-asset-generation",
-    "name": "3d-asset-generation",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Generate, reconstruct, inspect, and route production 3D assets for OpenMontage worlds using Atlas Cloud, fal.ai, licensed catalogs, and Blender.",
-    "security": "A",
-    "signalScore": 61,
+    "id": "daymade/claude-code-skills/meme-creator",
+    "name": "meme-creator",
+    "source": "daymade/claude-code-skills",
+    "summary": "Creates video/GIF memes by overlaying images (logos, avatars, stickers) onto moving objects in a clip with frame-accurate tracking, then exports MP4 + GIF. Use whenever the user wants a meme, 梗图, 表情包, or reaction GIF from existing footage; to cover faces or heads in a video; to make a logo or avatar follow a moving per",
+    "security": "B",
+    "signalScore": 67,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 1410,
     "tags": [
       "product",
-      "video",
-      "3d",
-      "lighting",
-      "arts",
-      "color"
-    ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/3d-asset-generation/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "architecture-design",
-      "arts-crafts",
-      "environmental-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:02.045Z",
-    "lastSeenAt": "2026-09-14T07:57:02.045Z"
-  },
-  {
-    "id": "lssingh01996-ui/aivideo/acestep",
-    "name": "acestep",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "AI music generation with ACE-Step 1.5 — background music, vocal tracks, covers, stem extraction for video production. Use when generating music, soundtracks, jingles, or working with audio stems. Triggers include background music, soundtrack, jingle, music generation, stem extraction, cover, style transfer, or musical ",
-    "security": "C",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "brand",
-      "product",
+      "photo",
       "video",
       "motion",
-      "audio",
-      "digital"
+      "editing"
     ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/acestep/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/meme-creator/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "operations-design",
+      "experience-design",
       "video-design",
-      "digital-media-film",
-      "visual-communication"
+      "digital-media-film"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:55.924Z",
+    "lastSeenAt": "2026-09-20T07:47:55.924Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/product-analysis",
+    "name": "product-analysis",
+    "source": "daymade/claude-code-skills",
+    "summary": "Multi-path parallel product analysis with cross-model test-time compute scaling. Spawns parallel agents (Claude Code agent teams + Codex CLI) to explore product from multiple perspectives, then synthesizes findings into actionable optimization plans. Can invoke competitors-analysis for competitive benchmarking. Use whe",
+    "security": "C",
+    "signalScore": 67,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "experience",
+      "ux",
+      "product",
+      "mobile",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/product-analysis/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "architecture-design",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 82,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:58.585Z",
+    "lastSeenAt": "2026-09-20T07:47:58.585Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/financial-data-collector",
+    "name": "financial-data-collector",
+    "source": "daymade/claude-code-skills",
+    "summary": "Collect real financial data for any US publicly traded company from free public sources (yfinance). Output structured JSON consumable by downstream financial skills (DCF modeling, comps analysis, earnings review). Handles market data (price, shares, beta), historical financials (income statement, cash flow, balance she",
+    "security": "B",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-financial/financial-data-collector/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:39.851Z",
+    "lastSeenAt": "2026-09-20T07:47:39.851Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/kimi-use",
+    "name": "kimi-use",
+    "source": "daymade/claude-code-skills",
+    "summary": "Drive the Kimi desktop app (Kimi.app) through computer-use to query its built-in data plugins — 天眼查 company records, 同花顺 iFinD financials, 财新数据, 标普全球市场财智, 恒生聚源, SEC, IMF, 世界银行公开数据, 学术数据库, 法律数据库 and more — through the user's own logged-in Kimi session, with no separate API keys. Use whenever the user says \"用 Kimi 查\" / \"",
+    "security": "A",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "cad"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/kimi-use/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "industrial-design",
+      "operations-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:53.052Z",
+    "lastSeenAt": "2026-09-20T07:47:53.052Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/frost-sequence-camera-orbit",
+    "name": "frost-sequence-camera-orbit",
+    "source": "heygen-com/hyperframes",
+    "summary": "An orbiting camera follows an ice logo as it breaks apart, reforms into two text moments, and fades. HyperFrames block, 1920×1080, 22.5s, 216 variables.",
+    "security": "B",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 51731,
+    "tags": [
+      "video",
+      "interior",
+      "environment"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/frost-sequence-camera-orbit/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "environmental-design",
+      "architecture-design",
+      "folk-art"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:02.246Z",
-    "lastSeenAt": "2026-09-14T07:57:02.246Z"
+    "firstSeenAt": "2026-09-20T07:46:59.275Z",
+    "lastSeenAt": "2026-09-20T07:46:59.275Z"
   },
   {
-    "id": "lssingh01996-ui/aivideo/azure-text-to-speech",
-    "name": "azure-text-to-speech",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Generate neural narration audio using Azure AI Speech (REST text-to-speech). Use when synthesizing voiceovers or narration in OpenMontage. Optional cloud TTS provider — preferred when AZURE_SPEECH_KEY is configured; the local piper_tts remains the default offline path. Shares one Speech resource with azure_stt.",
-    "security": "C",
-    "signalScore": 61,
+    "id": "daymade/claude-code-skills/continue-claude-code-work",
+    "name": "continue-claude-code-work",
+    "source": "daymade/claude-code-skills",
+    "summary": "Continues interrupted Claude Code work only after local history has been read and reconciled. Use when the user provides a Claude Code Session ID, asks to pick up prior Claude work, says a Claude run was interrupted or compacted, or wants the current Agent to take over without `claude --resume`. Reconstructs the origin",
+    "security": "A",
+    "signalScore": 65,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "operations"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/continue-claude-code-work/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:23.783Z",
+    "lastSeenAt": "2026-09-20T07:47:23.783Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/continue-codex-work",
+    "name": "continue-codex-work",
+    "source": "daymade/claude-code-skills",
+    "summary": "Continues interrupted OpenAI Codex work only after read-codex-history verifies the selected rollout identity and complete fork/compaction lineage. Use when the user provides a Codex Session ID, asks to pick up a prior Codex run, says Codex was interrupted, fused, compacted, or stuck, or wants the current Agent to take ",
+    "security": "A",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/continue-codex-work/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:23.957Z",
+    "lastSeenAt": "2026-09-20T07:47:23.957Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/local-conversation-history",
+    "name": "local-conversation-history",
+    "source": "daymade/claude-code-skills",
+    "summary": "Entry point for local AI conversation history across providers. Routes a request to the one skill that owns it, by platform (Claude Code, OpenAI Codex, Kimi CLI) and action (read evidence vs continue interrupted work), and owns the one job none of them own alone: a single inventory spanning all three providers. Use whe",
+    "security": "A",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/local-conversation-history/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:24.341Z",
+    "lastSeenAt": "2026-09-20T07:47:24.341Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/statusline-generator",
+    "name": "statusline-generator",
+    "source": "daymade/claude-code-skills",
+    "summary": "Installs, configures, customizes, or troubleshoots the Claude Code statusline (cwd, model, token counts). Use when the user wants to set up or change the statusline, switch minimal vs full layouts, show absolute token counts (e.g. ctx 108K / 1M) instead of a percentage, add cost via ccusage or git status, dump the stdi",
+    "security": "C",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1410,
     "tags": [
       "design",
-      "brand",
+      "ux",
       "product",
-      "video",
-      "audio",
-      "communication"
+      "environment",
+      "rendering"
     ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/azure-text-to-speech/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/statusline-generator/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "video-design",
-      "visual-communication",
+      "experience-design",
+      "environmental-design",
+      "architecture-design",
       "industrial-design"
     ],
-    "qualityScore": 79,
+    "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:03.361Z",
-    "lastSeenAt": "2026-09-14T07:57:03.361Z"
+    "firstSeenAt": "2026-09-20T07:47:29.250Z",
+    "lastSeenAt": "2026-09-20T07:47:29.250Z"
   },
   {
-    "id": "lssingh01996-ui/aivideo/character-rigging",
-    "name": "character-rigging",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Build data-driven 2D character rigs for local animation: parts, pivots, layers, constraints, views, and reusable rig packages.",
+    "id": "daymade/claude-code-skills/docx-creator",
+    "name": "docx-creator",
+    "source": "daymade/claude-code-skills",
+    "summary": "Produce Word (.docx) and export existing Word/WPS manuscripts to PDF (Word 转 PDF / 试读版 / 排版修复), preserving revisions, tables and images. Especially for Chinese documents, drive minimax-skills:minimax-docx OpenXML correctly. Use whenever the deliverable is a .docx file: 生成 Word 文档 / 做一份 docx / 写合同 docx / 起草协议 / 正式文书 / 公",
     "security": "B",
-    "signalScore": 61,
+    "signalScore": 65,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 1410,
     "tags": [
+      "visual",
+      "typography",
+      "layout",
       "product",
-      "video",
-      "motion"
+      "ui"
     ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/character-rigging/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-docs/docx-creator/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "video-design",
-      "digital-media-film",
-      "arts-crafts"
+      "visual-communication",
+      "experience-design",
+      "ui-design",
+      "folk-art"
     ],
-    "qualityScore": 71,
+    "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:04.648Z",
-    "lastSeenAt": "2026-09-14T07:57:04.648Z"
+    "firstSeenAt": "2026-09-20T07:47:32.608Z",
+    "lastSeenAt": "2026-09-20T07:47:32.608Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/excel-automation",
+    "name": "excel-automation",
+    "source": "daymade/claude-code-skills",
+    "summary": "Create, parse, and control Excel files on macOS. Professional formatting with openpyxl, complex xlsm parsing with stdlib zipfile+xml for investment bank financial models, and Excel window control via AppleScript. Use when creating formatted Excel reports, parsing financial models that openpyxl cannot handle, or automat",
+    "security": "B",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "art",
+      "color",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-docs/excel-automation/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "folk-art",
+      "arts-crafts",
+      "visual-communication"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:33.201Z",
+    "lastSeenAt": "2026-09-20T07:47:33.201Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/bigdata-skill",
+    "name": "bigdata-skill",
+    "source": "daymade/claude-code-skills",
+    "summary": "Pull Bigdata.com (RavenPack) financial and news data via the official `bigdata-client` SDK and `/v1/*` REST endpoints — structured financials, prices, analyst estimates, daily entity-sentiment series, annotated chunk search, screener — when the Bigdata MCP returns only pre-synthesized tearsheets but you need the machin",
+    "security": "C",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "research",
+      "art",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-financial/bigdata-skill/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "folk-art",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:38.621Z",
+    "lastSeenAt": "2026-09-20T07:47:38.621Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/openclaw",
+    "name": "openclaw",
+    "source": "daymade/claude-code-skills",
+    "summary": "Manage OpenClaw (龙虾) instance configurations. Use whenever the user wants to audit, diff, copy, add-model, list, or switch models in an openclaw.json file, or when they mention lobsters, 虾, 甲虾, 乙虾, DeepSeek patch, default model, model aliases, or OpenClaw config validation.",
+    "security": "B",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/openclaw/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "architecture-design",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:57.368Z",
+    "lastSeenAt": "2026-09-20T07:47:57.368Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/repomix-unmixer",
+    "name": "repomix-unmixer",
+    "source": "daymade/claude-code-skills",
+    "summary": "Extracts files from repomix-packed repositories, restoring original directory structures from XML/Markdown/JSON formats. Activates when users need to unmix repomix files, extract packed repositories, restore file structures from repomix output, or reverse the repomix packing process.",
+    "security": "B",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "layout"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/repomix-unmixer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:48:00.559Z",
+    "lastSeenAt": "2026-09-20T07:48:00.559Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/scrapling-skill",
+    "name": "scrapling-skill",
+    "source": "daymade/claude-code-skills",
+    "summary": "Install, troubleshoot, and use Scrapling CLI to extract HTML, Markdown, or text from webpages. Use this skill whenever the user mentions Scrapling, `uv tool install scrapling`, `scrapling extract`, WeChat/mp.weixin articles, browser-backed page fetching, or needs help deciding between static and dynamic extraction.",
+    "security": "B",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "rendering",
+      "art",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/scrapling-skill/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "industrial-design",
+      "folk-art",
+      "environmental-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:48:00.891Z",
+    "lastSeenAt": "2026-09-20T07:48:00.891Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/claude-migrate-memory-to-doc",
+    "name": "claude-migrate-memory-to-doc",
+    "source": "daymade/claude-code-skills",
+    "summary": "Migrates Claude Code personal memory (the per-project memory/ directory) into tool-agnostic reference docs, so other AI CLIs that auto-load AGENTS.md (Codex primarily; the content architecture transfers to Cursor and others) working in the same directory can read the same user profile, collaboration preferences, and me",
+    "security": "B",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/claude-migrate-memory-to-doc/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "architecture-design",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:21.881Z",
+    "lastSeenAt": "2026-09-20T07:47:21.881Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/read-claude-web-conversation",
+    "name": "read-claude-web-conversation",
+    "source": "daymade/claude-code-skills",
+    "summary": "Read or export the COMPLETE transcript of a Claude.ai web conversation — both private claude.ai/chat/... and public claude.ai/share/... links — by calling Claude.ai's internal API from inside the user's logged-in Chrome, and download its FILES too (uploads, deliverables). Use whenever the user pastes a claude.ai conver",
+    "security": "C",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "research",
+      "rendering"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/read-claude-web-conversation/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "industrial-design",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:27.630Z",
+    "lastSeenAt": "2026-09-20T07:47:27.630Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/pdf-creator",
+    "name": "pdf-creator",
+    "source": "daymade/claude-code-skills",
+    "summary": "Convert markdown files to professional PDF documents with proper Chinese font support, theme system, and visual self-check. Use for Markdown → PDF, printable Markdown documents, and Markdown formatted for print or mobile reading. Prefer its CJK typography, header/footer suppression, and visual verification over manual ",
+    "security": "C",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "mobile",
+      "visual",
+      "typography",
+      "layout",
+      "color",
+      "ui"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-docs/pdf-creator/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "ui-design",
+      "industrial-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:34.655Z",
+    "lastSeenAt": "2026-09-20T07:47:34.655Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/skill-governance",
+    "name": "skill-governance",
+    "source": "daymade/claude-code-skills",
+    "summary": "Govern the real Claude Code and Codex Skill surface without losing cold capability. Use when users ask how many Skills are loaded, why the catalog is huge or descriptions are truncated, want only routers visible while gstack/Lark/IMA/UiPath stay on disk, or need to reconcile source/install/cache drift, `.agents/skills`",
+    "security": "C",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "experience",
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-skill/skill-governance/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:44.669Z",
+    "lastSeenAt": "2026-09-20T07:47:44.669Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/skill-reviewer",
+    "name": "skill-reviewer",
+    "source": "daymade/claude-code-skills",
+    "summary": "Reviews and improves Claude Code skills against official best practices. Supports three modes - self-review (validate your own skills), external review (evaluate others' skills), and auto-PR (fork, improve, submit). Use when checking skill quality, reviewing skill repositories, or contributing improvements to open-sour",
+    "security": "C",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "video",
+      "ui",
+      "layout"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-skill/skill-reviewer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "ui-design",
+      "video-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:45.049Z",
+    "lastSeenAt": "2026-09-20T07:47:45.050Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/github-contributor",
+    "name": "github-contributor",
+    "source": "daymade/claude-code-skills",
+    "summary": "End-to-end playbook for shipping high-quality pull requests to open-source projects you don't maintain — discovery, CONTRIBUTING compliance, PR-size check, minimal-diff implementation, PR description with AI-assisted disclosure, conflict resolution, and post-submission maintainer interaction. Use whenever creating, edi",
+    "security": "C",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "interaction",
+      "art",
+      "pattern",
+      "visual",
+      "media"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/github-contributor/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "folk-art",
+      "digital-media-film",
+      "ui-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:50.550Z",
+    "lastSeenAt": "2026-09-20T07:47:50.550Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/ima-copilot",
+    "name": "ima-copilot",
+    "source": "daymade/claude-code-skills",
+    "summary": "Installs, troubleshoots, and personalizes the official Tencent IMA skill (a wrapper layer that orchestrates upstream ima-skill, not a replacement). Use when the user mentions IMA, 腾讯 IMA, ima.qq.com, ima-skill, installing or configuring ima-skill, IMA API key / credentials, searching across IMA knowledge bases, 知识库搜索, ",
+    "security": "C",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "operations",
+      "ui",
+      "layout"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/ima-copilot/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "ui-design",
+      "environmental-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:52.880Z",
+    "lastSeenAt": "2026-09-20T07:47:52.880Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/llm-icon-finder",
+    "name": "llm-icon-finder",
+    "source": "daymade/claude-code-skills",
+    "summary": "Finding and accessing AI/LLM model brand icons from lobe-icons library. Use when users need icon URLs, want to download brand logos for AI models/providers/applications (Claude, GPT, Gemini, etc.), or request icons in SVG/PNG/WEBP formats.",
+    "security": "B",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "brand",
+      "color"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/llm-icon-finder/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "operations-design",
+      "fashion-design"
+    ],
+    "qualityScore": 86,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:54.084Z",
+    "lastSeenAt": "2026-09-20T07:47:54.084Z"
   },
   {
     "id": "heygen-com/hyperframes/seam-craft",
@@ -2176,9 +1953,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Render-correctness doctrine for scene-to-scene seams in HyperFrames launch videos — the prerequisites that make transitions composite correctly on the master timeline. Load when assembling the master timeline / index.html, when a white flash appears at a cut or crossfade seam (especially on dark films), when reasoning ",
     "security": "C",
-    "signalScore": 60,
+    "signalScore": 63,
     "installs": 0,
-    "repoStars": 49769,
+    "repoStars": 51731,
     "tags": [
       "video",
       "film",
@@ -2197,22 +1974,195 @@
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-09-14T07:56:32.693Z",
-    "lastSeenAt": "2026-09-14T07:56:32.693Z"
+    "lastSeenAt": "2026-09-20T07:46:56.793Z"
   },
   {
-    "id": "primo737/agents/product-creator",
-    "name": "product-creator",
-    "source": "primo737/agents",
-    "summary": "Build, package, price, and productize irresistible premium products and offers using Alex Hormozi's $100M Offers methodology. Guides users through a 3-phase process — Foundation & Capacity Assessment, Offer Construction (5-step), and Offer Enhancement (5 psychological levers) — to create deliverable, premium offers. Us",
-    "security": "A",
-    "signalScore": 60,
+    "id": "daymade/claude-code-skills/doc-to-markdown",
+    "name": "doc-to-markdown",
+    "source": "daymade/claude-code-skills",
+    "summary": "Converts DOCX/PDF/PPTX to high-quality Markdown with automatic post-processing. Fixes pandoc grid tables, simple tables, image paths, CJK bold spacing, attribute noise, and code blocks; for PDFs also strips OCR garbage blocks, repeated headers/footers/watermarks, and absolute image paths from pymupdf4llm output. Benchm",
+    "security": "C",
+    "signalScore": 63,
     "installs": 0,
-    "repoStars": 3,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "research",
+      "ui",
+      "layout",
+      "architecture"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-docs/doc-to-markdown/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 86,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:32.229Z",
+    "lastSeenAt": "2026-09-20T07:47:32.230Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/ppt-creator",
+    "name": "ppt-creator",
+    "source": "daymade/claude-code-skills",
+    "summary": "【DEPRECATED · 已废弃】本 skill 已于 2026-08-07 停止维护。对作者本机环境：其方法论已整体并入 deck-creator（私有仓 daymade-skills-pro 的 Route B · draft），装有 deck-creator 的环境不要调用本 skill。 对外部用户：这是最终版本，保留安装兼容，不再接收更新——你可以继续按本文档使用， 但请知悉上游已冻结。将在 daymade-docs v2.0.0 中物理移除。",
+    "security": "A",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 1410,
     "tags": [
       "product"
     ],
-    "installUrl": "https://github.com/primo737/agents",
-    "skillsUrl": "https://github.com/primo737/agents/blob/claude/build-agents-HaVer/skills/product-creator/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-docs/ppt-creator/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:36.420Z",
+    "lastSeenAt": "2026-09-20T07:47:36.420Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/developing-ios-apps",
+    "name": "developing-ios-apps",
+    "source": "daymade/claude-code-skills",
+    "summary": "Develops iOS/macOS apps with XcodeGen, SwiftUI, and SPM, including Apple Developer signing, notarization, and CI/CD pipelines. Use when building iOS/macOS apps, fixing Xcode build failures, deploying to real devices, or configuring CI/CD signing. Triggers on XcodeGen project.yml, SPM dependency issues, code signing err",
+    "security": "C",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "video",
+      "audio"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-macos/developing-ios-apps/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:41.486Z",
+    "lastSeenAt": "2026-09-20T07:47:41.486Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/macos-watchdog",
+    "name": "macos-watchdog",
+    "source": "daymade/claude-code-skills",
+    "summary": "Design, deploy, and discipline macOS launchd watchdogs — LaunchAgents/LaunchDaemons that detect a recurring problem and auto-remediate it. Use whenever creating or editing a persistent background monitor / daemon / agent on macOS, writing a launchd plist, scheduling a self-healing script, or when a watchdog has become ",
+    "security": "C",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "arts",
+      "craft",
+      "pattern",
+      "art"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-macos/macos-watchdog/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "arts-crafts",
+      "folk-art",
+      "environmental-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:43.084Z",
+    "lastSeenAt": "2026-09-20T07:47:43.084Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/fact-checker",
+    "name": "fact-checker",
+    "source": "daymade/claude-code-skills",
+    "summary": "Verifies factual claims in documents using web search and official sources, then proposes corrections with user confirmation. Use when the user asks to fact-check, verify information, validate claims, check accuracy, or update outdated information in documents. Supports AI model specs, technical documentation, statisti",
+    "security": "C",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "research",
+      "cad"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/fact-checker/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "industrial-design",
+      "operations-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:48.260Z",
+    "lastSeenAt": "2026-09-20T07:47:48.260Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/github-sensitive-data-cleanup",
+    "name": "github-sensitive-data-cleanup",
+    "source": "daymade/claude-code-skills",
+    "summary": "Scan and remove sensitive data (secrets, API keys, private domains/IPs, PII) from GitHub repository history. Use this skill whenever the user says \"scan sensitive data\", \"clean git history\", \"remove secrets from repo\", \"sanitize GitHub history\", \"清理敏感数据\", \"历史重写\", \"force push\", \"泄露\", or needs to repair a public repo aft",
+    "security": "C",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "operations",
+      "architecture"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/github-sensitive-data-cleanup/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:51.832Z",
+    "lastSeenAt": "2026-09-20T07:47:51.832Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/notify-wecom",
+    "name": "notify-wecom",
+    "source": "daymade/claude-code-skills",
+    "summary": "Send a single one-off message to a WeCom (Enterprise WeChat) group bot. Use this skill whenever the user says \"/notify-wecom\", \"send a quick WeCom message\", \"企微通知一下\", \"临时发一条企业微信\", or any one-shot notification that does not need a reusable template or setup workflow.",
+    "security": "B",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/notify-wecom/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
@@ -2222,268 +2172,1168 @@
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:57.438Z",
-    "lastSeenAt": "2026-09-14T07:56:57.438Z"
+    "firstSeenAt": "2026-09-20T07:47:56.136Z",
+    "lastSeenAt": "2026-09-20T07:47:56.136Z"
   },
   {
-    "id": "lssingh01996-ui/aivideo/comfyui",
-    "name": "comfyui",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Use when working with ComfyUI workflows in OpenMontage, including comfyui_image/comfyui_video/comfyui_music, custom workflow_json/workflow_path inputs, output_node selection, missing model setup, LoRAs, low-VRAM workflow choices, and community workflow imports.",
+    "id": "daymade/claude-code-skills/qa-expert",
+    "name": "qa-expert",
+    "source": "daymade/claude-code-skills",
+    "summary": "This skill should be used when establishing comprehensive QA testing processes for any software project. Use when creating test strategies, writing test cases following Google Testing Standards, executing test plans, tracking bugs with P0-P4 classification, calculating quality metrics, or generating progress reports. I",
+    "security": "C",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "art",
+      "vector",
+      "pattern",
+      "environment"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/qa-expert/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "folk-art",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:59.705Z",
+    "lastSeenAt": "2026-09-20T07:47:59.705Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/meeting-minutes-taker",
+    "name": "meeting-minutes-taker",
+    "source": "daymade/claude-code-skills",
+    "summary": "Transforms raw meeting transcripts into high-fidelity, structured meeting minutes (notes / summaries). Use when (1) a meeting transcript is provided and meeting minutes, notes, or a summary are requested; (2) multiple versions of minutes must be merged without losing content; (3) existing minutes need review against th",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "motion",
+      "editing",
+      "audio"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-audio/meeting-minutes-taker/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "video-design",
+      "operations-design",
+      "architecture-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:17.068Z",
+    "lastSeenAt": "2026-09-20T07:47:17.068Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/claude-export-txt-better",
+    "name": "fixing-claude-export-conversations",
+    "source": "daymade/claude-code-skills",
+    "summary": "Fixes broken line wrapping in Claude Code exported conversation files (.txt), reconstructing tables, paragraphs, paths, and tool calls that were hard-wrapped at fixed column widths. Includes an automated validation suite (generic, file-agnostic checks). Triggers when the user has a Claude Code export file with broken f",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/claude-export-txt-better/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:21.005Z",
+    "lastSeenAt": "2026-09-20T07:47:21.006Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/codex-1m-context-window-setup",
+    "name": "codex-1m-context-window-setup",
+    "source": "daymade/claude-code-skills",
+    "summary": "Configures and verifies an expanded, model-aware context window for OpenAI Codex CLI and Codex Desktop by safely updating the shared base config. Use whenever Codex shows about 258K context, the user asks for 500K or 1M context, auto-compaction happens too often, model_context_window or model_auto_compact_token_limit n",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-codex/codex-1m-context-window-setup/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:30.107Z",
+    "lastSeenAt": "2026-09-20T07:47:30.107Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/design-style-picker",
+    "name": "design-style-picker",
+    "source": "daymade/claude-code-skills",
+    "summary": "Batch-generate and compare visual design directions so a user can choose the style they actually want. Use when the user says they cannot describe an abstract visual style, asks for many style options, wants to choose from generated UI/design-system images, rejects outputs as too colorful/too dead/too generic, or needs",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "ui",
+      "design-system",
+      "layout",
+      "visual",
+      "brand",
+      "color"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-codex/design-style-picker/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:30.633Z",
+    "lastSeenAt": "2026-09-20T07:47:30.633Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/mermaid-tools",
+    "name": "mermaid-tools",
+    "source": "daymade/claude-code-skills",
+    "summary": "Extracts Mermaid diagrams from markdown files and generates high-quality PNG images using bundled scripts. Activates when working with Mermaid diagrams, converting diagrams to PNG, extracting diagrams from markdown, or processing markdown files with embedded Mermaid code.",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "architecture",
+      "diagram",
+      "environment",
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-docs/mermaid-tools/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "experience-design",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:33.748Z",
+    "lastSeenAt": "2026-09-20T07:47:33.748Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/daymade-sector-research",
+    "name": "daymade-sector-research",
+    "source": "daymade/claude-code-skills",
+    "summary": "A股行业投研工作流：全板块 Top N 涨幅标的计算、公告窗口检索（周/月）、市场情绪证据分级判断，并以 Agent Team 并行执行 + fresh-context 对抗验证。 触发场景（命中任一即读本 skill）： - 「XX 行业 Top N / Top 10 标的」（如「医药行业今天的 Top 10 标的」） - 「这些标的最近一周 / 一个月发过哪些公告」 - 「判断 XX 行业 / 板块现在的市场情绪怎么样」 - 「用 Agent Team / 多 agent 做行业投研」或要求对行业研究结论做对抗性验证 - 需要「基于证据、基于数据」的板块级研究交付（成分股 → 行情 → 公告 → 情绪 → 验证 → 报告） 核心",
+    "security": "C",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "research"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-financial/daymade-sector-research/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 82,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:39.132Z",
+    "lastSeenAt": "2026-09-20T07:47:39.132Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/cloudflare-troubleshooting",
+    "name": "cloudflare-troubleshooting",
+    "source": "daymade/claude-code-skills",
+    "summary": "Investigate and resolve Cloudflare configuration issues using API-driven evidence gathering. Use when troubleshooting ERR_TOO_MANY_REDIRECTS, SSL errors, DNS issues, or any Cloudflare-related problems. Focus on systematic investigation using Cloudflare API to examine actual configuration rather than making assumptions.",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "operations"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/cloudflare-troubleshooting/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:15.537Z",
+    "lastSeenAt": "2026-09-20T07:47:15.537Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/competitors-analysis",
+    "name": "competitors-analysis",
+    "source": "daymade/claude-code-skills",
+    "summary": "Discover, clone, update, and analyze competitor repositories with evidence-based competitive intelligence. Use when tracking competitors, reviewing competitor source code, adding a competitor repository, comparing product capabilities, building a competitor landscape, checking whether competitor code changed, or when t",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "communication",
+      "layout",
+      "ui"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/competitors-analysis/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "ui-design",
+      "environmental-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:15.876Z",
+    "lastSeenAt": "2026-09-20T07:47:15.876Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/stepfun-asr",
+    "name": "stepfun-asr",
+    "source": "daymade/claude-code-skills",
+    "summary": "Transcribe audio with StepFun's stepaudio-3-asr-max — an SSE endpoint (NOT /v1/audio/transcriptions), single call handles long audio with no client-side chunking. Use when transcribing Chinese / English audio with StepFun, when long-form recordings (5-30 min) need to land in one request, when migrating from step-asr / ",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "environment"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-audio/stepfun-asr/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "environmental-design",
+      "architecture-design",
+      "operations-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:17.748Z",
+    "lastSeenAt": "2026-09-20T07:47:17.748Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/stepfun-tts",
+    "name": "stepfun-tts",
+    "source": "daymade/claude-code-skills",
+    "summary": "Generate Chinese / Japanese speech with StepFun's Contextual TTS — default `stepaudio-2.5-tts` (blind-judged better on neutral/emotive preset voices), `stepaudio-3-tts` for whisper & inline-prosody cases (where it won the same blind test). Replaces step-tts-2's `voice_label` with natural-language `instruction` (200 cha",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "motion",
+      "audio"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-audio/stepfun-tts/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "video-design",
+      "folk-art"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:18.265Z",
+    "lastSeenAt": "2026-09-20T07:47:18.265Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/lark-cli-router",
+    "name": "lark-cli-router",
+    "source": "daymade/claude-code-skills",
+    "summary": "Routes any Feishu/Lark/Doubao operation through the version-matched lark-cli domain guide embedded in the installed CLI, then executes and verifies the requested task. Use for 飞书/Lark/Doubao docs, drive, sheets, Base, wiki, minutes, meetings, calendar, IM, mail, tasks, approval, apps, auth/scope, resource URLs or token",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "environment"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/lark-cli-router/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "environmental-design",
+      "architecture-design",
+      "operations-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:24.166Z",
+    "lastSeenAt": "2026-09-20T07:47:24.166Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/terminal-screenshot",
+    "name": "terminal-screenshot",
+    "source": "daymade/claude-code-skills",
+    "summary": "Render a terminal CLI program's colored output to a PNG so Claude can actually SEE the real visual result — color contrast, alignment, background blocks, highlighting — instead of only reading plain text and raw ANSI escape codes. Use this whenever verifying or debugging how a CLI tool looks in the terminal: delta git ",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "art",
+      "color",
+      "pattern",
+      "visual",
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/terminal-screenshot/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "folk-art",
+      "experience-design",
+      "arts-crafts",
+      "environmental-design"
+    ],
+    "qualityScore": 89,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:29.770Z",
+    "lastSeenAt": "2026-09-20T07:47:29.770Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/skills-search",
+    "name": "skills-search",
+    "source": "daymade/claude-code-skills",
+    "summary": "This skill should be used when users want to search, discover, install, or manage Claude Code skills from the CCPM registry. Triggers include requests like \"find skills for PDF\", \"search for code review skills\", \"install cloudflare-troubleshooting\", \"list my installed skills\", \"what does skill-creator do\", or any menti",
     "security": "B",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-skill/skills-search/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "folk-art"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:45.285Z",
+    "lastSeenAt": "2026-09-20T07:47:45.285Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/excalidraw-use",
+    "name": "excalidraw-use",
+    "source": "daymade/claude-code-skills",
+    "summary": "Place existing images onto an Excalidraw whiteboard, turn a slide deck into clean per-slide images first, and inspect what is inside a .excalidraw file. Use whenever someone mentions Excalidraw, a whiteboard or canvas, a .excalidraw file, 白板 or 画板 — especially \"put these screenshots on my board\", \"add my old workshop i",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "architecture",
+      "diagram",
+      "map"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/excalidraw-use/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "architecture-design",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:48.079Z",
+    "lastSeenAt": "2026-09-20T07:47:48.079Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/gemini-history-analyzer",
+    "name": "gemini-history-analyzer",
+    "source": "daymade/claude-code-skills",
+    "summary": "Analyze Google Takeout exports of Gemini conversation history. Use when the user mentions Gemini takeout, Gemini export, Gemini history, Gemini conversation analysis, Google Takeout zip analysis, or drags a takeout zip into the project. Also use when the user asks to \"analyze my Gemini data\", \"what did I talk to Gemini",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "design",
+      "product",
+      "video",
+      "audio"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/gemini-history-analyzer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:49.386Z",
+    "lastSeenAt": "2026-09-20T07:47:49.386Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/promptfoo-evaluation",
+    "name": "promptfoo-evaluation",
+    "source": "daymade/claude-code-skills",
+    "summary": "Configures and runs LLM evaluation using Promptfoo framework. Use when setting up prompt testing, creating evaluation configs (promptfooconfig.yaml), writing Python custom assertions, implementing llm-rubric for LLM-as-judge, or managing few-shot examples in prompts. Triggers on keywords like \"promptfoo\", \"eval\", \"LLM ",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "art",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/promptfoo-evaluation/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "folk-art",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:59.188Z",
+    "lastSeenAt": "2026-09-20T07:47:59.188Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/repomix-safe-mixer",
+    "name": "repomix-safe-mixer",
+    "source": "daymade/claude-code-skills",
+    "summary": "Safely package codebases with repomix by automatically detecting and removing hardcoded credentials before packing. Use when packaging code for distribution, creating reference packages, or when the user mentions security concerns about sharing code with repomix.",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "art",
+      "pattern",
+      "environment"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/repomix-safe-mixer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "folk-art",
+      "environmental-design",
+      "architecture-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:48:00.223Z",
+    "lastSeenAt": "2026-09-20T07:48:00.223Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/setup-notifications-via-wecom",
+    "name": "setup-notifications-via-wecom",
+    "source": "daymade/claude-code-skills",
+    "summary": "Set up and send technical status notifications through WeCom (Enterprise WeChat) webhooks. Use this skill whenever the user needs to send notifications, alerts, backup completion reports, or status updates via WeCom; when they mention 企业微信, 企微机器人, webhook, or alerting; or when a message needs to be clear, unambiguous, ",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "art",
+      "pattern",
+      "craft"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/setup-notifications-via-wecom/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "folk-art",
+      "arts-crafts",
+      "operations-design"
+    ],
+    "qualityScore": 96,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:48:01.459Z",
+    "lastSeenAt": "2026-09-20T07:48:01.459Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/auto-repo-setup",
+    "name": "auto-repo-setup",
+    "source": "daymade/claude-code-skills",
+    "summary": "Diagnose, repair, and standardize repository setup and safe Git workflows for Claude Code or Codex. Use when a repository will not run, a collaborator is onboarding, dependencies or credentials are missing, the user wants startup sync, SessionStart output is duplicated, project instructions or hooks need auditing, or c",
+    "security": "C",
     "signalScore": 60,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 1410,
     "tags": [
       "product",
       "video",
-      "audio",
-      "media"
+      "editing"
     ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/comfyui/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/auto-repo-setup/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "experience-design",
       "operations-design",
       "video-design",
-      "digital-media-film",
+      "architecture-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:13.306Z",
+    "lastSeenAt": "2026-09-20T07:47:13.306Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/bilibili-source",
+    "name": "bilibili-source",
+    "source": "daymade/claude-code-skills",
+    "summary": "Fetch comprehensive, login-free data for any Bilibili (B站) video — title, UP name and follower count, publish date, partition, tags, per-part cids, live stats (view, like, coin, favorite, share, reply, danmaku), and full danmaku (bullet-comment) text. Use this skill whenever working with a Bilibili video and needing re",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "fabrication",
+      "video"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/bilibili-source/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "industrial-design",
+      "operations-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:14.256Z",
+    "lastSeenAt": "2026-09-20T07:47:14.256Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/transcript-fixer",
+    "name": "transcript-fixer",
+    "source": "daymade/claude-code-skills",
+    "summary": "Corrects speech-to-text transcription errors with dictionary rules and Claude's built-in AI (no external API key required); Native AI Correction is the default, Stage 1 alone is incomplete, and Stage 3 API is only for automation without Claude Code. Builds personalized correction databases, loads person-name ASR varian",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "audio"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-audio/transcript-fixer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:19.251Z",
+    "lastSeenAt": "2026-09-20T07:47:19.252Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/agent-web-search-setup",
+    "name": "agent-web-search-setup",
+    "source": "daymade/claude-code-skills",
+    "summary": "Sets up working web search on an agent whose model backend cannot run it. Resellers and relays that proxy Claude or Codex to another cloud (Vertex AI, Bedrock, or an OpenAI-compatible layer) do not execute the server-side web_search and web_fetch tools, so those return empty instead of failing and the model reports tha",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/agent-web-search-setup/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:19.624Z",
+    "lastSeenAt": "2026-09-20T07:47:19.624Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/claude-skills-troubleshooting",
+    "name": "claude-skills-troubleshooting",
+    "source": "daymade/claude-code-skills",
+    "summary": "Diagnose and resolve Claude Code plugin and skill issues. This skill should be used when plugins are installed but not showing in available skills list, skills are not activating as expected, or when troubleshooting enabledPlugins configuration in settings.json. Triggers include \"plugin not working\", \"skill not showing",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "architecture"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/claude-skills-troubleshooting/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "environmental-design",
+      "architecture-design",
+      "operations-design"
+    ],
+    "qualityScore": 90,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:22.385Z",
+    "lastSeenAt": "2026-09-20T07:47:22.385Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/claude-usage-analyst",
+    "name": "claude-usage-analyst",
+    "source": "daymade/claude-code-skills",
+    "summary": "Analyze Claude Code and Claude Desktop Code token usage, cost, quota burn, model mix, cache read/write, and 5-hour block consumption using ccusage evidence. Use when the user asks why Claude quota was exhausted, whether a model such as fable/opus/sonnet is unusually expensive, how many tokens were spent today or histor",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/claude-usage-analyst/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:23.594Z",
+    "lastSeenAt": "2026-09-20T07:47:23.594Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/marketplace-dev",
+    "name": "marketplace-dev",
+    "source": "daymade/claude-code-skills",
+    "summary": "Creates and maintains Claude Code plugin marketplaces, consolidates standalone skills into a new or existing suite, and moves skills between suites. Converts any Claude Code skills repository into an official plugin marketplace, generates spec-conforming .claude-plugin/marketplace.json, validates with `claude plugin va",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "editing"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/marketplace-dev/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:24.856Z",
+    "lastSeenAt": "2026-09-20T07:47:24.856Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/read-claude-code-history",
+    "name": "read-claude-code-history",
+    "source": "daymade/claude-code-skills",
+    "summary": "Reads, searches, and exports local Claude Code history without resuming work. Covers recent session inventory, exact session timelines, verbatim human input including queued mid-turn prompts, full-event keyword search, hybrid recall when wording changed, end-state triage, and deleted-file recovery across active Claude ",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "layout",
+      "vector",
+      "ui"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/read-claude-code-history/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "ui-design",
+      "folk-art"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:26.754Z",
+    "lastSeenAt": "2026-09-20T07:47:26.754Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/read-codex-history",
+    "name": "read-codex-history",
+    "source": "daymade/claude-code-skills",
+    "summary": "Reads, searches, and exports local OpenAI Codex history without continuing the old task. Lists recent Codex sessions, extracts exact prompt-ledger inputs by Session, locates a rollout by verified session_meta identity, reconstructs one chronological user/assistant timeline with fork and compaction lineage, and performs",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/read-codex-history/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:28.492Z",
+    "lastSeenAt": "2026-09-20T07:47:28.492Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/docs-cleaner",
+    "name": "docs-cleaner",
+    "source": "daymade/claude-code-skills",
+    "summary": "Consolidates redundant documentation while preserving all valuable content; keeps a doc set truthful after things change. Modes: (1) POST-CHANGE GOVERNANCE — when code, scripts, config, env vars, ports, paths, deployment, auth, tests, or a documented procedure changed; also \"which docs are now wrong\", \"check docs for i",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-docs/docs-cleaner/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:32.420Z",
+    "lastSeenAt": "2026-09-20T07:47:32.420Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/feishu-doc-scraper",
+    "name": "feishu-doc-scraper",
+    "source": "daymade/claude-code-skills",
+    "summary": "Extract Feishu (Lark) Docs, Wiki pages/collections, spreadsheets, and Minutes (妙记) transcripts into faithful local Markdown via the lark-cli API (no LLM rewriting of the body; browser-DOM fallback when lark-cli can't reach the content). Use whenever the source is a Feishu/Lark URL and fidelity matters — 导出飞书文档/合集/妙记转写,",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/feishu-doc-scraper/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:49.207Z",
+    "lastSeenAt": "2026-09-20T07:47:49.207Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/git-safety-net",
+    "name": "git-safety-net",
+    "source": "daymade/claude-code-skills",
+    "summary": "Audits, preserves, recovers, and safely retires local Git state: unpushed or wrong-branch commits, dirty or detached worktrees, forgotten duplicate clones of the same repo, untracked work no bundle can back up, orphaned stashes, dangling commits, stale branches, and squash/rebase merge uncertainty. Use when the user fe",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "operations"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/git-safety-net/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:50.366Z",
+    "lastSeenAt": "2026-09-20T07:47:50.366Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/github-ops",
+    "name": "github-ops",
+    "source": "daymade/claude-code-skills",
+    "summary": "Operates GitHub through gh CLI and the REST/GraphQL APIs with explicit target, authorization, impact preview, and independent readback. Use for pull requests, issues, Actions, repositories, collaborators, teams, organization member privileges, base permissions, 2FA enforcement, repository settings, API automation, para",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "operations"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/github-ops/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:50.734Z",
+    "lastSeenAt": "2026-09-20T07:47:50.734Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/marketplace-health-check",
+    "name": "marketplace-health-check",
+    "source": "daymade/claude-code-skills",
+    "summary": "Run a full 6-dimension health check of this Claude Code skills marketplace repo — code/script safety, documentation/SSOT consistency, security/PII leaks, open-PR triage, open-issue triage, and marketplace-manifest integrity — via a parallel fan-out Dynamic Workflow, then verify the serious findings and report them by p",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "motion",
+      "editing"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/marketplace-health-check/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 92,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:55.014Z",
+    "lastSeenAt": "2026-09-20T07:47:55.014Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/cli-demo-generator",
+    "name": "cli-demo-generator",
+    "source": "daymade/claude-code-skills",
+    "summary": "Generates professional animated CLI demos as GIFs using VHS terminal recordings. Handles tape file creation, self-bootstrapping demos with hidden setup, output noise filtering, post-processing speed-up, and frame-level verification. Use when users want to create terminal demos, record CLI workflows as GIFs, generate an",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "art",
+      "pattern",
+      "visual"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/cli-demo-generator/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "folk-art",
+      "operations-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 86,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:14.971Z",
+    "lastSeenAt": "2026-09-20T07:47:14.971Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/claude-code-ping-start-5h-quota",
+    "name": "claude-code-ping-start-5h-quota",
+    "source": "daymade/claude-code-skills",
+    "summary": "睡前/离开前额度耗尽时，设置一次性本机定时器，在 Claude 订阅额度重置后自动发一条极简 claude -p 消息，立刻开启新的 5 小时用量窗口——用户睡醒时新窗口已跑掉大半，等于白赚一个 冷却期。Use when 用户说「还有 X 小时重置额度，帮我定时戳一下 Claude」「我去睡觉了， 到点 ping 一下开启新窗口」「额度用完了，重置后帮我踩个点」「设个定时器开启新的 5 小时 冷却期」，或提到 定时戳、戳 Claude、quota ping、开窗、额度重置后自动发消息。 仅限一次性定时任务与 macOS 本机（caffeinate/BSD date）；周期性任务用 /loop 或 cron， 查询 ChatGPT/C",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/claude-code-ping-start-5h-quota/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "folk-art"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:20.371Z",
+    "lastSeenAt": "2026-09-20T07:47:20.371Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/claude-md-progressive-disclosurer",
+    "name": "claude-md-progressive-disclosurer",
+    "source": "daymade/claude-code-skills",
+    "summary": "Optimize, slim, or restructure CLAUDE.md/AGENTS.md with progressive disclosure and zero information loss. Use when the user explicitly asks to audit, 精简, 瘦身, 重构, split, or diagnose adherence problems in instruction files. Profiles the whole resident startup surface, allocates rules among prose, path rules, Skills, hook",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-claude-code/claude-md-progressive-disclosurer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 86,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:21.700Z",
+    "lastSeenAt": "2026-09-20T07:47:21.700Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/codex-image-gallery",
+    "name": "codex-image-gallery",
+    "source": "daymade/claude-code-skills",
+    "summary": "Start or reuse a self-contained local web gallery for browsing Codex-generated images. Use when the user asks to browse Codex generated images, open a local image gallery, inspect ~/.codex/generated_images, view a Codex image output folder, or browse image files produced by Codex.",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-codex/codex-image-gallery/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 83,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:30.445Z",
+    "lastSeenAt": "2026-09-20T07:47:30.446Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/photo-to-scanned-pdf",
+    "name": "photo-to-scanned-pdf",
+    "source": "daymade/claude-code-skills",
+    "summary": "Two pipelines ending at a scanner-look PDF. (1) Phone photos of paper documents (contracts, stamped certificates, receipts, forms, handwritten notes) → clean scanner-quality PDF: perspective rectification + noteshrink whitening + A4 assembly + mandatory whole-document check. Trigger: \"把照片 做成扫描件\", \"photos to scanned PDF",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product",
+      "rendering",
+      "photo"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-docs/photo-to-scanned-pdf/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "industrial-design",
+      "operations-design",
+      "fashion-design"
+    ],
+    "qualityScore": 84,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:36.237Z",
+    "lastSeenAt": "2026-09-20T07:47:36.237Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/read-docx-review",
+    "name": "read-docx-review",
+    "source": "daymade/claude-code-skills",
+    "summary": "读取 Word/WPS 审阅后的 docx，把批注（comments）与修订（track changes）提取成可逐条裁决的 markdown 对账表或 JSON。触发场景：对方批注完的合同/协议/书稿/报告回来了要读意见；「提取 docx 批注」「审阅意见对账」「读一下修订」「谁批了什么、批在哪」；WPS 云文档/Word 在线协作 导出的审阅稿；收到带修订模式改动的回稿要看对方改了什么。核心保证：修订感知——python-docx 裸读会漏掉修订插入（w:ins）的内容、认不出整段删除（w:del），本 skill 走 OpenXML SDK 引擎 不漏。只读，不改对方文件。边界：生成/排版 docx → docx-creato",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-docs/read-docx-review/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 78,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:37.192Z",
+    "lastSeenAt": "2026-09-20T07:47:37.192Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/ashare-news-fetcher",
+    "name": "ashare-news-fetcher",
+    "source": "daymade/claude-code-skills",
+    "summary": "抓取 A 股消息面情报：从财联社、华尔街见闻、金十、新浪 7x24、东财快讯、 证监会/央行/上交所/财政部政策公告、东方财富股吧等公开来源抓取与股票相关的 新闻、政策、情绪，输出结构化 JSON 或 Markdown。 当用户提到“A 股消息面”、“抓新闻”、“个股消息”、“政策监管”、“股吧情绪”、 “财联社”、“东财快讯”、“市场情绪”或需要把某只股票相关的公开情报聚合出来时 触发。也适用于“帮我看看 000001 最近有什么消息”这类口语化请求。",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-financial/ashare-news-fetcher/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 78,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:37.565Z",
+    "lastSeenAt": "2026-09-20T07:47:37.565Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/pharma-daily-report",
+    "name": "pharma-daily-report",
+    "source": "daymade/claude-code-skills",
+    "summary": "生成 A 股医药行业日报：从新浪财经抓取 20 只核心医药股实时行情，分析 7 大细分赛道排名、涨跌榜 TOP 3、资金流向，然后通过飞书发送富文本日报。 覆盖恒瑞医药、百济神州、智飞生物、药明康德、迈瑞医疗、片仔癀、云南白药等 20 只核心标的。 当用户需要 医药日报、医药行业日报、pharma daily report、 新浪财经医药数据、A 股医药板块分析、飞书推送医药数据、 制药行业快报 时触发。也适用于\"帮我看一下今天医药板块\"、 \"给飞书发一份今天的医药数据\"等口语化请求。",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/daymade-financial/pharma-daily-report/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 82,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-09-20T07:47:41.108Z",
+    "lastSeenAt": "2026-09-20T07:47:41.108Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/download-gemini-images",
+    "name": "download-gemini-images",
+    "source": "daymade/claude-code-skills",
+    "summary": "Download, export, save, or package images from a Google Gemini conversation/chat/app page, especially uploaded images or generated image previews visible in a Gemini thread. Use when the task needs logged-in Chrome/Gemini state, opening Gemini image lightboxes, downloading the larger displayed image files, renaming the",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 1410,
+    "tags": [
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/download-gemini-images/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
       "ui-design"
     ],
     "qualityScore": 79,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:04.816Z",
-    "lastSeenAt": "2026-09-14T07:57:04.816Z"
-  },
-  {
-    "id": "primo737/agents/researcher",
-    "name": "researcher",
-    "source": "primo737/agents",
-    "summary": "Research agent that gathers information from the web and local files. Use this agent when you need to find facts, explore topics, read documentation, or collect data before writing or reviewing.",
-    "security": "A",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 3,
-    "tags": [
-      "research",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/primo737/agents",
-    "skillsUrl": "https://github.com/primo737/agents/blob/claude/build-agents-HaVer/.claude/skills/researcher/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:56.157Z",
-    "lastSeenAt": "2026-09-14T07:56:56.157Z"
-  },
-  {
-    "id": "primo737/agents/design-taste-frontend-v1",
-    "name": "design-taste-frontend-v1",
-    "source": "primo737/agents",
-    "summary": "The original v1 taste-skill, preserved for projects depending on its exact behavior. The current default is `design-taste-frontend` (v2 experimental), which is a substantial rewrite. Use this v1 install name only if you need exact backward compatibility.",
-    "security": "C",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 3,
-    "tags": [
-      "design",
-      "interaction",
-      "mobile",
-      "ui",
-      "layout",
-      "typography",
-      "visual",
-      "color"
-    ],
-    "installUrl": "https://github.com/primo737/agents",
-    "skillsUrl": "https://github.com/primo737/agents/blob/claude/build-agents-HaVer/skills/design-taste-frontend-v1/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "visual-communication",
-      "arts-crafts"
-    ],
-    "qualityScore": 77,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:56.709Z",
-    "lastSeenAt": "2026-09-14T07:56:56.709Z"
-  },
-  {
-    "id": "xianyu110/awesome-gpt-image2.5/ugc-face-lock",
-    "name": "UGC 写真锁脸",
-    "source": "xianyu110/awesome-gpt-image2.5",
-    "summary": "use this when making photoreal UGC or ad portraits with Images 2.5 face-lock",
-    "security": "B",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 4,
-    "tags": [
-      "photo"
-    ],
-    "installUrl": "https://github.com/xianyu110/awesome-gpt-image2.5",
-    "skillsUrl": "https://github.com/xianyu110/awesome-gpt-image2.5/blob/main/skills/ugc-face-lock/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "visual-communication",
-      "environmental-design",
-      "operations-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:56:55.767Z",
-    "lastSeenAt": "2026-09-14T07:56:55.767Z"
-  },
-  {
-    "id": "lssingh01996-ui/aivideo/ai-video-gen",
-    "name": "ai-video-gen",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Generate AI videos from text prompts using multiple provider gateways. Use when: (1) Generating videos from text descriptions, (2) Creating AI-generated video clips for content production, (3) Image-to-video generation with a reference image, (4) Choosing between video generation providers (VEO, Kling, Sora, Runway, Se",
-    "security": "C",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "product",
-      "photo",
-      "video",
-      "editing",
-      "audio",
-      "landscape",
-      "lighting"
-    ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/ai-video-gen/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:02.653Z",
-    "lastSeenAt": "2026-09-14T07:57:02.653Z"
-  },
-  {
-    "id": "lssingh01996-ui/aivideo/agents",
-    "name": "agents",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Build voice AI agents with ElevenLabs. Use when creating voice assistants, customer service bots, interactive voice characters, or any real-time voice conversation experience.",
-    "security": "C",
-    "signalScore": 56,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "product",
-      "video",
-      "experience",
-      "environment"
-    ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/agents/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:02.458Z",
-    "lastSeenAt": "2026-09-14T07:57:02.458Z"
-  },
-  {
-    "id": "lssingh01996-ui/aivideo/dashscope",
-    "name": "dashscope",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "DashScope (Alibaba Cloud Bailian / 阿里云百炼) integration — image generation (qwen-image-2.0-pro), text-to-speech (qwen3-tts-flash), and ASR with word-level timestamps (qwen3-asr-flash-filetrans). Use when generating images via Qwen-Image, narrating via Qwen-TTS, or transcribing with word-level timestamps via Qwen-ASR.",
-    "security": "C",
-    "signalScore": 56,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "product",
-      "video",
-      "audio"
-    ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/dashscope/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "industrial-design",
-      "experience-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:05.343Z",
-    "lastSeenAt": "2026-09-14T07:57:05.343Z"
-  },
-  {
-    "id": "lssingh01996-ui/aivideo/doubao-tts",
-    "name": "doubao-tts",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Generate Mandarin and multilingual narration with Volcengine Doubao Speech 2.0. Use when creating Chinese voiceovers, when the user prefers Doubao/Volcengine/火山引擎/豆包 TTS, or when narration needs character-level timestamp metadata for subtitles.",
-    "security": "C",
-    "signalScore": 56,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "product",
-      "video",
-      "audio"
-    ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/doubao-tts/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "industrial-design",
-      "experience-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:05.543Z",
-    "lastSeenAt": "2026-09-14T07:57:05.543Z"
-  },
-  {
-    "id": "lssingh01996-ui/aivideo/azure-speech-to-text",
-    "name": "azure-speech-to-text",
-    "source": "lssingh01996-ui/aivideo",
-    "summary": "Transcribe audio to text using Azure AI Speech (Fast Transcription REST API). Use when converting audio/video to text, generating subtitles, or processing spoken content in OpenMontage. Optional cloud STT provider — preferred when AZURE_SPEECH_KEY is configured; the local faster-whisper `transcriber` is the default off",
-    "security": "C",
-    "signalScore": 55,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "product",
-      "video",
-      "audio"
-    ],
-    "installUrl": "https://github.com/lssingh01996-ui/aivideo",
-    "skillsUrl": "https://github.com/lssingh01996-ui/aivideo/blob/main/.agents/skills/azure-speech-to-text/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "industrial-design",
-      "experience-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-09-14T07:57:03.203Z",
-    "lastSeenAt": "2026-09-14T07:57:03.203Z"
+    "firstSeenAt": "2026-09-20T07:47:47.143Z",
+    "lastSeenAt": "2026-09-20T07:47:47.144Z"
   }
 ]
