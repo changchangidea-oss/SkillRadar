@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-25T07:59:12.575Z",
+  "generatedAt": "2026-09-26T07:51:19.078Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "6411e903b173cd9b4b841530e53780fcf48d81764b36e6c9d14051336ed52652",
+    "contentHash": "d135ca340593fa7a34cead7d19e4247f69291d0fc60369503a4ab9a33507206e",
     "contentHashVersion": 2,
-    "generatedAt": "2026-09-25T07:58:36.136Z",
-    "totalCount": 477,
+    "generatedAt": "2026-09-26T07:50:57.632Z",
+    "totalCount": 457,
     "mode": "local-bundled"
   },
   "production": {
@@ -20,12 +20,12 @@
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 4,
-    "capabilityGapCases": 33,
-    "averageRecommendationCount": 1.8,
+    "capabilityGapCases": 35,
+    "averageRecommendationCount": 1.76,
     "expectedHitsTotal": 31,
     "signalHitsTotal": 128,
     "anchorSignalHitsTotal": 30,
-    "averageTop1Score": 73.5
+    "averageTop1Score": 73.1
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
@@ -36,20 +36,20 @@
     "coveragePassed": 39,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 1,
+    "lowEvidenceTop3": 0,
     "specificityFailures": 4,
-    "capabilityGapCases": 32,
-    "averageRecommendationCount": 1.83,
+    "capabilityGapCases": 35,
+    "averageRecommendationCount": 1.76,
     "expectedHitsTotal": 31,
     "signalHitsTotal": 128,
     "anchorSignalHitsTotal": 30,
-    "averageTop1Score": 73.5
+    "averageTop1Score": 73.1
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": -1
+    "evidenceDelta": 0
   },
   "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
@@ -125,15 +125,14 @@
         "shadcn"
       ],
       "candidateTop3": [
-        "shadcn",
-        "nexu-io/open-design/github-dashboard-a45aef"
+        "shadcn"
       ],
       "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 2,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
-      "lowEvidenceDelta": 1
+      "lowEvidenceDelta": 0
     },
     {
       "id": "react-performance",
@@ -186,12 +185,12 @@
       "productionTop3": [
         "curiositech/some_claude_skills/interior-design-expert",
         "roble3/cc-blender-skill/blender-rendering",
-        "Gokul7904231/ShortForge/animate"
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "candidateTop3": [
         "curiositech/some_claude_skills/interior-design-expert",
         "roble3/cc-blender-skill/blender-rendering",
-        "Gokul7904231/ShortForge/animate"
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -315,11 +314,10 @@
       ],
       "candidateTop3": [
         "ai-sdk",
-        "ModelEngine-Group/nexent/nexent-test-assets-576aaa",
-        "nexu-io/open-design/clinical-case-report-638ff1"
+        "ModelEngine-Group/nexent/nexent-test-assets-576aaa"
       ],
       "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 3,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -803,16 +801,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "larksuite/cli/lark-shared-fd106a",
-        "ModernNomad-98/Project-Aegis/authorization-matrix-designer"
+        "larksuite/cli/lark-shared-fd106a"
       ],
       "candidateTop3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "larksuite/cli/lark-shared-fd106a",
-        "ModernNomad-98/Project-Aegis/authorization-matrix-designer"
+        "larksuite/cli/lark-shared-fd106a"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -910,13 +906,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "github",
-        "nexu-io/open-design/github-dashboard-a45aef",
-        "ruvnet/ruflo/agent-github-pr-manager-fd8d49"
+        "nexu-io/open-design/orbit-github",
+        "nexu-io/open-design/github-dashboard"
       ],
       "candidateTop3": [
         "github",
-        "nexu-io/open-design/github-dashboard-a45aef",
-        "ruvnet/ruflo/agent-github-pr-manager-fd8d49"
+        "nexu-io/open-design/orbit-github",
+        "nexu-io/open-design/github-dashboard"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1055,13 +1051,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "figma",
-        "agshinrajabov/no-slop-design/no-slop-design",
-        "figma/mcp-server-guide/figma-design-to-code"
+        "figma/mcp-server-guide/figma-design-to-code",
+        "nexu-io/open-design/token-map"
       ],
       "candidateTop3": [
         "figma",
-        "agshinrajabov/no-slop-design/no-slop-design",
-        "figma/mcp-server-guide/figma-design-to-code"
+        "figma/mcp-server-guide/figma-design-to-code",
+        "figma/mcp-server-guide/figma-generate-design"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1079,12 +1075,12 @@
       "productionTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "ariadoss/superskills/brand-visual"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "candidateTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "ariadoss/superskills/brand-visual"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1100,17 +1096,15 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nexu-io/open-design/magazine-poster-f52efe",
-        "zhayujie/CowAgent/image-generation-1bb1a3",
-        "vanducng/skills/marketing-design-678c70"
-      ],
-      "candidateTop3": [
-        "nexu-io/open-design/magazine-poster-f52efe",
         "vanducng/skills/marketing-design-678c70",
         "zhayujie/CowAgent/image-generation-1bb1a3"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "candidateTop3": [
+        "vanducng/skills/marketing-design-678c70",
+        "zhayujie/CowAgent/image-generation-1bb1a3"
+      ],
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1124,12 +1118,12 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "Gokul7904231/ShortForge/review-animations",
+        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "candidateTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "Gokul7904231/ShortForge/review-animations",
+        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "productionRecommendationCount": 3,
@@ -1146,14 +1140,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "clay-good/anvilate/anvilate",
-        "ModernNomad-98/Project-Aegis/eval-runner-designer",
-        "ariadoss/superskills/brand-monitoring"
+        "nexu-io/open-design/x-research",
+        "mitsuhiko/agent-stuff/openscad",
+        "nexu-io/open-design/rewrite-plan"
       ],
       "candidateTop3": [
-        "clay-good/anvilate/anvilate",
-        "ModernNomad-98/Project-Aegis/eval-runner-designer",
-        "ariadoss/superskills/brand-monitoring"
+        "nexu-io/open-design/x-research",
+        "mitsuhiko/agent-stuff/openscad",
+        "nexu-io/open-design/rewrite-plan"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,

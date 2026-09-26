@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T07:58:50.520Z",
+  "generatedAt": "2026-09-26T07:51:06.288Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
@@ -20,10 +20,10 @@
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
   "specificityFailures": 4,
-  "capabilityGapCases": 33,
-  "averageRecommendationCount": 1.8,
-  "averageRelevantTop3": 1.8,
-  "averageTop1Score": 73.5,
+  "capabilityGapCases": 35,
+  "averageRecommendationCount": 1.76,
+  "averageRelevantTop3": 1.76,
+  "averageTop1Score": 73.1,
   "expectedHitsTotal": 31,
   "signalHitsTotal": 128,
   "anchorSignalHitsTotal": 30,
@@ -54,9 +54,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 0,
+      "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 3
+      "averageRecommendationCount": 2.8
     },
     "Data & Database": {
       "cases": 5,
@@ -104,9 +104,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 3,
+      "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 1.5
+      "averageRecommendationCount": 1.25
     },
     "Mobile": {
       "cases": 4,
@@ -513,7 +513,7 @@
       "top3": [
         "curiositech/some_claude_skills/interior-design-expert",
         "roble3/cc-blender-skill/blender-rendering",
-        "Gokul7904231/ShortForge/animate"
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -561,8 +561,8 @@
           ]
         },
         {
-          "id": "Gokul7904231/ShortForge/animate",
-          "score": 76,
+          "id": "calesthio/generative-media-skills/neural-reality-capture",
+          "score": 77,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -572,7 +572,7 @@
           "identity_anchor_hits": 0,
           "signals": [
             "architecture",
-            "rendering",
+            "interior",
             "spatial"
           ]
         }
@@ -586,8 +586,8 @@
         "rendering",
         "roble3-cc-blender-skill-blender-rendering",
         "blender-rendering",
-        "gokul7904231-shortforge-animate",
-        "animate"
+        "calesthio-generative-media-skills-neural-reality-capture",
+        "neural-reality-capture"
       ]
     },
     {
@@ -2276,19 +2276,18 @@
       "pass": true,
       "top3": [
         "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "larksuite/cli/lark-shared-fd106a",
-        "ModernNomad-98/Project-Aegis/authorization-matrix-designer"
+        "larksuite/cli/lark-shared-fd106a"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 51,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 2,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2320,20 +2319,6 @@
           "signals": [
             "permissions"
           ]
-        },
-        {
-          "id": "ModernNomad-98/Project-Aegis/authorization-matrix-designer",
-          "score": 29,
-          "coverage": 0.22,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "permissions"
-          ]
         }
       ],
       "signals": [
@@ -2343,9 +2328,7 @@
         "security-hardening",
         "permissions",
         "larksuite-cli-lark-shared-fd106a",
-        "lark-shared",
-        "modernnomad-98-project-aegis-authorization-matrix-designer",
-        "authorization-matrix-designer"
+        "lark-shared"
       ]
     },
     {
@@ -2620,8 +2603,8 @@
       "pass": true,
       "top3": [
         "github",
-        "nexu-io/open-design/github-dashboard-a45aef",
-        "ruvnet/ruflo/agent-github-pr-manager-fd8d49"
+        "nexu-io/open-design/orbit-github",
+        "nexu-io/open-design/github-dashboard"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2656,9 +2639,26 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/github-dashboard-a45aef",
-          "score": 78,
-          "coverage": 0.74,
+          "id": "nexu-io/open-design/orbit-github",
+          "score": 64,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "github",
+            "requests",
+            "issues",
+            "ci"
+          ]
+        },
+        {
+          "id": "nexu-io/open-design/github-dashboard",
+          "score": 64,
+          "coverage": 0.57,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -2669,24 +2669,7 @@
             "github",
             "pull",
             "requests",
-            "issues",
-            "automation"
-          ]
-        },
-        {
-          "id": "ruvnet/ruflo/agent-github-pr-manager-fd8d49",
-          "score": 62,
-          "coverage": 0.43,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "github",
-            "ci",
-            "automation"
+            "issues"
           ]
         }
       ],
@@ -2698,10 +2681,10 @@
         "ci",
         "automation",
         "requests",
-        "nexu-io-open-design-github-dashboard-a45aef",
-        "github-dashboard",
-        "ruvnet-ruflo-agent-github-pr-manager-fd8d49",
-        "agent-github-pr-manager"
+        "nexu-io-open-design-orbit-github",
+        "orbit-github",
+        "nexu-io-open-design-github-dashboard",
+        "github-dashboard"
       ]
     },
     {
@@ -3072,8 +3055,8 @@
       "pass": true,
       "top3": [
         "figma",
-        "agshinrajabov/no-slop-design/no-slop-design",
-        "figma/mcp-server-guide/figma-design-to-code"
+        "figma/mcp-server-guide/figma-design-to-code",
+        "nexu-io/open-design/token-map"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3107,7 +3090,7 @@
           ]
         },
         {
-          "id": "agshinrajabov/no-slop-design/no-slop-design",
+          "id": "figma/mcp-server-guide/figma-design-to-code",
           "score": 69,
           "coverage": 0.58,
           "expected": false,
@@ -3123,9 +3106,9 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/figma-design-to-code",
-          "score": 69,
-          "coverage": 0.58,
+          "id": "nexu-io/open-design/token-map",
+          "score": 61,
+          "coverage": 0.46,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3134,8 +3117,7 @@
           "identity_anchor_hits": 0,
           "signals": [
             "design-system",
-            "figma",
-            "it"
+            "figma"
           ]
         }
       ],
@@ -3146,10 +3128,10 @@
         "connect",
         "implementation",
         "it",
-        "agshinrajabov-no-slop-design-no-slop-design",
-        "no-slop-design",
         "figma-mcp-server-guide-figma-design-to-code",
-        "figma-design-to-code"
+        "figma-design-to-code",
+        "nexu-io-open-design-token-map",
+        "token-map"
       ]
     },
     {
@@ -3160,7 +3142,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "ariadoss/superskills/brand-visual"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3208,8 +3190,8 @@
           ]
         },
         {
-          "id": "ariadoss/superskills/brand-visual",
-          "score": 73,
+          "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+          "score": 76,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3219,7 +3201,7 @@
           "identity_anchor_hits": 0,
           "signals": [
             "ux",
-            "usability"
+            "research"
           ]
         }
       ],
@@ -3231,8 +3213,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "ariadoss-superskills-brand-visual",
-        "brand-visual-generator"
+        "nexu-io-open-design-html-ppt-zhangzara-pink-script",
+        "html-ppt-zhangzara-pink-script"
       ]
     },
     {
@@ -3241,36 +3223,35 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nexu-io/open-design/magazine-poster-f52efe",
-        "zhayujie/CowAgent/image-generation-1bb1a3",
-        "vanducng/skills/marketing-design-678c70"
+        "vanducng/skills/marketing-design-678c70",
+        "zhayujie/CowAgent/image-generation-1bb1a3"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
-      "top1_score": 53,
+      "recommendation_count": 2,
+      "capability_gap": true,
+      "top1_score": 52,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "nexu-io/open-design/magazine-poster-f52efe",
-          "score": 53,
+          "id": "vanducng/skills/marketing-design-678c70",
+          "score": 52,
           "coverage": 0.29,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 1,
+          "required_hits": 2,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
             "poster",
-            "layout"
+            "brand"
           ]
         },
         {
@@ -3287,34 +3268,16 @@
             "visual",
             "poster"
           ]
-        },
-        {
-          "id": "vanducng/skills/marketing-design-678c70",
-          "score": 52,
-          "coverage": 0.29,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "poster",
-            "brand"
-          ]
         }
       ],
       "signals": [
         "poster",
-        "layout",
-        "nexu-io-open-design-magazine-poster-f52efe",
-        "magazine-poster",
-        "visual",
-        "zhayujie-cowagent-image-generation-1bb1a3",
-        "image-generation",
         "brand",
         "vanducng-skills-marketing-design-678c70",
-        "marketing-design"
+        "marketing-design",
+        "visual",
+        "zhayujie-cowagent-image-generation-1bb1a3",
+        "image-generation"
       ]
     },
     {
@@ -3324,7 +3287,7 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "Gokul7904231/ShortForge/review-animations",
+        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
@@ -3357,8 +3320,8 @@
           ]
         },
         {
-          "id": "Gokul7904231/ShortForge/review-animations",
-          "score": 82,
+          "id": "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+          "score": 80,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3396,8 +3359,8 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "gokul7904231-shortforge-review-animations",
-        "review-animations",
+        "heygen-com-hyperframes-hyperframes-creative-f1b96c",
+        "hyperframes-creative",
         "remotion-dev-skills-remotion-multimedia",
         "remotion-multimedia"
       ]
@@ -3408,13 +3371,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "clay-good/anvilate/anvilate",
-        "ModernNomad-98/Project-Aegis/eval-runner-designer",
-        "ariadoss/superskills/brand-monitoring"
+        "nexu-io/open-design/x-research",
+        "mitsuhiko/agent-stuff/openscad",
+        "nexu-io/open-design/rewrite-plan"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 95,
+      "top1_score": 76,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3426,71 +3389,65 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "clay-good/anvilate/anvilate",
-          "score": 95,
-          "coverage": 1,
+          "id": "nexu-io/open-design/x-research",
+          "score": 76,
+          "coverage": 0.67,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 3,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "industrial-design",
+            "industrial",
+            "product"
+          ]
+        },
+        {
+          "id": "mitsuhiko/agent-stuff/openscad",
+          "score": 68,
+          "coverage": 0.56,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "cad",
-            "industrial-design",
             "industrial",
-            "product",
             "cad"
           ]
         },
         {
-          "id": "ModernNomad-98/Project-Aegis/eval-runner-designer",
-          "score": 95,
-          "coverage": 1,
+          "id": "nexu-io/open-design/rewrite-plan",
+          "score": 72,
+          "coverage": 0.67,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 3,
+          "required_hits": 2,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "cad",
             "industrial-design",
             "industrial",
-            "product",
-            "cad"
-          ]
-        },
-        {
-          "id": "ariadoss/superskills/brand-monitoring",
-          "score": 94,
-          "coverage": 1,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "cad",
-            "industrial-design",
-            "industrial",
-            "product",
-            "cad"
+            "product"
           ]
         }
       ],
       "signals": [
-        "cad",
         "industrial-design",
         "industrial",
         "product",
-        "clay-good-anvilate-anvilate",
-        "anvilate",
-        "modernnomad-98-project-aegis-eval-runner-designer",
-        "eval-runner-designer",
-        "ariadoss-superskills-brand-monitoring",
-        "brand-monitoring"
+        "nexu-io-open-design-x-research",
+        "x-research",
+        "cad",
+        "mitsuhiko-agent-stuff-openscad",
+        "openscad",
+        "nexu-io-open-design-rewrite-plan",
+        "rewrite-plan"
       ]
     }
   ]
