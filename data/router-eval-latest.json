@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-26T07:51:06.288Z",
+  "generatedAt": "2026-09-29T08:41:45.024Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 49,
-  "passRate": 0.907,
+  "passed": 48,
+  "passRate": 0.889,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 39,
-    "passRate": 0.886
+    "passed": 38,
+    "passRate": 0.864
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 4,
-  "capabilityGapCases": 35,
+  "specificityFailures": 5,
+  "capabilityGapCases": 34,
   "averageRecommendationCount": 1.76,
   "averageRelevantTop3": 1.76,
-  "averageTop1Score": 73.1,
+  "averageTop1Score": 73.3,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 128,
-  "anchorSignalHitsTotal": 30,
+  "signalHitsTotal": 127,
+  "anchorSignalHitsTotal": 29,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -36,7 +36,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 5,
       "passRate": 1,
-      "averageRecommendationCount": 1.83
+      "averageRecommendationCount": 1.67
     },
     "Frontend": {
       "cases": 8,
@@ -94,19 +94,19 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 1,
-      "capabilityGapCases": 3,
+      "capabilityGapCases": 2,
       "passRate": 0.75,
-      "averageRecommendationCount": 1.25
+      "averageRecommendationCount": 1.75
     },
     "Security": {
       "cases": 4,
-      "passed": 4,
+      "passed": 3,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 0,
+      "specificityFailures": 1,
       "capabilityGapCases": 4,
-      "passRate": 1,
-      "averageRecommendationCount": 1.25
+      "passRate": 0.75,
+      "averageRecommendationCount": 1
     },
     "Mobile": {
       "cases": 4,
@@ -845,25 +845,24 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "MCPJam/inspector/mcp-inspector-6a44a5",
-        "MCPJam/inspector/create-mcp-eval-238940"
+        "samugit83/redamon/mcp-server-tools-519dd6"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 53,
+      "top1_score": 56,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "MCPJam/inspector/mcp-inspector-6a44a5",
-          "score": 53,
+          "id": "samugit83/redamon/mcp-server-tools-519dd6",
+          "score": 56,
           "coverage": 0.39,
           "expected": false,
           "relevant": true,
@@ -876,31 +875,14 @@
             "agent",
             "tools"
           ]
-        },
-        {
-          "id": "MCPJam/inspector/create-mcp-eval-238940",
-          "score": 40,
-          "coverage": 0.26,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 1,
-          "signals": [
-            "mcp",
-            "agent"
-          ]
         }
       ],
       "signals": [
         "mcp",
         "agent",
         "tools",
-        "mcpjam-inspector-mcp-inspector-6a44a5",
-        "mcp-inspector",
-        "mcpjam-inspector-create-mcp-eval-238940",
-        "create-mcp-eval"
+        "samugit83-redamon-mcp-server-tools-519dd6",
+        "mcp-server-tools"
       ]
     },
     {
@@ -1309,18 +1291,20 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "antfu/skills/nitro-4dd2bd"
+        "antfu/skills/nitro-4dd2bd",
+        "samugit83/redamon/graph-db-writes-8caccb",
+        "antfu/skills/pnpm-6f233e"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 80,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1340,6 +1324,38 @@
             "api",
             "backend"
           ]
+        },
+        {
+          "id": "samugit83/redamon/graph-db-writes-8caccb",
+          "score": 60,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "node",
+            "api",
+            "backend"
+          ]
+        },
+        {
+          "id": "antfu/skills/pnpm-6f233e",
+          "score": 60,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "node",
+            "api",
+            "backend"
+          ]
         }
       ],
       "signals": [
@@ -1348,7 +1364,11 @@
         "api",
         "backend",
         "antfu-skills-nitro-4dd2bd",
-        "nitro"
+        "nitro",
+        "samugit83-redamon-graph-db-writes-8caccb",
+        "graph-db-writes",
+        "antfu-skills-pnpm-6f233e",
+        "pnpm"
       ]
     },
     {
@@ -1975,11 +1995,11 @@
       "tier": "coverage",
       "pass": false,
       "top3": [
-        "droidrun/mobilerun/mobilerun-0e95f5"
+        "samugit83/redamon/redamon-testing-175aac"
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 30,
+      "top1_score": 41,
       "expected_hits": 0,
       "signal_hits": 1,
       "anchor_signal_hits": 1,
@@ -1991,9 +2011,9 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "droidrun/mobilerun/mobilerun-0e95f5",
-          "score": 30,
-          "coverage": 0.15,
+          "id": "samugit83/redamon/redamon-testing-175aac",
+          "score": 41,
+          "coverage": 0.3,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -2001,14 +2021,16 @@
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "docker"
+            "docker",
+            "cloud"
           ]
         }
       ],
       "signals": [
         "docker",
-        "droidrun-mobilerun-mobilerun-0e95f5",
-        "mobilerun-docs"
+        "cloud",
+        "samugit83-redamon-redamon-testing-175aac",
+        "redamon-testing"
       ]
     },
     {
@@ -2273,21 +2295,20 @@
       "id": "secrets-permissions",
       "domain": "Security",
       "tier": "coverage",
-      "pass": true,
+      "pass": false,
       "top3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "larksuite/cli/lark-shared-fd106a"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 51,
       "expected_hits": 0,
-      "signal_hits": 2,
-      "anchor_signal_hits": 2,
-      "anchor_candidate_count": 2,
+      "signal_hits": 1,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
-      "specificity_pass": true,
-      "relevant_top3": 2,
+      "specificity_pass": false,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2305,30 +2326,13 @@
             "secrets",
             "authentication"
           ]
-        },
-        {
-          "id": "larksuite/cli/lark-shared-fd106a",
-          "score": 34,
-          "coverage": 0.22,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "permissions"
-          ]
         }
       ],
       "signals": [
         "secrets",
         "authentication",
         "revealuistudio-revskills-security-hardening-f5fe4e",
-        "security-hardening",
-        "permissions",
-        "larksuite-cli-lark-shared-fd106a",
-        "lark-shared"
+        "security-hardening"
       ]
     },
     {
@@ -2443,8 +2447,8 @@
       "pass": false,
       "top3": [
         "callstackincubator/agent-skills/agent-device-f62531",
-        "droidrun/mobile-harness/mobile-harness-0e95f5",
-        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7"
+        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
+        "nexu-io/open-design/mobile-app"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2475,8 +2479,8 @@
           ]
         },
         {
-          "id": "droidrun/mobile-harness/mobile-harness-0e95f5",
-          "score": 68,
+          "id": "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
+          "score": 65,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -2490,8 +2494,8 @@
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-          "score": 65,
+          "id": "nexu-io/open-design/mobile-app",
+          "score": 62,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -2510,10 +2514,10 @@
         "mobile",
         "callstackincubator-agent-skills-agent-device-f62531",
         "agent-device",
-        "droidrun-mobile-harness-mobile-harness-0e95f5",
-        "mobile-harness",
         "callstackincubator-agent-skills-react-native-brownfield-migration-d1e8d7",
-        "react-native-brownfield-migration"
+        "react-native-brownfield-migration",
+        "nexu-io-open-design-mobile-app",
+        "mobile-app"
       ]
     },
     {
@@ -2640,7 +2644,7 @@
         },
         {
           "id": "nexu-io/open-design/orbit-github",
-          "score": 64,
+          "score": 65,
           "coverage": 0.57,
           "expected": false,
           "relevant": true,
@@ -2657,7 +2661,7 @@
         },
         {
           "id": "nexu-io/open-design/github-dashboard",
-          "score": 64,
+          "score": 65,
           "coverage": 0.57,
           "expected": false,
           "relevant": true,
@@ -2973,9 +2977,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "droidrun/mobilerun/mobilerun-0e95f5",
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
         "notion",
-        "flutter/agent-plugins/dart-write-documentation-4c8bb5"
+        "callstackincubator/agent-skills/writing-user-docs-846927"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2991,18 +2995,18 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "droidrun/mobilerun/mobilerun-0e95f5",
+          "id": "flutter/agent-plugins/dart-write-documentation-4c8bb5",
           "score": 54,
-          "coverage": 0.36,
+          "coverage": 0.32,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 1,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "documentation",
-            "architecture"
+            "write",
+            "documentation"
           ]
         },
         {
@@ -3021,31 +3025,31 @@
           ]
         },
         {
-          "id": "flutter/agent-plugins/dart-write-documentation-4c8bb5",
+          "id": "callstackincubator/agent-skills/writing-user-docs-846927",
           "score": 54,
-          "coverage": 0.32,
+          "coverage": 0.36,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 1,
+          "required_hits": 2,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "write",
-            "documentation"
+            "documentation",
+            "architecture"
           ]
         }
       ],
       "signals": [
+        "write",
         "documentation",
-        "architecture",
-        "droidrun-mobilerun-mobilerun-0e95f5",
-        "mobilerun-docs",
+        "flutter-agent-plugins-dart-write-documentation-4c8bb5",
+        "dart-write-documentation",
         "planning",
         "notion",
-        "write",
-        "flutter-agent-plugins-dart-write-documentation-4c8bb5",
-        "dart-write-documentation"
+        "architecture",
+        "callstackincubator-agent-skills-writing-user-docs-846927",
+        "writing-user-docs"
       ]
     },
     {
@@ -3107,7 +3111,7 @@
         },
         {
           "id": "nexu-io/open-design/token-map",
-          "score": 61,
+          "score": 62,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3191,7 +3195,7 @@
         },
         {
           "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
-          "score": 76,
+          "score": 77,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3223,8 +3227,8 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "vanducng/skills/marketing-design-678c70",
-        "zhayujie/CowAgent/image-generation-1bb1a3"
+        "zhayujie/CowAgent/image-generation-1bb1a3",
+        "vanducng/skills/marketing-design-678c70"
       ],
       "recommendation_count": 2,
       "capability_gap": true,
@@ -3240,6 +3244,21 @@
       "unsafe_top3": 0,
       "candidates": [
         {
+          "id": "zhayujie/CowAgent/image-generation-1bb1a3",
+          "score": 52,
+          "coverage": 0.29,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "visual",
+            "poster"
+          ]
+        },
+        {
           "id": "vanducng/skills/marketing-design-678c70",
           "score": 52,
           "coverage": 0.29,
@@ -3253,31 +3272,16 @@
             "poster",
             "brand"
           ]
-        },
-        {
-          "id": "zhayujie/CowAgent/image-generation-1bb1a3",
-          "score": 51,
-          "coverage": 0.29,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "visual",
-            "poster"
-          ]
         }
       ],
       "signals": [
+        "visual",
         "poster",
+        "zhayujie-cowagent-image-generation-1bb1a3",
+        "image-generation",
         "brand",
         "vanducng-skills-marketing-design-678c70",
-        "marketing-design",
-        "visual",
-        "zhayujie-cowagent-image-generation-1bb1a3",
-        "image-generation"
+        "marketing-design"
       ]
     },
     {
@@ -3371,13 +3375,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nexu-io/open-design/x-research",
         "mitsuhiko/agent-stuff/openscad",
-        "nexu-io/open-design/rewrite-plan"
+        "calesthio/generative-media-skills/ecommerce-product-imagery",
+        "calesthio/generative-media-skills/meshy-3d"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 76,
+      "top1_score": 68,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3388,22 +3392,6 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "nexu-io/open-design/x-research",
-          "score": 76,
-          "coverage": 0.67,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "industrial-design",
-            "industrial",
-            "product"
-          ]
-        },
         {
           "id": "mitsuhiko/agent-stuff/openscad",
           "score": 68,
@@ -3421,9 +3409,9 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/rewrite-plan",
-          "score": 72,
-          "coverage": 0.67,
+          "id": "calesthio/generative-media-skills/ecommerce-product-imagery",
+          "score": 60,
+          "coverage": 0.44,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3431,23 +3419,36 @@
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "industrial-design",
+            "industrial",
+            "product"
+          ]
+        },
+        {
+          "id": "calesthio/generative-media-skills/meshy-3d",
+          "score": 60,
+          "coverage": 0.44,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
             "industrial",
             "product"
           ]
         }
       ],
       "signals": [
-        "industrial-design",
-        "industrial",
-        "product",
-        "nexu-io-open-design-x-research",
-        "x-research",
         "cad",
+        "industrial",
         "mitsuhiko-agent-stuff-openscad",
         "openscad",
-        "nexu-io-open-design-rewrite-plan",
-        "rewrite-plan"
+        "product",
+        "calesthio-generative-media-skills-ecommerce-product-imagery",
+        "e-commerce-product-imagery",
+        "calesthio-generative-media-skills-meshy-3d",
+        "meshy-3d"
       ]
     }
   ]
