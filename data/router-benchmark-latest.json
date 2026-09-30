@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T10:06:18.091Z",
+  "generatedAt": "2026-09-30T09:58:33.876Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
@@ -7,7 +7,7 @@
   "passRate": 1,
   "unsafeTop3": 0,
   "capabilityGapCases": 4,
-  "averageRecommendationCount": 1.86,
+  "averageRecommendationCount": 2.14,
   "averageTop1Score": 84.1,
   "projectContextFixture": "passed",
   "results": [
@@ -92,9 +92,10 @@
       "id": "shadcn-system",
       "pass": true,
       "top3": [
-        "shadcn"
+        "shadcn",
+        "openstatusHQ/data-table-filters/shadcn-b0aba5"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 89,
       "expected_hits": 1,
@@ -141,9 +142,10 @@
       "id": "frontend-polish",
       "pass": true,
       "top3": [
-        "frontend-design"
+        "frontend-design",
+        "openstatusHQ/data-table-filters/frontend-design-4fb235"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 87,
       "expected_hits": 1,
@@ -154,7 +156,8 @@
         "polish",
         "react",
         "dashboard",
-        "interface"
+        "interface",
+        "quality"
       ],
       "context": {
         "mode": "task-only",
