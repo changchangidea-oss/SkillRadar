@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-30T08:42:14.759Z",
+  "generatedAt": "2026-10-02T08:41:01.985Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 48,
-  "passRate": 0.889,
+  "passed": 51,
+  "passRate": 0.944,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 38,
-    "passRate": 0.864
+    "passed": 41,
+    "passRate": 0.932
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 5,
+  "specificityFailures": 2,
   "capabilityGapCases": 33,
-  "averageRecommendationCount": 1.85,
-  "averageRelevantTop3": 1.85,
-  "averageTop1Score": 73.5,
+  "averageRecommendationCount": 1.93,
+  "averageRelevantTop3": 1.93,
+  "averageTop1Score": 76.3,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 127,
-  "anchorSignalHitsTotal": 29,
+  "signalHitsTotal": 136,
+  "anchorSignalHitsTotal": 32,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -34,9 +34,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 4,
+      "capabilityGapCases": 5,
       "passRate": 1,
-      "averageRecommendationCount": 2
+      "averageRecommendationCount": 1.83
     },
     "Frontend": {
       "cases": 8,
@@ -70,13 +70,13 @@
     },
     "DevOps & Cloud": {
       "cases": 5,
-      "passed": 4,
+      "passed": 5,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 1,
-      "capabilityGapCases": 5,
-      "passRate": 0.8,
-      "averageRecommendationCount": 1.2
+      "specificityFailures": 0,
+      "capabilityGapCases": 4,
+      "passRate": 1,
+      "averageRecommendationCount": 1.6
     },
     "Testing & Quality": {
       "cases": 5,
@@ -106,17 +106,17 @@
       "specificityFailures": 1,
       "capabilityGapCases": 4,
       "passRate": 0.75,
-      "averageRecommendationCount": 1
+      "averageRecommendationCount": 1.25
     },
     "Mobile": {
       "cases": 4,
-      "passed": 2,
+      "passed": 4,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 2,
+      "specificityFailures": 0,
       "capabilityGapCases": 1,
-      "passRate": 0.5,
-      "averageRecommendationCount": 2.25
+      "passRate": 1,
+      "averageRecommendationCount": 2.5
     },
     "Automation & Integrations": {
       "cases": 4,
@@ -136,7 +136,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 2,
       "passRate": 0.75,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 2
     }
   },
   "results": [
@@ -856,7 +856,7 @@
         },
         {
           "id": "redis/agent-skills/redis-semantic-cache-9c2b67",
-          "score": 31,
+          "score": 30,
           "coverage": 0.2,
           "expected": false,
           "relevant": true,
@@ -884,19 +884,18 @@
       "pass": true,
       "top3": [
         "samugit83/redamon/mcp-server-tools-519dd6",
-        "nirholas/three.ws/connect-three-ws-mcp",
         "openstatusHQ/data-table-filters/mcp-builder-257b1a"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 56,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -914,22 +913,6 @@
             "mcp",
             "agent",
             "tools"
-          ]
-        },
-        {
-          "id": "nirholas/three.ws/connect-three-ws-mcp",
-          "score": 49,
-          "coverage": 0.39,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 1,
-          "signals": [
-            "mcp",
-            "agent",
-            "can"
           ]
         },
         {
@@ -955,9 +938,6 @@
         "tools",
         "samugit83-redamon-mcp-server-tools-519dd6",
         "mcp-server-tools",
-        "can",
-        "nirholas-three.ws-connect-three-ws-mcp",
-        "connect-three-ws-mcp",
         "openstatushq-data-table-filters-mcp-builder-257b1a",
         "mcp-builder"
       ]
@@ -1390,7 +1370,7 @@
       "top3": [
         "antfu/skills/nitro-4dd2bd",
         "openstatusHQ/data-table-filters/mcp-builder-257b1a",
-        "samugit83/redamon/graph-db-writes-8caccb"
+        "antfu/skills/pnpm-6f233e"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -1440,7 +1420,7 @@
           ]
         },
         {
-          "id": "samugit83/redamon/graph-db-writes-8caccb",
+          "id": "antfu/skills/pnpm-6f233e",
           "score": 60,
           "coverage": 0.57,
           "expected": false,
@@ -1465,8 +1445,8 @@
         "nitro",
         "openstatushq-data-table-filters-mcp-builder-257b1a",
         "mcp-builder",
-        "samugit83-redamon-graph-db-writes-8caccb",
-        "graph-db-writes"
+        "antfu-skills-pnpm-6f233e",
+        "pnpm"
       ]
     },
     {
@@ -2092,23 +2072,40 @@
       "id": "docker-kubernetes",
       "domain": "DevOps & Cloud",
       "tier": "coverage",
-      "pass": false,
+      "pass": true,
       "top3": [
-        "samugit83/redamon/redamon-testing-175aac"
+        "CoWork-OS/CoWork-OS/kubernetes-ops",
+        "samugit83/redamon/redamon-testing-175aac",
+        "CoWork-OS/CoWork-OS/docker-compose-ops"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
-      "top1_score": 41,
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 48,
       "expected_hits": 0,
-      "signal_hits": 1,
-      "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "signal_hits": 3,
+      "anchor_signal_hits": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 1,
+      "specificity_pass": true,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "CoWork-OS/CoWork-OS/kubernetes-ops",
+          "score": 48,
+          "coverage": 0.35,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "deploy",
+            "kubernetes"
+          ]
+        },
         {
           "id": "samugit83/redamon/redamon-testing-175aac",
           "score": 41,
@@ -2123,13 +2120,35 @@
             "docker",
             "cloud"
           ]
+        },
+        {
+          "id": "CoWork-OS/CoWork-OS/docker-compose-ops",
+          "score": 43,
+          "coverage": 0.3,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "docker",
+            "service"
+          ]
         }
       ],
       "signals": [
+        "deploy",
+        "kubernetes",
+        "cowork-os-cowork-os-kubernetes-ops",
+        "kubernetes-ops",
         "docker",
         "cloud",
         "samugit83-redamon-redamon-testing-175aac",
-        "redamon-testing"
+        "redamon-testing",
+        "service",
+        "cowork-os-cowork-os-docker-compose-ops",
+        "docker-compose-ops"
       ]
     },
     {
@@ -2396,18 +2415,19 @@
       "tier": "coverage",
       "pass": false,
       "top3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e",
+        "CoWork-OS/CoWork-OS/1password"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 51,
       "expected_hits": 0,
       "signal_hits": 1,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2425,13 +2445,29 @@
             "secrets",
             "authentication"
           ]
+        },
+        {
+          "id": "CoWork-OS/CoWork-OS/1password",
+          "score": 25,
+          "coverage": 0.17,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "secrets"
+          ]
         }
       ],
       "signals": [
         "secrets",
         "authentication",
         "revealuistudio-revskills-security-hardening-f5fe4e",
-        "security-hardening"
+        "security-hardening",
+        "cowork-os-cowork-os-1password",
+        "1password"
       ]
     },
     {
@@ -2475,7 +2511,7 @@
         },
         {
           "id": "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
-          "score": 92,
+          "score": 91,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -2491,7 +2527,7 @@
         },
         {
           "id": "callstackincubator/agent-skills/upgrading-react-native-5bab40",
-          "score": 92,
+          "score": 91,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -2522,42 +2558,67 @@
       "id": "swiftui-ios",
       "domain": "Mobile",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "CoWork-OS/CoWork-OS/ios-development"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 62,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 3,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "CoWork-OS/CoWork-OS/ios-development",
+          "score": 62,
+          "coverage": 0.53,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "ios",
+            "swiftui",
+            "mobile"
+          ]
+        }
+      ],
+      "signals": [
+        "ios",
+        "swiftui",
+        "mobile",
+        "cowork-os-cowork-os-ios-development",
+        "ios-development"
+      ]
     },
     {
       "id": "android-kotlin",
       "domain": "Mobile",
       "tier": "coverage",
-      "pass": false,
+      "pass": true,
       "top3": [
         "callstackincubator/agent-skills/agent-device-f62531",
-        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/github-actions-53c661"
+        "CoWork-OS/CoWork-OS/android-development",
+        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
       "top1_score": 68,
       "expected_hits": 0,
-      "signal_hits": 2,
-      "anchor_signal_hits": 1,
+      "signal_hits": 3,
+      "anchor_signal_hits": 2,
       "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
+      "specificity_pass": true,
       "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
@@ -2578,23 +2639,23 @@
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-          "score": 65,
+          "id": "CoWork-OS/CoWork-OS/android-development",
+          "score": 63,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
           "required_hits": 2,
-          "anchor_hits": 1,
+          "anchor_hits": 2,
           "identity_anchor_hits": 0,
           "signals": [
             "android",
-            "mobile"
+            "kotlin"
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/github-actions-53c661",
-          "score": 64,
+          "id": "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
+          "score": 65,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -2613,10 +2674,11 @@
         "mobile",
         "callstackincubator-agent-skills-agent-device-f62531",
         "agent-device",
+        "kotlin",
+        "cowork-os-cowork-os-android-development",
+        "android-development",
         "callstackincubator-agent-skills-react-native-brownfield-migration-d1e8d7",
-        "react-native-brownfield-migration",
-        "callstackincubator-agent-skills-github-actions-53c661",
-        "github-actions"
+        "react-native-brownfield-migration"
       ]
     },
     {
@@ -2985,21 +3047,46 @@
       "domain": "Docs & Research",
       "tier": "coverage",
       "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "top3": [
+        "lemma-work/lemma-platform/lemma-app-design"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 67,
       "expected_hits": 0,
-      "signal_hits": 0,
+      "signal_hits": 3,
       "anchor_signal_hits": 0,
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 0,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "lemma-work/lemma-platform/lemma-app-design",
+          "score": 67,
+          "coverage": 0.56,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "information-architecture",
+            "product",
+            "ux"
+          ]
+        }
+      ],
+      "signals": [
+        "information-architecture",
+        "product",
+        "ux",
+        "lemma-work-lemma-platform-lemma-app-design",
+        "lemma-app-design"
+      ]
     },
     {
       "id": "notion-research",
@@ -3057,13 +3144,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
+        "callstackincubator/agent-skills/writing-user-docs-846927",
         "notion",
-        "callstackincubator/agent-skills/writing-user-docs-846927"
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 54,
+      "top1_score": 55,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
@@ -3075,18 +3162,18 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "flutter/agent-plugins/dart-write-documentation-4c8bb5",
-          "score": 54,
-          "coverage": 0.32,
+          "id": "callstackincubator/agent-skills/writing-user-docs-846927",
+          "score": 55,
+          "coverage": 0.36,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 1,
+          "required_hits": 2,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "write",
-            "documentation"
+            "documentation",
+            "architecture"
           ]
         },
         {
@@ -3105,31 +3192,31 @@
           ]
         },
         {
-          "id": "callstackincubator/agent-skills/writing-user-docs-846927",
+          "id": "flutter/agent-plugins/dart-write-documentation-4c8bb5",
           "score": 54,
-          "coverage": 0.36,
+          "coverage": 0.32,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 1,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "documentation",
-            "architecture"
+            "write",
+            "documentation"
           ]
         }
       ],
       "signals": [
-        "write",
         "documentation",
-        "flutter-agent-plugins-dart-write-documentation-4c8bb5",
-        "dart-write-documentation",
-        "planning",
-        "notion",
         "architecture",
         "callstackincubator-agent-skills-writing-user-docs-846927",
-        "writing-user-docs"
+        "writing-user-docs",
+        "planning",
+        "notion",
+        "write",
+        "flutter-agent-plugins-dart-write-documentation-4c8bb5",
+        "dart-write-documentation"
       ]
     },
     {
@@ -3226,7 +3313,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "kwakseongjae/oh-my-design/omd-orchestrator"
+        "curiositech/some_claude_skills/human-centered-design-fundamentals"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3274,8 +3361,8 @@
           ]
         },
         {
-          "id": "kwakseongjae/oh-my-design/omd-orchestrator",
-          "score": 77,
+          "id": "curiositech/some_claude_skills/human-centered-design-fundamentals",
+          "score": 73,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3297,8 +3384,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "kwakseongjae-oh-my-design-omd-orchestrator",
-        "omd-orchestrator"
+        "curiositech-some-claude-skills-human-centered-design-fundamentals",
+        "human-centered-design-fundamentals"
       ]
     },
     {
@@ -3390,7 +3477,7 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "heygen-com/hyperframes/hyperframes-creative",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
@@ -3423,8 +3510,8 @@
           ]
         },
         {
-          "id": "heygen-com/hyperframes/hyperframes-creative-f1b96c",
-          "score": 80,
+          "id": "heygen-com/hyperframes/hyperframes-creative",
+          "score": 79,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3462,7 +3549,7 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "heygen-com-hyperframes-hyperframes-creative-f1b96c",
+        "heygen-com-hyperframes-hyperframes-creative",
         "hyperframes-creative",
         "remotion-dev-skills-remotion-multimedia",
         "remotion-multimedia"
@@ -3474,13 +3561,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "kwakseongjae/oh-my-design/omd-kr-writer",
-        "mitsuhiko/agent-stuff/openscad",
-        "kwakseongjae/oh-my-design/omd-update"
+        "CoWork-OS/CoWork-OS/email-marketing-bible",
+        "CoWork-OS/CoWork-OS/cowork-multi-agent-research",
+        "CoWork-OS/CoWork-OS/threat-model"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 77,
+      "top1_score": 92,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3492,8 +3579,26 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "kwakseongjae/oh-my-design/omd-kr-writer",
-          "score": 77,
+          "id": "CoWork-OS/CoWork-OS/email-marketing-bible",
+          "score": 92,
+          "coverage": 1,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "cad",
+            "industrial-design",
+            "industrial",
+            "product",
+            "cad"
+          ]
+        },
+        {
+          "id": "CoWork-OS/CoWork-OS/cowork-multi-agent-research",
+          "score": 76,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3508,24 +3613,8 @@
           ]
         },
         {
-          "id": "mitsuhiko/agent-stuff/openscad",
-          "score": 68,
-          "coverage": 0.56,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "cad",
-            "industrial",
-            "cad"
-          ]
-        },
-        {
-          "id": "kwakseongjae/oh-my-design/omd-update",
-          "score": 77,
+          "id": "CoWork-OS/CoWork-OS/threat-model",
+          "score": 76,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3541,16 +3630,16 @@
         }
       ],
       "signals": [
+        "cad",
         "industrial-design",
         "industrial",
         "product",
-        "kwakseongjae-oh-my-design-omd-kr-writer",
-        "omd-kr-writer",
-        "cad",
-        "mitsuhiko-agent-stuff-openscad",
-        "openscad",
-        "kwakseongjae-oh-my-design-omd-update",
-        "omd-update"
+        "cowork-os-cowork-os-email-marketing-bible",
+        "email-marketing-bible",
+        "cowork-os-cowork-os-cowork-multi-agent-research",
+        "cowork-multi-agent-research",
+        "cowork-os-cowork-os-threat-model",
+        "threat-model"
       ]
     }
   ]

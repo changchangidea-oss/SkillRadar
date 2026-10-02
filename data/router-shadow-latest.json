@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-09-30T08:42:36.057Z",
+  "generatedAt": "2026-10-02T08:41:22.671Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "4642aaff71bc27dd3231eec6b9d3148bf0d97c3db4c6a74f9b9d2a819ec8e5f1",
+    "contentHash": "bb1da8b2c4934b4ff2ce2c92da55dbd12a3f6dd4cb8480da4b2564db0fd8d912",
     "contentHashVersion": 2,
-    "generatedAt": "2026-09-30T08:42:00.766Z",
+    "generatedAt": "2026-10-02T08:40:48.413Z",
     "totalCount": 453,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 48,
+    "passed": 51,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 38,
+    "coveragePassed": 41,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
-    "specificityFailures": 5,
+    "specificityFailures": 2,
     "capabilityGapCases": 33,
-    "averageRecommendationCount": 1.85,
+    "averageRecommendationCount": 1.93,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 127,
-    "anchorSignalHitsTotal": 29,
-    "averageTop1Score": 73.5
+    "signalHitsTotal": 136,
+    "anchorSignalHitsTotal": 32,
+    "averageTop1Score": 76.3
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 48,
+    "passed": 51,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 38,
+    "coveragePassed": 41,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 1,
-    "specificityFailures": 5,
+    "specificityFailures": 2,
     "capabilityGapCases": 31,
-    "averageRecommendationCount": 1.89,
+    "averageRecommendationCount": 1.96,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 126,
-    "anchorSignalHitsTotal": 29,
-    "averageTop1Score": 73.5
+    "signalHitsTotal": 136,
+    "anchorSignalHitsTotal": 32,
+    "averageTop1Score": 76.3
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": -2
+    "evidenceDelta": -1
   },
   "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
@@ -294,16 +294,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "samugit83/redamon/mcp-server-tools-519dd6",
-        "nirholas/three.ws/connect-three-ws-mcp",
         "openstatusHQ/data-table-filters/mcp-builder-257b1a"
       ],
       "candidateTop3": [
         "samugit83/redamon/mcp-server-tools-519dd6",
-        "nirholas/three.ws/connect-three-ws-mcp",
         "openstatusHQ/data-table-filters/mcp-builder-257b1a"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -460,12 +458,12 @@
       "productionTop3": [
         "antfu/skills/nitro-4dd2bd",
         "openstatusHQ/data-table-filters/mcp-builder-257b1a",
-        "samugit83/redamon/graph-db-writes-8caccb"
+        "antfu/skills/pnpm-6f233e"
       ],
       "candidateTop3": [
         "antfu/skills/nitro-4dd2bd",
         "openstatusHQ/data-table-filters/mcp-builder-257b1a",
-        "samugit83/redamon/graph-db-writes-8caccb"
+        "antfu/skills/pnpm-6f233e"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -693,18 +691,22 @@
     },
     {
       "id": "docker-kubernetes",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
-        "samugit83/redamon/redamon-testing-175aac"
+        "CoWork-OS/CoWork-OS/kubernetes-ops",
+        "samugit83/redamon/redamon-testing-175aac",
+        "CoWork-OS/CoWork-OS/docker-compose-ops"
       ],
       "candidateTop3": [
-        "samugit83/redamon/redamon-testing-175aac"
+        "CoWork-OS/CoWork-OS/kubernetes-ops",
+        "samugit83/redamon/redamon-testing-175aac",
+        "CoWork-OS/CoWork-OS/docker-compose-ops"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -814,13 +816,15 @@
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
       "productionTop3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e",
+        "CoWork-OS/CoWork-OS/1password"
       ],
       "candidateTop3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e",
+        "CoWork-OS/CoWork-OS/1password"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -851,14 +855,18 @@
     },
     {
       "id": "swiftui-ios",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
+      "productionTop3": [
+        "CoWork-OS/CoWork-OS/ios-development"
+      ],
+      "candidateTop3": [
+        "CoWork-OS/CoWork-OS/ios-development"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -866,19 +874,19 @@
     },
     {
       "id": "android-kotlin",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
       "productionTop3": [
         "callstackincubator/agent-skills/agent-device-f62531",
-        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/github-actions-53c661"
+        "CoWork-OS/CoWork-OS/android-development",
+        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7"
       ],
       "candidateTop3": [
         "callstackincubator/agent-skills/agent-device-f62531",
-        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
-        "callstackincubator/agent-skills/github-actions-53c661"
+        "CoWork-OS/CoWork-OS/android-development",
+        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1002,10 +1010,14 @@
       "candidatePass": false,
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionTop3": [
+        "lemma-work/lemma-platform/lemma-app-design"
+      ],
+      "candidateTop3": [
+        "lemma-work/lemma-platform/lemma-app-design"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1037,14 +1049,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
+        "callstackincubator/agent-skills/writing-user-docs-846927",
         "notion",
-        "callstackincubator/agent-skills/writing-user-docs-846927"
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5"
       ],
       "candidateTop3": [
-        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
+        "callstackincubator/agent-skills/writing-user-docs-846927",
         "notion",
-        "callstackincubator/agent-skills/writing-user-docs-846927"
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1085,12 +1097,12 @@
       "productionTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "kwakseongjae/oh-my-design/omd-orchestrator"
+        "curiositech/some_claude_skills/human-centered-design-fundamentals"
       ],
       "candidateTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "kwakseongjae/oh-my-design/omd-orchestrator"
+        "curiositech/some_claude_skills/human-centered-design-fundamentals"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1130,12 +1142,12 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "heygen-com/hyperframes/hyperframes-creative",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "candidateTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "heygen-com/hyperframes/hyperframes-keyframes",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "productionRecommendationCount": 3,
@@ -1152,19 +1164,19 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "kwakseongjae/oh-my-design/omd-kr-writer",
-        "mitsuhiko/agent-stuff/openscad",
-        "kwakseongjae/oh-my-design/omd-update"
+        "CoWork-OS/CoWork-OS/email-marketing-bible",
+        "CoWork-OS/CoWork-OS/cowork-multi-agent-research",
+        "CoWork-OS/CoWork-OS/threat-model"
       ],
       "candidateTop3": [
-        "kwakseongjae/oh-my-design/omd-kr-writer",
-        "kwakseongjae/oh-my-design/omd-update",
-        "nirholas/three.ws/okx-ai-guide"
+        "CoWork-OS/CoWork-OS/email-marketing-bible",
+        "CoWork-OS/CoWork-OS/cowork-multi-agent-research",
+        "CoWork-OS/CoWork-OS/threat-model"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": -1,
+      "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
       "lowEvidenceDelta": 0
     }
