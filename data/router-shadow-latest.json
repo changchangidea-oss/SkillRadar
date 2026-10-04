@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-10-02T08:41:22.671Z",
+  "generatedAt": "2026-10-04T08:33:54.034Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "bb1da8b2c4934b4ff2ce2c92da55dbd12a3f6dd4cb8480da4b2564db0fd8d912",
+    "contentHash": "a765e8563d83e71cde6b347d735e92d9e5e54248a35954ca44448c313df0e4c7",
     "contentHashVersion": 2,
-    "generatedAt": "2026-10-02T08:40:48.413Z",
-    "totalCount": 453,
+    "generatedAt": "2026-10-04T08:33:22.411Z",
+    "totalCount": 383,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 51,
+    "passed": 48,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 41,
+    "coveragePassed": 38,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
-    "specificityFailures": 2,
-    "capabilityGapCases": 33,
-    "averageRecommendationCount": 1.93,
+    "specificityFailures": 5,
+    "capabilityGapCases": 31,
+    "averageRecommendationCount": 1.91,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 136,
-    "anchorSignalHitsTotal": 32,
-    "averageTop1Score": 76.3
+    "signalHitsTotal": 127,
+    "anchorSignalHitsTotal": 29,
+    "averageTop1Score": 73.9
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 51,
+    "passed": 48,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 41,
+    "coveragePassed": 38,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 1,
-    "specificityFailures": 2,
-    "capabilityGapCases": 31,
-    "averageRecommendationCount": 1.96,
+    "specificityFailures": 5,
+    "capabilityGapCases": 29,
+    "averageRecommendationCount": 1.94,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 136,
-    "anchorSignalHitsTotal": 32,
-    "averageTop1Score": 76.3
+    "signalHitsTotal": 127,
+    "anchorSignalHitsTotal": 29,
+    "averageTop1Score": 73.9
   },
   "gates": {
     "safetyPass": true,
@@ -168,14 +168,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/frontend-design",
         "openstatusHQ/data-table-filters/frontend-design-4fb235"
       ],
       "candidateTop3": [
         "frontend-design",
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/frontend-design",
         "openstatusHQ/data-table-filters/frontend-design-4fb235"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -250,16 +252,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "langgenius/dify/frontend-testing-c86f15",
-        "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "antfu/skills/vue-testing-best-practices-a35c88"
+        "langgenius/dify/e2e-cucumber-playwright-1de203"
       ],
       "candidateTop3": [
         "langgenius/dify/frontend-testing-c86f15",
-        "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "antfu/skills/vue-testing-best-practices-a35c88"
+        "langgenius/dify/e2e-cucumber-playwright-1de203"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -273,14 +273,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "ai-sdk",
-        "redis/agent-skills/redis-semantic-cache-9c2b67"
+        "stacksjs/stacks/stacks-ai-aeaa1c",
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/frontend-design"
       ],
       "candidateTop3": [
         "ai-sdk",
-        "redis/agent-skills/redis-semantic-cache-9c2b67"
+        "stacksjs/stacks/stacks-ai-aeaa1c",
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/frontend-design"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -294,14 +296,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "samugit83/redamon/mcp-server-tools-519dd6",
-        "openstatusHQ/data-table-filters/mcp-builder-257b1a"
+        "openstatusHQ/data-table-filters/mcp-builder-257b1a",
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/mcp-builder"
       ],
       "candidateTop3": [
         "samugit83/redamon/mcp-server-tools-519dd6",
-        "openstatusHQ/data-table-filters/mcp-builder-257b1a"
+        "openstatusHQ/data-table-filters/mcp-builder-257b1a",
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/mcp-builder"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -394,14 +398,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "frontend-design",
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/frontend-design",
         "openstatusHQ/data-table-filters/frontend-design-4fb235"
       ],
       "candidateTop3": [
         "frontend-design",
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/frontend-design",
         "openstatusHQ/data-table-filters/frontend-design-4fb235"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -458,12 +464,12 @@
       "productionTop3": [
         "antfu/skills/nitro-4dd2bd",
         "openstatusHQ/data-table-filters/mcp-builder-257b1a",
-        "antfu/skills/pnpm-6f233e"
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/mcp-builder"
       ],
       "candidateTop3": [
         "antfu/skills/nitro-4dd2bd",
         "openstatusHQ/data-table-filters/mcp-builder-257b1a",
-        "antfu/skills/pnpm-6f233e"
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/mcp-builder"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -553,12 +559,12 @@
       "productionTop3": [
         "redis/agent-skills/redis-semantic-cache-9c2b67",
         "redis/agent-skills/redis-security-5fdcbb",
-        "redis/agent-skills/redis-core-29e2a4"
+        "stacksjs/stacks/stacks-cache-8d3097"
       ],
       "candidateTop3": [
         "redis/agent-skills/redis-semantic-cache-9c2b67",
         "redis/agent-skills/redis-security-5fdcbb",
-        "redis/agent-skills/redis-core-29e2a4"
+        "stacksjs/stacks/stacks-cache-8d3097"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -618,12 +624,12 @@
       "productionTop3": [
         "react-best-practices",
         "flutter/agent-plugins/code-review-e26d76",
-        "openstatusHQ/data-table-filters/improve-ff4f63"
+        "spf13/go-skills/go-179b98"
       ],
       "candidateTop3": [
         "react-best-practices",
         "flutter/agent-plugins/code-review-e26d76",
-        "openstatusHQ/data-table-filters/vercel-react-best-practices-69a878"
+        "spf13/go-skills/go-179b98"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -691,22 +697,20 @@
     },
     {
       "id": "docker-kubernetes",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
       "productionTop3": [
-        "CoWork-OS/CoWork-OS/kubernetes-ops",
-        "samugit83/redamon/redamon-testing-175aac",
-        "CoWork-OS/CoWork-OS/docker-compose-ops"
+        "stacksjs/stacks/stacks-build-3bf5d3",
+        "samugit83/redamon/redamon-testing-175aac"
       ],
       "candidateTop3": [
-        "CoWork-OS/CoWork-OS/kubernetes-ops",
-        "samugit83/redamon/redamon-testing-175aac",
-        "CoWork-OS/CoWork-OS/docker-compose-ops"
+        "stacksjs/stacks/stacks-build-3bf5d3",
+        "samugit83/redamon/redamon-testing-175aac"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -816,15 +820,13 @@
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
       "productionTop3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "CoWork-OS/CoWork-OS/1password"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e"
       ],
       "candidateTop3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "CoWork-OS/CoWork-OS/1password"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -855,18 +857,14 @@
     },
     {
       "id": "swiftui-ios",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
-      "productionTop3": [
-        "CoWork-OS/CoWork-OS/ios-development"
-      ],
-      "candidateTop3": [
-        "CoWork-OS/CoWork-OS/ios-development"
-      ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -874,19 +872,19 @@
     },
     {
       "id": "android-kotlin",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
       "productionTop3": [
         "callstackincubator/agent-skills/agent-device-f62531",
-        "CoWork-OS/CoWork-OS/android-development",
-        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7"
+        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
+        "callstackincubator/agent-skills/github-actions-53c661"
       ],
       "candidateTop3": [
         "callstackincubator/agent-skills/agent-device-f62531",
-        "CoWork-OS/CoWork-OS/android-development",
-        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7"
+        "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
+        "callstackincubator/agent-skills/github-actions-53c661"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1010,14 +1008,10 @@
       "candidatePass": false,
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
-      "productionTop3": [
-        "lemma-work/lemma-platform/lemma-app-design"
-      ],
-      "candidateTop3": [
-        "lemma-work/lemma-platform/lemma-app-design"
-      ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1164,14 +1158,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "CoWork-OS/CoWork-OS/email-marketing-bible",
-        "CoWork-OS/CoWork-OS/cowork-multi-agent-research",
-        "CoWork-OS/CoWork-OS/threat-model"
+        "VibeBB/UX-creator-agent/ux-theory-lenses",
+        "VibeBB/UX-creator-agent/ux-ruby-style",
+        "mhuzaifawebdev/paragon-automations/pgi-score-call"
       ],
       "candidateTop3": [
-        "CoWork-OS/CoWork-OS/email-marketing-bible",
-        "CoWork-OS/CoWork-OS/cowork-multi-agent-research",
-        "CoWork-OS/CoWork-OS/threat-model"
+        "VibeBB/UX-creator-agent/ux-theory-lenses",
+        "VibeBB/UX-creator-agent/ux-ruby-style",
+        "mhuzaifawebdev/paragon-automations/pgi-score-call"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,

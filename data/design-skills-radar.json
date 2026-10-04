@@ -5,9 +5,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Add captions or subtitles to an existing single-subject talking-head video without editing the footage. Use for plain verbatim captions, cinematic captions embedded behind the subject, VFX captions, “炸/特效/酷炫字幕,” or a named identity from the 35-style catalog. Route by visual identity, not by backend engine. The quiet `a",
     "security": "C",
-    "signalScore": 82,
+    "signalScore": 83,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -33,7 +33,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:32.042Z",
-    "lastSeenAt": "2026-10-02T08:36:32.042Z"
+    "lastSeenAt": "2026-10-04T08:30:01.510Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-core",
@@ -41,9 +41,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing attributes, `class=\"clip\"`, tracks, sub-compositions, variables, framework-owned media playback, deterministic-render rules, and validation. Read before writing composition HTML.",
     "security": "A",
-    "signalScore": 80,
+    "signalScore": 81,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "motion",
@@ -65,7 +65,7 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:36.308Z",
-    "lastSeenAt": "2026-10-02T08:36:36.308Z"
+    "lastSeenAt": "2026-10-04T08:30:05.891Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-keyframes",
@@ -73,9 +73,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Use when a HyperFrames composition needs a punch-in, punch-out, zoom, reframe, Ken Burns treatment, camera move, visual match/whip handoff, or other seek-safe 2D/3D keyframes; also for GSAP, CSS keyframes, Anime.js, WAAPI, FLIP, paths, masks, SVG morph/draw, text trails, 3D depth, or `hyperframes keyframes` diagnostics",
     "security": "A",
-    "signalScore": 79,
+    "signalScore": 80,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -99,7 +99,7 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:37.437Z",
-    "lastSeenAt": "2026-10-02T08:36:37.438Z"
+    "lastSeenAt": "2026-10-04T08:30:06.743Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-creative",
@@ -109,7 +109,7 @@
     "security": "C",
     "signalScore": 78,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -134,7 +134,38 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:37.224Z",
-    "lastSeenAt": "2026-10-02T08:36:37.224Z"
+    "lastSeenAt": "2026-10-04T08:30:06.601Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/hyperframes-studio",
+    "name": "hyperframes-studio",
+    "source": "heygen-com/hyperframes",
+    "summary": "Use when working with a person on a HyperFrames project in Studio: first, whether their message asks for a change at all (questions, loose ideas and \"don't change anything\" get an answer and a plan, not an edit); for a new film, the plan, storyboard and build order that the HyperFrames launch films follow; and how the ",
+    "security": "B",
+    "signalScore": 77,
+    "installs": 0,
+    "repoStars": 56401,
+    "tags": [
+      "video",
+      "editing",
+      "film",
+      "storyboard",
+      "audio",
+      "media"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-studio/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "digital-media-film",
+      "operations-design",
+      "ui-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-02T08:36:37.831Z",
+    "lastSeenAt": "2026-10-04T08:30:07.082Z"
   },
   {
     "id": "heygen-com/hyperframes/general-video",
@@ -144,7 +175,7 @@
     "security": "C",
     "signalScore": 76,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -167,131 +198,7 @@
     "qualityScore": 85,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:34.333Z",
-    "lastSeenAt": "2026-10-02T08:36:34.333Z"
-  },
-  {
-    "id": "heygen-com/hyperframes/hyperframes-studio",
-    "name": "hyperframes-studio",
-    "source": "heygen-com/hyperframes",
-    "summary": "Use when working with a person on a HyperFrames project in Studio: first, whether their message asks for a change at all (questions, loose ideas and \"don't change anything\" get an answer and a plan, not an edit); for a new film, the plan, storyboard and build order that the HyperFrames launch films follow; and how the ",
-    "security": "B",
-    "signalScore": 76,
-    "installs": 0,
-    "repoStars": 55517,
-    "tags": [
-      "video",
-      "editing",
-      "film",
-      "storyboard",
-      "audio",
-      "media"
-    ],
-    "installUrl": "https://github.com/heygen-com/hyperframes",
-    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-studio/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "digital-media-film",
-      "operations-design",
-      "ui-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:37.831Z",
-    "lastSeenAt": "2026-10-02T08:36:37.831Z"
-  },
-  {
-    "id": "heygen-com/hyperframes/code-slice-hero",
-    "name": "code-slice-hero",
-    "source": "heygen-com/hyperframes",
-    "summary": "A tiled headline surface flips cell by cell under a sweeping depth field to reveal the rear headline. HyperFrames block, 1920×1080, 8s, 18 variables.",
-    "security": "A",
-    "signalScore": 74,
-    "installs": 0,
-    "repoStars": 55517,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "editing",
-      "visual",
-      "color"
-    ],
-    "installUrl": "https://github.com/heygen-com/hyperframes",
-    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/code-slice-hero/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "fashion-design",
-      "folk-art"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:29.124Z",
-    "lastSeenAt": "2026-10-02T08:36:29.124Z"
-  },
-  {
-    "id": "heygen-com/hyperframes/cuboid-carousel",
-    "name": "cuboid-carousel",
-    "source": "heygen-com/hyperframes",
-    "summary": "A chain of bevelled cuboids rides a travelling wave as a content carousel. HyperFrames block, 1920×1080, 6.666666666666667s, 40 variables.",
-    "security": "A",
-    "signalScore": 74,
-    "installs": 0,
-    "repoStars": 55517,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "editing",
-      "map",
-      "environment"
-    ],
-    "installUrl": "https://github.com/heygen-com/hyperframes",
-    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/cuboid-carousel/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:29.343Z",
-    "lastSeenAt": "2026-10-02T08:36:29.343Z"
-  },
-  {
-    "id": "heygen-com/hyperframes/orbit-card",
-    "name": "orbit-card",
-    "source": "heygen-com/hyperframes",
-    "summary": "A single feature card orbits a dot sphere on approved Blender camera motion. HyperFrames block, 1920×1080, 10s, 4 variables.",
-    "security": "A",
-    "signalScore": 74,
-    "installs": 0,
-    "repoStars": 55517,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "editing",
-      "visual",
-      "color"
-    ],
-    "installUrl": "https://github.com/heygen-com/hyperframes",
-    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/orbit-card/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "fashion-design",
-      "folk-art"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:30.918Z",
-    "lastSeenAt": "2026-10-02T08:36:30.918Z"
+    "lastSeenAt": "2026-10-04T08:30:03.260Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-cli",
@@ -299,9 +206,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Use the HyperFrames CLI development loop: init, add, catalog, capture, lint, check, snapshot, compare, grade-compare, preview, play, present, beats, keyframes, single or batch render, publish, cloud, cloudrun, feedback, lambda, doctor, browser, info, upgrade, skills, compositions, timeline, history, clean, docs, benchm",
     "security": "C",
-    "signalScore": 74,
+    "signalScore": 75,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "motion",
@@ -323,7 +230,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:36.105Z",
-    "lastSeenAt": "2026-10-02T08:36:36.105Z"
+    "lastSeenAt": "2026-10-04T08:30:05.738Z"
   },
   {
     "id": "heygen-com/hyperframes/motion-graphics",
@@ -331,9 +238,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "A short, design-led motion graphic where motion is the message — kinetic typography, stat count-up, chart/data-viz hit, logo sting / brand lockup, lower-third / callout / social overlay, animated map (highlight regions, connect places, zoom to a location), animated tweet / news-article / headline, webpage / UI animatio",
     "security": "C",
-    "signalScore": 74,
+    "signalScore": 75,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -357,39 +264,136 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:39.748Z",
-    "lastSeenAt": "2026-10-02T08:36:39.748Z"
+    "lastSeenAt": "2026-10-04T08:30:08.736Z"
   },
   {
-    "id": "heygen-com/hyperframes/oversized-cursor",
-    "name": "oversized-cursor",
-    "source": "heygen-com/hyperframes",
-    "summary": "House-style oversized macOS cursor technique for HyperFrames launch videos. Load whenever a scene involves cursors or a pointer-led action, when kicking off a UI scene, when igniting a morph/transition/typing run with a click, or when a scene reads as static, dead, or stale and needs a cheap high-yield source of motion",
+    "id": "hansondev/ai-rag-system-with-n8n-rag-workflow/frontend-design",
+    "name": "frontend-design",
+    "source": "hansondev/ai-rag-system-with-n8n-rag-workflow",
+    "summary": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Gen",
     "security": "A",
-    "signalScore": 73,
+    "signalScore": 75,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "typography",
+      "interaction",
+      "accessibility",
+      "visual",
+      "editorial",
+      "color",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/hansondev/ai-rag-system-with-n8n-rag-workflow",
+    "skillsUrl": "https://github.com/hansondev/ai-rag-system-with-n8n-rag-workflow/blob/master/.agents/skills/frontend-design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "visual-communication",
+      "experience-design",
+      "operations-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:14.596Z",
+    "lastSeenAt": "2026-10-04T08:30:14.596Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/code-slice-hero",
+    "name": "code-slice-hero",
+    "source": "heygen-com/hyperframes",
+    "summary": "A tiled headline surface flips cell by cell under a sweeping depth field to reveal the rear headline. HyperFrames block, 1920×1080, 8s, 18 variables.",
+    "security": "A",
+    "signalScore": 74,
+    "installs": 0,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
       "motion",
-      "film",
-      "brand",
-      "product",
-      "media"
+      "editing",
+      "visual",
+      "color"
     ],
     "installUrl": "https://github.com/heygen-com/hyperframes",
-    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/.agents/skills/oversized-cursor/SKILL.md",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/code-slice-hero/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "video-design",
       "operations-design",
-      "digital-media-film",
-      "visual-communication"
+      "fashion-design",
+      "folk-art"
     ],
     "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:26.561Z",
-    "lastSeenAt": "2026-10-02T08:36:26.561Z"
+    "firstSeenAt": "2026-10-02T08:36:29.124Z",
+    "lastSeenAt": "2026-10-04T08:29:59.996Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/cuboid-carousel",
+    "name": "cuboid-carousel",
+    "source": "heygen-com/hyperframes",
+    "summary": "A chain of bevelled cuboids rides a travelling wave as a content carousel. HyperFrames block, 1920×1080, 6.666666666666667s, 40 variables.",
+    "security": "A",
+    "signalScore": 74,
+    "installs": 0,
+    "repoStars": 56401,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "editing",
+      "map",
+      "environment"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/cuboid-carousel/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "architecture-design",
+      "ui-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-02T08:36:29.343Z",
+    "lastSeenAt": "2026-10-04T08:30:00.141Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/orbit-card",
+    "name": "orbit-card",
+    "source": "heygen-com/hyperframes",
+    "summary": "A single feature card orbits a dot sphere on approved Blender camera motion. HyperFrames block, 1920×1080, 10s, 4 variables.",
+    "security": "A",
+    "signalScore": 74,
+    "installs": 0,
+    "repoStars": 56401,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "editing",
+      "visual",
+      "color"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/orbit-card/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "fashion-design",
+      "folk-art"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-02T08:36:30.918Z",
+    "lastSeenAt": "2026-10-04T08:30:00.612Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes",
@@ -397,9 +401,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Mandatory entry point: read this first for any request to make, create, edit, animate, or render a video, animation, or motion graphic, including a promo, explainer, captioned clip, title card, overlay, slideshow or interactive deck, Remotion port, or any HyperFrames HTML composition. Also use it to inspect, diagnose, ",
     "security": "C",
-    "signalScore": 73,
+    "signalScore": 74,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -416,12 +420,12 @@
       "video-design",
       "operations-design",
       "digital-media-film",
-      "ui-design"
+      "industrial-design"
     ],
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:38.656Z",
-    "lastSeenAt": "2026-10-02T08:36:38.656Z"
+    "lastSeenAt": "2026-10-04T08:30:07.750Z"
   },
   {
     "id": "heygen-com/hyperframes/slideshow",
@@ -429,9 +433,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Author a HyperFrames slideshow — a presentation, pitch deck, or interactive deck with discrete slides, fragment reveals, branching, hotspot navigation, and built-in presenter mode with speaker notes; also converts an existing page into a deck. Output is a navigable deck, not a rendered MP4. If the user didn't explicitl",
     "security": "C",
-    "signalScore": 73,
+    "signalScore": 74,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -455,28 +459,28 @@
     "qualityScore": 88,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:43.724Z",
-    "lastSeenAt": "2026-10-02T08:36:43.724Z"
+    "lastSeenAt": "2026-10-04T08:30:12.155Z"
   },
   {
-    "id": "heygen-com/hyperframes/figma",
-    "name": "figma",
+    "id": "heygen-com/hyperframes/oversized-cursor",
+    "name": "oversized-cursor",
     "source": "heygen-com/hyperframes",
-    "summary": "Import Figma content into a HyperFrames composition — rendered assets, brand tokens, components, storyboard sections → reconstructed motion (frames read as states, not slides) (REST/CLI), connector-assisted motion when available, and shaders from a connector or native export. Use when the user pastes a figma.com link o",
-    "security": "C",
-    "signalScore": 72,
+    "summary": "House-style oversized macOS cursor technique for HyperFrames launch videos. Load whenever a scene involves cursors or a pointer-led action, when kicking off a UI scene, when igniting a morph/transition/typing run with a click, or when a scene reads as static, dead, or stale and needs a cheap high-yield source of motion",
+    "security": "A",
+    "signalScore": 73,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
       "motion",
       "film",
-      "storyboard",
       "brand",
+      "product",
       "media"
     ],
     "installUrl": "https://github.com/heygen-com/hyperframes",
-    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/figma/SKILL.md",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/.agents/skills/oversized-cursor/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "video-design",
@@ -484,10 +488,10 @@
       "digital-media-film",
       "visual-communication"
     ],
-    "qualityScore": 85,
+    "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:33.568Z",
-    "lastSeenAt": "2026-10-02T08:36:33.568Z"
+    "firstSeenAt": "2026-10-02T08:36:26.561Z",
+    "lastSeenAt": "2026-10-04T08:29:58.210Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-registry",
@@ -495,9 +499,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Search, install, and wire registry blocks and components into HyperFrames compositions. Use BEFORE hand-building any named visual — whenever a brief, a user, or a storyboard names a look, effect, treatment, or transition such as CRT scanlines, glitch, chromatic aberration, film grain, a shimmer sweep, a chart, a code o",
     "security": "B",
-    "signalScore": 72,
+    "signalScore": 73,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "film",
@@ -519,75 +523,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:37.650Z",
-    "lastSeenAt": "2026-10-02T08:36:37.650Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/hyperframes",
-    "name": "hyperframes",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Create video compositions, animations, title cards, overlays, captions, voiceovers, audio-reactive visuals, and scene transitions in HyperFrames HTML. Use when asked to build any HTML-based video content, add captions or subtitles synced to audio, generate text-to-speech narration, create audio-reactive animation (beat",
-    "security": "C",
-    "signalScore": 72,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "typography",
-      "audio",
-      "brand",
-      "product",
-      "visual",
-      "layout",
-      "color"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/hyperframes/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "visual-communication",
-      "folk-art"
-    ],
-    "qualityScore": 96,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:58.789Z",
-    "lastSeenAt": "2026-10-02T08:36:58.789Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/imagegen-frontend-web",
-    "name": "imagegen-frontend-web",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Elite frontend image-direction skill for generating premium, conversion-aware website design references. CRITICAL OUTPUT RULE — generate ONE separate horizontal image FOR EVERY section. A landing page with 8 sections produces 8 images. Never compress multiple sections into one image. Enforces composition variety (not a",
-    "security": "A",
-    "signalScore": 72,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "visual",
-      "typography",
-      "layout",
-      "editorial",
-      "color",
-      "fashion",
-      "design",
-      "photo"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/imagegen-frontend-web/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "visual-communication",
-      "fashion-design",
-      "video-design",
-      "ui-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:59.254Z",
-    "lastSeenAt": "2026-10-02T08:36:59.254Z"
+    "lastSeenAt": "2026-10-04T08:30:06.923Z"
   },
   {
     "id": "heygen-com/hyperframes/captions-overlay",
@@ -595,9 +531,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Overlay doctrine for the embedded-captions workflow — the caption MODEL (drop / rail / embed) and the rule that captions are an OVERLAY composited on top of the film, never a reserved bottom band you shift content up to avoid. Load when adding captions/subtitles to a talking-head or launch video, when deciding whether ",
     "security": "A",
-    "signalScore": 71,
+    "signalScore": 72,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -619,7 +555,7 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:23.916Z",
-    "lastSeenAt": "2026-10-02T08:36:23.917Z"
+    "lastSeenAt": "2026-10-04T08:29:57.108Z"
   },
   {
     "id": "heygen-com/hyperframes/cut-the-curve",
@@ -627,9 +563,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "The technique catalog: five velocity-matched SEAMS (zoom-through, INVERSE zoom-through, cut-the-curve, waterfall cut, rack-focus blur-cut) plus the two in-scene techniques — waterfall ENTRY (staggered arrival cascades for title cards / segment openers) and the nudge curve (slow-fast-slow three-phase group slides). Cove",
     "security": "A",
-    "signalScore": 71,
+    "signalScore": 72,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "motion",
@@ -647,99 +583,39 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:25.646Z",
-    "lastSeenAt": "2026-10-02T08:36:25.646Z"
+    "lastSeenAt": "2026-10-04T08:29:57.584Z"
   },
   {
-    "id": "heygen-com/hyperframes/canopy-part-title",
-    "name": "canopy-part-title",
+    "id": "heygen-com/hyperframes/figma",
+    "name": "figma",
     "source": "heygen-com/hyperframes",
-    "summary": "Leaves sweep through the frame and part to reveal the headline. HyperFrames block, 1920×1080, 12s, 11 variables.",
-    "security": "B",
-    "signalScore": 71,
-    "installs": 0,
-    "repoStars": 55517,
-    "tags": [
-      "video",
-      "design",
-      "editing",
-      "visual",
-      "color"
-    ],
-    "installUrl": "https://github.com/heygen-com/hyperframes",
-    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/canopy-part-title/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "fashion-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:28.920Z",
-    "lastSeenAt": "2026-10-02T08:36:28.920Z"
-  },
-  {
-    "id": "heygen-com/hyperframes/wireframe-portal-title",
-    "name": "wireframe-portal-title",
-    "source": "heygen-com/hyperframes",
-    "summary": "A wireframe portal bursts open, the title comes through, then its letters swap into a second phrase. HyperFrames block, 1920×1080, 8s, 9 variables.",
-    "security": "B",
-    "signalScore": 71,
-    "installs": 0,
-    "repoStars": 55517,
-    "tags": [
-      "video",
-      "design",
-      "editing",
-      "visual",
-      "layout",
-      "color"
-    ],
-    "installUrl": "https://github.com/heygen-com/hyperframes",
-    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/wireframe-portal-title/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "visual-communication",
-      "operations-design",
-      "fashion-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:31.109Z",
-    "lastSeenAt": "2026-10-02T08:36:31.109Z"
-  },
-  {
-    "id": "heygen-com/hyperframes/talking-head-recut",
-    "name": "talking-head-recut",
-    "source": "heygen-com/hyperframes",
-    "summary": "Package an existing talking-head / interview / podcast video with timed, designed GRAPHIC OVERLAY cards — kinetic titles, lower-thirds, data callouts, quotes, side panels, picture-in-picture — synced to the transcript, on a 16:9 / 9:16 / 4:5 canvas of your choice; the clip plays untouched underneath. Trigger on \"graphi",
+    "summary": "Import Figma content into a HyperFrames composition — rendered assets, brand tokens, components, storyboard sections → reconstructed motion (frames read as states, not slides) (REST/CLI), connector-assisted motion when available, and shaders from a connector or native export. Use when the user pastes a figma.com link o",
     "security": "C",
-    "signalScore": 71,
+    "signalScore": 72,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
+      "motion",
+      "film",
       "storyboard",
-      "audio",
-      "environment",
-      "rendering"
+      "brand",
+      "media"
     ],
     "installUrl": "https://github.com/heygen-com/hyperframes",
-    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/talking-head-recut/SKILL.md",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/figma/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "video-design",
-      "environmental-design",
-      "architecture-design",
-      "industrial-design"
+      "operations-design",
+      "digital-media-film",
+      "visual-communication"
     ],
-    "qualityScore": 88,
+    "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:43.911Z",
-    "lastSeenAt": "2026-10-02T08:36:43.911Z"
+    "firstSeenAt": "2026-10-02T08:36:33.568Z",
+    "lastSeenAt": "2026-10-04T08:30:02.667Z"
   },
   {
     "id": "heygen-com/hyperframes/changelog-video",
@@ -747,9 +623,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Turn a weekly changelog .md into a finished branded changelog video (square 1080, ~45-60s, Annie VO, animated brand background, mock-UI visualizations, lowkey captions). Use when the user provides a changelog/digest markdown and wants the weekly video, or says \"changelog video\". Self-contained — fonts, background, lexi",
     "security": "C",
-    "signalScore": 70,
+    "signalScore": 71,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -773,7 +649,99 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:24.451Z",
-    "lastSeenAt": "2026-10-02T08:36:24.451Z"
+    "lastSeenAt": "2026-10-04T08:29:57.446Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/canopy-part-title",
+    "name": "canopy-part-title",
+    "source": "heygen-com/hyperframes",
+    "summary": "Leaves sweep through the frame and part to reveal the headline. HyperFrames block, 1920×1080, 12s, 11 variables.",
+    "security": "B",
+    "signalScore": 71,
+    "installs": 0,
+    "repoStars": 56401,
+    "tags": [
+      "video",
+      "design",
+      "editing",
+      "visual",
+      "color"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/canopy-part-title/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "fashion-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-02T08:36:28.920Z",
+    "lastSeenAt": "2026-10-04T08:29:59.860Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/wireframe-portal-title",
+    "name": "wireframe-portal-title",
+    "source": "heygen-com/hyperframes",
+    "summary": "A wireframe portal bursts open, the title comes through, then its letters swap into a second phrase. HyperFrames block, 1920×1080, 8s, 9 variables.",
+    "security": "B",
+    "signalScore": 71,
+    "installs": 0,
+    "repoStars": 56401,
+    "tags": [
+      "video",
+      "design",
+      "editing",
+      "visual",
+      "layout",
+      "color"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/registry/blocks/wireframe-portal-title/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "visual-communication",
+      "operations-design",
+      "fashion-design"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-02T08:36:31.109Z",
+    "lastSeenAt": "2026-10-04T08:30:00.760Z"
+  },
+  {
+    "id": "heygen-com/hyperframes/talking-head-recut",
+    "name": "talking-head-recut",
+    "source": "heygen-com/hyperframes",
+    "summary": "Package an existing talking-head / interview / podcast video with timed, designed GRAPHIC OVERLAY cards — kinetic titles, lower-thirds, data callouts, quotes, side panels, picture-in-picture — synced to the transcript, on a 16:9 / 9:16 / 4:5 canvas of your choice; the clip plays untouched underneath. Trigger on \"graphi",
+    "security": "C",
+    "signalScore": 71,
+    "installs": 0,
+    "repoStars": 56401,
+    "tags": [
+      "video",
+      "design",
+      "storyboard",
+      "audio",
+      "environment",
+      "rendering"
+    ],
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/talking-head-recut/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "environmental-design",
+      "architecture-design",
+      "industrial-design"
+    ],
+    "qualityScore": 88,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-02T08:36:43.911Z",
+    "lastSeenAt": "2026-10-04T08:30:12.324Z"
   },
   {
     "id": "heygen-com/hyperframes/glass-shard-title",
@@ -781,9 +749,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Glass shards fly in through fog and tile themselves into the headline. HyperFrames block, 1920×1080, 12.16s, 19 variables.",
     "security": "B",
-    "signalScore": 69,
+    "signalScore": 70,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -804,7 +772,7 @@
     "qualityScore": 77,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:30.732Z",
-    "lastSeenAt": "2026-10-02T08:36:30.732Z"
+    "lastSeenAt": "2026-10-04T08:30:00.472Z"
   },
   {
     "id": "heygen-com/hyperframes/remotion-to-hyperframes",
@@ -812,9 +780,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Port an existing Remotion (React) composition''s source to HyperFrames HTML. Use ONLY on an explicit ask to port/convert/migrate/translate a Remotion source — one-way, Remotion-only. A passing Remotion mention, reference-only code, or \"make something like my Remotion video\" is a fresh build (/general-video). Unclear → ",
     "security": "C",
-    "signalScore": 69,
+    "signalScore": 70,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "motion",
@@ -838,74 +806,7 @@
     "qualityScore": 90,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:43.536Z",
-    "lastSeenAt": "2026-10-02T08:36:43.537Z"
-  },
-  {
-    "id": "lemma-work/lemma-platform/lemma-app-design",
-    "name": "lemma-app-design",
-    "source": "lemma-work/lemma-platform",
-    "summary": "Design, redesign, and visually refine Lemma pod apps into distinctive, production-quality interfaces grounded in the pod's real users, domain, data, files, agents, workflows, and assets. Use when defining information architecture or DESIGN.md, choosing interaction and visual direction, improving interface copy, specify",
-    "security": "C",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 477,
-    "tags": [
-      "design",
-      "brand",
-      "product",
-      "visual",
-      "motion",
-      "experience",
-      "ux",
-      "interaction",
-      "accessibility",
-      "ui",
-      "layout"
-    ],
-    "installUrl": "https://github.com/lemma-work/lemma-platform",
-    "skillsUrl": "https://github.com/lemma-work/lemma-platform/blob/main/lemma-skills/lemma-app-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "ui-design",
-      "visual-communication"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:45.197Z",
-    "lastSeenAt": "2026-10-02T08:36:45.198Z"
-  },
-  {
-    "id": "heygen-com/hyperframes/hyperframes-audio",
-    "name": "hyperframes-audio",
-    "source": "heygen-com/hyperframes",
-    "summary": "Use when audio already placed in a HyperFrames composition needs to be mixed: fade-in/fade-out, crossfade, track gain or volume, volume automation, ducking, a music bed that fights a voiceover (voiceover carve), effects on a track (EQ, compressor, limiter, gate, saturation, delay, reverb, chorus, phaser, bitcrush), aut",
-    "security": "C",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 55517,
-    "tags": [
-      "video",
-      "editing",
-      "audio",
-      "media",
-      "ui",
-      "layout"
-    ],
-    "installUrl": "https://github.com/heygen-com/hyperframes",
-    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-audio/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "digital-media-film",
-      "ui-design",
-      "visual-communication"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:35.873Z",
-    "lastSeenAt": "2026-10-02T08:36:35.873Z"
+    "lastSeenAt": "2026-10-04T08:30:11.999Z"
   },
   {
     "id": "heygen-com/hyperframes/media-use",
@@ -913,9 +814,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Agent Media OS, the single skill for every media need in a HyperFrames project. Resolve BGM, SFX, image, icon, brand logo, voice, color grade, or LUT into a frozen local file or paste-ready block + ledger record (one verb, `resolve`); generate via TTS / music / image models when the catalog misses; produce voiceover, t",
     "security": "C",
-    "signalScore": 68,
+    "signalScore": 69,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "operations",
       "brand",
@@ -938,39 +839,38 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:39.574Z",
-    "lastSeenAt": "2026-10-02T08:36:39.574Z"
+    "lastSeenAt": "2026-10-04T08:30:08.561Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/architecture-design",
-    "name": "architecture-design",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Orchestrate an architectural concept workflow across Rhino, Blender, and ComfyUI connectors.",
-    "security": "B",
+    "id": "heygen-com/hyperframes/hyperframes-audio",
+    "name": "hyperframes-audio",
+    "source": "heygen-com/hyperframes",
+    "summary": "Use when audio already placed in a HyperFrames composition needs to be mixed: fade-in/fade-out, crossfade, track gain or volume, volume automation, ducking, a music bed that fights a voiceover (voiceover carve), effects on a track (EQ, compressor, limiter, gate, saturation, delay, reverb, chorus, phaser, bitcrush), aut",
+    "security": "C",
     "signalScore": 68,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 56401,
     "tags": [
-      "design",
-      "architecture",
-      "lighting",
-      "rendering",
+      "video",
+      "editing",
+      "audio",
+      "media",
       "ui",
-      "layout",
-      "accessibility"
+      "layout"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/architecture-design/SKILL.md",
+    "installUrl": "https://github.com/heygen-com/hyperframes",
+    "skillsUrl": "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-audio/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "environmental-design",
-      "architecture-design",
+      "video-design",
+      "digital-media-film",
       "ui-design",
-      "video-design"
+      "visual-communication"
     ],
-    "qualityScore": 85,
+    "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:48.503Z",
-    "lastSeenAt": "2026-10-02T08:36:48.503Z"
+    "firstSeenAt": "2026-10-02T08:36:35.873Z",
+    "lastSeenAt": "2026-10-04T08:30:05.541Z"
   },
   {
     "id": "heygen-com/hyperframes/motion-doctrine",
@@ -980,7 +880,7 @@
     "security": "C",
     "signalScore": 67,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "motion",
@@ -1002,67 +902,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:26.273Z",
-    "lastSeenAt": "2026-10-02T08:36:26.273Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/architecture-diagram",
-    "name": "architecture-diagram",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Generate polished dark-themed architecture diagrams as standalone HTML files with inline SVG, semantic system grouping, and readable connection flows.",
-    "security": "A",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "architecture",
-      "design",
-      "diagram",
-      "map",
-      "visual",
-      "layout",
-      "illustration"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/architecture-diagram/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "visual-communication",
-      "fashion-design",
-      "video-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:48.689Z",
-    "lastSeenAt": "2026-10-02T08:36:48.689Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/codex-cli",
-    "name": "codex-cli",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Run OpenAI Codex CLI as a background agent — detect, install, configure, and execute tasks via codex exec.",
-    "security": "A",
-    "signalScore": 67,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "editing",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/codex-cli/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 82,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:50.822Z",
-    "lastSeenAt": "2026-10-02T08:36:50.822Z"
+    "lastSeenAt": "2026-10-04T08:29:58.030Z"
   },
   {
     "id": "heygen-com/hyperframes/hyperframes-animation",
@@ -1070,9 +910,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "All animation knowledge for HyperFrames — atomic motion rules, multi-phase scene blueprints, scene transitions, broader motion-design techniques, AND the seven runtime adapters (GSAP default, plus Lottie, Three.js, Anime.js, CSS keyframes, Web Animations API, TypeGPU). Use for any motion or animation task: pick 2-4 rul",
     "security": "C",
-    "signalScore": 66,
+    "signalScore": 67,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "design",
@@ -1095,135 +935,96 @@
     "qualityScore": 84,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:35.275Z",
-    "lastSeenAt": "2026-10-02T08:36:35.275Z"
+    "lastSeenAt": "2026-10-04T08:30:05.072Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/cowork-multi-agent-research",
-    "name": "cowork-multi-agent-research",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Multi-agent system research agent for CoWork OS. Use when: researching multi-agent papers, frameworks, production case studies; maintaining a research queue; producing CoWork OS applicability analysis and implementation recommendations. Triggers: 'multi-agent research', 'research multi-agent systems', 'multi-agent pape",
+    "id": "mhuzaifawebdev/paragon-automations/pgi-score-call",
+    "name": "pgi-score-call",
+    "source": "mhuzaifawebdev/paragon-automations",
+    "summary": "Scores one finished call transcript against Paragon's 10-point PGI Sales Score Card. Use after a call ends, on its saved transcript. Returns one JSON object with a 0/0.5/1 score and an evidence quote for each of the 10 points.",
+    "security": "A",
+    "signalScore": 67,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "operations",
+      "design",
+      "brand",
+      "product"
+    ],
+    "installUrl": "https://github.com/mhuzaifawebdev/paragon-automations",
+    "skillsUrl": "https://github.com/mhuzaifawebdev/paragon-automations/blob/main/.claude/skills/pgi-score-call/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "industrial-design",
+      "fashion-design",
+      "experience-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:16.602Z",
+    "lastSeenAt": "2026-10-04T08:30:16.602Z"
+  },
+  {
+    "id": "mhuzaifawebdev/paragon-automations/sim-receptionist",
+    "name": "sim-receptionist",
+    "source": "mhuzaifawebdev/paragon-automations",
+    "summary": "Plays the institution's side of a practice call so the calling agent's persona can be tested and tuned at zero telephony cost. Use during training (before or between live-call rounds), never on real calls. Produces a full text transcript.",
     "security": "A",
     "signalScore": 66,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
+      "operations",
       "design",
-      "product",
-      "research"
+      "product"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/cowork-multi-agent-research/SKILL.md",
+    "installUrl": "https://github.com/mhuzaifawebdev/paragon-automations",
+    "skillsUrl": "https://github.com/mhuzaifawebdev/paragon-automations/blob/main/.claude/skills/sim-receptionist/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "industrial-design",
+      "experience-design",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:16.759Z",
+    "lastSeenAt": "2026-10-04T08:30:16.759Z"
+  },
+  {
+    "id": "VibeBB/UX-creator-agent/ux-diagrams",
+    "name": "ux-diagrams",
+    "source": "VibeBB/UX-creator-agent",
+    "summary": "Projection formats emitted by ux-creator — Mermaid journey/state, PlantUML state + Salt wireframe, XState v5, SCXML, Storybook story requirements, and how Figma fits.",
+    "security": "A",
+    "signalScore": 66,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "experience",
+      "design",
+      "ux",
+      "product",
+      "rendering",
+      "diagram",
+      "map"
+    ],
+    "installUrl": "https://github.com/VibeBB/UX-creator-agent",
+    "skillsUrl": "https://github.com/VibeBB/UX-creator-agent/blob/main/plugins/ux/skills/ux-diagrams/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "experience-design",
-      "video-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:52.188Z",
-    "lastSeenAt": "2026-10-02T08:36:52.188Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/hyperframes-cli",
-    "name": "hyperframes-cli",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "HyperFrames CLI tool — hyperframes init, lint, preview, render, transcribe, tts, doctor, browser, info, upgrade, compositions, docs, benchmark. Use when scaffolding a project, linting or validating compositions, previewing in the studio, rendering to video, transcribing audio, generating TTS, or troubleshooting the Hyp",
-    "security": "B",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "video",
-      "design",
-      "audio",
-      "environment",
-      "rendering"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/hyperframes-cli/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "environmental-design",
       "architecture-design",
-      "industrial-design"
+      "industrial-design",
+      "operations-design"
     ],
-    "qualityScore": 75,
+    "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:57.997Z",
-    "lastSeenAt": "2026-10-02T08:36:57.997Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/kami",
-    "name": "kami",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Typeset professional documents with the Kami editorial design system when the user explicitly asks for Kami by name.",
-    "security": "C",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "architecture",
-      "design",
-      "rendering",
-      "diagram",
-      "map",
-      "visual",
-      "layout",
-      "editorial",
-      "color"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/kami/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "visual-communication",
-      "environmental-design",
-      "industrial-design"
-    ],
-    "qualityScore": 96,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:00.746Z",
-    "lastSeenAt": "2026-10-02T08:37:00.746Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/manim-video",
-    "name": "manim-video",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Plan, scaffold, and render Manim Community Edition explainer videos for math, algorithms, technical concepts, and data stories.",
-    "security": "C",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "editing",
-      "architecture",
-      "3d",
-      "diagram",
-      "map",
-      "environment",
-      "product",
-      "visual"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/manim-video/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "architecture-design",
-      "operations-design",
-      "environmental-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:04.854Z",
-    "lastSeenAt": "2026-10-02T08:37:04.854Z"
+    "firstSeenAt": "2026-10-04T08:30:17.770Z",
+    "lastSeenAt": "2026-10-04T08:30:17.770Z"
   },
   {
     "id": "heygen-com/hyperframes/frost-sequence-camera-orbit",
@@ -1233,7 +1034,7 @@
     "security": "B",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "interior",
@@ -1251,2106 +1052,277 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:29.537Z",
-    "lastSeenAt": "2026-10-02T08:36:29.537Z"
+    "lastSeenAt": "2026-10-04T08:30:00.302Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/security-scan",
-    "name": "security-scan",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use when the user asks for a repository-wide or scoped-path security scan.",
-    "security": "A",
+    "id": "shipwithstef/ssve/generate-visuals",
+    "name": "generate-visuals",
+    "source": "shipwithstef/ssve",
+    "summary": "Image and visual asset router. Takes one asset brief (class + style + brand context) and routes it across the available image-gen providers (Gemini Nano-Banana Pro / Imagen 4, Google Stitch MCP, Figma Make/Weave MCP, Claude Design Live Canvas, OpenAI gpt-image-2 with gpt-image-1.5 fallback, Storyset, Veo 3 for motion).",
+    "security": "C",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 3,
     "tags": [
       "design",
-      "ui"
+      "brand",
+      "product",
+      "visual",
+      "photo",
+      "video",
+      "motion",
+      "illustration"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/plugin-packs/codex-security/skills/security-scan/SKILL.md",
+    "installUrl": "https://github.com/shipwithstef/ssve",
+    "skillsUrl": "https://github.com/shipwithstef/ssve/blob/main/skills/generate-visuals/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "ui-design",
       "operations-design",
-      "industrial-design"
+      "visual-communication",
+      "fashion-design",
+      "folk-art"
     ],
     "qualityScore": 88,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:46.450Z",
-    "lastSeenAt": "2026-10-02T08:36:46.450Z"
+    "firstSeenAt": "2026-10-04T08:30:14.278Z",
+    "lastSeenAt": "2026-10-04T08:30:14.278Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/threat-model",
-    "name": "threat-model",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use when Codex is already in the threat-modeling phase of a security scan, the user explicitly invokes $threat-model, or the user explicitly asks to create, update, or persist a repository threat model. Do not use as the primary trigger for full PR, commit, branch, patch, or repository scans.",
+    "id": "mhuzaifawebdev/paragon-automations/classify-outcome",
+    "name": "classify-outcome",
+    "source": "mhuzaifawebdev/paragon-automations",
+    "summary": "Extracts the 3 facts (interest, student arrival timing, meeting booked) from a finished call transcript. Use after pgi-score-call, on the same transcript. Returns one JSON object — it does NOT pick the outcome label itself, a fixed rule in data/classify_outcome.py does that.",
     "security": "A",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
+      "operations",
       "design",
       "product"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/plugin-packs/codex-security/skills/threat-model/SKILL.md",
+    "installUrl": "https://github.com/mhuzaifawebdev/paragon-automations",
+    "skillsUrl": "https://github.com/mhuzaifawebdev/paragon-automations/blob/main/.claude/skills/classify-outcome/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "operations-design",
       "industrial-design",
-      "experience-design"
+      "experience-design",
+      "ui-design"
     ],
-    "qualityScore": 88,
+    "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:46.682Z",
-    "lastSeenAt": "2026-10-02T08:36:46.682Z"
+    "firstSeenAt": "2026-10-04T08:30:16.100Z",
+    "lastSeenAt": "2026-10-04T08:30:16.100Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/batch",
-    "name": "batch",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Plan and execute parallel, repeatable migrations across code, docs, research artifacts, ops configs, or mixed task sets.",
+    "id": "mhuzaifawebdev/paragon-automations/map-institution-network",
+    "name": "map-institution-network",
+    "source": "mhuzaifawebdev/paragon-automations",
+    "summary": "Maps who a university or college collaborates with (partner institutions and networks) and where its own campuses are, from its public website. Captures the \"multiplier effect\" data Paragon's callers use. Use for one institute after find-erasmus-contacts has classified it. Returns one JSON object.",
     "security": "A",
     "signalScore": 65,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
+      "operations",
       "design",
-      "environment",
-      "research"
+      "product"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/batch/SKILL.md",
+    "installUrl": "https://github.com/mhuzaifawebdev/paragon-automations",
+    "skillsUrl": "https://github.com/mhuzaifawebdev/paragon-automations/blob/main/.claude/skills/map-institution-network/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "environmental-design",
+      "operations-design",
+      "industrial-design",
       "experience-design",
       "architecture-design"
     ],
-    "qualityScore": 88,
+    "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:49.088Z",
-    "lastSeenAt": "2026-10-02T08:36:49.088Z"
+    "firstSeenAt": "2026-10-04T08:30:16.413Z",
+    "lastSeenAt": "2026-10-04T08:30:16.413Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/gsap",
-    "name": "gsap",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "GSAP animation reference for HyperFrames. Covers gsap.to(), from(), fromTo(), easing, stagger, defaults, timelines (gsap.timeline(), position parameter, labels, nesting, playback), and performance (transforms, will-change, quickTo). Use when writing GSAP animations in HyperFrames compositions.",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "motion",
-      "audio",
-      "arts",
-      "color",
-      "pattern",
-      "3d",
-      "visual",
-      "ui",
-      "layout",
-      "accessibility"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/gsap/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "arts-crafts",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:57.415Z",
-    "lastSeenAt": "2026-10-02T08:36:57.415Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/humanizer",
-    "name": "humanizer",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Rewrite AI-generated text to sound natural and human-written. Removes LLM tells — cliché phrases, predictable structure, inflated language, and robotic patterns. Use when editing drafts, emails, articles, or any text that reads like it was written by AI.",
-    "security": "B",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "editing",
-      "ui",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/humanizer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "folk-art",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:57.789Z",
-    "lastSeenAt": "2026-10-02T08:36:57.789Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/deep-security-scan",
-    "name": "deep-security-scan",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use when the user asks for a deep, exhaustive, multi-pass, or variance-reducing repository-wide Codex Security scan. Run repeated independent repository-wide discovery passes with worker-specific threat models, semantically merge candidates, synthesize one canonical validation threat model, then run validation, attack-",
+    "id": "VibeBB/UX-creator-agent/ux-workflow",
+    "name": "ux-workflow",
+    "source": "VibeBB/UX-creator-agent",
+    "summary": "Execute a conversational UX design workflow with deterministic verification — contract, gates, projections, advisory review.",
     "security": "A",
-    "signalScore": 64,
+    "signalScore": 65,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
+      "experience",
       "design",
-      "environment"
+      "ux",
+      "visual",
+      "motion"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/plugin-packs/codex-security/skills/deep-security-scan/SKILL.md",
+    "installUrl": "https://github.com/VibeBB/UX-creator-agent",
+    "skillsUrl": "https://github.com/VibeBB/UX-creator-agent/blob/main/plugins/ux/skills/ux-workflow/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "experience-design",
+      "operations-design",
       "video-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
+      "fashion-design"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:45.622Z",
-    "lastSeenAt": "2026-10-02T08:36:45.623Z"
+    "firstSeenAt": "2026-10-04T08:30:18.992Z",
+    "lastSeenAt": "2026-10-04T08:30:18.993Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/fix-finding",
-    "name": "fix-finding",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use when the user explicitly asks to fix and verify a validated or plausible security finding. Do not use as the primary trigger for full PR, commit, branch, patch, or repository scans.",
-    "security": "A",
+    "id": "mhuzaifawebdev/paragon-automations/find-erasmus-contacts",
+    "name": "find-erasmus-contacts",
+    "source": "mhuzaifawebdev/paragon-automations",
+    "summary": "Finds the person responsible for Erasmus+ / international partnerships at one institute, plus the institute's country, type and main phone, from its own public web pages. Use when given a row from data/numbers_clean.csv to verify or enrich. Returns one JSON object.",
+    "security": "B",
     "signalScore": 64,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
+      "operations",
       "design",
       "product"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/plugin-packs/codex-security/skills/fix-finding/SKILL.md",
+    "installUrl": "https://github.com/mhuzaifawebdev/paragon-automations",
+    "skillsUrl": "https://github.com/mhuzaifawebdev/paragon-automations/blob/main/.claude/skills/find-erasmus-contacts/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "operations-design",
       "industrial-design",
-      "experience-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:46.034Z",
-    "lastSeenAt": "2026-10-02T08:36:46.034Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/security-diff-scan",
-    "name": "security-diff-scan",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use when the user asks for a security review of a pull request, commit, branch diff, working-tree patch, or other Git-backed change set.",
-    "security": "A",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/plugin-packs/codex-security/skills/security-diff-scan/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:46.264Z",
-    "lastSeenAt": "2026-10-02T08:36:46.264Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/box",
-    "name": "box",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use Box's hosted MCP server to search, read, analyze, and manage Box content with Box AI and Hubs.",
-    "security": "A",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "operations"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/box/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "ui-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:49.687Z",
-    "lastSeenAt": "2026-10-02T08:36:49.687Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/coding-agent",
-    "name": "coding-agent",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
-    "security": "B",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "environment"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/coding-agent/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:51.005Z",
-    "lastSeenAt": "2026-10-02T08:36:51.005Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/esg-scorer",
-    "name": "esg-scorer",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Environmental, Social, and Governance scoring with SASB materiality mapping, TCFD climate risk alignment, carbon footprint analysis, and sustainability benchmarking.",
-    "security": "B",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "environmental",
-      "design",
-      "environment",
-      "map"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/esg-scorer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "environmental-design",
-      "video-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:54.786Z",
-    "lastSeenAt": "2026-10-02T08:36:54.786Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/novelist",
-    "name": "novelist",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Create chaptered long-form fiction with worldbuilding, outlining, drafting, revision, and optional packaging when the user asks for a novel or novella.",
-    "security": "A",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/novelist/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:08.878Z",
-    "lastSeenAt": "2026-10-02T08:37:08.878Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/playwright-qa",
-    "name": "playwright-qa",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Automated visual QA testing using Playwright — navigate web apps like a real user, capture screenshots, find bugs, and fix them.",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "interaction",
-      "accessibility",
-      "mobile"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/playwright-qa/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
       "experience-design",
-      "video-design",
-      "visual-communication"
+      "ui-design"
     ],
     "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:11.013Z",
-    "lastSeenAt": "2026-10-02T08:37:11.013Z"
+    "firstSeenAt": "2026-10-04T08:30:16.275Z",
+    "lastSeenAt": "2026-10-04T08:30:16.275Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/android-development",
-    "name": "android-development",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Android/Kotlin development: Jetpack Compose, Room database, Gradle builds, emulator management, and Play Store submission.",
-    "security": "B",
-    "signalScore": 63,
+    "id": "VibeBB/UX-creator-agent/ux-interaction-content",
+    "name": "ux-interaction-content",
+    "source": "VibeBB/UX-creator-agent",
+    "summary": "Interaction content — map each feedback record to concrete LED, sound, haptic, motion, or text assets; product sounds (startup, done, warning, confirm) come from bard cue sets rendered to MIDI/MML.",
+    "security": "A",
+    "signalScore": 64,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
-      "design",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/android-development/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "environmental-design",
-      "architecture-design",
-      "experience-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:47.881Z",
-    "lastSeenAt": "2026-10-02T08:36:47.881Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/calendly",
-    "name": "calendly",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Manage Calendly scheduling via the v2 API. List event types, view scheduled events, check invitee details, manage availability schedules, cancel/reschedule events, create one-off links, and configure webhooks. Use when the user asks about their calendar, upcoming meetings, scheduling links, or availability.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/calendly/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:49.870Z",
-    "lastSeenAt": "2026-10-02T08:36:49.870Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/cloud-migration",
-    "name": "cloud-migration",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Cloud migration strategy and execution: assessment frameworks, migration patterns, database migration, network cutover, and multi-cloud planning.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "operations",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/cloud-migration/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:50.258Z",
-    "lastSeenAt": "2026-10-02T08:36:50.258Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/dcf-valuation",
-    "name": "dcf-valuation",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Discounted cash flow valuation with WACC calculation, free cash flow projection, terminal value estimation, sensitivity analysis, and enterprise-to-equity value bridge.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/dcf-valuation/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:52.965Z",
-    "lastSeenAt": "2026-10-02T08:36:52.965Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/developer-growth-analysis",
-    "name": "developer-growth-analysis",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Analyze recent coding patterns and generate a personalized developer growth report.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
+      "ux",
+      "product",
+      "interaction",
+      "visual",
+      "motion",
       "art",
       "pattern"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/developer-growth-analysis/SKILL.md",
+    "installUrl": "https://github.com/VibeBB/UX-creator-agent",
+    "skillsUrl": "https://github.com/VibeBB/UX-creator-agent/blob/main/plugins/ux/skills/ux-interaction-content/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
+      "experience-design",
+      "operations-design",
       "folk-art",
-      "ui-design",
-      "operations-design"
+      "digital-media-film"
     ],
-    "qualityScore": 86,
+    "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:53.896Z",
-    "lastSeenAt": "2026-10-02T08:36:53.896Z"
+    "firstSeenAt": "2026-10-04T08:30:17.918Z",
+    "lastSeenAt": "2026-10-04T08:30:17.918Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/docker-compose-ops",
-    "name": "docker-compose-ops",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Docker Compose operations: service orchestration, compose file authoring, multi-stage builds, networking, volumes, and production configurations.",
-    "security": "B",
+    "id": "VibeBB/UX-creator-agent/ux-ruby-style",
+    "name": "ux-ruby-style",
+    "source": "VibeBB/UX-creator-agent",
+    "summary": "Idiomatic Ruby authoring with the ux-dsl library — DSL reference and style rules (blocks, keyword args, frozen string literal, no method_missing).",
+    "security": "A",
     "signalScore": 63,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
-      "operations",
+      "experience",
       "design",
-      "product"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/docker-compose-ops/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "industrial-design",
-      "experience-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:54.150Z",
-    "lastSeenAt": "2026-10-02T08:36:54.150Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/earnings-analyzer",
-    "name": "earnings-analyzer",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Analyze quarterly and annual earnings reports including EPS beat/miss analysis, revenue trends, margin expansion, forward guidance parsing, and management commentary extraction.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/earnings-analyzer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:54.356Z",
-    "lastSeenAt": "2026-10-02T08:36:54.356Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/email-marketing-bible",
-    "name": "email-marketing-bible",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Comprehensive, data-backed email marketing consultant for audits, win-back/re-engagement flows, copy, deliverability, compliance, and campaign/platform strategy.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "campaign",
-      "product",
+      "ux",
+      "visual",
+      "motion",
+      "industrial",
       "cad"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/email-marketing-bible/SKILL.md",
+    "installUrl": "https://github.com/VibeBB/UX-creator-agent",
+    "skillsUrl": "https://github.com/VibeBB/UX-creator-agent/blob/main/plugins/ux/skills/ux-ruby-style/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "video-design",
-      "industrial-design",
-      "fashion-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:54.571Z",
-    "lastSeenAt": "2026-10-02T08:36:54.571Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/financial-modeling",
-    "name": "financial-modeling",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Build and analyze three-statement financial models with integrated income statement, balance sheet, and cash flow projections, scenario analysis, and key driver assumptions.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/financial-modeling/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:55.407Z",
-    "lastSeenAt": "2026-10-02T08:36:55.407Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/game-performance",
-    "name": "game-performance",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Cross-engine game performance: draw call optimization, LOD, object pooling, GPU profiling, memory management, and platform-specific tuning.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/game-performance/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:55.789Z",
-    "lastSeenAt": "2026-10-02T08:36:55.789Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/hyperframes-registry",
-    "name": "hyperframes-registry",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Install and wire registry blocks and components into HyperFrames compositions. Use when running hyperframes add, installing a block or component, wiring an installed item into index.html, or working with hyperframes.json. Covers the add command, install locations, block sub-composition wiring, component snippet merging",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/hyperframes-registry/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:58.177Z",
-    "lastSeenAt": "2026-10-02T08:36:58.177Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/ios-development",
-    "name": "ios-development",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "iOS/Swift development: SwiftUI, UIKit, Core Data, Xcode builds, simulator management, code signing, and App Store submission.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "mobile",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/ios-development/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
       "experience-design",
-      "ui-design",
-      "operations-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:59.717Z",
-    "lastSeenAt": "2026-10-02T08:36:59.717Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/karpathy-guidelines",
-    "name": "karpathy-guidelines",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Surgical execution guardrails for coding, debugging, review, and refactor tasks",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "editing",
-      "product"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/karpathy-guidelines/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
       "operations-design",
       "industrial-design",
-      "experience-design"
+      "folk-art"
     ],
-    "qualityScore": 75,
+    "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:00.939Z",
-    "lastSeenAt": "2026-10-02T08:37:00.939Z"
+    "firstSeenAt": "2026-10-04T08:30:18.545Z",
+    "lastSeenAt": "2026-10-04T08:30:18.545Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/kubernetes-ops",
-    "name": "kubernetes-ops",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Kubernetes cluster operations: kubectl commands, manifest generation, Helm charts, RBAC, debugging, and deployment strategies.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "operations",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/kubernetes-ops/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "ui-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:01.173Z",
-    "lastSeenAt": "2026-10-02T08:37:01.173Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/legal-verified-research-memo",
-    "name": "legal-verified-research-memo",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Generate a legal research memo with claim-level source verification, confidence flags, and primary-authority priority.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "editing",
-      "research",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/legal-verified-research-memo/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "ui-design",
-      "operations-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:02.157Z",
-    "lastSeenAt": "2026-10-02T08:37:02.157Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/market-screener",
-    "name": "market-screener",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Screen equities, ETFs, and bonds using fundamental, technical, and quantitative criteria with multi-factor ranking and sector filtering.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/market-screener/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:05.109Z",
-    "lastSeenAt": "2026-10-02T08:37:05.109Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/marketing-strategist",
-    "name": "marketing-strategist",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Comprehensive marketing strategy across 25 disciplines — positioning, copywriting frameworks, buyer psychology, SEO, CRO, paid ads, funnel architecture, content strategy, growth loops, analytics, pricing, product launches, and competitive intelligence. Use when the user needs marketing strategy, campaign planning, copy",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "campaign",
-      "product",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/marketing-strategist/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "environmental-design",
-      "fashion-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:05.300Z",
-    "lastSeenAt": "2026-10-02T08:37:05.300Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/moltbook",
-    "name": "moltbook",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Interact with Moltbook — the social network for AI agents. Post content, reply to discussions, browse feeds, upvote/downvote, join submolt communities, follow agents, search semantically, and track engagement. Use when the user wants to engage with Moltbook, check their feed, post, reply, or manage their agent presence",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/moltbook/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:07.442Z",
-    "lastSeenAt": "2026-10-02T08:37:07.442Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/peekaboo",
-    "name": "peekaboo",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/peekaboo/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:10.117Z",
-    "lastSeenAt": "2026-10-02T08:37:10.117Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/portfolio-optimizer",
-    "name": "portfolio-optimizer",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Modern portfolio theory optimization including Markowitz mean-variance, Black-Litterman, risk parity, and efficient frontier construction with constraints.",
-    "security": "B",
-    "signalScore": 63,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/portfolio-optimizer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:11.449Z",
-    "lastSeenAt": "2026-10-02T08:37:11.449Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/apple-notes",
-    "name": "apple-notes",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks CoWork-OSS to add a note, list notes, search notes, or manage note folders.",
+    "id": "hansondev/ai-rag-system-with-n8n-rag-workflow/web-design-guidelines",
+    "name": "web-design-guidelines",
+    "source": "hansondev/ai-rag-system-with-n8n-rag-workflow",
+    "summary": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
     "security": "B",
     "signalScore": 62,
     "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "environment"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/apple-notes/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:48.081Z",
-    "lastSeenAt": "2026-10-02T08:36:48.081Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/apple-reminders",
-    "name": "apple-reminders",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
-    "security": "B",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "environment"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/apple-reminders/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:48.262Z",
-    "lastSeenAt": "2026-10-02T08:36:48.262Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/code-reviewer",
-    "name": "code-reviewer",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Perform professional code review for local changes or GitHub pull requests.",
-    "security": "B",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/code-reviewer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:50.631Z",
-    "lastSeenAt": "2026-10-02T08:36:50.632Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/gemini",
-    "name": "gemini",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
-    "security": "B",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "environment"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/gemini/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:55.970Z",
-    "lastSeenAt": "2026-10-02T08:36:55.970Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/himalaya",
-    "name": "himalaya",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
-    "security": "B",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "map",
-      "environment"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/himalaya/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "architecture-design",
-      "environmental-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:57.603Z",
-    "lastSeenAt": "2026-10-02T08:36:57.603Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/legal-demand-letter-response-draft",
-    "name": "legal-demand-letter-response-draft",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Map allegations to contract language and draft a response letter with no unintended admissions.",
-    "security": "B",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
       "design",
       "ui",
-      "map"
+      "accessibility",
+      "ux"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/legal-demand-letter-response-draft/SKILL.md",
+    "installUrl": "https://github.com/hansondev/ai-rag-system-with-n8n-rag-workflow",
+    "skillsUrl": "https://github.com/hansondev/ai-rag-system-with-n8n-rag-workflow/blob/master/.agents/skills/web-design-guidelines/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "ui-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:01.938Z",
-    "lastSeenAt": "2026-10-02T08:37:01.938Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/memory-kit",
-    "name": "memory-kit",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Create a workspace-local .cowork/ memory kit (rules, identity, long-term notes, daily logs, heartbeat templates).",
-    "security": "B",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/memory-kit/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 82,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:06.677Z",
-    "lastSeenAt": "2026-10-02T08:37:06.677Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/pi-context-pipeline",
-    "name": "pi-context-pipeline",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Orchestrate pi-finder and optional pi-librarian to produce a compact context pack and Codex kickoff prompt before coding.",
-    "security": "B",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "research",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/pi-context-pipeline/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
       "experience-design",
-      "ui-design",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:10.367Z",
-    "lastSeenAt": "2026-10-02T08:37:10.367Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/add-documentation",
-    "name": "add-documentation",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Generate JSDoc/docstrings for functions",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/add-documentation/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
       "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:47.324Z",
-    "lastSeenAt": "2026-10-02T08:36:47.324Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/agentic-image-loop",
-    "name": "agentic-image-loop",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Generate -> annotate -> refine -> repeat using generate_image + Visual Annotator (Live Canvas).",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "visual"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/agentic-image-loop/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "fashion-design",
-      "folk-art"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:47.510Z",
-    "lastSeenAt": "2026-10-02T08:36:47.510Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/analyze-csv",
-    "name": "analyze-csv",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Load a CSV and provide insights",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "visual"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/analyze-csv/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "fashion-design",
-      "ui-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:47.692Z",
-    "lastSeenAt": "2026-10-02T08:36:47.692Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/bird",
-    "name": "bird",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "X/Twitter CLI for reading, searching, posting, and engagement via cookies.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/bird/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:49.297Z",
-    "lastSeenAt": "2026-10-02T08:36:49.297Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/blogwatcher",
-    "name": "blogwatcher",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/blogwatcher/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:49.505Z",
-    "lastSeenAt": "2026-10-02T08:36:49.505Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/clean-imports",
-    "name": "clean-imports",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Remove unused imports from files",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/clean-imports/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:50.068Z",
-    "lastSeenAt": "2026-10-02T08:36:50.068Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/code-review",
-    "name": "code-review",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Review code for best practices and potential issues",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/code-review/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:50.446Z",
-    "lastSeenAt": "2026-10-02T08:36:50.446Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/compare-files",
-    "name": "compare-files",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Compare two files and show differences",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/compare-files/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:51.236Z",
-    "lastSeenAt": "2026-10-02T08:36:51.236Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/competitive-research",
-    "name": "competitive-research",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Research competitors for a product, market, or idea and identify opportunities to differentiate",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "product",
-      "research"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/competitive-research/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "video-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:51.469Z",
-    "lastSeenAt": "2026-10-02T08:36:51.469Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/content-monitor",
-    "name": "content-monitor",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Monitor web pages for changes and extract updated content with scheduling support.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/content-monitor/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:51.804Z",
-    "lastSeenAt": "2026-10-02T08:36:51.804Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/convert-code",
-    "name": "convert-code",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Convert code from one language to another",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/convert-code/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:51.988Z",
-    "lastSeenAt": "2026-10-02T08:36:51.988Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/debug-error",
-    "name": "debug-error",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Analyze an error message and suggest fixes",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/debug-error/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:53.214Z",
-    "lastSeenAt": "2026-10-02T08:36:53.214Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/dependency-check",
-    "name": "dependency-check",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Audit dependencies for updates and vulnerabilities",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/dependency-check/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:53.681Z",
-    "lastSeenAt": "2026-10-02T08:36:53.681Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/explain-code",
-    "name": "explain-code",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Get a detailed explanation of how code works",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/explain-code/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:54.983Z",
-    "lastSeenAt": "2026-10-02T08:36:54.983Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/extract-todos",
-    "name": "extract-todos",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Find all TODO/FIXME comments in codebase",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/extract-todos/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:55.216Z",
-    "lastSeenAt": "2026-10-02T08:36:55.216Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/frontend-design",
-    "name": "frontend-design",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Design and build production-grade frontends with bold, distinctive aesthetics.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "product"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/frontend-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "industrial-design",
-      "experience-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:55.599Z",
-    "lastSeenAt": "2026-10-02T08:36:55.599Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/generate-readme",
-    "name": "generate-readme",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Create a README.md for a project",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/generate-readme/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:56.179Z",
-    "lastSeenAt": "2026-10-02T08:36:56.179Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/github",
-    "name": "github",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/github/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:56.557Z",
-    "lastSeenAt": "2026-10-02T08:36:56.557Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/gog",
-    "name": "gog",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Tasks, Sheets, Docs, and Slides.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/gog/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:56.738Z",
-    "lastSeenAt": "2026-10-02T08:36:56.738Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/goplaces",
-    "name": "goplaces",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/goplaces/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:56.942Z",
-    "lastSeenAt": "2026-10-02T08:36:56.942Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/idea-validation",
-    "name": "idea-validation",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Validate a business or product idea with market research, competitor analysis, and a go/no-go recommendation",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "product",
-      "research"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/idea-validation/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "video-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:59.026Z",
-    "lastSeenAt": "2026-10-02T08:36:59.026Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/imsg",
-    "name": "imsg",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "iMessage/SMS CLI for listing chats, history, watch, and sending.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/imsg/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:59.461Z",
-    "lastSeenAt": "2026-10-02T08:36:59.461Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/lead-scraper",
-    "name": "lead-scraper",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Extract business and contact information from directory pages and company websites.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/lead-scraper/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:01.357Z",
-    "lastSeenAt": "2026-10-02T08:37:01.357Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/learn",
-    "name": "learn",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Manually record an insight, correction, preference, or rule that the agent should remember for future tasks.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/learn/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:01.545Z",
-    "lastSeenAt": "2026-10-02T08:37:01.545Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/legal-contract-negotiation-review",
-    "name": "legal-contract-negotiation-review",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Analyze counterparty contract changes against agreement/schedules, flag conflicts, and produce severity-rated counterpositions.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "research",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/legal-contract-negotiation-review/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "ui-design",
-      "operations-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:01.740Z",
-    "lastSeenAt": "2026-10-02T08:37:01.740Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/local-places",
-    "name": "local-places",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/local-places/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:03.406Z",
-    "lastSeenAt": "2026-10-02T08:37:03.406Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/local-websearch",
-    "name": "local-websearch",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Search the web privately via a self-hosted SearXNG metasearch engine.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/local-websearch/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:03.702Z",
-    "lastSeenAt": "2026-10-02T08:37:03.702Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/mcporter",
-    "name": "mcporter",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/mcporter/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:06.486Z",
-    "lastSeenAt": "2026-10-02T08:37:06.486Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/model-usage",
-    "name": "model-usage",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/model-usage/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
+      "video-design"
     ],
     "qualityScore": 79,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:07.071Z",
-    "lastSeenAt": "2026-10-02T08:37:07.071Z"
+    "firstSeenAt": "2026-10-04T08:30:15.148Z",
+    "lastSeenAt": "2026-10-04T08:30:15.148Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/nano-pdf",
-    "name": "nano-pdf",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
-    "security": "B",
-    "signalScore": 61,
+    "id": "orgward/orgward-enterprise-manager/orgward-review",
+    "name": "orgward-review",
+    "source": "orgward/orgward-enterprise-manager",
+    "summary": "Review implemented OrgWard code and tests for correctness, security boundaries, persistence, failure behavior and usability. Use after implementation, not as a paperwork gate.",
+    "security": "A",
+    "signalScore": 62,
     "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/nano-pdf/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:08.417Z",
-    "lastSeenAt": "2026-10-02T08:37:08.417Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/notion",
-    "name": "notion",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Notion API for creating and managing pages, databases, and blocks.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/notion/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:08.695Z",
-    "lastSeenAt": "2026-10-02T08:37:08.695Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/openai-image-gen",
-    "name": "openai-image-gen",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/openai-image-gen/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:09.059Z",
-    "lastSeenAt": "2026-10-02T08:37:09.059Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/openai-whisper",
-    "name": "openai-whisper",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/openai-whisper/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:09.736Z",
-    "lastSeenAt": "2026-10-02T08:37:09.736Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/ordercli",
-    "name": "ordercli",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/ordercli/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:09.930Z",
-    "lastSeenAt": "2026-10-02T08:37:09.930Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/pi-finder-subagent",
-    "name": "pi-finder-subagent",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Read-only local workspace scout subagent for Pi. Use it to narrow context to relevant files/snippets before implementation.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
       "design",
-      "research",
-      "ui"
+      "usability",
+      "ui",
+      "art",
+      "vector"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/pi-finder-subagent/SKILL.md",
+    "installUrl": "https://github.com/orgward/orgward-enterprise-manager",
+    "skillsUrl": "https://github.com/orgward/orgward-enterprise-manager/blob/main/.agents/skills/orgward-review/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
       "experience-design",
       "ui-design",
-      "operations-design"
+      "folk-art",
+      "visual-communication"
     ],
-    "qualityScore": 75,
+    "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:10.553Z",
-    "lastSeenAt": "2026-10-02T08:37:10.553Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/pi-librarian",
-    "name": "pi-librarian",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "GitHub research subagent for Pi that uses gh workflows to find and cite relevant repo files before implementation.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "research",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/pi-librarian/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:10.800Z",
-    "lastSeenAt": "2026-10-02T08:37:10.800Z"
+    "firstSeenAt": "2026-10-04T08:30:17.467Z",
+    "lastSeenAt": "2026-10-04T08:30:17.467Z"
   },
   {
     "id": "heygen-com/hyperframes/seam-craft",
@@ -3358,9 +1330,9 @@
     "source": "heygen-com/hyperframes",
     "summary": "Render-correctness doctrine for scene-to-scene seams in HyperFrames launch videos — the prerequisites that make transitions composite correctly on the master timeline. Load when assembling the master timeline / index.html, when a white flash appears at a cut or crossfade seam (especially on dark films), when reasoning ",
     "security": "C",
-    "signalScore": 60,
+    "signalScore": 61,
     "installs": 0,
-    "repoStars": 55517,
+    "repoStars": 56401,
     "tags": [
       "video",
       "film",
@@ -3379,303 +1351,442 @@
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-02T08:36:26.755Z",
-    "lastSeenAt": "2026-10-02T08:36:26.755Z"
+    "lastSeenAt": "2026-10-04T08:29:58.355Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/openai-whisper-api",
-    "name": "openai-whisper-api",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Transcribe audio via OpenAI Whisper, Atlas Cloud, or MuAPI speech-to-text APIs.",
-    "security": "C",
+    "id": "VibeBB/UX-creator-agent/ux-cmf",
+    "name": "ux-cmf",
+    "source": "VibeBB/UX-creator-agent",
+    "summary": "Industrial design / CMF authoring — form language, palette roles, materials, finishes, per-surface parts, and markings in the UX contract's cmf block, with deterministic coverage and contrast gates.",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ux",
+      "product",
+      "industrial",
+      "brand"
+    ],
+    "installUrl": "https://github.com/VibeBB/UX-creator-agent",
+    "skillsUrl": "https://github.com/VibeBB/UX-creator-agent/blob/main/plugins/ux/skills/ux-cmf/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "industrial-design",
+      "operations-design",
+      "fashion-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:17.617Z",
+    "lastSeenAt": "2026-10-04T08:30:17.617Z"
+  },
+  {
+    "id": "VibeBB/UX-creator-agent/ux-production",
+    "name": "ux-production",
+    "source": "VibeBB/UX-creator-agent",
+    "summary": "Producer / orchestrator rules for the product-level <product>.production.json plan — stages, owners, dependencies, decisions, blockers, sibling request tracking, and the evidence loop back into design.",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/VibeBB/UX-creator-agent",
+    "skillsUrl": "https://github.com/VibeBB/UX-creator-agent/blob/main/plugins/ux/skills/ux-production/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:18.399Z",
+    "lastSeenAt": "2026-10-04T08:30:18.400Z"
+  },
+  {
+    "id": "VibeBB/UX-creator-agent/ux-theory-lenses",
+    "name": "ux-theory-lenses",
+    "source": "VibeBB/UX-creator-agent",
+    "summary": "Theory lenses for UX decisions — Apple HIG, game design (MDA, flow, core loop, feedback, onboarding, SDT), JTBD/ODI, CJM/service blueprint, QCD.",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ux",
+      "product",
+      "motion",
+      "cad"
+    ],
+    "installUrl": "https://github.com/VibeBB/UX-creator-agent",
+    "skillsUrl": "https://github.com/VibeBB/UX-creator-agent/blob/main/plugins/ux/skills/ux-theory-lenses/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "operations-design",
+      "industrial-design",
+      "video-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:18.842Z",
+    "lastSeenAt": "2026-10-04T08:30:18.842Z"
+  },
+  {
+    "id": "GeorgeGlyn/Castor/blender",
+    "name": "blender",
+    "source": "GeorgeGlyn/Castor",
+    "summary": "Builds any 3D model in a live Blender GUI session (characters, props, environments, rigs, materials, animation, export). Drives the Blender UI and Python together, verifies every step visually, and exports clean FBX/GLB for Unity.",
+    "security": "B",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "3d",
+      "map",
+      "environment",
+      "ui",
+      "layout",
+      "interaction",
+      "pattern",
+      "visual"
+    ],
+    "installUrl": "https://github.com/GeorgeGlyn/Castor",
+    "skillsUrl": "https://github.com/GeorgeGlyn/Castor/blob/main/backend/skills/blender/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "arts-crafts",
+      "folk-art"
+    ],
+    "qualityScore": 77,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:19.166Z",
+    "lastSeenAt": "2026-10-04T08:30:19.166Z"
+  },
+  {
+    "id": "VibeBB/UX-creator-agent/ux-jtbd",
+    "name": "ux-jtbd",
+    "source": "VibeBB/UX-creator-agent",
+    "summary": "Jobs-to-be-done and ODI opportunity scoring — how to write jobs, journeys, and the opportunity table.",
+    "security": "A",
     "signalScore": 60,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
       "design",
-      "audio"
+      "ux",
+      "photo",
+      "motion"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/openai-whisper-api/SKILL.md",
+    "installUrl": "https://github.com/VibeBB/UX-creator-agent",
+    "skillsUrl": "https://github.com/VibeBB/UX-creator-agent/blob/main/plugins/ux/skills/ux-jtbd/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "ui-design",
+      "experience-design",
       "operations-design",
-      "industrial-design"
+      "video-design",
+      "fashion-design"
     ],
-    "qualityScore": 79,
+    "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:09.532Z",
-    "lastSeenAt": "2026-10-02T08:37:09.532Z"
+    "firstSeenAt": "2026-10-04T08:30:18.074Z",
+    "lastSeenAt": "2026-10-04T08:30:18.074Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/attack-path-analysis",
-    "name": "attack-path-analysis",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use when Codex is already in the attack-path-analysis phase of a security scan or the user explicitly asks to trace a security finding from source to sink and calibrate severity. Do not use as the primary trigger for full PR, commit, branch, patch, or repository scans.",
-    "security": "C",
-    "signalScore": 59,
+    "id": "VibeBB/UX-creator-agent/ux-persona",
+    "name": "ux-persona",
+    "source": "VibeBB/UX-creator-agent",
+    "summary": "The ux-creator designer persona — voice, dialect rules, QCD discipline, and the Think Different creed.",
+    "security": "A",
+    "signalScore": 60,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ux",
+      "architecture"
+    ],
+    "installUrl": "https://github.com/VibeBB/UX-creator-agent",
+    "skillsUrl": "https://github.com/VibeBB/UX-creator-agent/blob/main/plugins/ux/skills/ux-persona/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "environmental-design",
+      "architecture-design",
+      "ui-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:18.219Z",
+    "lastSeenAt": "2026-10-04T08:30:18.219Z"
+  },
+  {
+    "id": "VibeBB/UX-creator-agent/ux-sibling-cooperation",
+    "name": "ux-sibling-cooperation",
+    "source": "VibeBB/UX-creator-agent",
+    "summary": "How ux-creator imports sibling-agent artifacts (circuit connectivity, mech envelope, wire contract, bard outputs) and issues ux-request.json change proposals.",
+    "security": "B",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ux",
+      "product",
+      "industrial",
+      "ui",
+      "layout"
+    ],
+    "installUrl": "https://github.com/VibeBB/UX-creator-agent",
+    "skillsUrl": "https://github.com/VibeBB/UX-creator-agent/blob/main/plugins/ux/skills/ux-sibling-cooperation/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "industrial-design",
+      "ui-design",
+      "environmental-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:18.699Z",
+    "lastSeenAt": "2026-10-04T08:30:18.699Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/data-visualization-discipline",
+    "name": "data-visualization-discipline",
+    "source": "daymade/claude-code-skills",
+    "summary": "数据可视化的判断层 SSOT——画任何图表、dashboard、看板之前先加载它，不是画完之后。管\"该不该这么画\"：这张图想让读者得出什么结论、用均值还是中位数、能不能聚合、堆叠还是折线、能不能上双轴、配色与颜色数量、同一实体跨图是否同色同位、表格该留几列。介质无关：HTML 报告页、React/Vue dashboard、PPT 原生图表、matplotlib/plotly/ECharts/D3、渲染成 PNG 的图，一律适用。Use when 动手画图之前，或评审既有图表（\"这几张图有什么问题\"、\"图例为什么不一致\"）。Not for 报告页的排版/组件/交互（用 report-with-html:report-with-htm",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 1441,
+    "tags": [
+      "visual",
+      "design",
+      "product"
+    ],
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/data-visualization-discipline/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "operations-design",
+      "industrial-design",
+      "fashion-design"
+    ],
+    "qualityScore": 82,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:12.669Z",
+    "lastSeenAt": "2026-10-04T08:30:12.669Z"
+  },
+  {
+    "id": "GeorgeGlyn/Castor/godot",
+    "name": "godot",
+    "source": "GeorgeGlyn/Castor",
+    "summary": "Automates Godot 4 project creation, GDScript coding, scene/node manipulation, and general 2D/3D game development.",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "3d",
+      "map",
+      "vector"
+    ],
+    "installUrl": "https://github.com/GeorgeGlyn/Castor",
+    "skillsUrl": "https://github.com/GeorgeGlyn/Castor/blob/main/backend/skills/godot/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "arts-crafts",
+      "visual-communication",
+      "folk-art"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:19.762Z",
+    "lastSeenAt": "2026-10-04T08:30:19.762Z"
+  },
+  {
+    "id": "hansondev/ai-rag-system-with-n8n-rag-workflow/mcp-builder",
+    "name": "mcp-builder",
+    "source": "hansondev/ai-rag-system-with-n8n-rag-workflow",
+    "summary": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+    "security": "C",
+    "signalScore": 57,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "architecture",
+      "design",
+      "map",
+      "environment",
+      "ui"
+    ],
+    "installUrl": "https://github.com/hansondev/ai-rag-system-with-n8n-rag-workflow",
+    "skillsUrl": "https://github.com/hansondev/ai-rag-system-with-n8n-rag-workflow/blob/master/.agents/skills/mcp-builder/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "ui-design",
+      "environmental-design",
+      "operations-design"
+    ],
+    "qualityScore": 89,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:15.006Z",
+    "lastSeenAt": "2026-10-04T08:30:15.006Z"
+  },
+  {
+    "id": "shipwithstef/ssve/track-visuals",
+    "name": "track-visuals",
+    "source": "shipwithstef/ssve",
+    "summary": "Capture and track visual state of all screens. Creates a baseline after first UI design or brownfield onboarding, then diffs against it when code changes. Use when \"capture visuals\", \"visual baseline\", \"screenshot all screens\", \"visual regression\", \"what changed visually\", \"track visual state\", or automatically as a si",
+    "security": "C",
+    "signalScore": 55,
+    "installs": 0,
+    "repoStars": 3,
+    "tags": [
+      "design",
+      "ux",
+      "product",
+      "mobile",
+      "visual"
+    ],
+    "installUrl": "https://github.com/shipwithstef/ssve",
+    "skillsUrl": "https://github.com/shipwithstef/ssve/blob/main/skills/track-visuals/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "visual-communication",
+      "operations-design",
+      "folk-art"
+    ],
+    "qualityScore": 85,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-04T08:30:14.451Z",
+    "lastSeenAt": "2026-10-04T08:30:14.451Z"
+  },
+  {
+    "id": "orgward/orgward-enterprise-manager/orgward-design",
+    "name": "orgward-design",
+    "source": "orgward/orgward-enterprise-manager",
+    "summary": "Turn an OrgWard product outcome or discovered behavior gap into a small implementation task and focused acceptance tests. Not for producing governance packets or paper coverage.",
+    "security": "C",
+    "signalScore": 54,
+    "installs": 0,
+    "repoStars": 0,
     "tags": [
       "design",
       "product"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/plugin-packs/codex-security/skills/attack-path-analysis/SKILL.md",
+    "installUrl": "https://github.com/orgward/orgward-enterprise-manager",
+    "skillsUrl": "https://github.com/orgward/orgward-enterprise-manager/blob/main/.agents/skills/orgward-design/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
+      "experience-design",
       "operations-design",
       "industrial-design",
-      "experience-design"
+      "ui-design"
     ],
-    "qualityScore": 88,
+    "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:45.385Z",
-    "lastSeenAt": "2026-10-02T08:36:45.385Z"
+    "firstSeenAt": "2026-10-04T08:30:16.982Z",
+    "lastSeenAt": "2026-10-04T08:30:16.982Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/validation",
-    "name": "validation",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use when Codex is already in the validation phase of a security scan or the user explicitly asks to determine whether one or more candidate security findings are valid. Do not use as the primary trigger for full PR, commit, branch, patch, or repository scans.",
+    "id": "orgward/orgward-enterprise-manager/orgward-orchestrate",
+    "name": "orgward-orchestrate",
+    "source": "orgward/orgward-enterprise-manager",
+    "summary": "Order OrgWard implementation tasks and coordinate explicitly authorized parallel work using the concise TASKS.md backlog.",
     "security": "C",
-    "signalScore": 59,
+    "signalScore": 54,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
       "design",
-      "product"
+      "product",
+      "operations"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/plugin-packs/codex-security/skills/validation/SKILL.md",
+    "installUrl": "https://github.com/orgward/orgward-enterprise-manager",
+    "skillsUrl": "https://github.com/orgward/orgward-enterprise-manager/blob/main/.agents/skills/orgward-orchestrate/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
+      "experience-design",
       "operations-design",
       "industrial-design",
-      "experience-design"
+      "ui-design"
     ],
-    "qualityScore": 88,
+    "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:46.951Z",
-    "lastSeenAt": "2026-10-02T08:36:46.951Z"
+    "firstSeenAt": "2026-10-04T08:30:17.282Z",
+    "lastSeenAt": "2026-10-04T08:30:17.282Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/autobrowse",
-    "name": "autobrowse",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Learn a reliable browser workflow by iterating on a real web task, recording strategy, and proposing a reusable skill.",
+    "id": "GeorgeGlyn/Castor/unity",
+    "name": "unity",
+    "source": "GeorgeGlyn/Castor",
+    "summary": "Creates, edits, tests and builds Unity 6 projects (2D/3D). Drives the Unity Editor through the best available channel (Unity CLI / MCP bridge, Editor scripts, or GUI), writes Unity 6-correct C#, imports Blender assets, and verifies every change through the Console and the Game view.",
     "security": "C",
-    "signalScore": 59,
+    "signalScore": 54,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
-      "design",
-      "research",
-      "ui"
+      "3d",
+      "map",
+      "product",
+      "visual"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/autobrowse/SKILL.md",
+    "installUrl": "https://github.com/GeorgeGlyn/Castor",
+    "skillsUrl": "https://github.com/GeorgeGlyn/Castor/blob/main/backend/skills/unity/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "experience-design",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:48.890Z",
-    "lastSeenAt": "2026-10-02T08:36:48.890Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/multi-pr-review",
-    "name": "multi-pr-review",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Run a consensus-style multi-agent review of a PR with severity-based findings.",
-    "security": "C",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/multi-pr-review/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
+      "architecture-design",
       "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:08.236Z",
-    "lastSeenAt": "2026-10-02T08:37:08.236Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/polymarket",
-    "name": "polymarket",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Query Polymarket prediction markets — search events, check odds and prices, view trending markets, track price momentum, get orderbook depth, analyze volume, and monitor market resolution timelines. Use when the user asks about prediction markets, betting odds, event probabilities, or Polymarket data.",
-    "security": "C",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/polymarket/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:11.209Z",
-    "lastSeenAt": "2026-10-02T08:37:11.209Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/finding-discovery",
-    "name": "finding-discovery",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use when Codex is already in the finding-discovery phase of a security scan or the user explicitly asks to discover candidate security findings in a repository or code change. Do not use as the primary trigger for full PR, commit, branch, patch, or repository scans.",
-    "security": "C",
-    "signalScore": 57,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "operations",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/plugin-packs/codex-security/skills/finding-discovery/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:45.835Z",
-    "lastSeenAt": "2026-10-02T08:36:45.835Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/crypto-trading",
-    "name": "crypto-trading",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Use ccxt (Python) for crypto prices, balances, and order actions across 100+ exchanges.",
-    "security": "C",
-    "signalScore": 57,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/crypto-trading/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:52.760Z",
-    "lastSeenAt": "2026-10-02T08:36:52.760Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/llm-wiki",
-    "name": "llm-wiki",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Build and maintain a workspace-local, Obsidian-friendly research vault using Karpathy's LLM Wiki pattern.",
-    "security": "C",
-    "signalScore": 57,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design",
-      "research",
-      "ui"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/llm-wiki/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "ui-design",
+      "industrial-design",
       "arts-crafts"
     ],
-    "qualityScore": 79,
+    "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:37:03.217Z",
-    "lastSeenAt": "2026-10-02T08:37:03.217Z"
+    "firstSeenAt": "2026-10-04T08:30:19.957Z",
+    "lastSeenAt": "2026-10-04T08:30:19.957Z"
   },
   {
-    "id": "CoWork-OS/CoWork-OS/1password",
-    "name": "1password",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.",
+    "id": "orgward/orgward-enterprise-manager/orgward-implement",
+    "name": "orgward-implement",
+    "source": "orgward/orgward-enterprise-manager",
+    "summary": "Implement an OrgWard task in real state, API and UI code with focused behavior and recovery tests. Use for feature work, fixes and vertical slices.",
     "security": "C",
-    "signalScore": 56,
+    "signalScore": 53,
     "installs": 0,
-    "repoStars": 468,
+    "repoStars": 0,
     "tags": [
-      "design"
+      "design",
+      "product"
     ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/1password/SKILL.md",
+    "installUrl": "https://github.com/orgward/orgward-enterprise-manager",
+    "skillsUrl": "https://github.com/orgward/orgward-enterprise-manager/blob/main/.agents/skills/orgward-implement/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "ui-design",
+      "experience-design",
       "operations-design",
-      "industrial-design"
+      "industrial-design",
+      "ui-design"
     ],
-    "qualityScore": 75,
+    "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:47.138Z",
-    "lastSeenAt": "2026-10-02T08:36:47.138Z"
-  },
-  {
-    "id": "CoWork-OS/CoWork-OS/git-commit",
-    "name": "git-commit",
-    "source": "CoWork-OS/CoWork-OS",
-    "summary": "Create a well-formatted commit message from staged changes",
-    "security": "C",
-    "signalScore": 56,
-    "installs": 0,
-    "repoStars": 468,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/CoWork-OS/CoWork-OS",
-    "skillsUrl": "https://github.com/CoWork-OS/CoWork-OS/blob/main/resources/skills/git-commit/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-02T08:36:56.374Z",
-    "lastSeenAt": "2026-10-02T08:36:56.374Z"
+    "firstSeenAt": "2026-10-04T08:30:17.138Z",
+    "lastSeenAt": "2026-10-04T08:30:17.138Z"
   }
 ]
