@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-03T09:24:27.372Z",
+  "generatedAt": "2026-10-04T10:03:29.846Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
   "passed": 7,
   "passRate": 1,
   "unsafeTop3": 0,
-  "capabilityGapCases": 4,
-  "averageRecommendationCount": 2.14,
+  "capabilityGapCases": 3,
+  "averageRecommendationCount": 2.29,
   "averageTop1Score": 84.1,
   "projectContextFixture": "passed",
   "results": [
@@ -143,10 +143,11 @@
       "pass": true,
       "top3": [
         "frontend-design",
+        "hansondev/ai-rag-system-with-n8n-rag-workflow/frontend-design",
         "openstatusHQ/data-table-filters/frontend-design-4fb235"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 87,
       "expected_hits": 1,
       "signal_hits": 2,
