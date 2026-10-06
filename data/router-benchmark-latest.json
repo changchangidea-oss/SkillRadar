@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-05T10:49:03.340Z",
+  "generatedAt": "2026-10-06T10:44:33.638Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
   "passed": 7,
   "passRate": 1,
   "unsafeTop3": 0,
-  "capabilityGapCases": 4,
-  "averageRecommendationCount": 2.14,
+  "capabilityGapCases": 3,
+  "averageRecommendationCount": 2.29,
   "averageTop1Score": 84.1,
   "projectContextFixture": "passed",
   "results": [
@@ -143,10 +143,11 @@
       "pass": true,
       "top3": [
         "frontend-design",
+        "Dicklesworthstone/pi_agent_rust/frontend-design",
         "openstatusHQ/data-table-filters/frontend-design-4fb235"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 87,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -170,8 +171,8 @@
       "pass": true,
       "top3": [
         "curiositech/some_claude_skills/interior-design-expert",
-        "yunusemrejr/yunuspi/svg-motion-engineering",
-        "roble3/cc-blender-skill/blender-rendering"
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
