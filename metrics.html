@@ -30,7 +30,7 @@
 <div class="foot">Data source: repository-generated JSON on the current branch. Static safety grades are conservative heuristics, not a formal security audit. Adoption rules: <a href="https://github.com/changchangidea-oss/SkillRadar/blob/main/docs/ADOPTION.md">docs/ADOPTION.md</a>.</div>
 </main>
 <script>
-const j=(p)=>fetch(p,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(p);return r.json()});
+const j=(p)=>fetch(p,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(p);return r.json()}).then(d=>{if(d===null||typeof d!=='object'||Array.isArray(d))throw new Error('Invalid response: '+p);return d;});
 Promise.all([j('data/design-skill-index.json'),j('data/design-domains.json'),j('data/radar-latest.json'),j('data/ranking-history.json')]).then(([m,d,r,h])=>{
  document.querySelector('#skills').textContent=m.count??'—';
  document.querySelector('#skillDetail').textContent=`${m.seedCount??0} seed + ${m.radarCount??0} live Radar`;
