@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T10:52:35.544Z",
+  "generatedAt": "2026-10-10T10:06:12.576Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
@@ -8,7 +8,7 @@
   "unsafeTop3": 0,
   "capabilityGapCases": 3,
   "averageRecommendationCount": 2.29,
-  "averageTop1Score": 84.1,
+  "averageTop1Score": 84.6,
   "projectContextFixture": "passed",
   "results": [
     {
@@ -143,8 +143,8 @@
       "pass": true,
       "top3": [
         "frontend-design",
-        "Dicklesworthstone/pi_agent_rust/frontend-design",
-        "openstatusHQ/data-table-filters/frontend-design-4fb235"
+        "openstatusHQ/data-table-filters/frontend-design-4fb235",
+        "sickn33/agentic-awesome-skills/ckw-design"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -170,20 +170,20 @@
       "id": "zh-spatial-rendering",
       "pass": true,
       "top3": [
+        "sickn33/agentic-awesome-skills/antigravity-design-expert",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering",
-        "calesthio/generative-media-skills/neural-reality-capture"
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 80,
+      "top1_score": 83,
       "expected_hits": 0,
       "signal_hits": 4,
       "signals": [
         "-architecture",
-        "-interior",
+        "-rendering",
         "-spatial",
-        "-rendering"
+        "-interior"
       ],
       "context": {
         "mode": "task-only",
