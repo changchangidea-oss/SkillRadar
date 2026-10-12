@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-11T09:02:48.181Z",
+  "generatedAt": "2026-10-12T09:23:27.118Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 50,
-  "passRate": 0.926,
+  "passed": 49,
+  "passRate": 0.907,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 40,
-    "passRate": 0.909
+    "passed": 39,
+    "passRate": 0.886
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 3,
+  "specificityFailures": 4,
   "capabilityGapCases": 33,
-  "averageRecommendationCount": 1.91,
-  "averageRelevantTop3": 1.91,
-  "averageTop1Score": 75.4,
+  "averageRecommendationCount": 1.85,
+  "averageRelevantTop3": 1.85,
+  "averageTop1Score": 73.5,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 130,
-  "anchorSignalHitsTotal": 31,
+  "signalHitsTotal": 128,
+  "anchorSignalHitsTotal": 30,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -36,7 +36,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 2
+      "averageRecommendationCount": 1.83
     },
     "Frontend": {
       "cases": 8,
@@ -84,9 +84,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 2,
+      "capabilityGapCases": 3,
       "passRate": 1,
-      "averageRecommendationCount": 2.2
+      "averageRecommendationCount": 2
     },
     "Backend & API": {
       "cases": 4,
@@ -110,13 +110,13 @@
     },
     "Mobile": {
       "cases": 4,
-      "passed": 3,
+      "passed": 2,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 1,
+      "specificityFailures": 2,
       "capabilityGapCases": 1,
-      "passRate": 0.75,
-      "averageRecommendationCount": 2.75
+      "passRate": 0.5,
+      "averageRecommendationCount": 2.25
     },
     "Automation & Integrations": {
       "cases": 4,
@@ -124,9 +124,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 2,
+      "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 2.25
+      "averageRecommendationCount": 2.5
     },
     "Docs & Research": {
       "cases": 4,
@@ -950,10 +950,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "ai-sdk",
-        "ModelEngine-Group/nexent/nexent-test-assets-576aaa"
+        "ai-sdk"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 74,
       "expected_hits": 1,
@@ -962,7 +961,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -982,22 +981,6 @@
             "outputs",
             "streaming"
           ]
-        },
-        {
-          "id": "ModelEngine-Group/nexent/nexent-test-assets-576aaa",
-          "score": 53,
-          "coverage": 0.44,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "generate",
-            "structured",
-            "ai"
-          ]
         }
       ],
       "signals": [
@@ -1005,10 +988,7 @@
         "ai",
         "outputs",
         "streaming",
-        "ai-sdk",
-        "generate",
-        "modelengine-group-nexent-nexent-test-assets-576aaa",
-        "nexent-test-assets"
+        "ai-sdk"
       ]
     },
     {
@@ -1752,11 +1732,10 @@
       "pass": true,
       "top3": [
         "test-driven-development",
-        "ModelEngine-Group/nexent/nexent-test-assets-576aaa",
-        "ModelEngine-Group/nexent/nexent-python-tests-a6d720"
+        "ModelEngine-Group/nexent/nexent-test-assets-576aaa"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 99,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -1764,7 +1743,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1789,24 +1768,6 @@
         },
         {
           "id": "ModelEngine-Group/nexent/nexent-test-assets-576aaa",
-          "score": 81,
-          "coverage": 0.81,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "implement",
-            "feature",
-            "test",
-            "driven",
-            "regression"
-          ]
-        },
-        {
-          "id": "ModelEngine-Group/nexent/nexent-python-tests-a6d720",
           "score": 72,
           "coverage": 0.67,
           "expected": false,
@@ -1817,8 +1778,8 @@
           "identity_anchor_hits": 0,
           "signals": [
             "implement",
+            "feature",
             "test",
-            "driven",
             "regression"
           ]
         }
@@ -1832,9 +1793,7 @@
         "prevention",
         "tdd",
         "modelengine-group-nexent-nexent-test-assets-576aaa",
-        "nexent-test-assets",
-        "modelengine-group-nexent-nexent-python-tests-a6d720",
-        "nexent-python-tests"
+        "nexent-test-assets"
       ]
     },
     {
@@ -2543,65 +2502,22 @@
       "id": "swiftui-ios",
       "domain": "Mobile",
       "tier": "coverage",
-      "pass": true,
-      "top3": [
-        "affaan-m/ECC/swiftui-patterns",
-        "affaan-m/ECC/liquid-glass-design"
-      ],
-      "recommendation_count": 2,
+      "pass": false,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 72,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 2,
-      "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "signal_hits": 0,
+      "anchor_signal_hits": 0,
+      "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
-      "specificity_pass": true,
-      "relevant_top3": 2,
+      "specificity_pass": false,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "affaan-m/ECC/swiftui-patterns",
-          "score": 72,
-          "coverage": 0.59,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "ios",
-            "swiftui",
-            "patterns"
-          ]
-        },
-        {
-          "id": "affaan-m/ECC/liquid-glass-design",
-          "score": 46,
-          "coverage": 0.36,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "ios",
-            "swiftui"
-          ]
-        }
-      ],
-      "signals": [
-        "ios",
-        "swiftui",
-        "patterns",
-        "affaan-m-ecc-swiftui-patterns",
-        "swiftui-patterns",
-        "affaan-m-ecc-liquid-glass-design",
-        "liquid-glass-design"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "android-kotlin",
@@ -2690,7 +2606,7 @@
       "top3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
         "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
-        "flutter/agent-plugins/flutter-fix-layout-issues-4a82b9"
+        "flutter/agent-plugins/flutter-add-integration-test-91cc8c"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2736,7 +2652,7 @@
           ]
         },
         {
-          "id": "flutter/agent-plugins/flutter-fix-layout-issues-4a82b9",
+          "id": "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
           "score": 64,
           "coverage": 0.61,
           "expected": false,
@@ -2758,8 +2674,8 @@
         "flutter-build-responsive-layout",
         "flutter-agent-plugins-flutter-add-widget-preview-8e7a10",
         "flutter-add-widget-preview",
-        "flutter-agent-plugins-flutter-fix-layout-issues-4a82b9",
-        "flutter-fix-layout-issues"
+        "flutter-agent-plugins-flutter-add-integration-test-91cc8c",
+        "flutter-add-integration-test"
       ]
     },
     {
@@ -2769,18 +2685,19 @@
       "pass": true,
       "top3": [
         "github",
-        "nexu-io/open-design/github-dashboard-a45aef"
+        "nexu-io/open-design/orbit-github",
+        "nexu-io/open-design/github-dashboard"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 88,
       "expected_hits": 1,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2804,9 +2721,26 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/github-dashboard-a45aef",
-          "score": 78,
-          "coverage": 0.74,
+          "id": "nexu-io/open-design/orbit-github",
+          "score": 65,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "github",
+            "requests",
+            "issues",
+            "ci"
+          ]
+        },
+        {
+          "id": "nexu-io/open-design/github-dashboard",
+          "score": 65,
+          "coverage": 0.57,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -2817,8 +2751,7 @@
             "github",
             "pull",
             "requests",
-            "issues",
-            "automation"
+            "issues"
           ]
         }
       ],
@@ -2830,7 +2763,9 @@
         "ci",
         "automation",
         "requests",
-        "nexu-io-open-design-github-dashboard-a45aef",
+        "nexu-io-open-design-orbit-github",
+        "orbit-github",
+        "nexu-io-open-design-github-dashboard",
         "github-dashboard"
       ]
     },
@@ -3122,7 +3057,7 @@
       "top3": [
         "callstackincubator/agent-skills/writing-user-docs-846927",
         "notion",
-        "flutter/agent-plugins/dart-write-documentation-4c8bb5"
+        "figma/mcp-server-guide/create-design-system-rules"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3168,8 +3103,8 @@
           ]
         },
         {
-          "id": "flutter/agent-plugins/dart-write-documentation-4c8bb5",
-          "score": 54,
+          "id": "figma/mcp-server-guide/create-design-system-rules",
+          "score": 49,
           "coverage": 0.32,
           "expected": false,
           "relevant": true,
@@ -3178,8 +3113,8 @@
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "write",
-            "documentation"
+            "documentation",
+            "system"
           ]
         }
       ],
@@ -3190,9 +3125,9 @@
         "writing-user-docs",
         "planning",
         "notion",
-        "write",
-        "flutter-agent-plugins-dart-write-documentation-4c8bb5",
-        "dart-write-documentation"
+        "system",
+        "figma-mcp-server-guide-create-design-system-rules",
+        "create-design-system-rules"
       ]
     },
     {
@@ -3203,7 +3138,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "nexu-io/open-design/token-map"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3253,8 +3188,8 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/figma-generate-design",
-          "score": 64,
+          "id": "nexu-io/open-design/token-map",
+          "score": 62,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3277,8 +3212,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "figma-mcp-server-guide-figma-generate-design",
-        "figma-generate-design"
+        "nexu-io-open-design-token-map",
+        "token-map"
       ]
     },
     {
@@ -3289,7 +3224,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "mvanhorn/printing-press-library/pp-producthunt"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3337,8 +3272,8 @@
           ]
         },
         {
-          "id": "mvanhorn/printing-press-library/pp-producthunt",
-          "score": 72,
+          "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+          "score": 76,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3360,8 +3295,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "mvanhorn-printing-press-library-pp-producthunt",
-        "pp-producthunt"
+        "nexu-io-open-design-html-ppt-zhangzara-pink-script",
+        "html-ppt-zhangzara-pink-script"
       ]
     },
     {
@@ -3452,13 +3387,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "clash-art/clash/composition-runtime-router",
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/hyperframes-keyframes"
+        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 95,
+      "top1_score": 85,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3469,23 +3404,6 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "clash-art/clash/composition-runtime-router",
-          "score": 95,
-          "coverage": 1,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "video",
-            "motion",
-            "editing",
-            "animation"
-          ]
-        },
         {
           "id": "remotion-dev/skills/remotion-best-practices",
           "score": 85,
@@ -3503,7 +3421,23 @@
           ]
         },
         {
-          "id": "heygen-com/hyperframes/hyperframes-keyframes",
+          "id": "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+          "score": 80,
+          "coverage": 0.75,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "video",
+            "motion",
+            "animation"
+          ]
+        },
+        {
+          "id": "remotion-dev/skills/remotion-multimedia",
           "score": 83,
           "coverage": 0.75,
           "expected": false,
@@ -3523,13 +3457,13 @@
         "video",
         "motion",
         "editing",
-        "animation",
-        "clash-art-clash-composition-runtime-router",
-        "composition-runtime-router",
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
-        "heygen-com-hyperframes-hyperframes-keyframes",
-        "hyperframes-keyframes"
+        "animation",
+        "heygen-com-hyperframes-hyperframes-creative-f1b96c",
+        "hyperframes-creative",
+        "remotion-dev-skills-remotion-multimedia",
+        "remotion-multimedia"
       ]
     },
     {
@@ -3538,13 +3472,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "mvanhorn/printing-press-library/pp-producthunt",
-        "skills-on-ai/skills-on-ai/crisis-communication-plan",
-        "clash-art/clash/project-file-contract"
+        "mitsuhiko/agent-stuff/openscad",
+        "calesthio/generative-media-skills/ecommerce-product-imagery",
+        "calesthio/generative-media-skills/meshy-3d"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 90,
+      "top1_score": 68,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3556,27 +3490,9 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "mvanhorn/printing-press-library/pp-producthunt",
-          "score": 90,
-          "coverage": 1,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "cad",
-            "industrial-design",
-            "industrial",
-            "product",
-            "cad"
-          ]
-        },
-        {
-          "id": "skills-on-ai/skills-on-ai/crisis-communication-plan",
-          "score": 82,
-          "coverage": 0.78,
+          "id": "mitsuhiko/agent-stuff/openscad",
+          "score": 68,
+          "coverage": 0.56,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3585,15 +3501,14 @@
           "identity_anchor_hits": 0,
           "signals": [
             "cad",
-            "industrial-design",
             "industrial",
             "cad"
           ]
         },
         {
-          "id": "clash-art/clash/project-file-contract",
-          "score": 76,
-          "coverage": 0.67,
+          "id": "calesthio/generative-media-skills/ecommerce-product-imagery",
+          "score": 60,
+          "coverage": 0.44,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3601,7 +3516,21 @@
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "industrial-design",
+            "industrial",
+            "product"
+          ]
+        },
+        {
+          "id": "calesthio/generative-media-skills/meshy-3d",
+          "score": 60,
+          "coverage": 0.44,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
             "industrial",
             "product"
           ]
@@ -3609,15 +3538,14 @@
       ],
       "signals": [
         "cad",
-        "industrial-design",
         "industrial",
+        "mitsuhiko-agent-stuff-openscad",
+        "openscad",
         "product",
-        "mvanhorn-printing-press-library-pp-producthunt",
-        "pp-producthunt",
-        "skills-on-ai-skills-on-ai-crisis-communication-plan",
-        "crisis-communication-plan",
-        "clash-art-clash-project-file-contract",
-        "project-file-contract"
+        "calesthio-generative-media-skills-ecommerce-product-imagery",
+        "e-commerce-product-imagery",
+        "calesthio-generative-media-skills-meshy-3d",
+        "meshy-3d"
       ]
     }
   ]
