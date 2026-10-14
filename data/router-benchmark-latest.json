@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T11:01:57.633Z",
+  "generatedAt": "2026-10-14T08:59:49.983Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
@@ -7,7 +7,7 @@
   "passRate": 1,
   "unsafeTop3": 0,
   "capabilityGapCases": 4,
-  "averageRecommendationCount": 2,
+  "averageRecommendationCount": 2.14,
   "averageTop1Score": 84.1,
   "projectContextFixture": "passed",
   "results": [
@@ -92,9 +92,10 @@
       "id": "shadcn-system",
       "pass": true,
       "top3": [
-        "shadcn"
+        "shadcn",
+        "tdduydev/xdev-hive/ui-styling"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 89,
       "expected_hits": 1,
@@ -103,7 +104,8 @@
         "shadcn",
         "design-system",
         "accessible",
-        "dashboard"
+        "dashboard",
+        "responsive"
       ],
       "context": {
         "mode": "task-only",
