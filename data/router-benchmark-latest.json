@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T08:33:45.242Z",
+  "generatedAt": "2026-10-16T08:28:18.959Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
@@ -7,7 +7,7 @@
   "passRate": 1,
   "unsafeTop3": 0,
   "capabilityGapCases": 4,
-  "averageRecommendationCount": 2.14,
+  "averageRecommendationCount": 1.86,
   "averageTop1Score": 84.1,
   "projectContextFixture": "passed",
   "results": [
@@ -92,10 +92,9 @@
       "id": "shadcn-system",
       "pass": true,
       "top3": [
-        "shadcn",
-        "tdduydev/xdev-hive/ui-styling"
+        "shadcn"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 89,
       "expected_hits": 1,
@@ -104,8 +103,7 @@
         "shadcn",
         "design-system",
         "accessible",
-        "dashboard",
-        "responsive"
+        "dashboard"
       ],
       "context": {
         "mode": "task-only",
@@ -143,10 +141,9 @@
       "id": "frontend-polish",
       "pass": true,
       "top3": [
-        "frontend-design",
-        "openstatusHQ/data-table-filters/frontend-design-4fb235"
+        "frontend-design"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 87,
       "expected_hits": 1,
@@ -157,8 +154,7 @@
         "polish",
         "react",
         "dashboard",
-        "interface",
-        "quality"
+        "interface"
       ],
       "context": {
         "mode": "task-only",
