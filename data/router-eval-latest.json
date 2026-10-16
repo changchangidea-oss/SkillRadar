@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-14T07:46:10.235Z",
+  "generatedAt": "2026-10-16T07:19:19.296Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 49,
-  "passRate": 0.907,
+  "passed": 48,
+  "passRate": 0.889,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 39,
-    "passRate": 0.886
+    "passed": 38,
+    "passRate": 0.864
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 4,
-  "capabilityGapCases": 32,
-  "averageRecommendationCount": 1.89,
-  "averageRelevantTop3": 1.89,
-  "averageTop1Score": 73.8,
+  "specificityFailures": 5,
+  "capabilityGapCases": 35,
+  "averageRecommendationCount": 1.7,
+  "averageRelevantTop3": 1.7,
+  "averageTop1Score": 72.8,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 128,
-  "anchorSignalHitsTotal": 30,
+  "signalHitsTotal": 126,
+  "anchorSignalHitsTotal": 28,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -34,9 +34,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 3,
+      "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 2
+      "averageRecommendationCount": 1.67
     },
     "Frontend": {
       "cases": 8,
@@ -46,7 +46,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 7,
       "passRate": 1,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 1.25
     },
     "Design & Media": {
       "cases": 5,
@@ -54,9 +54,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 0,
+      "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 3
+      "averageRecommendationCount": 2.8
     },
     "Data & Database": {
       "cases": 5,
@@ -76,7 +76,7 @@
       "specificityFailures": 1,
       "capabilityGapCases": 5,
       "passRate": 0.8,
-      "averageRecommendationCount": 1.2
+      "averageRecommendationCount": 1
     },
     "Testing & Quality": {
       "cases": 5,
@@ -94,19 +94,19 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 1,
-      "capabilityGapCases": 2,
+      "capabilityGapCases": 3,
       "passRate": 0.75,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 1.5
     },
     "Security": {
       "cases": 4,
-      "passed": 4,
+      "passed": 3,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 0,
-      "capabilityGapCases": 3,
-      "passRate": 1,
-      "averageRecommendationCount": 1.5
+      "specificityFailures": 1,
+      "capabilityGapCases": 4,
+      "passRate": 0.75,
+      "averageRecommendationCount": 1
     },
     "Mobile": {
       "cases": 4,
@@ -124,9 +124,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 2,
+      "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 2.25
+      "averageRecommendationCount": 2.5
     },
     "Docs & Research": {
       "cases": 4,
@@ -325,10 +325,9 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "shadcn",
-        "tdduydev/xdev-hive/ui-styling"
+        "shadcn"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 89,
       "expected_hits": 1,
@@ -337,7 +336,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -357,33 +356,13 @@
             "accessible",
             "dashboard"
           ]
-        },
-        {
-          "id": "tdduydev/xdev-hive/ui-styling",
-          "score": 84,
-          "coverage": 0.86,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "shadcn",
-            "design-system",
-            "accessible",
-            "responsive"
-          ]
         }
       ],
       "signals": [
         "shadcn",
         "design-system",
         "accessible",
-        "dashboard",
-        "responsive",
-        "tdduydev-xdev-hive-ui-styling",
-        "ui-styling"
+        "dashboard"
       ]
     },
     {
@@ -481,10 +460,9 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "frontend-design",
-        "openstatusHQ/data-table-filters/frontend-design-4fb235"
+        "frontend-design"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 87,
       "expected_hits": 1,
@@ -493,7 +471,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -515,24 +493,6 @@
             "dashboard",
             "interface"
           ]
-        },
-        {
-          "id": "openstatusHQ/data-table-filters/frontend-design-4fb235",
-          "score": 78,
-          "coverage": 0.66,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "quality",
-            "production",
-            "react",
-            "dashboard",
-            "interface"
-          ]
         }
       ],
       "signals": [
@@ -542,9 +502,7 @@
         "react",
         "dashboard",
         "interface",
-        "frontend-design",
-        "quality",
-        "openstatushq-data-table-filters-frontend-design-4fb235"
+        "frontend-design"
       ]
     },
     {
@@ -829,7 +787,7 @@
       "pass": true,
       "top3": [
         "ai-sdk",
-        "stacksjs/stacks/stacks-ai-aeaa1c",
+        "iflytek/skillhub/sandbase-d0efa5",
         "redis/agent-skills/redis-semantic-cache-9c2b67"
       ],
       "recommendation_count": 3,
@@ -861,18 +819,18 @@
           ]
         },
         {
-          "id": "stacksjs/stacks/stacks-ai-aeaa1c",
-          "score": 54,
-          "coverage": 0.47,
+          "id": "iflytek/skillhub/sandbase-d0efa5",
+          "score": 56,
+          "coverage": 0.53,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 2,
+          "required_hits": 1,
+          "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "rag",
-            "embeddings"
+            "embeddings",
+            "retrieval"
           ]
         },
         {
@@ -894,8 +852,9 @@
         "rag",
         "embeddings",
         "ai-sdk",
-        "stacksjs-stacks-stacks-ai-aeaa1c",
-        "stacks-ai",
+        "retrieval",
+        "iflytek-skillhub-sandbase-d0efa5",
+        "sandbase",
         "redis-agent-skills-redis-semantic-cache-9c2b67",
         "redis-semantic-cache"
       ]
@@ -906,20 +865,18 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "affaan-m/ECC/mcp-server-patterns-980f90",
-        "openstatusHQ/data-table-filters/mcp-builder-257b1a",
-        "Developer-Sven/ai-pack/mcp-builder"
+        "affaan-m/ECC/mcp-server-patterns-980f90"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 1,
+      "capability_gap": true,
       "top1_score": 54,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -938,37 +895,6 @@
             "agent",
             "tools"
           ]
-        },
-        {
-          "id": "openstatusHQ/data-table-filters/mcp-builder-257b1a",
-          "score": 54,
-          "coverage": 0.39,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 1,
-          "signals": [
-            "mcp",
-            "agent",
-            "tools"
-          ]
-        },
-        {
-          "id": "Developer-Sven/ai-pack/mcp-builder",
-          "score": 38,
-          "coverage": 0.26,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 1,
-          "signals": [
-            "mcp",
-            "tools"
-          ]
         }
       ],
       "signals": [
@@ -976,10 +902,7 @@
         "agent",
         "tools",
         "affaan-m-ecc-mcp-server-patterns-980f90",
-        "mcp-server-patterns",
-        "openstatushq-data-table-filters-mcp-builder-257b1a",
-        "mcp-builder",
-        "developer-sven-ai-pack-mcp-builder"
+        "mcp-server-patterns"
       ]
     },
     {
@@ -1137,40 +1060,21 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "tdduydev/xdev-hive/ui-styling",
         "shadcn"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 92,
+      "top1_score": 85,
       "expected_hits": 1,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "tdduydev/xdev-hive/ui-styling",
-          "score": 92,
-          "coverage": 1,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "accessible",
-            "tailwind",
-            "radix",
-            "ui",
-            "components"
-          ]
-        },
         {
           "id": "shadcn",
           "score": 85,
@@ -1194,9 +1098,6 @@
         "tailwind",
         "radix",
         "ui",
-        "components",
-        "tdduydev-xdev-hive-ui-styling",
-        "ui-styling",
         "shadcn"
       ]
     },
@@ -1206,10 +1107,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "frontend-design",
-        "openstatusHQ/data-table-filters/frontend-design-4fb235"
+        "frontend-design"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 92,
       "expected_hits": 1,
@@ -1218,7 +1118,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1240,24 +1140,6 @@
             "web",
             "landing"
           ]
-        },
-        {
-          "id": "openstatusHQ/data-table-filters/frontend-design-4fb235",
-          "score": 80,
-          "coverage": 0.7,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "design",
-            "production",
-            "react",
-            "web",
-            "landing"
-          ]
         }
       ],
       "signals": [
@@ -1267,8 +1149,7 @@
         "react",
         "web",
         "landing",
-        "frontend-design",
-        "openstatushq-data-table-filters-frontend-design-4fb235"
+        "frontend-design"
       ]
     },
     {
@@ -1362,7 +1243,7 @@
         },
         {
           "id": "fastapi/fastapi/fastapi-5a4493",
-          "score": 67,
+          "score": 68,
           "coverage": 0.6,
           "expected": false,
           "relevant": true,
@@ -1411,19 +1292,18 @@
       "pass": true,
       "top3": [
         "affaan-m/ECC/backend-patterns-6d97c5",
-        "antfu/skills/nitro-4dd2bd",
-        "openstatusHQ/data-table-filters/mcp-builder-257b1a"
+        "antfu/skills/nitro-4dd2bd"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 91,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1461,23 +1341,6 @@
             "api",
             "backend"
           ]
-        },
-        {
-          "id": "openstatusHQ/data-table-filters/mcp-builder-257b1a",
-          "score": 72,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "node",
-            "server",
-            "api",
-            "backend"
-          ]
         }
       ],
       "signals": [
@@ -1489,9 +1352,7 @@
         "affaan-m-ecc-backend-patterns-6d97c5",
         "backend-patterns",
         "antfu-skills-nitro-4dd2bd",
-        "nitro",
-        "openstatushq-data-table-filters-mcp-builder-257b1a",
-        "mcp-builder"
+        "nitro"
       ]
     },
     {
@@ -1864,7 +1725,7 @@
       "top3": [
         "react-best-practices",
         "flutter/agent-plugins/code-review-e26d76",
-        "openstatusHQ/data-table-filters/vercel-react-best-practices-69a878"
+        "langgenius/dify/backend-code-review-850842"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -1914,9 +1775,9 @@
           ]
         },
         {
-          "id": "openstatusHQ/data-table-filters/vercel-react-best-practices-69a878",
-          "score": 62,
-          "coverage": 0.57,
+          "id": "langgenius/dify/backend-code-review-850842",
+          "score": 61,
+          "coverage": 0.39,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -1924,10 +1785,9 @@
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "perform",
             "code",
             "review",
-            "refactor"
+            "quality"
           ]
         }
       ],
@@ -1940,8 +1800,8 @@
         "quality",
         "flutter-agent-plugins-code-review-e26d76",
         "code-review",
-        "openstatushq-data-table-filters-vercel-react-best-practices-69a878",
-        "vercel-react-best-practices"
+        "langgenius-dify-backend-code-review-850842",
+        "backend-code-review"
       ]
     },
     {
@@ -2097,44 +1957,21 @@
       "domain": "DevOps & Cloud",
       "tier": "coverage",
       "pass": false,
-      "top3": [
-        "stacksjs/stacks/stacks-build-3bf5d3"
-      ],
-      "recommendation_count": 1,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 43,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 1,
-      "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "signal_hits": 0,
+      "anchor_signal_hits": 0,
+      "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 1,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "stacksjs/stacks/stacks-build-3bf5d3",
-          "score": 43,
-          "coverage": 0.3,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "docker",
-            "cloud"
-          ]
-        }
-      ],
-      "signals": [
-        "docker",
-        "cloud",
-        "stacksjs-stacks-stacks-build-3bf5d3",
-        "stacks-build"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "github-ci",
@@ -2398,22 +2235,20 @@
       "id": "secrets-permissions",
       "domain": "Security",
       "tier": "coverage",
-      "pass": true,
+      "pass": false,
       "top3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "sickn33/agentic-awesome-skills/access-matrix-a4a72a",
-        "InnerScopeHearing/otchealth-mcp-server/otchealth-security-compliance"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 1,
+      "capability_gap": true,
       "top1_score": 51,
       "expected_hits": 0,
-      "signal_hits": 2,
-      "anchor_signal_hits": 2,
-      "anchor_candidate_count": 3,
+      "signal_hits": 1,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
-      "specificity_pass": true,
-      "relevant_top3": 3,
+      "specificity_pass": false,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2431,46 +2266,13 @@
             "secrets",
             "authentication"
           ]
-        },
-        {
-          "id": "sickn33/agentic-awesome-skills/access-matrix-a4a72a",
-          "score": 30,
-          "coverage": 0.22,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "permissions"
-          ]
-        },
-        {
-          "id": "InnerScopeHearing/otchealth-mcp-server/otchealth-security-compliance",
-          "score": 25,
-          "coverage": 0.17,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "secrets"
-          ]
         }
       ],
       "signals": [
         "secrets",
         "authentication",
         "revealuistudio-revskills-security-hardening-f5fe4e",
-        "security-hardening",
-        "permissions",
-        "sickn33-agentic-awesome-skills-access-matrix-a4a72a",
-        "access-matrix",
-        "innerscopehearing-otchealth-mcp-server-otchealth-security-compliance",
-        "otchealth-security-compliance"
+        "security-hardening"
       ]
     },
     {
@@ -2586,7 +2388,7 @@
       "top3": [
         "callstackincubator/agent-skills/agent-device-f62531",
         "callstack/agent-device/android-emulator-3d085d",
-        "callstack/agent-device/agent-device-a76680"
+        "google-ai-edge/LiteRT-LM/create-litert-lm-android-demo-app-1d70b3"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2632,7 +2434,7 @@
           ]
         },
         {
-          "id": "callstack/agent-device/agent-device-a76680",
+          "id": "google-ai-edge/LiteRT-LM/create-litert-lm-android-demo-app-1d70b3",
           "score": 66,
           "coverage": 0.67,
           "expected": false,
@@ -2654,7 +2456,8 @@
         "agent-device",
         "callstack-agent-device-android-emulator-3d085d",
         "android-emulator",
-        "callstack-agent-device-agent-device-a76680"
+        "google-ai-edge-litert-lm-create-litert-lm-android-demo-app-1d70b3",
+        "create-litert-lm-android-demo-app"
       ]
     },
     {
@@ -2744,18 +2547,19 @@
       "pass": true,
       "top3": [
         "github",
-        "nexu-io/open-design/github-dashboard-a45aef"
+        "nexu-io/open-design/orbit-github",
+        "nexu-io/open-design/github-dashboard"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 88,
       "expected_hits": 1,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2779,9 +2583,26 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/github-dashboard-a45aef",
-          "score": 78,
-          "coverage": 0.74,
+          "id": "nexu-io/open-design/orbit-github",
+          "score": 64,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "github",
+            "requests",
+            "issues",
+            "ci"
+          ]
+        },
+        {
+          "id": "nexu-io/open-design/github-dashboard",
+          "score": 64,
+          "coverage": 0.57,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -2792,8 +2613,7 @@
             "github",
             "pull",
             "requests",
-            "issues",
-            "automation"
+            "issues"
           ]
         }
       ],
@@ -2805,7 +2625,9 @@
         "ci",
         "automation",
         "requests",
-        "nexu-io-open-design-github-dashboard-a45aef",
+        "nexu-io-open-design-orbit-github",
+        "orbit-github",
+        "nexu-io-open-design-github-dashboard",
         "github-dashboard"
       ]
     },
@@ -2816,8 +2638,8 @@
       "pass": true,
       "top3": [
         "slackapi/slack-skills-plugin/slack-messaging-fa1468",
-        "slackapi/slack-skills-plugin/slack-api-fc39b8",
-        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
+        "kirodotdev/KiroCrew/mochi-slack-4687ed",
+        "slackapi/slack-skills-plugin/slack-api-fc39b8"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2848,8 +2670,8 @@
           ]
         },
         {
-          "id": "slackapi/slack-skills-plugin/slack-api-fc39b8",
-          "score": 53,
+          "id": "kirodotdev/KiroCrew/mochi-slack-4687ed",
+          "score": 57,
           "coverage": 0.47,
           "expected": false,
           "relevant": true,
@@ -2863,7 +2685,7 @@
           ]
         },
         {
-          "id": "slackapi/slack-skills-plugin/create-slack-app-9a524c",
+          "id": "slackapi/slack-skills-plugin/slack-api-fc39b8",
           "score": 53,
           "coverage": 0.47,
           "expected": false,
@@ -2883,10 +2705,10 @@
         "integration",
         "slackapi-slack-skills-plugin-slack-messaging-fa1468",
         "slack-messaging",
+        "kirodotdev-kirocrew-mochi-slack-4687ed",
+        "mochi-slack",
         "slackapi-slack-skills-plugin-slack-api-fc39b8",
-        "slack-api",
-        "slackapi-slack-skills-plugin-create-slack-app-9a524c",
-        "create-slack-app"
+        "slack-api"
       ]
     },
     {
@@ -2897,7 +2719,7 @@
       "top3": [
         "googleworkspace/cli/gws-calendar-agenda-c125ff",
         "googleworkspace/cli/gws-gmail-read-e6b4b1",
-        "googleworkspace/cli/gws-calendar-03339c"
+        "kirodotdev/KiroCrew/mochi-plan-f3a319"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2943,8 +2765,8 @@
           ]
         },
         {
-          "id": "googleworkspace/cli/gws-calendar-03339c",
-          "score": 58,
+          "id": "kirodotdev/KiroCrew/mochi-plan-f3a319",
+          "score": 56,
           "coverage": 0.42,
           "expected": false,
           "relevant": true,
@@ -2966,8 +2788,8 @@
         "gmail",
         "googleworkspace-cli-gws-gmail-read-e6b4b1",
         "gws-gmail-read",
-        "googleworkspace-cli-gws-calendar-03339c",
-        "gws-calendar"
+        "kirodotdev-kirocrew-mochi-plan-f3a319",
+        "mochi-plan"
       ]
     },
     {
@@ -3178,7 +3000,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "nexu-io/open-design/token-map"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3228,8 +3050,8 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/figma-generate-design",
-          "score": 64,
+          "id": "nexu-io/open-design/token-map",
+          "score": 61,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3252,8 +3074,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "figma-mcp-server-guide-figma-generate-design",
-        "figma-generate-design"
+        "nexu-io-open-design-token-map",
+        "token-map"
       ]
     },
     {
@@ -3264,7 +3086,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "CoolBeanGames/Remnant-GD/development-reports"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3312,7 +3134,7 @@
           ]
         },
         {
-          "id": "CoolBeanGames/Remnant-GD/development-reports",
+          "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
           "score": 76,
           "coverage": 0.67,
           "expected": false,
@@ -3323,7 +3145,7 @@
           "identity_anchor_hits": 0,
           "signals": [
             "ux",
-            "usability"
+            "research"
           ]
         }
       ],
@@ -3335,8 +3157,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "coolbeangames-remnant-gd-development-reports",
-        "development-reports"
+        "nexu-io-open-design-html-ppt-zhangzara-pink-script",
+        "html-ppt-zhangzara-pink-script"
       ]
     },
     {
@@ -3345,38 +3167,22 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "openstatusHQ/data-table-filters/frontend-design-4fb235",
         "zhayujie/CowAgent/image-generation-1bb1a3",
         "vanducng/skills/marketing-design-678c70"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
-      "top1_score": 57,
+      "recommendation_count": 2,
+      "capability_gap": true,
+      "top1_score": 52,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "openstatusHQ/data-table-filters/frontend-design-4fb235",
-          "score": 57,
-          "coverage": 0.29,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "poster",
-            "layout"
-          ]
-        },
         {
           "id": "zhayujie/CowAgent/image-generation-1bb1a3",
           "score": 52,
@@ -3394,7 +3200,7 @@
         },
         {
           "id": "vanducng/skills/marketing-design-678c70",
-          "score": 51,
+          "score": 52,
           "coverage": 0.29,
           "expected": false,
           "relevant": true,
@@ -3409,11 +3215,8 @@
         }
       ],
       "signals": [
-        "poster",
-        "layout",
-        "openstatushq-data-table-filters-frontend-design-4fb235",
-        "frontend-design",
         "visual",
+        "poster",
         "zhayujie-cowagent-image-generation-1bb1a3",
         "image-generation",
         "brand",
@@ -3512,9 +3315,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "awesomeopen/awesome-open/speculative-fossoligy",
+        "nexu-io/open-design/x-research",
         "mitsuhiko/agent-stuff/openscad",
-        "cinatra-ai/cinatra/fixtures"
+        "nexu-io/open-design/rewrite-plan"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3530,7 +3333,7 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "awesomeopen/awesome-open/speculative-fossoligy",
+          "id": "nexu-io/open-design/x-research",
           "score": 76,
           "coverage": 0.67,
           "expected": false,
@@ -3562,8 +3365,8 @@
           ]
         },
         {
-          "id": "cinatra-ai/cinatra/fixtures",
-          "score": 75,
+          "id": "nexu-io/open-design/rewrite-plan",
+          "score": 72,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3582,13 +3385,13 @@
         "industrial-design",
         "industrial",
         "product",
-        "awesomeopen-awesome-open-speculative-fossoligy",
-        "speculative-fossoligy",
+        "nexu-io-open-design-x-research",
+        "x-research",
         "cad",
         "mitsuhiko-agent-stuff-openscad",
         "openscad",
-        "cinatra-ai-cinatra-fixtures",
-        "media-skill-fixture"
+        "nexu-io-open-design-rewrite-plan",
+        "rewrite-plan"
       ]
     }
   ]
