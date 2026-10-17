@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-16T07:19:19.296Z",
+  "generatedAt": "2026-10-17T07:04:42.113Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 48,
-  "passRate": 0.889,
+  "passed": 49,
+  "passRate": 0.907,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 38,
-    "passRate": 0.864
+    "passed": 39,
+    "passRate": 0.886
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 5,
-  "capabilityGapCases": 35,
-  "averageRecommendationCount": 1.7,
-  "averageRelevantTop3": 1.7,
-  "averageTop1Score": 72.8,
+  "specificityFailures": 4,
+  "capabilityGapCases": 34,
+  "averageRecommendationCount": 1.8,
+  "averageRelevantTop3": 1.8,
+  "averageTop1Score": 74.3,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 126,
-  "anchorSignalHitsTotal": 28,
+  "signalHitsTotal": 128,
+  "anchorSignalHitsTotal": 29,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -46,7 +46,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 7,
       "passRate": 1,
-      "averageRecommendationCount": 1.25
+      "averageRecommendationCount": 1.38
     },
     "Design & Media": {
       "cases": 5,
@@ -54,9 +54,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 1,
+      "capabilityGapCases": 0,
       "passRate": 1,
-      "averageRecommendationCount": 2.8
+      "averageRecommendationCount": 3
     },
     "Data & Database": {
       "cases": 5,
@@ -84,19 +84,19 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 3,
+      "capabilityGapCases": 2,
       "passRate": 1,
-      "averageRecommendationCount": 2
+      "averageRecommendationCount": 2.2
     },
     "Backend & API": {
       "cases": 4,
-      "passed": 3,
+      "passed": 4,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 1,
+      "specificityFailures": 0,
       "capabilityGapCases": 3,
-      "passRate": 0.75,
-      "averageRecommendationCount": 1.5
+      "passRate": 1,
+      "averageRecommendationCount": 2
     },
     "Security": {
       "cases": 4,
@@ -106,7 +106,7 @@
       "specificityFailures": 1,
       "capabilityGapCases": 4,
       "passRate": 0.75,
-      "averageRecommendationCount": 1
+      "averageRecommendationCount": 1.25
     },
     "Mobile": {
       "cases": 4,
@@ -124,9 +124,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 1,
+      "capabilityGapCases": 2,
       "passRate": 1,
-      "averageRecommendationCount": 2.5
+      "averageRecommendationCount": 2.25
     },
     "Docs & Research": {
       "cases": 4,
@@ -1107,9 +1107,10 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "frontend-design"
+        "frontend-design",
+        "findscripter/everything-skills/frontend-design"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 92,
       "expected_hits": 1,
@@ -1118,7 +1119,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1140,6 +1141,24 @@
             "web",
             "landing"
           ]
+        },
+        {
+          "id": "findscripter/everything-skills/frontend-design",
+          "score": 70,
+          "coverage": 0.66,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "design",
+            "react",
+            "web",
+            "landing",
+            "page"
+          ]
         }
       ],
       "signals": [
@@ -1149,7 +1168,9 @@
         "react",
         "web",
         "landing",
-        "frontend-design"
+        "frontend-design",
+        "page",
+        "findscripter-everything-skills-frontend-design"
       ]
     },
     {
@@ -1359,22 +1380,66 @@
       "id": "graphql-server",
       "domain": "Backend & API",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "findscripter/everything-skills/api-design-principles",
+        "findscripter/everything-skills/api-design-reviewer"
+      ],
+      "recommendation_count": 2,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 63,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 2,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "findscripter/everything-skills/api-design-principles",
+          "score": 63,
+          "coverage": 0.6,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "design",
+            "graphql",
+            "api"
+          ]
+        },
+        {
+          "id": "findscripter/everything-skills/api-design-reviewer",
+          "score": 63,
+          "coverage": 0.6,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "design",
+            "graphql",
+            "api"
+          ]
+        }
+      ],
+      "signals": [
+        "design",
+        "graphql",
+        "api",
+        "findscripter-everything-skills-api-design-principles",
+        "api-design-principles",
+        "findscripter-everything-skills-api-design-reviewer",
+        "api-design-reviewer"
+      ]
     },
     {
       "id": "root-cause-api-debug",
@@ -1653,10 +1718,11 @@
       "pass": true,
       "top3": [
         "test-driven-development",
+        "nourdean22/MAINnicks-tire-autoNEW/test-driven-development",
         "ModelEngine-Group/nexent/nexent-test-assets-576aaa"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 99,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -1664,7 +1730,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1685,6 +1751,23 @@
             "driven",
             "regression",
             "prevention"
+          ]
+        },
+        {
+          "id": "nourdean22/MAINnicks-tire-autoNEW/test-driven-development",
+          "score": 74,
+          "coverage": 0.62,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "implement",
+            "feature",
+            "test",
+            "driven"
           ]
         },
         {
@@ -1713,6 +1796,7 @@
         "regression",
         "prevention",
         "tdd",
+        "nourdean22-mainnicks-tire-autonew-tdd",
         "modelengine-group-nexent-nexent-test-assets-576aaa",
         "nexent-test-assets"
       ]
@@ -1814,7 +1898,7 @@
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 95,
+      "top1_score": 94,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -1827,7 +1911,7 @@
       "candidates": [
         {
           "id": "antfu/skills/vitest-8d8886",
-          "score": 95,
+          "score": 94,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -2237,18 +2321,19 @@
       "tier": "coverage",
       "pass": false,
       "top3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e",
+        "InnerScopeHearing/otchealth-mcp-server/otchealth-security-compliance"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 51,
       "expected_hits": 0,
       "signal_hits": 1,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2266,13 +2351,29 @@
             "secrets",
             "authentication"
           ]
+        },
+        {
+          "id": "InnerScopeHearing/otchealth-mcp-server/otchealth-security-compliance",
+          "score": 25,
+          "coverage": 0.17,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "secrets"
+          ]
         }
       ],
       "signals": [
         "secrets",
         "authentication",
         "revealuistudio-revskills-security-hardening-f5fe4e",
-        "security-hardening"
+        "security-hardening",
+        "innerscopehearing-otchealth-mcp-server-otchealth-security-compliance",
+        "otchealth-security-compliance"
       ]
     },
     {
@@ -2387,8 +2488,8 @@
       "pass": false,
       "top3": [
         "callstackincubator/agent-skills/agent-device-f62531",
-        "callstack/agent-device/android-emulator-3d085d",
-        "google-ai-edge/LiteRT-LM/create-litert-lm-android-demo-app-1d70b3"
+        "gmh5225/awesome-game-security/mobile-security-9abeca",
+        "callstack/agent-device/android-emulator-3d085d"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2419,8 +2520,8 @@
           ]
         },
         {
-          "id": "callstack/agent-device/android-emulator-3d085d",
-          "score": 66,
+          "id": "gmh5225/awesome-game-security/mobile-security-9abeca",
+          "score": 69,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -2434,7 +2535,7 @@
           ]
         },
         {
-          "id": "google-ai-edge/LiteRT-LM/create-litert-lm-android-demo-app-1d70b3",
+          "id": "callstack/agent-device/android-emulator-3d085d",
           "score": 66,
           "coverage": 0.67,
           "expected": false,
@@ -2454,10 +2555,10 @@
         "mobile",
         "callstackincubator-agent-skills-agent-device-f62531",
         "agent-device",
+        "gmh5225-awesome-game-security-mobile-security-9abeca",
+        "mobile-security",
         "callstack-agent-device-android-emulator-3d085d",
-        "android-emulator",
-        "google-ai-edge-litert-lm-create-litert-lm-android-demo-app-1d70b3",
-        "create-litert-lm-android-demo-app"
+        "android-emulator"
       ]
     },
     {
@@ -2468,7 +2569,7 @@
       "top3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
         "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
-        "flutter/agent-plugins/flutter-add-integration-test-91cc8c"
+        "flutter/agent-plugins/flutter-fix-layout-issues-4a82b9"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2514,7 +2615,7 @@
           ]
         },
         {
-          "id": "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
+          "id": "flutter/agent-plugins/flutter-fix-layout-issues-4a82b9",
           "score": 64,
           "coverage": 0.61,
           "expected": false,
@@ -2536,8 +2637,8 @@
         "flutter-build-responsive-layout",
         "flutter-agent-plugins-flutter-add-widget-preview-8e7a10",
         "flutter-add-widget-preview",
-        "flutter-agent-plugins-flutter-add-integration-test-91cc8c",
-        "flutter-add-integration-test"
+        "flutter-agent-plugins-flutter-fix-layout-issues-4a82b9",
+        "flutter-fix-layout-issues"
       ]
     },
     {
@@ -2547,19 +2648,18 @@
       "pass": true,
       "top3": [
         "github",
-        "nexu-io/open-design/orbit-github",
-        "nexu-io/open-design/github-dashboard"
+        "nexu-io/open-design/github-dashboard-a45aef"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 88,
       "expected_hits": 1,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2583,26 +2683,9 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/orbit-github",
-          "score": 64,
-          "coverage": 0.57,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "github",
-            "requests",
-            "issues",
-            "ci"
-          ]
-        },
-        {
-          "id": "nexu-io/open-design/github-dashboard",
-          "score": 64,
-          "coverage": 0.57,
+          "id": "nexu-io/open-design/github-dashboard-a45aef",
+          "score": 78,
+          "coverage": 0.74,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -2613,7 +2696,8 @@
             "github",
             "pull",
             "requests",
-            "issues"
+            "issues",
+            "automation"
           ]
         }
       ],
@@ -2625,9 +2709,7 @@
         "ci",
         "automation",
         "requests",
-        "nexu-io-open-design-orbit-github",
-        "orbit-github",
-        "nexu-io-open-design-github-dashboard",
+        "nexu-io-open-design-github-dashboard-a45aef",
         "github-dashboard"
       ]
     },
@@ -2919,7 +3001,7 @@
       "top3": [
         "callstackincubator/agent-skills/writing-user-docs-846927",
         "notion",
-        "figma/mcp-server-guide/create-design-system-rules"
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2965,8 +3047,8 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/create-design-system-rules",
-          "score": 49,
+          "id": "flutter/agent-plugins/dart-write-documentation-4c8bb5",
+          "score": 54,
           "coverage": 0.32,
           "expected": false,
           "relevant": true,
@@ -2975,8 +3057,8 @@
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "documentation",
-            "system"
+            "write",
+            "documentation"
           ]
         }
       ],
@@ -2987,9 +3069,9 @@
         "writing-user-docs",
         "planning",
         "notion",
-        "system",
-        "figma-mcp-server-guide-create-design-system-rules",
-        "create-design-system-rules"
+        "write",
+        "flutter-agent-plugins-dart-write-documentation-4c8bb5",
+        "dart-write-documentation"
       ]
     },
     {
@@ -3000,7 +3082,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "nexu-io/open-design/token-map"
+        "findscripter/everything-skills/design-dev-handoff"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3050,8 +3132,8 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/token-map",
-          "score": 61,
+          "id": "findscripter/everything-skills/design-dev-handoff",
+          "score": 64,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3074,8 +3156,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "nexu-io-open-design-token-map",
-        "token-map"
+        "findscripter-everything-skills-design-dev-handoff",
+        "design-dev-handoff"
       ]
     },
     {
@@ -3086,7 +3168,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
+        "findscripter/everything-skills/ux-research-design-toolkit"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3134,8 +3216,8 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
-          "score": 76,
+          "id": "findscripter/everything-skills/ux-research-design-toolkit",
+          "score": 77,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3157,8 +3239,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "nexu-io-open-design-html-ppt-zhangzara-pink-script",
-        "html-ppt-zhangzara-pink-script"
+        "findscripter-everything-skills-ux-research-design-toolkit",
+        "ux-research-design-toolkit"
       ]
     },
     {
@@ -3167,22 +3249,38 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
+        "nexu-io/open-design/magazine-poster-f52efe",
         "zhayujie/CowAgent/image-generation-1bb1a3",
         "vanducng/skills/marketing-design-678c70"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
-      "top1_score": 52,
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 53,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
+        {
+          "id": "nexu-io/open-design/magazine-poster-f52efe",
+          "score": 53,
+          "coverage": 0.29,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "poster",
+            "layout"
+          ]
+        },
         {
           "id": "zhayujie/CowAgent/image-generation-1bb1a3",
           "score": 52,
@@ -3215,8 +3313,11 @@
         }
       ],
       "signals": [
-        "visual",
         "poster",
+        "layout",
+        "nexu-io-open-design-magazine-poster-f52efe",
+        "magazine-poster",
+        "visual",
         "zhayujie-cowagent-image-generation-1bb1a3",
         "image-generation",
         "brand",
@@ -3315,13 +3416,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nexu-io/open-design/x-research",
-        "mitsuhiko/agent-stuff/openscad",
-        "nexu-io/open-design/rewrite-plan"
+        "nourdean22/MAINnicks-tire-autoNEW/reels-performance-report",
+        "findscripter/everything-skills/kicad-design-reviewer",
+        "awesomeopen/awesome-open/speculative-fossoligy"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 76,
+      "top1_score": 95,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3333,25 +3434,27 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "nexu-io/open-design/x-research",
-          "score": 76,
-          "coverage": 0.67,
+          "id": "nourdean22/MAINnicks-tire-autoNEW/reels-performance-report",
+          "score": 95,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
+            "cad",
             "industrial-design",
             "industrial",
-            "product"
+            "product",
+            "cad"
           ]
         },
         {
-          "id": "mitsuhiko/agent-stuff/openscad",
-          "score": 68,
-          "coverage": 0.56,
+          "id": "findscripter/everything-skills/kicad-design-reviewer",
+          "score": 82,
+          "coverage": 0.78,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3360,13 +3463,14 @@
           "identity_anchor_hits": 0,
           "signals": [
             "cad",
+            "industrial-design",
             "industrial",
             "cad"
           ]
         },
         {
-          "id": "nexu-io/open-design/rewrite-plan",
-          "score": 72,
+          "id": "awesomeopen/awesome-open/speculative-fossoligy",
+          "score": 76,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3382,16 +3486,16 @@
         }
       ],
       "signals": [
+        "cad",
         "industrial-design",
         "industrial",
         "product",
-        "nexu-io-open-design-x-research",
-        "x-research",
-        "cad",
-        "mitsuhiko-agent-stuff-openscad",
-        "openscad",
-        "nexu-io-open-design-rewrite-plan",
-        "rewrite-plan"
+        "nourdean22-mainnicks-tire-autonew-reels-performance-report",
+        "reels-performance-report",
+        "findscripter-everything-skills-kicad-design-reviewer",
+        "kicad-design-reviewer",
+        "awesomeopen-awesome-open-speculative-fossoligy",
+        "speculative-fossoligy"
       ]
     }
   ]
