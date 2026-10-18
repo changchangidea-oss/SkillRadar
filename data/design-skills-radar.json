@@ -1,167 +1,35 @@
 [
   {
-    "id": "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
-    "name": "ui-ux-pro-max",
-    "source": "awesome-dsh-plugin/awesome-dsh-plugin",
-    "summary": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data:",
-    "security": "C",
-    "signalScore": 84,
+    "id": "lukaskourilcz/quorum/titty-tuesdays-brandbook",
+    "name": "titty-tuesdays-brandbook",
+    "source": "lukaskourilcz/quorum",
+    "summary": "Create or review Titty Tuesdays brand, campaign, product-concept, social, visual, and marketing-plan artifacts. Use whenever work names the Titty Tuesdays venture, its crop tops, seasons, campaign copy, Instagram or Threads drafts, FRAME assets, audience plans, guerrilla concepts, or platform-risk review.",
+    "security": "A",
+    "signalScore": 70,
     "installs": 0,
-    "repoStars": 19054,
+    "repoStars": 0,
     "tags": [
-      "experience",
-      "design",
-      "ux",
+      "brand",
+      "campaign",
       "product",
-      "interaction",
-      "usability",
-      "mobile",
-      "accessibility",
-      "ui",
-      "design-system",
-      "layout",
+      "visual",
+      "fashion",
+      "color",
       "typography"
     ],
-    "installUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
-    "skillsUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.agents/skills/ui-ux-pro-max/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "ui-design",
-      "visual-communication",
-      "video-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:34.723Z",
-    "lastSeenAt": "2026-10-17T07:00:34.723Z"
-  },
-  {
-    "id": "awesome-dsh-plugin/awesome-dsh-plugin/web-design-guidelines",
-    "name": "web-design-guidelines",
-    "source": "awesome-dsh-plugin/awesome-dsh-plugin",
-    "summary": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
-    "security": "B",
-    "signalScore": 70,
-    "installs": 0,
-    "repoStars": 19054,
-    "tags": [
-      "design",
-      "ux",
-      "accessibility"
-    ],
-    "installUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
-    "skillsUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/.agents/skills/web-design-guidelines/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "video-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:34.889Z",
-    "lastSeenAt": "2026-10-17T07:00:34.889Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/antislop-ui",
-    "name": "antislop-ui",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "UI and visual skill for antislop. Use when building or editing any interface: color, layout, components, motion. Load with the core.",
-    "security": "A",
-    "signalScore": 70,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "brand",
-      "product",
-      "visual",
-      "motion",
-      "art",
-      "color",
-      "pattern",
-      "craft",
-      "layout"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/antislop-ui/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "folk-art",
-      "visual-communication",
-      "fashion-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:51.478Z",
-    "lastSeenAt": "2026-10-17T07:00:51.479Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/antislop",
-    "name": "antislop",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Anti Slop: the core filter that stops generic AI slop. Use whenever the work touches UI, user-facing copy, accessibility, mobile layout or code comments (then load the matching antislop-* skill), at the start of that work and again right after any context compaction, before the first edit or review.",
-    "security": "B",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "brand",
-      "product",
-      "visual",
-      "motion",
-      "ui",
-      "layout",
-      "typography",
-      "accessibility",
-      "color"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/antislop/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "visual-communication",
-      "video-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:51.653Z",
-    "lastSeenAt": "2026-10-17T07:00:51.653Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/gbp-local-report",
-    "name": "gbp-local-report",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Analyze Google Business Profile and local-search performance for visibility, search terms, calls, directions, website clicks, bookings/actions, reviews, profile completeness, local-pack presence, and local demand capture. Use when the user asks for a Google Business Profile/GBP report, local SEO report, Maps performanc",
-    "security": "A",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "brand",
-      "product",
-      "photo"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/gbp-local-report/SKILL.md",
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/titty-tuesdays-brandbook/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "operations-design",
       "fashion-design",
-      "industrial-design",
-      "experience-design"
+      "visual-communication",
+      "arts-crafts"
     ],
     "qualityScore": 88,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:53.677Z",
-    "lastSeenAt": "2026-10-17T07:00:53.677Z"
+    "firstSeenAt": "2026-10-18T07:16:31.365Z",
+    "lastSeenAt": "2026-10-18T07:16:31.365Z"
   },
   {
     "id": "findscripter/everything-skills/ux-research-design-toolkit",
@@ -169,7 +37,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要把用户研究数据转化为可落地的设计决策时使用；做用户画像生成、旅程地图绘制、可用性测试规划与研究综合（产出画像/旅程/测试方案/洞察）；不适用于视觉 UI 组件库设计、纯前端实现或无任何用户数据的拍脑袋假设。触发词：用户画像、旅程地图、可用性测试、研究综合、痛点分析。",
     "security": "A",
-    "signalScore": 68,
+    "signalScore": 69,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -194,7 +62,38 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:45.076Z",
-    "lastSeenAt": "2026-10-17T07:00:45.076Z"
+    "lastSeenAt": "2026-10-18T07:16:21.724Z"
+  },
+  {
+    "id": "liyu1981/sifpress/apple-design",
+    "name": "apple-design",
+    "source": "liyu1981/sifpress",
+    "summary": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-mo",
+    "security": "A",
+    "signalScore": 69,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ui",
+      "typography",
+      "interaction",
+      "motion",
+      "media"
+    ],
+    "installUrl": "https://github.com/liyu1981/sifpress",
+    "skillsUrl": "https://github.com/liyu1981/sifpress/blob/master/.agents/skills/apple-design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "video-design",
+      "digital-media-film",
+      "architecture-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:30.279Z",
+    "lastSeenAt": "2026-10-18T07:16:30.279Z"
   },
   {
     "id": "beatra-ai/beatra-skills/wechat-article-visual-story",
@@ -202,7 +101,7 @@
     "source": "beatra-ai/beatra-skills",
     "summary": "Write the WeChat article and make its pictures in one pass. Give a topic, what you are promoting, and who it is for — this WeChat Official Account article generator returns title candidates written for the feed, the digest line, a full article body structured for how people actually read on a phone, then renders the 2.",
     "security": "C",
-    "signalScore": 67,
+    "signalScore": 68,
     "installs": 0,
     "repoStars": 6,
     "tags": [
@@ -229,7 +128,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:38.217Z",
-    "lastSeenAt": "2026-10-17T07:00:38.217Z"
+    "lastSeenAt": "2026-10-18T07:16:13.971Z"
   },
   {
     "id": "findscripter/everything-skills/brand-guidelines",
@@ -237,302 +136,99 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要把 Anthropic 官方品牌配色与字体应用到 PPT/文档/网页等产物（后处理统一观感）时使用；做品牌色与排版的批量套用并产出符合规范的成品；不适用于自定义品牌识别系统设计或 logo 制作；触发词：品牌色、Anthropic 风格、配色规范、字体规范、visual identity、brand colors、typography",
     "security": "A",
-    "signalScore": 66,
+    "signalScore": 68,
     "installs": 0,
     "repoStars": 5,
     "tags": [
-      "design",
-      "color",
-      "brand",
       "visual",
+      "brand",
+      "typography",
+      "color",
+      "design",
       "ui",
-      "design-system",
-      "typography"
+      "design-system"
     ],
     "installUrl": "https://github.com/findscripter/everything-skills",
     "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/brand-guidelines/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "visual-communication",
       "fashion-design",
       "ui-design",
-      "visual-communication",
       "operations-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:42.861Z",
-    "lastSeenAt": "2026-10-17T07:00:42.861Z"
+    "lastSeenAt": "2026-10-18T07:16:14.561Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/nicks-demand-report",
-    "name": "nicks-demand-report",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Produce an executive demand and growth report for Nick's Tire & Auto by reconciling the strongest available evidence across Google Search Console, Google Business Profile/local visibility, website leads, calls/Vapi, appointments, CRM, reviews, Meta/Instagram, and revenue. Use when the user asks how Nick's is doing, wan",
-    "security": "A",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "brand",
-      "product"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/nicks-demand-report/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "industrial-design",
-      "fashion-design",
-      "experience-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:55.072Z",
-    "lastSeenAt": "2026-10-17T07:00:55.072Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/test-driven-development",
-    "name": "test-driven-development",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when implementing any feature or bugfix, before writing implementation code",
-    "security": "A",
-    "signalScore": 66,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "operations",
-      "design",
-      "product",
-      "prototype"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/test-driven-development/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "industrial-design",
-      "fashion-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:01.103Z",
-    "lastSeenAt": "2026-10-17T07:01:01.103Z"
-  },
-  {
-    "id": "Renaissance-Mind/awesome-ai-visualization/ai-visualization-advisor",
-    "name": "ai-visualization-advisor",
-    "source": "Renaissance-Mind/awesome-ai-visualization",
-    "summary": "Recommend AI, LLM, and agent tools for organizing, distilling, visualizing, and presenting information. Use when a user needs to turn papers, news, web pages, PDFs, documents, codebases, data, knowledge bases, or rough ideas into reports, PPT/decks, diagrams, infographics, dashboards, mind maps, code maps, web pages, v",
+    "id": "Prasanth595/ECC/frontend-design-direction",
+    "name": "frontend-design-direction",
+    "source": "Prasanth595/ECC",
+    "summary": "フロントエンド設計の方向性、美的原則、および一貫した設計言語実装。",
     "security": "C",
-    "signalScore": 65,
+    "signalScore": 68,
     "installs": 0,
-    "repoStars": 3,
-    "tags": [
-      "architecture",
-      "design",
-      "rendering",
-      "diagram",
-      "map",
-      "environment",
-      "video"
-    ],
-    "installUrl": "https://github.com/Renaissance-Mind/awesome-ai-visualization",
-    "skillsUrl": "https://github.com/Renaissance-Mind/awesome-ai-visualization/blob/main/skills/ai-visualization-advisor/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "environmental-design",
-      "video-design",
-      "operations-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:46.237Z",
-    "lastSeenAt": "2026-10-17T07:00:46.237Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/json-canvas",
-    "name": "json-canvas",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.",
-    "security": "B",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1,
+    "repoStars": 0,
     "tags": [
       "design",
-      "brand",
-      "visual",
+      "ui",
       "layout",
+      "typography",
+      "interaction",
+      "accessibility",
+      "experience",
+      "product",
+      "mobile",
+      "visual",
+      "editorial",
       "color"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.agents/skills/json-canvas/SKILL.md",
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/docs/ja-JP/skills/frontend-design-direction/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "visual-communication",
-      "fashion-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:48.799Z",
-    "lastSeenAt": "2026-10-17T07:00:48.799Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/reel-hook-mechanism",
-    "name": "reel-hook-mechanism",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when Nour or a session wants reel hook ideas or hook mechanics for Nick's Tire Instagram or Facebook reels from the awesome-opus5-5-videos list, says \"steal the mechanism\", or is about to paste, copy or mine that list's prompts. Source yihui-dev/awesome-opus5-5-videos at commit 92aee2f, 2026-10-13.",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "video",
-      "motion"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/reel-hook-mechanism/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "digital-media-film",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:58.401Z",
-    "lastSeenAt": "2026-10-17T07:00:58.401Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/reels-performance-report",
-    "name": "reels-performance-report",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Analyze Instagram Reels and short-form content performance for hook strength, retention/watch time, shares/sends, saves, profile visits, follower conversion, local reach, content cohorts, creative structure, and downstream business impact. Use when the user asks for an Instagram/Reels report, uploads Insights exports/s",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "brand",
-      "product",
-      "cad",
-      "audio"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/reels-performance-report/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "industrial-design",
-      "video-design",
-      "fashion-design"
-    ],
-    "qualityScore": 82,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:58.556Z",
-    "lastSeenAt": "2026-10-17T07:00:58.557Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/source-to-skill",
-    "name": "source-to-skill",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Compile a source (book text, transcript, doc, repo file) into a provenance-carrying skill package on CGD rails — claims cite sections, confidence is explicit, eval questions ship with the skill. Use when the operator says \"turn this into a skill\" / \"compile this book/video/doc\".",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "product",
-      "video",
-      "ui",
-      "layout"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/source-to-skill/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
       "ui-design",
-      "video-design",
-      "industrial-design"
+      "experience-design",
+      "visual-communication",
+      "operations-design"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:00.018Z",
-    "lastSeenAt": "2026-10-17T07:01:00.018Z"
+    "firstSeenAt": "2026-10-18T07:16:25.489Z",
+    "lastSeenAt": "2026-10-18T07:16:25.489Z"
   },
   {
-    "id": "awesomeopen/awesome-open/awesome-open-brand",
-    "name": "awesome-open-brand",
-    "source": "awesomeopen/awesome-open",
-    "summary": "Apply and maintain Awesome Open* brand decisions, design documentation, skills and asset provenance alongside changes to its website or catalog interface. Use for Awesome Open* design work, brand consolidation, artwork handoffs or drift audits; not for unrelated brands or routine catalog metadata refreshes.",
+    "id": "Prasanth595/ECC/liquid-glass-design",
+    "name": "liquid-glass-design",
+    "source": "Prasanth595/ECC",
+    "summary": "iOS 26 Liquid Glass design system — dynamic glass material with blur, reflection, and interactive morphing for SwiftUI, UIKit, and WidgetKit. Use when building iOS 26 Liquid Glass UI in SwiftUI, UIKit, or WidgetKit.",
     "security": "A",
-    "signalScore": 65,
+    "signalScore": 68,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 0,
     "tags": [
       "design",
-      "color",
-      "brand",
-      "visual",
-      "illustration",
-      "art",
-      "pattern"
+      "ui",
+      "layout",
+      "interaction",
+      "environment",
+      "rendering"
     ],
-    "installUrl": "https://github.com/awesomeopen/awesome-open",
-    "skillsUrl": "https://github.com/awesomeopen/awesome-open/blob/main/.agents/skills/awesome-open-brand/SKILL.md",
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/liquid-glass-design/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "fashion-design",
-      "folk-art",
-      "visual-communication",
-      "arts-crafts"
+      "ui-design",
+      "environmental-design",
+      "architecture-design",
+      "folk-art"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:03.674Z",
-    "lastSeenAt": "2026-10-17T07:01:03.674Z"
-  },
-  {
-    "id": "awesomeopen/awesome-open/speculative-fossoligy",
-    "name": "speculative-fossoligy",
-    "source": "awesomeopen/awesome-open",
-    "summary": "Create original drawings or redraw supplied images in Speculative FOSSoligy, an invented visual language combining observed natural-history detail, coherent impossible anatomy, curious mechanisms, and selective psychedelic color. Use for animals, plants, tools, machinery, toys, objects, and isolated dwellings. Support ",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "product",
-      "rendering",
-      "landscape",
-      "lighting",
-      "brand",
-      "visual",
-      "photo"
-    ],
-    "installUrl": "https://github.com/awesomeopen/awesome-open",
-    "skillsUrl": "https://github.com/awesomeopen/awesome-open/blob/main/.agents/skills/speculative-fossoligy/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "industrial-design",
-      "environmental-design",
-      "operations-design",
-      "fashion-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:04.097Z",
-    "lastSeenAt": "2026-10-17T07:01:04.097Z"
+    "firstSeenAt": "2026-10-18T07:16:29.215Z",
+    "lastSeenAt": "2026-10-18T07:16:29.215Z"
   },
   {
     "id": "beatra-ai/beatra-skills/wechat-article-visual-pack",
@@ -540,7 +236,7 @@
     "source": "beatra-ai/beatra-skills",
     "summary": "Create a WeChat Official Account visual pack from a finished article, outline, brand assets, photos, or visual references. Produce a lead cover plus coordinated in-article illustrations with clear section focus and consistent visual direction for WeChat articles, WeChat post images, brand stories, product explainers, e",
     "security": "C",
-    "signalScore": 64,
+    "signalScore": 65,
     "installs": 0,
     "repoStars": 6,
     "tags": [
@@ -565,7 +261,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:37.529Z",
-    "lastSeenAt": "2026-10-17T07:00:37.529Z"
+    "lastSeenAt": "2026-10-18T07:16:13.326Z"
   },
   {
     "id": "findscripter/everything-skills/canva-campaign-creator",
@@ -573,7 +269,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当你拿到已批准的内容简报、要把它端到端落地为一场社媒+邮件营销活动时使用；做发布排期表→素材清单→Canva 设计生成→文案→HubSpot 排期入队（每步需 owner 显式批准）；不适用于邮件路径走 Canva 设计、自动发布、或无简报开工。触发词：做内容/生成帖子、营销活动落地、Canva 排期",
     "security": "B",
-    "signalScore": 64,
+    "signalScore": 65,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -594,35 +290,258 @@
     "qualityScore": 79,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:43.027Z",
-    "lastSeenAt": "2026-10-17T07:00:43.027Z"
+    "lastSeenAt": "2026-10-18T07:16:19.241Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/gsc-opportunity-report",
-    "name": "gsc-opportunity-report",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Analyze Google Search Console performance for SEO growth, local-demand capture, ranking opportunities, CTR gaps, query/page trends, cannibalization, and emerging demand. Use when the user asks for a GSC/Search Console report, uploads a GSC CSV/Sheet/export/screenshot, wants period-over-period SEO analysis, asks what pa",
+    "id": "SpiralCloudOmega/DevTeam6/spatial-audio",
+    "name": "spatial-audio",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "Spatial audio processing — stereo width, panning laws, HRTF, Ambisonics, surround formats",
     "security": "A",
-    "signalScore": 64,
+    "signalScore": 65,
     "installs": 0,
     "repoStars": 1,
     "tags": [
-      "design",
-      "brand",
-      "ui"
+      "spatial",
+      "3d",
+      "rendering"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/gsc-opportunity-report/SKILL.md",
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/audio-dsp/spatial-audio/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "industrial-design",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:23.884Z",
+    "lastSeenAt": "2026-10-18T07:16:23.884Z"
+  },
+  {
+    "id": "Prasanth595/ECC/design-system",
+    "name": "design-system",
+    "source": "Prasanth595/ECC",
+    "summary": "Generate a design system from an existing codebase or audit one for visual consistency: extract tokens (colors, typography, spacing, shadows) into design-tokens.json and CSS custom properties with DESIGN.md rationale and an interactive HTML preview, score the UI across 10 dimensions, and flag AI-slop patterns. Use when",
+    "security": "C",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ui",
+      "design-system",
+      "typography",
+      "accessibility",
+      "research",
+      "art",
+      "color",
+      "pattern",
+      "visual"
+    ],
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/design-system/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "folk-art",
+      "visual-communication"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:28.796Z",
+    "lastSeenAt": "2026-10-18T07:16:28.796Z"
+  },
+  {
+    "id": "Prasanth595/ECC/swiftui-patterns",
+    "name": "swiftui-patterns",
+    "source": "Prasanth595/ECC",
+    "summary": "SwiftUI architecture patterns, state management with @Observable, view composition, navigation, performance optimization, and modern iOS/macOS UI best practices. Use when building or reviewing SwiftUI views, @Observable state, navigation, or render performance.",
+    "security": "A",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "environment",
+      "architecture",
+      "rendering",
+      "ui",
+      "layout"
+    ],
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/swiftui-patterns/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "environmental-design",
+      "architecture-design",
+      "ui-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:29.657Z",
+    "lastSeenAt": "2026-10-18T07:16:29.657Z"
+  },
+  {
+    "id": "Prasanth595/ECC/ui-to-vue",
+    "name": "ui-to-vue",
+    "source": "Prasanth595/ECC",
+    "summary": "Use when the user has UI screenshots or design exports that need batch conversion into Vue 3 components, especially with Vant, Element Plus, or Ant Design Vue.",
+    "security": "C",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "interaction",
+      "accessibility",
+      "map",
+      "environment"
+    ],
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/ui-to-vue/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "experience-design",
+      "architecture-design",
+      "environmental-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:30.119Z",
+    "lastSeenAt": "2026-10-18T07:16:30.119Z"
+  },
+  {
+    "id": "lukaskourilcz/quorum/product-marketing",
+    "name": "product-marketing",
+    "source": "lukaskourilcz/quorum",
+    "summary": "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' 'ideal customer profile,' or wants to avoid repeating foundational informa",
+    "security": "A",
+    "signalScore": 65,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "brand",
+      "product",
+      "motion",
+      "communication",
+      "landscape"
+    ],
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/product-marketing/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "operations-design",
-      "fashion-design",
+      "visual-communication",
+      "environmental-design",
+      "video-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:31.074Z",
+    "lastSeenAt": "2026-10-18T07:16:31.074Z"
+  },
+  {
+    "id": "shawnla90/shawn-gtme-os/campaign-copy-workflow",
+    "name": "campaign-copy-workflow",
+    "source": "shawnla90/shawn-gtme-os",
+    "summary": "Generate the complete Phase 2 of any web reveal campaign — static email bodies + a body-aware Clay research prompt for personalization variables. Ensures bodies and research prompt stay in sync. Use when the user types /campaigncopy <partner> or asks to build campaign copy for a partner.",
+    "security": "A",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 10,
+    "tags": [
+      "brand",
+      "campaign",
+      "crafts",
+      "craft",
+      "pattern",
+      "experience",
+      "research"
+    ],
+    "installUrl": "https://github.com/shawnla90/shawn-gtme-os",
+    "skillsUrl": "https://github.com/shawnla90/shawn-gtme-os/blob/main/.cursor/skills/campaign-copy-workflow/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "arts-crafts",
+      "experience-design",
+      "folk-art"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:07.615Z",
+    "lastSeenAt": "2026-10-18T07:16:07.615Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/noacg-graphic",
+    "name": "graphic",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Make, critique or improve a broadcast graphic or show package (lower third, scoreboard, ticker, countdown, any on-air graphic) and save it to NoaCG. Use when the user names NoaCG, SPX, CasparCG or OGraf, wants graphics operated live, or asks what NoaCG can do.",
+    "security": "C",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "editing",
+      "brand",
+      "product",
+      "ui",
+      "layout"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/cli/plugin/skills/noacg-graphic/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
       "ui-design",
       "visual-communication"
     ],
-    "qualityScore": 88,
+    "qualityScore": 92,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:53.838Z",
-    "lastSeenAt": "2026-10-17T07:00:53.838Z"
+    "firstSeenAt": "2026-10-18T07:16:11.754Z",
+    "lastSeenAt": "2026-10-18T07:16:11.754Z"
+  },
+  {
+    "id": "findscripter/everything-skills/matplotlib-visualization",
+    "name": "matplotlib-visualization",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要用 Python/Matplotlib 绘制静态图表（折线、散点、柱状、直方、热力、等高线、箱线、3D 等）并导出 PNG/PDF/SVG 出版级图时使用；做用面向对象 API（fig, ax）构图、定制样式与多子图、按 dpi 保存产物；不适用于浏览器交互式可视化（用 d3js-data-viz）或统计图表高层封装（用 seaborn）。触发词：matplotlib、画图、绘图、可视化、subplots、savefig",
+    "security": "A",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "visual",
+      "layout",
+      "color",
+      "arts",
+      "3d"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/03-data/matplotlib-visualization/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "fashion-design",
+      "arts-crafts",
+      "folk-art"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:40.438Z",
+    "lastSeenAt": "2026-10-18T07:16:14.103Z"
   },
   {
     "id": "findscripter/everything-skills/kpi-dashboard-design",
@@ -630,7 +549,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要设计 KPI 仪表盘、为高管/部门挑选关键指标、规划布局或编写指标计算时使用；产出指标分层框架、布局模式与可执行的 SQL/Streamlit 代码；不适用于与指标无关的通用 BI 或纯报表导出。触发词：KPI、仪表盘、dashboard、关键指标、北极星指标、指标体系、MRR、留存、cohort、metrics、KPI dashboard、executive dashboard",
     "security": "A",
-    "signalScore": 63,
+    "signalScore": 64,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -652,7 +571,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:40.276Z",
-    "lastSeenAt": "2026-10-17T07:00:40.276Z"
+    "lastSeenAt": "2026-10-18T07:16:17.241Z"
   },
   {
     "id": "findscripter/everything-skills/canvas-design",
@@ -660,7 +579,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当用户要做海报/封面/艺术海报/静态视觉作品并希望导出 PNG/PDF 时使用；做法是先写一份\"设计哲学\"再据此在画布上表达，产出 .md 哲学文档 + 单页 .png/.pdf 成品；不适用于网页/前端 UI、品牌规范体系、代码生成式算法艺术或多页文档排版；触发词：海报、poster、视觉艺术、art、平面设计、design、封面、艺术品、PNG、PDF",
     "security": "A",
-    "signalScore": 63,
+    "signalScore": 64,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -683,37 +602,67 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:43.189Z",
-    "lastSeenAt": "2026-10-17T07:00:43.189Z"
+    "lastSeenAt": "2026-10-18T07:16:19.382Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/obsidian-cli",
-    "name": "obsidian-cli",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Ob",
-    "security": "B",
-    "signalScore": 63,
+    "id": "lukaskourilcz/quorum/financial-operations",
+    "name": "financial-operations",
+    "source": "lukaskourilcz/quorum",
+    "summary": "Use when LEDGER reconciles operating cost, reports daily/MTD finance, evaluates spend, or plans the approved $50 monthly all-in operating limit (`budget-2026-08f`).",
+    "security": "A",
+    "signalScore": 64,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 0,
     "tags": [
       "operations",
-      "design",
-      "visual",
-      "color",
-      "pattern"
+      "campaign",
+      "media"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.agents/skills/obsidian-cli/SKILL.md",
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/financial-operations/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "operations-design",
       "fashion-design",
+      "digital-media-film",
+      "ui-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:30.748Z",
+    "lastSeenAt": "2026-10-18T07:16:30.748Z"
+  },
+  {
+    "id": "findscripter/everything-skills/cellchat-cell-communication",
+    "name": "cellchat-cell-communication",
+    "source": "findscripter/everything-skills",
+    "summary": "Infer and visualize intercellular communication from scRNA-seq with CellChat (R). Build CellChat from Seurat/counts → subset CellChatDB ligand-receptor pairs → over-expressed genes per group → communication probabilities → pathway signaling → network centrality (senders/receivers/influencers) → chord/heatmap/bubble plo",
+    "security": "C",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "visual",
+      "communication",
+      "vector",
+      "color",
+      "art",
+      "collage",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/09-verticals/cellchat-cell-communication/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "folk-art",
       "arts-crafts",
-      "folk-art"
+      "digital-media-film"
     ],
     "qualityScore": 79,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:50.143Z",
-    "lastSeenAt": "2026-10-17T07:00:50.143Z"
+    "firstSeenAt": "2026-10-18T07:16:15.064Z",
+    "lastSeenAt": "2026-10-18T07:16:15.064Z"
   },
   {
     "id": "beatra-ai/beatra-skills/art-demo-set",
@@ -745,7 +694,7 @@
     "qualityScore": 92,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:36.713Z",
-    "lastSeenAt": "2026-10-17T07:00:36.713Z"
+    "lastSeenAt": "2026-10-18T07:16:12.698Z"
   },
   {
     "id": "findscripter/everything-skills/email-sequence-designer",
@@ -773,7 +722,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:42.279Z",
-    "lastSeenAt": "2026-10-17T07:00:42.279Z"
+    "lastSeenAt": "2026-10-18T07:16:18.773Z"
   },
   {
     "id": "findscripter/everything-skills/stitch-design-system-taste",
@@ -808,7 +757,7 @@
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:44.499Z",
-    "lastSeenAt": "2026-10-17T07:00:44.499Z"
+    "lastSeenAt": "2026-10-18T07:16:21.269Z"
   },
   {
     "id": "findscripter/everything-skills/unsplash-photo-integration",
@@ -837,477 +786,36 @@
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:44.917Z",
-    "lastSeenAt": "2026-10-17T07:00:44.917Z"
+    "lastSeenAt": "2026-10-18T07:16:21.580Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/ciitty",
-    "name": "ciitty",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when applying the CIITTY elite, high-agency agent operating framework to ensure deep reasoning, Visual Kinetics design aesthetics, resilient database systems thinking, and PowerShell command reliability.",
-    "security": "C",
+    "id": "SpiralCloudOmega/DevTeam6/routing-grid",
+    "name": "routing-grid",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "AXE-FX III-style 12×4 routing grid for REVITHION STUDIO — grid topology, 36+ block types, scenes, channels, X/Y, feedback, and global blocks.",
+    "security": "A",
     "signalScore": 62,
     "installs": 0,
     "repoStars": 1,
     "tags": [
-      "operations",
-      "design",
       "product",
-      "visual",
-      "experience",
-      "research",
-      "usability",
-      "typography",
-      "layout",
-      "color"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.agents/frameworks/ciitty/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "visual-communication",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:48.438Z",
-    "lastSeenAt": "2026-10-17T07:00:48.438Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/assert-the-consumer",
-    "name": "assert-the-consumer",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use whenever a change adds a WRITER — a response header, an env var, a DB column, a queue row, a tool registration, a config flag, a response field, a metric. Before calling it done, prove something READS it. Registration is not reachability, and a green test on the writer is the exact evidence that will fool you.",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "product"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/assert-the-consumer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "industrial-design",
-      "experience-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:51.818Z",
-    "lastSeenAt": "2026-10-17T07:00:51.818Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/find-skill",
-    "name": "find-skill",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Always-on discovery gate. Every turn, decide in one line whether an outside search (skills, MCPs, plugins, libraries, tools, fresh facts) would change the answer. If not, say so and skip the search. If yes, check repo prior art first, then search, filter, and return a short verdict table. Discovery only; adoption is a ",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "operations",
-      "design",
-      "art",
+      "parametric",
+      "ux",
       "pattern"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/find-skill/SKILL.md",
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/routing-grid/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "folk-art",
-      "ui-design",
-      "video-design"
+      "industrial-design",
+      "experience-design",
+      "arts-crafts",
+      "architecture-design"
     ],
     "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:53.357Z",
-    "lastSeenAt": "2026-10-17T07:00:53.357Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/nickstire-reel-operator",
-    "name": "nickstire-reel-operator",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Run the Nick's Tire & Auto Faceless Reel Intelligence Operator — turn a driver problem into a scored Reel concept, then a production pack, draft, or (only with explicit live operator authorization) a publish. Use this whenever asked to research/ideate Reel topics, produce a Reel production pack, render/QA a draft Reel,",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "operations",
-      "design",
-      "product",
-      "video",
-      "research",
-      "audio"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/nickstire-reel-operator/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:55.401Z",
-    "lastSeenAt": "2026-10-17T07:00:55.401Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/nour-command",
-    "name": "nour-command",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use for any non-trivial Nour task that needs context recovery, end-to-end execution, MAX EFFORT, backlog reconciliation, deep research, audit-and-fix work, or proof-backed completion. Also use when Nour says continue, finish it, figure out what is left, reconcile sessions, audit and fix, deep research, or NOUR COMMAND.",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "product",
-      "research",
-      "editing"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/nour-command/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:56.387Z",
-    "lastSeenAt": "2026-10-17T07:00:56.387Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/plan-gate",
-    "name": "plan-gate",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when handed a pasted plan, audit, roadmap, or \"here's what you should build\" from another agent or tool — before doing any of the work. In this repo most such plans are already built; docs/UPSTREAMS.md exists specifically to prove it.",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "product"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/plan-gate/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "industrial-design",
-      "experience-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:56.555Z",
-    "lastSeenAt": "2026-10-17T07:00:56.555Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/positive-control-first",
-    "name": "positive-control-first",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use whenever you write a new test, canary, gate, guard regex, or alarm. Run it against the UNFIXED code first and record the failure shape. A test that has never failed is a silent instrument, not coverage.",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "product",
-      "environment"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/positive-control-first/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "architecture-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:57.744Z",
-    "lastSeenAt": "2026-10-17T07:00:57.744Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/using-superpowers",
-    "name": "using-superpowers",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use at the start of EVERY session and again right after any context compaction, before the first reply or tool call - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "product"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/using-superpowers/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "industrial-design",
-      "experience-design",
-      "ui-design"
-    ],
-    "qualityScore": 82,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:01.263Z",
-    "lastSeenAt": "2026-10-17T07:01:01.263Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/vapi-call-ops-report",
-    "name": "vapi-call-ops-report",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Analyze Vapi voice-agent and call performance for call outcomes, lead handling, bookings/transfers, tool execution, failures, latency, cost, conversation quality, prompt/knowledge issues, missed revenue, and operational reliability. Use when the user asks for a Vapi report or audit, provides Vapi call logs/exports/tran",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "operations",
-      "design",
-      "campaign",
-      "environment"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/vapi-call-ops-report/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "fashion-design",
-      "architecture-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:01.459Z",
-    "lastSeenAt": "2026-10-17T07:01:01.459Z"
-  },
-  {
-    "id": "awesomeopen/awesome-open/retro-scraperism",
-    "name": "retro-scraperism",
-    "source": "awesomeopen/awesome-open",
-    "summary": "Apply Retro-Scraperism to interface design, style guides, websites, artwork direction, component reviews, and design-system extensions. Use when the user names Retro-Scraperism or asks to follow the Awesome Open specimen design system. Combines high-contrast white and Prussian blue, precise technical information, stran",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "visual",
-      "typography",
-      "editorial",
-      "illustration",
-      "color",
-      "art",
-      "hand-drawn",
-      "design",
-      "ui",
-      "design-system"
-    ],
-    "installUrl": "https://github.com/awesomeopen/awesome-open",
-    "skillsUrl": "https://github.com/awesomeopen/awesome-open/blob/main/.agents/skills/retro-scraperism/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "visual-communication",
-      "folk-art",
-      "ui-design",
-      "video-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:03.919Z",
-    "lastSeenAt": "2026-10-17T07:01:03.919Z"
-  },
-  {
-    "id": "carlos-rezai/FamilyFlix/design-an-interface",
-    "name": "design-an-interface",
-    "source": "carlos-rezai/FamilyFlix",
-    "summary": "Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions \"design it twice\".",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "video",
-      "design",
-      "ui",
-      "operations"
-    ],
-    "installUrl": "https://github.com/carlos-rezai/FamilyFlix",
-    "skillsUrl": "https://github.com/carlos-rezai/FamilyFlix/blob/main/.claude/skills/design-an-interface/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:04.453Z",
-    "lastSeenAt": "2026-10-17T07:01:04.453Z"
-  },
-  {
-    "id": "carlos-rezai/FamilyFlix/design-log",
-    "name": "design-log",
-    "source": "carlos-rezai/FamilyFlix",
-    "summary": "Create or update a design log file for a feature.",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "video",
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/carlos-rezai/FamilyFlix",
-    "skillsUrl": "https://github.com/carlos-rezai/FamilyFlix/blob/main/.claude/skills/design-log/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "architecture-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:04.626Z",
-    "lastSeenAt": "2026-10-17T07:01:04.626Z"
-  },
-  {
-    "id": "carlos-rezai/FamilyFlix/ubiquitous-language",
-    "name": "ubiquitous-language",
-    "source": "carlos-rezai/FamilyFlix",
-    "summary": "Extract a DDD-style ubiquitous language glossary from the",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "video",
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/carlos-rezai/FamilyFlix",
-    "skillsUrl": "https://github.com/carlos-rezai/FamilyFlix/blob/main/.claude/skills/ubiquitous-language/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:04.815Z",
-    "lastSeenAt": "2026-10-17T07:01:04.815Z"
-  },
-  {
-    "id": "carlos-rezai/FamilyFlix/grill-me",
-    "name": "grill-me",
-    "source": "carlos-rezai/FamilyFlix",
-    "summary": "Interview the user relentlessly about a plan or design",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "video",
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/carlos-rezai/FamilyFlix",
-    "skillsUrl": "https://github.com/carlos-rezai/FamilyFlix/blob/main/.claude/skills/grill-me/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "ui-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:06.489Z",
-    "lastSeenAt": "2026-10-17T07:01:06.489Z"
-  },
-  {
-    "id": "carlos-rezai/FamilyFlix/prd-to-issues",
-    "name": "prd-to-issues",
-    "source": "carlos-rezai/FamilyFlix",
-    "summary": "Break a PRD into independently-grabbable GitHub issues",
-    "security": "A",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "video",
-      "design",
-      "media",
-      "interaction",
-      "ui"
-    ],
-    "installUrl": "https://github.com/carlos-rezai/FamilyFlix",
-    "skillsUrl": "https://github.com/carlos-rezai/FamilyFlix/blob/main/.claude/skills/prd-to-issues/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "digital-media-film",
-      "ui-design",
-      "experience-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:06.831Z",
-    "lastSeenAt": "2026-10-17T07:01:06.831Z"
-  },
-  {
-    "id": "findscripter/everything-skills/matplotlib-visualization",
-    "name": "matplotlib-visualization",
-    "source": "findscripter/everything-skills",
-    "summary": "当需要用 Python/Matplotlib 绘制静态图表（折线、散点、柱状、直方、热力、等高线、箱线、3D 等）并导出 PNG/PDF/SVG 出版级图时使用；做用面向对象 API（fig, ax）构图、定制样式与多子图、按 dpi 保存产物；不适用于浏览器交互式可视化（用 d3js-data-viz）或统计图表高层封装（用 seaborn）。触发词：matplotlib、画图、绘图、可视化、subplots、savefig",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "color",
-      "visual",
-      "arts",
-      "3d",
-      "layout"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/03-data/matplotlib-visualization/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "arts-crafts",
-      "visual-communication",
-      "folk-art"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:40.438Z",
-    "lastSeenAt": "2026-10-17T07:00:40.438Z"
+    "firstSeenAt": "2026-10-18T07:16:23.726Z",
+    "lastSeenAt": "2026-10-18T07:16:23.726Z"
   },
   {
     "id": "findscripter/everything-skills/design-dev-handoff",
@@ -1337,150 +845,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:43.535Z",
-    "lastSeenAt": "2026-10-17T07:00:43.535Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/moneyprinter",
-    "name": "moneyprinter",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Generate short videos automatically from a topic or custom script. Uses MoneyPrinterTurbo to write scripts, select B-roll footage, synthesize TTS audio, and render subtitles.",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "video",
-      "landscape",
-      "rendering",
-      "audio"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.agents/skills/moneyprinter/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:49.808Z",
-    "lastSeenAt": "2026-10-17T07:00:49.808Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/obsidian-markdown",
-    "name": "obsidian-markdown",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.",
-    "security": "B",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "video",
-      "architecture",
-      "diagram",
-      "audio"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.agents/skills/obsidian-markdown/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "architecture-design",
-      "video-design",
-      "environmental-design"
-    ],
-    "qualityScore": 86,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:50.347Z",
-    "lastSeenAt": "2026-10-17T07:00:50.347Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/funnel-attribution-report",
-    "name": "funnel-attribution-report",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Reconcile cross-system marketing and sales attribution from traffic/ad/search/social sources through website events, calls, Vapi, bookings, CRM, completed jobs, and revenue. Use when the user asks where leads or revenue came from, whether tracking is trustworthy, why platform conversions disagree, how many leads are lo",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui",
-      "interaction"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/funnel-attribution-report/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "experience-design",
-      "architecture-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:53.516Z",
-    "lastSeenAt": "2026-10-17T07:00:53.516Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/monorepo-manager",
-    "name": "monorepo-manager",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Run the NOURCITY monorepo as a manager that never edits code itself. Use when Nour says \"manager\", \"manage the repo\", \"run the backlog\", \"continue the job\", when a job touches more than one lane (nickstire server/client, statenour, worker, platform, research), or after a heartbeat proposes jobs. Splits work one lane ag",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "research",
-      "ui"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/monorepo-manager/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "ui-design",
-      "architecture-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:54.892Z",
-    "lastSeenAt": "2026-10-17T07:00:54.893Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/shop-retention-report",
-    "name": "shop-retention-report",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Analyze auto-repair shop CRM, customer, invoice, and service history for retention, repeat visits, customer cohorts, recency/frequency, average repair order or revenue per visit, declined-work recovery, service mix, tire-to-service cross-sell, dormant customers, review capture, and retention leakage. Use when the user ",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/shop-retention-report/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:59.056Z",
-    "lastSeenAt": "2026-10-17T07:00:59.056Z"
+    "lastSeenAt": "2026-10-18T07:16:20.676Z"
   },
   {
     "id": "findscripter/everything-skills/glassmorphism-ui-design",
@@ -1488,7 +853,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要构建悬浮、空间纵深、玻璃拟态的高交互 Web 界面（仪表盘/落地页/沉浸式产品页）时使用；基于 React/Next + Tailwind + GSAP ScrollTrigger + R3F/CSS 3D 产出可复用动效组件与设计规范；不适用于常规扁平 UI、表单密集型后台或低端设备/弱网首屏。触发词：玻璃拟态、glassmorphism、空间感动效",
     "security": "A",
-    "signalScore": 60,
+    "signalScore": 61,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1511,7 +876,318 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:43.938Z",
-    "lastSeenAt": "2026-10-17T07:00:43.938Z"
+    "lastSeenAt": "2026-10-18T07:16:20.965Z"
+  },
+  {
+    "id": "SpiralCloudOmega/DevTeam6/mixing-techniques",
+    "name": "mixing-techniques",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "Professional mixing techniques for REVITHION STUDIO — gain staging, bus routing, parallel compression, send effects, VCA grouping, automation, Scheps Rear Bus, and stem export in JUCE C++.",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "design",
+      "ux",
+      "product"
+    ],
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/mixing-techniques/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "experience-design",
+      "industrial-design",
+      "operations-design",
+      "video-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:23.578Z",
+    "lastSeenAt": "2026-10-18T07:16:23.578Z"
+  },
+  {
+    "id": "Prasanth595/ECC/orch-build-mvp",
+    "name": "orch-build-mvp",
+    "source": "Prasanth595/ECC",
+    "summary": "Orchestrate bootstrapping a working MVP from a design or spec document — ingest the SDD/PRD, plan thin vertical slices, scaffold the first end-to-end slice, then drive a generator-evaluator build loop with review and gated feat commits. Use when a design or spec document must become a running MVP through planned vertic",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "design",
+      "ui"
+    ],
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/orch-build-mvp/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "operations-design",
+      "video-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:29.514Z",
+    "lastSeenAt": "2026-10-18T07:16:29.514Z"
+  },
+  {
+    "id": "lukaskourilcz/quorum/organization-operations",
+    "name": "organization-operations",
+    "source": "lukaskourilcz/quorum",
+    "summary": "Use when PEOPLE reviews agent effectiveness or proposes/tests a role, description, routing, prompt, skill, model, or status change.",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "operations"
+    ],
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/organization-operations/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "ui-design",
+      "visual-communication",
+      "video-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:30.895Z",
+    "lastSeenAt": "2026-10-18T07:16:30.895Z"
+  },
+  {
+    "id": "lukaskourilcz/quorum/social-operations",
+    "name": "social-operations",
+    "source": "lukaskourilcz/quorum",
+    "summary": "Use for social strategy, calendars, channel drafts, media assets, queue review, publishing, insights, channel proposals and social incidents.",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "operations",
+      "brand",
+      "product",
+      "motion",
+      "accessibility",
+      "ui"
+    ],
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/social-operations/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "experience-design",
+      "ui-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:31.219Z",
+    "lastSeenAt": "2026-10-18T07:16:31.219Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/ograf-expert",
+    "name": "ograf-expert",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Authoritative reference for the EBU OGraf (Open Graphics) v1 specification: the .ograf.json manifest schema (id/name/main/supportsRealTime/supportsNonRealTime, schema, stepCount, customActions, actionDurations, renderRequirements, thumbnails), the Graphic Web Component interface (load, dispose, playAction, stopAction, ",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing",
+      "ui"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/ograf-expert/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:09.470Z",
+    "lastSeenAt": "2026-10-18T07:16:09.470Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/spx-html-template-expert",
+    "name": "spx-html-template-expert",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Authoritative reference for the SPX Graphics \"Basic HTML template structure\" docs page: the SPXGCTemplateDefinition object, all playout/display settings, every DataField type (ftype), the spxData data-access object, the spxRenderer lifecycle events, folder/path conventions, and best practices. Use when writing, editing",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing",
+      "layout",
+      "color"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/spx-html-template-expert/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "visual-communication",
+      "ui-design",
+      "fashion-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:10.409Z",
+    "lastSeenAt": "2026-10-18T07:16:10.409Z"
+  },
+  {
+    "id": "findscripter/everything-skills/minimalist-editorial-ui",
+    "name": "minimalist-editorial-ui",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要做 Notion/Linear/Vercel 那类极简、编辑风、文档感的高端前端界面时使用；产出暖色单色系、1px 细边框、bento 网格、克制动效的 HTML/React/Tailwind 设计规范与代码；不适用于已有强品牌色系统、需要鲜艳渐变/重阴影/营销大色块的场景。触发词：极简界面、editorial 风、暖色单色、bento 网格、Notion 风。",
+    "security": "B",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "visual",
+      "editorial",
+      "design",
+      "ui",
+      "design-system",
+      "photo"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/minimalist-editorial-ui/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "ui-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:14.892Z",
+    "lastSeenAt": "2026-10-18T07:16:14.892Z"
+  },
+  {
+    "id": "findscripter/everything-skills/design-brainstorming",
+    "name": "design-brainstorming",
+    "source": "findscripter/everything-skills",
+    "summary": "当在动手实现前需要把模糊想法转为经过验证的设计/规格时使用；做结构化对话产出\"理解锁定+多方案权衡+增量设计+决策日志\"并落盘为文档；不适用于已明确需求只待编码、或纯执行/调试场景。触发词：头脑风暴、需求澄清、设计方案、技术选型、写设计文档",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "research",
+      "ui"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/00-meta/design-brainstorming/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "experience-design",
+      "ui-design",
+      "operations-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:38.417Z",
+    "lastSeenAt": "2026-10-18T07:16:15.602Z"
+  },
+  {
+    "id": "findscripter/everything-skills/erd-schema-designer",
+    "name": "erd-schema-designer",
+    "source": "findscripter/everything-skills",
+    "summary": "当从需求出发设计关系型数据库 schema、画 ERD、做范式化与表关系/约束/索引规划，或为多租户加隔离与软删除/审计字段时使用；产出实体关系模型（Mermaid ERD）、规范化表结构、关系与约束、索引与 RLS 策略草案；不适用于编写业务查询 SQL、本地 CSV 清洗、ORM/迁移工具具体语法调试；触发词：ERD、实体关系图、数据库设计、表结构设计、范式、normalization、schema design、多租户、软删除、索引策略、RLS",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "diagram",
+      "map",
+      "ui"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/03-data/erd-schema-designer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "architecture-design",
+      "ui-design",
+      "industrial-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:40.092Z",
+    "lastSeenAt": "2026-10-18T07:16:17.063Z"
+  },
+  {
+    "id": "findscripter/everything-skills/campaign-attribution-analytics",
+    "name": "campaign-attribution-analytics",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要评估营销活动表现、判定渠道贡献或核算投放回报时使用；用三个零依赖 Python CLI 对 JSON 数据做多触点归因、漏斗转化与 ROI/ROAS/CPA 核算并产出可读或 JSON 报告；不适用于实时数据接入、统计显著性检验或跨设备身份打通。触发词：归因模型、营销 ROI、漏斗转化",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "campaign",
+      "media",
+      "interaction",
+      "ui"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/campaign-attribution-analytics/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "digital-media-film",
+      "ui-design",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:41.879Z",
+    "lastSeenAt": "2026-10-18T07:16:18.476Z"
+  },
+  {
+    "id": "findscripter/everything-skills/marketing-campaign-brief",
+    "name": "marketing-campaign-brief",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要把营销目标（产品发布/线索获取/品牌造势/留存召回）转化为一份完整、可执行的活动方案 brief 时使用；做：按「目标·受众·讯息·渠道·度量」五要素框架，产出含活动概述、受众画像、核心讯息、渠道策略、逐周内容日历（含依赖）、内容物料清单、KPI、预算分配、风险与下一步的结构化 brief；不适用于撰写单篇文案/广告创意、纯渠道执行投放或定价方案设计；触发词：营销活动、campaign、活动方案、内容日历、渠道策略、GTM、线索获取",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "campaign",
+      "product"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/marketing-campaign-brief/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "operations-design",
+      "industrial-design",
+      "experience-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:42.474Z",
+    "lastSeenAt": "2026-10-18T07:16:18.912Z"
   },
   {
     "id": "findscripter/everything-skills/ui-design-system-builder",
@@ -1544,344 +1220,378 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:44.712Z",
-    "lastSeenAt": "2026-10-17T07:00:44.712Z"
+    "lastSeenAt": "2026-10-18T07:16:21.417Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/answer-first",
-    "name": "answer-first",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Output contract for this repo — lead with the answer, number every procedure, and delete filler. Use when writing any operator-facing response, report, PR body, or handoff note. Origin - the \"I Have ADHD\" pattern, adapted to this monorepo.",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/answer-first/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:50.567Z",
-    "lastSeenAt": "2026-10-17T07:00:50.567Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/antislop-copywriting",
-    "name": "antislop-copywriting",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Copy and text skill for antislop. Use when writing or editing prose: headlines, tone, CTAs, and anti-AI-writing patterns. Load with the core.",
-    "security": "B",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "product",
-      "landscape",
-      "editing"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/antislop-copywriting/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:50.906Z",
-    "lastSeenAt": "2026-10-17T07:00:50.906Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/antislop-layoutmobile",
-    "name": "antislop-layoutmobile",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Mobile layout skill for antislop. Use for layouts that reflow across screen sizes, phone to desktop: grids, overflow, tap targets. Load with the core.",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "typography"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/antislop-layoutmobile/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "operations-design",
-      "visual-communication",
-      "video-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:51.286Z",
-    "lastSeenAt": "2026-10-17T07:00:51.286Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/claim-before-act",
-    "name": "claim-before-act",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use whenever a read-then-write decides WHICH CALLER ACTS — an idempotency claim, a lease, a dedupe marker, a reclaim of an expired or failed row, an approval slot. The write must be a compare-and-swap on the exact row you read (or a serializable transaction); an unconditional update by id lets two racers both win. Trig",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/claim-before-act/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:52.992Z",
-    "lastSeenAt": "2026-10-17T07:00:52.992Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/empty-vs-error",
-    "name": "empty-vs-error",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use whenever code READS something (query, fetch, groupBy, aggregate, probe) and RENDERS or SCORES the result — a panel, a stat tile, a health verdict, a score, a report section. A failed read must never render as a confident zero. Also use when auditing a wave for this shape, or when fixing one instance of it.",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/empty-vs-error/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "folk-art",
-      "video-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:53.188Z",
-    "lastSeenAt": "2026-10-17T07:00:53.188Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/nickstire-ios-pwa-primitives",
-    "name": "nickstire-ios-pwa-primitives",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when writing or editing client code in EITHER PWA (apps/nickstire/client/ or apps/statenour) that needs a confirm dialog, text capture, or alert — and as a periodic sweep — because window.prompt/alert/confirm is silently suppressed in iOS PWA standalone mode (the operator's actual operating environment on both apps",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "environment"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/nickstire-ios-pwa-primitives/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "architecture-design",
-      "video-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:55.234Z",
-    "lastSeenAt": "2026-10-17T07:00:55.234Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/statenour-migration",
-    "name": "statenour-migration",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when changing the statenour Prisma schema (apps/statenour/prisma/schema.prisma) — migrations are hand-applied and one wrong flag silently drops pgvector data.",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui",
-      "art",
-      "vector"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/statenour-migration/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:00.182Z",
-    "lastSeenAt": "2026-10-17T07:01:00.182Z"
-  },
-  {
-    "id": "carlos-rezai/FamilyFlix/refactor",
-    "name": "refactor",
-    "source": "carlos-rezai/FamilyFlix",
-    "summary": "Execute a refactor plan commit by commit. Use after",
+    "id": "Prasanth595/ECC/api-connector-builder",
+    "name": "api-connector-builder",
+    "source": "Prasanth595/ECC",
+    "summary": "Build a new API connector or provider by matching the target repo's existing integration pattern exactly. Use when adding one more integration without inventing a second architecture.",
     "security": "A",
     "signalScore": 60,
     "installs": 0,
     "repoStars": 0,
     "tags": [
-      "video",
-      "design",
-      "ui"
+      "ui",
+      "layout",
+      "architecture",
+      "map",
+      "art",
+      "pattern"
     ],
-    "installUrl": "https://github.com/carlos-rezai/FamilyFlix",
-    "skillsUrl": "https://github.com/carlos-rezai/FamilyFlix/blob/main/.claude/skills/refactor/SKILL.md",
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/api-connector-builder/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "operations-design",
       "ui-design",
-      "industrial-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:07.155Z",
-    "lastSeenAt": "2026-10-17T07:01:07.155Z"
-  },
-  {
-    "id": "findscripter/everything-skills/design-brainstorming",
-    "name": "design-brainstorming",
-    "source": "findscripter/everything-skills",
-    "summary": "当在动手实现前需要把模糊想法转为经过验证的设计/规格时使用；做结构化对话产出\"理解锁定+多方案权衡+增量设计+决策日志\"并落盘为文档；不适用于已明确需求只待编码、或纯执行/调试场景。触发词：头脑风暴、需求澄清、设计方案、技术选型、写设计文档",
-    "security": "A",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "research",
-      "ui"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/00-meta/design-brainstorming/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "experience-design",
-      "ui-design",
+      "architecture-design",
+      "folk-art",
       "operations-design"
     ],
     "qualityScore": 75,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:38.417Z",
-    "lastSeenAt": "2026-10-17T07:00:38.417Z"
+    "firstSeenAt": "2026-10-18T07:16:28.354Z",
+    "lastSeenAt": "2026-10-18T07:16:28.354Z"
   },
   {
-    "id": "findscripter/everything-skills/erd-schema-designer",
-    "name": "erd-schema-designer",
+    "id": "Prasanth595/ECC/dashboard-builder",
+    "name": "dashboard-builder",
+    "source": "Prasanth595/ECC",
+    "summary": "Build monitoring dashboards that answer real operator questions for Grafana, SigNoz, and similar platforms. Use when turning metrics into a working dashboard instead of a vanity board.",
+    "security": "A",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "ui",
+      "layout",
+      "art",
+      "color",
+      "pattern",
+      "visual"
+    ],
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/dashboard-builder/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "folk-art",
+      "visual-communication",
+      "arts-crafts"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:28.651Z",
+    "lastSeenAt": "2026-10-18T07:16:28.651Z"
+  },
+  {
+    "id": "lukaskourilcz/quorum/brand-identity",
+    "name": "brand-identity",
+    "source": "lukaskourilcz/quorum",
+    "summary": "Create or apply the BoardlessAI Refero/Awesomic zinc-and-Ember editorial system, tokens.css, typography, SVG logo and BRAND.md voice. Use when founding the brand, building UI, or fixing visual drift.",
+    "security": "C",
+    "signalScore": 60,
+    "installs": 0,
+    "repoStars": 0,
+    "tags": [
+      "visual",
+      "brand",
+      "typography",
+      "editorial",
+      "color",
+      "design",
+      "ui",
+      "accessibility"
+    ],
+    "installUrl": "https://github.com/lukaskourilcz/quorum",
+    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/brand-identity/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "operations-design",
+      "ui-design",
+      "fashion-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:30.599Z",
+    "lastSeenAt": "2026-10-18T07:16:30.599Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/orchestrator",
+    "name": "orchestrator",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Run a wave of autonomous work through a time window - the prompt's work, then the backlog in GOALS rank, each row landed through the merge queue, with a short report",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing",
+      "art"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/orchestrator/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "folk-art",
+      "ui-design",
+      "visual-communication"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:09.786Z",
+    "lastSeenAt": "2026-10-18T07:16:09.786Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/plan-run",
+    "name": "plan-run",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Run a long plan phase by phase until a time limit - each phase built by one fresh session, checked on main by another, and the next phase only after the check passed",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing",
+      "ui",
+      "art"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/plan-run/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "folk-art",
+      "visual-communication"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:09.938Z",
+    "lastSeenAt": "2026-10-18T07:16:09.938Z"
+  },
+  {
+    "id": "findscripter/everything-skills/vector-database-engineer",
+    "name": "vector-database-engineer",
     "source": "findscripter/everything-skills",
-    "summary": "当从需求出发设计关系型数据库 schema、画 ERD、做范式化与表关系/约束/索引规划，或为多租户加隔离与软删除/审计字段时使用；产出实体关系模型（Mermaid ERD）、规范化表结构、关系与约束、索引与 RLS 策略草案；不适用于编写业务查询 SQL、本地 CSV 清洗、ORM/迁移工具具体语法调试；触发词：ERD、实体关系图、数据库设计、表结构设计、范式、normalization、schema design、多租户、软删除、索引策略、RLS",
+    "summary": "当为 RAG/语义检索/推荐做向量库选型与端到端落地，在 Pinecone/Weaviate/Qdrant/Milvus/pgvector 间权衡并设计分块、元数据与扩容时使用；产出选型对照、索引(HNSW/IVF/PQ)与元数据 schema 及上线清单；不适用于嵌入选型评估、纯索引调参或关系型/NoSQL 建模；触发词：向量数据库、Pinecone、Weaviate、Qdrant、Milvus、pgvector、语义检索、RAG、相似度搜索",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "vector",
+      "design",
+      "ui"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/03-data/vector-database-engineer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "ui-design",
+      "operations-design",
+      "video-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:14.261Z",
+    "lastSeenAt": "2026-10-18T07:16:14.261Z"
+  },
+  {
+    "id": "findscripter/everything-skills/vector-index-tuning",
+    "name": "vector-index-tuning",
+    "source": "findscripter/everything-skills",
+    "summary": "当向量检索延迟高、召回不达标或内存占用过大时使用；做 HNSW 参数（M/efConstruction/efSearch）、量化策略与索引类型选型，产出可基准验证的索引配置与监控指标；不适用于嵌入模型选型、检索结果重排或召回链路的语义优化（属 RAG 上层）。触发词：HNSW、量化、召回率",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "vector",
+      "product"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/04-ai/vector-index-tuning/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "operations-design",
+      "industrial-design",
+      "experience-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:14.411Z",
+    "lastSeenAt": "2026-10-18T07:16:14.411Z"
+  },
+  {
+    "id": "findscripter/everything-skills/brooks-design-lint",
+    "name": "brooks-design-lint",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要超越 linter 的架构与设计层审查（重构前、新模块设计评审、接手陌生代码、\"能跑但感觉不对\"的代码）时使用；以 12 本经典软工书籍为视角，产出按书籍/严重度分级的设计坏味、耦合、稳定性与数据一致性问题清单及改进建议；不适用于语法/风格 lint、纯逻辑 bug 排查、安全专项扫描，也不替代人工设计评审；触发词：设计审查、架构评审、重构前体检、代码坏味、耦合分析、Brooks Lint",
     "security": "A",
     "signalScore": 59,
     "installs": 0,
     "repoStars": 5,
     "tags": [
       "design",
-      "diagram",
-      "map",
-      "ui"
+      "architecture"
     ],
     "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/03-data/erd-schema-designer/SKILL.md",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/02-engineering/brooks-design-lint/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "environmental-design",
+      "architecture-design",
+      "arts-crafts"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:39.008Z",
+    "lastSeenAt": "2026-10-18T07:16:16.137Z"
+  },
+  {
+    "id": "findscripter/everything-skills/database-design-advisor",
+    "name": "database-design-advisor",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要做数据库选型（SQL/NoSQL）、设计 Schema、规划零停机迁移、优化索引与慢查询、设计分库分表与复制时使用；产出建模方案、迁移脚本（up/down）、索引与查询优化建议、选型决策矩阵；不适用于具体业务 SQL 调试代写、ORM 框架细节、运维集群部署。触发词：数据库设计、Schema、选型、迁移、索引、分库分表、慢查询",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "architecture"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/02-engineering/database-design-advisor/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "environmental-design",
+      "architecture-design",
+      "ui-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:39.194Z",
+    "lastSeenAt": "2026-10-18T07:16:16.311Z"
+  },
+  {
+    "id": "findscripter/everything-skills/ddd-strategic-design",
+    "name": "ddd-strategic-design",
+    "source": "findscripter/everything-skills",
+    "summary": "当为复杂业务域划分边界、拆分单体或对齐团队归属时使用；做子域分类、限界上下文目录、统一语言词汇表与边界决策（ADR）等战略设计产物；不适用于已稳定且边界清晰的模型、纯战术编码、或纯基础设施/UI 任务；触发词：限界上下文、子域划分、统一语言",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "architecture",
+      "map"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/02-engineering/ddd-strategic-design/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "fashion-design",
       "architecture-design",
-      "ui-design",
-      "industrial-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:40.092Z",
-    "lastSeenAt": "2026-10-17T07:00:40.092Z"
-  },
-  {
-    "id": "findscripter/everything-skills/campaign-attribution-analytics",
-    "name": "campaign-attribution-analytics",
-    "source": "findscripter/everything-skills",
-    "summary": "当需要评估营销活动表现、判定渠道贡献或核算投放回报时使用；用三个零依赖 Python CLI 对 JSON 数据做多触点归因、漏斗转化与 ROI/ROAS/CPA 核算并产出可读或 JSON 报告；不适用于实时数据接入、统计显著性检验或跨设备身份打通。触发词：归因模型、营销 ROI、漏斗转化",
-    "security": "A",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "campaign",
-      "media",
-      "interaction",
-      "ui"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/campaign-attribution-analytics/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "digital-media-film",
-      "ui-design",
-      "operations-design"
+      "environmental-design",
+      "ui-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:41.879Z",
-    "lastSeenAt": "2026-10-17T07:00:41.879Z"
+    "firstSeenAt": "2026-10-17T07:00:39.360Z",
+    "lastSeenAt": "2026-10-18T07:16:16.460Z"
   },
   {
-    "id": "findscripter/everything-skills/marketing-campaign-brief",
-    "name": "marketing-campaign-brief",
+    "id": "findscripter/everything-skills/content-emotional-arc-design",
+    "name": "content-emotional-arc-design",
     "source": "findscripter/everything-skills",
-    "summary": "当需要把营销目标（产品发布/线索获取/品牌造势/留存召回）转化为一份完整、可执行的活动方案 brief 时使用；做：按「目标·受众·讯息·渠道·度量」五要素框架，产出含活动概述、受众画像、核心讯息、渠道策略、逐周内容日历（含依赖）、内容物料清单、KPI、预算分配、风险与下一步的结构化 brief；不适用于撰写单篇文案/广告创意、纯渠道执行投放或定价方案设计；触发词：营销活动、campaign、活动方案、内容日历、渠道策略、GTM、线索获取",
+    "summary": "当落地页/广告/邮件序列/销售文档/产品流需要受众从入场情绪走向行动情绪时使用；做受控情绪弧线设计（诊断入场情绪、定义出场情绪、铺设过渡路径、安放峰值、收束出口），产出可执行的逐节情绪序列；不适用于无明确行动目标或入/出场情绪不清的场景。触发词：情绪弧线、情绪曲线、情绪序列",
     "security": "A",
     "signalScore": 59,
     "installs": 0,
     "repoStars": 5,
     "tags": [
-      "campaign",
-      "product"
+      "design",
+      "motion"
     ],
     "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/marketing-campaign-brief/SKILL.md",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/content-emotional-arc-design/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "fashion-design",
       "operations-design",
-      "industrial-design",
-      "experience-design"
+      "video-design",
+      "ui-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:42.474Z",
-    "lastSeenAt": "2026-10-17T07:00:42.474Z"
+    "firstSeenAt": "2026-10-17T07:00:42.068Z",
+    "lastSeenAt": "2026-10-18T07:16:18.623Z"
+  },
+  {
+    "id": "findscripter/everything-skills/referral-program-designer",
+    "name": "referral-program-designer",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要设计、优化或评估推荐（referral）、联盟（affiliate）或口碑裂变计划时使用；产出推荐闭环、激励结构、A/B 测试方案、上线清单与衡量指标；不适用于一次性发布期病毒传播、广告投放或纯付费获客。触发词：推荐计划、转介绍、推荐有礼、联盟营销、affiliate、ambassador、口碑、viral loop、推荐返利、合伙人计划、referral incentive、affiliate payout",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "ui"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/referral-program-designer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "ui-design",
+      "operations-design",
+      "video-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:42.688Z",
+    "lastSeenAt": "2026-10-18T07:16:19.060Z"
+  },
+  {
+    "id": "findscripter/everything-skills/design-spells-microinteractions",
+    "name": "design-spells-microinteractions",
+    "source": "findscripter/everything-skills",
+    "summary": "当为已完成功能做最后打磨、想把\"功能性/平庸\"界面提升为\"有惊喜感/高级感\"时使用；做法是定位界面中无聊的标准组件，借鉴优秀微交互模式并适配品牌后用 CSS/Anime.js/Framer Motion 实现 60fps+ 的精致交互细节；不适用于核心功能尚未跑通、性能/可访问性优先、或微交互会妨碍可用性的场景。触发词：微交互、悬停动效、彩蛋。",
+    "security": "B",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "interaction",
+      "ux"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/design-spells-microinteractions/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "fashion-design",
+      "experience-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:43.689Z",
+    "lastSeenAt": "2026-10-18T07:16:20.833Z"
   },
   {
     "id": "findscripter/everything-skills/photopea-embedded-editor",
@@ -1910,286 +1620,7 @@
     "qualityScore": 79,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:44.340Z",
-    "lastSeenAt": "2026-10-17T07:00:44.340Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/nickstire-tidb-ddl",
-    "name": "nickstire-tidb-ddl",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when adding or altering a column, table, status value, or index in the nickstire database (apps/nickstire/drizzle/). TiDB rejects several things MySQL allows, and one of them loses the row silently instead of erroring.",
-    "security": "C",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "operations",
-      "design",
-      "product"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/nickstire-tidb-ddl/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "industrial-design",
-      "experience-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:55.795Z",
-    "lastSeenAt": "2026-10-17T07:00:55.795Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/verification-before-completion",
-    "name": "verification-before-completion",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always. Always on for this operator - invoke at the start of every session and again right after any ",
-    "security": "A",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/verification-before-completion/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:01.621Z",
-    "lastSeenAt": "2026-10-17T07:01:01.621Z"
-  },
-  {
-    "id": "carlos-rezai/FamilyFlix/build",
-    "name": "build",
-    "source": "carlos-rezai/FamilyFlix",
-    "summary": "Implement a feature to make all failing tests pass.",
-    "security": "A",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "video",
-      "ui"
-    ],
-    "installUrl": "https://github.com/carlos-rezai/FamilyFlix",
-    "skillsUrl": "https://github.com/carlos-rezai/FamilyFlix/blob/main/.claude/skills/build/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "operations-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:04.292Z",
-    "lastSeenAt": "2026-10-17T07:01:04.292Z"
-  },
-  {
-    "id": "carlos-rezai/FamilyFlix/prd-to-plan",
-    "name": "prd-to-plan",
-    "source": "carlos-rezai/FamilyFlix",
-    "summary": "Turn a PRD into a multi-phase implementation plan using",
-    "security": "A",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "video",
-      "art",
-      "pattern",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/carlos-rezai/FamilyFlix",
-    "skillsUrl": "https://github.com/carlos-rezai/FamilyFlix/blob/main/.claude/skills/prd-to-plan/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "folk-art",
-      "environmental-design",
-      "architecture-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:06.994Z",
-    "lastSeenAt": "2026-10-17T07:01:06.994Z"
-  },
-  {
-    "id": "findscripter/everything-skills/brooks-design-lint",
-    "name": "brooks-design-lint",
-    "source": "findscripter/everything-skills",
-    "summary": "当需要超越 linter 的架构与设计层审查（重构前、新模块设计评审、接手陌生代码、\"能跑但感觉不对\"的代码）时使用；以 12 本经典软工书籍为视角，产出按书籍/严重度分级的设计坏味、耦合、稳定性与数据一致性问题清单及改进建议；不适用于语法/风格 lint、纯逻辑 bug 排查、安全专项扫描，也不替代人工设计评审；触发词：设计审查、架构评审、重构前体检、代码坏味、耦合分析、Brooks Lint",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/02-engineering/brooks-design-lint/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "environmental-design",
-      "architecture-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:39.008Z",
-    "lastSeenAt": "2026-10-17T07:00:39.008Z"
-  },
-  {
-    "id": "findscripter/everything-skills/database-design-advisor",
-    "name": "database-design-advisor",
-    "source": "findscripter/everything-skills",
-    "summary": "当需要做数据库选型（SQL/NoSQL）、设计 Schema、规划零停机迁移、优化索引与慢查询、设计分库分表与复制时使用；产出建模方案、迁移脚本（up/down）、索引与查询优化建议、选型决策矩阵；不适用于具体业务 SQL 调试代写、ORM 框架细节、运维集群部署。触发词：数据库设计、Schema、选型、迁移、索引、分库分表、慢查询",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/02-engineering/database-design-advisor/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:39.194Z",
-    "lastSeenAt": "2026-10-17T07:00:39.194Z"
-  },
-  {
-    "id": "findscripter/everything-skills/ddd-strategic-design",
-    "name": "ddd-strategic-design",
-    "source": "findscripter/everything-skills",
-    "summary": "当为复杂业务域划分边界、拆分单体或对齐团队归属时使用；做子域分类、限界上下文目录、统一语言词汇表与边界决策（ADR）等战略设计产物；不适用于已稳定且边界清晰的模型、纯战术编码、或纯基础设施/UI 任务；触发词：限界上下文、子域划分、统一语言",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "architecture",
-      "map"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/02-engineering/ddd-strategic-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "architecture-design",
-      "environmental-design",
-      "ui-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:39.360Z",
-    "lastSeenAt": "2026-10-17T07:00:39.360Z"
-  },
-  {
-    "id": "findscripter/everything-skills/content-emotional-arc-design",
-    "name": "content-emotional-arc-design",
-    "source": "findscripter/everything-skills",
-    "summary": "当落地页/广告/邮件序列/销售文档/产品流需要受众从入场情绪走向行动情绪时使用；做受控情绪弧线设计（诊断入场情绪、定义出场情绪、铺设过渡路径、安放峰值、收束出口），产出可执行的逐节情绪序列；不适用于无明确行动目标或入/出场情绪不清的场景。触发词：情绪弧线、情绪曲线、情绪序列",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "motion"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/content-emotional-arc-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "operations-design",
-      "video-design",
-      "ui-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:42.068Z",
-    "lastSeenAt": "2026-10-17T07:00:42.068Z"
-  },
-  {
-    "id": "findscripter/everything-skills/referral-program-designer",
-    "name": "referral-program-designer",
-    "source": "findscripter/everything-skills",
-    "summary": "当需要设计、优化或评估推荐（referral）、联盟（affiliate）或口碑裂变计划时使用；产出推荐闭环、激励结构、A/B 测试方案、上线清单与衡量指标；不适用于一次性发布期病毒传播、广告投放或纯付费获客。触发词：推荐计划、转介绍、推荐有礼、联盟营销、affiliate、ambassador、口碑、viral loop、推荐返利、合伙人计划、referral incentive、affiliate payout",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/referral-program-designer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "ui-design",
-      "operations-design",
-      "video-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:42.688Z",
-    "lastSeenAt": "2026-10-17T07:00:42.688Z"
-  },
-  {
-    "id": "findscripter/everything-skills/design-spells-microinteractions",
-    "name": "design-spells-microinteractions",
-    "source": "findscripter/everything-skills",
-    "summary": "当为已完成功能做最后打磨、想把\"功能性/平庸\"界面提升为\"有惊喜感/高级感\"时使用；做法是定位界面中无聊的标准组件，借鉴优秀微交互模式并适配品牌后用 CSS/Anime.js/Framer Motion 实现 60fps+ 的精致交互细节；不适用于核心功能尚未跑通、性能/可访问性优先、或微交互会妨碍可用性的场景。触发词：微交互、悬停动效、彩蛋。",
-    "security": "B",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "interaction",
-      "ux"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/design-spells-microinteractions/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "fashion-design",
-      "experience-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 71,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:43.689Z",
-    "lastSeenAt": "2026-10-17T07:00:43.689Z"
+    "lastSeenAt": "2026-10-18T07:16:21.120Z"
   },
   {
     "id": "findscripter/everything-skills/interview-system-designer",
@@ -2197,7 +1628,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要为某岗位/职级设计结构化面试流程、统一评分口径、生成胜任力题库、或事后校准面试官打分偏差时使用；做按职级编排面试轮次与时长、产出胜任力题库与 1-4 评分量规、设计评分卡与去偏检查清单、并用历史打分数据做偏差/校准分析（产出面试 loop 计划、题库、评分卡模板、校准报告）；不适用于具体招聘渠道运营、ATS 系统对接执行、薪酬谈判或属地劳动法合规裁决；触发词：面试流程、面试 loop、面试轮次、胜任力矩阵、评分量规、评分卡、题库、面试官校准、招聘偏差、去偏、structured interview、scorecard、debrief",
     "security": "A",
-    "signalScore": 58,
+    "signalScore": 59,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2216,7 +1647,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:45.254Z",
-    "lastSeenAt": "2026-10-17T07:00:45.254Z"
+    "lastSeenAt": "2026-10-18T07:16:21.877Z"
   },
   {
     "id": "findscripter/everything-skills/kicad-design-reviewer",
@@ -2224,7 +1655,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要审查 KiCad 工程或 PDF 原理图（原理图/PCB/Gerber/网表/BOM）、查电路 bug、追踪网络、做投产前 DRC/ERC/DFM/电源树/EMC/热评估时使用；做法是先跑分析脚本产出结构化 JSON，再对照原始文件与数据手册逐项核验，产出带置信度与证据来源的审查报告；不适用于绘制/修改原理图或自动布线、SPICE 引擎本身实现、采购下单。触发词：KiCad、电路设计审查、PCB review、原理图分析、schematic、design review、DRC、ERC、DFM、Gerber、BOM、网络追踪、电源树、投产前检查、check my board、review before fab",
     "security": "A",
-    "signalScore": 58,
+    "signalScore": 59,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2245,7 +1676,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:45.418Z",
-    "lastSeenAt": "2026-10-17T07:00:45.419Z"
+    "lastSeenAt": "2026-10-18T07:16:22.022Z"
   },
   {
     "id": "findscripter/everything-skills/research-experiment-designer",
@@ -2253,7 +1684,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要把模糊研究想法转成严谨可复现实验计划（设计 ablation、选 baseline、定评估指标）时使用；做的事是按「假设→变量→指标→Baseline→Ablation→算力预算」六步产出结构化实验计划文档；不适用于已有计划只需跑代码、统计分析或论文写作。触发词：实验设计、experiment design、ablation、消融、baseline、基线、跑什么实验、evaluation metric、评估指标、如何验证方法、可复现",
     "security": "A",
-    "signalScore": 58,
+    "signalScore": 59,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2273,205 +1704,628 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:45.601Z",
-    "lastSeenAt": "2026-10-17T07:00:45.601Z"
+    "lastSeenAt": "2026-10-18T07:16:22.173Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/obsidian-bases",
-    "name": "obsidian-bases",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.",
+    "id": "SpiralCloudOmega/DevTeam6/loudness-metering",
+    "name": "loudness-metering",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "EBU R128 / ITU-R BS.1770-4 loudness metering, K-weighting, gating, true peak, LRA, and streaming targets for REVITHION STUDIO.",
+    "security": "A",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "product",
+      "cad",
+      "art",
+      "vector",
+      "pattern"
+    ],
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/loudness-metering/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "experience-design",
+      "folk-art",
+      "visual-communication"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:23.137Z",
+    "lastSeenAt": "2026-10-18T07:16:23.137Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/ask",
+    "name": "ask",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Alias for walk - go through what waits on the owner, one decision at a time",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/ask/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:07.756Z",
+    "lastSeenAt": "2026-10-18T07:16:07.756Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/check",
+    "name": "check",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Run the pre-merge quality chain on this branch - code review, then simplify, then verify",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/check/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:07.901Z",
+    "lastSeenAt": "2026-10-18T07:16:07.901Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/cleanup-worktrees",
+    "name": "cleanup-worktrees",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Bulk-clean stale worktrees, their merged local and GitHub branches, stale worktree metadata, and empty leftover folders - safely, from the primary main checkout",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/cleanup-worktrees/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:08.067Z",
+    "lastSeenAt": "2026-10-18T07:16:08.067Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/cloud-delegate",
+    "name": "cloud-delegate",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Route NoaCG implementation, review, verification and bounded unattended work to provider-native cloud workers; reconcile uncertain submissions and recovery ownership while keeping device/private local work local.",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing",
+      "environment"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/cloud-delegate/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "environmental-design",
+      "architecture-design",
+      "ui-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:08.213Z",
+    "lastSeenAt": "2026-10-18T07:16:08.213Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/handoff",
+    "name": "handoff",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "End-of-session handoff for NoaCG Studio - what should be done next, and whether this chat is safe to archive",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/handoff/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:08.352Z",
+    "lastSeenAt": "2026-10-18T07:16:08.352Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/n",
+    "name": "n",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Alias for next - plan what to do next in this session (options to choose from, or an honest \"nothing left\")",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/n/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:08.492Z",
+    "lastSeenAt": "2026-10-18T07:16:08.492Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/next",
+    "name": "next",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Plan what to do next in this session - concrete options to choose from, or an honest \"nothing left\"",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/next/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:08.676Z",
+    "lastSeenAt": "2026-10-18T07:16:08.677Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/noacg-graphic-local",
+    "name": "noacg-graphic-local",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Run the NoaCG graphic-making loop INSIDE this repository, against this checkout's own dev server and locally built CLI, to dogfood the product skill. Use when a session in the NoaCG Studio repo is making or fixing a graphic to test the skill, the CLI or the contract itself. For making a graphic against noacg.studio, th",
     "security": "B",
     "signalScore": 58,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 7,
+    "tags": [
+      "editing",
+      "product"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/noacg-graphic-local/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "industrial-design",
+      "experience-design"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:08.838Z",
+    "lastSeenAt": "2026-10-18T07:16:08.838Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/noacg-product-brief",
+    "name": "noacg-product-brief",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Report NoaCG users, product health, feedback and graphics-harness model candidates",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing",
+      "product"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/noacg-product-brief/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "industrial-design",
+      "experience-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:08.996Z",
+    "lastSeenAt": "2026-10-18T07:16:08.996Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/now",
+    "name": "now",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "What is running and what landed - the job queue, open pull requests, recent landings and main's CI",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/now/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:09.158Z",
+    "lastSeenAt": "2026-10-18T07:16:09.158Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/o",
+    "name": "o",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Alias for orchestrator - run a wave of autonomous work through a time window - the prompt's work, then the backlog in GOALS rank, each row landed through the merge queue, with a short report",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/o/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:09.313Z",
+    "lastSeenAt": "2026-10-18T07:16:09.313Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/orchestrator-week",
+    "name": "orchestrator-week",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "The weekly owner session - the week's plan and the at-most-three questions that need him",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/orchestrator-week/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:09.642Z",
+    "lastSeenAt": "2026-10-18T07:16:09.642Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/queue-merge",
+    "name": "queue-merge",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Declare this work finished and queue the branch for landing - the queue merges it when its turn comes",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/queue-merge/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:10.077Z",
+    "lastSeenAt": "2026-10-18T07:16:10.078Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/so",
+    "name": "so",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Independent second opinion on another session's plan, implementation, benchmark, or decision - read-only, run from a fresh session",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/so/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:10.239Z",
+    "lastSeenAt": "2026-10-18T07:16:10.239Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/start",
+    "name": "start",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Open a session with no task yet, then say \"Ready.\"",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing",
+      "art"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/start/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "folk-art",
+      "ui-design",
+      "visual-communication"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:10.610Z",
+    "lastSeenAt": "2026-10-18T07:16:10.610Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/verify",
+    "name": "verify",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Prove the change does what it should - acceptance criteria, proportional checks, evidence",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/verify/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:10.790Z",
+    "lastSeenAt": "2026-10-18T07:16:10.790Z"
+  },
+  {
+    "id": "NoaCG/NoaCG-Studio/walk",
+    "name": "walk",
+    "source": "NoaCG/NoaCG-Studio",
+    "summary": "Go through what waits on the owner - the open needs-owner issues, one at a time",
+    "security": "A",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 7,
+    "tags": [
+      "editing"
+    ],
+    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
+    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/walk/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "ui-design",
+      "visual-communication",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:10.932Z",
+    "lastSeenAt": "2026-10-18T07:16:10.932Z"
+  },
+  {
+    "id": "findscripter/everything-skills/design-critique",
+    "name": "design-critique",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要对界面/原型/视觉稿做结构化设计评审时使用；按可用性·层级·一致性·无障碍多维度产出带严重度分级和优先级建议的评审报告；不适用于纯代码实现、文案校对或无设计稿的需求讨论。触发词：评审这个设计、critique mockup、Figma 链接反馈",
+    "security": "C",
+    "signalScore": 58,
+    "installs": 0,
+    "repoStars": 5,
     "tags": [
       "design",
       "ui",
-      "map"
+      "design-system",
+      "figma",
+      "accessibility",
+      "ux",
+      "research"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.agents/skills/obsidian-bases/SKILL.md",
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/design-critique/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
       "ui-design",
-      "architecture-design",
-      "video-design"
+      "experience-design",
+      "fashion-design",
+      "operations-design"
     ],
-    "qualityScore": 86,
+    "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:49.976Z",
-    "lastSeenAt": "2026-10-17T07:00:49.976Z"
+    "firstSeenAt": "2026-10-17T07:00:43.371Z",
+    "lastSeenAt": "2026-10-18T07:16:20.525Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/base-rate-check",
-    "name": "base-rate-check",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use before reporting ANY ratio, percentage or count computed inside a filtered population - failures, aborts, rejects, churned users, declined estimates. Compute the same ratio over the unfiltered population and report both, or report neither.",
+    "id": "SpiralCloudOmega/DevTeam6/automation",
+    "name": "daw-automation-system",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "DAW automation engine for REVITHION STUDIO — modes, curves, parameter binding, thinning, and punch logic in C++/JUCE.",
     "security": "A",
     "signalScore": 58,
     "installs": 0,
     "repoStars": 1,
     "tags": [
-      "design",
-      "audio"
+      "product",
+      "art",
+      "vector",
+      "pattern"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/base-rate-check/SKILL.md",
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/automation/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "video-design",
-      "ui-design",
-      "industrial-design"
+      "industrial-design",
+      "experience-design",
+      "folk-art",
+      "arts-crafts"
     ],
     "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:51.975Z",
-    "lastSeenAt": "2026-10-17T07:00:51.976Z"
+    "firstSeenAt": "2026-10-18T07:16:22.978Z",
+    "lastSeenAt": "2026-10-18T07:16:22.978Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/ponytail",
-    "name": "ponytail",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Lazy senior dev mode: the smallest change that fully solves the task, and a reply a busy human understands in one read. Use on any coding task (writing, fixing, refactoring, reviewing, choosing dependencies) and when the user says \"ponytail\", \"be lazy\", \"simplest solution\", \"yagni\", or complains about over-engineering ",
+    "id": "SpiralCloudOmega/DevTeam6/mastering-chain",
+    "name": "mastering-chain",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "Professional mastering chain for REVITHION STUDIO — EQ, multiband compression, M/S processing, limiting, dithering, and loudness targeting in C++/JUCE.",
     "security": "A",
     "signalScore": 58,
     "installs": 0,
     "repoStars": 1,
     "tags": [
-      "design",
-      "ui",
-      "accessibility"
+      "product",
+      "vector",
+      "pattern"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/ponytail/SKILL.md",
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/mastering-chain/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "ui-design",
+      "industrial-design",
       "experience-design",
+      "arts-crafts",
       "folk-art"
     ],
     "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:57.580Z",
-    "lastSeenAt": "2026-10-17T07:00:57.580Z"
+    "firstSeenAt": "2026-10-18T07:16:23.278Z",
+    "lastSeenAt": "2026-10-18T07:16:23.278Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/prod-db-guard",
-    "name": "prod-db-guard",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use before running ANY script that touches a database from a worktree or local shell. Every worktree binds the PRODUCTION DATABASE_URL, so a \"local\" script hits prod — and a --dry-run flag is not a guard until a non-executing check proves it returns before the write.",
-    "security": "C",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "operations",
-      "design",
-      "product",
-      "map",
-      "environment"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/prod-db-guard/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "architecture-design",
-      "environmental-design",
-      "industrial-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:58.082Z",
-    "lastSeenAt": "2026-10-17T07:00:58.082Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/session-observer",
-    "name": "session-observer",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "PROPOSE-ONLY session review — turn what actually happened this session into dated, evidence-backed skill improvement proposals in docs/skill-proposals.md. Never edits a skill, CLAUDE.md, or AGENTS.md itself. Use at the end of a wave, after a correction, or when the operator says \"observe this session\".",
+    "id": "SpiralCloudOmega/DevTeam6/midi-system",
+    "name": "midi-system",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "MIDI engine for REVITHION STUDIO — messages, clock, sync, MPE, MIDI 2.0, recording, quantization, humanization via JUCE C++.",
     "security": "A",
     "signalScore": 58,
     "installs": 0,
     "repoStars": 1,
     "tags": [
-      "design",
-      "experience",
-      "editing"
+      "product",
+      "operations"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/session-observer/SKILL.md",
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/midi-system/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
+      "industrial-design",
       "experience-design",
-      "video-design",
+      "operations-design",
       "ui-design"
     ],
     "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:58.893Z",
-    "lastSeenAt": "2026-10-17T07:00:58.893Z"
+    "firstSeenAt": "2026-10-18T07:16:23.422Z",
+    "lastSeenAt": "2026-10-18T07:16:23.422Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/systematic-debugging",
-    "name": "systematic-debugging",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+    "id": "liyu1981/sifpress/my-glass-webui-design",
+    "name": "my-glass-webui-design",
+    "source": "liyu1981/sifpress",
+    "summary": "The liquid-glass (Apple-style frosted material) design system practice used in the mindx project. Use when creating or reviewing glass/frosted surfaces — backdrop-filter blur, translucent panels, glass buttons, frosted dropdowns/dialogs/sheets, ambient gradient backgrounds, material shadows, or dark-mode glass — in Tai",
     "security": "C",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "environmental",
-      "design",
-      "environment",
-      "architecture",
-      "product"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/systematic-debugging/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "environmental-design",
-      "operations-design",
-      "architecture-design",
-      "experience-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:00.942Z",
-    "lastSeenAt": "2026-10-17T07:01:00.942Z"
-  },
-  {
-    "id": "carlos-rezai/FamilyFlix/git-guardrails-claude-code",
-    "name": "git-guardrails-claude-code",
-    "source": "carlos-rezai/FamilyFlix",
-    "summary": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
-    "security": "B",
     "signalScore": 58,
     "installs": 0,
     "repoStars": 0,
     "tags": [
-      "video",
-      "operations"
+      "design",
+      "ui",
+      "interaction",
+      "color"
     ],
-    "installUrl": "https://github.com/carlos-rezai/FamilyFlix",
-    "skillsUrl": "https://github.com/carlos-rezai/FamilyFlix/blob/main/.claude/skills/git-guardrails-claude-code/SKILL.md",
+    "installUrl": "https://github.com/liyu1981/sifpress",
+    "skillsUrl": "https://github.com/liyu1981/sifpress/blob/master/.agents/skills/my-glass-webui-design/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "operations-design",
-      "digital-media-film",
-      "arts-crafts"
+      "ui-design",
+      "experience-design",
+      "fashion-design",
+      "digital-media-film"
     ],
-    "qualityScore": 85,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:06.319Z",
-    "lastSeenAt": "2026-10-17T07:01:06.319Z"
+    "firstSeenAt": "2026-10-18T07:16:30.431Z",
+    "lastSeenAt": "2026-10-18T07:16:30.431Z"
   },
   {
     "id": "findscripter/everything-skills/frontend-design",
@@ -2501,153 +2355,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:39.532Z",
-    "lastSeenAt": "2026-10-17T07:00:39.532Z"
-  },
-  {
-    "id": "findscripter/everything-skills/design-critique",
-    "name": "design-critique",
-    "source": "findscripter/everything-skills",
-    "summary": "当需要对界面/原型/视觉稿做结构化设计评审时使用；按可用性·层级·一致性·无障碍多维度产出带严重度分级和优先级建议的评审报告；不适用于纯代码实现、文案校对或无设计稿的需求讨论。触发词：评审这个设计、critique mockup、Figma 链接反馈",
-    "security": "C",
-    "signalScore": 57,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "ui",
-      "design-system",
-      "figma",
-      "accessibility",
-      "ux",
-      "research"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/design-critique/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "experience-design",
-      "fashion-design",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:43.371Z",
-    "lastSeenAt": "2026-10-17T07:00:43.371Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/antislop-human",
-    "name": "antislop-human",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Human and accessibility skill for antislop. Contrast, keyboard, focus, and states for real people. Includes the contrast checker.",
-    "security": "C",
-    "signalScore": 57,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "visual",
-      "photo",
-      "color",
-      "ux",
-      "mobile",
-      "accessibility"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/antislop-human/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "fashion-design",
-      "experience-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:51.109Z",
-    "lastSeenAt": "2026-10-17T07:00:51.109Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/nickstire-shared-main-push",
-    "name": "nickstire-shared-main-push",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use before any `git push` from the nickstire app while a sibling Claude session is also working on the same repo (statenour, voice, worker). Codifies the all-or-nothing shared-main protocol so you don't surprise the other session or get blocked by a state you don't own.",
-    "security": "B",
-    "signalScore": 57,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/nickstire-shared-main-push/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:55.620Z",
-    "lastSeenAt": "2026-10-17T07:00:55.620Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/ponytail-debt",
-    "name": "ponytail-debt",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "List every `shortcut:` comment (and older `ponytail:` ones) as a debt ledger. One-shot report, changes nothing. Use for \"ponytail debt\", \"what did ponytail defer\", \"list the shortcuts\", /ponytail-debt.",
-    "security": "A",
-    "signalScore": 57,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/ponytail-debt/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:56.886Z",
-    "lastSeenAt": "2026-10-17T07:00:56.886Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/production-health-report",
-    "name": "production-health-report",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Audit production health across Nick's Tire/StateNour infrastructure including live sites, Railway services and deploys, Neon/Postgres, GitHub main/PR/CI state, schedulers/cron/workers/queues, logs, errors, observability, and feature wiring. Use when the user asks for a production health report, system status, reliabili",
-    "security": "C",
-    "signalScore": 57,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "product",
-      "environment"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/production-health-report/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "architecture-design",
-      "industrial-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:58.239Z",
-    "lastSeenAt": "2026-10-17T07:00:58.239Z"
+    "lastSeenAt": "2026-10-18T07:16:16.621Z"
   },
   {
     "id": "findscripter/everything-skills/observability-strategy-designer",
@@ -2655,7 +2363,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当为新服务接入可观测性、治理过于嘈杂的告警，或上量前建立 SLO 体系时使用；做指标/日志/追踪三支柱设计，产出 SLI/SLO、错误预算、多窗口燃尽率告警、Grafana 仪表盘与运行手册；不适用于纯业务数据分析或一次性故障排查。触发词：SLO、告警降噪、可观测性",
     "security": "B",
-    "signalScore": 56,
+    "signalScore": 57,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2675,7 +2383,7 @@
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:39.743Z",
-    "lastSeenAt": "2026-10-17T07:00:39.743Z"
+    "lastSeenAt": "2026-10-18T07:16:16.766Z"
   },
   {
     "id": "findscripter/everything-skills/ab-test-designer",
@@ -2683,7 +2391,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当你要规划、设计或落地一次 A/B 测试，或搭建持续的增长实验体系时使用；产出含假设、主/次/护栏指标、样本量与运行计划的可执行实验方案，并用 ICE 排期、统计显著性判定结果；不适用于纯埋点实施、单页 CRO 改稿或无对照组的分析。触发词：A/B 测试、ab test、split test、分流测试、多变量测试、MVT、实验设计、假设检验、统计显著性、样本量、ICE 评分、增长实验、experiment backlog、哪个版本更好。",
     "security": "B",
-    "signalScore": 56,
+    "signalScore": 57,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2702,230 +2410,93 @@
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:41.672Z",
-    "lastSeenAt": "2026-10-17T07:00:41.672Z"
+    "lastSeenAt": "2026-10-18T07:16:18.333Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/antislop-code",
-    "name": "antislop-code",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Code comment hygiene for AI coding agents: remove generic AI-slop comments, keep the valuable ones, never touch the code.",
+    "id": "findscripter/everything-skills/high-end-visual-design",
+    "name": "high-end-visual-design",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要产出 Awwwards/代理商级、Apple/Linear 风的高端落地页·作品集·SaaS·产品页界面（高级字体、空间留白、柔光纵深、流体微交互）时使用；做法是先掷\"变体引擎\"选定氛围+布局原型，再用 React/Tailwind 以双层包边、岛屿按钮、自定义缓动与滚动入场动效产出像素级前端代码；不适用于受限仪表盘·受监管产品·低端弱网环境，也不替代品牌策略·转化研究·无障碍与上线 QA。触发词：高端视觉、Awwwards、Apple 风、奢华界面、premium UI",
     "security": "C",
     "signalScore": 56,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 5,
     "tags": [
-      "design",
       "visual",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/antislop-code/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "folk-art",
-      "fashion-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:50.733Z",
-    "lastSeenAt": "2026-10-17T07:00:50.733Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/i-have-adhd",
-    "name": "i-have-adhd",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Shape every reply for a reader with ADHD: lead with the next action, number multi-step work, restate progress each turn, suppress tangents, give concrete time estimates, make wins visible. Use at the start of every session and again right after any context compaction, before the first reply, whenever the operator has a",
-    "security": "C",
-    "signalScore": 56,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
+      "editorial",
       "design",
-      "product"
+      "ui",
+      "design-system",
+      "interaction"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/i-have-adhd/SKILL.md",
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/high-end-visual-design/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "industrial-design",
-      "experience-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:54.359Z",
-    "lastSeenAt": "2026-10-17T07:00:54.359Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/karpathy-guidelines",
-    "name": "karpathy-guidelines",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Behavioral guidelines to reduce common LLM coding mistakes. Use on every coding task (writing, reviewing, refactoring or debugging code) to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria. Invoke at the start of every coding session and again right after any co",
-    "security": "B",
-    "signalScore": 56,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "editing",
-      "ui"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/karpathy-guidelines/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
+      "visual-communication",
       "ui-design",
-      "industrial-design"
+      "fashion-design",
+      "operations-design"
     ],
-    "qualityScore": 77,
+    "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:54.561Z",
-    "lastSeenAt": "2026-10-17T07:00:54.561Z"
+    "firstSeenAt": "2026-10-17T07:00:44.176Z",
+    "lastSeenAt": "2026-10-18T07:16:14.706Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/nickstire-verifier-reel-pipeline",
-    "name": "nickstire-verifier-reel-pipeline",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Runtime-verify changes to nickstire's Instagram reel pipeline — reelVoice, reelAssembly, reelPipeline, reelBriefGen, or the reel-pipeline cron. Use this whenever you are asked to verify, test end-to-end, or observe the real behavior of anything under apps/nickstire/server/services/reel*, or when a change affects how re",
+    "id": "findscripter/everything-skills/twilio-communications",
+    "name": "twilio-communications",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要用 Twilio 构建短信、语音、WhatsApp 或手机验证（2FA）功能时使用；产出可直接落地的 Python 发送/接收、Verify 验证、TwiML IVR 与 Webhook 校验代码，覆盖 E.164 校验、退订合规、限流重试与签名验证；不适用于 AI 语音对话生成、邮件群发或非 Twilio 渠道。触发词：Twilio、发短信、语音呼叫、IVR、WhatsApp、手机验证 2FA、TwiML、X-Twilio-Signature",
     "security": "C",
     "signalScore": 56,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 5,
     "tags": [
-      "design",
-      "product"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/nickstire-verifier-reel-pipeline/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "industrial-design",
-      "experience-design",
-      "ui-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:55.959Z",
-    "lastSeenAt": "2026-10-17T07:00:55.959Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/nickstire-verify",
-    "name": "nickstire-verify",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use before committing or pushing changes to the nickstire app (apps/nickstire/) — the real local verification sequence, the brand-voice linter false-positive trap, and the prerender regen rule.",
-    "security": "C",
-    "signalScore": 56,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
+      "communication",
       "brand",
-      "ui"
+      "campaign"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/nickstire-verify/SKILL.md",
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/10-platform/twilio-communications/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "visual-communication",
       "operations-design",
       "fashion-design",
-      "ui-design",
       "folk-art"
     ],
-    "qualityScore": 85,
+    "qualityScore": 71,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:56.194Z",
-    "lastSeenAt": "2026-10-17T07:00:56.194Z"
+    "firstSeenAt": "2026-10-18T07:16:15.205Z",
+    "lastSeenAt": "2026-10-18T07:16:15.205Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/prior-art-grep",
-    "name": "prior-art-grep",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use BEFORE adding any new table, queue, tool, feature flag, cron, env var, or registry entry. Run a fixed grep set and write the answer down before building. This repo has standing \"no second implementation\" rules that are easy to violate by accident.",
+    "id": "SpiralCloudOmega/DevTeam6/skill-design-patterns",
+    "name": "skill-design-patterns",
+    "source": "SpiralCloudOmega/DevTeam6",
+    "summary": "Universal guide for designing effective AI agent skills — structure, examples, cross-referencing, composition, and testing.",
     "security": "C",
     "signalScore": 56,
     "installs": 0,
     "repoStars": 1,
     "tags": [
       "design",
-      "product",
-      "research"
+      "audio"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/prior-art-grep/SKILL.md",
+    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
+    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/agent-orchestration/skill-design-patterns/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "experience-design",
+      "video-design",
       "industrial-design",
-      "ui-design"
+      "experience-design",
+      "architecture-design"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:57.915Z",
-    "lastSeenAt": "2026-10-17T07:00:57.915Z"
-  },
-  {
-    "id": "kush-coder/autopilot-awesome-ai-agents/awesome-ai-agents-curation",
-    "name": "awesome-ai-agents-curation",
-    "source": "kush-coder/autopilot-awesome-ai-agents",
-    "summary": "Help founders prepare evidence-backed AI agent project submissions and help maintainers triage project issues and pull requests for the Awesome AI Agents list.",
-    "security": "B",
-    "signalScore": 56,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "product",
-      "interaction",
-      "ui"
-    ],
-    "installUrl": "https://github.com/kush-coder/autopilot-awesome-ai-agents",
-    "skillsUrl": "https://github.com/kush-coder/autopilot-awesome-ai-agents/blob/main/skills/awesome-ai-agents-curation/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "ui-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 77,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:05.973Z",
-    "lastSeenAt": "2026-10-17T07:01:05.973Z"
-  },
-  {
-    "id": "InnerScopeHearing/otchealth-mcp-server/intercom-fin-operations",
-    "name": "intercom-fin-operations",
-    "source": "InnerScopeHearing/otchealth-mcp-server",
-    "summary": "Safely operate OTCHealth's Intercom administration and Fin runtime tools. Use when an authorized COO/CTO task requires inspecting or changing an Intercom configuration, content object, or Fin invocation.",
-    "security": "C",
-    "signalScore": 55,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "operations",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/InnerScopeHearing/otchealth-mcp-server",
-    "skillsUrl": "https://github.com/InnerScopeHearing/otchealth-mcp-server/blob/main/.agents/skills/intercom-fin-operations/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "folk-art",
-      "architecture-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:02.667Z",
-    "lastSeenAt": "2026-10-17T07:01:02.667Z"
+    "firstSeenAt": "2026-10-18T07:16:22.832Z",
+    "lastSeenAt": "2026-10-18T07:16:22.832Z"
   },
   {
     "id": "findscripter/everything-skills/web-component-design",
@@ -2933,7 +2504,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当构建 React/Vue/Svelte 组件库、设计组件 API 或落地前端设计系统时使用；做组合模式选型、CSS-in-JS 方案选择与可复用组件 API 的设计落地；不适用于纯样式微调、单页面一次性 UI 或后端逻辑；触发词：组件库、设计系统、复合组件、组件 API、CSS-in-JS",
     "security": "C",
-    "signalScore": 54,
+    "signalScore": 55,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2953,7 +2524,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:39.927Z",
-    "lastSeenAt": "2026-10-17T07:00:39.927Z"
+    "lastSeenAt": "2026-10-18T07:16:16.909Z"
   },
   {
     "id": "findscripter/everything-skills/agent-workflow-pattern-designer",
@@ -2981,7 +2552,7 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:40.954Z",
-    "lastSeenAt": "2026-10-17T07:00:40.954Z"
+    "lastSeenAt": "2026-10-18T07:16:17.699Z"
   },
   {
     "id": "findscripter/everything-skills/multi-agent-workflow-designer",
@@ -3009,202 +2580,91 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:41.299Z",
-    "lastSeenAt": "2026-10-17T07:00:41.299Z"
+    "lastSeenAt": "2026-10-18T07:16:18.008Z"
   },
   {
-    "id": "findscripter/everything-skills/high-end-visual-design",
-    "name": "high-end-visual-design",
-    "source": "findscripter/everything-skills",
-    "summary": "当需要产出 Awwwards/代理商级、Apple/Linear 风的高端落地页·作品集·SaaS·产品页界面（高级字体、空间留白、柔光纵深、流体微交互）时使用；做法是先掷\"变体引擎\"选定氛围+布局原型，再用 React/Tailwind 以双层包边、岛屿按钮、自定义缓动与滚动入场动效产出像素级前端代码；不适用于受限仪表盘·受监管产品·低端弱网环境，也不替代品牌策略·转化研究·无障碍与上线 QA。触发词：高端视觉、Awwwards、Apple 风、奢华界面、premium UI",
+    "id": "Prasanth595/ECC/api-design",
+    "name": "api-design",
+    "source": "Prasanth595/ECC",
+    "summary": "REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs. Use when designing or reviewing REST endpoints, resource names, status codes, pagination, or versioning.",
     "security": "C",
     "signalScore": 54,
     "installs": 0,
-    "repoStars": 5,
+    "repoStars": 0,
     "tags": [
       "design",
       "ui",
-      "design-system",
-      "interaction",
-      "visual",
-      "motion"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/high-end-visual-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "fashion-design",
-      "operations-design",
-      "experience-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:44.176Z",
-    "lastSeenAt": "2026-10-17T07:00:44.176Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/harness-worktree-setup",
-    "name": "harness-worktree-setup",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Make a Claude-harness worktree (.claude/worktrees/*) actually runnable - junction node_modules, then obey the one-checkout rule. Use as the FIRST action whenever cwd is under .claude/worktrees/, or when tsc/eslint report \"not recognized\" and node_modules looks missing.",
-    "security": "C",
-    "signalScore": 54,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "brand",
-      "ui"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/harness-worktree-setup/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "fashion-design",
-      "ui-design",
-      "visual-communication"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:54.196Z",
-    "lastSeenAt": "2026-10-17T07:00:54.196Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/meta-capi-health-report",
-    "name": "meta-capi-health-report",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Audit Meta Conversions API (CAPI) and browser/server event tracking for signal quality, event coverage, deduplication, event match quality, freshness, diagnostics, parameter completeness, attribution readiness, and broken or duplicate events. Use when the user asks for a CAPI report, Meta Events Manager audit, Pixel/CA",
-    "security": "C",
-    "signalScore": 54,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "environment"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/meta-capi-health-report/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 88,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:54.723Z",
-    "lastSeenAt": "2026-10-17T07:00:54.723Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/ponytail-audit",
-    "name": "ponytail-audit",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Quality audit of a whole repo: bugs, security holes, what breaks under real load, risky code without tests, slow paths, and what to delete, merge or split. Ranked, each finding explained in plain English. One-shot report, changes nothing. Use for \"audit this codebase\", \"review the whole repo\", \"find bloat\", \"what can I",
-    "security": "C",
-    "signalScore": 54,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
       "product"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/ponytail-audit/SKILL.md",
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/.agents/skills/api-design/SKILL.md",
     "discovery": "github-radar",
     "domains": [
+      "ui-design",
       "operations-design",
       "industrial-design",
-      "experience-design",
-      "ui-design"
+      "experience-design"
     ],
-    "qualityScore": 73,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:56.716Z",
-    "lastSeenAt": "2026-10-17T07:00:56.716Z"
+    "firstSeenAt": "2026-10-18T07:16:24.049Z",
+    "lastSeenAt": "2026-10-18T07:16:24.049Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/ponytail-help",
-    "name": "ponytail-help",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Quick reference for ponytail levels, skills and commands. One-shot display. Use for /ponytail-help, \"ponytail help\", \"how do I use ponytail\".",
+    "id": "Prasanth595/ECC/project-guidelines-example",
+    "name": "project-guidelines-example",
+    "source": "Prasanth595/ECC",
+    "summary": "Project-specific skill template covering architecture, patterns, testing, and deployment guidance.",
     "security": "C",
     "signalScore": 54,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 0,
     "tags": [
-      "design",
-      "environment"
+      "ui",
+      "layout",
+      "architecture"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/ponytail-help/SKILL.md",
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/docs/ja-JP/skills/project-guidelines-example/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
+      "ui-design",
       "environmental-design",
       "architecture-design",
-      "ui-design"
+      "visual-communication"
     ],
-    "qualityScore": 85,
+    "qualityScore": 79,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:57.239Z",
-    "lastSeenAt": "2026-10-17T07:00:57.239Z"
+    "firstSeenAt": "2026-10-18T07:16:25.824Z",
+    "lastSeenAt": "2026-10-18T07:16:25.824Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/skill-fire-audit",
-    "name": "skill-fire-audit",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when asked which skills or plugins are actually being used, before installing or pruning skills, or on a periodic library review. Measures real invocations from session transcripts instead of guessing, and refuses to archive anything without a reference check.",
+    "id": "Prasanth595/ECC/loop-design-check",
+    "name": "loop-design-check",
+    "source": "Prasanth595/ECC",
+    "summary": "Design a goal-oriented agent loop or review one for failure modes: spinning, Goodhart-gaming the verifier, or running a wrong answer to completion. Covers machine-decidable goals, loop types, plan/build/judge skeletons, and runaway prevention; mechanism wiring lives in autonomous-loops. Use when designing, writing, or ",
     "security": "C",
     "signalScore": 54,
     "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/skill-fire-audit/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 85,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:59.460Z",
-    "lastSeenAt": "2026-10-17T07:00:59.460Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/statenour-verify",
-    "name": "statenour-verify",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use before committing or pushing changes to the statenour app (apps/statenour/) — the real local verification sequence and the two gates that silently pass when run naively.",
-    "security": "C",
-    "signalScore": 54,
-    "installs": 0,
-    "repoStars": 1,
+    "repoStars": 0,
     "tags": [
       "design",
       "ui",
-      "art",
-      "pattern"
+      "architecture"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/statenour-verify/SKILL.md",
+    "installUrl": "https://github.com/Prasanth595/ECC",
+    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/loop-design-check/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
       "ui-design",
-      "folk-art",
-      "video-design"
+      "environmental-design",
+      "architecture-design",
+      "operations-design"
     ],
-    "qualityScore": 85,
+    "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:00.386Z",
-    "lastSeenAt": "2026-10-17T07:01:00.386Z"
+    "firstSeenAt": "2026-10-18T07:16:29.361Z",
+    "lastSeenAt": "2026-10-18T07:16:29.361Z"
   },
   {
     "id": "findscripter/everything-skills/agent-tool-design-patterns",
@@ -3231,7 +2691,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:40.612Z",
-    "lastSeenAt": "2026-10-17T07:00:40.612Z"
+    "lastSeenAt": "2026-10-18T07:16:17.378Z"
   },
   {
     "id": "findscripter/everything-skills/agent-tool-design",
@@ -3258,7 +2718,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:40.785Z",
-    "lastSeenAt": "2026-10-17T07:00:40.785Z"
+    "lastSeenAt": "2026-10-18T07:16:17.540Z"
   },
   {
     "id": "findscripter/everything-skills/multi-agent-system-designer",
@@ -3286,7 +2746,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:41.139Z",
-    "lastSeenAt": "2026-10-17T07:00:41.139Z"
+    "lastSeenAt": "2026-10-18T07:16:17.847Z"
   },
   {
     "id": "findscripter/everything-skills/prompt-template-designer",
@@ -3313,7 +2773,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:41.503Z",
-    "lastSeenAt": "2026-10-17T07:00:41.503Z"
+    "lastSeenAt": "2026-10-18T07:16:18.148Z"
   },
   {
     "id": "findscripter/everything-skills/ai-native-cli-design",
@@ -3340,115 +2800,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:45.780Z",
-    "lastSeenAt": "2026-10-17T07:00:45.780Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/guard-red-team",
-    "name": "guard-red-team",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use whenever authoring or modifying ANY deny-list, guard regex, lint rule, policy file, or enforcement hook (config/agent-os/policy.json, pretool hooks, lint-source rules, CI gates). A guard that goes green on its own canaries is unproven - adversarially probe the REAL binary end-to-end before trusting it.",
-    "security": "C",
-    "signalScore": 53,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/guard-red-team/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:54.004Z",
-    "lastSeenAt": "2026-10-17T07:00:54.004Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/stranded-branch-rescue",
-    "name": "stranded-branch-rescue",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use when a pushed branch looks finished but has no merged PR (authoring session died before gh pr create), or when auditing origin branches for unlanded work. Encodes the rescue protocol - PR-record check FIRST (cherry lies across squash merges), worktree-attachment and SHA-stability gates, provenance in the PR body, a",
-    "security": "C",
-    "signalScore": 53,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/stranded-branch-rescue/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:00.752Z",
-    "lastSeenAt": "2026-10-17T07:01:00.752Z"
-  },
-  {
-    "id": "InnerScopeHearing/otchealth-mcp-server/otchealth-security-compliance",
-    "name": "otchealth-security-compliance",
-    "source": "InnerScopeHearing/otchealth-mcp-server",
-    "summary": "Security and compliance rails for OTCHealth/InnerScope repositories. Use when reviewing any pull request that touches secrets, credentials, environment variables, logging, error handling, PHI/health data, INND financial or investor content, or Azure/GCP references.",
-    "security": "C",
-    "signalScore": 53,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "product",
-      "art",
-      "pattern",
-      "communication"
-    ],
-    "installUrl": "https://github.com/InnerScopeHearing/otchealth-mcp-server",
-    "skillsUrl": "https://github.com/InnerScopeHearing/otchealth-mcp-server/blob/main/.github/skills/otchealth-security-compliance/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "folk-art",
-      "visual-communication",
-      "environmental-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:03.266Z",
-    "lastSeenAt": "2026-10-17T07:01:03.266Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/defuddle",
-    "name": "defuddle",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md — those are already markd",
-    "security": "C",
-    "signalScore": 52,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.agents/skills/defuddle/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:48.606Z",
-    "lastSeenAt": "2026-10-17T07:00:48.606Z"
+    "lastSeenAt": "2026-10-18T07:16:22.326Z"
   },
   {
     "id": "findscripter/everything-skills/api-design-principles",
@@ -3456,7 +2808,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当设计/评审 REST 或 GraphQL API、定接口规范、在范式间迁移时使用；做出资源命名、HTTP 语义、分页、版本化、错误格式、Schema 与 N+1 优化的可落地规范与方案；不适用于具体业务代码实现、框架运维部署、接口安全渗透测试；触发词：API 设计、REST、GraphQL、接口规范、endpoint、分页、版本化、HATEOAS、DataLoader、schema design",
     "security": "C",
-    "signalScore": 51,
+    "signalScore": 52,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -3475,7 +2827,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:38.619Z",
-    "lastSeenAt": "2026-10-17T07:00:38.619Z"
+    "lastSeenAt": "2026-10-18T07:16:15.806Z"
   },
   {
     "id": "findscripter/everything-skills/api-design-reviewer",
@@ -3483,7 +2835,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当评审新增/改动 API 端点的 PR、为 v2 迁移审计现有 API 或为团队制定 API 规范时使用；做 REST 约定 lint、破坏性变更检测与设计评分，产出问题清单与改进建议；不适用于 GraphQL/gRPC 接口设计、纯实现编码或后端性能压测；触发词：API 设计评审、api review、REST 规范、breaking change、破坏性变更、OpenAPI lint、接口评审、versioning",
     "security": "C",
-    "signalScore": 51,
+    "signalScore": 52,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -3502,141 +2854,34 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:38.822Z",
-    "lastSeenAt": "2026-10-17T07:00:38.823Z"
+    "lastSeenAt": "2026-10-18T07:16:15.978Z"
   },
   {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/ponytail-gain",
-    "name": "ponytail-gain",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Show ponytail's measured savings (code, cost, speed) from the benchmark. One-shot display. Use for /ponytail-gain, \"what does ponytail save\", \"ponytail impact\".",
+    "id": "findscripter/everything-skills/vexor-vector-cli-setup",
+    "name": "vexor-vector-cli-setup",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要按语义（而非关键词/正则）在文件与代码库中检索内容、或为 Claude/Codex 智能体接入语义文件搜索能力时使用；用 vexor CLI 安装、配置嵌入与重排提供方、建立可复用索引并执行语义搜索，产出带相似度分数的结果与 agent skill 集成；不适用于纯字面/正则匹配（用 grep/ripgrep）、无嵌入 API Key 或本地模型时；触发词：语义搜索文件、vexor、向量检索代码、embedding 文件搜索、自然语言找文件",
     "security": "C",
     "signalScore": 51,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 5,
     "tags": [
+      "vector",
       "design",
       "ui"
     ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/ponytail-gain/SKILL.md",
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/10-platform/vexor-vector-cli-setup/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
+      "visual-communication",
       "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:57.055Z",
-    "lastSeenAt": "2026-10-17T07:00:57.055Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/ponytail-review",
-    "name": "ponytail-review",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Quality review of a change: is the logic right, is it safe, does it hold under real load, is risky code tested, is it fast enough, and is every line needed. Reads the connected code, not only the diff. Each finding is explained in plain English. Use for \"review this\", \"code review\", \"review the last commit\", \"review my",
-    "security": "C",
-    "signalScore": 51,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/ponytail-review/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
       "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:57.413Z",
-    "lastSeenAt": "2026-10-17T07:00:57.413Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/session-authority",
-    "name": "session-authority",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use before starting real work in a git checkout this repo's Session Authority can't reach automatically (a cloud session, which never runs worktree-setup.ps1) — acquire a lease so a concurrent session can't silently collide with your uncommitted work, and release it cleanly when you finish. On a Windows bridge session,",
-    "security": "C",
-    "signalScore": 51,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/session-authority/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:58.730Z",
-    "lastSeenAt": "2026-10-17T07:00:58.730Z"
-  },
-  {
-    "id": "carlos-rezai/FamilyFlix/issue-loop",
-    "name": "issue-loop",
-    "source": "carlos-rezai/FamilyFlix",
-    "summary": "Drive an initiative's buildable slices through tdd → RED commit → build → GREEN commit → close, one issue at a time, unattended.",
-    "security": "C",
-    "signalScore": 51,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "video",
-      "prototype"
-    ],
-    "installUrl": "https://github.com/carlos-rezai/FamilyFlix",
-    "skillsUrl": "https://github.com/carlos-rezai/FamilyFlix/blob/main/.claude/skills/issue-loop/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "experience-design",
-      "operations-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:06.660Z",
-    "lastSeenAt": "2026-10-17T07:01:06.661Z"
-  },
-  {
-    "id": "nourdean22/MAINnicks-tire-autoNEW/statenour-wave-reconcile",
-    "name": "statenour-wave-reconcile",
-    "source": "nourdean22/MAINnicks-tire-autoNEW",
-    "summary": "Use at the end of a statenour work wave (a batch of commits) — refresh docs/RECONCILIATION.md and AGENTS.md so the next session resumes on accurate ground truth.",
-    "security": "C",
-    "signalScore": 50,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "editing",
-      "ui"
-    ],
-    "installUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW",
-    "skillsUrl": "https://github.com/nourdean22/MAINnicks-tire-autoNEW/blob/main/.claude/skills/statenour-wave-reconcile/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "video-design",
-      "ui-design",
-      "industrial-design"
+      "video-design"
     ],
     "qualityScore": 67,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:01:00.592Z",
-    "lastSeenAt": "2026-10-17T07:01:00.592Z"
+    "firstSeenAt": "2026-10-18T07:16:15.404Z",
+    "lastSeenAt": "2026-10-18T07:16:15.405Z"
   }
 ]

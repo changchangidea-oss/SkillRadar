@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-10-17T07:05:04.647Z",
+  "generatedAt": "2026-10-18T07:20:10.835Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "a1aa73c43387e9c7ced02f1f32a959865d1210fbc8d8c39068d88148dc7bdb85",
+    "contentHash": "b2057a6c132bdaf92ea7254e807371e52b40be7aaeaf1db1dcfaebde73d4ff8a",
     "contentHashVersion": 2,
-    "generatedAt": "2026-10-17T07:04:27.311Z",
-    "totalCount": 478,
+    "generatedAt": "2026-10-18T07:19:36.354Z",
+    "totalCount": 454,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 49,
+    "passed": 50,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 39,
+    "coveragePassed": 40,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
-    "specificityFailures": 4,
-    "capabilityGapCases": 34,
-    "averageRecommendationCount": 1.8,
+    "specificityFailures": 3,
+    "capabilityGapCases": 35,
+    "averageRecommendationCount": 1.83,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 128,
-    "anchorSignalHitsTotal": 29,
-    "averageTop1Score": 74.3
+    "signalHitsTotal": 131,
+    "anchorSignalHitsTotal": 31,
+    "averageTop1Score": 76.3
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 49,
+    "passed": 50,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 39,
+    "coveragePassed": 40,
     "coverageCases": 44,
     "unsafeTop3": 0,
-    "lowEvidenceTop3": 2,
-    "specificityFailures": 4,
-    "capabilityGapCases": 33,
-    "averageRecommendationCount": 1.85,
+    "lowEvidenceTop3": 1,
+    "specificityFailures": 3,
+    "capabilityGapCases": 35,
+    "averageRecommendationCount": 1.87,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 128,
-    "anchorSignalHitsTotal": 29,
-    "averageTop1Score": 74.3
+    "signalHitsTotal": 131,
+    "anchorSignalHitsTotal": 31,
+    "averageTop1Score": 76.3
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": -2
+    "evidenceDelta": -1
   },
   "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
@@ -126,15 +126,14 @@
       ],
       "candidateTop3": [
         "shadcn",
-        "awesome-dsh-plugin/awesome-dsh-plugin/ui-ux-pro-max",
         "nexu-io/open-design/github-dashboard-a45aef"
       ],
       "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 3,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
-      "lowEvidenceDelta": 2
+      "lowEvidenceDelta": 1
     },
     {
       "id": "react-performance",
@@ -185,14 +184,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
+        "SpiralCloudOmega/DevTeam6/spatial-audio",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering",
-        "calesthio/generative-media-skills/neural-reality-capture"
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "candidateTop3": [
+        "SpiralCloudOmega/DevTeam6/spatial-audio",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering",
-        "calesthio/generative-media-skills/neural-reality-capture"
+        "roble3/cc-blender-skill/blender-rendering"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -271,12 +270,12 @@
       "productionTop3": [
         "ai-sdk",
         "iflytek/skillhub/sandbase-d0efa5",
-        "redis/agent-skills/redis-semantic-cache-9c2b67"
+        "findscripter/everything-skills/vector-database-engineer"
       ],
       "candidateTop3": [
         "ai-sdk",
         "iflytek/skillhub/sandbase-d0efa5",
-        "redis/agent-skills/redis-semantic-cache-9c2b67"
+        "findscripter/everything-skills/vector-database-engineer"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -593,16 +592,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "test-driven-development",
-        "nourdean22/MAINnicks-tire-autoNEW/test-driven-development",
         "ModelEngine-Group/nexent/nexent-test-assets-576aaa"
       ],
       "candidateTop3": [
         "test-driven-development",
-        "nourdean22/MAINnicks-tire-autoNEW/test-driven-development",
         "ModelEngine-Group/nexent/nexent-test-assets-576aaa"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -694,10 +691,14 @@
       "candidatePass": false,
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionTop3": [
+        "jdubois/dr-jskill/dr-jskill-0e95f5"
+      ],
+      "candidateTop3": [
+        "jdubois/dr-jskill/dr-jskill-0e95f5"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -731,13 +732,15 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "workers-best-practices"
+        "workers-best-practices",
+        "NoaCG/NoaCG-Studio/cloud-delegate"
       ],
       "candidateTop3": [
-        "workers-best-practices"
+        "workers-best-practices",
+        "NoaCG/NoaCG-Studio/cloud-delegate"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -807,15 +810,13 @@
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
       "productionTop3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "InnerScopeHearing/otchealth-mcp-server/otchealth-security-compliance"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e"
       ],
       "candidateTop3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e",
-        "InnerScopeHearing/otchealth-mcp-server/otchealth-security-compliance"
+        "RevealUIStudio/revskills/security-hardening-f5fe4e"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -846,14 +847,20 @@
     },
     {
       "id": "swiftui-ios",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
+      "productionTop3": [
+        "Prasanth595/ECC/swiftui-patterns",
+        "Prasanth595/ECC/liquid-glass-design"
+      ],
+      "candidateTop3": [
+        "Prasanth595/ECC/swiftui-patterns",
+        "Prasanth595/ECC/liquid-glass-design"
+      ],
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -934,13 +941,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "slackapi/slack-skills-plugin/slack-messaging-fa1468",
-        "kirodotdev/KiroCrew/mochi-slack-4687ed",
-        "slackapi/slack-skills-plugin/slack-api-fc39b8"
+        "slackapi/slack-skills-plugin/slack-api-fc39b8",
+        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
       ],
       "candidateTop3": [
         "slackapi/slack-skills-plugin/slack-messaging-fa1468",
-        "kirodotdev/KiroCrew/mochi-slack-4687ed",
-        "slackapi/slack-skills-plugin/slack-api-fc39b8"
+        "slackapi/slack-skills-plugin/slack-api-fc39b8",
+        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1125,12 +1132,12 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "liyu1981/sifpress/apple-design",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "candidateTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+        "liyu1981/sifpress/apple-design",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "productionRecommendationCount": 3,
@@ -1147,14 +1154,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "nourdean22/MAINnicks-tire-autoNEW/reels-performance-report",
+        "SpiralCloudOmega/DevTeam6/loudness-metering",
         "findscripter/everything-skills/kicad-design-reviewer",
-        "awesomeopen/awesome-open/speculative-fossoligy"
+        "SpiralCloudOmega/DevTeam6/mixing-techniques"
       ],
       "candidateTop3": [
-        "nourdean22/MAINnicks-tire-autoNEW/reels-performance-report",
+        "SpiralCloudOmega/DevTeam6/loudness-metering",
         "findscripter/everything-skills/kicad-design-reviewer",
-        "awesomeopen/awesome-open/speculative-fossoligy"
+        "SpiralCloudOmega/DevTeam6/mixing-techniques"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
