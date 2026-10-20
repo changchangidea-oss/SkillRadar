@@ -1,35 +1,37 @@
 [
   {
-    "id": "lukaskourilcz/quorum/titty-tuesdays-brandbook",
-    "name": "titty-tuesdays-brandbook",
-    "source": "lukaskourilcz/quorum",
-    "summary": "Create or review Titty Tuesdays brand, campaign, product-concept, social, visual, and marketing-plan artifacts. Use whenever work names the Titty Tuesdays venture, its crop tops, seasons, campaign copy, Instagram or Threads drafts, FRAME assets, audience plans, guerrilla concepts, or platform-risk review.",
-    "security": "A",
-    "signalScore": 70,
+    "id": "daymade/claude-code-skills/frontend-visual-qa",
+    "name": "frontend-visual-qa",
+    "source": "daymade/claude-code-skills",
+    "summary": "Audits rendered UI and specific task/object-link handoffs; excludes ordinary source citations alone. Audits already-rendered UI and Markdown/Obsidian image layout — web app, deck/slide, dashboard, design-system, or Electron/native app — via real-browser/native-app journeys and a Playwright sweep. Use after UI implement",
+    "security": "C",
+    "signalScore": 71,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 1479,
     "tags": [
-      "brand",
-      "campaign",
-      "product",
+      "design",
+      "ui",
+      "design-system",
+      "layout",
+      "typography",
+      "accessibility",
       "visual",
-      "fashion",
-      "color",
-      "typography"
+      "product",
+      "mobile"
     ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/titty-tuesdays-brandbook/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/frontend-visual-qa/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "operations-design",
-      "fashion-design",
+      "ui-design",
       "visual-communication",
-      "arts-crafts"
+      "experience-design",
+      "architecture-design"
     ],
-    "qualityScore": 88,
+    "qualityScore": 96,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:31.365Z",
-    "lastSeenAt": "2026-10-18T07:16:31.365Z"
+    "firstSeenAt": "2026-10-20T07:39:09.541Z",
+    "lastSeenAt": "2026-10-20T07:39:09.541Z"
   },
   {
     "id": "findscripter/everything-skills/ux-research-design-toolkit",
@@ -37,7 +39,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要把用户研究数据转化为可落地的设计决策时使用；做用户画像生成、旅程地图绘制、可用性测试规划与研究综合（产出画像/旅程/测试方案/洞察）；不适用于视觉 UI 组件库设计、纯前端实现或无任何用户数据的拍脑袋假设。触发词：用户画像、旅程地图、可用性测试、研究综合、痛点分析。",
     "security": "A",
-    "signalScore": 69,
+    "signalScore": 70,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -62,73 +64,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:45.076Z",
-    "lastSeenAt": "2026-10-18T07:16:21.724Z"
-  },
-  {
-    "id": "liyu1981/sifpress/apple-design",
-    "name": "apple-design",
-    "source": "liyu1981/sifpress",
-    "summary": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-mo",
-    "security": "A",
-    "signalScore": 69,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "ui",
-      "typography",
-      "interaction",
-      "motion",
-      "media"
-    ],
-    "installUrl": "https://github.com/liyu1981/sifpress",
-    "skillsUrl": "https://github.com/liyu1981/sifpress/blob/master/.agents/skills/apple-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "video-design",
-      "digital-media-film",
-      "architecture-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:30.279Z",
-    "lastSeenAt": "2026-10-18T07:16:30.279Z"
-  },
-  {
-    "id": "beatra-ai/beatra-skills/wechat-article-visual-story",
-    "name": "wechat-article-visual-story",
-    "source": "beatra-ai/beatra-skills",
-    "summary": "Write the WeChat article and make its pictures in one pass. Give a topic, what you are promoting, and who it is for — this WeChat Official Account article generator returns title candidates written for the feed, the digest line, a full article body structured for how people actually read on a phone, then renders the 2.",
-    "security": "C",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 6,
-    "tags": [
-      "design",
-      "brand",
-      "campaign",
-      "product",
-      "visual",
-      "video",
-      "motion",
-      "art",
-      "illustration",
-      "craft"
-    ],
-    "installUrl": "https://github.com/beatra-ai/beatra-skills",
-    "skillsUrl": "https://github.com/beatra-ai/beatra-skills/blob/main/skills/wechat-article-visual-story/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "folk-art",
-      "fashion-design",
-      "arts-crafts"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:38.217Z",
-    "lastSeenAt": "2026-10-18T07:16:13.971Z"
+    "lastSeenAt": "2026-10-20T07:39:20.408Z"
   },
   {
     "id": "findscripter/everything-skills/brand-guidelines",
@@ -136,7 +72,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要把 Anthropic 官方品牌配色与字体应用到 PPT/文档/网页等产物（后处理统一观感）时使用；做品牌色与排版的批量套用并产出符合规范的成品；不适用于自定义品牌识别系统设计或 logo 制作；触发词：品牌色、Anthropic 风格、配色规范、字体规范、visual identity、brand colors、typography",
     "security": "A",
-    "signalScore": 68,
+    "signalScore": 69,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -160,108 +96,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:42.861Z",
-    "lastSeenAt": "2026-10-18T07:16:14.561Z"
-  },
-  {
-    "id": "Prasanth595/ECC/frontend-design-direction",
-    "name": "frontend-design-direction",
-    "source": "Prasanth595/ECC",
-    "summary": "フロントエンド設計の方向性、美的原則、および一貫した設計言語実装。",
-    "security": "C",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "typography",
-      "interaction",
-      "accessibility",
-      "experience",
-      "product",
-      "mobile",
-      "visual",
-      "editorial",
-      "color"
-    ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/docs/ja-JP/skills/frontend-design-direction/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "experience-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:25.489Z",
-    "lastSeenAt": "2026-10-18T07:16:25.489Z"
-  },
-  {
-    "id": "Prasanth595/ECC/liquid-glass-design",
-    "name": "liquid-glass-design",
-    "source": "Prasanth595/ECC",
-    "summary": "iOS 26 Liquid Glass design system — dynamic glass material with blur, reflection, and interactive morphing for SwiftUI, UIKit, and WidgetKit. Use when building iOS 26 Liquid Glass UI in SwiftUI, UIKit, or WidgetKit.",
-    "security": "A",
-    "signalScore": 68,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "interaction",
-      "environment",
-      "rendering"
-    ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/liquid-glass-design/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "environmental-design",
-      "architecture-design",
-      "folk-art"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:29.215Z",
-    "lastSeenAt": "2026-10-18T07:16:29.215Z"
-  },
-  {
-    "id": "beatra-ai/beatra-skills/wechat-article-visual-pack",
-    "name": "wechat-article-visual-pack",
-    "source": "beatra-ai/beatra-skills",
-    "summary": "Create a WeChat Official Account visual pack from a finished article, outline, brand assets, photos, or visual references. Produce a lead cover plus coordinated in-article illustrations with clear section focus and consistent visual direction for WeChat articles, WeChat post images, brand stories, product explainers, e",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 6,
-    "tags": [
-      "art",
-      "illustration",
-      "color",
-      "visual",
-      "photo",
-      "brand",
-      "product",
-      "video"
-    ],
-    "installUrl": "https://github.com/beatra-ai/beatra-skills",
-    "skillsUrl": "https://github.com/beatra-ai/beatra-skills/blob/main/skills/wechat-article-visual-pack/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "folk-art",
-      "fashion-design",
-      "operations-design",
-      "visual-communication"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:37.529Z",
-    "lastSeenAt": "2026-10-18T07:16:13.326Z"
+    "lastSeenAt": "2026-10-20T07:39:12.745Z"
   },
   {
     "id": "findscripter/everything-skills/canva-campaign-creator",
@@ -269,7 +104,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当你拿到已批准的内容简报、要把它端到端落地为一场社媒+邮件营销活动时使用；做发布排期表→素材清单→Canva 设计生成→文案→HubSpot 排期入队（每步需 owner 显式批准）；不适用于邮件路径走 Canva 设计、自动发布、或无简报开工。触发词：做内容/生成帖子、营销活动落地、Canva 排期",
     "security": "B",
-    "signalScore": 65,
+    "signalScore": 66,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -290,228 +125,7 @@
     "qualityScore": 79,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:43.027Z",
-    "lastSeenAt": "2026-10-18T07:16:19.241Z"
-  },
-  {
-    "id": "SpiralCloudOmega/DevTeam6/spatial-audio",
-    "name": "spatial-audio",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "Spatial audio processing — stereo width, panning laws, HRTF, Ambisonics, surround formats",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "spatial",
-      "3d",
-      "rendering"
-    ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/audio-dsp/spatial-audio/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "architecture-design",
-      "environmental-design",
-      "industrial-design",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:23.884Z",
-    "lastSeenAt": "2026-10-18T07:16:23.884Z"
-  },
-  {
-    "id": "Prasanth595/ECC/design-system",
-    "name": "design-system",
-    "source": "Prasanth595/ECC",
-    "summary": "Generate a design system from an existing codebase or audit one for visual consistency: extract tokens (colors, typography, spacing, shadows) into design-tokens.json and CSS custom properties with DESIGN.md rationale and an interactive HTML preview, score the UI across 10 dimensions, and flag AI-slop patterns. Use when",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "ui",
-      "design-system",
-      "typography",
-      "accessibility",
-      "research",
-      "art",
-      "color",
-      "pattern",
-      "visual"
-    ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/design-system/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "experience-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:28.796Z",
-    "lastSeenAt": "2026-10-18T07:16:28.796Z"
-  },
-  {
-    "id": "Prasanth595/ECC/swiftui-patterns",
-    "name": "swiftui-patterns",
-    "source": "Prasanth595/ECC",
-    "summary": "SwiftUI architecture patterns, state management with @Observable, view composition, navigation, performance optimization, and modern iOS/macOS UI best practices. Use when building or reviewing SwiftUI views, @Observable state, navigation, or render performance.",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "environment",
-      "architecture",
-      "rendering",
-      "ui",
-      "layout"
-    ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/swiftui-patterns/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "environmental-design",
-      "architecture-design",
-      "ui-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:29.657Z",
-    "lastSeenAt": "2026-10-18T07:16:29.657Z"
-  },
-  {
-    "id": "Prasanth595/ECC/ui-to-vue",
-    "name": "ui-to-vue",
-    "source": "Prasanth595/ECC",
-    "summary": "Use when the user has UI screenshots or design exports that need batch conversion into Vue 3 components, especially with Vant, Element Plus, or Ant Design Vue.",
-    "security": "C",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "ui",
-      "layout",
-      "interaction",
-      "accessibility",
-      "map",
-      "environment"
-    ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/ui-to-vue/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "experience-design",
-      "architecture-design",
-      "environmental-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:30.119Z",
-    "lastSeenAt": "2026-10-18T07:16:30.119Z"
-  },
-  {
-    "id": "lukaskourilcz/quorum/product-marketing",
-    "name": "product-marketing",
-    "source": "lukaskourilcz/quorum",
-    "summary": "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' 'ideal customer profile,' or wants to avoid repeating foundational informa",
-    "security": "A",
-    "signalScore": 65,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "brand",
-      "product",
-      "motion",
-      "communication",
-      "landscape"
-    ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/product-marketing/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "visual-communication",
-      "environmental-design",
-      "video-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:31.074Z",
-    "lastSeenAt": "2026-10-18T07:16:31.074Z"
-  },
-  {
-    "id": "shawnla90/shawn-gtme-os/campaign-copy-workflow",
-    "name": "campaign-copy-workflow",
-    "source": "shawnla90/shawn-gtme-os",
-    "summary": "Generate the complete Phase 2 of any web reveal campaign — static email bodies + a body-aware Clay research prompt for personalization variables. Ensures bodies and research prompt stay in sync. Use when the user types /campaigncopy <partner> or asks to build campaign copy for a partner.",
-    "security": "A",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 10,
-    "tags": [
-      "brand",
-      "campaign",
-      "crafts",
-      "craft",
-      "pattern",
-      "experience",
-      "research"
-    ],
-    "installUrl": "https://github.com/shawnla90/shawn-gtme-os",
-    "skillsUrl": "https://github.com/shawnla90/shawn-gtme-os/blob/main/.cursor/skills/campaign-copy-workflow/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "arts-crafts",
-      "experience-design",
-      "folk-art"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:07.615Z",
-    "lastSeenAt": "2026-10-18T07:16:07.615Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/noacg-graphic",
-    "name": "graphic",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Make, critique or improve a broadcast graphic or show package (lower third, scoreboard, ticker, countdown, any on-air graphic) and save it to NoaCG. Use when the user names NoaCG, SPX, CasparCG or OGraf, wants graphics operated live, or asks what NoaCG can do.",
-    "security": "C",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "video",
-      "design",
-      "motion",
-      "editing",
-      "brand",
-      "product",
-      "ui",
-      "layout"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/cli/plugin/skills/noacg-graphic/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "ui-design",
-      "visual-communication"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:11.754Z",
-    "lastSeenAt": "2026-10-18T07:16:11.754Z"
+    "lastSeenAt": "2026-10-20T07:39:18.496Z"
   },
   {
     "id": "findscripter/everything-skills/matplotlib-visualization",
@@ -519,7 +133,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要用 Python/Matplotlib 绘制静态图表（折线、散点、柱状、直方、热力、等高线、箱线、3D 等）并导出 PNG/PDF/SVG 出版级图时使用；做用面向对象 API（fig, ax）构图、定制样式与多子图、按 dpi 保存产物；不适用于浏览器交互式可视化（用 d3js-data-viz）或统计图表高层封装（用 seaborn）。触发词：matplotlib、画图、绘图、可视化、subplots、savefig",
     "security": "A",
-    "signalScore": 64,
+    "signalScore": 65,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -541,7 +155,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:40.438Z",
-    "lastSeenAt": "2026-10-18T07:16:14.103Z"
+    "lastSeenAt": "2026-10-20T07:39:12.194Z"
   },
   {
     "id": "findscripter/everything-skills/kpi-dashboard-design",
@@ -549,7 +163,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要设计 KPI 仪表盘、为高管/部门挑选关键指标、规划布局或编写指标计算时使用；产出指标分层框架、布局模式与可执行的 SQL/Streamlit 代码；不适用于与指标无关的通用 BI 或纯报表导出。触发词：KPI、仪表盘、dashboard、关键指标、北极星指标、指标体系、MRR、留存、cohort、metrics、KPI dashboard、executive dashboard",
     "security": "A",
-    "signalScore": 64,
+    "signalScore": 65,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -571,7 +185,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:40.276Z",
-    "lastSeenAt": "2026-10-18T07:16:17.241Z"
+    "lastSeenAt": "2026-10-20T07:39:15.923Z"
   },
   {
     "id": "findscripter/everything-skills/canvas-design",
@@ -579,7 +193,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当用户要做海报/封面/艺术海报/静态视觉作品并希望导出 PNG/PDF 时使用；做法是先写一份\"设计哲学\"再据此在画布上表达，产出 .md 哲学文档 + 单页 .png/.pdf 成品；不适用于网页/前端 UI、品牌规范体系、代码生成式算法艺术或多页文档排版；触发词：海报、poster、视觉艺术、art、平面设计、design、封面、艺术品、PNG、PDF",
     "security": "A",
-    "signalScore": 64,
+    "signalScore": 65,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -602,35 +216,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:43.189Z",
-    "lastSeenAt": "2026-10-18T07:16:19.382Z"
-  },
-  {
-    "id": "lukaskourilcz/quorum/financial-operations",
-    "name": "financial-operations",
-    "source": "lukaskourilcz/quorum",
-    "summary": "Use when LEDGER reconciles operating cost, reports daily/MTD finance, evaluates spend, or plans the approved $50 monthly all-in operating limit (`budget-2026-08f`).",
-    "security": "A",
-    "signalScore": 64,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "operations",
-      "campaign",
-      "media"
-    ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/financial-operations/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "fashion-design",
-      "digital-media-film",
-      "ui-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:30.748Z",
-    "lastSeenAt": "2026-10-18T07:16:30.748Z"
+    "lastSeenAt": "2026-10-20T07:39:18.678Z"
   },
   {
     "id": "findscripter/everything-skills/cellchat-cell-communication",
@@ -638,7 +224,7 @@
     "source": "findscripter/everything-skills",
     "summary": "Infer and visualize intercellular communication from scRNA-seq with CellChat (R). Build CellChat from Seurat/counts → subset CellChatDB ligand-receptor pairs → over-expressed genes per group → communication probabilities → pathway signaling → network centrality (senders/receivers/influencers) → chord/heatmap/bubble plo",
     "security": "C",
-    "signalScore": 63,
+    "signalScore": 64,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -662,39 +248,7 @@
     "qualityScore": 79,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-18T07:16:15.064Z",
-    "lastSeenAt": "2026-10-18T07:16:15.064Z"
-  },
-  {
-    "id": "beatra-ai/beatra-skills/art-demo-set",
-    "name": "art-demo-set",
-    "source": "beatra-ai/beatra-skills",
-    "summary": "Turn user-supplied drawing steps into one still per art demo page. This classroom art still studio lays out each step-by-step art demo from the supplied demo points. Use it for art demonstration stills, drawing step pages, and an art demo set.",
-    "security": "C",
-    "signalScore": 62,
-    "installs": 0,
-    "repoStars": 6,
-    "tags": [
-      "product",
-      "visual",
-      "photo",
-      "video",
-      "ecommerce",
-      "art",
-      "layout"
-    ],
-    "installUrl": "https://github.com/beatra-ai/beatra-skills",
-    "skillsUrl": "https://github.com/beatra-ai/beatra-skills/blob/main/skills/art-demo-set/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "folk-art",
-      "visual-communication",
-      "fashion-design"
-    ],
-    "qualityScore": 92,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:36.713Z",
-    "lastSeenAt": "2026-10-18T07:16:12.698Z"
+    "lastSeenAt": "2026-10-20T07:39:13.435Z"
   },
   {
     "id": "findscripter/everything-skills/email-sequence-designer",
@@ -702,7 +256,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要为生命周期或营销活动设计多封自动化邮件序列（含完整文案、节奏、分支与退出逻辑、性能基准）时使用；做邮件序列编排，产出序列概览表+逐封文案+流程图+分支规则+A/B建议+追踪指标；不适用于单封邮件撰写、内容日历或社媒投放。触发词：邮件序列、滴灌培育、onboarding 流程",
     "security": "A",
-    "signalScore": 62,
+    "signalScore": 64,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -722,7 +276,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:42.279Z",
-    "lastSeenAt": "2026-10-18T07:16:18.773Z"
+    "lastSeenAt": "2026-10-20T07:39:17.893Z"
   },
   {
     "id": "findscripter/everything-skills/stitch-design-system-taste",
@@ -730,7 +284,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要为 Google Stitch 屏幕生成器产出语义化 DESIGN.md 设计系统、用自然语言描述加精确数值约束驱动 AI 生成高端非通用界面时使用；产出含氛围/色板/字体/组件/布局/动效/反模式七段的 DESIGN.md，覆盖反 AI-slop 规则（禁 Inter、禁纯黑、禁霓虹紫蓝、禁 3 等宽卡片）；不适用于已有成熟品牌设计系统、直接写最终前端代码、或保证 Stitch 像素级还原每条约束的场景。触发词：Stitch、DESIGN.md、设计系统、反 AI 通用 UI、设计品味",
     "security": "C",
-    "signalScore": 62,
+    "signalScore": 64,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -757,7 +311,7 @@
     "qualityScore": 73,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:44.499Z",
-    "lastSeenAt": "2026-10-18T07:16:21.269Z"
+    "lastSeenAt": "2026-10-20T07:39:19.802Z"
   },
   {
     "id": "findscripter/everything-skills/unsplash-photo-integration",
@@ -765,7 +319,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当为网站·App·营销物料挑选高质量免费摄影图、需替换占位图/平庸 stock 图时使用；做法是用艺术化关键词在 Unsplash 搜索、按方向与配色筛选、经 API 或直链获取并用动态参数（如 ?w=1600&q=85&fit=crop）按布局裁剪压缩后接入；不适用于自有插画/品牌 Logo/UI 图标、付费授权独占图、需明确商业授权或人物肖像权的场景。触发词：unsplash、免费配图、摄影图库、hero 配图、占位图替换",
     "security": "B",
-    "signalScore": 62,
+    "signalScore": 64,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -786,36 +340,130 @@
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:44.917Z",
-    "lastSeenAt": "2026-10-18T07:16:21.580Z"
+    "lastSeenAt": "2026-10-20T07:39:20.235Z"
   },
   {
-    "id": "SpiralCloudOmega/DevTeam6/routing-grid",
-    "name": "routing-grid",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "AXE-FX III-style 12×4 routing grid for REVITHION STUDIO — grid topology, 36+ block types, scenes, channels, X/Y, feedback, and global blocks.",
+    "id": "dmmdea/offload-harness/ffmpeg",
+    "name": "ffmpeg",
+    "source": "dmmdea/offload-harness",
+    "summary": "Use for any FFmpeg/ffprobe work in the video pipeline — probing a media file, cutting/trimming/concatenating, retiming, scaling for YouTube 16:9 or Shorts/Reels 9:16, thumbnails, NVENC or CPU encoding choices, loudness normalization (-14/-16 LUFS), silence/dead-air removal, ducking music, burning or muxing subtitles, d",
     "security": "A",
-    "signalScore": 62,
+    "signalScore": 64,
     "installs": 0,
-    "repoStars": 1,
+    "repoStars": 4,
     "tags": [
-      "product",
-      "parametric",
-      "ux",
-      "pattern"
+      "video",
+      "editing",
+      "audio",
+      "media"
     ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/routing-grid/SKILL.md",
+    "installUrl": "https://github.com/dmmdea/offload-harness",
+    "skillsUrl": "https://github.com/dmmdea/offload-harness/blob/main/skill/ffmpeg/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "industrial-design",
-      "experience-design",
-      "arts-crafts",
-      "architecture-design"
+      "video-design",
+      "digital-media-film",
+      "operations-design",
+      "ui-design"
     ],
     "qualityScore": 73,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:23.726Z",
-    "lastSeenAt": "2026-10-18T07:16:23.726Z"
+    "firstSeenAt": "2026-10-20T07:39:21.550Z",
+    "lastSeenAt": "2026-10-20T07:39:21.550Z"
+  },
+  {
+    "id": "8gi-foundation/8gent-code/motion-design",
+    "name": "motion-design",
+    "source": "8gi-foundation/8gent-code",
+    "summary": "8gent's animation and motion rules for web and TUI. Apply when adding transitions, loading states, or interactive feedback to any interface.",
+    "security": "A",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "visual",
+      "motion",
+      "ui",
+      "interaction",
+      "accessibility"
+    ],
+    "installUrl": "https://github.com/8gi-foundation/8gent-code",
+    "skillsUrl": "https://github.com/8gi-foundation/8gent-code/blob/main/packages/skills/motion-design/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "ui-design",
+      "experience-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-20T07:39:23.462Z",
+    "lastSeenAt": "2026-10-20T07:39:23.462Z"
+  },
+  {
+    "id": "8gi-foundation/8gent-code/touchdesigner",
+    "name": "touchdesigner",
+    "source": "8gi-foundation/8gent-code",
+    "summary": "Drive Derivative TouchDesigner from outside the editor for generative visuals, projection mapping, real-time AV. Use when the user mentions TouchDesigner, .toe files, TOPs/CHOPs/DATs/SOPs, OSC control of visuals, projection mapping, VJ rigs, particle systems, real-time audio-reactive scenes, or wants the agent to autho",
+    "security": "C",
+    "signalScore": 64,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "visual",
+      "photo",
+      "video",
+      "motion",
+      "editing",
+      "vfx",
+      "audio",
+      "color"
+    ],
+    "installUrl": "https://github.com/8gi-foundation/8gent-code",
+    "skillsUrl": "https://github.com/8gi-foundation/8gent-code/blob/main/packages/skills/touchdesigner/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "operations-design",
+      "video-design",
+      "fashion-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-20T07:39:23.642Z",
+    "lastSeenAt": "2026-10-20T07:39:23.642Z"
+  },
+  {
+    "id": "Blackcat-Informatics/gmeow-ontology/gmeow-ontology-authoring",
+    "name": "gmeow-ontology-authoring",
+    "source": "Blackcat-Informatics/gmeow-ontology",
+    "summary": "Helps edit, compile, validate, and reason about the GMEOW ontology modules, mappings, and statement metadata. Use when you need to make changes to classes, mappings, properties, or statement provenance.",
+    "security": "A",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 11,
+    "tags": [
+      "design",
+      "map",
+      "editing",
+      "ui"
+    ],
+    "installUrl": "https://github.com/Blackcat-Informatics/gmeow-ontology",
+    "skillsUrl": "https://github.com/Blackcat-Informatics/gmeow-ontology/blob/main/.agents/skills/gmeow-ontology-authoring/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "video-design",
+      "ui-design",
+      "operations-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-20T07:39:11.783Z",
+    "lastSeenAt": "2026-10-20T07:39:11.784Z"
   },
   {
     "id": "findscripter/everything-skills/design-dev-handoff",
@@ -823,7 +471,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当设计稿定稿、要交给工程实现时使用；产出覆盖布局/设计令牌/组件 props/交互状态/响应式断点/边界情况/动效的开发交付规格文档；不适用于尚在探索的概念稿或纯视觉评审；触发词：设计交付、handoff、Figma 转开发",
     "security": "A",
-    "signalScore": 61,
+    "signalScore": 63,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -845,7 +493,94 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:43.535Z",
-    "lastSeenAt": "2026-10-18T07:16:20.676Z"
+    "lastSeenAt": "2026-10-20T07:39:19.082Z"
+  },
+  {
+    "id": "dmmdea/offload-harness/gimp",
+    "name": "gimp",
+    "source": "dmmdea/offload-harness",
+    "summary": "Use when the user wants to edit, resize, crop, composite, retouch, add text/titles, remove a background, add a drop shadow or outline, batch-convert or export images with GIMP 3.2 — or any task that means driving GIMP programmatically: gimp-console batch mode, Python (GObject-introspection Gimp/Gegl), Script-Fu, the gi",
+    "security": "A",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 4,
+    "tags": [
+      "design",
+      "editing",
+      "operations",
+      "ui"
+    ],
+    "installUrl": "https://github.com/dmmdea/offload-harness",
+    "skillsUrl": "https://github.com/dmmdea/offload-harness/blob/main/skill/gimp/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "ui-design",
+      "industrial-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-20T07:39:21.750Z",
+    "lastSeenAt": "2026-10-20T07:39:21.750Z"
+  },
+  {
+    "id": "jangtrinh/design-os-drone-showcase/design-os-drone-showcase",
+    "name": "design-os-drone-showcase",
+    "source": "jangtrinh/design-os-drone-showcase",
+    "summary": "Use when working with DESIGN:OS OPAH ONE Drone Showcase — Reference hardware product showcase and scroll-scrub kinematic storytelling engine for the sub-249g OPAH ONE indoor cinewhoop drone.",
+    "security": "A",
+    "signalScore": 63,
+    "installs": 0,
+    "repoStars": 1,
+    "tags": [
+      "design",
+      "product",
+      "cad",
+      "diagram",
+      "lighting",
+      "visual"
+    ],
+    "installUrl": "https://github.com/jangtrinh/design-os-drone-showcase",
+    "skillsUrl": "https://github.com/jangtrinh/design-os-drone-showcase/blob/main/skills/design-os-drone-showcase/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "industrial-design",
+      "architecture-design",
+      "operations-design",
+      "environmental-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-20T07:39:24.438Z",
+    "lastSeenAt": "2026-10-20T07:39:24.438Z"
+  },
+  {
+    "id": "Blackcat-Informatics/gmeow-ontology/gmeow-developer-workflows",
+    "name": "gmeow-developer-workflows",
+    "source": "Blackcat-Informatics/gmeow-ontology",
+    "summary": "Helps run developer workflows in the gmeow-ontology repository. Use when you need to sync dependencies, format code, run lints, run tests, or execute the quality gate check.",
+    "security": "A",
+    "signalScore": 62,
+    "installs": 0,
+    "repoStars": 11,
+    "tags": [
+      "environment",
+      "ui"
+    ],
+    "installUrl": "https://github.com/Blackcat-Informatics/gmeow-ontology",
+    "skillsUrl": "https://github.com/Blackcat-Informatics/gmeow-ontology/blob/main/.agents/skills/gmeow-developer-workflows/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "architecture-design",
+      "environmental-design",
+      "ui-design",
+      "folk-art"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-20T07:39:11.589Z",
+    "lastSeenAt": "2026-10-20T07:39:11.589Z"
   },
   {
     "id": "findscripter/everything-skills/glassmorphism-ui-design",
@@ -853,7 +588,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要构建悬浮、空间纵深、玻璃拟态的高交互 Web 界面（仪表盘/落地页/沉浸式产品页）时使用；基于 React/Next + Tailwind + GSAP ScrollTrigger + R3F/CSS 3D 产出可复用动效组件与设计规范；不适用于常规扁平 UI、表单密集型后台或低端设备/弱网首屏。触发词：玻璃拟态、glassmorphism、空间感动效",
     "security": "A",
-    "signalScore": 61,
+    "signalScore": 62,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -876,318 +611,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:43.938Z",
-    "lastSeenAt": "2026-10-18T07:16:20.965Z"
-  },
-  {
-    "id": "SpiralCloudOmega/DevTeam6/mixing-techniques",
-    "name": "mixing-techniques",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "Professional mixing techniques for REVITHION STUDIO — gain staging, bus routing, parallel compression, send effects, VCA grouping, automation, Scheps Rear Bus, and stem export in JUCE C++.",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "ux",
-      "product"
-    ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/mixing-techniques/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "experience-design",
-      "industrial-design",
-      "operations-design",
-      "video-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:23.578Z",
-    "lastSeenAt": "2026-10-18T07:16:23.578Z"
-  },
-  {
-    "id": "Prasanth595/ECC/orch-build-mvp",
-    "name": "orch-build-mvp",
-    "source": "Prasanth595/ECC",
-    "summary": "Orchestrate bootstrapping a working MVP from a design or spec document — ingest the SDD/PRD, plan thin vertical slices, scaffold the first end-to-end slice, then drive a generator-evaluator build loop with review and gated feat commits. Use when a design or spec document must become a running MVP through planned vertic",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "ui"
-    ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/orch-build-mvp/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "operations-design",
-      "video-design",
-      "industrial-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:29.514Z",
-    "lastSeenAt": "2026-10-18T07:16:29.514Z"
-  },
-  {
-    "id": "lukaskourilcz/quorum/organization-operations",
-    "name": "organization-operations",
-    "source": "lukaskourilcz/quorum",
-    "summary": "Use when PEOPLE reviews agent effectiveness or proposes/tests a role, description, routing, prompt, skill, model, or status change.",
-    "security": "A",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "operations"
-    ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/organization-operations/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "ui-design",
-      "visual-communication",
-      "video-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:30.895Z",
-    "lastSeenAt": "2026-10-18T07:16:30.895Z"
-  },
-  {
-    "id": "lukaskourilcz/quorum/social-operations",
-    "name": "social-operations",
-    "source": "lukaskourilcz/quorum",
-    "summary": "Use for social strategy, calendars, channel drafts, media assets, queue review, publishing, insights, channel proposals and social incidents.",
-    "security": "C",
-    "signalScore": 61,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "operations",
-      "brand",
-      "product",
-      "motion",
-      "accessibility",
-      "ui"
-    ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/social-operations/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "operations-design",
-      "experience-design",
-      "ui-design",
-      "digital-media-film"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:31.219Z",
-    "lastSeenAt": "2026-10-18T07:16:31.219Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/ograf-expert",
-    "name": "ograf-expert",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Authoritative reference for the EBU OGraf (Open Graphics) v1 specification: the .ograf.json manifest schema (id/name/main/supportsRealTime/supportsNonRealTime, schema, stepCount, customActions, actionDurations, renderRequirements, thumbnails), the Graphic Web Component interface (load, dispose, playAction, stopAction, ",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing",
-      "ui"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/ograf-expert/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:09.470Z",
-    "lastSeenAt": "2026-10-18T07:16:09.470Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/spx-html-template-expert",
-    "name": "spx-html-template-expert",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Authoritative reference for the SPX Graphics \"Basic HTML template structure\" docs page: the SPXGCTemplateDefinition object, all playout/display settings, every DataField type (ftype), the spxData data-access object, the spxRenderer lifecycle events, folder/path conventions, and best practices. Use when writing, editing",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing",
-      "layout",
-      "color"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/spx-html-template-expert/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "visual-communication",
-      "ui-design",
-      "fashion-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:10.409Z",
-    "lastSeenAt": "2026-10-18T07:16:10.409Z"
-  },
-  {
-    "id": "findscripter/everything-skills/minimalist-editorial-ui",
-    "name": "minimalist-editorial-ui",
-    "source": "findscripter/everything-skills",
-    "summary": "当需要做 Notion/Linear/Vercel 那类极简、编辑风、文档感的高端前端界面时使用；产出暖色单色系、1px 细边框、bento 网格、克制动效的 HTML/React/Tailwind 设计规范与代码；不适用于已有强品牌色系统、需要鲜艳渐变/重阴影/营销大色块的场景。触发词：极简界面、editorial 风、暖色单色、bento 网格、Notion 风。",
-    "security": "B",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "visual",
-      "editorial",
-      "design",
-      "ui",
-      "design-system",
-      "photo"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/minimalist-editorial-ui/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "visual-communication",
-      "ui-design",
-      "operations-design",
-      "industrial-design"
-    ],
-    "qualityScore": 71,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:14.892Z",
-    "lastSeenAt": "2026-10-18T07:16:14.892Z"
-  },
-  {
-    "id": "findscripter/everything-skills/design-brainstorming",
-    "name": "design-brainstorming",
-    "source": "findscripter/everything-skills",
-    "summary": "当在动手实现前需要把模糊想法转为经过验证的设计/规格时使用；做结构化对话产出\"理解锁定+多方案权衡+增量设计+决策日志\"并落盘为文档；不适用于已明确需求只待编码、或纯执行/调试场景。触发词：头脑风暴、需求澄清、设计方案、技术选型、写设计文档",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "research",
-      "ui"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/00-meta/design-brainstorming/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "experience-design",
-      "ui-design",
-      "operations-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:38.417Z",
-    "lastSeenAt": "2026-10-18T07:16:15.602Z"
-  },
-  {
-    "id": "findscripter/everything-skills/erd-schema-designer",
-    "name": "erd-schema-designer",
-    "source": "findscripter/everything-skills",
-    "summary": "当从需求出发设计关系型数据库 schema、画 ERD、做范式化与表关系/约束/索引规划，或为多租户加隔离与软删除/审计字段时使用；产出实体关系模型（Mermaid ERD）、规范化表结构、关系与约束、索引与 RLS 策略草案；不适用于编写业务查询 SQL、本地 CSV 清洗、ORM/迁移工具具体语法调试；触发词：ERD、实体关系图、数据库设计、表结构设计、范式、normalization、schema design、多租户、软删除、索引策略、RLS",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "diagram",
-      "map",
-      "ui"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/03-data/erd-schema-designer/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "architecture-design",
-      "ui-design",
-      "industrial-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:40.092Z",
-    "lastSeenAt": "2026-10-18T07:16:17.063Z"
-  },
-  {
-    "id": "findscripter/everything-skills/campaign-attribution-analytics",
-    "name": "campaign-attribution-analytics",
-    "source": "findscripter/everything-skills",
-    "summary": "当需要评估营销活动表现、判定渠道贡献或核算投放回报时使用；用三个零依赖 Python CLI 对 JSON 数据做多触点归因、漏斗转化与 ROI/ROAS/CPA 核算并产出可读或 JSON 报告；不适用于实时数据接入、统计显著性检验或跨设备身份打通。触发词：归因模型、营销 ROI、漏斗转化",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "campaign",
-      "media",
-      "interaction",
-      "ui"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/campaign-attribution-analytics/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "digital-media-film",
-      "ui-design",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:41.879Z",
-    "lastSeenAt": "2026-10-18T07:16:18.476Z"
-  },
-  {
-    "id": "findscripter/everything-skills/marketing-campaign-brief",
-    "name": "marketing-campaign-brief",
-    "source": "findscripter/everything-skills",
-    "summary": "当需要把营销目标（产品发布/线索获取/品牌造势/留存召回）转化为一份完整、可执行的活动方案 brief 时使用；做：按「目标·受众·讯息·渠道·度量」五要素框架，产出含活动概述、受众画像、核心讯息、渠道策略、逐周内容日历（含依赖）、内容物料清单、KPI、预算分配、风险与下一步的结构化 brief；不适用于撰写单篇文案/广告创意、纯渠道执行投放或定价方案设计；触发词：营销活动、campaign、活动方案、内容日历、渠道策略、GTM、线索获取",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "campaign",
-      "product"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/marketing-campaign-brief/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "operations-design",
-      "industrial-design",
-      "experience-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:42.474Z",
-    "lastSeenAt": "2026-10-18T07:16:18.912Z"
+    "lastSeenAt": "2026-10-20T07:39:19.431Z"
   },
   {
     "id": "findscripter/everything-skills/ui-design-system-builder",
@@ -1195,7 +619,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要从品牌色生成完整设计令牌、构建组件体系或做研发交接时使用；产出 design token（CSS/SCSS/JSON）、色阶/字阶/8pt 栅格与交接清单；不适用于单页视觉稿、品牌 logo 设计或前端业务逻辑实现；触发词：设计令牌、设计系统、design token",
     "security": "C",
-    "signalScore": 60,
+    "signalScore": 62,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1220,157 +644,96 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:44.712Z",
-    "lastSeenAt": "2026-10-18T07:16:21.417Z"
+    "lastSeenAt": "2026-10-20T07:39:20.014Z"
   },
   {
-    "id": "Prasanth595/ECC/api-connector-builder",
-    "name": "api-connector-builder",
-    "source": "Prasanth595/ECC",
-    "summary": "Build a new API connector or provider by matching the target repo's existing integration pattern exactly. Use when adding one more integration without inventing a second architecture.",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "ui",
-      "layout",
-      "architecture",
-      "map",
-      "art",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/api-connector-builder/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "architecture-design",
-      "folk-art",
-      "operations-design"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:28.354Z",
-    "lastSeenAt": "2026-10-18T07:16:28.354Z"
-  },
-  {
-    "id": "Prasanth595/ECC/dashboard-builder",
-    "name": "dashboard-builder",
-    "source": "Prasanth595/ECC",
-    "summary": "Build monitoring dashboards that answer real operator questions for Grafana, SigNoz, and similar platforms. Use when turning metrics into a working dashboard instead of a vanity board.",
-    "security": "A",
-    "signalScore": 60,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "ui",
-      "layout",
-      "art",
-      "color",
-      "pattern",
-      "visual"
-    ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/dashboard-builder/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "folk-art",
-      "visual-communication",
-      "arts-crafts"
-    ],
-    "qualityScore": 75,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:28.651Z",
-    "lastSeenAt": "2026-10-18T07:16:28.651Z"
-  },
-  {
-    "id": "lukaskourilcz/quorum/brand-identity",
-    "name": "brand-identity",
-    "source": "lukaskourilcz/quorum",
-    "summary": "Create or apply the BoardlessAI Refero/Awesomic zinc-and-Ember editorial system, tokens.css, typography, SVG logo and BRAND.md voice. Use when founding the brand, building UI, or fixing visual drift.",
+    "id": "dmmdea/offload-harness/hyperframes-compose",
+    "name": "hyperframes-compose",
+    "source": "dmmdea/offload-harness",
+    "summary": "Use when the user wants designed motion graphics rendered to video for free on the local machine with the harness's HyperFrames lane — title cards, lower thirds, stat cards, section titles, callouts, checklists, caption overlays, or any transparent overlay (webm / mov with alpha) to lay over footage — or wants a new co",
     "security": "C",
-    "signalScore": 60,
+    "signalScore": 62,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 4,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "audio",
+      "diagram",
+      "environment"
+    ],
+    "installUrl": "https://github.com/dmmdea/offload-harness",
+    "skillsUrl": "https://github.com/dmmdea/offload-harness/blob/main/skill/hyperframes-compose/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "architecture-design",
+      "operations-design",
+      "digital-media-film"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-20T07:39:21.935Z",
+    "lastSeenAt": "2026-10-20T07:39:21.935Z"
+  },
+  {
+    "id": "daymade/claude-code-skills/data-visualization-discipline",
+    "name": "data-visualization-discipline",
+    "source": "daymade/claude-code-skills",
+    "summary": "数据可视化的判断层 SSOT——画任何图表、dashboard、看板之前先加载它，不是画完之后。管\"该不该这么画\"：这张图想让读者得出什么结论、用均值还是中位数、能不能聚合、堆叠还是折线、能不能上双轴、配色与颜色数量、同一实体跨图是否同色同位、表格该留几列。介质无关：HTML 报告页、React/Vue dashboard、PPT 原生图表、matplotlib/plotly/ECharts/D3、渲染成 PNG 的图，一律适用。Use when 动手画图之前，或评审既有图表（\"这几张图有什么问题\"、\"图例为什么不一致\"）。Not for 报告页的排版/组件/交互（用 report-with-html:report-with-htm",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 1479,
     "tags": [
       "visual",
-      "brand",
-      "typography",
-      "editorial",
       "color",
       "design",
-      "ui",
-      "accessibility"
+      "product"
     ],
-    "installUrl": "https://github.com/lukaskourilcz/quorum",
-    "skillsUrl": "https://github.com/lukaskourilcz/quorum/blob/main/.agents/skills/brand-identity/SKILL.md",
+    "installUrl": "https://github.com/daymade/claude-code-skills",
+    "skillsUrl": "https://github.com/daymade/claude-code-skills/blob/main/data-visualization-discipline/SKILL.md",
     "discovery": "github-radar",
     "domains": [
       "visual-communication",
       "operations-design",
-      "ui-design",
-      "fashion-design"
+      "fashion-design",
+      "arts-crafts"
     ],
-    "qualityScore": 81,
+    "qualityScore": 82,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:30.599Z",
-    "lastSeenAt": "2026-10-18T07:16:30.599Z"
+    "firstSeenAt": "2026-10-20T07:39:08.475Z",
+    "lastSeenAt": "2026-10-20T07:39:08.476Z"
   },
   {
-    "id": "NoaCG/NoaCG-Studio/orchestrator",
-    "name": "orchestrator",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Run a wave of autonomous work through a time window - the prompt's work, then the backlog in GOALS rank, each row landed through the merge queue, with a short report",
-    "security": "A",
-    "signalScore": 59,
+    "id": "Blackcat-Informatics/gmeow-ontology/gmeow-developer-start-issue",
+    "name": "gmeow-developer-start-issue",
+    "source": "Blackcat-Informatics/gmeow-ontology",
+    "summary": "Guides the agent in properly framing and beginning work on a GitHub issue in the GMEOW repository. Use when a new issue has been assigned, picked up, or needs analysis before implementation.",
+    "security": "B",
+    "signalScore": 61,
     "installs": 0,
-    "repoStars": 7,
+    "repoStars": 11,
     "tags": [
-      "editing",
-      "art"
+      "design",
+      "map",
+      "research",
+      "ui"
     ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/orchestrator/SKILL.md",
+    "installUrl": "https://github.com/Blackcat-Informatics/gmeow-ontology",
+    "skillsUrl": "https://github.com/Blackcat-Informatics/gmeow-ontology/blob/main/.agents/skills/gmeow-developer-start-issue/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "video-design",
-      "folk-art",
+      "architecture-design",
+      "experience-design",
       "ui-design",
-      "visual-communication"
+      "operations-design"
     ],
-    "qualityScore": 73,
+    "qualityScore": 85,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:09.786Z",
-    "lastSeenAt": "2026-10-18T07:16:09.786Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/plan-run",
-    "name": "plan-run",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Run a long plan phase by phase until a time limit - each phase built by one fresh session, checked on main by another, and the next phase only after the check passed",
-    "security": "A",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing",
-      "ui",
-      "art"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/plan-run/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:09.938Z",
-    "lastSeenAt": "2026-10-18T07:16:09.938Z"
+    "firstSeenAt": "2026-10-20T07:39:11.385Z",
+    "lastSeenAt": "2026-10-20T07:39:11.385Z"
   },
   {
     "id": "findscripter/everything-skills/vector-database-engineer",
@@ -1378,7 +741,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当为 RAG/语义检索/推荐做向量库选型与端到端落地，在 Pinecone/Weaviate/Qdrant/Milvus/pgvector 间权衡并设计分块、元数据与扩容时使用；产出选型对照、索引(HNSW/IVF/PQ)与元数据 schema 及上线清单；不适用于嵌入选型评估、纯索引调参或关系型/NoSQL 建模；触发词：向量数据库、Pinecone、Weaviate、Qdrant、Milvus、pgvector、语义检索、RAG、相似度搜索",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 61,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1398,7 +761,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-18T07:16:14.261Z",
-    "lastSeenAt": "2026-10-18T07:16:14.261Z"
+    "lastSeenAt": "2026-10-20T07:39:12.382Z"
   },
   {
     "id": "findscripter/everything-skills/vector-index-tuning",
@@ -1406,7 +769,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当向量检索延迟高、召回不达标或内存占用过大时使用；做 HNSW 参数（M/efConstruction/efSearch）、量化策略与索引类型选型，产出可基准验证的索引配置与监控指标；不适用于嵌入模型选型、检索结果重排或召回链路的语义优化（属 RAG 上层）。触发词：HNSW、量化、召回率",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 61,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1425,7 +788,214 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-18T07:16:14.411Z",
-    "lastSeenAt": "2026-10-18T07:16:14.411Z"
+    "lastSeenAt": "2026-10-20T07:39:12.570Z"
+  },
+  {
+    "id": "findscripter/everything-skills/minimalist-editorial-ui",
+    "name": "minimalist-editorial-ui",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要做 Notion/Linear/Vercel 那类极简、编辑风、文档感的高端前端界面时使用；产出暖色单色系、1px 细边框、bento 网格、克制动效的 HTML/React/Tailwind 设计规范与代码；不适用于已有强品牌色系统、需要鲜艳渐变/重阴影/营销大色块的场景。触发词：极简界面、editorial 风、暖色单色、bento 网格、Notion 风。",
+    "security": "B",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "visual",
+      "editorial",
+      "design",
+      "ui",
+      "design-system",
+      "photo"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/minimalist-editorial-ui/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "visual-communication",
+      "ui-design",
+      "operations-design",
+      "industrial-design"
+    ],
+    "qualityScore": 71,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-18T07:16:14.892Z",
+    "lastSeenAt": "2026-10-20T07:39:13.208Z"
+  },
+  {
+    "id": "findscripter/everything-skills/design-brainstorming",
+    "name": "design-brainstorming",
+    "source": "findscripter/everything-skills",
+    "summary": "当在动手实现前需要把模糊想法转为经过验证的设计/规格时使用；做结构化对话产出\"理解锁定+多方案权衡+增量设计+决策日志\"并落盘为文档；不适用于已明确需求只待编码、或纯执行/调试场景。触发词：头脑风暴、需求澄清、设计方案、技术选型、写设计文档",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "research",
+      "ui"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/00-meta/design-brainstorming/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "experience-design",
+      "ui-design",
+      "operations-design"
+    ],
+    "qualityScore": 75,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:38.417Z",
+    "lastSeenAt": "2026-10-20T07:39:14.040Z"
+  },
+  {
+    "id": "findscripter/everything-skills/erd-schema-designer",
+    "name": "erd-schema-designer",
+    "source": "findscripter/everything-skills",
+    "summary": "当从需求出发设计关系型数据库 schema、画 ERD、做范式化与表关系/约束/索引规划，或为多租户加隔离与软删除/审计字段时使用；产出实体关系模型（Mermaid ERD）、规范化表结构、关系与约束、索引与 RLS 策略草案；不适用于编写业务查询 SQL、本地 CSV 清洗、ORM/迁移工具具体语法调试；触发词：ERD、实体关系图、数据库设计、表结构设计、范式、normalization、schema design、多租户、软删除、索引策略、RLS",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "diagram",
+      "map",
+      "ui"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/03-data/erd-schema-designer/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "architecture-design",
+      "ui-design",
+      "industrial-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:40.092Z",
+    "lastSeenAt": "2026-10-20T07:39:15.739Z"
+  },
+  {
+    "id": "findscripter/everything-skills/campaign-attribution-analytics",
+    "name": "campaign-attribution-analytics",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要评估营销活动表现、判定渠道贡献或核算投放回报时使用；用三个零依赖 Python CLI 对 JSON 数据做多触点归因、漏斗转化与 ROI/ROAS/CPA 核算并产出可读或 JSON 报告；不适用于实时数据接入、统计显著性检验或跨设备身份打通。触发词：归因模型、营销 ROI、漏斗转化",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "campaign",
+      "media",
+      "interaction",
+      "ui"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/campaign-attribution-analytics/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "digital-media-film",
+      "ui-design",
+      "operations-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:41.879Z",
+    "lastSeenAt": "2026-10-20T07:39:17.538Z"
+  },
+  {
+    "id": "findscripter/everything-skills/marketing-campaign-brief",
+    "name": "marketing-campaign-brief",
+    "source": "findscripter/everything-skills",
+    "summary": "当需要把营销目标（产品发布/线索获取/品牌造势/留存召回）转化为一份完整、可执行的活动方案 brief 时使用；做：按「目标·受众·讯息·渠道·度量」五要素框架，产出含活动概述、受众画像、核心讯息、渠道策略、逐周内容日历（含依赖）、内容物料清单、KPI、预算分配、风险与下一步的结构化 brief；不适用于撰写单篇文案/广告创意、纯渠道执行投放或定价方案设计；触发词：营销活动、campaign、活动方案、内容日历、渠道策略、GTM、线索获取",
+    "security": "A",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "campaign",
+      "product"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/05-business/marketing-campaign-brief/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "operations-design",
+      "industrial-design",
+      "experience-design"
+    ],
+    "qualityScore": 67,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:42.474Z",
+    "lastSeenAt": "2026-10-20T07:39:18.106Z"
+  },
+  {
+    "id": "findscripter/everything-skills/photopea-embedded-editor",
+    "name": "photopea-embedded-editor",
+    "source": "findscripter/everything-skills",
+    "summary": "当你要在网页/Web 应用里内嵌 Photopea 作图像编辑器、用宿主页 JS 远程驱动它（打开文件、跑脚本、改图层/文字、导出 PNG/JPG/WebP/PSD）时使用；做法是用 photopea.js 包装器 createEmbed + runScript 调用 Photoshop 兼容脚本 API，产出可运行的嵌入代码与编辑/导出流程；不适用于服务端无头批处理、桌面版 Photoshop 自动化或不嵌 Photopea 的纯前端画图；触发词：Photopea、photopea.js、嵌入图像编辑器、runScript、saveToOE、PSD、图层脚本",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 5,
+    "tags": [
+      "design",
+      "color",
+      "photo",
+      "ui"
+    ],
+    "installUrl": "https://github.com/findscripter/everything-skills",
+    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/photopea-embedded-editor/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "fashion-design",
+      "operations-design",
+      "ui-design",
+      "folk-art"
+    ],
+    "qualityScore": 79,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-17T07:00:44.340Z",
+    "lastSeenAt": "2026-10-20T07:39:19.616Z"
+  },
+  {
+    "id": "8gi-foundation/8gent-code/design-excellence",
+    "name": "design-excellence",
+    "source": "8gi-foundation/8gent-code",
+    "summary": "8gent's design philosophy and system. Apply when building any UI — TUI, web, or artifact. Design is intentional structure, not decoration.",
+    "security": "C",
+    "signalScore": 61,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "design",
+      "ui",
+      "layout",
+      "typography",
+      "interaction",
+      "accessibility",
+      "visual",
+      "brand",
+      "color"
+    ],
+    "installUrl": "https://github.com/8gi-foundation/8gent-code",
+    "skillsUrl": "https://github.com/8gi-foundation/8gent-code/blob/main/packages/skills/design-excellence/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "ui-design",
+      "visual-communication",
+      "operations-design",
+      "fashion-design"
+    ],
+    "qualityScore": 73,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-20T07:39:23.277Z",
+    "lastSeenAt": "2026-10-20T07:39:23.277Z"
   },
   {
     "id": "findscripter/everything-skills/brooks-design-lint",
@@ -1433,7 +1003,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要超越 linter 的架构与设计层审查（重构前、新模块设计评审、接手陌生代码、\"能跑但感觉不对\"的代码）时使用；以 12 本经典软工书籍为视角，产出按书籍/严重度分级的设计坏味、耦合、稳定性与数据一致性问题清单及改进建议；不适用于语法/风格 lint、纯逻辑 bug 排查、安全专项扫描，也不替代人工设计评审；触发词：设计审查、架构评审、重构前体检、代码坏味、耦合分析、Brooks Lint",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 60,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1452,7 +1022,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:39.008Z",
-    "lastSeenAt": "2026-10-18T07:16:16.137Z"
+    "lastSeenAt": "2026-10-20T07:39:14.641Z"
   },
   {
     "id": "findscripter/everything-skills/database-design-advisor",
@@ -1460,7 +1030,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要做数据库选型（SQL/NoSQL）、设计 Schema、规划零停机迁移、优化索引与慢查询、设计分库分表与复制时使用；产出建模方案、迁移脚本（up/down）、索引与查询优化建议、选型决策矩阵；不适用于具体业务 SQL 调试代写、ORM 框架细节、运维集群部署。触发词：数据库设计、Schema、选型、迁移、索引、分库分表、慢查询",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 60,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1479,7 +1049,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:39.194Z",
-    "lastSeenAt": "2026-10-18T07:16:16.311Z"
+    "lastSeenAt": "2026-10-20T07:39:14.814Z"
   },
   {
     "id": "findscripter/everything-skills/ddd-strategic-design",
@@ -1487,7 +1057,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当为复杂业务域划分边界、拆分单体或对齐团队归属时使用；做子域分类、限界上下文目录、统一语言词汇表与边界决策（ADR）等战略设计产物；不适用于已稳定且边界清晰的模型、纯战术编码、或纯基础设施/UI 任务；触发词：限界上下文、子域划分、统一语言",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 60,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1507,7 +1077,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:39.360Z",
-    "lastSeenAt": "2026-10-18T07:16:16.460Z"
+    "lastSeenAt": "2026-10-20T07:39:14.986Z"
   },
   {
     "id": "findscripter/everything-skills/content-emotional-arc-design",
@@ -1515,7 +1085,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当落地页/广告/邮件序列/销售文档/产品流需要受众从入场情绪走向行动情绪时使用；做受控情绪弧线设计（诊断入场情绪、定义出场情绪、铺设过渡路径、安放峰值、收束出口），产出可执行的逐节情绪序列；不适用于无明确行动目标或入/出场情绪不清的场景。触发词：情绪弧线、情绪曲线、情绪序列",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 60,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1534,7 +1104,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:42.068Z",
-    "lastSeenAt": "2026-10-18T07:16:18.623Z"
+    "lastSeenAt": "2026-10-20T07:39:17.706Z"
   },
   {
     "id": "findscripter/everything-skills/referral-program-designer",
@@ -1542,7 +1112,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要设计、优化或评估推荐（referral）、联盟（affiliate）或口碑裂变计划时使用；产出推荐闭环、激励结构、A/B 测试方案、上线清单与衡量指标；不适用于一次性发布期病毒传播、广告投放或纯付费获客。触发词：推荐计划、转介绍、推荐有礼、联盟营销、affiliate、ambassador、口碑、viral loop、推荐返利、合伙人计划、referral incentive、affiliate payout",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 60,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1561,7 +1131,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:42.688Z",
-    "lastSeenAt": "2026-10-18T07:16:19.060Z"
+    "lastSeenAt": "2026-10-20T07:39:18.317Z"
   },
   {
     "id": "findscripter/everything-skills/design-spells-microinteractions",
@@ -1569,7 +1139,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当为已完成功能做最后打磨、想把\"功能性/平庸\"界面提升为\"有惊喜感/高级感\"时使用；做法是定位界面中无聊的标准组件，借鉴优秀微交互模式并适配品牌后用 CSS/Anime.js/Framer Motion 实现 60fps+ 的精致交互细节；不适用于核心功能尚未跑通、性能/可访问性优先、或微交互会妨碍可用性的场景。触发词：微交互、悬停动效、彩蛋。",
     "security": "B",
-    "signalScore": 59,
+    "signalScore": 60,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1591,36 +1161,7 @@
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:43.689Z",
-    "lastSeenAt": "2026-10-18T07:16:20.833Z"
-  },
-  {
-    "id": "findscripter/everything-skills/photopea-embedded-editor",
-    "name": "photopea-embedded-editor",
-    "source": "findscripter/everything-skills",
-    "summary": "当你要在网页/Web 应用里内嵌 Photopea 作图像编辑器、用宿主页 JS 远程驱动它（打开文件、跑脚本、改图层/文字、导出 PNG/JPG/WebP/PSD）时使用；做法是用 photopea.js 包装器 createEmbed + runScript 调用 Photoshop 兼容脚本 API，产出可运行的嵌入代码与编辑/导出流程；不适用于服务端无头批处理、桌面版 Photoshop 自动化或不嵌 Photopea 的纯前端画图；触发词：Photopea、photopea.js、嵌入图像编辑器、runScript、saveToOE、PSD、图层脚本",
-    "security": "C",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 5,
-    "tags": [
-      "design",
-      "color",
-      "photo",
-      "ui"
-    ],
-    "installUrl": "https://github.com/findscripter/everything-skills",
-    "skillsUrl": "https://github.com/findscripter/everything-skills/blob/main/06-creative/photopea-embedded-editor/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "fashion-design",
-      "operations-design",
-      "ui-design",
-      "folk-art"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-17T07:00:44.340Z",
-    "lastSeenAt": "2026-10-18T07:16:21.120Z"
+    "lastSeenAt": "2026-10-20T07:39:19.254Z"
   },
   {
     "id": "findscripter/everything-skills/interview-system-designer",
@@ -1628,7 +1169,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要为某岗位/职级设计结构化面试流程、统一评分口径、生成胜任力题库、或事后校准面试官打分偏差时使用；做按职级编排面试轮次与时长、产出胜任力题库与 1-4 评分量规、设计评分卡与去偏检查清单、并用历史打分数据做偏差/校准分析（产出面试 loop 计划、题库、评分卡模板、校准报告）；不适用于具体招聘渠道运营、ATS 系统对接执行、薪酬谈判或属地劳动法合规裁决；触发词：面试流程、面试 loop、面试轮次、胜任力矩阵、评分量规、评分卡、题库、面试官校准、招聘偏差、去偏、structured interview、scorecard、debrief",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 60,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1647,7 +1188,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:45.254Z",
-    "lastSeenAt": "2026-10-18T07:16:21.877Z"
+    "lastSeenAt": "2026-10-20T07:39:20.597Z"
   },
   {
     "id": "findscripter/everything-skills/kicad-design-reviewer",
@@ -1655,7 +1196,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要审查 KiCad 工程或 PDF 原理图（原理图/PCB/Gerber/网表/BOM）、查电路 bug、追踪网络、做投产前 DRC/ERC/DFM/电源树/EMC/热评估时使用；做法是先跑分析脚本产出结构化 JSON，再对照原始文件与数据手册逐项核验，产出带置信度与证据来源的审查报告；不适用于绘制/修改原理图或自动布线、SPICE 引擎本身实现、采购下单。触发词：KiCad、电路设计审查、PCB review、原理图分析、schematic、design review、DRC、ERC、DFM、Gerber、BOM、网络追踪、电源树、投产前检查、check my board、review before fab",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 60,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1676,7 +1217,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:45.418Z",
-    "lastSeenAt": "2026-10-18T07:16:22.022Z"
+    "lastSeenAt": "2026-10-20T07:39:20.811Z"
   },
   {
     "id": "findscripter/everything-skills/research-experiment-designer",
@@ -1684,7 +1225,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要把模糊研究想法转成严谨可复现实验计划（设计 ablation、选 baseline、定评估指标）时使用；做的事是按「假设→变量→指标→Baseline→Ablation→算力预算」六步产出结构化实验计划文档；不适用于已有计划只需跑代码、统计分析或论文写作。触发词：实验设计、experiment design、ablation、消融、baseline、基线、跑什么实验、evaluation metric、评估指标、如何验证方法、可复现",
     "security": "A",
-    "signalScore": 59,
+    "signalScore": 60,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -1704,483 +1245,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:45.601Z",
-    "lastSeenAt": "2026-10-18T07:16:22.173Z"
-  },
-  {
-    "id": "SpiralCloudOmega/DevTeam6/loudness-metering",
-    "name": "loudness-metering",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "EBU R128 / ITU-R BS.1770-4 loudness metering, K-weighting, gating, true peak, LRA, and streaming targets for REVITHION STUDIO.",
-    "security": "A",
-    "signalScore": 59,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "product",
-      "cad",
-      "art",
-      "vector",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/loudness-metering/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "industrial-design",
-      "experience-design",
-      "folk-art",
-      "visual-communication"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:23.137Z",
-    "lastSeenAt": "2026-10-18T07:16:23.137Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/ask",
-    "name": "ask",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Alias for walk - go through what waits on the owner, one decision at a time",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/ask/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:07.756Z",
-    "lastSeenAt": "2026-10-18T07:16:07.756Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/check",
-    "name": "check",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Run the pre-merge quality chain on this branch - code review, then simplify, then verify",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/check/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:07.901Z",
-    "lastSeenAt": "2026-10-18T07:16:07.901Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/cleanup-worktrees",
-    "name": "cleanup-worktrees",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Bulk-clean stale worktrees, their merged local and GitHub branches, stale worktree metadata, and empty leftover folders - safely, from the primary main checkout",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/cleanup-worktrees/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:08.067Z",
-    "lastSeenAt": "2026-10-18T07:16:08.067Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/cloud-delegate",
-    "name": "cloud-delegate",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Route NoaCG implementation, review, verification and bounded unattended work to provider-native cloud workers; reconcile uncertain submissions and recovery ownership while keeping device/private local work local.",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing",
-      "environment"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/cloud-delegate/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "environmental-design",
-      "architecture-design",
-      "ui-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:08.213Z",
-    "lastSeenAt": "2026-10-18T07:16:08.213Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/handoff",
-    "name": "handoff",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "End-of-session handoff for NoaCG Studio - what should be done next, and whether this chat is safe to archive",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/handoff/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:08.352Z",
-    "lastSeenAt": "2026-10-18T07:16:08.352Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/n",
-    "name": "n",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Alias for next - plan what to do next in this session (options to choose from, or an honest \"nothing left\")",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/n/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:08.492Z",
-    "lastSeenAt": "2026-10-18T07:16:08.492Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/next",
-    "name": "next",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Plan what to do next in this session - concrete options to choose from, or an honest \"nothing left\"",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/next/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:08.676Z",
-    "lastSeenAt": "2026-10-18T07:16:08.677Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/noacg-graphic-local",
-    "name": "noacg-graphic-local",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Run the NoaCG graphic-making loop INSIDE this repository, against this checkout's own dev server and locally built CLI, to dogfood the product skill. Use when a session in the NoaCG Studio repo is making or fixing a graphic to test the skill, the CLI or the contract itself. For making a graphic against noacg.studio, th",
-    "security": "B",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing",
-      "product"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/noacg-graphic-local/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "industrial-design",
-      "experience-design"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:08.838Z",
-    "lastSeenAt": "2026-10-18T07:16:08.838Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/noacg-product-brief",
-    "name": "noacg-product-brief",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Report NoaCG users, product health, feedback and graphics-harness model candidates",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing",
-      "product"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/noacg-product-brief/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "operations-design",
-      "industrial-design",
-      "experience-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:08.996Z",
-    "lastSeenAt": "2026-10-18T07:16:08.996Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/now",
-    "name": "now",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "What is running and what landed - the job queue, open pull requests, recent landings and main's CI",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/now/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:09.158Z",
-    "lastSeenAt": "2026-10-18T07:16:09.158Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/o",
-    "name": "o",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Alias for orchestrator - run a wave of autonomous work through a time window - the prompt's work, then the backlog in GOALS rank, each row landed through the merge queue, with a short report",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/o/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:09.313Z",
-    "lastSeenAt": "2026-10-18T07:16:09.313Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/orchestrator-week",
-    "name": "orchestrator-week",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "The weekly owner session - the week's plan and the at-most-three questions that need him",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/orchestrator-week/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:09.642Z",
-    "lastSeenAt": "2026-10-18T07:16:09.642Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/queue-merge",
-    "name": "queue-merge",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Declare this work finished and queue the branch for landing - the queue merges it when its turn comes",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/queue-merge/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:10.077Z",
-    "lastSeenAt": "2026-10-18T07:16:10.078Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/so",
-    "name": "so",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Independent second opinion on another session's plan, implementation, benchmark, or decision - read-only, run from a fresh session",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/so/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:10.239Z",
-    "lastSeenAt": "2026-10-18T07:16:10.239Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/start",
-    "name": "start",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Open a session with no task yet, then say \"Ready.\"",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing",
-      "art"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/start/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "folk-art",
-      "ui-design",
-      "visual-communication"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:10.610Z",
-    "lastSeenAt": "2026-10-18T07:16:10.610Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/verify",
-    "name": "verify",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Prove the change does what it should - acceptance criteria, proportional checks, evidence",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/verify/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:10.790Z",
-    "lastSeenAt": "2026-10-18T07:16:10.790Z"
-  },
-  {
-    "id": "NoaCG/NoaCG-Studio/walk",
-    "name": "walk",
-    "source": "NoaCG/NoaCG-Studio",
-    "summary": "Go through what waits on the owner - the open needs-owner issues, one at a time",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 7,
-    "tags": [
-      "editing"
-    ],
-    "installUrl": "https://github.com/NoaCG/NoaCG-Studio",
-    "skillsUrl": "https://github.com/NoaCG/NoaCG-Studio/blob/main/.agents/skills/walk/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "ui-design",
-      "visual-communication",
-      "operations-design"
-    ],
-    "qualityScore": 67,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:10.932Z",
-    "lastSeenAt": "2026-10-18T07:16:10.932Z"
+    "lastSeenAt": "2026-10-20T07:39:20.982Z"
   },
   {
     "id": "findscripter/everything-skills/design-critique",
@@ -2188,7 +1253,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要对界面/原型/视觉稿做结构化设计评审时使用；按可用性·层级·一致性·无障碍多维度产出带严重度分级和优先级建议的评审报告；不适用于纯代码实现、文案校对或无设计稿的需求讨论。触发词：评审这个设计、critique mockup、Figma 链接反馈",
     "security": "C",
-    "signalScore": 58,
+    "signalScore": 59,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2212,120 +1277,67 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:43.371Z",
-    "lastSeenAt": "2026-10-18T07:16:20.525Z"
+    "lastSeenAt": "2026-10-20T07:39:18.872Z"
   },
   {
-    "id": "SpiralCloudOmega/DevTeam6/automation",
-    "name": "daw-automation-system",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "DAW automation engine for REVITHION STUDIO — modes, curves, parameter binding, thinning, and punch logic in C++/JUCE.",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "product",
-      "art",
-      "vector",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/automation/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "industrial-design",
-      "experience-design",
-      "folk-art",
-      "arts-crafts"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:22.978Z",
-    "lastSeenAt": "2026-10-18T07:16:22.978Z"
-  },
-  {
-    "id": "SpiralCloudOmega/DevTeam6/mastering-chain",
-    "name": "mastering-chain",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "Professional mastering chain for REVITHION STUDIO — EQ, multiband compression, M/S processing, limiting, dithering, and loudness targeting in C++/JUCE.",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "product",
-      "vector",
-      "pattern"
-    ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/mastering-chain/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "industrial-design",
-      "experience-design",
-      "arts-crafts",
-      "folk-art"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:23.278Z",
-    "lastSeenAt": "2026-10-18T07:16:23.278Z"
-  },
-  {
-    "id": "SpiralCloudOmega/DevTeam6/midi-system",
-    "name": "midi-system",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "MIDI engine for REVITHION STUDIO — messages, clock, sync, MPE, MIDI 2.0, recording, quantization, humanization via JUCE C++.",
-    "security": "A",
-    "signalScore": 58,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "product",
-      "operations"
-    ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/music-production/midi-system/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "industrial-design",
-      "experience-design",
-      "operations-design",
-      "ui-design"
-    ],
-    "qualityScore": 73,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:23.422Z",
-    "lastSeenAt": "2026-10-18T07:16:23.422Z"
-  },
-  {
-    "id": "liyu1981/sifpress/my-glass-webui-design",
-    "name": "my-glass-webui-design",
-    "source": "liyu1981/sifpress",
-    "summary": "The liquid-glass (Apple-style frosted material) design system practice used in the mindx project. Use when creating or reviewing glass/frosted surfaces — backdrop-filter blur, translucent panels, glass buttons, frosted dropdowns/dialogs/sheets, ambient gradient backgrounds, material shadows, or dark-mode glass — in Tai",
+    "id": "dmmdea/offload-harness/comfyui",
+    "name": "pp-comfyui",
+    "source": "dmmdea/offload-harness",
+    "summary": "Drive a local ComfyUI render server from the shell, with a durable record of every run the server itself forgets. Trigger phrases: `submit a comfyui graph`, `why can't comfyui see my model`, `how long did that render take`, `what made this output file`, `check what this loader accepts`, `use comfyui`, `run comfyui`.",
     "security": "C",
-    "signalScore": 58,
+    "signalScore": 59,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 4,
     "tags": [
-      "design",
-      "ui",
-      "interaction",
-      "color"
+      "video",
+      "editing",
+      "audio",
+      "cad",
+      "rendering"
     ],
-    "installUrl": "https://github.com/liyu1981/sifpress",
-    "skillsUrl": "https://github.com/liyu1981/sifpress/blob/master/.agents/skills/my-glass-webui-design/SKILL.md",
+    "installUrl": "https://github.com/dmmdea/offload-harness",
+    "skillsUrl": "https://github.com/dmmdea/offload-harness/blob/main/tools/comfyui/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "ui-design",
-      "experience-design",
-      "fashion-design",
-      "digital-media-film"
+      "video-design",
+      "industrial-design",
+      "environmental-design",
+      "architecture-design"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:30.431Z",
-    "lastSeenAt": "2026-10-18T07:16:30.431Z"
+    "firstSeenAt": "2026-10-20T07:39:22.322Z",
+    "lastSeenAt": "2026-10-20T07:39:22.323Z"
+  },
+  {
+    "id": "lennystepn-hue/cuttle-ai-screen-recorder/cuttle",
+    "name": "cuttle",
+    "source": "lennystepn-hue/cuttle-ai-screen-recorder",
+    "summary": "Records the screen and turns the take into a polished demo video with the cuttle CLI (cuts, speed-ups, zooms, masks over private data, a framed window on a designed background, captions, motion graphics written in code, music composed for the video, an end card; MP4 in 16:9, 1:1 or 9:16). Use when the user wants to rec",
+    "security": "C",
+    "signalScore": 59,
+    "installs": 0,
+    "repoStars": 2,
+    "tags": [
+      "video",
+      "design",
+      "motion",
+      "product",
+      "rendering"
+    ],
+    "installUrl": "https://github.com/lennystepn-hue/cuttle-ai-screen-recorder",
+    "skillsUrl": "https://github.com/lennystepn-hue/cuttle-ai-screen-recorder/blob/main/skill/cuttle/SKILL.md",
+    "discovery": "github-radar",
+    "domains": [
+      "video-design",
+      "operations-design",
+      "industrial-design",
+      "environmental-design"
+    ],
+    "qualityScore": 81,
+    "maintenanceScore": 100,
+    "firstSeenAt": "2026-10-20T07:39:23.846Z",
+    "lastSeenAt": "2026-10-20T07:39:23.846Z"
   },
   {
     "id": "findscripter/everything-skills/frontend-design",
@@ -2333,7 +1345,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要构建有强烈设计感的前端界面（组件、页面、落地页、仪表盘、海报、Web 应用）并产出可运行代码时使用；做：先定一个大胆且统一的美学方向，再实现排版/配色/动效/布局精雕细琢的生产级前端代码；不适用于纯后端逻辑、数据建模、无视觉诉求的脚本，或仅需中性默认样式的内部工具；触发词：前端设计、做个页面、落地页、landing page、UI、美化界面、React 组件、HTML/CSS、仪表盘、dashboard、网页、海报",
     "security": "C",
-    "signalScore": 57,
+    "signalScore": 58,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2355,7 +1367,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:39.532Z",
-    "lastSeenAt": "2026-10-18T07:16:16.621Z"
+    "lastSeenAt": "2026-10-20T07:39:15.163Z"
   },
   {
     "id": "findscripter/everything-skills/observability-strategy-designer",
@@ -2363,7 +1375,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当为新服务接入可观测性、治理过于嘈杂的告警，或上量前建立 SLO 体系时使用；做指标/日志/追踪三支柱设计，产出 SLI/SLO、错误预算、多窗口燃尽率告警、Grafana 仪表盘与运行手册；不适用于纯业务数据分析或一次性故障排查。触发词：SLO、告警降噪、可观测性",
     "security": "B",
-    "signalScore": 57,
+    "signalScore": 58,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2383,7 +1395,7 @@
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:39.743Z",
-    "lastSeenAt": "2026-10-18T07:16:16.766Z"
+    "lastSeenAt": "2026-10-20T07:39:15.347Z"
   },
   {
     "id": "findscripter/everything-skills/ab-test-designer",
@@ -2391,7 +1403,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当你要规划、设计或落地一次 A/B 测试，或搭建持续的增长实验体系时使用；产出含假设、主/次/护栏指标、样本量与运行计划的可执行实验方案，并用 ICE 排期、统计显著性判定结果；不适用于纯埋点实施、单页 CRO 改稿或无对照组的分析。触发词：A/B 测试、ab test、split test、分流测试、多变量测试、MVT、实验设计、假设检验、统计显著性、样本量、ICE 评分、增长实验、experiment backlog、哪个版本更好。",
     "security": "B",
-    "signalScore": 57,
+    "signalScore": 58,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2410,7 +1422,7 @@
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:41.672Z",
-    "lastSeenAt": "2026-10-18T07:16:18.333Z"
+    "lastSeenAt": "2026-10-20T07:39:17.331Z"
   },
   {
     "id": "findscripter/everything-skills/high-end-visual-design",
@@ -2418,7 +1430,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要产出 Awwwards/代理商级、Apple/Linear 风的高端落地页·作品集·SaaS·产品页界面（高级字体、空间留白、柔光纵深、流体微交互）时使用；做法是先掷\"变体引擎\"选定氛围+布局原型，再用 React/Tailwind 以双层包边、岛屿按钮、自定义缓动与滚动入场动效产出像素级前端代码；不适用于受限仪表盘·受监管产品·低端弱网环境，也不替代品牌策略·转化研究·无障碍与上线 QA。触发词：高端视觉、Awwwards、Apple 风、奢华界面、premium UI",
     "security": "C",
-    "signalScore": 56,
+    "signalScore": 57,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2441,7 +1453,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:44.176Z",
-    "lastSeenAt": "2026-10-18T07:16:14.706Z"
+    "lastSeenAt": "2026-10-20T07:39:12.969Z"
   },
   {
     "id": "findscripter/everything-skills/twilio-communications",
@@ -2449,7 +1461,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要用 Twilio 构建短信、语音、WhatsApp 或手机验证（2FA）功能时使用；产出可直接落地的 Python 发送/接收、Verify 验证、TwiML IVR 与 Webhook 校验代码，覆盖 E.164 校验、退订合规、限流重试与签名验证；不适用于 AI 语音对话生成、邮件群发或非 Twilio 渠道。触发词：Twilio、发短信、语音呼叫、IVR、WhatsApp、手机验证 2FA、TwiML、X-Twilio-Signature",
     "security": "C",
-    "signalScore": 56,
+    "signalScore": 57,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2469,34 +1481,7 @@
     "qualityScore": 71,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-18T07:16:15.205Z",
-    "lastSeenAt": "2026-10-18T07:16:15.205Z"
-  },
-  {
-    "id": "SpiralCloudOmega/DevTeam6/skill-design-patterns",
-    "name": "skill-design-patterns",
-    "source": "SpiralCloudOmega/DevTeam6",
-    "summary": "Universal guide for designing effective AI agent skills — structure, examples, cross-referencing, composition, and testing.",
-    "security": "C",
-    "signalScore": 56,
-    "installs": 0,
-    "repoStars": 1,
-    "tags": [
-      "design",
-      "audio"
-    ],
-    "installUrl": "https://github.com/SpiralCloudOmega/DevTeam6",
-    "skillsUrl": "https://github.com/SpiralCloudOmega/DevTeam6/blob/main/.github/skills/agent-orchestration/skill-design-patterns/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "video-design",
-      "industrial-design",
-      "experience-design",
-      "architecture-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:22.832Z",
-    "lastSeenAt": "2026-10-18T07:16:22.832Z"
+    "lastSeenAt": "2026-10-20T07:39:13.637Z"
   },
   {
     "id": "findscripter/everything-skills/web-component-design",
@@ -2504,7 +1489,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当构建 React/Vue/Svelte 组件库、设计组件 API 或落地前端设计系统时使用；做组合模式选型、CSS-in-JS 方案选择与可复用组件 API 的设计落地；不适用于纯样式微调、单页面一次性 UI 或后端逻辑；触发词：组件库、设计系统、复合组件、组件 API、CSS-in-JS",
     "security": "C",
-    "signalScore": 55,
+    "signalScore": 56,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2524,7 +1509,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:39.927Z",
-    "lastSeenAt": "2026-10-18T07:16:16.909Z"
+    "lastSeenAt": "2026-10-20T07:39:15.569Z"
   },
   {
     "id": "findscripter/everything-skills/agent-workflow-pattern-designer",
@@ -2532,7 +1517,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要为多步骤 LLM 任务选型多智能体编排模式、定义交接契约或重构存在上下文膨胀/交接不可靠的工作流时使用；做模式选型（顺序/并行/路由/编排/评估）+ 用脚手架生成 JSON 骨架 + 补齐交接契约、重试超时与质量门，产出可落地的工作流配置；不适用于单条结构化提示即可解决的简单任务；触发词：多智能体、工作流编排、交接契约",
     "security": "C",
-    "signalScore": 54,
+    "signalScore": 56,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2552,7 +1537,7 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:40.954Z",
-    "lastSeenAt": "2026-10-18T07:16:17.699Z"
+    "lastSeenAt": "2026-10-20T07:39:16.505Z"
   },
   {
     "id": "findscripter/everything-skills/multi-agent-workflow-designer",
@@ -2560,7 +1545,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当设计多步骤 Agent 流水线、在单 Agent 与多 Agent 之间抉择、或重构受上下文膨胀/交接不可靠困扰的 LLM 工作流时使用；做选定编排模式（顺序/并行/路由/编排器/评估器）、用脚手架脚本生成 JSON 骨架配置、定义交接契约与重试/超时/预算护栏，产出可落地的工作流蓝图；不适用于单条良构提示词即可解决的简单任务。触发词：多智能体工作流、Agent 编排、交接契约",
     "security": "C",
-    "signalScore": 54,
+    "signalScore": 56,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2580,91 +1565,35 @@
     "qualityScore": 81,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:41.299Z",
-    "lastSeenAt": "2026-10-18T07:16:18.008Z"
+    "lastSeenAt": "2026-10-20T07:39:16.930Z"
   },
   {
-    "id": "Prasanth595/ECC/api-design",
-    "name": "api-design",
-    "source": "Prasanth595/ECC",
-    "summary": "REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs. Use when designing or reviewing REST endpoints, resource names, status codes, pagination, or versioning.",
+    "id": "dmmdea/offload-harness/llamaswap",
+    "name": "pp-llamaswap",
+    "source": "dmmdea/offload-harness",
+    "summary": "The llama-swap operations console — durable history, drain-aware control, and measurement commands with three specific guarantees: keep-set unloads are refused statically by id AND alias (never from server ttl), `--drain` fails closed when slot state is unreadable, and fit/ctx refuse to answer inside their uncertainty ",
     "security": "C",
-    "signalScore": 54,
+    "signalScore": 56,
     "installs": 0,
-    "repoStars": 0,
+    "repoStars": 4,
     "tags": [
-      "design",
-      "ui",
-      "product"
+      "video",
+      "editing",
+      "operations"
     ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/.agents/skills/api-design/SKILL.md",
+    "installUrl": "https://github.com/dmmdea/offload-harness",
+    "skillsUrl": "https://github.com/dmmdea/offload-harness/blob/main/tools/llamaswap/SKILL.md",
     "discovery": "github-radar",
     "domains": [
-      "ui-design",
+      "video-design",
       "operations-design",
-      "industrial-design",
-      "experience-design"
+      "digital-media-film",
+      "ui-design"
     ],
     "qualityScore": 81,
     "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:24.049Z",
-    "lastSeenAt": "2026-10-18T07:16:24.049Z"
-  },
-  {
-    "id": "Prasanth595/ECC/project-guidelines-example",
-    "name": "project-guidelines-example",
-    "source": "Prasanth595/ECC",
-    "summary": "Project-specific skill template covering architecture, patterns, testing, and deployment guidance.",
-    "security": "C",
-    "signalScore": 54,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "ui",
-      "layout",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/docs/ja-JP/skills/project-guidelines-example/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "environmental-design",
-      "architecture-design",
-      "visual-communication"
-    ],
-    "qualityScore": 79,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:25.824Z",
-    "lastSeenAt": "2026-10-18T07:16:25.824Z"
-  },
-  {
-    "id": "Prasanth595/ECC/loop-design-check",
-    "name": "loop-design-check",
-    "source": "Prasanth595/ECC",
-    "summary": "Design a goal-oriented agent loop or review one for failure modes: spinning, Goodhart-gaming the verifier, or running a wrong answer to completion. Covers machine-decidable goals, loop types, plan/build/judge skeletons, and runaway prevention; mechanism wiring lives in autonomous-loops. Use when designing, writing, or ",
-    "security": "C",
-    "signalScore": 54,
-    "installs": 0,
-    "repoStars": 0,
-    "tags": [
-      "design",
-      "ui",
-      "architecture"
-    ],
-    "installUrl": "https://github.com/Prasanth595/ECC",
-    "skillsUrl": "https://github.com/Prasanth595/ECC/blob/affaan/integrate-reviewed-backlog-20260928/skills/loop-design-check/SKILL.md",
-    "discovery": "github-radar",
-    "domains": [
-      "ui-design",
-      "environmental-design",
-      "architecture-design",
-      "operations-design"
-    ],
-    "qualityScore": 81,
-    "maintenanceScore": 100,
-    "firstSeenAt": "2026-10-18T07:16:29.361Z",
-    "lastSeenAt": "2026-10-18T07:16:29.361Z"
+    "firstSeenAt": "2026-10-20T07:39:22.506Z",
+    "lastSeenAt": "2026-10-20T07:39:22.506Z"
   },
   {
     "id": "findscripter/everything-skills/agent-tool-design-patterns",
@@ -2672,7 +1601,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当为 Agent 系统设计/重构工具集、排查工具误用或优化既有工具时使用；产出无歧义的工具描述、整合后的工具清单与可恢复的错误信息；不适用于给人类开发者写的普通 API 文档、与 Agent 无关的接口设计；触发词：工具设计、tool design、MCP、工具整合、错误信息",
     "security": "C",
-    "signalScore": 53,
+    "signalScore": 54,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2691,7 +1620,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:40.612Z",
-    "lastSeenAt": "2026-10-18T07:16:17.378Z"
+    "lastSeenAt": "2026-10-20T07:39:16.098Z"
   },
   {
     "id": "findscripter/everything-skills/agent-tool-design",
@@ -2699,7 +1628,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当为 Agent 系统设计/重构工具、排查工具被误用或漏选、精简工具集时使用；做出无歧义的工具契约（描述-触发-参数-返回-错误）、按合并原则整合工具、必要时做架构精简，产出可被模型可靠调用的工具集；不适用于给人类调用的普通 API 设计、单纯写提示词或业务代码实现；触发词：工具设计、tool design、function calling、工具描述、MCP、合并原则、工具太多。",
     "security": "C",
-    "signalScore": 53,
+    "signalScore": 54,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2718,7 +1647,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:40.785Z",
-    "lastSeenAt": "2026-10-18T07:16:17.540Z"
+    "lastSeenAt": "2026-10-20T07:39:16.322Z"
   },
   {
     "id": "findscripter/everything-skills/multi-agent-system-designer",
@@ -2726,7 +1655,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要设计多智能体系统、选择编排架构、定义智能体角色/通信/护栏与评估时使用；做架构选型并产出角色规约、通信协议、安全护栏与评估指标的设计方案；不适用于单次提示词调优、单 Agent 实现细节或具体框架代码落地；触发词：多智能体、agent 架构、编排、supervisor/swarm",
     "security": "C",
-    "signalScore": 53,
+    "signalScore": 54,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2746,7 +1675,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:41.139Z",
-    "lastSeenAt": "2026-10-18T07:16:17.847Z"
+    "lastSeenAt": "2026-10-20T07:39:16.691Z"
   },
   {
     "id": "findscripter/everything-skills/prompt-template-designer",
@@ -2754,7 +1683,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要为某任务设计稳定可复用的提示词模板（含角色/约束/示例/输出格式）并迭代优化时使用；触发词：写提示词、prompt 模板、提示工程、few-shot、输出格式。",
     "security": "C",
-    "signalScore": 53,
+    "signalScore": 54,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2773,7 +1702,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:41.503Z",
-    "lastSeenAt": "2026-10-18T07:16:18.148Z"
+    "lastSeenAt": "2026-10-20T07:39:17.102Z"
   },
   {
     "id": "findscripter/everything-skills/ai-native-cli-design",
@@ -2781,7 +1710,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当设计/改造供 AI 智能体调用的命令行工具时使用；按 core/recommended/ecosystem 三层产出 JSON 优先、可校验的 CLI 契约（默认 JSON、结构化错误、退出码、护栏、agent/ 目录与自描述）；不适用于纯人类交互 CLI、GUI 或库 API 设计；触发词：agent CLI、AI 友好命令行、CLI JSON 输出、退出码规范、agent/ 目录",
     "security": "C",
-    "signalScore": 53,
+    "signalScore": 54,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2800,7 +1729,7 @@
     "qualityScore": 75,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:45.780Z",
-    "lastSeenAt": "2026-10-18T07:16:22.326Z"
+    "lastSeenAt": "2026-10-20T07:39:21.174Z"
   },
   {
     "id": "findscripter/everything-skills/api-design-principles",
@@ -2808,7 +1737,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当设计/评审 REST 或 GraphQL API、定接口规范、在范式间迁移时使用；做出资源命名、HTTP 语义、分页、版本化、错误格式、Schema 与 N+1 优化的可落地规范与方案；不适用于具体业务代码实现、框架运维部署、接口安全渗透测试；触发词：API 设计、REST、GraphQL、接口规范、endpoint、分页、版本化、HATEOAS、DataLoader、schema design",
     "security": "C",
-    "signalScore": 52,
+    "signalScore": 53,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2827,7 +1756,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:38.619Z",
-    "lastSeenAt": "2026-10-18T07:16:15.806Z"
+    "lastSeenAt": "2026-10-20T07:39:14.275Z"
   },
   {
     "id": "findscripter/everything-skills/api-design-reviewer",
@@ -2835,7 +1764,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当评审新增/改动 API 端点的 PR、为 v2 迁移审计现有 API 或为团队制定 API 规范时使用；做 REST 约定 lint、破坏性变更检测与设计评分，产出问题清单与改进建议；不适用于 GraphQL/gRPC 接口设计、纯实现编码或后端性能压测；触发词：API 设计评审、api review、REST 规范、breaking change、破坏性变更、OpenAPI lint、接口评审、versioning",
     "security": "C",
-    "signalScore": 52,
+    "signalScore": 53,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2854,7 +1783,7 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-17T07:00:38.822Z",
-    "lastSeenAt": "2026-10-18T07:16:15.978Z"
+    "lastSeenAt": "2026-10-20T07:39:14.466Z"
   },
   {
     "id": "findscripter/everything-skills/vexor-vector-cli-setup",
@@ -2862,7 +1791,7 @@
     "source": "findscripter/everything-skills",
     "summary": "当需要按语义（而非关键词/正则）在文件与代码库中检索内容、或为 Claude/Codex 智能体接入语义文件搜索能力时使用；用 vexor CLI 安装、配置嵌入与重排提供方、建立可复用索引并执行语义搜索，产出带相似度分数的结果与 agent skill 集成；不适用于纯字面/正则匹配（用 grep/ripgrep）、无嵌入 API Key 或本地模型时；触发词：语义搜索文件、vexor、向量检索代码、embedding 文件搜索、自然语言找文件",
     "security": "C",
-    "signalScore": 51,
+    "signalScore": 52,
     "installs": 0,
     "repoStars": 5,
     "tags": [
@@ -2882,6 +1811,6 @@
     "qualityScore": 67,
     "maintenanceScore": 100,
     "firstSeenAt": "2026-10-18T07:16:15.404Z",
-    "lastSeenAt": "2026-10-18T07:16:15.405Z"
+    "lastSeenAt": "2026-10-20T07:39:13.824Z"
   }
 ]

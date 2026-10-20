@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-18T07:19:49.991Z",
+  "generatedAt": "2026-10-20T07:43:10.145Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 50,
-  "passRate": 0.926,
+  "passed": 49,
+  "passRate": 0.907,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 40,
-    "passRate": 0.909
+    "passed": 39,
+    "passRate": 0.886
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 3,
+  "specificityFailures": 4,
   "capabilityGapCases": 35,
-  "averageRecommendationCount": 1.83,
-  "averageRelevantTop3": 1.83,
-  "averageTop1Score": 76.3,
+  "averageRecommendationCount": 1.8,
+  "averageRelevantTop3": 1.8,
+  "averageTop1Score": 75,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 131,
-  "anchorSignalHitsTotal": 31,
+  "signalHitsTotal": 128,
+  "anchorSignalHitsTotal": 30,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -36,7 +36,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 1.67
+      "averageRecommendationCount": 1.83
     },
     "Frontend": {
       "cases": 8,
@@ -54,9 +54,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 0,
+      "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 3
+      "averageRecommendationCount": 2.8
     },
     "Data & Database": {
       "cases": 5,
@@ -74,7 +74,7 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 1,
-      "capabilityGapCases": 5,
+      "capabilityGapCases": 4,
       "passRate": 0.8,
       "averageRecommendationCount": 1.4
     },
@@ -110,13 +110,13 @@
     },
     "Mobile": {
       "cases": 4,
-      "passed": 3,
+      "passed": 2,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 1,
+      "specificityFailures": 2,
       "capabilityGapCases": 1,
-      "passRate": 0.75,
-      "averageRecommendationCount": 2.75
+      "passRate": 0.5,
+      "averageRecommendationCount": 2.25
     },
     "Automation & Integrations": {
       "cases": 4,
@@ -511,13 +511,13 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "SpiralCloudOmega/DevTeam6/spatial-audio",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering"
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 81,
+      "top1_score": 80,
       "expected_hits": 0,
       "signal_hits": 4,
       "anchor_signal_hits": 0,
@@ -528,22 +528,6 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "SpiralCloudOmega/DevTeam6/spatial-audio",
-          "score": 81,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "architecture",
-            "rendering",
-            "spatial"
-          ]
-        },
         {
           "id": "curiositech/some_claude_skills/interior-design-expert",
           "score": 80,
@@ -575,19 +559,35 @@
             "rendering",
             "interior"
           ]
+        },
+        {
+          "id": "calesthio/generative-media-skills/neural-reality-capture",
+          "score": 77,
+          "coverage": 0.75,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "architecture",
+            "interior",
+            "spatial"
+          ]
         }
       ],
       "signals": [
         "architecture",
-        "rendering",
-        "spatial",
-        "spiralcloudomega-devteam6-spatial-audio",
-        "spatial-audio",
         "interior",
+        "spatial",
         "curiositech-some-claude-skills-interior-design-expert",
         "interior-design-expert",
+        "rendering",
         "roble3-cc-blender-skill-blender-rendering",
-        "blender-rendering"
+        "blender-rendering",
+        "calesthio-generative-media-skills-neural-reality-capture",
+        "neural-reality-capture"
       ]
     },
     {
@@ -911,9 +911,10 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "ai-sdk"
+        "ai-sdk",
+        "nexu-io/open-design/clinical-case-report-638ff1"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 74,
       "expected_hits": 1,
@@ -922,7 +923,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -942,6 +943,21 @@
             "outputs",
             "streaming"
           ]
+        },
+        {
+          "id": "nexu-io/open-design/clinical-case-report-638ff1",
+          "score": 47,
+          "coverage": 0.32,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "generate",
+            "structured"
+          ]
         }
       ],
       "signals": [
@@ -949,7 +965,10 @@
         "ai",
         "outputs",
         "streaming",
-        "ai-sdk"
+        "ai-sdk",
+        "generate",
+        "nexu-io-open-design-clinical-case-report-638ff1",
+        "clinical-case-report"
       ]
     },
     {
@@ -2068,18 +2087,19 @@
       "pass": true,
       "top3": [
         "github",
+        "daymade/claude-code-skills/auto-repo-setup-52a8ca",
         "callstackincubator/agent-skills/github-actions-53c661"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 78,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2088,6 +2108,23 @@
           "score": 78,
           "coverage": 0.64,
           "expected": true,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "github",
+            "ci",
+            "workflow",
+            "repository"
+          ]
+        },
+        {
+          "id": "daymade/claude-code-skills/auto-repo-setup-52a8ca",
+          "score": 71,
+          "coverage": 0.64,
+          "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
           "required_hits": 2,
@@ -2122,6 +2159,8 @@
         "ci",
         "workflow",
         "repository",
+        "daymade-claude-code-skills-auto-repo-setup-52a8ca",
+        "auto-repo-setup",
         "callstackincubator-agent-skills-github-actions-53c661",
         "github-actions"
       ]
@@ -2132,10 +2171,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "workers-best-practices",
-        "NoaCG/NoaCG-Studio/cloud-delegate"
+        "workers-best-practices"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 88,
       "expected_hits": 1,
@@ -2144,7 +2182,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2164,22 +2202,6 @@
             "edge",
             "deployment"
           ]
-        },
-        {
-          "id": "NoaCG/NoaCG-Studio/cloud-delegate",
-          "score": 73,
-          "coverage": 0.68,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "cloudflare-workers",
-            "review",
-            "architecture"
-          ]
         }
       ],
       "signals": [
@@ -2187,10 +2209,7 @@
         "review",
         "edge",
         "deployment",
-        "workers-best-practices",
-        "architecture",
-        "noacg-noacg-studio-cloud-delegate",
-        "cloud-delegate"
+        "workers-best-practices"
       ]
     },
     {
@@ -2391,7 +2410,7 @@
       "top3": [
         "callstackincubator/agent-skills/react-native-brownfield-migration-d1e8d7",
         "sickn33/agentic-awesome-skills/add-app-clip-43a9ab",
-        "callstack/agent-device/ios-simulator-63b9fe"
+        "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2439,8 +2458,8 @@
           ]
         },
         {
-          "id": "callstack/agent-device/ios-simulator-63b9fe",
-          "score": 94,
+          "id": "callstackincubator/agent-skills/react-native-tv-best-practices-a5fe43",
+          "score": 92,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -2463,73 +2482,30 @@
         "react-native-brownfield-migration",
         "sickn33-agentic-awesome-skills-add-app-clip-43a9ab",
         "add-app-clip",
-        "callstack-agent-device-ios-simulator-63b9fe",
-        "ios-simulator"
+        "callstackincubator-agent-skills-react-native-tv-best-practices-a5fe43",
+        "react-native-tv-best-practices"
       ]
     },
     {
       "id": "swiftui-ios",
       "domain": "Mobile",
       "tier": "coverage",
-      "pass": true,
-      "top3": [
-        "Prasanth595/ECC/swiftui-patterns",
-        "Prasanth595/ECC/liquid-glass-design"
-      ],
-      "recommendation_count": 2,
+      "pass": false,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 71,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 2,
-      "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "signal_hits": 0,
+      "anchor_signal_hits": 0,
+      "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
-      "specificity_pass": true,
-      "relevant_top3": 2,
+      "specificity_pass": false,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "Prasanth595/ECC/swiftui-patterns",
-          "score": 71,
-          "coverage": 0.59,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "ios",
-            "swiftui",
-            "patterns"
-          ]
-        },
-        {
-          "id": "Prasanth595/ECC/liquid-glass-design",
-          "score": 45,
-          "coverage": 0.36,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "ios",
-            "swiftui"
-          ]
-        }
-      ],
-      "signals": [
-        "ios",
-        "swiftui",
-        "patterns",
-        "prasanth595-ecc-swiftui-patterns",
-        "swiftui-patterns",
-        "prasanth595-ecc-liquid-glass-design",
-        "liquid-glass-design"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "android-kotlin",
@@ -2537,9 +2513,9 @@
       "tier": "coverage",
       "pass": false,
       "top3": [
-        "callstackincubator/agent-skills/agent-device-f62531",
         "gmh5225/awesome-game-security/mobile-security-9abeca",
-        "callstack/agent-device/android-emulator-3d085d"
+        "callstackincubator/agent-skills/agent-device-f62531",
+        "google-ai-edge/LiteRT-LM/create-litert-lm-android-demo-app-1d70b3"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2554,21 +2530,6 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "callstackincubator/agent-skills/agent-device-f62531",
-          "score": 69,
-          "coverage": 0.67,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "android",
-            "mobile"
-          ]
-        },
         {
           "id": "gmh5225/awesome-game-security/mobile-security-9abeca",
           "score": 69,
@@ -2585,7 +2546,22 @@
           ]
         },
         {
-          "id": "callstack/agent-device/android-emulator-3d085d",
+          "id": "callstackincubator/agent-skills/agent-device-f62531",
+          "score": 68,
+          "coverage": 0.67,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "android",
+            "mobile"
+          ]
+        },
+        {
+          "id": "google-ai-edge/LiteRT-LM/create-litert-lm-android-demo-app-1d70b3",
           "score": 66,
           "coverage": 0.67,
           "expected": false,
@@ -2603,12 +2579,12 @@
       "signals": [
         "android",
         "mobile",
-        "callstackincubator-agent-skills-agent-device-f62531",
-        "agent-device",
         "gmh5225-awesome-game-security-mobile-security-9abeca",
         "mobile-security",
-        "callstack-agent-device-android-emulator-3d085d",
-        "android-emulator"
+        "callstackincubator-agent-skills-agent-device-f62531",
+        "agent-device",
+        "google-ai-edge-litert-lm-create-litert-lm-android-demo-app-1d70b3",
+        "create-litert-lm-android-demo-app"
       ]
     },
     {
@@ -2770,8 +2746,8 @@
       "pass": true,
       "top3": [
         "slackapi/slack-skills-plugin/slack-messaging-fa1468",
-        "slackapi/slack-skills-plugin/slack-api-fc39b8",
-        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
+        "kirodotdev/KiroCrew/mochi-slack-4687ed",
+        "slackapi/slack-skills-plugin/slack-api-fc39b8"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2802,8 +2778,8 @@
           ]
         },
         {
-          "id": "slackapi/slack-skills-plugin/slack-api-fc39b8",
-          "score": 53,
+          "id": "kirodotdev/KiroCrew/mochi-slack-4687ed",
+          "score": 57,
           "coverage": 0.47,
           "expected": false,
           "relevant": true,
@@ -2817,7 +2793,7 @@
           ]
         },
         {
-          "id": "slackapi/slack-skills-plugin/create-slack-app-9a524c",
+          "id": "slackapi/slack-skills-plugin/slack-api-fc39b8",
           "score": 53,
           "coverage": 0.47,
           "expected": false,
@@ -2837,10 +2813,10 @@
         "integration",
         "slackapi-slack-skills-plugin-slack-messaging-fa1468",
         "slack-messaging",
+        "kirodotdev-kirocrew-mochi-slack-4687ed",
+        "mochi-slack",
         "slackapi-slack-skills-plugin-slack-api-fc39b8",
-        "slack-api",
-        "slackapi-slack-skills-plugin-create-slack-app-9a524c",
-        "create-slack-app"
+        "slack-api"
       ]
     },
     {
@@ -3183,7 +3159,7 @@
         },
         {
           "id": "findscripter/everything-skills/design-dev-handoff",
-          "score": 64,
+          "score": 65,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3300,19 +3276,18 @@
       "pass": true,
       "top3": [
         "nexu-io/open-design/magazine-poster-f52efe",
-        "zhayujie/CowAgent/image-generation-1bb1a3",
         "vanducng/skills/marketing-design-678c70"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 53,
       "expected_hits": 0,
-      "signal_hits": 3,
+      "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -3329,21 +3304,6 @@
           "signals": [
             "poster",
             "layout"
-          ]
-        },
-        {
-          "id": "zhayujie/CowAgent/image-generation-1bb1a3",
-          "score": 52,
-          "coverage": 0.29,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "visual",
-            "poster"
           ]
         },
         {
@@ -3367,9 +3327,6 @@
         "layout",
         "nexu-io-open-design-magazine-poster-f52efe",
         "magazine-poster",
-        "visual",
-        "zhayujie-cowagent-image-generation-1bb1a3",
-        "image-generation",
         "brand",
         "vanducng-skills-marketing-design-678c70",
         "marketing-design"
@@ -3382,7 +3339,7 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "liyu1981/sifpress/apple-design",
+        "heygen-com/hyperframes/hyperframes-creative-f1b96c",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
@@ -3415,8 +3372,8 @@
           ]
         },
         {
-          "id": "liyu1981/sifpress/apple-design",
-          "score": 82,
+          "id": "heygen-com/hyperframes/hyperframes-creative-f1b96c",
+          "score": 80,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3454,8 +3411,8 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "liyu1981-sifpress-apple-design",
-        "apple-design",
+        "heygen-com-hyperframes-hyperframes-creative-f1b96c",
+        "hyperframes-creative",
         "remotion-dev-skills-remotion-multimedia",
         "remotion-multimedia"
       ]
@@ -3466,9 +3423,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "SpiralCloudOmega/DevTeam6/loudness-metering",
+        "jangtrinh/design-os-drone-showcase/design-os-drone-showcase",
         "findscripter/everything-skills/kicad-design-reviewer",
-        "SpiralCloudOmega/DevTeam6/mixing-techniques"
+        "dmmdea/offload-harness/comfyui"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3484,7 +3441,7 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "SpiralCloudOmega/DevTeam6/loudness-metering",
+          "id": "jangtrinh/design-os-drone-showcase/design-os-drone-showcase",
           "score": 94,
           "coverage": 1,
           "expected": false,
@@ -3519,9 +3476,9 @@
           ]
         },
         {
-          "id": "SpiralCloudOmega/DevTeam6/mixing-techniques",
-          "score": 76,
-          "coverage": 0.67,
+          "id": "dmmdea/offload-harness/comfyui",
+          "score": 78,
+          "coverage": 0.78,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3529,9 +3486,10 @@
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
+            "cad",
             "industrial-design",
             "industrial",
-            "product"
+            "cad"
           ]
         }
       ],
@@ -3540,12 +3498,12 @@
         "industrial-design",
         "industrial",
         "product",
-        "spiralcloudomega-devteam6-loudness-metering",
-        "loudness-metering",
+        "jangtrinh-design-os-drone-showcase-design-os-drone-showcase",
+        "design-os-drone-showcase",
         "findscripter-everything-skills-kicad-design-reviewer",
         "kicad-design-reviewer",
-        "spiralcloudomega-devteam6-mixing-techniques",
-        "mixing-techniques"
+        "dmmdea-offload-harness-comfyui",
+        "pp-comfyui"
       ]
     }
   ]
