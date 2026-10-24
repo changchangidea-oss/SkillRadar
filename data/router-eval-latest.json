@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-20T07:43:10.145Z",
+  "generatedAt": "2026-10-24T07:26:39.950Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 49,
-  "passRate": 0.907,
+  "passed": 48,
+  "passRate": 0.889,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 39,
-    "passRate": 0.886
+    "passed": 38,
+    "passRate": 0.864
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 4,
-  "capabilityGapCases": 35,
-  "averageRecommendationCount": 1.8,
-  "averageRelevantTop3": 1.8,
-  "averageTop1Score": 75,
+  "specificityFailures": 5,
+  "capabilityGapCases": 36,
+  "averageRecommendationCount": 1.7,
+  "averageRelevantTop3": 1.7,
+  "averageTop1Score": 72.6,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 128,
-  "anchorSignalHitsTotal": 30,
+  "signalHitsTotal": 125,
+  "anchorSignalHitsTotal": 28,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -46,7 +46,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 7,
       "passRate": 1,
-      "averageRecommendationCount": 1.38
+      "averageRecommendationCount": 1.25
     },
     "Design & Media": {
       "cases": 5,
@@ -74,9 +74,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 1,
-      "capabilityGapCases": 4,
+      "capabilityGapCases": 5,
       "passRate": 0.8,
-      "averageRecommendationCount": 1.4
+      "averageRecommendationCount": 1.2
     },
     "Testing & Quality": {
       "cases": 5,
@@ -90,33 +90,33 @@
     },
     "Backend & API": {
       "cases": 4,
-      "passed": 4,
-      "lowEvidenceTop3": 0,
-      "candidateEvidenceFailures": 0,
-      "specificityFailures": 0,
-      "capabilityGapCases": 3,
-      "passRate": 1,
-      "averageRecommendationCount": 2
-    },
-    "Security": {
-      "cases": 4,
       "passed": 3,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 1,
-      "capabilityGapCases": 4,
+      "capabilityGapCases": 3,
       "passRate": 0.75,
-      "averageRecommendationCount": 1
+      "averageRecommendationCount": 1.5
     },
-    "Mobile": {
+    "Security": {
       "cases": 4,
       "passed": 2,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 2,
-      "capabilityGapCases": 1,
+      "capabilityGapCases": 4,
       "passRate": 0.5,
-      "averageRecommendationCount": 2.25
+      "averageRecommendationCount": 0.5
+    },
+    "Mobile": {
+      "cases": 4,
+      "passed": 3,
+      "lowEvidenceTop3": 0,
+      "candidateEvidenceFailures": 0,
+      "specificityFailures": 1,
+      "capabilityGapCases": 1,
+      "passRate": 0.75,
+      "averageRecommendationCount": 2.5
     },
     "Automation & Integrations": {
       "cases": 4,
@@ -788,7 +788,7 @@
       "top3": [
         "ai-sdk",
         "iflytek/skillhub/sandbase-d0efa5",
-        "findscripter/everything-skills/vector-database-engineer"
+        "daymade/claude-code-skills/llm-wiki-setup"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -834,8 +834,8 @@
           ]
         },
         {
-          "id": "findscripter/everything-skills/vector-database-engineer",
-          "score": 32,
+          "id": "daymade/claude-code-skills/llm-wiki-setup",
+          "score": 31,
           "coverage": 0.2,
           "expected": false,
           "relevant": true,
@@ -855,8 +855,8 @@
         "retrieval",
         "iflytek-skillhub-sandbase-d0efa5",
         "sandbase",
-        "findscripter-everything-skills-vector-database-engineer",
-        "vector-database-engineer"
+        "daymade-claude-code-skills-llm-wiki-setup",
+        "llm-wiki-setup"
       ]
     },
     {
@@ -1126,10 +1126,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "frontend-design",
-        "findscripter/everything-skills/frontend-design"
+        "frontend-design"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 92,
       "expected_hits": 1,
@@ -1138,7 +1137,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1160,24 +1159,6 @@
             "web",
             "landing"
           ]
-        },
-        {
-          "id": "findscripter/everything-skills/frontend-design",
-          "score": 70,
-          "coverage": 0.66,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "design",
-            "react",
-            "web",
-            "landing",
-            "page"
-          ]
         }
       ],
       "signals": [
@@ -1187,9 +1168,7 @@
         "react",
         "web",
         "landing",
-        "frontend-design",
-        "page",
-        "findscripter-everything-skills-frontend-design"
+        "frontend-design"
       ]
     },
     {
@@ -1399,66 +1378,22 @@
       "id": "graphql-server",
       "domain": "Backend & API",
       "tier": "coverage",
-      "pass": true,
-      "top3": [
-        "findscripter/everything-skills/api-design-principles",
-        "findscripter/everything-skills/api-design-reviewer"
-      ],
-      "recommendation_count": 2,
+      "pass": false,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 63,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 2,
-      "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "signal_hits": 0,
+      "anchor_signal_hits": 0,
+      "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
-      "specificity_pass": true,
-      "relevant_top3": 2,
+      "specificity_pass": false,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "findscripter/everything-skills/api-design-principles",
-          "score": 63,
-          "coverage": 0.6,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "design",
-            "graphql",
-            "api"
-          ]
-        },
-        {
-          "id": "findscripter/everything-skills/api-design-reviewer",
-          "score": 63,
-          "coverage": 0.6,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "design",
-            "graphql",
-            "api"
-          ]
-        }
-      ],
-      "signals": [
-        "design",
-        "graphql",
-        "api",
-        "findscripter-everything-skills-api-design-principles",
-        "api-design-principles",
-        "findscripter-everything-skills-api-design-reviewer",
-        "api-design-reviewer"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "root-cause-api-debug",
@@ -1898,7 +1833,7 @@
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 94,
+      "top1_score": 95,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -1911,7 +1846,7 @@
       "candidates": [
         {
           "id": "antfu/skills/vitest-8d8886",
-          "score": 94,
+          "score": 95,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -2087,19 +2022,18 @@
       "pass": true,
       "top3": [
         "github",
-        "daymade/claude-code-skills/auto-repo-setup-52a8ca",
         "callstackincubator/agent-skills/github-actions-53c661"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 78,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2108,23 +2042,6 @@
           "score": 78,
           "coverage": 0.64,
           "expected": true,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "github",
-            "ci",
-            "workflow",
-            "repository"
-          ]
-        },
-        {
-          "id": "daymade/claude-code-skills/auto-repo-setup-52a8ca",
-          "score": 71,
-          "coverage": 0.64,
-          "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
           "required_hits": 2,
@@ -2159,8 +2076,6 @@
         "ci",
         "workflow",
         "repository",
-        "daymade-claude-code-skills-auto-repo-setup-52a8ca",
-        "auto-repo-setup",
         "callstackincubator-agent-skills-github-actions-53c661",
         "github-actions"
       ]
@@ -2316,91 +2231,43 @@
       "id": "vulnerability-review",
       "domain": "Security",
       "tier": "coverage",
-      "pass": true,
-      "top3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e"
-      ],
-      "recommendation_count": 1,
+      "pass": false,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 63,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 2,
-      "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "signal_hits": 0,
+      "anchor_signal_hits": 0,
+      "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
-      "specificity_pass": true,
-      "relevant_top3": 1,
+      "specificity_pass": false,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "RevealUIStudio/revskills/security-hardening-f5fe4e",
-          "score": 63,
-          "coverage": 0.55,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "review",
-            "security",
-            "vulnerability"
-          ]
-        }
-      ],
-      "signals": [
-        "review",
-        "security",
-        "vulnerability",
-        "revealuistudio-revskills-security-hardening-f5fe4e",
-        "security-hardening"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "secrets-permissions",
       "domain": "Security",
       "tier": "coverage",
       "pass": false,
-      "top3": [
-        "RevealUIStudio/revskills/security-hardening-f5fe4e"
-      ],
-      "recommendation_count": 1,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 51,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 1,
-      "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "signal_hits": 0,
+      "anchor_signal_hits": 0,
+      "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 1,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "RevealUIStudio/revskills/security-hardening-f5fe4e",
-          "score": 51,
-          "coverage": 0.39,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "secrets",
-            "authentication"
-          ]
-        }
-      ],
-      "signals": [
-        "secrets",
-        "authentication",
-        "revealuistudio-revskills-security-hardening-f5fe4e",
-        "security-hardening"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "react-native-expo",
@@ -2490,22 +2357,45 @@
       "id": "swiftui-ios",
       "domain": "Mobile",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "daymade/claude-code-skills/developing-ios-apps"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 44,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 2,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "daymade/claude-code-skills/developing-ios-apps",
+          "score": 44,
+          "coverage": 0.36,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "ios",
+            "swiftui"
+          ]
+        }
+      ],
+      "signals": [
+        "ios",
+        "swiftui",
+        "daymade-claude-code-skills-developing-ios-apps",
+        "developing-ios-apps"
+      ]
     },
     {
       "id": "android-kotlin",
@@ -2519,7 +2409,7 @@
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 69,
+      "top1_score": 70,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -2532,7 +2422,7 @@
       "candidates": [
         {
           "id": "gmh5225/awesome-game-security/mobile-security-9abeca",
-          "score": 69,
+          "score": 70,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3108,7 +2998,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "findscripter/everything-skills/design-dev-handoff"
+        "figma/mcp-server-guide/figma-generate-design"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3158,8 +3048,8 @@
           ]
         },
         {
-          "id": "findscripter/everything-skills/design-dev-handoff",
-          "score": 65,
+          "id": "figma/mcp-server-guide/figma-generate-design",
+          "score": 64,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3182,8 +3072,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "findscripter-everything-skills-design-dev-handoff",
-        "design-dev-handoff"
+        "figma-mcp-server-guide-figma-generate-design",
+        "figma-generate-design"
       ]
     },
     {
@@ -3193,8 +3083,8 @@
       "pass": true,
       "top3": [
         "borghei/claude-skills/product-designer",
-        "curiositech/some_claude_skills/ux-friction-analyzer",
-        "findscripter/everything-skills/ux-research-design-toolkit"
+        "daymade/claude-code-skills/prompt-optimizer",
+        "curiositech/some_claude_skills/ux-friction-analyzer"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3226,7 +3116,7 @@
           ]
         },
         {
-          "id": "curiositech/some_claude_skills/ux-friction-analyzer",
+          "id": "daymade/claude-code-skills/prompt-optimizer",
           "score": 92,
           "coverage": 1,
           "expected": false,
@@ -3242,18 +3132,19 @@
           ]
         },
         {
-          "id": "findscripter/everything-skills/ux-research-design-toolkit",
-          "score": 77,
-          "coverage": 0.67,
+          "id": "curiositech/some_claude_skills/ux-friction-analyzer",
+          "score": 92,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "ux",
-            "research"
+            "research",
+            "usability"
           ]
         }
       ],
@@ -3263,10 +3154,10 @@
         "usability",
         "borghei-claude-skills-product-designer",
         "product-designer",
+        "daymade-claude-code-skills-prompt-optimizer",
+        "prompt-optimizer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
-        "ux-friction-analyzer",
-        "findscripter-everything-skills-ux-research-design-toolkit",
-        "ux-research-design-toolkit"
+        "ux-friction-analyzer"
       ]
     },
     {
@@ -3423,13 +3314,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "jangtrinh/design-os-drone-showcase/design-os-drone-showcase",
-        "findscripter/everything-skills/kicad-design-reviewer",
-        "dmmdea/offload-harness/comfyui"
+        "daymade/claude-code-skills/product-growth",
+        "daymade/claude-code-skills/benchmark-due-diligence",
+        "daymade/claude-code-skills/macos-load-doctor"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 94,
+      "top1_score": 96,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3441,8 +3332,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "jangtrinh/design-os-drone-showcase/design-os-drone-showcase",
-          "score": 94,
+          "id": "daymade/claude-code-skills/product-growth",
+          "score": 96,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -3459,36 +3350,38 @@
           ]
         },
         {
-          "id": "findscripter/everything-skills/kicad-design-reviewer",
-          "score": 82,
-          "coverage": 0.78,
+          "id": "daymade/claude-code-skills/benchmark-due-diligence",
+          "score": 96,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "cad",
             "industrial-design",
             "industrial",
+            "product",
             "cad"
           ]
         },
         {
-          "id": "dmmdea/offload-harness/comfyui",
-          "score": 78,
-          "coverage": 0.78,
+          "id": "daymade/claude-code-skills/macos-load-doctor",
+          "score": 91,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "cad",
             "industrial-design",
             "industrial",
+            "product",
             "cad"
           ]
         }
@@ -3498,12 +3391,12 @@
         "industrial-design",
         "industrial",
         "product",
-        "jangtrinh-design-os-drone-showcase-design-os-drone-showcase",
-        "design-os-drone-showcase",
-        "findscripter-everything-skills-kicad-design-reviewer",
-        "kicad-design-reviewer",
-        "dmmdea-offload-harness-comfyui",
-        "pp-comfyui"
+        "daymade-claude-code-skills-product-growth",
+        "product-growth",
+        "daymade-claude-code-skills-benchmark-due-diligence",
+        "benchmark-due-diligence",
+        "daymade-claude-code-skills-macos-load-doctor",
+        "macos-load-doctor"
       ]
     }
   ]
