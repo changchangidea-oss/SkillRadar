@@ -142,49 +142,49 @@
         "status": "steady"
       },
       {
-        "skillId": "daymade/claude-code-skills/frontend-visual-qa",
-        "seedScore": 65,
-        "source": "radar",
-        "security": "C",
-        "rank": 15,
-        "delta": null,
-        "status": "new"
-      },
-      {
         "skillId": "pbakaus/impeccable/animate",
         "seedScore": 63,
         "source": "seed",
         "security": "A",
-        "rank": 16,
-        "delta": -1,
-        "status": "down"
+        "rank": 15,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "pbakaus/impeccable/adapt",
         "seedScore": 63,
         "source": "seed",
         "security": "A",
-        "rank": 17,
-        "delta": -1,
-        "status": "down"
+        "rank": 16,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "pbakaus/impeccable/bolder",
         "seedScore": 63,
         "source": "seed",
         "security": "A",
-        "rank": 18,
-        "delta": -1,
-        "status": "down"
+        "rank": 17,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "pbakaus/impeccable/delight",
         "seedScore": 63,
         "source": "seed",
         "security": "A",
+        "rank": 18,
+        "delta": 1,
+        "status": "up"
+      },
+      {
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/high-end-visual-design",
+        "seedScore": 62,
+        "source": "radar",
+        "security": "A",
         "rank": 19,
-        "delta": -1,
-        "status": "down"
+        "delta": null,
+        "status": "new"
       },
       {
         "skillId": "sleekdotdesign/agent-skills/sleek-design-mobile-apps",
@@ -192,12 +192,12 @@
         "source": "seed",
         "security": "A",
         "rank": 20,
-        "delta": -1,
-        "status": "down"
+        "delta": 0,
+        "status": "steady"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.370Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "visual-communication",
@@ -335,71 +335,71 @@
         "status": "steady"
       },
       {
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/high-end-visual-design",
+        "seedScore": 67,
+        "source": "radar",
+        "security": "A",
+        "rank": 14,
+        "delta": null,
+        "status": "new"
+      },
+      {
         "skillId": "narumiruna/skills/svg-illustration",
         "seedScore": 66,
         "source": "seed",
         "security": "A",
-        "rank": 14,
-        "delta": 0,
-        "status": "steady"
+        "rank": 15,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
         "seedScore": 66,
         "source": "seed",
         "security": "A",
-        "rank": 15,
-        "delta": 0,
-        "status": "steady"
+        "rank": 16,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "heroygt/skills/svg-icon-maker",
         "seedScore": 65,
         "source": "seed",
         "security": "A",
-        "rank": 16,
-        "delta": 0,
-        "status": "steady"
+        "rank": 17,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "curiositech/some_claude_skills/hand-drawn-infographic-creator",
         "seedScore": 65,
         "source": "seed",
         "security": "A",
-        "rank": 17,
-        "delta": 0,
-        "status": "steady"
+        "rank": 18,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "curiositech/some_claude_skills/collage-layout-expert",
         "seedScore": 65,
         "source": "seed",
         "security": "A",
-        "rank": 18,
-        "delta": 0,
-        "status": "steady"
+        "rank": 19,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "vercel-labs/agent-skills/web-design-guidelines",
         "seedScore": 64,
         "source": "seed",
         "security": "A",
-        "rank": 19,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "pbakaus/impeccable/quieter",
-        "seedScore": 63,
-        "source": "seed",
-        "security": "A",
         "rank": 20,
-        "delta": 0,
-        "status": "steady"
+        "delta": -1,
+        "status": "down"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.370Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "operations-design",
@@ -501,47 +501,65 @@
         "status": "steady"
       },
       {
+        "skillId": "emidiob/ACO-agents/aco-production-office",
+        "seedScore": 64,
+        "source": "radar",
+        "security": "A",
+        "rank": 10,
+        "delta": null,
+        "status": "new"
+      },
+      {
         "skillId": "pbakaus/impeccable/colorize",
         "seedScore": 63,
         "source": "seed",
         "security": "A",
-        "rank": 10,
-        "delta": 0,
-        "status": "steady"
+        "rank": 11,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/bolder",
         "seedScore": 63,
         "source": "seed",
         "security": "A",
-        "rank": 11,
-        "delta": 0,
-        "status": "steady"
+        "rank": 12,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/typeset",
         "seedScore": 63,
         "source": "seed",
         "security": "A",
-        "rank": 12,
-        "delta": 0,
-        "status": "steady"
+        "rank": 13,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "calesthio/generative-media-skills/visual-style-direction",
         "seedScore": 63,
         "source": "seed",
         "security": "A",
-        "rank": 13,
-        "delta": 0,
-        "status": "steady"
+        "rank": 14,
+        "delta": -1,
+        "status": "down"
       },
       {
-        "skillId": "daymade/claude-code-skills/app-evolver",
+        "skillId": "emidiob/ACO-agents/aco-webdesign",
+        "seedScore": 60,
+        "source": "radar",
+        "security": "C",
+        "rank": 15,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "ws123na-afk/Anum_Mine/design-taste-frontend",
         "seedScore": 59,
         "source": "radar",
-        "security": "A",
-        "rank": 14,
+        "security": "C",
+        "rank": 16,
         "delta": null,
         "status": "new"
       },
@@ -550,58 +568,40 @@
         "seedScore": 57,
         "source": "seed",
         "security": "A",
-        "rank": 15,
-        "delta": -1,
-        "status": "down"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/interaction-design-board",
-        "seedScore": 57,
-        "source": "radar",
-        "security": "C",
-        "rank": 16,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/oversized-cursor",
-        "seedScore": 56,
-        "source": "radar",
-        "security": "A",
         "rank": 17,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/hyperframes-registry",
-        "seedScore": 56,
-        "source": "radar",
-        "security": "A",
-        "rank": 18,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/changelog-video",
-        "seedScore": 56,
-        "source": "radar",
-        "security": "C",
-        "rank": 19,
-        "delta": null,
-        "status": "new"
+        "delta": -2,
+        "status": "down"
       },
       {
         "skillId": "remotion-dev/skills/remotion-create",
         "seedScore": 55,
         "source": "seed",
         "security": "A",
+        "rank": 18,
+        "delta": 2,
+        "status": "up"
+      },
+      {
+        "skillId": "remotion-dev/skills/remotion-render",
+        "seedScore": 55,
+        "source": "seed",
+        "security": "A",
+        "rank": 19,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "remotion-dev/skills/remotion-markup",
+        "seedScore": 55,
+        "source": "seed",
+        "security": "A",
         "rank": 20,
-        "delta": -5,
-        "status": "down"
+        "delta": null,
+        "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.370Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "video-design",
@@ -738,26 +738,26 @@
         "status": "steady"
       },
       {
-        "skillId": "ibelick/ui-skills/baseline-ui",
-        "seedScore": 61,
-        "source": "seed",
-        "security": "A",
-        "rank": 14,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/code-slice-hero",
-        "seedScore": 59,
+        "skillId": "emidiob/ACO-agents/aco-production-office",
+        "seedScore": 62,
         "source": "radar",
         "security": "A",
-        "rank": 15,
+        "rank": 14,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/cuboid-carousel",
-        "seedScore": 59,
+        "skillId": "ibelick/ui-skills/baseline-ui",
+        "seedScore": 61,
+        "source": "seed",
+        "security": "A",
+        "rank": 15,
+        "delta": -1,
+        "status": "down"
+      },
+      {
+        "skillId": "navind2307-design/Cloner/clone-website",
+        "seedScore": 57,
         "source": "radar",
         "security": "A",
         "rank": 16,
@@ -765,44 +765,44 @@
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/orbit-card",
-        "seedScore": 59,
-        "source": "radar",
+        "skillId": "leonxlnx/taste-skill/high-end-visual-design",
+        "seedScore": 54,
+        "source": "seed",
         "security": "A",
         "rank": 17,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/hyperframes",
-        "seedScore": 59,
-        "source": "radar",
-        "security": "C",
+        "skillId": "pbakaus/impeccable/animate",
+        "seedScore": 52,
+        "source": "seed",
+        "security": "A",
         "rank": 18,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/oversized-cursor",
-        "seedScore": 58,
-        "source": "radar",
+        "skillId": "pbakaus/impeccable/delight",
+        "seedScore": 52,
+        "source": "seed",
         "security": "A",
         "rank": 19,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/hyperframes-cli",
-        "seedScore": 58,
-        "source": "radar",
-        "security": "B",
+        "skillId": "calesthio/generative-media-skills/cinematic-shot-direction",
+        "seedScore": 52,
+        "source": "seed",
+        "security": "A",
         "rank": 20,
         "delta": null,
         "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.370Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "industrial-design",
@@ -926,8 +926,8 @@
         "source": "seed",
         "security": "A",
         "rank": 12,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "figma/mcp-server-guide/implement-design",
@@ -935,8 +935,8 @@
         "source": "seed",
         "security": "B",
         "rank": 13,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "figma/mcp-server-guide/figma-generate-design",
@@ -944,8 +944,8 @@
         "source": "seed",
         "security": "B",
         "rank": 14,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "remotion-dev/skills/remotion-render",
@@ -953,8 +953,8 @@
         "source": "seed",
         "security": "A",
         "rank": 15,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "mblode/agent-skills/ui-design",
@@ -962,8 +962,8 @@
         "source": "seed",
         "security": "A",
         "rank": 16,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/mobile-ux-optimizer",
@@ -971,8 +971,8 @@
         "source": "seed",
         "security": "A",
         "rank": 17,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "figma/mcp-server-guide/figma-design-to-code",
@@ -980,8 +980,8 @@
         "source": "seed",
         "security": "B",
         "rank": 18,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/ux-friction-analyzer",
@@ -989,8 +989,8 @@
         "source": "seed",
         "security": "A",
         "rank": 19,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/native-app-designer",
@@ -998,12 +998,12 @@
         "source": "seed",
         "security": "A",
         "rank": 20,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.370Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "environmental-design",
@@ -1077,11 +1077,20 @@
         "status": "steady"
       },
       {
-        "skillId": "daymade/claude-code-skills/app-evolver",
-        "seedScore": 57,
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/hig-components-layout",
+        "seedScore": 54,
         "source": "radar",
-        "security": "A",
+        "security": "B",
         "rank": 7,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/ui-visual-validator",
+        "seedScore": 50,
+        "source": "radar",
+        "security": "C",
+        "rank": 8,
         "delta": null,
         "status": "new"
       },
@@ -1090,18 +1099,9 @@
         "seedScore": 47,
         "source": "seed",
         "security": "A",
-        "rank": 8,
+        "rank": 9,
         "delta": -1,
         "status": "down"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/statusline-generator",
-        "seedScore": 47,
-        "source": "radar",
-        "security": "C",
-        "rank": 9,
-        "delta": null,
-        "status": "new"
       },
       {
         "skillId": "curiositech/some_claude_skills/diagramming-expert",
@@ -1109,16 +1109,43 @@
         "source": "seed",
         "security": "A",
         "rank": 10,
-        "delta": -2,
-        "status": "down"
+        "delta": 0,
+        "status": "steady"
+      },
+      {
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/nexrad-radar-visualization",
+        "seedScore": 46,
+        "source": "radar",
+        "security": "B",
+        "rank": 11,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "l33tdawg/sage/sage-memory",
+        "seedScore": 46,
+        "source": "radar",
+        "security": "C",
+        "rank": 12,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "oyesanyf/OshoosiClaw/security-audit",
+        "seedScore": 46,
+        "source": "radar",
+        "security": "C",
+        "rank": 13,
+        "delta": null,
+        "status": "new"
       },
       {
         "skillId": "remotion-dev/skills/remotion-render",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 11,
-        "delta": -2,
+        "rank": 14,
+        "delta": -3,
         "status": "down"
       },
       {
@@ -1126,8 +1153,8 @@
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 12,
-        "delta": -2,
+        "rank": 15,
+        "delta": -3,
         "status": "down"
       },
       {
@@ -1135,8 +1162,8 @@
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 13,
-        "delta": -2,
+        "rank": 16,
+        "delta": -3,
         "status": "down"
       },
       {
@@ -1144,8 +1171,8 @@
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 14,
-        "delta": -2,
+        "rank": 17,
+        "delta": -3,
         "status": "down"
       },
       {
@@ -1153,58 +1180,31 @@
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 15,
-        "delta": -2,
-        "status": "down"
-      },
-      {
-        "skillId": "pbakaus/impeccable/arrange",
-        "seedScore": 43,
-        "source": "seed",
-        "security": "A",
-        "rank": 16,
-        "delta": -2,
-        "status": "down"
-      },
-      {
-        "skillId": "pbakaus/impeccable/layout",
-        "seedScore": 43,
-        "source": "seed",
-        "security": "A",
-        "rank": 17,
-        "delta": -2,
-        "status": "down"
-      },
-      {
-        "skillId": "monumentalsystems/atlas-agent-teams/blender",
-        "seedScore": 43,
-        "source": "seed",
-        "security": "A",
         "rank": 18,
-        "delta": -2,
+        "delta": -3,
         "status": "down"
       },
       {
-        "skillId": "mitsuhiko/agent-stuff/openscad",
-        "seedScore": 35,
-        "source": "seed",
+        "skillId": "oyesanyf/OshoosiClaw/wikiskill",
+        "seedScore": 44,
+        "source": "radar",
         "security": "B",
         "rank": 19,
-        "delta": -2,
-        "status": "down"
+        "delta": null,
+        "status": "new"
       },
       {
-        "skillId": "curiositech/some_claude_skills/design-critic",
-        "seedScore": 35,
-        "source": "seed",
-        "security": "A",
+        "skillId": "oyesanyf/OshoosiClaw/entry-skill",
+        "seedScore": 44,
+        "source": "radar",
+        "security": "B",
         "rank": 20,
-        "delta": -2,
-        "status": "down"
+        "delta": null,
+        "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.370Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "fashion-design",
@@ -1328,25 +1328,16 @@
         "source": "seed",
         "security": "A",
         "rank": 12,
-        "delta": 3,
-        "status": "up"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/interaction-design-board",
-        "seedScore": 57,
-        "source": "radar",
-        "security": "C",
-        "rank": 13,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/typeset",
         "seedScore": 55,
         "source": "seed",
         "security": "A",
-        "rank": 14,
-        "delta": 5,
+        "rank": 13,
+        "delta": 1,
         "status": "up"
       },
       {
@@ -1354,22 +1345,31 @@
         "seedScore": 54,
         "source": "seed",
         "security": "A",
-        "rank": 15,
-        "delta": 5,
+        "rank": 14,
+        "delta": 1,
         "status": "up"
       },
       {
-        "skillId": "calesthio/generative-media-skills/lighting-direction",
-        "seedScore": 51,
-        "source": "seed",
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/brand-guidelines-anthropic",
+        "seedScore": 54,
+        "source": "radar",
         "security": "A",
+        "rank": 15,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "aceternity/vibrant-plugin/build-landing-page",
+        "seedScore": 52,
+        "source": "radar",
+        "security": "C",
         "rank": 16,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "daymade/claude-code-skills/report-with-html",
-        "seedScore": 51,
+        "skillId": "aceternity/vibrant-plugin/build-section",
+        "seedScore": 52,
         "source": "radar",
         "security": "C",
         "rank": 17,
@@ -1377,35 +1377,35 @@
         "status": "new"
       },
       {
-        "skillId": "mblode/agent-skills/ui-design",
-        "seedScore": 48,
+        "skillId": "calesthio/generative-media-skills/lighting-direction",
+        "seedScore": 51,
         "source": "seed",
         "security": "A",
         "rank": 18,
-        "delta": null,
-        "status": "new"
+        "delta": -2,
+        "status": "down"
       },
       {
-        "skillId": "narumiruna/skills/svg-illustration",
-        "seedScore": 48,
-        "source": "seed",
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/brand-guidelines-community",
+        "seedScore": 51,
+        "source": "radar",
         "security": "A",
         "rank": 19,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "curiositech/some_claude_skills/typography-expert",
-        "seedScore": 47,
-        "source": "seed",
-        "security": "A",
+        "skillId": "ws123na-afk/Anum_Mine/design-taste-frontend",
+        "seedScore": 51,
+        "source": "radar",
+        "security": "C",
         "rank": 20,
         "delta": null,
         "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.370Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "experience-design",
@@ -1480,20 +1480,11 @@
         "status": "steady"
       },
       {
-        "skillId": "daymade/claude-code-skills/interaction-design-board",
-        "seedScore": 70,
-        "source": "radar",
-        "security": "C",
-        "rank": 7,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/app-evolver",
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/high-end-visual-design",
         "seedScore": 67,
         "source": "radar",
         "security": "A",
-        "rank": 8,
+        "rank": 7,
         "delta": null,
         "status": "new"
       },
@@ -1502,26 +1493,8 @@
         "seedScore": 65,
         "source": "seed",
         "security": "A",
-        "rank": 9,
-        "delta": -2,
-        "status": "down"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/prompt-optimizer",
-        "seedScore": 65,
-        "source": "radar",
-        "security": "C",
-        "rank": 10,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/frontend-visual-qa",
-        "seedScore": 65,
-        "source": "radar",
-        "security": "C",
-        "rank": 11,
-        "delta": 3,
+        "rank": 8,
+        "delta": 1,
         "status": "up"
       },
       {
@@ -1529,34 +1502,25 @@
         "seedScore": 64,
         "source": "seed",
         "security": "A",
-        "rank": 12,
-        "delta": -4,
-        "status": "down"
+        "rank": 9,
+        "delta": 3,
+        "status": "up"
       },
       {
         "skillId": "abhsin/designskills/ux-specification",
         "seedScore": 64,
         "source": "seed",
         "security": "A",
-        "rank": 13,
-        "delta": -4,
-        "status": "down"
+        "rank": 10,
+        "delta": 3,
+        "status": "up"
       },
       {
-        "skillId": "daymade/claude-code-skills/product-growth",
-        "seedScore": 59,
-        "source": "radar",
-        "security": "A",
-        "rank": 14,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/report-with-html",
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/visual-emotion-engineer",
         "seedScore": 58,
         "source": "radar",
-        "security": "C",
-        "rank": 15,
+        "security": "B",
+        "rank": 11,
         "delta": null,
         "status": "new"
       },
@@ -1565,25 +1529,52 @@
         "seedScore": 56,
         "source": "seed",
         "security": "A",
-        "rank": 16,
-        "delta": -5,
-        "status": "down"
+        "rank": 12,
+        "delta": 4,
+        "status": "up"
+      },
+      {
+        "skillId": "GrazianoGuiducci/maios-meta-skill/ux-ai-kernel-design",
+        "seedScore": 56,
+        "source": "radar",
+        "security": "A",
+        "rank": 13,
+        "delta": null,
+        "status": "new"
       },
       {
         "skillId": "pbakaus/impeccable/audit",
         "seedScore": 55,
         "source": "seed",
         "security": "A",
-        "rank": 17,
-        "delta": -5,
-        "status": "down"
+        "rank": 14,
+        "delta": 3,
+        "status": "up"
       },
       {
-        "skillId": "daymade/claude-code-skills/product-analysis",
-        "seedScore": 54,
+        "skillId": "navind2307-design/Cloner/clone-website",
+        "seedScore": 55,
+        "source": "radar",
+        "security": "A",
+        "rank": 15,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "emidiob/ACO-agents/aco-webdesign",
+        "seedScore": 55,
         "source": "radar",
         "security": "C",
-        "rank": 18,
+        "rank": 16,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "emidiob/ACO-agents/aco-product-office",
+        "seedScore": 54,
+        "source": "radar",
+        "security": "A",
+        "rank": 17,
         "delta": null,
         "status": "new"
       },
@@ -1592,13 +1583,22 @@
         "seedScore": 53,
         "source": "seed",
         "security": "A",
-        "rank": 19,
-        "delta": -6,
-        "status": "down"
+        "rank": 18,
+        "delta": 1,
+        "status": "up"
       },
       {
-        "skillId": "daymade/claude-code-skills/capture-screen",
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/ui-visual-validator",
         "seedScore": 53,
+        "source": "radar",
+        "security": "C",
+        "rank": 19,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "ws123na-afk/Anum_Mine/high-end-visual-design",
+        "seedScore": 51,
         "source": "radar",
         "security": "A",
         "rank": 20,
@@ -1607,7 +1607,7 @@
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.370Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "digital-media-film",
@@ -1709,107 +1709,107 @@
         "status": "steady"
       },
       {
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/high-end-visual-design",
+        "seedScore": 59,
+        "source": "radar",
+        "security": "A",
+        "rank": 10,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "emidiob/ACO-agents/aco-production-office",
+        "seedScore": 56,
+        "source": "radar",
+        "security": "A",
+        "rank": 11,
+        "delta": null,
+        "status": "new"
+      },
+      {
         "skillId": "pbakaus/impeccable/animate",
         "seedScore": 55,
         "source": "seed",
         "security": "A",
-        "rank": 10,
-        "delta": 0,
-        "status": "steady"
+        "rank": 12,
+        "delta": -2,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/delight",
         "seedScore": 55,
         "source": "seed",
         "security": "A",
-        "rank": 11,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/slideshow",
-        "seedScore": 55,
-        "source": "radar",
-        "security": "A",
-        "rank": 12,
-        "delta": null,
-        "status": "new"
+        "rank": 13,
+        "delta": -2,
+        "status": "down"
       },
       {
         "skillId": "ibelick/ui-skills/baseline-ui",
         "seedScore": 53,
         "source": "seed",
         "security": "A",
-        "rank": 13,
+        "rank": 14,
         "delta": -1,
         "status": "down"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/oversized-cursor",
-        "seedScore": 53,
-        "source": "radar",
-        "security": "A",
-        "rank": 14,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/hyperframes-cli",
-        "seedScore": 53,
-        "source": "radar",
-        "security": "B",
-        "rank": 15,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/hyperframes",
-        "seedScore": 53,
-        "source": "radar",
-        "security": "C",
-        "rank": 16,
-        "delta": null,
-        "status": "new"
       },
       {
         "skillId": "calesthio/generative-media-skills/editing-montage",
         "seedScore": 52,
         "source": "seed",
         "security": "A",
-        "rank": 17,
-        "delta": -4,
-        "status": "down"
+        "rank": 15,
+        "delta": 2,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/cinematic-shot-direction",
         "seedScore": 52,
         "source": "seed",
         "security": "A",
-        "rank": 18,
-        "delta": -4,
-        "status": "down"
+        "rank": 16,
+        "delta": 2,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/color-grading-finishing",
         "seedScore": 52,
         "source": "seed",
         "security": "A",
-        "rank": 19,
-        "delta": -4,
-        "status": "down"
+        "rank": 17,
+        "delta": 2,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/storyboard-previsualization",
         "seedScore": 52,
         "source": "seed",
         "security": "A",
+        "rank": 18,
+        "delta": 2,
+        "status": "up"
+      },
+      {
+        "skillId": "calesthio/generative-media-skills/motion-graphics-direction",
+        "seedScore": 52,
+        "source": "seed",
+        "security": "A",
+        "rank": 19,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "calesthio/generative-media-skills/title-kinetic-typography",
+        "seedScore": 52,
+        "source": "seed",
+        "security": "A",
         "rank": 20,
-        "delta": -4,
-        "status": "down"
+        "delta": null,
+        "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.370Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "arts-crafts",
@@ -1935,8 +1935,8 @@
         "source": "seed",
         "security": "A",
         "rank": 12,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "anthropics/skills/frontend-design",
@@ -1944,8 +1944,8 @@
         "source": "seed",
         "security": "A",
         "rank": 13,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "leonxlnx/taste-skill/high-end-visual-design",
@@ -1953,8 +1953,8 @@
         "source": "seed",
         "security": "A",
         "rank": 14,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/hand-drawn-infographic-creator",
@@ -1962,8 +1962,8 @@
         "source": "seed",
         "security": "A",
         "rank": 15,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/critique",
@@ -1971,8 +1971,8 @@
         "source": "seed",
         "security": "A",
         "rank": 16,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/bolder",
@@ -1980,8 +1980,8 @@
         "source": "seed",
         "security": "A",
         "rank": 17,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/distill",
@@ -1989,8 +1989,8 @@
         "source": "seed",
         "security": "A",
         "rank": 18,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/quieter",
@@ -1998,8 +1998,8 @@
         "source": "seed",
         "security": "A",
         "rank": 19,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/typeset",
@@ -2007,12 +2007,12 @@
         "source": "seed",
         "security": "A",
         "rank": 20,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.370Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "folk-art",
@@ -2082,8 +2082,8 @@
         "source": "seed",
         "security": "B",
         "rank": 6,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/hand-drawn-infographic-creator",
@@ -2091,8 +2091,8 @@
         "source": "seed",
         "security": "A",
         "rank": 7,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/collage-layout-expert",
@@ -2100,14 +2100,14 @@
         "source": "seed",
         "security": "A",
         "rank": 8,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
-        "skillId": "heygen-com/hyperframes/changelog-video",
-        "seedScore": 51,
+        "skillId": "ws123na-afk/Anum_Mine/redesign-existing-projects",
+        "seedScore": 50,
         "source": "radar",
-        "security": "C",
+        "security": "B",
         "rank": 9,
         "delta": null,
         "status": "new"
@@ -2122,85 +2122,85 @@
         "status": "steady"
       },
       {
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/avalonia-layout-zafiro",
+        "seedScore": 47,
+        "source": "radar",
+        "security": "A",
+        "rank": 11,
+        "delta": null,
+        "status": "new"
+      },
+      {
         "skillId": "anthropics/skills/frontend-design",
         "seedScore": 46,
         "source": "seed",
         "security": "A",
-        "rank": 11,
-        "delta": 0,
-        "status": "steady"
+        "rank": 12,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "leonxlnx/taste-skill/high-end-visual-design",
         "seedScore": 46,
         "source": "seed",
         "security": "A",
-        "rank": 12,
-        "delta": 0,
-        "status": "steady"
+        "rank": 13,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "lovstudio/skills/lovstudio-png2svg",
         "seedScore": 45,
         "source": "seed",
         "security": "A",
-        "rank": 13,
-        "delta": 0,
-        "status": "steady"
+        "rank": 14,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/critique",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 14,
-        "delta": 0,
-        "status": "steady"
+        "rank": 15,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/bolder",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 15,
-        "delta": 0,
-        "status": "steady"
+        "rank": 16,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/distill",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 16,
-        "delta": 0,
-        "status": "steady"
+        "rank": 17,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/quieter",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 17,
-        "delta": 0,
-        "status": "steady"
+        "rank": 18,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/typeset",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 18,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/terminal-screenshot",
-        "seedScore": 44,
-        "source": "radar",
-        "security": "C",
         "rank": 19,
-        "delta": null,
-        "status": "new"
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/arrange",
@@ -2208,12 +2208,12 @@
         "source": "seed",
         "security": "A",
         "rank": 20,
-        "delta": -1,
-        "status": "down"
+        "delta": 0,
+        "status": "steady"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.371Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   },
   {
     "id": "architecture-design",
@@ -2297,124 +2297,124 @@
         "status": "steady"
       },
       {
-        "skillId": "daymade/claude-code-skills/frontend-visual-qa",
-        "seedScore": 60,
-        "source": "radar",
-        "security": "C",
-        "rank": 8,
-        "delta": 1,
-        "status": "up"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/app-evolver",
-        "seedScore": 57,
-        "source": "radar",
-        "security": "A",
-        "rank": 9,
-        "delta": null,
-        "status": "new"
-      },
-      {
         "skillId": "roble3/cc-blender-skill/blender-export",
         "seedScore": 54,
         "source": "seed",
         "security": "A",
-        "rank": 10,
-        "delta": -2,
-        "status": "down"
+        "rank": 8,
+        "delta": 2,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/3d-asset-production",
         "seedScore": 52,
         "source": "seed",
         "security": "A",
-        "rank": 11,
-        "delta": -1,
-        "status": "down"
+        "rank": 9,
+        "delta": 2,
+        "status": "up"
       },
       {
         "skillId": "pbakaus/impeccable/arrange",
         "seedScore": 51,
         "source": "seed",
         "security": "A",
-        "rank": 12,
-        "delta": -1,
-        "status": "down"
+        "rank": 10,
+        "delta": 2,
+        "status": "up"
       },
       {
         "skillId": "pbakaus/impeccable/layout",
         "seedScore": 51,
         "source": "seed",
         "security": "A",
-        "rank": 13,
-        "delta": -1,
-        "status": "down"
+        "rank": 11,
+        "delta": 2,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/production-design-direction",
         "seedScore": 51,
         "source": "seed",
         "security": "A",
-        "rank": 14,
-        "delta": -1,
-        "status": "down"
+        "rank": 12,
+        "delta": 2,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/threejs-scene-composition",
         "seedScore": 51,
         "source": "seed",
         "security": "A",
-        "rank": 15,
-        "delta": -1,
-        "status": "down"
+        "rank": 13,
+        "delta": 2,
+        "status": "up"
+      },
+      {
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/hig-components-layout",
+        "seedScore": 51,
+        "source": "radar",
+        "security": "B",
+        "rank": 14,
+        "delta": null,
+        "status": "new"
       },
       {
         "skillId": "monumentalsystems/atlas-agent-teams/blender",
         "seedScore": 50,
         "source": "seed",
         "security": "A",
-        "rank": 16,
-        "delta": -1,
-        "status": "down"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/statusline-generator",
-        "seedScore": 47,
-        "source": "radar",
-        "security": "C",
-        "rank": 17,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "daymade/claude-code-skills/mermaid-tools",
-        "seedScore": 45,
-        "source": "radar",
-        "security": "C",
-        "rank": 18,
-        "delta": null,
-        "status": "new"
+        "rank": 15,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "remotion-dev/skills/remotion-render",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 19,
-        "delta": 0,
-        "status": "steady"
+        "rank": 16,
+        "delta": 3,
+        "status": "up"
+      },
+      {
+        "skillId": "Kuldeep8447/kuldeep-antigravity-skills/vector-database-engineer",
+        "seedScore": 44,
+        "source": "radar",
+        "security": "A",
+        "rank": 17,
+        "delta": null,
+        "status": "new"
       },
       {
         "skillId": "mitsuhiko/agent-stuff/openscad",
         "seedScore": 43,
         "source": "seed",
         "security": "B",
+        "rank": 18,
+        "delta": 2,
+        "status": "up"
+      },
+      {
+        "skillId": "curiositech/some_claude_skills/design-critic",
+        "seedScore": 43,
+        "source": "seed",
+        "security": "A",
+        "rank": 19,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "yizhiyanhua-ai/fireworks-tech-graph/fireworks-tech-graph",
+        "seedScore": 42,
+        "source": "seed",
+        "security": "A",
         "rank": 20,
-        "delta": 0,
-        "status": "steady"
+        "delta": null,
+        "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-10-24T07:22:57.371Z"
+    "rankingUpdatedAt": "2026-11-02T09:35:27.075Z"
   }
 ]
