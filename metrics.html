@@ -1,59 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SkillRadar Metrics — Open Skill Infrastructure</title>
-<meta name="description" content="Public operational and adoption metrics for SkillRadar.">
+<title>SkillRadar 指标看板 — 开源 Agent 技能基础设施公开数据</title>
+<meta name="description" content="SkillRadar 公开运行指标与生态采纳数据看板。">
 <style>
-:root{color-scheme:dark;--bg:#0b0e0c;--panel:#111612;--line:#263129;--text:#f2f5ef;--muted:#87948b;--green:#8fd39a;--green2:#dff6e1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{width:min(1180px,calc(100% - 36px));margin:0 auto;padding:42px 0 80px}a{color:inherit}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:70px}.brand{font-weight:800;font-size:21px}.nav{display:flex;gap:18px;color:var(--muted);font-size:14px}.eyebrow{color:var(--green);font-size:12px;letter-spacing:.08em;font-weight:800;text-transform:uppercase}h1{font-size:clamp(42px,7vw,74px);line-height:.98;margin:16px 0 20px;letter-spacing:-.045em;max-width:880px}header p{color:#a5b0a8;max-width:780px;font-size:18px;line-height:1.6}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:44px 0}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px}.card{padding:24px}.label{color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.08em}.value{font-size:45px;font-weight:800;margin:18px 0 6px}.detail{color:var(--green);font-size:13px}.panel{padding:28px;margin-top:18px}.panel h2{margin:4px 0 8px;font-size:25px}.panel p{color:var(--muted);line-height:1.55}.pipeline{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:26px}.step{border:1px solid var(--line);border-radius:12px;padding:14px 10px;text-align:center;color:#b9c3bb;font-size:12px}.step b{display:block;color:var(--green2);margin-bottom:6px}.history{margin-top:18px;border-top:1px solid var(--line)}.run{display:grid;grid-template-columns:150px 1fr 110px 110px;gap:12px;padding:15px 4px;border-bottom:1px solid #1e2720;align-items:center}.run small{color:var(--muted)}.bar{height:8px;border-radius:99px;background:#1d271f;overflow:hidden}.bar span{display:block;height:100%;background:var(--green)}.foot{color:#6e7b72;margin-top:30px;font-size:12px}@media(max-width:820px){.cards{grid-template-columns:1fr 1fr}.pipeline{grid-template-columns:1fr 1fr}.run{grid-template-columns:1fr 1fr}.nav{display:none}}@media(max-width:520px){.cards{grid-template-columns:1fr}}
+:root{color-scheme:dark;--bg:#0b0e0c;--panel:#111612;--line:#263129;--text:#f2f5ef;--muted:#87948b;--green:#8fd39a;--green2:#dff6e1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Inter,ui-sans-serif,system-ui,sans-serif}.wrap{width:min(1180px,calc(100% - 36px));margin:0 auto;padding:42px 0 80px}a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:70px}.brand{font-weight:800;font-size:21px}.nav{display:flex;gap:18px;color:var(--muted);font-size:14px}.eyebrow{color:var(--green);font-size:12px;letter-spacing:.08em;font-weight:800;text-transform:uppercase}h1{font-size:clamp(42px,7vw,74px);line-height:.98;margin:16px 0 20px;letter-spacing:-.045em;max-width:880px}header p{color:#a5b0a8;max-width:780px;font-size:18px;line-height:1.6}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:44px 0}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px}.card{padding:24px}.label{color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.08em}.value{font-size:45px;font-weight:800;margin:18px 0 6px}.detail{color:var(--green);font-size:13px}.panel{padding:28px;margin-top:18px}.panel h2{margin:4px 0 8px;font-size:25px}.panel p{color:var(--muted);line-height:1.55}.pipeline{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:26px}.step{border:1px solid var(--line);border-radius:12px;padding:14px 10px;text-align:center;color:#b9c3bb;font-size:12px}.step b{display:block;color:var(--green2);margin-bottom:6px}.history{margin-top:18px;border-top:1px solid var(--line)}.run{display:grid;grid-template-columns:150px 1fr 110px 110px;gap:12px;padding:15px 4px;border-bottom:1px solid #1e2720;align-items:center}.run small{color:var(--muted)}.bar{height:8px;border-radius:99px;background:#1d271f;overflow:hidden}.bar span{display:block;height:100%;background:var(--green)}.foot{color:#6e7b72;margin-top:30px;font-size:12px}@media(max-width:820px){.cards{grid-template-columns:1fr 1fr}.pipeline{grid-template-columns:1fr 1fr}.run{grid-template-columns:1fr 1fr}.nav{display:none}}@media(max-width:520px){.cards{grid-template-columns:1fr}}
 </style>
 </head>
 <body><main class="wrap">
-<div class="top"><div class="brand">◉ SkillRadar</div><div class="nav"><a href="./">Registry</a><a href="https://github.com/changchangidea-oss/SkillRadar">GitHub</a></div></div>
-<header><div class="eyebrow">Public operational metrics</div><h1>Evidence over claims.</h1><p>SkillRadar publishes daily discovery, safety, routing and adoption evidence. Verifiable counts are shown as measured; counts without a stable public source remain unknown rather than estimated.</p></header>
+<div class="top"><div class="brand">◉ SkillRadar</div><div class="nav"><a href="./">注册表首页</a><a href="guide.zh-CN.html">使用指南</a><a href="https://github.com/changchangidea-oss/SkillRadar" target="_blank" rel="noopener noreferrer">GitHub 仓库</a></div></div>
+<header><div class="eyebrow">公开运行指标</div><h1>真实证据胜于宣称。</h1><p>SkillRadar 每日公开发现、静态安全、任务路由与生态采纳数据。所有指标均基于可验证的公开源；缺乏稳定公共来源的数据保持未知，绝不随意估算。</p></header>
 <section class="cards">
-<div class="card"><div class="label">INDEXED SKILLS</div><div class="value" id="skills">—</div><div class="detail" id="skillDetail">loading registry</div></div>
-<div class="card"><div class="label">DESIGN DOMAINS</div><div class="value" id="domains">12</div><div class="detail">dynamic Top 20 per field</div></div>
-<div class="card"><div class="label">LATEST RADAR</div><div class="value" id="radar">—</div><div class="detail" id="radarDetail">daily security gate</div></div>
-<div class="card"><div class="label">CODEX ROUTING</div><div class="value">TOP 3</div><div class="detail">same safety-gated registry</div></div>
+<div class="card"><div class="label">已收录技能数</div><div class="value" id="skills">—</div><div class="detail" id="skillDetail">正在加载注册表数据</div></div>
+<div class="card"><div class="label">专业设计领域</div><div class="value" id="domains">12</div><div class="detail">每个领域动态 Top 20</div></div>
+<div class="card"><div class="label">最新雷达状态</div><div class="value" id="radar">—</div><div class="detail" id="radarDetail">每日安全门禁</div></div>
+<div class="card"><div class="label">智能路由推荐</div><div class="value">TOP 3</div><div class="detail">离线安全注册表驱动</div></div>
 </section>
-<section class="panel"><div class="eyebrow">External adoption</div><h2>Real public signals only</h2><p>Maintainer accounts and bots are excluded from external actor counts. CI smoke tests are not installs. Unsupported distribution counts remain unknown instead of being inferred.</p>
+<section class="panel"><div class="eyebrow">生态采纳度</div><h2>仅记录真实公开信号</h2><p>维护者账号与自动化机器人已从外部参与者统计中排除。CI 自动化冒烟测试不计入用户安装。不支持验证的渠道保持未知，不进行任何人工推测。</p>
 <section class="cards">
-<div class="card"><div class="label">GITHUB STARS</div><div class="value" id="stars">—</div><div class="detail" id="forks">loading GitHub snapshot</div></div>
-<div class="card"><div class="label">EXTERNAL ACTORS</div><div class="value" id="externalActors">—</div><div class="detail" id="externalActorDetail">issues + PR authors</div></div>
-<div class="card"><div class="label">PLUGIN ZIP DOWNLOADS</div><div class="value" id="releaseDownloads">—</div><div class="detail">GitHub release assets only</div></div>
-<div class="card"><div class="label">SKILLS.SH INSTALLS</div><div class="value" id="skillsShInstalls">—</div><div class="detail" id="skillsShDetail">unknown unless verifiable</div></div>
+<div class="card"><div class="label">GITHUB STARS</div><div class="value" id="stars">—</div><div class="detail" id="forks">正在读取 GitHub 数据</div></div>
+<div class="card"><div class="label">外部独立贡献者</div><div class="value" id="externalActors">—</div><div class="detail" id="externalActorDetail">Issue 与 PR 独立作者</div></div>
+<div class="card"><div class="label">插件 ZIP 下载量</div><div class="value" id="releaseDownloads">—</div><div class="detail">仅统计 GitHub Release 资源</div></div>
+<div class="card"><div class="label">SKILLS.SH 安装量</div><div class="value" id="skillsShInstalls">—</div><div class="detail" id="skillsShDetail">仅在可验证时展示</div></div>
 </section>
-<p id="adoptionGenerated">Loading adoption snapshot…</p></section>
-<section class="panel"><div class="eyebrow">Closed loop</div><h2>Discovery → safety → routing</h2><p>This is not a bookmark collection. Candidates are parsed from real <code>SKILL.md</code> files, inspected for risky capabilities, classified, ranked against a stable seed baseline, then published to the registry consumed by Codex.</p><div class="pipeline"><div class="step"><b>01</b>Discover</div><div class="step"><b>02</b>Parse</div><div class="step"><b>03</b>Security</div><div class="step"><b>04</b>Classify</div><div class="step"><b>05</b>Rank</div><div class="step"><b>06</b>Publish</div><div class="step"><b>07</b>Codex</div></div></section>
-<section class="panel"><div class="eyebrow">Daily history</div><h2>Radar snapshots</h2><p>Each daily ranking snapshot is committed to GitHub. This makes movement inspectable instead of hiding ranking changes behind a hosted black box.</p><div class="history" id="history"><div class="run"><small>Loading ranking-history.json…</small></div></div></section>
-<div class="foot">Data source: repository-generated JSON on the current branch. Static safety grades are conservative heuristics, not a formal security audit. Adoption rules: <a href="https://github.com/changchangidea-oss/SkillRadar/blob/main/docs/ADOPTION.md">docs/ADOPTION.md</a>.</div>
+<p id="adoptionGenerated">正在加载采纳度快照…</p></section>
+<section class="panel"><div class="eyebrow">全流程闭环</div><h2>发现 → 安全审计 → 智能路由</h2><p>这不是简单的静态收藏夹。所有候选均从真实的公开 <code>SKILL.md</code> 文件中解析，针对高危权限进行保守的静态安全分析，分类并参照稳定基线排序，最后发布至供 Codex 及 AI 编程智能体消费的安全注册表。</p><div class="pipeline"><div class="step"><b>01</b>发现采集</div><div class="step"><b>02</b>内容解析</div><div class="step"><b>03</b>安全审计</div><div class="step"><b>04</b>领域分类</div><div class="step"><b>05</b>综合排序</div><div class="step"><b>06</b>发布上架</div><div class="step"><b>07</b>智能体消费</div></div></section>
+<section class="panel"><div class="eyebrow">历史演进</div><h2>每日雷达快照</h2><p>每日排名快照均直接提交至 Git 仓库公开历史中，让技术演进与排名更迭清晰可追溯，拒绝不透明的云端黑盒。</p><div class="history" id="history"><div class="run"><small>正在加载 ranking-history.json…</small></div></div></section>
+<div class="foot">数据源：当前分支代码自动生成的 JSON 数据。静态安全评级为保守启发式分析，非形式化安全审计报告。采纳度统计规则详见：<a href="https://github.com/changchangidea-oss/SkillRadar/blob/main/docs/ADOPTION.md">docs/ADOPTION.md</a>。</div>
 </main>
 <script>
-const j=(p)=>fetch(p,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(p);return r.json()});
-Promise.all([j('data/design-skill-index.json'),j('data/design-domains.json'),j('data/radar-latest.json'),j('data/ranking-history.json')]).then(([m,d,r,h])=>{
- document.querySelector('#skills').textContent=m.count??'—';
- document.querySelector('#skillDetail').textContent=`${m.seedCount??0} seed + ${m.radarCount??0} live Radar`;
- document.querySelector('#domains').textContent=d.length;
- document.querySelector('#radar').textContent=(r.status||'—').toUpperCase();
- document.querySelector('#radarDetail').textContent=`${r.activeCount??0} active · ${r.reviewCount??0} review · ${r.blockedCount??0} blocked`;
+const j=(p)=>fetch(p,{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(p);return r.json()});
+Promise.all([j("data/design-skill-index.json"),j("data/design-domains.json"),j("data/radar-latest.json"),j("data/ranking-history.json")]).then(([m,d,r,h])=>{
+ document.querySelector("#skills").textContent=m.count??u2014;
+ document.querySelector("#skillDetail").textContent=`${m.seedCount??0} 个种子 + ${m.radarCount??0} 个实时雷达`;
+ document.querySelector("#domains").textContent=d.length;
+ document.querySelector("#radar").textContent=(r.status||u2014).toUpperCase();
+ document.querySelector("#radarDetail").textContent=`${r.activeCount??0} 活跃 · ${r.reviewCount??0} 审查中 · ${r.blockedCount??0} 拦截`;
  const snaps=(h.snapshots||[]).slice(-14).reverse();
- document.querySelector('#history').innerHTML=snaps.length?snaps.map(s=>{const domains=Object.values(s.domains||{});const radar=domains.flat().filter(x=>x.source==='radar').length;const avg=domains.length?Math.round(domains.reduce((a,x)=>a+(x[0]?.score||0),0)/domains.length):0;return `<div class="run"><div><b>${s.date}</b><br><small>${new Date(s.generatedAt).toLocaleString()}</small></div><div><small>Radar entries in Top 20</small><div class="bar"><span style="width:${Math.min(100,radar*4)}%"></span></div></div><div><b>${radar}</b><br><small>rank slots</small></div><div><b>${avg}</b><br><small>avg #1 score</small></div></div>`}).join(''):'<div class="run"><small>No daily snapshots yet.</small></div>';
-}).catch(e=>{document.querySelector('#history').innerHTML='<div class="run"><small>Operational metrics are temporarily unavailable.</small></div>';console.error(e)});
+ document.querySelector("#history").innerHTML=snaps.length?snaps.map(s=>{const domains=Object.values(s.domains||{});const radar=domains.flat().filter(x=>x.source==="radar").length;const avg=domains.length?Math.round(domains.reduce((a,x)=>a+(x[0]?.score||0),0)/domains.length):0;return `<div class="run"><div><b>${s.date}</b><br><small>${new Date(s.generatedAt).toLocaleString("zh-CN")}</small></div><div><small>Top 20 中的雷达发现项</small><div class="bar"><span style="width:${Math.min(100,radar*4)}%"></span></div></div><div><b>${radar}</b><br><small>席位</small></div><div><b>${avg}</b><br><small>榜首平均分</small></div></div>`}).join(""):""<div class="run"><small>暂无每日快照数据。</small></div>"";
+}).catch(e=>{document.querySelector("#history").innerHTML='<div class="run"><small>指标数据暂时不可用。</small></div>';console.error(e)});
 
-j('data/adoption-latest.json').then(a=>{
+j("data/adoption-latest.json").then(a=>{
  const g=a.github||{};
  const d=a.distribution||{};
- document.querySelector('#stars').textContent=g.stars??'—';
- document.querySelector('#forks').textContent=`${g.forks??0} forks · ${g.watchers??0} watchers`;
- document.querySelector('#externalActors').textContent=g.externalActorsObserved??'—';
- document.querySelector('#externalActorDetail').textContent=`${g.externalIssueAuthors??0} issue authors · ${g.externalPrAuthors??0} PR authors`;
- document.querySelector('#releaseDownloads').textContent=g.releasePluginZipDownloads??'—';
- document.querySelector('#skillsShInstalls').textContent=d.skillsShInstalls==null?'UNKNOWN':d.skillsShInstalls;
- document.querySelector('#skillsShDetail').textContent=d.skillsShInstallsStatus||'unknown unless verifiable';
- document.querySelector('#adoptionGenerated').textContent=`Snapshot: ${a.generatedAt?new Date(a.generatedAt).toLocaleString():'unknown'} · source: ${a.source||'unknown'}`;
+ document.querySelector("#stars").textContent=g.stars??u2014;
+ document.querySelector("#forks").textContent=`${g.forks??0} 次复刻 · ${g.watchers??0} 人关注`;
+ document.querySelector("#externalActors").textContent=g.externalActorsObserved??u2014;
+ document.querySelector("#externalActorDetail").textContent=`${g.externalIssueAuthors??0} 位 Issue 作者 · ${g.externalPrAuthors??0} 位 PR 作者`;
+ document.querySelector("#releaseDownloads").textContent=g.releasePluginZipDownloads??u2014;
+ document.querySelector("#skillsShInstalls").textContent=d.skillsShInstalls==null?"未知 (UNKNOWN)":d.skillsShInstalls;
+ document.querySelector("#skillsShDetail").textContent=d.skillsShInstallsStatus||"仅在可验证时展示";
+ document.querySelector("#adoptionGenerated").textContent=`快照时间: ${a.generatedAt?new Date(a.generatedAt).toLocaleString("zh-CN"):"未知"} · 数据源: ${a.source||"未知"}`;
 }).catch(e=>{
- document.querySelector('#adoptionGenerated').textContent='Adoption snapshot is not available yet.';
+ document.querySelector("#adoptionGenerated").textContent="采纳度快照暂不可用。";
  console.error(e);
 });
 </script></body></html>

@@ -22,7 +22,9 @@
     "adoption:snapshot": "node scripts/update-adoption-metrics.mjs",
     "serve": "python3 -m http.server 4173",
     "radar": "node scripts/update-design-radar.mjs",
-    "radar:general": "node scripts/update-general-radar-with-canonical-seeds.mjs"
+    "radar:general": "node scripts/update-general-radar-with-canonical-seeds.mjs",
+    "workflows:synthesize": "node scripts/synthesize-workflows.mjs",
+    "data:freshness": "node scripts/check-data-freshness.mjs"
   },
   "license": "MIT"
 }

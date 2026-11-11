@@ -59,3 +59,11 @@ If these fields are unavailable because the lookup failed, say so explicitly. Do
 
 ## Safety
 Discovery is not execution. Running SkillRadar's own read-only registry CLI is allowed for routing; it does not authorize installation or execution of matched third-party skills. Popularity is not permission. Third-party shell commands, secret access, database writes and deployments remain subject to normal authorization and safety checks.
+
+## 中文路由指令说明 (Chinese Router Guidance)
+当用户使用中文提出技能查找或推荐需求时（例如“找一个适合 Next.js AI 应用的技能”或显式输入 `$skill-router`）：
+1. 立即执行随插件内置的只读匹配命令：
+   `node ../../scripts/skillradar.mjs match '<用户中文任务>'`
+2. 提取并展示匹配的 Top 3 技能栈、推荐理由、匹配得分、质量得分与安全等级。
+3. 若存在能力缺口（`capability_gap.detected === true`），诚实提示用户当前注册表在该任务方向的覆盖度，不使用无关技能填充。
+

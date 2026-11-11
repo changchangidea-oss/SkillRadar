@@ -47,3 +47,21 @@ For the full Codex Plugin, use the repository marketplace documented in the Skil
 - Do not execute a discovered skill as part of evaluating it.
 - Do not recommend `D` or `Blocked` skills for automatic routing.
 - Do not let inferred project context override the user's explicit task.
+
+## 中文使用指导与工作流 (Chinese Usage & Workflow)
+
+在中文环境或与中文编程智能体协同工作时：
+
+1. **核心原则**：**发现 ≠ 执行**。严禁仅因为技能流行或得分高就自动执行脚本、安装依赖或读取系统机密。
+2. **任务理解**：准确提炼中文任务中的技术栈（如 React、Next.js、FastAPI、Redis、Postgres、Flutter 等）与核心诉求（如“鉴权”、“数据库调优”、“端到端测试”、“海报设计”）。
+3. **精准匹配 Top 3**：优先返回具备明确本体或任务证据支持的高信号技能组合。多能力复合任务应覆盖不同技术分面，而非 3 个泛化近义项。
+4. **安全审查与缺口提示**：
+   - A / B 级：推荐并可供安装前阅读；
+   - C 级：必须明确提醒用户包含敏感操作（如网络、Shell、文件写入），若有相近的 A/B 候选优先提供安全替代；
+   - D / Blocked 级：禁止自动推荐；
+   - 当契合的专用技能不足 3 个时，诚实呈现能力缺口（Capability Gap），绝不使用无关技能填充。
+5. **规范安装命令**：
+   ```bash
+   npx skills add <owner/repo> --skill <skill-name>
+   ```
+

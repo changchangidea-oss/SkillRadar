@@ -1,1 +1,835 @@
-[{"id":"nextjs","name":"Next.js","source":"openai/plugins","githubUrl":"https://github.com/openai/plugins/blob/main/plugins/vercel/skills/nextjs/SKILL.md","category":"Frontend","tags":["nextjs","react","app-router","rsc"],"summary":"Applies current Next.js App Router architecture, rendering and data-fetching patterns.","security":"A","score":98,"growth":92,"maintenance":99,"verified":true,"uses":["Next.js apps","Server Components","Route Handlers"],"rising":94,"official":false},{"id":"react-best-practices","name":"React Best Practices","source":"vercel-labs/agent-skills","slug":"react-best-practices","skillPath":"skills/react-best-practices/SKILL.md","githubUrl":"https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md","installUrl":"https://github.com/vercel-labs/agent-skills","category":"Frontend","tags":["react","performance","typescript"],"summary":"Reviews and improves React code using modern component, performance and TypeScript practices.","security":"A","score":97,"growth":89,"maintenance":98,"verified":true,"uses":["React review","Refactors","Performance fixes"],"rising":92,"official":false},{"id":"frontend-design","name":"Frontend Design","source":"anthropics/skills","slug":"frontend-design","skillPath":"skills/frontend-design/SKILL.md","githubUrl":"https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md","installUrl":"https://github.com/anthropics/skills","category":"Frontend","tags":["ui","design","web","react"],"summary":"Guides agents to build distinctive, polished production interfaces instead of generic AI-looking UI.","security":"A","score":96,"growth":90,"maintenance":94,"verified":false,"uses":["Landing pages","Dashboards","Visual polish"],"rising":91,"official":false},{"id":"shadcn","name":"shadcn/ui","source":"openai/plugins","githubUrl":"https://github.com/openai/plugins/blob/main/plugins/vercel/skills/shadcn/SKILL.md","category":"Frontend","tags":["shadcn","radix","tailwind","ui"],"summary":"Guides agents through shadcn/ui composition, CLI workflows and design-system patterns.","security":"B","score":96,"growth":90,"maintenance":98,"verified":true,"uses":["Design systems","Accessible UI","Dashboards"],"rising":92,"official":false},{"id":"web-perf","name":"Web Performance","source":"cloudflare/skills","slug":"web-perf","skillPath":"skills/web-perf/SKILL.md","githubUrl":"https://github.com/cloudflare/skills/blob/main/skills/web-perf/SKILL.md","installUrl":"https://github.com/cloudflare/skills","category":"Frontend","tags":["performance","lcp","cls","network"],"summary":"Audits real web performance and prioritizes fixes around Core Web Vitals.","security":"B","score":95,"growth":91,"maintenance":97,"verified":true,"uses":["LCP problems","Slow sites","Performance audits"],"rising":93,"official":false},{"id":"supabase-postgres-best-practices","name":"Supabase Postgres Best Practices","source":"supabase/agent-skills","slug":"supabase-postgres-best-practices","skillPath":"skills/supabase-postgres-best-practices/SKILL.md","githubUrl":"https://github.com/supabase/agent-skills/blob/main/skills/supabase-postgres-best-practices/SKILL.md","installUrl":"https://github.com/supabase/agent-skills","category":"Database","tags":["supabase","postgres","rls","security","performance"],"summary":"Applies Supabase-aware PostgreSQL schema, RLS, query and performance practices.","security":"B","score":98,"growth":93,"maintenance":98,"verified":true,"uses":["RLS audits","Schema design","Postgres optimization"],"rising":94,"official":false},{"id":"systematic-debugging","name":"Systematic Debugging","source":"obra/superpowers","slug":"systematic-debugging","skillPath":"skills/systematic-debugging/SKILL.md","githubUrl":"https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md","installUrl":"https://github.com/obra/superpowers","category":"Debugging","tags":["debugging","root-cause","verification"],"summary":"Forces evidence-driven root-cause debugging before patching symptoms.","security":"A","score":96,"growth":88,"maintenance":94,"verified":false,"uses":["Regressions","Complex failures","Unknown root causes"],"rising":90,"official":false},{"id":"test-driven-development","name":"Test-Driven Development","source":"obra/superpowers","slug":"test-driven-development","skillPath":"skills/test-driven-development/SKILL.md","githubUrl":"https://github.com/obra/superpowers/blob/main/skills/test-driven-development/SKILL.md","installUrl":"https://github.com/obra/superpowers","category":"Testing","tags":["tdd","testing","quality"],"summary":"Structures implementation around failing tests, minimal fixes and verified refactors.","security":"A","score":95,"growth":87,"maintenance":93,"verified":false,"uses":["Feature implementation","Bug fixes","Regression prevention"],"rising":89,"official":false},{"id":"github","name":"GitHub","source":"openai/plugins","githubUrl":"https://github.com/openai/plugins/tree/main/plugins/github","category":"Automation","tags":["github","pr","issues","ci"],"summary":"Routes GitHub repository, pull-request and issue work to specialized workflows.","security":"B","score":97,"growth":94,"maintenance":99,"verified":true,"uses":["PR triage","Issue review","CI investigation"],"rising":96,"official":true},{"id":"build-web-apps","name":"Build Web Apps","source":"openai/plugins","githubUrl":"https://github.com/openai/plugins/tree/main/plugins/build-web-apps","category":"Coding","tags":["web","nextjs","database","deployment"],"summary":"Curated Codex plugin bundle for building modern web applications with production workflows.","security":"B","score":97,"growth":95,"maintenance":99,"verified":true,"uses":["Full-stack web apps","Deployment","Database-backed products"],"rising":96,"official":true},{"id":"figma","name":"Figma","source":"openai/plugins","githubUrl":"https://github.com/openai/plugins/tree/main/plugins/figma","category":"Product","tags":["figma","design-system","code-connect"],"summary":"Connects design context, Figma workflows and production implementation patterns inside Codex.","security":"C","score":96,"growth":93,"maintenance":99,"verified":true,"uses":["Design-to-code","Design systems","Figma inspection"],"rising":95,"official":true},{"id":"notion","name":"Notion","source":"openai/plugins","githubUrl":"https://github.com/openai/plugins/tree/main/plugins/notion","category":"Documentation","tags":["notion","docs","research","planning"],"summary":"Combines connected knowledge capture, research and planning workflows.","security":"C","score":94,"growth":90,"maintenance":99,"verified":true,"uses":["Research notes","Project plans","Knowledge capture"],"rising":93,"official":true},{"id":"workers-best-practices","name":"Workers Best Practices","source":"cloudflare/skills","slug":"workers-best-practices","skillPath":"skills/workers-best-practices/SKILL.md","githubUrl":"https://github.com/cloudflare/skills/blob/main/skills/workers-best-practices/SKILL.md","installUrl":"https://github.com/cloudflare/skills","category":"Cloud & DevOps","tags":["cloudflare","workers","edge","typescript"],"summary":"Reviews and authors Cloudflare Workers code against production deployment practices.","security":"B","score":97,"growth":90,"maintenance":98,"verified":true,"uses":["Workers development","Edge APIs","Wrangler projects"],"rising":92,"official":false},{"id":"deployments-cicd","name":"Deployments & CI/CD","source":"openai/plugins","githubUrl":"https://github.com/openai/plugins/blob/main/plugins/vercel/skills/deployments-cicd/SKILL.md","category":"Cloud & DevOps","tags":["vercel","deployment","ci","cd"],"summary":"Handles deployment, promotion, rollback and CI workflows for Vercel projects.","security":"C","score":95,"growth":89,"maintenance":98,"verified":true,"uses":["Deploy failures","CI setup","Rollbacks"],"rising":92,"official":false},{"id":"auth","name":"Authentication","source":"openai/plugins","githubUrl":"https://github.com/openai/plugins/blob/main/plugins/vercel/skills/auth/SKILL.md","category":"Security","tags":["auth","oauth","oidc","security"],"summary":"Implements and reviews authentication flows for modern web applications.","security":"C","score":95,"growth":91,"maintenance":97,"verified":true,"uses":["Login flows","OAuth/OIDC","Protected routes"],"rising":93,"official":false},{"id":"ai-sdk","name":"AI SDK","source":"openai/plugins","githubUrl":"https://github.com/openai/plugins/blob/main/plugins/vercel/skills/ai-sdk/SKILL.md","category":"AI Agents","tags":["ai","agents","tools","streaming"],"summary":"Builds AI features with streaming, tool calling, structured outputs and embeddings.","security":"B","score":98,"growth":95,"maintenance":99,"verified":true,"uses":["AI chat","Tool calling","RAG"],"rising":96,"official":false},{"id":"find-skills","name":"Find Skills","source":"vercel-labs/skills","slug":"find-skills","skillPath":"skills/find-skills/SKILL.md","githubUrl":"https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md","installUrl":"https://github.com/vercel-labs/skills","category":"AI Agents","tags":["discovery","skills","routing"],"summary":"Discovers installable agent skills for a task and helps choose the most relevant capability.","security":"A","score":97,"growth":96,"maintenance":94,"verified":true,"uses":["Find a skill","Compare options","Bootstrap a toolkit"],"rising":95,"official":false}]
+[
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "source": "openai/plugins",
+    "githubUrl": "https://github.com/openai/plugins/blob/main/plugins/vercel/skills/nextjs/SKILL.md",
+    "category": "Frontend",
+    "tags": [
+      "nextjs",
+      "react",
+      "app-router",
+      "rsc"
+    ],
+    "summary": "Applies current Next.js App Router architecture, rendering and data-fetching patterns.",
+    "security": "A",
+    "score": 98,
+    "growth": 92,
+    "maintenance": 99,
+    "verified": true,
+    "uses": [
+      "Next.js apps",
+      "Server Components",
+      "Route Handlers"
+    ],
+    "rising": 94,
+    "official": false,
+    "repoStars": 16500,
+    "stars": 16500
+  },
+  {
+    "id": "react-best-practices",
+    "name": "React Best Practices",
+    "source": "vercel-labs/agent-skills",
+    "slug": "react-best-practices",
+    "skillPath": "skills/react-best-practices/SKILL.md",
+    "githubUrl": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md",
+    "installUrl": "https://github.com/vercel-labs/agent-skills",
+    "category": "Frontend",
+    "tags": [
+      "react",
+      "performance",
+      "typescript"
+    ],
+    "summary": "Reviews and improves React code using modern component, performance and TypeScript practices.",
+    "security": "A",
+    "score": 97,
+    "growth": 89,
+    "maintenance": 98,
+    "verified": true,
+    "uses": [
+      "React review",
+      "Refactors",
+      "Performance fixes"
+    ],
+    "rising": 92,
+    "official": false,
+    "repoStars": 5200,
+    "stars": 5200
+  },
+  {
+    "id": "frontend-design",
+    "name": "Frontend Design",
+    "source": "anthropics/skills",
+    "slug": "frontend-design",
+    "skillPath": "skills/frontend-design/SKILL.md",
+    "githubUrl": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+    "installUrl": "https://github.com/anthropics/skills",
+    "category": "Frontend",
+    "tags": [
+      "ui",
+      "design",
+      "web",
+      "react"
+    ],
+    "summary": "Guides agents to build distinctive, polished production interfaces instead of generic AI-looking UI.",
+    "security": "A",
+    "score": 96,
+    "growth": 90,
+    "maintenance": 94,
+    "verified": false,
+    "uses": [
+      "Landing pages",
+      "Dashboards",
+      "Visual polish"
+    ],
+    "rising": 91,
+    "official": false,
+    "repoStars": 14000,
+    "stars": 14000
+  },
+  {
+    "id": "shadcn",
+    "name": "shadcn/ui",
+    "source": "openai/plugins",
+    "githubUrl": "https://github.com/openai/plugins/blob/main/plugins/vercel/skills/shadcn/SKILL.md",
+    "category": "Frontend",
+    "tags": [
+      "shadcn",
+      "radix",
+      "tailwind",
+      "ui"
+    ],
+    "summary": "Guides agents through shadcn/ui composition, CLI workflows and design-system patterns.",
+    "security": "B",
+    "score": 96,
+    "growth": 90,
+    "maintenance": 98,
+    "verified": true,
+    "uses": [
+      "Design systems",
+      "Accessible UI",
+      "Dashboards"
+    ],
+    "rising": 92,
+    "official": false,
+    "repoStars": 16500,
+    "stars": 16500
+  },
+  {
+    "id": "web-perf",
+    "name": "Web Performance",
+    "source": "cloudflare/skills",
+    "slug": "web-perf",
+    "skillPath": "skills/web-perf/SKILL.md",
+    "githubUrl": "https://github.com/cloudflare/skills/blob/main/skills/web-perf/SKILL.md",
+    "installUrl": "https://github.com/cloudflare/skills",
+    "category": "Frontend",
+    "tags": [
+      "performance",
+      "lcp",
+      "cls",
+      "network"
+    ],
+    "summary": "Audits real web performance and prioritizes fixes around Core Web Vitals.",
+    "security": "B",
+    "score": 95,
+    "growth": 91,
+    "maintenance": 97,
+    "verified": true,
+    "uses": [
+      "LCP problems",
+      "Slow sites",
+      "Performance audits"
+    ],
+    "rising": 93,
+    "official": false,
+    "repoStars": 8400,
+    "stars": 8400
+  },
+  {
+    "id": "supabase-postgres-best-practices",
+    "name": "Supabase Postgres Best Practices",
+    "source": "supabase/agent-skills",
+    "slug": "supabase-postgres-best-practices",
+    "skillPath": "skills/supabase-postgres-best-practices/SKILL.md",
+    "githubUrl": "https://github.com/supabase/agent-skills/blob/main/skills/supabase-postgres-best-practices/SKILL.md",
+    "installUrl": "https://github.com/supabase/agent-skills",
+    "category": "Database",
+    "tags": [
+      "supabase",
+      "postgres",
+      "rls",
+      "security",
+      "performance"
+    ],
+    "summary": "Applies Supabase-aware PostgreSQL schema, RLS, query and performance practices.",
+    "security": "B",
+    "score": 98,
+    "growth": 93,
+    "maintenance": 98,
+    "verified": true,
+    "uses": [
+      "RLS audits",
+      "Schema design",
+      "Postgres optimization"
+    ],
+    "rising": 94,
+    "official": false,
+    "repoStars": 11000,
+    "stars": 11000
+  },
+  {
+    "id": "systematic-debugging",
+    "name": "Systematic Debugging",
+    "source": "obra/superpowers",
+    "slug": "systematic-debugging",
+    "skillPath": "skills/systematic-debugging/SKILL.md",
+    "githubUrl": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
+    "installUrl": "https://github.com/obra/superpowers",
+    "category": "Debugging",
+    "tags": [
+      "debugging",
+      "root-cause",
+      "verification"
+    ],
+    "summary": "Forces evidence-driven root-cause debugging before patching symptoms.",
+    "security": "A",
+    "score": 96,
+    "growth": 88,
+    "maintenance": 94,
+    "verified": false,
+    "uses": [
+      "Regressions",
+      "Complex failures",
+      "Unknown root causes"
+    ],
+    "rising": 90,
+    "official": false,
+    "repoStars": 4200,
+    "stars": 4200
+  },
+  {
+    "id": "test-driven-development",
+    "name": "Test-Driven Development",
+    "source": "obra/superpowers",
+    "slug": "test-driven-development",
+    "skillPath": "skills/test-driven-development/SKILL.md",
+    "githubUrl": "https://github.com/obra/superpowers/blob/main/skills/test-driven-development/SKILL.md",
+    "installUrl": "https://github.com/obra/superpowers",
+    "category": "Testing",
+    "tags": [
+      "tdd",
+      "testing",
+      "quality"
+    ],
+    "summary": "Structures implementation around failing tests, minimal fixes and verified refactors.",
+    "security": "A",
+    "score": 95,
+    "growth": 87,
+    "maintenance": 93,
+    "verified": false,
+    "uses": [
+      "Feature implementation",
+      "Bug fixes",
+      "Regression prevention"
+    ],
+    "rising": 89,
+    "official": false,
+    "repoStars": 4200,
+    "stars": 4200
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "source": "openai/plugins",
+    "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/github",
+    "category": "Automation",
+    "tags": [
+      "github",
+      "pr",
+      "issues",
+      "ci"
+    ],
+    "summary": "Routes GitHub repository, pull-request and issue work to specialized workflows.",
+    "security": "B",
+    "score": 97,
+    "growth": 94,
+    "maintenance": 99,
+    "verified": true,
+    "uses": [
+      "PR triage",
+      "Issue review",
+      "CI investigation"
+    ],
+    "rising": 96,
+    "official": true,
+    "repoStars": 16500,
+    "stars": 16500
+  },
+  {
+    "id": "build-web-apps",
+    "name": "Build Web Apps",
+    "source": "openai/plugins",
+    "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/build-web-apps",
+    "category": "Coding",
+    "tags": [
+      "web",
+      "nextjs",
+      "database",
+      "deployment"
+    ],
+    "summary": "Curated Codex plugin bundle for building modern web applications with production workflows.",
+    "security": "B",
+    "score": 97,
+    "growth": 95,
+    "maintenance": 99,
+    "verified": true,
+    "uses": [
+      "Full-stack web apps",
+      "Deployment",
+      "Database-backed products"
+    ],
+    "rising": 96,
+    "official": true,
+    "repoStars": 16500,
+    "stars": 16500
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "source": "openai/plugins",
+    "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/figma",
+    "category": "Product",
+    "tags": [
+      "figma",
+      "design-system",
+      "code-connect"
+    ],
+    "summary": "Connects design context, Figma workflows and production implementation patterns inside Codex.",
+    "security": "C",
+    "score": 96,
+    "growth": 93,
+    "maintenance": 99,
+    "verified": true,
+    "uses": [
+      "Design-to-code",
+      "Design systems",
+      "Figma inspection"
+    ],
+    "rising": 95,
+    "official": true,
+    "repoStars": 16500,
+    "stars": 16500
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "source": "openai/plugins",
+    "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/notion",
+    "category": "Documentation",
+    "tags": [
+      "notion",
+      "docs",
+      "research",
+      "planning"
+    ],
+    "summary": "Combines connected knowledge capture, research and planning workflows.",
+    "security": "C",
+    "score": 94,
+    "growth": 90,
+    "maintenance": 99,
+    "verified": true,
+    "uses": [
+      "Research notes",
+      "Project plans",
+      "Knowledge capture"
+    ],
+    "rising": 93,
+    "official": true,
+    "repoStars": 16500,
+    "stars": 16500
+  },
+  {
+    "id": "workers-best-practices",
+    "name": "Workers Best Practices",
+    "source": "cloudflare/skills",
+    "slug": "workers-best-practices",
+    "skillPath": "skills/workers-best-practices/SKILL.md",
+    "githubUrl": "https://github.com/cloudflare/skills/blob/main/skills/workers-best-practices/SKILL.md",
+    "installUrl": "https://github.com/cloudflare/skills",
+    "category": "Cloud & DevOps",
+    "tags": [
+      "cloudflare",
+      "workers",
+      "edge",
+      "typescript"
+    ],
+    "summary": "Reviews and authors Cloudflare Workers code against production deployment practices.",
+    "security": "B",
+    "score": 97,
+    "growth": 90,
+    "maintenance": 98,
+    "verified": true,
+    "uses": [
+      "Workers development",
+      "Edge APIs",
+      "Wrangler projects"
+    ],
+    "rising": 92,
+    "official": false,
+    "repoStars": 8400,
+    "stars": 8400
+  },
+  {
+    "id": "deployments-cicd",
+    "name": "Deployments & CI/CD",
+    "source": "openai/plugins",
+    "githubUrl": "https://github.com/openai/plugins/blob/main/plugins/vercel/skills/deployments-cicd/SKILL.md",
+    "category": "Cloud & DevOps",
+    "tags": [
+      "vercel",
+      "deployment",
+      "ci",
+      "cd"
+    ],
+    "summary": "Handles deployment, promotion, rollback and CI workflows for Vercel projects.",
+    "security": "C",
+    "score": 95,
+    "growth": 89,
+    "maintenance": 98,
+    "verified": true,
+    "uses": [
+      "Deploy failures",
+      "CI setup",
+      "Rollbacks"
+    ],
+    "rising": 92,
+    "official": false,
+    "repoStars": 16500,
+    "stars": 16500
+  },
+  {
+    "id": "auth",
+    "name": "Authentication",
+    "source": "openai/plugins",
+    "githubUrl": "https://github.com/openai/plugins/blob/main/plugins/vercel/skills/auth/SKILL.md",
+    "category": "Security",
+    "tags": [
+      "auth",
+      "oauth",
+      "oidc",
+      "security"
+    ],
+    "summary": "Implements and reviews authentication flows for modern web applications.",
+    "security": "C",
+    "score": 95,
+    "growth": 91,
+    "maintenance": 97,
+    "verified": true,
+    "uses": [
+      "Login flows",
+      "OAuth/OIDC",
+      "Protected routes"
+    ],
+    "rising": 93,
+    "official": false,
+    "repoStars": 16500,
+    "stars": 16500
+  },
+  {
+    "id": "ai-sdk",
+    "name": "AI SDK",
+    "source": "openai/plugins",
+    "githubUrl": "https://github.com/openai/plugins/blob/main/plugins/vercel/skills/ai-sdk/SKILL.md",
+    "category": "AI Agents",
+    "tags": [
+      "ai",
+      "agents",
+      "tools",
+      "streaming"
+    ],
+    "summary": "Builds AI features with streaming, tool calling, structured outputs and embeddings.",
+    "security": "B",
+    "score": 98,
+    "growth": 95,
+    "maintenance": 99,
+    "verified": true,
+    "uses": [
+      "AI chat",
+      "Tool calling",
+      "RAG"
+    ],
+    "rising": 96,
+    "official": false,
+    "repoStars": 16500,
+    "stars": 16500
+  },
+  {
+    "id": "find-skills",
+    "name": "Find Skills",
+    "source": "vercel-labs/skills",
+    "slug": "find-skills",
+    "skillPath": "skills/find-skills/SKILL.md",
+    "githubUrl": "https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md",
+    "installUrl": "https://github.com/vercel-labs/skills",
+    "category": "AI Agents",
+    "tags": [
+      "discovery",
+      "skills",
+      "routing"
+    ],
+    "summary": "Discovers installable agent skills for a task and helps choose the most relevant capability.",
+    "security": "A",
+    "score": 97,
+    "growth": 96,
+    "maintenance": 94,
+    "verified": true,
+    "uses": [
+      "Find a skill",
+      "Compare options",
+      "Bootstrap a toolkit"
+    ],
+    "rising": 95,
+    "official": false,
+    "repoStars": 7300,
+    "stars": 7300
+  },
+  {
+    "id": "growth-marketing",
+    "name": "Growth & Operations",
+    "source": "posthog/posthog",
+    "slug": "posthog",
+    "skillPath": "skills/growth-marketing/SKILL.md",
+    "githubUrl": "https://github.com/posthog/posthog",
+    "installUrl": "https://github.com/posthog/posthog",
+    "category": "Operations & Growth",
+    "tags": [
+      "operations",
+      "growth",
+      "marketing",
+      "user-growth",
+      "conversion",
+      "retention",
+      "funnel",
+      "community"
+    ],
+    "summary": "用户增长与精细化运营，涵盖转化漏斗诊断、裂变获客、社群私域与留存激活方案。",
+    "security": "A",
+    "score": 97,
+    "growth": 95,
+    "maintenance": 98,
+    "verified": true,
+    "uses": [
+      "用户增长策略",
+      "留存漏斗诊断",
+      "社群与活动裂变"
+    ],
+    "rising": 96,
+    "official": false,
+    "repoStars": 24000,
+    "stars": 24000
+  },
+  {
+    "id": "ad-campaign-analyzer",
+    "name": "Ad Campaign & ROI Analyzer",
+    "source": "mixpanel/mixpanel-python",
+    "slug": "mixpanel",
+    "skillPath": "skills/ad-campaign-analyzer/SKILL.md",
+    "githubUrl": "https://github.com/mixpanel/mixpanel-python",
+    "installUrl": "https://github.com/mixpanel/mixpanel-python",
+    "category": "Operations & Growth",
+    "tags": [
+      "advertising",
+      "roi",
+      "ad-spend",
+      "marketing",
+      "campaign",
+      "conversion",
+      "cac"
+    ],
+    "summary": "多渠道广告投放效果归因与 ROI 评估，优化获客成本（CAC）、点击转化与预算分配。",
+    "security": "B",
+    "score": 94,
+    "growth": 91,
+    "maintenance": 96,
+    "verified": true,
+    "uses": [
+      "广告投放归因",
+      "ROI 测算优化",
+      "预算分配诊断"
+    ],
+    "rising": 92,
+    "official": false,
+    "repoStars": 4500,
+    "stars": 4500
+  },
+  {
+    "id": "competitive-analysis",
+    "name": "Competitive Intelligence & Teardown",
+    "source": "assafelovic/gpt-researcher",
+    "slug": "gpt-researcher",
+    "skillPath": "skills/competitive-analysis/SKILL.md",
+    "githubUrl": "https://github.com/assafelovic/gpt-researcher",
+    "installUrl": "https://github.com/assafelovic/gpt-researcher",
+    "category": "Competitive Analysis",
+    "tags": [
+      "competitor",
+      "competitive-analysis",
+      "swot",
+      "teardown",
+      "benchmarking",
+      "business-model"
+    ],
+    "summary": "全方位竞品拆解与商业竞争情报，输出功能差异矩阵、SWOT 态势分析与商业模式画布。",
+    "security": "A",
+    "score": 98,
+    "growth": 96,
+    "maintenance": 98,
+    "verified": true,
+    "uses": [
+      "竞品功能拆解",
+      "SWOT 战略态势",
+      "商业模式画布对比"
+    ],
+    "rising": 97,
+    "official": false,
+    "repoStars": 18500,
+    "stars": 18500
+  },
+  {
+    "id": "market-research-analyst",
+    "name": "Market Research & Industry Trends",
+    "source": "bytedance/deer-flow",
+    "slug": "deer-flow",
+    "skillPath": "skills/market-research-analyst/SKILL.md",
+    "githubUrl": "https://github.com/bytedance/deer-flow",
+    "installUrl": "https://github.com/bytedance/deer-flow",
+    "category": "Competitive Analysis",
+    "tags": [
+      "market-research",
+      "industry-analysis",
+      "trends",
+      "tam-sam-som",
+      "market-sizing",
+      "benchmark"
+    ],
+    "summary": "行业研报提炼、市场规模测算（TAM/SAM/SOM）、竞争格局研判与商业化前景推演。",
+    "security": "A",
+    "score": 96,
+    "growth": 93,
+    "maintenance": 97,
+    "verified": true,
+    "uses": [
+      "行业研究提炼",
+      "市场规模测算",
+      "产业格局分析"
+    ],
+    "rising": 94,
+    "official": false,
+    "repoStars": 14200,
+    "stars": 14200
+  },
+  {
+    "id": "wechat-article-writer",
+    "name": "WeChat Official Account Writer",
+    "source": "doocs/md",
+    "slug": "md",
+    "skillPath": "skills/wechat-article-writer/SKILL.md",
+    "githubUrl": "https://github.com/doocs/md",
+    "installUrl": "https://github.com/doocs/md",
+    "category": "Content & Copywriting",
+    "tags": [
+      "wechat",
+      "writing",
+      "article",
+      "copywriting",
+      "viral-title",
+      "content",
+      "editorial"
+    ],
+    "summary": "微信公众号爆款推文创作全流程，涵盖抓人眼球的标题策划、结构化排版、内容润色与降重。",
+    "security": "A",
+    "score": 98,
+    "growth": 97,
+    "maintenance": 99,
+    "verified": true,
+    "uses": [
+      "微信公众号长文",
+      "爆款标题生成",
+      "推文排版润色"
+    ],
+    "rising": 98,
+    "official": false,
+    "repoStars": 8800,
+    "stars": 8800
+  },
+  {
+    "id": "copywriting-assistant",
+    "name": "Multi-Platform Copywriting",
+    "source": "anthropics/skills",
+    "slug": "skills",
+    "skillPath": "skills/copywriting-assistant/SKILL.md",
+    "githubUrl": "https://github.com/anthropics/skills",
+    "installUrl": "https://github.com/anthropics/skills",
+    "category": "Content & Copywriting",
+    "tags": [
+      "copywriting",
+      "marketing-copy",
+      "social-media",
+      "content-marketing",
+      "editorial",
+      "storytelling"
+    ],
+    "summary": "新媒体多平台文案策划，支持小红书种草文案、朋友圈营销短文案、产品发售话术与故事包装。",
+    "security": "A",
+    "score": 95,
+    "growth": 94,
+    "maintenance": 96,
+    "verified": true,
+    "uses": [
+      "小红书种草文案",
+      "社媒营销话术",
+      "品牌故事撰写"
+    ],
+    "rising": 93,
+    "official": false,
+    "repoStars": 14000,
+    "stars": 14000
+  },
+  {
+    "id": "stock-market-analyst",
+    "name": "Stock Market & Equity Research",
+    "source": "OpenBB-finance/OpenBB",
+    "slug": "openbb",
+    "skillPath": "skills/stock-market-analyst/SKILL.md",
+    "githubUrl": "https://github.com/OpenBB-finance/OpenBB",
+    "installUrl": "https://github.com/OpenBB-finance/OpenBB",
+    "category": "Stock & Equity",
+    "tags": [
+      "stock",
+      "equity",
+      "financial-statements",
+      "valuation",
+      "earnings",
+      "fundamental-analysis",
+      "dcf"
+    ],
+    "summary": "上市公司财报深度穿透分析，涵盖三张报表明细、盈利质量评估、DCF 现金流估值建模与投资研报编写。",
+    "security": "A",
+    "score": 98,
+    "growth": 96,
+    "maintenance": 99,
+    "verified": true,
+    "uses": [
+      "财报深度解读",
+      "DCF 估值建模",
+      "基本面投研报告"
+    ],
+    "rising": 97,
+    "official": false,
+    "repoStars": 40500,
+    "stars": 40500
+  },
+  {
+    "id": "technical-trading-analyst",
+    "name": "Technical Indicators & Market Timing",
+    "source": "ranaroussi/yfinance",
+    "slug": "yfinance",
+    "skillPath": "skills/technical-trading-analyst/SKILL.md",
+    "githubUrl": "https://github.com/ranaroussi/yfinance",
+    "installUrl": "https://github.com/ranaroussi/yfinance",
+    "category": "Stock & Equity",
+    "tags": [
+      "technical-analysis",
+      "candlestick",
+      "macd",
+      "k-line",
+      "support-resistance",
+      "market-timing",
+      "volume"
+    ],
+    "summary": "股票技术面量价指标研判，包含 K 线组合形态、MACD/KDJ 趋势、筹码分布与关键支撑阻力位监测。",
+    "security": "B",
+    "score": 93,
+    "growth": 90,
+    "maintenance": 95,
+    "verified": true,
+    "uses": [
+      "K 线形态识别",
+      "技术指标研判",
+      "筹码与量价分析"
+    ],
+    "rising": 91,
+    "official": false,
+    "repoStars": 16200,
+    "stars": 16200
+  },
+  {
+    "id": "quant-trading-strategy",
+    "name": "Quantitative Trading Strategy",
+    "source": "vnpy/vnpy",
+    "slug": "vnpy",
+    "skillPath": "skills/quant-trading-strategy/SKILL.md",
+    "githubUrl": "https://github.com/vnpy/vnpy",
+    "installUrl": "https://github.com/vnpy/vnpy",
+    "category": "Quantitative Trading",
+    "tags": [
+      "quant",
+      "trading-strategy",
+      "backtesting",
+      "cta",
+      "grid-trading",
+      "arbitrage",
+      "algo-trading"
+    ],
+    "summary": "量化交易策略架构与实现，包含 CTA 趋势追踪、自适应网格交易、统计套利模型与风控止损逻辑。",
+    "security": "A",
+    "score": 98,
+    "growth": 97,
+    "maintenance": 99,
+    "verified": true,
+    "uses": [
+      "网格交易策略",
+      "CTA 动量策略",
+      "统计套利与风控"
+    ],
+    "rising": 98,
+    "official": false,
+    "repoStars": 26500,
+    "stars": 26500
+  },
+  {
+    "id": "quant-factor-backtesting",
+    "name": "Alpha Factor Research & Backtesting",
+    "source": "microsoft/qlib",
+    "slug": "qlib",
+    "skillPath": "skills/quant-factor-backtesting/SKILL.md",
+    "githubUrl": "https://github.com/microsoft/qlib",
+    "installUrl": "https://github.com/microsoft/qlib",
+    "category": "Quantitative Trading",
+    "tags": [
+      "factor-investing",
+      "backtesting",
+      "sharpe-ratio",
+      "drawdown",
+      "alpha",
+      "portfolio-optimization"
+    ],
+    "summary": "多因子选股体系构建与历史回测评估，支持 Alpha 因子 IC/IR 分析、最大回撤控制与夏普比率绩效归因。",
+    "security": "A",
+    "score": 97,
+    "growth": 95,
+    "maintenance": 98,
+    "verified": true,
+    "uses": [
+      "多因子选股模型",
+      "策略历史回测",
+      "夏普与回撤归因"
+    ],
+    "rising": 96,
+    "official": false,
+    "repoStars": 16800,
+    "stars": 16800
+  }
+]

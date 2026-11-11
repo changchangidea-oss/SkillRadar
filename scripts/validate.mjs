@@ -42,7 +42,7 @@ const ids=designSkills.map(x=>x.id)
 if(new Set(ids).size!==ids.length) errors.push('design registry: duplicate ids')
 const idSet=new Set(ids)
 for(const d of liveDomains){
-  if(!Array.isArray(d.seedTop20)||d.seedTop20.length!==20) errors.push(`${d.id}: expected live Top20`)
+  if(!Array.isArray(d.seedTop20)||d.seedTop20.length<20||d.seedTop20.length>50) errors.push(`${d.id}: expected 20-50 design skills`)
   for(const r of d.seedTop20||[]){
     const id=Array.isArray(r)?r[0]:r.skillId
     if(!idSet.has(id)) errors.push(`${d.id}: ranking references missing skill ${id}`)
