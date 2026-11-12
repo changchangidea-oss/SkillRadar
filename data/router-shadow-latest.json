@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-11-12T03:20:18.193Z",
+  "generatedAt": "2026-11-12T09:58:44.600Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "24cafd3db6071057607fc70558e2ba12ac3a9b86f5ab747c3589106010b076ad",
+    "contentHash": "ce8de34bccf3b7df804cf6f2dc90a43044700c23a0cf914b27eb11d01d32d4fb",
     "contentHashVersion": 2,
-    "generatedAt": "2026-11-12T03:19:56.744Z",
-    "totalCount": 328,
+    "generatedAt": "2026-11-12T09:58:19.973Z",
+    "totalCount": 374,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 45,
+    "passed": 46,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 35,
+    "coveragePassed": 36,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
-    "specificityFailures": 8,
+    "specificityFailures": 7,
     "capabilityGapCases": 39,
-    "averageRecommendationCount": 1.52,
+    "averageRecommendationCount": 1.57,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 115,
-    "anchorSignalHitsTotal": 23,
-    "averageTop1Score": 68.3
+    "signalHitsTotal": 122,
+    "anchorSignalHitsTotal": 25,
+    "averageTop1Score": 70.9
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 45,
+    "passed": 46,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 35,
+    "coveragePassed": 36,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 1,
-    "specificityFailures": 8,
+    "specificityFailures": 7,
     "capabilityGapCases": 39,
-    "averageRecommendationCount": 1.56,
+    "averageRecommendationCount": 1.61,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 115,
-    "anchorSignalHitsTotal": 23,
-    "averageTop1Score": 68.3
+    "signalHitsTotal": 122,
+    "anchorSignalHitsTotal": 25,
+    "averageTop1Score": 70.9
   },
   "gates": {
     "safetyPass": true,
@@ -184,14 +184,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "SpiralCloudOmega/DevTeam6/spatial-audio",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering"
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "candidateTop3": [
-        "SpiralCloudOmega/DevTeam6/spatial-audio",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering"
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -247,12 +247,12 @@
       "productionTop3": [
         "langgenius/dify/frontend-testing-c86f15",
         "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "ModelEngine-Group/nexent/skills-2f5105"
+        "yvnalv/jinkou-chinou/ui-ux-testing"
       ],
       "candidateTop3": [
         "langgenius/dify/frontend-testing-c86f15",
-        "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "ModelEngine-Group/nexent/skills-2f5105"
+        "yvnalv/jinkou-chinou/ui-ux-testing",
+        "langgenius/dify/e2e-cucumber-playwright-1de203"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -284,14 +284,20 @@
     },
     {
       "id": "mcp-agent-tools",
-      "productionPass": false,
-      "candidatePass": false,
-      "productionSpecificityPass": false,
-      "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionPass": true,
+      "candidatePass": true,
+      "productionSpecificityPass": true,
+      "candidateSpecificityPass": true,
+      "productionTop3": [
+        "cheaper-inference/OmniRoute/cli-mcp-d93c28",
+        "TimChr78/Agentic-Marketing/agentic-marketing-mcp"
+      ],
+      "candidateTop3": [
+        "cheaper-inference/OmniRoute/cli-mcp-d93c28",
+        "TimChr78/Agentic-Marketing/agentic-marketing-mcp"
+      ],
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -363,15 +369,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "shadcn",
-        "venkatesanps/top30ongithub/motion-component-builder"
+        "shadcn"
       ],
       "candidateTop3": [
-        "shadcn",
-        "venkatesanps/top30ongithub/motion-component-builder"
+        "shadcn"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -834,10 +838,14 @@
       "candidatePass": false,
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionTop3": [
+        "yvnalv/jinkou-chinou/the-uix-designer"
+      ],
+      "candidateTop3": [
+        "yvnalv/jinkou-chinou/the-uix-designer"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -958,10 +966,14 @@
       "candidatePass": false,
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionTop3": [
+        "yvnalv/jinkou-chinou/the-uix-designer"
+      ],
+      "candidateTop3": [
+        "yvnalv/jinkou-chinou/the-uix-designer"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1018,12 +1030,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "yvnalv/jinkou-chinou/the-uix-designer"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "yvnalv/jinkou-chinou/the-uix-designer"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1041,12 +1053,12 @@
       "productionTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "curiositech/some_claude_skills/human-centered-design-fundamentals"
+        "yvnalv/jinkou-chinou/the-uix-designer"
       ],
       "candidateTop3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "curiositech/some_claude_skills/human-centered-design-fundamentals"
+        "yvnalv/jinkou-chinou/the-uix-designer"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1084,13 +1096,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/motion-doctrine",
-        "remotion-dev/skills/remotion-multimedia"
+        "bayshores/kino/kino",
+        "miketropi/motionpilot/motionpilot"
       ],
       "candidateTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "brajendrak00068/agentic-ai-video-production/levea-ai-video-editor",
-        "remotion-dev/skills/remotion-multimedia"
+        "bayshores/kino/kino",
+        "miketropi/motionpilot/motionpilot"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1106,14 +1118,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "SpiralCloudOmega/DevTeam6/loudness-metering",
-        "RLealz/ai-design-playbook/combo-viral-launch-video",
-        "nightly-labs/openbot/principle-exhaust-the-design-space"
+        "dsaenztagarro/agent-sdlc/design-repo",
+        "GML-MMGroup/AdCraft/video_agent_prop_design",
+        "Insightful-Pipe/marketing-skills/ux-microcopy-writer"
       ],
       "candidateTop3": [
-        "SpiralCloudOmega/DevTeam6/loudness-metering",
-        "RLealz/ai-design-playbook/combo-viral-launch-video",
-        "nightly-labs/openbot/principle-exhaust-the-design-space"
+        "dsaenztagarro/agent-sdlc/design-repo",
+        "GML-MMGroup/AdCraft/video_agent_prop_design",
+        "Insightful-Pipe/marketing-skills/ux-microcopy-writer"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-12T03:20:05.531Z",
+  "generatedAt": "2026-11-12T09:58:29.929Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 45,
-  "passRate": 0.833,
+  "passed": 46,
+  "passRate": 0.852,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,30 +13,30 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 35,
-    "passRate": 0.795
+    "passed": 36,
+    "passRate": 0.818
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 8,
+  "specificityFailures": 7,
   "capabilityGapCases": 39,
-  "averageRecommendationCount": 1.52,
-  "averageRelevantTop3": 1.52,
-  "averageTop1Score": 68.3,
+  "averageRecommendationCount": 1.57,
+  "averageRelevantTop3": 1.57,
+  "averageTop1Score": 70.9,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 115,
-  "anchorSignalHitsTotal": 23,
+  "signalHitsTotal": 122,
+  "anchorSignalHitsTotal": 25,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
-      "passed": 5,
+      "passed": 6,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 1,
+      "specificityFailures": 0,
       "capabilityGapCases": 5,
-      "passRate": 0.833,
-      "averageRecommendationCount": 1.5
+      "passRate": 1,
+      "averageRecommendationCount": 1.83
     },
     "Frontend": {
       "cases": 8,
@@ -46,7 +46,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 7,
       "passRate": 1,
-      "averageRecommendationCount": 1.38
+      "averageRecommendationCount": 1.25
     },
     "Design & Media": {
       "cases": 5,
@@ -116,7 +116,7 @@
       "specificityFailures": 3,
       "capabilityGapCases": 3,
       "passRate": 0.25,
-      "averageRecommendationCount": 1
+      "averageRecommendationCount": 1.25
     },
     "Automation & Integrations": {
       "cases": 4,
@@ -136,7 +136,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 2,
       "passRate": 0.75,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 2
     }
   },
   "results": [
@@ -511,13 +511,13 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "SpiralCloudOmega/DevTeam6/spatial-audio",
         "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering"
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 81,
+      "top1_score": 80,
       "expected_hits": 0,
       "signal_hits": 4,
       "anchor_signal_hits": 0,
@@ -528,22 +528,6 @@
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "SpiralCloudOmega/DevTeam6/spatial-audio",
-          "score": 81,
-          "coverage": 0.75,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "architecture",
-            "rendering",
-            "spatial"
-          ]
-        },
         {
           "id": "curiositech/some_claude_skills/interior-design-expert",
           "score": 80,
@@ -575,19 +559,35 @@
             "rendering",
             "interior"
           ]
+        },
+        {
+          "id": "calesthio/generative-media-skills/neural-reality-capture",
+          "score": 77,
+          "coverage": 0.75,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "architecture",
+            "interior",
+            "spatial"
+          ]
         }
       ],
       "signals": [
         "architecture",
-        "rendering",
-        "spatial",
-        "spiralcloudomega-devteam6-spatial-audio",
-        "spatial-audio",
         "interior",
+        "spatial",
         "curiositech-some-claude-skills-interior-design-expert",
         "interior-design-expert",
+        "rendering",
         "roble3-cc-blender-skill-blender-rendering",
-        "blender-rendering"
+        "blender-rendering",
+        "calesthio-generative-media-skills-neural-reality-capture",
+        "neural-reality-capture"
       ]
     },
     {
@@ -700,7 +700,7 @@
       "top3": [
         "langgenius/dify/frontend-testing-c86f15",
         "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "ModelEngine-Group/nexent/skills-2f5105"
+        "yvnalv/jinkou-chinou/ui-ux-testing"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -750,18 +750,21 @@
           ]
         },
         {
-          "id": "ModelEngine-Group/nexent/skills-2f5105",
-          "score": 61,
-          "coverage": 0.48,
+          "id": "yvnalv/jinkou-chinou/ui-ux-testing",
+          "score": 71,
+          "coverage": 0.68,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 1,
+          "required_hits": 2,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "end-to-end",
-            "playwright"
+            "resilient",
+            "playwright",
+            "browser",
+            "tests",
+            "web"
           ]
         }
       ],
@@ -775,8 +778,9 @@
         "browser",
         "langgenius-dify-e2e-cucumber-playwright-1de203",
         "e2e-cucumber-playwright",
-        "modelengine-group-nexent-skills-2f5105",
-        "nexent-daily-test"
+        "resilient",
+        "yvnalv-jinkou-chinou-ui-ux-testing",
+        "ui-ux-testing"
       ]
     },
     {
@@ -843,22 +847,65 @@
       "id": "mcp-agent-tools",
       "domain": "AI Agents",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "pass": true,
+      "top3": [
+        "cheaper-inference/OmniRoute/cli-mcp-d93c28",
+        "TimChr78/Agentic-Marketing/agentic-marketing-mcp"
+      ],
+      "recommendation_count": 2,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 56,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 3,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "cheaper-inference/OmniRoute/cli-mcp-d93c28",
+          "score": 56,
+          "coverage": 0.39,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "mcp",
+            "agent",
+            "tools"
+          ]
+        },
+        {
+          "id": "TimChr78/Agentic-Marketing/agentic-marketing-mcp",
+          "score": 42,
+          "coverage": 0.26,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "mcp",
+            "agent"
+          ]
+        }
+      ],
+      "signals": [
+        "mcp",
+        "agent",
+        "tools",
+        "cheaper-inference-omniroute-cli-mcp-d93c28",
+        "cli-mcp",
+        "timchr78-agentic-marketing-agentic-marketing-mcp",
+        "agentic-marketing-mcp"
+      ]
     },
     {
       "id": "structured-output",
@@ -1034,10 +1081,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "shadcn",
-        "venkatesanps/top30ongithub/motion-component-builder"
+        "shadcn"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 85,
       "expected_hits": 1,
@@ -1046,7 +1092,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1066,22 +1112,6 @@
             "radix",
             "ui"
           ]
-        },
-        {
-          "id": "venkatesanps/top30ongithub/motion-component-builder",
-          "score": 61,
-          "coverage": 0.61,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "tailwind",
-            "ui",
-            "components"
-          ]
         }
       ],
       "signals": [
@@ -1089,10 +1119,7 @@
         "tailwind",
         "radix",
         "ui",
-        "shadcn",
-        "components",
-        "venkatesanps-top30ongithub-motion-component-builder",
-        "motion-component-builder"
+        "shadcn"
       ]
     },
     {
@@ -2249,21 +2276,42 @@
       "domain": "Mobile",
       "tier": "coverage",
       "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "top3": [
+        "yvnalv/jinkou-chinou/the-uix-designer"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 25,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 1,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 0,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "yvnalv/jinkou-chinou/the-uix-designer",
+          "score": 25,
+          "coverage": 0.11,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "android"
+          ]
+        }
+      ],
+      "signals": [
+        "android",
+        "yvnalv-jinkou-chinou-the-uix-designer",
+        "the-uix-designer"
+      ]
     },
     {
       "id": "flutter-mobile",
@@ -2631,21 +2679,46 @@
       "domain": "Docs & Research",
       "tier": "coverage",
       "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "top3": [
+        "yvnalv/jinkou-chinou/the-uix-designer"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 68,
       "expected_hits": 0,
-      "signal_hits": 0,
+      "signal_hits": 3,
       "anchor_signal_hits": 0,
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 0,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "yvnalv/jinkou-chinou/the-uix-designer",
+          "score": 68,
+          "coverage": 0.56,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "information-architecture",
+            "product",
+            "ux"
+          ]
+        }
+      ],
+      "signals": [
+        "information-architecture",
+        "product",
+        "ux",
+        "yvnalv-jinkou-chinou-the-uix-designer",
+        "the-uix-designer"
+      ]
     },
     {
       "id": "notion-research",
@@ -2784,7 +2857,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "yvnalv/jinkou-chinou/the-uix-designer"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2834,8 +2907,8 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/figma-generate-design",
-          "score": 64,
+          "id": "yvnalv/jinkou-chinou/the-uix-designer",
+          "score": 63,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -2858,8 +2931,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "figma-mcp-server-guide-figma-generate-design",
-        "figma-generate-design"
+        "yvnalv-jinkou-chinou-the-uix-designer",
+        "the-uix-designer"
       ]
     },
     {
@@ -2870,7 +2943,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "curiositech/some_claude_skills/human-centered-design-fundamentals"
+        "yvnalv/jinkou-chinou/the-uix-designer"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2918,8 +2991,8 @@
           ]
         },
         {
-          "id": "curiositech/some_claude_skills/human-centered-design-fundamentals",
-          "score": 73,
+          "id": "yvnalv/jinkou-chinou/the-uix-designer",
+          "score": 74,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -2941,8 +3014,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "curiositech-some-claude-skills-human-centered-design-fundamentals",
-        "human-centered-design-fundamentals"
+        "yvnalv-jinkou-chinou-the-uix-designer",
+        "the-uix-designer"
       ]
     },
     {
@@ -3015,8 +3088,8 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/motion-doctrine",
-        "remotion-dev/skills/remotion-multimedia"
+        "bayshores/kino/kino",
+        "miketropi/motionpilot/motionpilot"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3048,8 +3121,8 @@
           ]
         },
         {
-          "id": "heygen-com/hyperframes/motion-doctrine",
-          "score": 77,
+          "id": "bayshores/kino/kino",
+          "score": 82,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3064,7 +3137,7 @@
           ]
         },
         {
-          "id": "remotion-dev/skills/remotion-multimedia",
+          "id": "miketropi/motionpilot/motionpilot",
           "score": 83,
           "coverage": 0.75,
           "expected": false,
@@ -3087,10 +3160,10 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "heygen-com-hyperframes-motion-doctrine",
-        "motion-doctrine",
-        "remotion-dev-skills-remotion-multimedia",
-        "remotion-multimedia"
+        "bayshores-kino-kino",
+        "kino",
+        "miketropi-motionpilot-motionpilot",
+        "motionpilot"
       ]
     },
     {
@@ -3099,13 +3172,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "SpiralCloudOmega/DevTeam6/loudness-metering",
-        "RLealz/ai-design-playbook/combo-viral-launch-video",
-        "nightly-labs/openbot/principle-exhaust-the-design-space"
+        "dsaenztagarro/agent-sdlc/design-repo",
+        "GML-MMGroup/AdCraft/video_agent_prop_design",
+        "Insightful-Pipe/marketing-skills/ux-microcopy-writer"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 94,
+      "top1_score": 90,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3117,8 +3190,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "SpiralCloudOmega/DevTeam6/loudness-metering",
-          "score": 94,
+          "id": "dsaenztagarro/agent-sdlc/design-repo",
+          "score": 90,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -3135,8 +3208,8 @@
           ]
         },
         {
-          "id": "RLealz/ai-design-playbook/combo-viral-launch-video",
-          "score": 78,
+          "id": "GML-MMGroup/AdCraft/video_agent_prop_design",
+          "score": 76,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3151,7 +3224,7 @@
           ]
         },
         {
-          "id": "nightly-labs/openbot/principle-exhaust-the-design-space",
+          "id": "Insightful-Pipe/marketing-skills/ux-microcopy-writer",
           "score": 77,
           "coverage": 0.67,
           "expected": false,
@@ -3172,12 +3245,12 @@
         "industrial-design",
         "industrial",
         "product",
-        "spiralcloudomega-devteam6-loudness-metering",
-        "loudness-metering",
-        "rlealz-ai-design-playbook-combo-viral-launch-video",
-        "combo-viral-launch-video",
-        "nightly-labs-openbot-principle-exhaust-the-design-space",
-        "principle-exhaust-the-design-space"
+        "dsaenztagarro-agent-sdlc-design-repo",
+        "design-repo",
+        "gml-mmgroup-adcraft-video-agent-prop-design",
+        "video-agent-prop-design",
+        "insightful-pipe-marketing-skills-ux-microcopy-writer",
+        "ux-microcopy-writer"
       ]
     }
   ]
