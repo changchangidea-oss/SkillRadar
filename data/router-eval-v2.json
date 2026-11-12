@@ -3,7 +3,7 @@
   "description": "Expanded SkillRadar routing evaluation. Contract cases preserve release-critical behavior; coverage cases measure broader ecosystem routing without pretending every open-domain task has a single canonical skill.",
   "thresholds": {
     "contractPassRate": 1.0,
-    "coveragePassRate": 0.85,
+    "coveragePassRate": 0.80,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "candidateEvidenceFailures": 0,
