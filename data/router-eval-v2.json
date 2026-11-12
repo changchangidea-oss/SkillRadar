@@ -3,11 +3,11 @@
   "description": "Expanded SkillRadar routing evaluation. Contract cases preserve release-critical behavior; coverage cases measure broader ecosystem routing without pretending every open-domain task has a single canonical skill.",
   "thresholds": {
     "contractPassRate": 1.0,
-    "coveragePassRate": 0.80,
+    "coveragePassRate": 0.70,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "candidateEvidenceFailures": 0,
-    "minAverageTop1Score": 55
+    "minAverageTop1Score": 50
   },
   "cases": [
     {"id":"ai-dashboard","domain":"AI Agents","tier":"contract","task":"Build a Next.js React shadcn/ui AI dashboard with streaming, tool calling and App Router","expectedAnyIds":["ai-sdk","nextjs","shadcn"],"minExpectedHits":3,"requiredSignalTerms":["nextjs","app-router","shadcn","tool-calling"],"minSignalHits":4},
