@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-12T09:58:29.929Z",
+  "generatedAt": "2026-11-13T09:42:27.580Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
   "cases": 54,
-  "passed": 46,
-  "passRate": 0.852,
+  "passed": 47,
+  "passRate": 0.87,
   "contract": {
     "cases": 10,
     "passed": 10,
@@ -13,20 +13,20 @@
   },
   "coverage": {
     "cases": 44,
-    "passed": 36,
-    "passRate": 0.818
+    "passed": 37,
+    "passRate": 0.841
   },
   "unsafeTop3": 0,
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
-  "specificityFailures": 7,
-  "capabilityGapCases": 39,
-  "averageRecommendationCount": 1.57,
-  "averageRelevantTop3": 1.57,
-  "averageTop1Score": 70.9,
+  "specificityFailures": 6,
+  "capabilityGapCases": 33,
+  "averageRecommendationCount": 1.83,
+  "averageRelevantTop3": 1.83,
+  "averageTop1Score": 71.2,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 122,
-  "anchorSignalHitsTotal": 25,
+  "signalHitsTotal": 123,
+  "anchorSignalHitsTotal": 27,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -34,9 +34,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 5,
+      "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 1.83
+      "averageRecommendationCount": 2
     },
     "Frontend": {
       "cases": 8,
@@ -44,9 +44,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 7,
+      "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 1.25
+      "averageRecommendationCount": 2.25
     },
     "Design & Media": {
       "cases": 5,
@@ -104,19 +104,19 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 2,
-      "capabilityGapCases": 4,
+      "capabilityGapCases": 3,
       "passRate": 0.5,
-      "averageRecommendationCount": 0.5
+      "averageRecommendationCount": 1.25
     },
     "Mobile": {
       "cases": 4,
-      "passed": 1,
+      "passed": 2,
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
-      "specificityFailures": 3,
-      "capabilityGapCases": 3,
-      "passRate": 0.25,
-      "averageRecommendationCount": 1.25
+      "specificityFailures": 2,
+      "capabilityGapCases": 2,
+      "passRate": 0.5,
+      "averageRecommendationCount": 2
     },
     "Automation & Integrations": {
       "cases": 4,
@@ -136,7 +136,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 2,
       "passRate": 0.75,
-      "averageRecommendationCount": 2
+      "averageRecommendationCount": 1.75
     }
   },
   "results": [
@@ -325,9 +325,10 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "shadcn"
+        "shadcn",
+        "shahinjk-cpu/claude-skills/stitch-design"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 89,
       "expected_hits": 1,
@@ -336,7 +337,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -356,13 +357,30 @@
             "accessible",
             "dashboard"
           ]
+        },
+        {
+          "id": "shahinjk-cpu/claude-skills/stitch-design",
+          "score": 66,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "shadcn",
+            "design-system"
+          ]
         }
       ],
       "signals": [
         "shadcn",
         "design-system",
         "accessible",
-        "dashboard"
+        "dashboard",
+        "shahinjk-cpu-claude-skills-stitch-design",
+        "stitch-design"
       ]
     },
     {
@@ -460,10 +478,12 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "frontend-design"
+        "frontend-design",
+        "shahinjk-cpu/claude-skills/frontend-design",
+        "shahinkarimov/claude-skills/frontend-design"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 87,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -471,7 +491,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -480,6 +500,44 @@
           "score": 87,
           "coverage": 0.78,
           "expected": true,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "visual",
+            "production",
+            "polish",
+            "react",
+            "dashboard",
+            "interface"
+          ]
+        },
+        {
+          "id": "shahinjk-cpu/claude-skills/frontend-design",
+          "score": 79,
+          "coverage": 0.78,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "visual",
+            "production",
+            "polish",
+            "react",
+            "dashboard",
+            "interface"
+          ]
+        },
+        {
+          "id": "shahinkarimov/claude-skills/frontend-design",
+          "score": 79,
+          "coverage": 0.78,
+          "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
           "required_hits": 2,
@@ -502,7 +560,9 @@
         "react",
         "dashboard",
         "interface",
-        "frontend-design"
+        "frontend-design",
+        "shahinjk-cpu-claude-skills-frontend-design",
+        "shahinkarimov-claude-skills-frontend-design"
       ]
     },
     {
@@ -700,7 +760,7 @@
       "top3": [
         "langgenius/dify/frontend-testing-c86f15",
         "langgenius/dify/e2e-cucumber-playwright-1de203",
-        "yvnalv/jinkou-chinou/ui-ux-testing"
+        "ModelEngine-Group/nexent/skills-2f5105"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -750,21 +810,18 @@
           ]
         },
         {
-          "id": "yvnalv/jinkou-chinou/ui-ux-testing",
-          "score": 71,
-          "coverage": 0.68,
+          "id": "ModelEngine-Group/nexent/skills-2f5105",
+          "score": 62,
+          "coverage": 0.48,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 1,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "resilient",
-            "playwright",
-            "browser",
-            "tests",
-            "web"
+            "end-to-end",
+            "playwright"
           ]
         }
       ],
@@ -778,9 +835,8 @@
         "browser",
         "langgenius-dify-e2e-cucumber-playwright-1de203",
         "e2e-cucumber-playwright",
-        "resilient",
-        "yvnalv-jinkou-chinou-ui-ux-testing",
-        "ui-ux-testing"
+        "modelengine-group-nexent-skills-2f5105",
+        "nexent-daily-test"
       ]
     },
     {
@@ -850,7 +906,7 @@
       "pass": true,
       "top3": [
         "cheaper-inference/OmniRoute/cli-mcp-d93c28",
-        "TimChr78/Agentic-Marketing/agentic-marketing-mcp"
+        "upstash/context7/context7-mcp-afa92d"
       ],
       "recommendation_count": 2,
       "capability_gap": true,
@@ -882,8 +938,8 @@
           ]
         },
         {
-          "id": "TimChr78/Agentic-Marketing/agentic-marketing-mcp",
-          "score": 42,
+          "id": "upstash/context7/context7-mcp-afa92d",
+          "score": 43,
           "coverage": 0.26,
           "expected": false,
           "relevant": true,
@@ -903,8 +959,8 @@
         "tools",
         "cheaper-inference-omniroute-cli-mcp-d93c28",
         "cli-mcp",
-        "timchr78-agentic-marketing-agentic-marketing-mcp",
-        "agentic-marketing-mcp"
+        "upstash-context7-context7-mcp-afa92d",
+        "context7-mcp"
       ]
     },
     {
@@ -914,10 +970,11 @@
       "pass": true,
       "top3": [
         "ai-sdk",
+        "shahinjk-cpu/claude-skills/design-shotgun",
         "nexu-io/open-design/clinical-case-report-638ff1"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 74,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -925,7 +982,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -944,6 +1001,22 @@
             "ai",
             "outputs",
             "streaming"
+          ]
+        },
+        {
+          "id": "shahinjk-cpu/claude-skills/design-shotgun",
+          "score": 49,
+          "coverage": 0.44,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "generate",
+            "structured",
+            "ai"
           ]
         },
         {
@@ -969,6 +1042,8 @@
         "streaming",
         "ai-sdk",
         "generate",
+        "shahinjk-cpu-claude-skills-design-shotgun",
+        "design-shotgun",
         "nexu-io-open-design-clinical-case-report-638ff1",
         "clinical-case-report"
       ]
@@ -1081,10 +1156,12 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "shadcn"
+        "shadcn",
+        "m3taz-ahmed/aizee/ui-design-lord",
+        "jthorare/agentic-workflow/design-implement-web"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 85,
       "expected_hits": 1,
       "signal_hits": 3,
@@ -1092,7 +1169,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1112,6 +1189,38 @@
             "radix",
             "ui"
           ]
+        },
+        {
+          "id": "m3taz-ahmed/aizee/ui-design-lord",
+          "score": 63,
+          "coverage": 0.61,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "tailwind",
+            "ui",
+            "components"
+          ]
+        },
+        {
+          "id": "jthorare/agentic-workflow/design-implement-web",
+          "score": 62,
+          "coverage": 0.61,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "tailwind",
+            "ui",
+            "components"
+          ]
         }
       ],
       "signals": [
@@ -1119,7 +1228,12 @@
         "tailwind",
         "radix",
         "ui",
-        "shadcn"
+        "shadcn",
+        "components",
+        "m3taz-ahmed-aizee-ui-design-lord",
+        "ui-design-lord",
+        "jthorare-agentic-workflow-design-implement-web",
+        "design-implement-web"
       ]
     },
     {
@@ -1128,10 +1242,12 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "frontend-design"
+        "frontend-design",
+        "jthorare/agentic-workflow/design-implement-web",
+        "shahinjk-cpu/claude-skills/frontend-design"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 92,
       "expected_hits": 1,
       "signal_hits": 2,
@@ -1139,7 +1255,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1161,6 +1277,42 @@
             "web",
             "landing"
           ]
+        },
+        {
+          "id": "jthorare/agentic-workflow/design-implement-web",
+          "score": 73,
+          "coverage": 0.7,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "design",
+            "production",
+            "react",
+            "web",
+            "page"
+          ]
+        },
+        {
+          "id": "shahinjk-cpu/claude-skills/frontend-design",
+          "score": 76,
+          "coverage": 0.74,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "design",
+            "polished",
+            "production",
+            "react",
+            "landing"
+          ]
         }
       ],
       "signals": [
@@ -1170,7 +1322,11 @@
         "react",
         "web",
         "landing",
-        "frontend-design"
+        "frontend-design",
+        "page",
+        "jthorare-agentic-workflow-design-implement-web",
+        "design-implement-web",
+        "shahinjk-cpu-claude-skills-frontend-design"
       ]
     },
     {
@@ -1179,9 +1335,10 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nextjs"
+        "nextjs",
+        "upstash/context7/find-docs-9e47dd"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 93,
       "expected_hits": 1,
@@ -1190,7 +1347,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1212,6 +1369,22 @@
             "route",
             "architecture"
           ]
+        },
+        {
+          "id": "upstash/context7/find-docs-9e47dd",
+          "score": 67,
+          "coverage": 0.56,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "nextjs",
+            "app-router",
+            "route"
+          ]
         }
       ],
       "signals": [
@@ -1220,7 +1393,9 @@
         "data",
         "fetching",
         "route",
-        "architecture"
+        "architecture",
+        "upstash-context7-find-docs-9e47dd",
+        "find-docs"
       ]
     },
     {
@@ -1543,7 +1718,7 @@
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 73,
+      "top1_score": 72,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -1556,7 +1731,7 @@
       "candidates": [
         {
           "id": "redis/agent-skills/redis-semantic-cache-9c2b67",
-          "score": 73,
+          "score": 72,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -1590,7 +1765,7 @@
         },
         {
           "id": "redis/agent-skills/redis-core-29e2a4",
-          "score": 61,
+          "score": 60,
           "coverage": 0.5,
           "expected": false,
           "relevant": true,
@@ -2190,21 +2365,78 @@
       "domain": "Security",
       "tier": "coverage",
       "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
-      "capability_gap": true,
-      "top1_score": 0,
+      "top3": [
+        "shahinjk-cpu/claude-skills/agent-design",
+        "shahinkarimov/claude-skills/agent-design",
+        "milindmadhukar/paseo.nvim/paseo-e2e"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 42,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 1,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 0,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "shahinjk-cpu/claude-skills/agent-design",
+          "score": 42,
+          "coverage": 0.39,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "audit",
+            "permissions"
+          ]
+        },
+        {
+          "id": "shahinkarimov/claude-skills/agent-design",
+          "score": 42,
+          "coverage": 0.39,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "audit",
+            "permissions"
+          ]
+        },
+        {
+          "id": "milindmadhukar/paseo.nvim/paseo-e2e",
+          "score": 32,
+          "coverage": 0.22,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "permissions"
+          ]
+        }
+      ],
+      "signals": [
+        "audit",
+        "permissions",
+        "shahinjk-cpu-claude-skills-agent-design",
+        "agent-design",
+        "shahinkarimov-claude-skills-agent-design",
+        "milindmadhukar-paseo.nvim-paseo-e2e",
+        "paseo-e2e"
+      ]
     },
     {
       "id": "react-native-expo",
@@ -2254,22 +2486,83 @@
       "id": "swiftui-ios",
       "domain": "Mobile",
       "tier": "coverage",
-      "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
-      "capability_gap": true,
-      "top1_score": 0,
+      "pass": true,
+      "top3": [
+        "jthorare/agentic-workflow/design-mockup-web",
+        "jthorare/agentic-workflow/design-verify-ios",
+        "jthorare/agentic-workflow/design-implement-ios"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 56,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 3,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
-      "specificity_pass": false,
-      "relevant_top3": 0,
+      "specificity_pass": true,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "jthorare/agentic-workflow/design-mockup-web",
+          "score": 56,
+          "coverage": 0.53,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "ios",
+            "swiftui",
+            "mobile"
+          ]
+        },
+        {
+          "id": "jthorare/agentic-workflow/design-verify-ios",
+          "score": 43,
+          "coverage": 0.36,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "ios",
+            "swiftui"
+          ]
+        },
+        {
+          "id": "jthorare/agentic-workflow/design-implement-ios",
+          "score": 44,
+          "coverage": 0.36,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "ios",
+            "swiftui"
+          ]
+        }
+      ],
+      "signals": [
+        "ios",
+        "swiftui",
+        "mobile",
+        "jthorare-agentic-workflow-design-mockup-web",
+        "design-mockup-web",
+        "jthorare-agentic-workflow-design-verify-ios",
+        "design-verify-ios",
+        "jthorare-agentic-workflow-design-implement-ios",
+        "design-implement-ios"
+      ]
     },
     {
       "id": "android-kotlin",
@@ -2277,11 +2570,11 @@
       "tier": "coverage",
       "pass": false,
       "top3": [
-        "yvnalv/jinkou-chinou/the-uix-designer"
+        "shahinjk-cpu/claude-skills/platform-design"
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 25,
+      "top1_score": 24,
       "expected_hits": 0,
       "signal_hits": 1,
       "anchor_signal_hits": 1,
@@ -2293,8 +2586,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "yvnalv/jinkou-chinou/the-uix-designer",
-          "score": 25,
+          "id": "shahinjk-cpu/claude-skills/platform-design",
+          "score": 24,
           "coverage": 0.11,
           "expected": false,
           "relevant": true,
@@ -2309,8 +2602,8 @@
       ],
       "signals": [
         "android",
-        "yvnalv-jinkou-chinou-the-uix-designer",
-        "the-uix-designer"
+        "shahinjk-cpu-claude-skills-platform-design",
+        "platform-design"
       ]
     },
     {
@@ -2679,46 +2972,21 @@
       "domain": "Docs & Research",
       "tier": "coverage",
       "pass": false,
-      "top3": [
-        "yvnalv/jinkou-chinou/the-uix-designer"
-      ],
-      "recommendation_count": 1,
+      "top3": [],
+      "recommendation_count": 0,
       "capability_gap": true,
-      "top1_score": 68,
+      "top1_score": 0,
       "expected_hits": 0,
-      "signal_hits": 3,
+      "signal_hits": 0,
       "anchor_signal_hits": 0,
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 0,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [
-        {
-          "id": "yvnalv/jinkou-chinou/the-uix-designer",
-          "score": 68,
-          "coverage": 0.56,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "information-architecture",
-            "product",
-            "ux"
-          ]
-        }
-      ],
-      "signals": [
-        "information-architecture",
-        "product",
-        "ux",
-        "yvnalv-jinkou-chinou-the-uix-designer",
-        "the-uix-designer"
-      ]
+      "candidates": [],
+      "signals": []
     },
     {
       "id": "notion-research",
@@ -2857,7 +3125,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "yvnalv/jinkou-chinou/the-uix-designer"
+        "shahinjk-cpu/claude-skills/figma-implement-design"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2907,8 +3175,8 @@
           ]
         },
         {
-          "id": "yvnalv/jinkou-chinou/the-uix-designer",
-          "score": 63,
+          "id": "shahinjk-cpu/claude-skills/figma-implement-design",
+          "score": 62,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -2931,8 +3199,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "yvnalv-jinkou-chinou-the-uix-designer",
-        "the-uix-designer"
+        "shahinjk-cpu-claude-skills-figma-implement-design",
+        "figma-implement-design"
       ]
     },
     {
@@ -2942,8 +3210,8 @@
       "pass": true,
       "top3": [
         "borghei/claude-skills/product-designer",
-        "curiositech/some_claude_skills/ux-friction-analyzer",
-        "yvnalv/jinkou-chinou/the-uix-designer"
+        "m3taz-ahmed/aizee/design-innovation-lord",
+        "curiositech/some_claude_skills/ux-friction-analyzer"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2975,7 +3243,7 @@
           ]
         },
         {
-          "id": "curiositech/some_claude_skills/ux-friction-analyzer",
+          "id": "m3taz-ahmed/aizee/design-innovation-lord",
           "score": 92,
           "coverage": 1,
           "expected": false,
@@ -2991,18 +3259,19 @@
           ]
         },
         {
-          "id": "yvnalv/jinkou-chinou/the-uix-designer",
-          "score": 74,
-          "coverage": 0.67,
+          "id": "curiositech/some_claude_skills/ux-friction-analyzer",
+          "score": 92,
+          "coverage": 1,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 2,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "ux",
-            "research"
+            "research",
+            "usability"
           ]
         }
       ],
@@ -3012,10 +3281,10 @@
         "usability",
         "borghei-claude-skills-product-designer",
         "product-designer",
+        "m3taz-ahmed-aizee-design-innovation-lord",
+        "design-innovation-lord",
         "curiositech-some-claude-skills-ux-friction-analyzer",
-        "ux-friction-analyzer",
-        "yvnalv-jinkou-chinou-the-uix-designer",
-        "the-uix-designer"
+        "ux-friction-analyzer"
       ]
     },
     {
@@ -3088,8 +3357,8 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "bayshores/kino/kino",
-        "miketropi/motionpilot/motionpilot"
+        "shahinjk-cpu/claude-skills/apple-design",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3121,8 +3390,8 @@
           ]
         },
         {
-          "id": "bayshores/kino/kino",
-          "score": 82,
+          "id": "shahinjk-cpu/claude-skills/apple-design",
+          "score": 81,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3137,7 +3406,7 @@
           ]
         },
         {
-          "id": "miketropi/motionpilot/motionpilot",
+          "id": "remotion-dev/skills/remotion-multimedia",
           "score": 83,
           "coverage": 0.75,
           "expected": false,
@@ -3160,10 +3429,10 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "bayshores-kino-kino",
-        "kino",
-        "miketropi-motionpilot-motionpilot",
-        "motionpilot"
+        "shahinjk-cpu-claude-skills-apple-design",
+        "apple-design",
+        "remotion-dev-skills-remotion-multimedia",
+        "remotion-multimedia"
       ]
     },
     {
@@ -3172,13 +3441,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "dsaenztagarro/agent-sdlc/design-repo",
-        "GML-MMGroup/AdCraft/video_agent_prop_design",
-        "Insightful-Pipe/marketing-skills/ux-microcopy-writer"
+        "shahinjk-cpu/claude-skills/architecture-review",
+        "mitsuhiko/agent-stuff/openscad",
+        "jthorare/agentic-workflow/design-mockup"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 90,
+      "top1_score": 76,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3190,25 +3459,7 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "dsaenztagarro/agent-sdlc/design-repo",
-          "score": 90,
-          "coverage": 1,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 3,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "cad",
-            "industrial-design",
-            "industrial",
-            "product",
-            "cad"
-          ]
-        },
-        {
-          "id": "GML-MMGroup/AdCraft/video_agent_prop_design",
+          "id": "shahinjk-cpu/claude-skills/architecture-review",
           "score": 76,
           "coverage": 0.67,
           "expected": false,
@@ -3224,8 +3475,24 @@
           ]
         },
         {
-          "id": "Insightful-Pipe/marketing-skills/ux-microcopy-writer",
-          "score": 77,
+          "id": "mitsuhiko/agent-stuff/openscad",
+          "score": 68,
+          "coverage": 0.56,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 0,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "cad",
+            "industrial",
+            "cad"
+          ]
+        },
+        {
+          "id": "jthorare/agentic-workflow/design-mockup",
+          "score": 76,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3241,16 +3508,16 @@
         }
       ],
       "signals": [
-        "cad",
         "industrial-design",
         "industrial",
         "product",
-        "dsaenztagarro-agent-sdlc-design-repo",
-        "design-repo",
-        "gml-mmgroup-adcraft-video-agent-prop-design",
-        "video-agent-prop-design",
-        "insightful-pipe-marketing-skills-ux-microcopy-writer",
-        "ux-microcopy-writer"
+        "shahinjk-cpu-claude-skills-architecture-review",
+        "architecture-review",
+        "cad",
+        "mitsuhiko-agent-stuff-openscad",
+        "openscad",
+        "jthorare-agentic-workflow-design-mockup",
+        "design-mockup"
       ]
     }
   ]
