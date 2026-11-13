@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-12T11:45:52.798Z",
+  "generatedAt": "2026-11-13T11:28:44.042Z",
   "benchmarkVersion": 1,
   "rankingVersion": "2.1",
   "cases": 7,
   "passed": 7,
   "passRate": 1,
   "unsafeTop3": 0,
-  "capabilityGapCases": 4,
-  "averageRecommendationCount": 1.86,
+  "capabilityGapCases": 3,
+  "averageRecommendationCount": 2.29,
   "averageTop1Score": 84.1,
   "projectContextFixture": "passed",
   "results": [
@@ -92,9 +92,10 @@
       "id": "shadcn-system",
       "pass": true,
       "top3": [
-        "shadcn"
+        "shadcn",
+        "shahinjk-cpu/claude-skills/stitch-design"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 89,
       "expected_hits": 1,
@@ -141,10 +142,12 @@
       "id": "frontend-polish",
       "pass": true,
       "top3": [
-        "frontend-design"
+        "frontend-design",
+        "shahinjk-cpu/claude-skills/frontend-design",
+        "shahinkarimov/claude-skills/frontend-design"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 87,
       "expected_hits": 1,
       "signal_hits": 2,
