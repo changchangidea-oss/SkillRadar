@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-11-13T09:42:44.019Z",
+  "generatedAt": "2026-11-19T10:30:57.286Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "eb050f9d4f1eaf6a84899934466a1278d54ccba4f417f6028e8c73d4524c7976",
+    "contentHash": "34a21714857a73af00795dea74abb959206271afc62eff84afaef3a2594b47ca",
     "contentHashVersion": 2,
-    "generatedAt": "2026-11-13T09:42:16.724Z",
-    "totalCount": 444,
+    "generatedAt": "2026-11-19T10:30:22.765Z",
+    "totalCount": 472,
     "mode": "local-bundled"
   },
   "production": {
     "profile": "ranking-v2.1",
     "cases": 54,
-    "passed": 47,
+    "passed": 46,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 37,
+    "coveragePassed": 36,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
-    "specificityFailures": 6,
-    "capabilityGapCases": 33,
-    "averageRecommendationCount": 1.83,
+    "specificityFailures": 7,
+    "capabilityGapCases": 38,
+    "averageRecommendationCount": 1.59,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 123,
-    "anchorSignalHitsTotal": 27,
-    "averageTop1Score": 71.2
+    "signalHitsTotal": 119,
+    "anchorSignalHitsTotal": 24,
+    "averageTop1Score": 69.4
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
     "cases": 54,
-    "passed": 47,
+    "passed": 46,
     "contractPassed": 10,
     "contractCases": 10,
-    "coveragePassed": 37,
+    "coveragePassed": 36,
     "coverageCases": 44,
     "unsafeTop3": 0,
     "lowEvidenceTop3": 1,
-    "specificityFailures": 6,
-    "capabilityGapCases": 32,
-    "averageRecommendationCount": 1.85,
+    "specificityFailures": 7,
+    "capabilityGapCases": 38,
+    "averageRecommendationCount": 1.61,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 121,
-    "anchorSignalHitsTotal": 26,
-    "averageTop1Score": 70.7
+    "signalHitsTotal": 119,
+    "anchorSignalHitsTotal": 24,
+    "averageTop1Score": 69.4
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": -4
+    "evidenceDelta": -1
   },
   "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
@@ -122,16 +122,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "shadcn",
-        "shahinjk-cpu/claude-skills/stitch-design"
+        "shadcn"
       ],
       "candidateTop3": [
         "shadcn",
-        "shahinjk-cpu/claude-skills/stitch-design",
         "nexu-io/open-design/github-dashboard-a45aef"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -167,17 +165,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "frontend-design",
-        "shahinjk-cpu/claude-skills/frontend-design",
-        "shahinkarimov/claude-skills/frontend-design"
+        "frontend-design"
       ],
       "candidateTop3": [
-        "frontend-design",
-        "shahinjk-cpu/claude-skills/frontend-design",
-        "shahinkarimov/claude-skills/frontend-design"
+        "frontend-design"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -190,14 +184,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering",
-        "calesthio/generative-media-skills/neural-reality-capture"
+        "musicalbee/design-ontology/baroque-architecture",
+        "musicalbee/design-ontology/arts-and-crafts-interior",
+        "musicalbee/design-ontology/bauhaus-interior"
       ],
       "candidateTop3": [
-        "curiositech/some_claude_skills/interior-design-expert",
-        "roble3/cc-blender-skill/blender-rendering",
-        "calesthio/generative-media-skills/neural-reality-capture"
+        "musicalbee/design-ontology/baroque-architecture",
+        "musicalbee/design-ontology/arts-and-crafts-interior",
+        "musicalbee/design-ontology/bauhaus-interior"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -317,16 +311,14 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "ai-sdk",
-        "shahinjk-cpu/claude-skills/design-shotgun",
         "nexu-io/open-design/clinical-case-report-638ff1"
       ],
       "candidateTop3": [
         "ai-sdk",
-        "shahinjk-cpu/claude-skills/design-shotgun",
         "nexu-io/open-design/clinical-case-report-638ff1"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -377,17 +369,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "shadcn",
-        "m3taz-ahmed/aizee/ui-design-lord",
-        "jthorare/agentic-workflow/design-implement-web"
+        "shadcn"
       ],
       "candidateTop3": [
-        "shadcn",
-        "m3taz-ahmed/aizee/ui-design-lord",
-        "jthorare/agentic-workflow/design-implement-web"
+        "shadcn"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -400,17 +388,13 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "frontend-design",
-        "jthorare/agentic-workflow/design-implement-web",
-        "shahinjk-cpu/claude-skills/frontend-design"
+        "frontend-design"
       ],
       "candidateTop3": [
-        "frontend-design",
-        "jthorare/agentic-workflow/design-implement-web",
-        "shahinjk-cpu/claude-skills/frontend-design"
+        "frontend-design"
       ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -602,13 +586,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "test-driven-development"
+        "test-driven-development",
+        "ModelEngine-Group/nexent/nexent-test-assets-576aaa"
       ],
       "candidateTop3": [
         "test-driven-development",
         "ModelEngine-Group/nexent/nexent-test-assets-576aaa"
       ],
-      "productionRecommendationCount": 1,
+      "productionRecommendationCount": 2,
       "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
@@ -807,18 +792,10 @@
       "candidatePass": false,
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
-      "productionTop3": [
-        "shahinjk-cpu/claude-skills/agent-design",
-        "shahinkarimov/claude-skills/agent-design",
-        "milindmadhukar/paseo.nvim/paseo-e2e"
-      ],
-      "candidateTop3": [
-        "shahinjk-cpu/claude-skills/agent-design",
-        "shahinkarimov/claude-skills/agent-design",
-        "milindmadhukar/paseo.nvim/paseo-e2e"
-      ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -845,22 +822,14 @@
     },
     {
       "id": "swiftui-ios",
-      "productionPass": true,
-      "candidatePass": true,
-      "productionSpecificityPass": true,
-      "candidateSpecificityPass": true,
-      "productionTop3": [
-        "jthorare/agentic-workflow/design-mockup-web",
-        "jthorare/agentic-workflow/design-verify-ios",
-        "jthorare/agentic-workflow/design-implement-ios"
-      ],
-      "candidateTop3": [
-        "jthorare/agentic-workflow/design-mockup-web",
-        "jthorare/agentic-workflow/design-verify-ios",
-        "jthorare/agentic-workflow/design-implement-ios"
-      ],
-      "productionRecommendationCount": 3,
-      "candidateRecommendationCount": 3,
+      "productionPass": false,
+      "candidatePass": false,
+      "productionSpecificityPass": false,
+      "candidateSpecificityPass": false,
+      "productionTop3": [],
+      "candidateTop3": [],
+      "productionRecommendationCount": 0,
+      "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -872,15 +841,13 @@
       "candidatePass": false,
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
-      "productionTop3": [
-        "shahinjk-cpu/claude-skills/platform-design"
-      ],
+      "productionTop3": [],
       "candidateTop3": [],
-      "productionRecommendationCount": 1,
+      "productionRecommendationCount": 0,
       "candidateRecommendationCount": 0,
       "expectedHitDelta": 0,
-      "signalHitDelta": -1,
-      "anchorSignalHitDelta": -1,
+      "signalHitDelta": 0,
+      "anchorSignalHitDelta": 0,
       "lowEvidenceDelta": 0
     },
     {
@@ -936,12 +903,12 @@
       "productionTop3": [
         "slackapi/slack-skills-plugin/slack-messaging-fa1468",
         "lobehub/lobehub/agent-testing-bot-888ebe",
-        "slackapi/slack-skills-plugin/slack-api-fc39b8"
+        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
       ],
       "candidateTop3": [
         "slackapi/slack-skills-plugin/slack-messaging-fa1468",
         "lobehub/lobehub/agent-testing-bot-888ebe",
-        "slackapi/slack-skills-plugin/slack-api-fc39b8"
+        "slackapi/slack-skills-plugin/create-slack-app-9a524c"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1033,14 +1000,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
         "notion",
-        "figma/mcp-server-guide/create-design-system-rules",
-        "flutter/agent-plugins/code-documentation-406253"
+        "figma/mcp-server-guide/create-design-system-rules"
       ],
       "candidateTop3": [
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
         "notion",
-        "figma/mcp-server-guide/create-design-system-rules",
-        "flutter/agent-plugins/code-documentation-406253"
+        "figma/mcp-server-guide/create-design-system-rules"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1058,12 +1025,12 @@
       "productionTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "shahinjk-cpu/claude-skills/figma-implement-design"
+        "figma/mcp-server-guide/figma-generate-design"
       ],
       "candidateTop3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "shahinjk-cpu/claude-skills/figma-implement-design"
+        "figma/mcp-server-guide/figma-generate-design"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1080,13 +1047,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "borghei/claude-skills/product-designer",
-        "m3taz-ahmed/aizee/design-innovation-lord",
-        "curiositech/some_claude_skills/ux-friction-analyzer"
+        "curiositech/some_claude_skills/ux-friction-analyzer",
+        "curiositech/some_claude_skills/human-centered-design-fundamentals"
       ],
       "candidateTop3": [
         "borghei/claude-skills/product-designer",
-        "m3taz-ahmed/aizee/design-innovation-lord",
-        "curiositech/some_claude_skills/ux-friction-analyzer"
+        "curiositech/some_claude_skills/ux-friction-analyzer",
+        "curiositech/some_claude_skills/human-centered-design-fundamentals"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1103,14 +1070,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "nexu-io/open-design/magazine-poster-f52efe",
-        "vanducng/skills/marketing-design-678c70"
+        "vanducng/skills/marketing-design-678c70",
+        "zhayujie/CowAgent/image-generation-1bb1a3"
       ],
       "candidateTop3": [
         "nexu-io/open-design/magazine-poster-f52efe",
-        "vanducng/skills/marketing-design-678c70"
+        "vanducng/skills/marketing-design-678c70",
+        "zhayujie/CowAgent/image-generation-1bb1a3"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1124,13 +1093,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "shahinjk-cpu/claude-skills/apple-design",
-        "remotion-dev/skills/remotion-multimedia"
+        "heygen-com/hyperframes/remotion-to-hyperframes-2b3c61",
+        "asterxsk/veylith/office"
       ],
       "candidateTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "shahinjk-cpu/claude-skills/apple-design",
-        "remotion-dev/skills/remotion-multimedia"
+        "heygen-com/hyperframes/remotion-to-hyperframes-2b3c61",
+        "asterxsk/veylith/office"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1146,19 +1115,19 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "shahinjk-cpu/claude-skills/architecture-review",
-        "mitsuhiko/agent-stuff/openscad",
-        "jthorare/agentic-workflow/design-mockup"
+        "musicalbee/design-ontology/art-nouveau-architecture",
+        "musicalbee/design-ontology/beaux-arts-architecture",
+        "musicalbee/design-ontology/art-deco-architecture"
       ],
       "candidateTop3": [
-        "shahinjk-cpu/claude-skills/architecture-review",
-        "jthorare/agentic-workflow/design-mockup",
-        "jthorare/agentic-workflow/productReview"
+        "musicalbee/design-ontology/art-nouveau-architecture",
+        "musicalbee/design-ontology/beaux-arts-architecture",
+        "musicalbee/design-ontology/art-deco-architecture"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": -1,
+      "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
       "lowEvidenceDelta": 0
     }
