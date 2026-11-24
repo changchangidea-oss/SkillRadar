@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T10:30:36.440Z",
+  "generatedAt": "2026-11-24T12:38:21.818Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
@@ -20,13 +20,13 @@
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
   "specificityFailures": 7,
-  "capabilityGapCases": 38,
-  "averageRecommendationCount": 1.59,
-  "averageRelevantTop3": 1.59,
-  "averageTop1Score": 69.4,
+  "capabilityGapCases": 36,
+  "averageRecommendationCount": 1.69,
+  "averageRelevantTop3": 1.69,
+  "averageTop1Score": 70.8,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 119,
-  "anchorSignalHitsTotal": 24,
+  "signalHitsTotal": 122,
+  "anchorSignalHitsTotal": 26,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -34,9 +34,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 5,
+      "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 1.83
+      "averageRecommendationCount": 2
     },
     "Frontend": {
       "cases": 8,
@@ -66,7 +66,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 1.4
+      "averageRecommendationCount": 1.6
     },
     "DevOps & Cloud": {
       "cases": 5,
@@ -76,7 +76,7 @@
       "specificityFailures": 1,
       "capabilityGapCases": 5,
       "passRate": 0.8,
-      "averageRecommendationCount": 0.8
+      "averageRecommendationCount": 1
     },
     "Testing & Quality": {
       "cases": 5,
@@ -94,9 +94,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 1,
-      "capabilityGapCases": 3,
+      "capabilityGapCases": 2,
       "passRate": 0.75,
-      "averageRecommendationCount": 1.5
+      "averageRecommendationCount": 1.75
     },
     "Security": {
       "cases": 4,
@@ -106,7 +106,7 @@
       "specificityFailures": 2,
       "capabilityGapCases": 4,
       "passRate": 0.5,
-      "averageRecommendationCount": 0.5
+      "averageRecommendationCount": 0.75
     },
     "Mobile": {
       "cases": 4,
@@ -511,13 +511,13 @@
       "tier": "contract",
       "pass": true,
       "top3": [
-        "musicalbee/design-ontology/baroque-architecture",
-        "musicalbee/design-ontology/arts-and-crafts-interior",
-        "musicalbee/design-ontology/bauhaus-interior"
+        "curiositech/some_claude_skills/interior-design-expert",
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 91,
+      "top1_score": 80,
       "expected_hits": 0,
       "signal_hits": 4,
       "anchor_signal_hits": 0,
@@ -529,52 +529,49 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "musicalbee/design-ontology/baroque-architecture",
-          "score": 91,
-          "coverage": 1,
+          "id": "curiositech/some_claude_skills/interior-design-expert",
+          "score": 80,
+          "coverage": 0.75,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 4,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "architecture",
-            "rendering",
             "interior",
             "spatial"
           ]
         },
         {
-          "id": "musicalbee/design-ontology/arts-and-crafts-interior",
-          "score": 91,
-          "coverage": 1,
+          "id": "roble3/cc-blender-skill/blender-rendering",
+          "score": 79,
+          "coverage": 0.75,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 4,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "architecture",
             "rendering",
-            "interior",
-            "spatial"
+            "interior"
           ]
         },
         {
-          "id": "musicalbee/design-ontology/bauhaus-interior",
-          "score": 91,
-          "coverage": 1,
+          "id": "calesthio/generative-media-skills/neural-reality-capture",
+          "score": 77,
+          "coverage": 0.75,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 4,
+          "required_hits": 3,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
             "architecture",
-            "rendering",
             "interior",
             "spatial"
           ]
@@ -582,15 +579,15 @@
       ],
       "signals": [
         "architecture",
-        "rendering",
         "interior",
         "spatial",
-        "musicalbee-design-ontology-baroque-architecture",
-        "baroque-architecture",
-        "musicalbee-design-ontology-arts-and-crafts-interior",
-        "arts-and-crafts-interior",
-        "musicalbee-design-ontology-bauhaus-interior",
-        "bauhaus-interior"
+        "curiositech-some-claude-skills-interior-design-expert",
+        "interior-design-expert",
+        "rendering",
+        "roble3-cc-blender-skill-blender-rendering",
+        "blender-rendering",
+        "calesthio-generative-media-skills-neural-reality-capture",
+        "neural-reality-capture"
       ]
     },
     {
@@ -849,18 +846,19 @@
       "pass": true,
       "top3": [
         "cheaper-inference/OmniRoute/cli-mcp-d93c28",
-        "upstash/context7/context7-mcp-afa92d"
+        "upstash/context7/context7-mcp-afa92d",
+        "garrytan/gbrain/mcp-access-bfadc8"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 56,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -894,6 +892,21 @@
             "mcp",
             "agent"
           ]
+        },
+        {
+          "id": "garrytan/gbrain/mcp-access-bfadc8",
+          "score": 41,
+          "coverage": 0.26,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "mcp",
+            "agent"
+          ]
         }
       ],
       "signals": [
@@ -903,7 +916,9 @@
         "cheaper-inference-omniroute-cli-mcp-d93c28",
         "cli-mcp",
         "upstash-context7-context7-mcp-afa92d",
-        "context7-mcp"
+        "context7-mcp",
+        "garrytan-gbrain-mcp-access-bfadc8",
+        "mcp-access"
       ]
     },
     {
@@ -1331,18 +1346,19 @@
       "pass": true,
       "top3": [
         "antfu/skills/nitro-4dd2bd",
+        "imransetiadi/antireverse/airverse-setup",
         "antfu/skills/pnpm-6f233e"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 80,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1361,6 +1377,22 @@
             "server",
             "api",
             "backend"
+          ]
+        },
+        {
+          "id": "imransetiadi/antireverse/airverse-setup",
+          "score": 59,
+          "coverage": 0.62,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "node",
+            "server",
+            "architecture"
           ]
         },
         {
@@ -1387,6 +1419,9 @@
         "backend",
         "antfu-skills-nitro-4dd2bd",
         "nitro",
+        "architecture",
+        "imransetiadi-antireverse-airverse-setup",
+        "airverse-setup",
         "antfu-skills-pnpm-6f233e",
         "pnpm"
       ]
@@ -1512,18 +1547,19 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "supabase-postgres-best-practices"
+        "supabase-postgres-best-practices",
+        "garrytan/gbrain/postgres-adopt-833102"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 58,
       "expected_hits": 1,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1541,12 +1577,29 @@
             "postgres",
             "database"
           ]
+        },
+        {
+          "id": "garrytan/gbrain/postgres-adopt-833102",
+          "score": 52,
+          "coverage": 0.39,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 1,
+          "signals": [
+            "postgres",
+            "database"
+          ]
         }
       ],
       "signals": [
         "postgres",
         "database",
-        "supabase-postgres-best-practices"
+        "supabase-postgres-best-practices",
+        "garrytan-gbrain-postgres-adopt-833102",
+        "postgres-adopt"
       ]
     },
     {
@@ -1850,7 +1903,7 @@
       ],
       "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 95,
+      "top1_score": 94,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
@@ -1863,7 +1916,7 @@
       "candidates": [
         {
           "id": "antfu/skills/vitest-8d8886",
-          "score": 95,
+          "score": 94,
           "coverage": 1,
           "expected": false,
           "relevant": true,
@@ -1993,21 +2046,44 @@
       "domain": "DevOps & Cloud",
       "tier": "coverage",
       "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "top3": [
+        "garrytan/gbrain/postgres-adopt-833102"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 42,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 1,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 0,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "garrytan/gbrain/postgres-adopt-833102",
+          "score": 42,
+          "coverage": 0.3,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "docker",
+            "cloud"
+          ]
+        }
+      ],
+      "signals": [
+        "docker",
+        "cloud",
+        "garrytan-gbrain-postgres-adopt-833102",
+        "postgres-adopt"
+      ]
     },
     {
       "id": "github-ci",
@@ -2228,21 +2304,42 @@
       "domain": "Security",
       "tier": "coverage",
       "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
+      "top3": [
+        "garrytan/gbrain/mcp-access-bfadc8"
+      ],
+      "recommendation_count": 1,
       "capability_gap": true,
-      "top1_score": 0,
+      "top1_score": 34,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 1,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 0,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "garrytan/gbrain/mcp-access-bfadc8",
+          "score": 34,
+          "coverage": 0.22,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "permissions"
+          ]
+        }
+      ],
+      "signals": [
+        "permissions",
+        "garrytan-gbrain-mcp-access-bfadc8",
+        "mcp-access"
+      ]
     },
     {
       "id": "react-native-expo",
@@ -2574,7 +2671,7 @@
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 58,
+      "top1_score": 59,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 2,
@@ -2587,7 +2684,7 @@
       "candidates": [
         {
           "id": "googleworkspace/cli/gws-calendar-agenda-c125ff",
-          "score": 58,
+          "score": 59,
           "coverage": 0.42,
           "expected": false,
           "relevant": true,
@@ -2602,7 +2699,7 @@
         },
         {
           "id": "googleworkspace/cli/gws-gmail-read-e6b4b1",
-          "score": 53,
+          "score": 54,
           "coverage": 0.37,
           "expected": false,
           "relevant": true,
@@ -2768,15 +2865,15 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
+        "prisma/orm/write-architecture-docs-b497b7",
         "notion",
-        "figma/mcp-server-guide/create-design-system-rules"
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 53,
+      "top1_score": 77,
       "expected_hits": 0,
-      "signal_hits": 2,
+      "signal_hits": 3,
       "anchor_signal_hits": 1,
       "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
@@ -2786,18 +2883,20 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "flutter/agent-plugins/dart-write-documentation-4c8bb5",
-          "score": 53,
-          "coverage": 0.32,
+          "id": "prisma/orm/write-architecture-docs-b497b7",
+          "score": 77,
+          "coverage": 0.64,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 1,
+          "required_hits": 2,
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
             "write",
-            "documentation"
+            "documentation",
+            "system",
+            "architecture"
           ]
         },
         {
@@ -2816,8 +2915,8 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/create-design-system-rules",
-          "score": 49,
+          "id": "flutter/agent-plugins/dart-write-documentation-4c8bb5",
+          "score": 53,
           "coverage": 0.32,
           "expected": false,
           "relevant": true,
@@ -2826,21 +2925,22 @@
           "anchor_hits": 1,
           "identity_anchor_hits": 0,
           "signals": [
-            "documentation",
-            "system"
+            "write",
+            "documentation"
           ]
         }
       ],
       "signals": [
         "write",
         "documentation",
-        "flutter-agent-plugins-dart-write-documentation-4c8bb5",
-        "dart-write-documentation",
+        "system",
+        "architecture",
+        "prisma-orm-write-architecture-docs-b497b7",
+        "write-architecture-docs",
         "planning",
         "notion",
-        "system",
-        "figma-mcp-server-guide-create-design-system-rules",
-        "create-design-system-rules"
+        "flutter-agent-plugins-dart-write-documentation-4c8bb5",
+        "dart-write-documentation"
       ]
     },
     {
@@ -3101,8 +3201,8 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/remotion-to-hyperframes-2b3c61",
-        "asterxsk/veylith/office"
+        "heygen-com/hyperframes/motion-doctrine",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3134,8 +3234,8 @@
           ]
         },
         {
-          "id": "heygen-com/hyperframes/remotion-to-hyperframes-2b3c61",
-          "score": 79,
+          "id": "heygen-com/hyperframes/motion-doctrine",
+          "score": 77,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3150,8 +3250,8 @@
           ]
         },
         {
-          "id": "asterxsk/veylith/office",
-          "score": 82,
+          "id": "remotion-dev/skills/remotion-multimedia",
+          "score": 83,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3173,10 +3273,10 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "heygen-com-hyperframes-remotion-to-hyperframes-2b3c61",
-        "remotion-to-hyperframes",
-        "asterxsk-veylith-office",
-        "office"
+        "heygen-com-hyperframes-motion-doctrine",
+        "motion-doctrine",
+        "remotion-dev-skills-remotion-multimedia",
+        "remotion-multimedia"
       ]
     },
     {
@@ -3185,13 +3285,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "musicalbee/design-ontology/art-nouveau-architecture",
-        "musicalbee/design-ontology/beaux-arts-architecture",
-        "musicalbee/design-ontology/art-deco-architecture"
+        "nightly-labs/openbot/principle-exhaust-the-design-space",
+        "mitsuhiko/agent-stuff/openscad",
+        "nightly-labs/openbot/agent-designer"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 91,
+      "top1_score": 77,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3203,27 +3303,25 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "musicalbee/design-ontology/art-nouveau-architecture",
-          "score": 91,
-          "coverage": 1,
+          "id": "nightly-labs/openbot/principle-exhaust-the-design-space",
+          "score": 77,
+          "coverage": 0.67,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
-          "required_hits": 3,
+          "required_hits": 2,
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "cad",
             "industrial-design",
             "industrial",
-            "product",
-            "cad"
+            "product"
           ]
         },
         {
-          "id": "musicalbee/design-ontology/beaux-arts-architecture",
-          "score": 78,
-          "coverage": 0.78,
+          "id": "mitsuhiko/agent-stuff/openscad",
+          "score": 68,
+          "coverage": 0.56,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3232,15 +3330,14 @@
           "identity_anchor_hits": 0,
           "signals": [
             "cad",
-            "industrial-design",
             "industrial",
             "cad"
           ]
         },
         {
-          "id": "musicalbee/design-ontology/art-deco-architecture",
-          "score": 78,
-          "coverage": 0.78,
+          "id": "nightly-labs/openbot/agent-designer",
+          "score": 77,
+          "coverage": 0.67,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -3248,24 +3345,23 @@
           "anchor_hits": 0,
           "identity_anchor_hits": 0,
           "signals": [
-            "cad",
             "industrial-design",
             "industrial",
-            "cad"
+            "product"
           ]
         }
       ],
       "signals": [
-        "cad",
         "industrial-design",
         "industrial",
         "product",
-        "musicalbee-design-ontology-art-nouveau-architecture",
-        "art-nouveau-architecture",
-        "musicalbee-design-ontology-beaux-arts-architecture",
-        "beaux-arts-architecture",
-        "musicalbee-design-ontology-art-deco-architecture",
-        "art-deco-architecture"
+        "nightly-labs-openbot-principle-exhaust-the-design-space",
+        "principle-exhaust-the-design-space",
+        "cad",
+        "mitsuhiko-agent-stuff-openscad",
+        "openscad",
+        "nightly-labs-openbot-agent-designer",
+        "agent-designer"
       ]
     }
   ]

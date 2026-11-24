@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-19T10:30:57.286Z",
+  "generatedAt": "2026-11-24T12:38:36.946Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "registrySnapshot": {
-    "contentHash": "34a21714857a73af00795dea74abb959206271afc62eff84afaef3a2594b47ca",
+    "contentHash": "ff8edd1a0d331b401c76d873c76dabf7cef04dfc3cf0637c65bee6d59203f4e4",
     "contentHashVersion": 2,
-    "generatedAt": "2026-11-19T10:30:22.765Z",
-    "totalCount": 472,
+    "generatedAt": "2026-11-24T12:38:11.608Z",
+    "totalCount": 386,
     "mode": "local-bundled"
   },
   "production": {
@@ -20,12 +20,12 @@
     "unsafeTop3": 0,
     "lowEvidenceTop3": 0,
     "specificityFailures": 7,
-    "capabilityGapCases": 38,
-    "averageRecommendationCount": 1.59,
+    "capabilityGapCases": 36,
+    "averageRecommendationCount": 1.69,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 119,
-    "anchorSignalHitsTotal": 24,
-    "averageTop1Score": 69.4
+    "signalHitsTotal": 122,
+    "anchorSignalHitsTotal": 26,
+    "averageTop1Score": 70.8
   },
   "candidate": {
     "profile": "facet-heavy-rerank-v0.6-shadow",
@@ -38,18 +38,18 @@
     "unsafeTop3": 0,
     "lowEvidenceTop3": 1,
     "specificityFailures": 7,
-    "capabilityGapCases": 38,
-    "averageRecommendationCount": 1.61,
+    "capabilityGapCases": 36,
+    "averageRecommendationCount": 1.7,
     "expectedHitsTotal": 31,
-    "signalHitsTotal": 119,
-    "anchorSignalHitsTotal": 24,
-    "averageTop1Score": 69.4
+    "signalHitsTotal": 121,
+    "anchorSignalHitsTotal": 26,
+    "averageTop1Score": 70.8
   },
   "gates": {
     "safetyPass": true,
     "contractNonRegression": true,
     "coverageNonRegression": true,
-    "evidenceDelta": -1
+    "evidenceDelta": -2
   },
   "decision": "hold",
   "note": "This is one shadow snapshot only. snapshot-win is evidence, not promotion eligibility. Promotion requires the separate multi-snapshot history gate and never changes production automatically.",
@@ -184,14 +184,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "musicalbee/design-ontology/baroque-architecture",
-        "musicalbee/design-ontology/arts-and-crafts-interior",
-        "musicalbee/design-ontology/bauhaus-interior"
+        "curiositech/some_claude_skills/interior-design-expert",
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "candidateTop3": [
-        "musicalbee/design-ontology/baroque-architecture",
-        "musicalbee/design-ontology/arts-and-crafts-interior",
-        "musicalbee/design-ontology/bauhaus-interior"
+        "curiositech/some_claude_skills/interior-design-expert",
+        "roble3/cc-blender-skill/blender-rendering",
+        "calesthio/generative-media-skills/neural-reality-capture"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -290,14 +290,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "cheaper-inference/OmniRoute/cli-mcp-d93c28",
-        "upstash/context7/context7-mcp-afa92d"
+        "upstash/context7/context7-mcp-afa92d",
+        "garrytan/gbrain/mcp-access-bfadc8"
       ],
       "candidateTop3": [
         "cheaper-inference/OmniRoute/cli-mcp-d93c28",
-        "upstash/context7/context7-mcp-afa92d"
+        "upstash/context7/context7-mcp-afa92d",
+        "garrytan/gbrain/mcp-access-bfadc8"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -452,14 +454,16 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "antfu/skills/nitro-4dd2bd",
+        "imransetiadi/antireverse/airverse-setup",
         "antfu/skills/pnpm-6f233e"
       ],
       "candidateTop3": [
         "antfu/skills/nitro-4dd2bd",
+        "imransetiadi/antireverse/airverse-setup",
         "antfu/skills/pnpm-6f233e"
       ],
-      "productionRecommendationCount": 2,
-      "candidateRecommendationCount": 2,
+      "productionRecommendationCount": 3,
+      "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -525,13 +529,15 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "supabase-postgres-best-practices"
+        "supabase-postgres-best-practices",
+        "garrytan/gbrain/postgres-adopt-833102"
       ],
       "candidateTop3": [
-        "supabase-postgres-best-practices"
+        "supabase-postgres-best-practices",
+        "garrytan/gbrain/postgres-adopt-833102"
       ],
-      "productionRecommendationCount": 1,
-      "candidateRecommendationCount": 1,
+      "productionRecommendationCount": 2,
+      "candidateRecommendationCount": 2,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -686,10 +692,14 @@
       "candidatePass": false,
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionTop3": [
+        "garrytan/gbrain/postgres-adopt-833102"
+      ],
+      "candidateTop3": [
+        "garrytan/gbrain/postgres-adopt-833102"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -792,10 +802,14 @@
       "candidatePass": false,
       "productionSpecificityPass": false,
       "candidateSpecificityPass": false,
-      "productionTop3": [],
-      "candidateTop3": [],
-      "productionRecommendationCount": 0,
-      "candidateRecommendationCount": 0,
+      "productionTop3": [
+        "garrytan/gbrain/mcp-access-bfadc8"
+      ],
+      "candidateTop3": [
+        "garrytan/gbrain/mcp-access-bfadc8"
+      ],
+      "productionRecommendationCount": 1,
+      "candidateRecommendationCount": 1,
       "expectedHitDelta": 0,
       "signalHitDelta": 0,
       "anchorSignalHitDelta": 0,
@@ -1000,14 +1014,14 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
+        "prisma/orm/write-architecture-docs-b497b7",
         "notion",
-        "figma/mcp-server-guide/create-design-system-rules"
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5"
       ],
       "candidateTop3": [
-        "flutter/agent-plugins/dart-write-documentation-4c8bb5",
+        "prisma/orm/write-architecture-docs-b497b7",
         "notion",
-        "figma/mcp-server-guide/create-design-system-rules"
+        "flutter/agent-plugins/dart-write-documentation-4c8bb5"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1093,13 +1107,13 @@
       "candidateSpecificityPass": true,
       "productionTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/remotion-to-hyperframes-2b3c61",
-        "asterxsk/veylith/office"
+        "heygen-com/hyperframes/motion-doctrine",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "candidateTop3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/remotion-to-hyperframes-2b3c61",
-        "asterxsk/veylith/office"
+        "heygen-com/hyperframes/motion-doctrine",
+        "remotion-dev/skills/remotion-multimedia"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
@@ -1115,19 +1129,19 @@
       "productionSpecificityPass": true,
       "candidateSpecificityPass": true,
       "productionTop3": [
-        "musicalbee/design-ontology/art-nouveau-architecture",
-        "musicalbee/design-ontology/beaux-arts-architecture",
-        "musicalbee/design-ontology/art-deco-architecture"
+        "nightly-labs/openbot/principle-exhaust-the-design-space",
+        "mitsuhiko/agent-stuff/openscad",
+        "nightly-labs/openbot/agent-designer"
       ],
       "candidateTop3": [
-        "musicalbee/design-ontology/art-nouveau-architecture",
-        "musicalbee/design-ontology/beaux-arts-architecture",
-        "musicalbee/design-ontology/art-deco-architecture"
+        "nightly-labs/openbot/principle-exhaust-the-design-space",
+        "nightly-labs/openbot/agent-designer",
+        "nightly-labs/openbot/principle-redesign-from-first-principles"
       ],
       "productionRecommendationCount": 3,
       "candidateRecommendationCount": 3,
       "expectedHitDelta": 0,
-      "signalHitDelta": 0,
+      "signalHitDelta": -1,
       "anchorSignalHitDelta": 0,
       "lowEvidenceDelta": 0
     }
