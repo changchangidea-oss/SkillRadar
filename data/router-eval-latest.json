@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T12:38:21.818Z",
+  "generatedAt": "2026-11-26T11:04:03.771Z",
   "evalVersion": 2,
   "specificityPolicyVersion": 5,
   "rankingVersion": "2.1",
@@ -20,13 +20,13 @@
   "lowEvidenceTop3": 0,
   "candidateEvidenceFailures": 0,
   "specificityFailures": 7,
-  "capabilityGapCases": 36,
-  "averageRecommendationCount": 1.69,
-  "averageRelevantTop3": 1.69,
-  "averageTop1Score": 70.8,
+  "capabilityGapCases": 35,
+  "averageRecommendationCount": 1.74,
+  "averageRelevantTop3": 1.74,
+  "averageTop1Score": 71.6,
   "expectedHitsTotal": 31,
-  "signalHitsTotal": 122,
-  "anchorSignalHitsTotal": 26,
+  "signalHitsTotal": 123,
+  "anchorSignalHitsTotal": 27,
   "byDomain": {
     "AI Agents": {
       "cases": 6,
@@ -36,7 +36,7 @@
       "specificityFailures": 0,
       "capabilityGapCases": 4,
       "passRate": 1,
-      "averageRecommendationCount": 2
+      "averageRecommendationCount": 1.83
     },
     "Frontend": {
       "cases": 8,
@@ -54,9 +54,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 0,
+      "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 3
+      "averageRecommendationCount": 2.6
     },
     "Data & Database": {
       "cases": 5,
@@ -76,7 +76,7 @@
       "specificityFailures": 1,
       "capabilityGapCases": 5,
       "passRate": 0.8,
-      "averageRecommendationCount": 1
+      "averageRecommendationCount": 1.2
     },
     "Testing & Quality": {
       "cases": 5,
@@ -94,9 +94,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 1,
-      "capabilityGapCases": 2,
+      "capabilityGapCases": 3,
       "passRate": 0.75,
-      "averageRecommendationCount": 1.75
+      "averageRecommendationCount": 1.5
     },
     "Security": {
       "cases": 4,
@@ -114,9 +114,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 3,
-      "capabilityGapCases": 3,
+      "capabilityGapCases": 1,
       "passRate": 0.25,
-      "averageRecommendationCount": 1
+      "averageRecommendationCount": 2.25
     },
     "Automation & Integrations": {
       "cases": 4,
@@ -124,9 +124,9 @@
       "lowEvidenceTop3": 0,
       "candidateEvidenceFailures": 0,
       "specificityFailures": 0,
-      "capabilityGapCases": 2,
+      "capabilityGapCases": 1,
       "passRate": 1,
-      "averageRecommendationCount": 2.25
+      "averageRecommendationCount": 2.5
     },
     "Docs & Research": {
       "cases": 4,
@@ -927,10 +927,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "ai-sdk",
-        "nexu-io/open-design/clinical-case-report-638ff1"
+        "ai-sdk"
       ],
-      "recommendation_count": 2,
+      "recommendation_count": 1,
       "capability_gap": true,
       "top1_score": 74,
       "expected_hits": 1,
@@ -939,7 +938,7 @@
       "anchor_candidate_count": 0,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -959,21 +958,6 @@
             "outputs",
             "streaming"
           ]
-        },
-        {
-          "id": "nexu-io/open-design/clinical-case-report-638ff1",
-          "score": 47,
-          "coverage": 0.32,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 0,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "generate",
-            "structured"
-          ]
         }
       ],
       "signals": [
@@ -981,10 +965,7 @@
         "ai",
         "outputs",
         "streaming",
-        "ai-sdk",
-        "generate",
-        "nexu-io-open-design-clinical-case-report-638ff1",
-        "clinical-case-report"
+        "ai-sdk"
       ]
     },
     {
@@ -1346,19 +1327,18 @@
       "pass": true,
       "top3": [
         "antfu/skills/nitro-4dd2bd",
-        "imransetiadi/antireverse/airverse-setup",
         "antfu/skills/pnpm-6f233e"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
+      "recommendation_count": 2,
+      "capability_gap": true,
       "top1_score": 80,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -1380,24 +1360,8 @@
           ]
         },
         {
-          "id": "imransetiadi/antireverse/airverse-setup",
-          "score": 59,
-          "coverage": 0.62,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "node",
-            "server",
-            "architecture"
-          ]
-        },
-        {
           "id": "antfu/skills/pnpm-6f233e",
-          "score": 61,
+          "score": 60,
           "coverage": 0.57,
           "expected": false,
           "relevant": true,
@@ -1419,9 +1383,6 @@
         "backend",
         "antfu-skills-nitro-4dd2bd",
         "nitro",
-        "architecture",
-        "imransetiadi-antireverse-airverse-setup",
-        "airverse-setup",
         "antfu-skills-pnpm-6f233e",
         "pnpm"
       ]
@@ -1848,7 +1809,7 @@
         },
         {
           "id": "flutter/agent-plugins/code-review-e26d76",
-          "score": 68,
+          "score": 67,
           "coverage": 0.53,
           "expected": true,
           "relevant": true,
@@ -2047,18 +2008,19 @@
       "tier": "coverage",
       "pass": false,
       "top3": [
-        "garrytan/gbrain/postgres-adopt-833102"
+        "garrytan/gbrain/postgres-adopt-833102",
+        "droidrun/mobilerun/mobilerun-0e95f5"
       ],
-      "recommendation_count": 1,
+      "recommendation_count": 2,
       "capability_gap": true,
       "top1_score": 42,
       "expected_hits": 0,
       "signal_hits": 1,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 2,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 1,
+      "relevant_top3": 2,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2076,13 +2038,29 @@
             "docker",
             "cloud"
           ]
+        },
+        {
+          "id": "droidrun/mobilerun/mobilerun-0e95f5",
+          "score": 28,
+          "coverage": 0.15,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 1,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "docker"
+          ]
         }
       ],
       "signals": [
         "docker",
         "cloud",
         "garrytan-gbrain-postgres-adopt-833102",
-        "postgres-adopt"
+        "postgres-adopt",
+        "droidrun-mobilerun-mobilerun-0e95f5",
+        "mobilerun-docs"
       ]
     },
     {
@@ -2347,24 +2325,56 @@
       "tier": "coverage",
       "pass": false,
       "top3": [
-        "callstackincubator/agent-skills/react-native-best-practices-260d4b"
+        "callstackincubator/agent-skills/react-native-testing-6ef74d",
+        "callstackincubator/agent-skills/react-native-best-practices-260d4b",
+        "callstackincubator/agent-skills/assess-react-native-migration-43ffb6"
       ],
-      "recommendation_count": 1,
-      "capability_gap": true,
-      "top1_score": 81,
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 82,
       "expected_hits": 0,
       "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 1,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 1,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
         {
+          "id": "callstackincubator/agent-skills/react-native-testing-6ef74d",
+          "score": 82,
+          "coverage": 0.78,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "react-native",
+            "mobile"
+          ]
+        },
+        {
           "id": "callstackincubator/agent-skills/react-native-best-practices-260d4b",
           "score": 81,
+          "coverage": 0.78,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "react-native",
+            "mobile"
+          ]
+        },
+        {
+          "id": "callstackincubator/agent-skills/assess-react-native-migration-43ffb6",
+          "score": 78,
           "coverage": 0.78,
           "expected": false,
           "relevant": true,
@@ -2381,8 +2391,12 @@
       "signals": [
         "react-native",
         "mobile",
+        "callstackincubator-agent-skills-react-native-testing-6ef74d",
+        "react-native-testing",
         "callstackincubator-agent-skills-react-native-best-practices-260d4b",
-        "react-native-best-practices"
+        "react-native-best-practices",
+        "callstackincubator-agent-skills-assess-react-native-migration-43ffb6",
+        "assess-react-native-migration"
       ]
     },
     {
@@ -2411,21 +2425,80 @@
       "domain": "Mobile",
       "tier": "coverage",
       "pass": false,
-      "top3": [],
-      "recommendation_count": 0,
-      "capability_gap": true,
-      "top1_score": 0,
+      "top3": [
+        "callstackincubator/agent-skills/agent-device-f62531",
+        "nexu-io/open-design/mobile-app",
+        "callstackincubator/agent-skills/assess-react-native-migration-43ffb6"
+      ],
+      "recommendation_count": 3,
+      "capability_gap": false,
+      "top1_score": 42,
       "expected_hits": 0,
-      "signal_hits": 0,
-      "anchor_signal_hits": 0,
-      "anchor_candidate_count": 0,
+      "signal_hits": 2,
+      "anchor_signal_hits": 1,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": false,
-      "relevant_top3": 0,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
-      "candidates": [],
-      "signals": []
+      "candidates": [
+        {
+          "id": "callstackincubator/agent-skills/agent-device-f62531",
+          "score": 42,
+          "coverage": 0.23,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "android",
+            "mobile"
+          ]
+        },
+        {
+          "id": "nexu-io/open-design/mobile-app",
+          "score": 38,
+          "coverage": 0.23,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "android",
+            "mobile"
+          ]
+        },
+        {
+          "id": "callstackincubator/agent-skills/assess-react-native-migration-43ffb6",
+          "score": 38,
+          "coverage": 0.23,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 2,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "android",
+            "mobile"
+          ]
+        }
+      ],
+      "signals": [
+        "android",
+        "mobile",
+        "callstackincubator-agent-skills-agent-device-f62531",
+        "agent-device",
+        "nexu-io-open-design-mobile-app",
+        "mobile-app",
+        "callstackincubator-agent-skills-assess-react-native-migration-43ffb6",
+        "assess-react-native-migration"
+      ]
     },
     {
       "id": "flutter-mobile",
@@ -2434,7 +2507,7 @@
       "pass": true,
       "top3": [
         "flutter/agent-plugins/flutter-build-responsive-layout-ea3d50",
-        "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
+        "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
         "flutter/agent-plugins/flutter-apply-architecture-best-practices-c5e4dd"
       ],
       "recommendation_count": 3,
@@ -2466,7 +2539,7 @@
           ]
         },
         {
-          "id": "flutter/agent-plugins/flutter-add-integration-test-91cc8c",
+          "id": "flutter/agent-plugins/flutter-add-widget-preview-8e7a10",
           "score": 64,
           "coverage": 0.61,
           "expected": false,
@@ -2501,8 +2574,8 @@
         "mobile",
         "flutter-agent-plugins-flutter-build-responsive-layout-ea3d50",
         "flutter-build-responsive-layout",
-        "flutter-agent-plugins-flutter-add-integration-test-91cc8c",
-        "flutter-add-integration-test",
+        "flutter-agent-plugins-flutter-add-widget-preview-8e7a10",
+        "flutter-add-widget-preview",
         "flutter-agent-plugins-flutter-apply-architecture-best-practices-c5e4dd",
         "flutter-apply-architecture-best-practices"
       ]
@@ -2514,18 +2587,19 @@
       "pass": true,
       "top3": [
         "github",
-        "nexu-io/open-design/github-dashboard-a45aef"
+        "nexu-io/open-design/orbit-github",
+        "nexu-io/open-design/github-dashboard"
       ],
-      "recommendation_count": 2,
-      "capability_gap": true,
+      "recommendation_count": 3,
+      "capability_gap": false,
       "top1_score": 88,
       "expected_hits": 1,
       "signal_hits": 3,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 2,
+      "anchor_candidate_count": 3,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 2,
+      "relevant_top3": 3,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
@@ -2549,9 +2623,26 @@
           ]
         },
         {
-          "id": "nexu-io/open-design/github-dashboard-a45aef",
-          "score": 78,
-          "coverage": 0.74,
+          "id": "nexu-io/open-design/orbit-github",
+          "score": 65,
+          "coverage": 0.57,
+          "expected": false,
+          "relevant": true,
+          "candidate_evidence_pass": true,
+          "required_hits": 3,
+          "anchor_hits": 1,
+          "identity_anchor_hits": 0,
+          "signals": [
+            "github",
+            "requests",
+            "issues",
+            "ci"
+          ]
+        },
+        {
+          "id": "nexu-io/open-design/github-dashboard",
+          "score": 65,
+          "coverage": 0.57,
           "expected": false,
           "relevant": true,
           "candidate_evidence_pass": true,
@@ -2562,8 +2653,7 @@
             "github",
             "pull",
             "requests",
-            "issues",
-            "automation"
+            "issues"
           ]
         }
       ],
@@ -2575,7 +2665,9 @@
         "ci",
         "automation",
         "requests",
-        "nexu-io-open-design-github-dashboard-a45aef",
+        "nexu-io-open-design-orbit-github",
+        "orbit-github",
+        "nexu-io-open-design-github-dashboard",
         "github-dashboard"
       ]
     },
@@ -2665,9 +2757,9 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "googleworkspace/cli/gws-calendar-agenda-c125ff",
-        "googleworkspace/cli/gws-gmail-read-e6b4b1",
-        "googleworkspace/cli/gws-calendar-03339c"
+        "googleworkspace/cli/gws-calendar-03339c",
+        "googleworkspace/cli/gws-gmail-forward-382cf4",
+        "googleworkspace/cli/gws-calendar-agenda-c125ff"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -2683,7 +2775,7 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "googleworkspace/cli/gws-calendar-agenda-c125ff",
+          "id": "googleworkspace/cli/gws-calendar-03339c",
           "score": 59,
           "coverage": 0.42,
           "expected": false,
@@ -2698,7 +2790,7 @@
           ]
         },
         {
-          "id": "googleworkspace/cli/gws-gmail-read-e6b4b1",
+          "id": "googleworkspace/cli/gws-gmail-forward-382cf4",
           "score": 54,
           "coverage": 0.37,
           "expected": false,
@@ -2713,8 +2805,8 @@
           ]
         },
         {
-          "id": "googleworkspace/cli/gws-calendar-03339c",
-          "score": 58,
+          "id": "googleworkspace/cli/gws-calendar-agenda-c125ff",
+          "score": 59,
           "coverage": 0.42,
           "expected": false,
           "relevant": true,
@@ -2731,13 +2823,13 @@
       "signals": [
         "calendar",
         "integration",
-        "googleworkspace-cli-gws-calendar-agenda-c125ff",
-        "gws-calendar-agenda",
-        "gmail",
-        "googleworkspace-cli-gws-gmail-read-e6b4b1",
-        "gws-gmail-read",
         "googleworkspace-cli-gws-calendar-03339c",
-        "gws-calendar"
+        "gws-calendar",
+        "gmail",
+        "googleworkspace-cli-gws-gmail-forward-382cf4",
+        "gws-gmail-forward",
+        "googleworkspace-cli-gws-calendar-agenda-c125ff",
+        "gws-calendar-agenda"
       ]
     },
     {
@@ -2951,7 +3043,7 @@
       "top3": [
         "figma",
         "figma/mcp-server-guide/figma-design-to-code",
-        "figma/mcp-server-guide/figma-generate-design"
+        "nexu-io/open-design/token-map"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3001,8 +3093,8 @@
           ]
         },
         {
-          "id": "figma/mcp-server-guide/figma-generate-design",
-          "score": 64,
+          "id": "nexu-io/open-design/token-map",
+          "score": 62,
           "coverage": 0.46,
           "expected": false,
           "relevant": true,
@@ -3025,8 +3117,8 @@
         "it",
         "figma-mcp-server-guide-figma-design-to-code",
         "figma-design-to-code",
-        "figma-mcp-server-guide-figma-generate-design",
-        "figma-generate-design"
+        "nexu-io-open-design-token-map",
+        "token-map"
       ]
     },
     {
@@ -3037,7 +3129,7 @@
       "top3": [
         "borghei/claude-skills/product-designer",
         "curiositech/some_claude_skills/ux-friction-analyzer",
-        "curiositech/some_claude_skills/human-centered-design-fundamentals"
+        "nexu-io/open-design/html-ppt-zhangzara-pink-script"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
@@ -3085,8 +3177,8 @@
           ]
         },
         {
-          "id": "curiositech/some_claude_skills/human-centered-design-fundamentals",
-          "score": 73,
+          "id": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+          "score": 77,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3108,8 +3200,8 @@
         "product-designer",
         "curiositech-some-claude-skills-ux-friction-analyzer",
         "ux-friction-analyzer",
-        "curiositech-some-claude-skills-human-centered-design-fundamentals",
-        "human-centered-design-fundamentals"
+        "nexu-io-open-design-html-ppt-zhangzara-pink-script",
+        "html-ppt-zhangzara-pink-script"
       ]
     },
     {
@@ -3118,38 +3210,21 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nexu-io/open-design/magazine-poster-f52efe",
-        "vanducng/skills/marketing-design-678c70",
-        "zhayujie/CowAgent/image-generation-1bb1a3"
+        "vanducng/skills/marketing-design-678c70"
       ],
-      "recommendation_count": 3,
-      "capability_gap": false,
-      "top1_score": 53,
+      "recommendation_count": 1,
+      "capability_gap": true,
+      "top1_score": 52,
       "expected_hits": 0,
-      "signal_hits": 3,
+      "signal_hits": 2,
       "anchor_signal_hits": 1,
-      "anchor_candidate_count": 3,
+      "anchor_candidate_count": 1,
       "candidate_evidence_failures": 0,
       "specificity_pass": true,
-      "relevant_top3": 3,
+      "relevant_top3": 1,
       "low_evidence_top3": 0,
       "unsafe_top3": 0,
       "candidates": [
-        {
-          "id": "nexu-io/open-design/magazine-poster-f52efe",
-          "score": 53,
-          "coverage": 0.29,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 1,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "poster",
-            "layout"
-          ]
-        },
         {
           "id": "vanducng/skills/marketing-design-678c70",
           "score": 52,
@@ -3164,34 +3239,13 @@
             "poster",
             "brand"
           ]
-        },
-        {
-          "id": "zhayujie/CowAgent/image-generation-1bb1a3",
-          "score": 51,
-          "coverage": 0.29,
-          "expected": false,
-          "relevant": true,
-          "candidate_evidence_pass": true,
-          "required_hits": 2,
-          "anchor_hits": 1,
-          "identity_anchor_hits": 0,
-          "signals": [
-            "visual",
-            "poster"
-          ]
         }
       ],
       "signals": [
         "poster",
-        "layout",
-        "nexu-io-open-design-magazine-poster-f52efe",
-        "magazine-poster",
         "brand",
         "vanducng-skills-marketing-design-678c70",
-        "marketing-design",
-        "visual",
-        "zhayujie-cowagent-image-generation-1bb1a3",
-        "image-generation"
+        "marketing-design"
       ]
     },
     {
@@ -3201,7 +3255,7 @@
       "pass": true,
       "top3": [
         "remotion-dev/skills/remotion-best-practices",
-        "heygen-com/hyperframes/motion-doctrine",
+        "heygen-com/hyperframes/remotion-to-hyperframes-2b3c61",
         "remotion-dev/skills/remotion-multimedia"
       ],
       "recommendation_count": 3,
@@ -3234,8 +3288,8 @@
           ]
         },
         {
-          "id": "heygen-com/hyperframes/motion-doctrine",
-          "score": 77,
+          "id": "heygen-com/hyperframes/remotion-to-hyperframes-2b3c61",
+          "score": 79,
           "coverage": 0.75,
           "expected": false,
           "relevant": true,
@@ -3273,8 +3327,8 @@
         "remotion-dev-skills-remotion-best-practices",
         "remotion-best-practices",
         "animation",
-        "heygen-com-hyperframes-motion-doctrine",
-        "motion-doctrine",
+        "heygen-com-hyperframes-remotion-to-hyperframes-2b3c61",
+        "remotion-to-hyperframes",
         "remotion-dev-skills-remotion-multimedia",
         "remotion-multimedia"
       ]
@@ -3285,13 +3339,13 @@
       "tier": "coverage",
       "pass": true,
       "top3": [
-        "nightly-labs/openbot/principle-exhaust-the-design-space",
+        "nexu-io/open-design/x-research",
         "mitsuhiko/agent-stuff/openscad",
-        "nightly-labs/openbot/agent-designer"
+        "nexu-io/open-design/rewrite-plan"
       ],
       "recommendation_count": 3,
       "capability_gap": false,
-      "top1_score": 77,
+      "top1_score": 76,
       "expected_hits": 0,
       "signal_hits": 3,
       "anchor_signal_hits": 0,
@@ -3303,8 +3357,8 @@
       "unsafe_top3": 0,
       "candidates": [
         {
-          "id": "nightly-labs/openbot/principle-exhaust-the-design-space",
-          "score": 77,
+          "id": "nexu-io/open-design/x-research",
+          "score": 76,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3335,8 +3389,8 @@
           ]
         },
         {
-          "id": "nightly-labs/openbot/agent-designer",
-          "score": 77,
+          "id": "nexu-io/open-design/rewrite-plan",
+          "score": 73,
           "coverage": 0.67,
           "expected": false,
           "relevant": true,
@@ -3355,13 +3409,13 @@
         "industrial-design",
         "industrial",
         "product",
-        "nightly-labs-openbot-principle-exhaust-the-design-space",
-        "principle-exhaust-the-design-space",
+        "nexu-io-open-design-x-research",
+        "x-research",
         "cad",
         "mitsuhiko-agent-stuff-openscad",
         "openscad",
-        "nightly-labs-openbot-agent-designer",
-        "agent-designer"
+        "nexu-io-open-design-rewrite-plan",
+        "rewrite-plan"
       ]
     }
   ]

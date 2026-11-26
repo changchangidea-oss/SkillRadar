@@ -183,13 +183,13 @@
         "source": "seed",
         "security": "A",
         "rank": 19,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
-        "skillId": "mblode/agent-skills/ui-animation",
-        "seedScore": 59,
-        "source": "seed",
+        "skillId": "nexu-io/open-design/aster-atelier",
+        "seedScore": 61,
+        "source": "radar",
         "security": "A",
         "rank": 20,
         "delta": null,
@@ -197,7 +197,7 @@
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.004Z"
   },
   {
     "id": "visual-communication",
@@ -335,71 +335,71 @@
         "status": "steady"
       },
       {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-broadside",
+        "seedScore": 67,
+        "source": "radar",
+        "security": "B",
+        "rank": 14,
+        "delta": null,
+        "status": "new"
+      },
+      {
         "skillId": "narumiruna/skills/svg-illustration",
         "seedScore": 66,
         "source": "seed",
         "security": "A",
-        "rank": 14,
-        "delta": 0,
-        "status": "steady"
+        "rank": 15,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
         "seedScore": 66,
         "source": "seed",
         "security": "A",
-        "rank": 15,
-        "delta": 0,
-        "status": "steady"
+        "rank": 16,
+        "delta": -1,
+        "status": "down"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+        "seedScore": 66,
+        "source": "radar",
+        "security": "B",
+        "rank": 17,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-sakura-chroma",
+        "seedScore": 66,
+        "source": "radar",
+        "security": "B",
+        "rank": 18,
+        "delta": null,
+        "status": "new"
       },
       {
         "skillId": "heroygt/skills/svg-icon-maker",
         "seedScore": 65,
         "source": "seed",
         "security": "A",
-        "rank": 16,
-        "delta": 0,
-        "status": "steady"
+        "rank": 19,
+        "delta": -3,
+        "status": "down"
       },
       {
         "skillId": "curiositech/some_claude_skills/hand-drawn-infographic-creator",
         "seedScore": 65,
         "source": "seed",
         "security": "A",
-        "rank": 17,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "curiositech/some_claude_skills/collage-layout-expert",
-        "seedScore": 65,
-        "source": "seed",
-        "security": "A",
-        "rank": 18,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "vercel-labs/agent-skills/web-design-guidelines",
-        "seedScore": 64,
-        "source": "seed",
-        "security": "A",
-        "rank": 19,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "pbakaus/impeccable/quieter",
-        "seedScore": 63,
-        "source": "seed",
-        "security": "A",
         "rank": 20,
-        "delta": 0,
-        "status": "steady"
+        "delta": -3,
+        "status": "down"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.004Z"
   },
   {
     "id": "operations-design",
@@ -474,134 +474,134 @@
         "status": "steady"
       },
       {
-        "skillId": "mblode/agent-skills/ui-design",
-        "seedScore": 66,
-        "source": "seed",
-        "security": "A",
-        "rank": 7,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "curiositech/some_claude_skills/photo-composition-critic",
-        "seedScore": 66,
-        "source": "seed",
-        "security": "A",
-        "rank": 8,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "anthropics/skills/frontend-design",
-        "seedScore": 65,
-        "source": "seed",
-        "security": "A",
-        "rank": 9,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "pbakaus/impeccable/colorize",
-        "seedScore": 63,
-        "source": "seed",
-        "security": "A",
-        "rank": 10,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "pbakaus/impeccable/bolder",
-        "seedScore": 63,
-        "source": "seed",
-        "security": "A",
-        "rank": 11,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "pbakaus/impeccable/typeset",
-        "seedScore": 63,
-        "source": "seed",
-        "security": "A",
-        "rank": 12,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "calesthio/generative-media-skills/visual-style-direction",
-        "seedScore": 63,
-        "source": "seed",
-        "security": "A",
-        "rank": 13,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "remotion-dev/skills/remotion-best-practices",
-        "seedScore": 57,
-        "source": "seed",
-        "security": "A",
-        "rank": 14,
-        "delta": 2,
-        "status": "up"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/oversized-cursor",
-        "seedScore": 56,
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-broadside",
+        "seedScore": 73,
         "source": "radar",
-        "security": "A",
+        "security": "B",
+        "rank": 7,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+        "seedScore": 72,
+        "source": "radar",
+        "security": "B",
+        "rank": 8,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-sakura-chroma",
+        "seedScore": 72,
+        "source": "radar",
+        "security": "B",
+        "rank": 9,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/guizang-ppt",
+        "seedScore": 71,
+        "source": "radar",
+        "security": "C",
+        "rank": 10,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/replit-deck",
+        "seedScore": 70,
+        "source": "radar",
+        "security": "C",
+        "rank": 11,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-coral",
+        "seedScore": 69,
+        "source": "radar",
+        "security": "B",
+        "rank": 12,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/open-design-landing-deck",
+        "seedScore": 69,
+        "source": "radar",
+        "security": "C",
+        "rank": 13,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-8-bit-orbit",
+        "seedScore": 67,
+        "source": "radar",
+        "security": "B",
+        "rank": 14,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-capsule",
+        "seedScore": 67,
+        "source": "radar",
+        "security": "B",
         "rank": 15,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/hyperframes-registry",
-        "seedScore": 56,
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-grove",
+        "seedScore": 67,
         "source": "radar",
-        "security": "A",
+        "security": "B",
         "rank": 16,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/changelog-video",
-        "seedScore": 56,
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-long-table",
+        "seedScore": 67,
         "source": "radar",
-        "security": "C",
+        "security": "B",
         "rank": 17,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "remotion-dev/skills/remotion-create",
-        "seedScore": 55,
-        "source": "seed",
-        "security": "A",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-playful",
+        "seedScore": 67,
+        "source": "radar",
+        "security": "B",
         "rank": 18,
-        "delta": 2,
-        "status": "up"
+        "delta": null,
+        "status": "new"
       },
       {
-        "skillId": "remotion-dev/skills/remotion-render",
-        "seedScore": 55,
-        "source": "seed",
-        "security": "A",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-retro-zine",
+        "seedScore": 67,
+        "source": "radar",
+        "security": "B",
         "rank": 19,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "remotion-dev/skills/remotion-markup",
-        "seedScore": 55,
-        "source": "seed",
-        "security": "A",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-studio",
+        "seedScore": 67,
+        "source": "radar",
+        "security": "B",
         "rank": 20,
         "delta": null,
         "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.004Z"
   },
   {
     "id": "video-design",
@@ -644,8 +644,8 @@
         "source": "seed",
         "security": "A",
         "rank": 3,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "remotion-dev/skills/remotion-render",
@@ -653,8 +653,8 @@
         "source": "seed",
         "security": "A",
         "rank": 4,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "calesthio/generative-media-skills/editing-montage",
@@ -662,8 +662,8 @@
         "source": "seed",
         "security": "A",
         "rank": 5,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "calesthio/generative-media-skills/storyboard-previsualization",
@@ -671,8 +671,8 @@
         "source": "seed",
         "security": "A",
         "rank": 6,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "calesthio/generative-media-skills/vfx-compositing",
@@ -680,8 +680,8 @@
         "source": "seed",
         "security": "A",
         "rank": 7,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "calesthio/generative-media-skills/motion-graphics-direction",
@@ -689,8 +689,8 @@
         "source": "seed",
         "security": "A",
         "rank": 8,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "calesthio/generative-media-skills/title-kinetic-typography",
@@ -698,8 +698,8 @@
         "source": "seed",
         "security": "A",
         "rank": 9,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/impeccable",
@@ -707,8 +707,8 @@
         "source": "seed",
         "security": "B",
         "rank": 10,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "remotion-dev/skills/remotion-captions",
@@ -716,8 +716,8 @@
         "source": "seed",
         "security": "A",
         "rank": 11,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "remotion-dev/skills/remotion-markup",
@@ -725,8 +725,8 @@
         "source": "seed",
         "security": "A",
         "rank": 12,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "remotion-dev/skills/remotion-interactivity",
@@ -734,8 +734,8 @@
         "source": "seed",
         "security": "A",
         "rank": 13,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "ibelick/ui-skills/baseline-ui",
@@ -743,48 +743,48 @@
         "source": "seed",
         "security": "A",
         "rank": 14,
-        "delta": 3,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
-        "skillId": "heygen-com/hyperframes/style-sampling",
-        "seedScore": 61,
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-capsule",
+        "seedScore": 59,
         "source": "radar",
-        "security": "A",
+        "security": "B",
         "rank": 15,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/reverse-any-video",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-grove",
         "seedScore": 59,
         "source": "radar",
-        "security": "A",
+        "security": "B",
         "rank": 16,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/code-slice-hero",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-long-table",
         "seedScore": 59,
         "source": "radar",
-        "security": "A",
+        "security": "B",
         "rank": 17,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/orbit-card",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-playful",
         "seedScore": 59,
         "source": "radar",
-        "security": "A",
+        "security": "B",
         "rank": 18,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heygen-com/hyperframes/oversized-cursor",
-        "seedScore": 58,
+        "skillId": "nexu-io/open-design/image-poster",
+        "seedScore": 59,
         "source": "radar",
         "security": "A",
         "rank": 19,
@@ -792,17 +792,17 @@
         "status": "new"
       },
       {
-        "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/seedance-2-5-skill",
-        "seedScore": 58,
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-monochrome",
+        "seedScore": 59,
         "source": "radar",
-        "security": "C",
+        "security": "B",
         "rank": 20,
         "delta": null,
         "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.004Z"
   },
   {
     "id": "industrial-design",
@@ -926,8 +926,8 @@
         "source": "seed",
         "security": "A",
         "rank": 12,
-        "delta": 3,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "figma/mcp-server-guide/implement-design",
@@ -935,8 +935,8 @@
         "source": "seed",
         "security": "B",
         "rank": 13,
-        "delta": 3,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "figma/mcp-server-guide/figma-generate-design",
@@ -944,8 +944,8 @@
         "source": "seed",
         "security": "B",
         "rank": 14,
-        "delta": 4,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "remotion-dev/skills/remotion-render",
@@ -953,8 +953,8 @@
         "source": "seed",
         "security": "A",
         "rank": 15,
-        "delta": 5,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "mblode/agent-skills/ui-design",
@@ -962,8 +962,8 @@
         "source": "seed",
         "security": "A",
         "rank": 16,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/mobile-ux-optimizer",
@@ -971,8 +971,8 @@
         "source": "seed",
         "security": "A",
         "rank": 17,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "figma/mcp-server-guide/figma-design-to-code",
@@ -980,8 +980,8 @@
         "source": "seed",
         "security": "B",
         "rank": 18,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/ux-friction-analyzer",
@@ -989,8 +989,8 @@
         "source": "seed",
         "security": "A",
         "rank": 19,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/native-app-designer",
@@ -998,12 +998,12 @@
         "source": "seed",
         "security": "A",
         "rank": 20,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.004Z"
   },
   {
     "id": "environmental-design",
@@ -1077,134 +1077,134 @@
         "status": "steady"
       },
       {
-        "skillId": "mojikone/Ibri-Sewer-and-STP/report-writing",
-        "seedScore": 62,
-        "source": "radar",
-        "security": "A",
-        "rank": 7,
-        "delta": 12,
-        "status": "up"
-      },
-      {
         "skillId": "roble3/cc-blender-skill/blender-export",
         "seedScore": 47,
         "source": "seed",
         "security": "A",
-        "rank": 8,
-        "delta": null,
-        "status": "new"
+        "rank": 7,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "curiositech/some_claude_skills/diagramming-expert",
         "seedScore": 46,
         "source": "seed",
         "security": "A",
-        "rank": 9,
-        "delta": null,
-        "status": "new"
+        "rank": 8,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "remotion-dev/skills/remotion-render",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 10,
-        "delta": null,
-        "status": "new"
+        "rank": 9,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 11,
-        "delta": null,
-        "status": "new"
+        "rank": 10,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/3d-asset-production",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 12,
-        "delta": null,
-        "status": "new"
+        "rank": 11,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/production-design-direction",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 13,
-        "delta": null,
-        "status": "new"
+        "rank": 12,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/threejs-scene-composition",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 14,
-        "delta": null,
-        "status": "new"
+        "rank": 13,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "pbakaus/impeccable/arrange",
         "seedScore": 43,
         "source": "seed",
         "security": "A",
-        "rank": 15,
-        "delta": null,
-        "status": "new"
+        "rank": 14,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "pbakaus/impeccable/layout",
         "seedScore": 43,
         "source": "seed",
         "security": "A",
-        "rank": 16,
-        "delta": null,
-        "status": "new"
+        "rank": 15,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "monumentalsystems/atlas-agent-teams/blender",
         "seedScore": 43,
         "source": "seed",
         "security": "A",
-        "rank": 17,
-        "delta": null,
-        "status": "new"
+        "rank": 16,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "mitsuhiko/agent-stuff/openscad",
         "seedScore": 35,
         "source": "seed",
         "security": "B",
-        "rank": 18,
-        "delta": null,
-        "status": "new"
+        "rank": 17,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "curiositech/some_claude_skills/design-critic",
         "seedScore": 35,
         "source": "seed",
         "security": "A",
-        "rank": 19,
-        "delta": null,
-        "status": "new"
+        "rank": 18,
+        "delta": 1,
+        "status": "up"
       },
       {
         "skillId": "meshy-dev/meshy-3d-agent/meshy-3d-printing",
         "seedScore": 34,
         "source": "seed",
         "security": "B",
+        "rank": 19,
+        "delta": 1,
+        "status": "up"
+      },
+      {
+        "skillId": "calesthio/generative-media-skills/meshy-3d",
+        "seedScore": 33,
+        "source": "seed",
+        "security": "A",
         "rank": 20,
         "delta": null,
         "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.004Z"
   },
   {
     "id": "fashion-design",
@@ -1296,71 +1296,71 @@
         "status": "steady"
       },
       {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-studio",
+        "seedScore": 65,
+        "source": "radar",
+        "security": "B",
+        "rank": 9,
+        "delta": null,
+        "status": "new"
+      },
+      {
         "skillId": "curiositech/some_claude_skills/design-trend-analyzer",
         "seedScore": 64,
         "source": "seed",
         "security": "A",
-        "rank": 9,
-        "delta": 0,
-        "status": "steady"
+        "rank": 10,
+        "delta": -1,
+        "status": "down"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-broadside",
+        "seedScore": 64,
+        "source": "radar",
+        "security": "B",
+        "rank": 11,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+        "seedScore": 64,
+        "source": "radar",
+        "security": "B",
+        "rank": 12,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-coral",
+        "seedScore": 64,
+        "source": "radar",
+        "security": "B",
+        "rank": 13,
+        "delta": null,
+        "status": "new"
       },
       {
         "skillId": "pbakaus/impeccable/polish",
         "seedScore": 63,
         "source": "seed",
         "security": "A",
-        "rank": 10,
-        "delta": 0,
-        "status": "steady"
+        "rank": 14,
+        "delta": -4,
+        "status": "down"
       },
       {
         "skillId": "calesthio/generative-media-skills/ecommerce-product-imagery",
         "seedScore": 63,
         "source": "seed",
         "security": "A",
-        "rank": 11,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "anthropics/skills/frontend-design",
-        "seedScore": 57,
-        "source": "seed",
-        "security": "A",
-        "rank": 12,
-        "delta": 5,
-        "status": "up"
-      },
-      {
-        "skillId": "pbakaus/impeccable/typeset",
-        "seedScore": 55,
-        "source": "seed",
-        "security": "A",
-        "rank": 13,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "curiositech/some_claude_skills/design-critic",
-        "seedScore": 54,
-        "source": "seed",
-        "security": "A",
-        "rank": 14,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "calesthio/generative-media-skills/lighting-direction",
-        "seedScore": 51,
-        "source": "seed",
-        "security": "A",
         "rank": 15,
-        "delta": null,
-        "status": "new"
+        "delta": -4,
+        "status": "down"
       },
       {
-        "skillId": "ThanhNguyxnOrg/Pixelcraft/pixelcraft-brandkit",
-        "seedScore": 51,
+        "skillId": "nexu-io/open-design/replit-deck",
+        "seedScore": 63,
         "source": "radar",
         "security": "C",
         "rank": 16,
@@ -1368,44 +1368,44 @@
         "status": "new"
       },
       {
-        "skillId": "mblode/agent-skills/ui-design",
-        "seedScore": 48,
-        "source": "seed",
-        "security": "A",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-sakura-chroma",
+        "seedScore": 62,
+        "source": "radar",
+        "security": "B",
         "rank": 17,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "narumiruna/skills/svg-illustration",
-        "seedScore": 48,
-        "source": "seed",
-        "security": "A",
+        "skillId": "nexu-io/open-design/guizang-ppt",
+        "seedScore": 62,
+        "source": "radar",
+        "security": "C",
         "rank": 18,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "curiositech/some_claude_skills/typography-expert",
-        "seedScore": 47,
-        "source": "seed",
-        "security": "A",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-8-bit-orbit",
+        "seedScore": 60,
+        "source": "radar",
+        "security": "B",
         "rank": 19,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "heroygt/skills/svg-icon-maker",
-        "seedScore": 47,
-        "source": "seed",
-        "security": "A",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-retro-zine",
+        "seedScore": 60,
+        "source": "radar",
+        "security": "B",
         "rank": 20,
         "delta": null,
         "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.004Z"
   },
   {
     "id": "experience-design",
@@ -1480,71 +1480,71 @@
         "status": "steady"
       },
       {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-pink-script",
+        "seedScore": 68,
+        "source": "radar",
+        "security": "B",
+        "rank": 7,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-broadside",
+        "seedScore": 67,
+        "source": "radar",
+        "security": "B",
+        "rank": 8,
+        "delta": null,
+        "status": "new"
+      },
+      {
         "skillId": "curiositech/some_claude_skills/native-app-designer",
         "seedScore": 65,
         "source": "seed",
         "security": "A",
-        "rank": 7,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "curiositech/some_claude_skills/design-accessibility-auditor",
-        "seedScore": 64,
-        "source": "seed",
-        "security": "A",
-        "rank": 8,
-        "delta": 0,
-        "status": "steady"
-      },
-      {
-        "skillId": "abhsin/designskills/ux-specification",
-        "seedScore": 64,
-        "source": "seed",
-        "security": "A",
         "rank": 9,
-        "delta": 0,
-        "status": "steady"
+        "delta": -2,
+        "status": "down"
       },
       {
-        "skillId": "nightly-labs/openbot/principle-exhaust-the-design-space",
-        "seedScore": 57,
+        "skillId": "nexu-io/open-design/guizang-ppt",
+        "seedScore": 65,
         "source": "radar",
-        "security": "A",
+        "security": "C",
         "rank": 10,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "vercel-labs/agent-skills/web-design-guidelines",
-        "seedScore": 56,
-        "source": "seed",
+        "skillId": "nexu-io/open-design/aster-atelier",
+        "seedScore": 65,
+        "source": "radar",
         "security": "A",
         "rank": 11,
-        "delta": 0,
-        "status": "steady"
+        "delta": null,
+        "status": "new"
       },
       {
-        "skillId": "pbakaus/impeccable/audit",
-        "seedScore": 55,
-        "source": "seed",
-        "security": "A",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-capsule",
+        "seedScore": 65,
+        "source": "radar",
+        "security": "B",
         "rank": 12,
-        "delta": 0,
-        "status": "steady"
+        "delta": null,
+        "status": "new"
       },
       {
-        "skillId": "ibelick/ui-skills/baseline-ui",
-        "seedScore": 53,
-        "source": "seed",
-        "security": "A",
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-grove",
+        "seedScore": 65,
+        "source": "radar",
+        "security": "B",
         "rank": 13,
-        "delta": 2,
-        "status": "up"
+        "delta": null,
+        "status": "new"
       },
       {
-        "skillId": "gmh5225/awesome-game-security/research-rigor",
-        "seedScore": 52,
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-playful",
+        "seedScore": 65,
         "source": "radar",
         "security": "B",
         "rank": 14,
@@ -1552,62 +1552,62 @@
         "status": "new"
       },
       {
-        "skillId": "nightly-labs/openbot/prototype-build",
-        "seedScore": 49,
+        "skillId": "nexu-io/open-design/mobile-onboarding",
+        "seedScore": 65,
         "source": "radar",
-        "security": "C",
+        "security": "A",
         "rank": 15,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "figma/mcp-server-guide/implement-design",
-        "seedScore": 46,
+        "skillId": "curiositech/some_claude_skills/design-accessibility-auditor",
+        "seedScore": 64,
         "source": "seed",
-        "security": "B",
+        "security": "A",
         "rank": 16,
-        "delta": 1,
-        "status": "up"
+        "delta": -8,
+        "status": "down"
       },
       {
-        "skillId": "XGENT-ai/skills/design-reference",
-        "seedScore": 46,
-        "source": "radar",
-        "security": "C",
+        "skillId": "abhsin/designskills/ux-specification",
+        "seedScore": 64,
+        "source": "seed",
+        "security": "A",
         "rank": 17,
-        "delta": null,
-        "status": "new"
+        "delta": -8,
+        "status": "down"
       },
       {
-        "skillId": "XGENT-ai/skills/ui-pattern-research",
-        "seedScore": 46,
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-sakura-chroma",
+        "seedScore": 64,
         "source": "radar",
-        "security": "C",
+        "security": "B",
         "rank": 18,
         "delta": null,
         "status": "new"
       },
       {
-        "skillId": "figma/mcp-server-guide/figma-generate-design",
-        "seedScore": 45,
-        "source": "seed",
-        "security": "B",
-        "rank": 19,
-        "delta": -1,
-        "status": "down"
-      },
-      {
-        "skillId": "XGENT-ai/skills/kpi-dashboard-design",
-        "seedScore": 45,
+        "skillId": "nexu-io/open-design/codex-interactive-capability-map",
+        "seedScore": 64,
         "source": "radar",
         "security": "A",
+        "rank": 19,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-coral",
+        "seedScore": 63,
+        "source": "radar",
+        "security": "B",
         "rank": 20,
         "delta": null,
         "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.005Z"
   },
   {
     "id": "digital-media-film",
@@ -1727,89 +1727,89 @@
         "status": "steady"
       },
       {
-        "skillId": "heygen-com/hyperframes/slideshow",
-        "seedScore": 55,
-        "source": "radar",
-        "security": "A",
-        "rank": 12,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/reverse-any-video",
-        "seedScore": 54,
-        "source": "radar",
-        "security": "A",
-        "rank": 13,
-        "delta": null,
-        "status": "new"
-      },
-      {
         "skillId": "ibelick/ui-skills/baseline-ui",
         "seedScore": 53,
         "source": "seed",
         "security": "A",
-        "rank": 14,
-        "delta": -2,
-        "status": "down"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/oversized-cursor",
-        "seedScore": 53,
-        "source": "radar",
-        "security": "A",
-        "rank": 15,
-        "delta": null,
-        "status": "new"
+        "rank": 12,
+        "delta": 2,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/editing-montage",
         "seedScore": 52,
         "source": "seed",
         "security": "A",
-        "rank": 16,
-        "delta": -3,
-        "status": "down"
+        "rank": 13,
+        "delta": 3,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/cinematic-shot-direction",
         "seedScore": 52,
         "source": "seed",
         "security": "A",
-        "rank": 17,
-        "delta": -3,
-        "status": "down"
+        "rank": 14,
+        "delta": 3,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/color-grading-finishing",
         "seedScore": 52,
         "source": "seed",
         "security": "A",
-        "rank": 18,
-        "delta": -3,
-        "status": "down"
+        "rank": 15,
+        "delta": 3,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/storyboard-previsualization",
         "seedScore": 52,
         "source": "seed",
         "security": "A",
-        "rank": 19,
-        "delta": -3,
-        "status": "down"
+        "rank": 16,
+        "delta": 3,
+        "status": "up"
       },
       {
         "skillId": "calesthio/generative-media-skills/motion-graphics-direction",
         "seedScore": 52,
         "source": "seed",
         "security": "A",
+        "rank": 17,
+        "delta": 3,
+        "status": "up"
+      },
+      {
+        "skillId": "calesthio/generative-media-skills/title-kinetic-typography",
+        "seedScore": 52,
+        "source": "seed",
+        "security": "A",
+        "rank": 18,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "calesthio/generative-media-skills/3d-asset-production",
+        "seedScore": 52,
+        "source": "seed",
+        "security": "A",
+        "rank": 19,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "calesthio/generative-media-skills/neural-reality-capture",
+        "seedScore": 52,
+        "source": "seed",
+        "security": "A",
         "rank": 20,
-        "delta": -3,
-        "status": "down"
+        "delta": null,
+        "status": "new"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.005Z"
   },
   {
     "id": "arts-crafts",
@@ -1899,8 +1899,8 @@
         "source": "seed",
         "security": "B",
         "rank": 8,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "roble3/cc-blender-skill/blender-export",
@@ -1908,8 +1908,8 @@
         "source": "seed",
         "security": "A",
         "rank": 9,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "lovstudio/skills/lovstudio-png2svg",
@@ -1917,8 +1917,8 @@
         "source": "seed",
         "security": "A",
         "rank": 10,
-        "delta": 1,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "calesthio/generative-media-skills/meshy-3d",
@@ -1926,8 +1926,8 @@
         "source": "seed",
         "security": "A",
         "rank": 11,
-        "delta": 2,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/color-theory-palette-harmony-expert",
@@ -1935,8 +1935,8 @@
         "source": "seed",
         "security": "A",
         "rank": 12,
-        "delta": 6,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "anthropics/skills/frontend-design",
@@ -1944,8 +1944,8 @@
         "source": "seed",
         "security": "A",
         "rank": 13,
-        "delta": 7,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "leonxlnx/taste-skill/high-end-visual-design",
@@ -1953,8 +1953,8 @@
         "source": "seed",
         "security": "A",
         "rank": 14,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/hand-drawn-infographic-creator",
@@ -1962,8 +1962,8 @@
         "source": "seed",
         "security": "A",
         "rank": 15,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/critique",
@@ -1971,8 +1971,8 @@
         "source": "seed",
         "security": "A",
         "rank": 16,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/bolder",
@@ -1980,8 +1980,8 @@
         "source": "seed",
         "security": "A",
         "rank": 17,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/distill",
@@ -1989,8 +1989,8 @@
         "source": "seed",
         "security": "A",
         "rank": 18,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/quieter",
@@ -1998,8 +1998,8 @@
         "source": "seed",
         "security": "A",
         "rank": 19,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/typeset",
@@ -2007,12 +2007,12 @@
         "source": "seed",
         "security": "A",
         "rank": 20,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.005Z"
   },
   {
     "id": "folk-art",
@@ -2059,83 +2059,92 @@
         "status": "steady"
       },
       {
+        "skillId": "nexu-io/open-design/html-ppt-zhangzara-daisy-days",
+        "seedScore": 60,
+        "source": "radar",
+        "security": "B",
+        "rank": 4,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/open-design-landing-deck",
+        "seedScore": 56,
+        "source": "radar",
+        "security": "C",
+        "rank": 5,
+        "delta": null,
+        "status": "new"
+      },
+      {
         "skillId": "pbakaus/impeccable/polish",
         "seedScore": 55,
         "source": "seed",
         "security": "A",
-        "rank": 4,
-        "delta": 1,
-        "status": "up"
+        "rank": 6,
+        "delta": -2,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/colorize",
         "seedScore": 55,
         "source": "seed",
         "security": "A",
-        "rank": 5,
-        "delta": 1,
-        "status": "up"
+        "rank": 7,
+        "delta": -2,
+        "status": "down"
+      },
+      {
+        "skillId": "nexu-io/open-design/html-ppt-taste-brutalist",
+        "seedScore": 55,
+        "source": "radar",
+        "security": "B",
+        "rank": 8,
+        "delta": null,
+        "status": "new"
       },
       {
         "skillId": "pbakaus/impeccable/impeccable",
         "seedScore": 54,
         "source": "seed",
         "security": "B",
-        "rank": 6,
-        "delta": 3,
-        "status": "up"
+        "rank": 9,
+        "delta": -3,
+        "status": "down"
       },
       {
         "skillId": "curiositech/some_claude_skills/hand-drawn-infographic-creator",
         "seedScore": 54,
         "source": "seed",
         "security": "A",
-        "rank": 7,
-        "delta": 3,
-        "status": "up"
+        "rank": 10,
+        "delta": -3,
+        "status": "down"
       },
       {
         "skillId": "curiositech/some_claude_skills/collage-layout-expert",
         "seedScore": 54,
         "source": "seed",
         "security": "A",
-        "rank": 8,
-        "delta": 3,
-        "status": "up"
-      },
-      {
-        "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/universal-video-prompt-skill",
-        "seedScore": 53,
-        "source": "radar",
-        "security": "A",
-        "rank": 9,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "heygen-com/hyperframes/changelog-video",
-        "seedScore": 51,
-        "source": "radar",
-        "security": "C",
-        "rank": 10,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills/seedance-2-5-skill",
-        "seedScore": 51,
-        "source": "radar",
-        "security": "C",
         "rank": 11,
-        "delta": null,
-        "status": "new"
+        "delta": -3,
+        "status": "down"
       },
       {
-        "skillId": "ThanhNguyxnOrg/Pixelcraft/pixelcraft-brandkit",
-        "seedScore": 50,
+        "skillId": "nexu-io/open-design/live-dashboard",
+        "seedScore": 54,
         "source": "radar",
         "security": "C",
         "rank": 12,
+        "delta": null,
+        "status": "new"
+      },
+      {
+        "skillId": "nexu-io/open-design/open-design-landing",
+        "seedScore": 51,
+        "source": "radar",
+        "security": "C",
+        "rank": 13,
         "delta": null,
         "status": "new"
       },
@@ -2144,76 +2153,67 @@
         "seedScore": 47,
         "source": "seed",
         "security": "A",
-        "rank": 13,
-        "delta": 7,
-        "status": "up"
+        "rank": 14,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "anthropics/skills/frontend-design",
         "seedScore": 46,
         "source": "seed",
         "security": "A",
-        "rank": 14,
-        "delta": null,
-        "status": "new"
+        "rank": 15,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "leonxlnx/taste-skill/high-end-visual-design",
         "seedScore": 46,
         "source": "seed",
         "security": "A",
-        "rank": 15,
-        "delta": null,
-        "status": "new"
+        "rank": 16,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "lovstudio/skills/lovstudio-png2svg",
         "seedScore": 45,
         "source": "seed",
         "security": "A",
-        "rank": 16,
-        "delta": null,
-        "status": "new"
+        "rank": 17,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/critique",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 17,
-        "delta": null,
-        "status": "new"
+        "rank": 18,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/bolder",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 18,
-        "delta": null,
-        "status": "new"
+        "rank": 19,
+        "delta": -1,
+        "status": "down"
       },
       {
         "skillId": "pbakaus/impeccable/distill",
         "seedScore": 44,
         "source": "seed",
         "security": "A",
-        "rank": 19,
-        "delta": null,
-        "status": "new"
-      },
-      {
-        "skillId": "pbakaus/impeccable/quieter",
-        "seedScore": 44,
-        "source": "seed",
-        "security": "A",
         "rank": 20,
-        "delta": null,
-        "status": "new"
+        "delta": -1,
+        "status": "down"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.005Z"
   },
   {
     "id": "architecture-design",
@@ -2297,7 +2297,7 @@
         "status": "steady"
       },
       {
-        "skillId": "mojikone/Ibri-Sewer-and-STP/report-writing",
+        "skillId": "nexu-io/open-design/video-shortform",
         "seedScore": 58,
         "source": "radar",
         "security": "A",
@@ -2311,8 +2311,8 @@
         "source": "seed",
         "security": "A",
         "rank": 9,
-        "delta": 8,
-        "status": "up"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "calesthio/generative-media-skills/3d-asset-production",
@@ -2320,8 +2320,8 @@
         "source": "seed",
         "security": "A",
         "rank": 10,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/arrange",
@@ -2329,8 +2329,8 @@
         "source": "seed",
         "security": "A",
         "rank": 11,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "pbakaus/impeccable/layout",
@@ -2338,8 +2338,8 @@
         "source": "seed",
         "security": "A",
         "rank": 12,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "calesthio/generative-media-skills/production-design-direction",
@@ -2347,8 +2347,8 @@
         "source": "seed",
         "security": "A",
         "rank": 13,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "calesthio/generative-media-skills/threejs-scene-composition",
@@ -2356,8 +2356,8 @@
         "source": "seed",
         "security": "A",
         "rank": 14,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "monumentalsystems/atlas-agent-teams/blender",
@@ -2365,8 +2365,8 @@
         "source": "seed",
         "security": "A",
         "rank": 15,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "remotion-dev/skills/remotion-render",
@@ -2374,8 +2374,8 @@
         "source": "seed",
         "security": "A",
         "rank": 16,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "mitsuhiko/agent-stuff/openscad",
@@ -2383,8 +2383,8 @@
         "source": "seed",
         "security": "B",
         "rank": 17,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "curiositech/some_claude_skills/design-critic",
@@ -2392,8 +2392,8 @@
         "source": "seed",
         "security": "A",
         "rank": 18,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "yizhiyanhua-ai/fireworks-tech-graph/fireworks-tech-graph",
@@ -2401,8 +2401,8 @@
         "source": "seed",
         "security": "A",
         "rank": 19,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       },
       {
         "skillId": "meshy-dev/meshy-3d-agent/meshy-3d-printing",
@@ -2410,11 +2410,11 @@
         "source": "seed",
         "security": "B",
         "rank": 20,
-        "delta": null,
-        "status": "new"
+        "delta": 0,
+        "status": "steady"
       }
     ],
     "rankingMode": "live",
-    "rankingUpdatedAt": "2026-11-24T12:34:19.332Z"
+    "rankingUpdatedAt": "2026-11-26T10:59:33.005Z"
   }
 ]
